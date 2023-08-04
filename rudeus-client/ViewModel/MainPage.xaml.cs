@@ -1,5 +1,8 @@
 ﻿using System.Net.Http;
+using rudeus_client.View;
+using rudeus_client.Model;
 
+//namespace rudeus_client.ViewModel;
 namespace rudeus_client;
 
 public partial class MainPage : ContentPage
@@ -21,12 +24,12 @@ public partial class MainPage : ContentPage
 	{
 		count++;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+		//if (count == 1)
+			//CounterBtn.Text = $"Clicked {count} time";
+		//else
+			//CounterBtn.Text = $"Clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		//SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 
     private void OnInitClicked(object sender, EventArgs e)
@@ -35,7 +38,7 @@ public partial class MainPage : ContentPage
 
 		Console.WriteLine(response.Content);
         var jsonResponse = response.Content.ReadAsStringAsync().Result;
-		Init.Text = jsonResponse;
+		//Init.Text = jsonResponse;
         
 
 	}

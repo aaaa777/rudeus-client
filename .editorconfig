@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0108: メンバーは継承されたメンバーを非表示にします。キーワード new がありません
+dotnet_diagnostic.CS0108.severity = silent

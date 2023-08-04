@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rudeus_client.MainPage"
+             xmlns:vm="clr-namespace:rudeus_client.ViewModel">
+    
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="{Binding Text3}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="bind test"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="{Binding Text3}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="bind test"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="{Binding Text3}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="bind test"
+                FontSize="18"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="RegisterBtn"
+                Text="１．デバイスの登録、アクセストークンの取得"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Command="{Binding RegisterDeviceCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="LoginBtn"
+                Text="２．ログイン認証"
+                SemanticProperties.Hint="initialize your pc"
+                Command="{Binding LoginDeviceCommand}"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="UpdateBtn"
+                Text="３．デバイスの登録情報アップデート"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Command="{Binding UpdateDeviceCommand}"
+                HorizontalOptions="Center" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
