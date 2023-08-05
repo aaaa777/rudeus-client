@@ -2,11 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rudeus_client.MainPage"
-             xmlns:vm="clr-namespace:rudeus_client.ViewModel">
-    
-    <ContentPage.BindingContext>
-        <vm:MainPageViewModel/>
-    </ContentPage.BindingContext>
+             >
 
     <ScrollView>
         <VerticalStackLayout
@@ -21,7 +17,7 @@
                 HorizontalOptions="Center" />
 
             <Label
-                Text="{Binding Text3}"
+                Text="{Binding Text}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="bind test"
                 FontSize="18"
@@ -35,7 +31,7 @@
                 HorizontalOptions="Center" />
             
             <Label
-                Text="{Binding Text3}"
+                Text="{Binding Text2}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="bind test"
                 FontSize="18"
@@ -45,23 +41,30 @@
                 x:Name="RegisterBtn"
                 Text="１．デバイスの登録、アクセストークンの取得"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Command="{Binding RegisterDeviceCommand}"
+                Clicked="OnRegisterBtnClicked"
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="LoginBtn"
                 Text="２．ログイン認証"
                 SemanticProperties.Hint="initialize your pc"
-                Command="{Binding LoginDeviceCommand}"
+                Clicked="OnLoginBtnClicked"
                 HorizontalOptions="Center" />
 
             <Button
                 x:Name="UpdateBtn"
                 Text="３．デバイスの登録情報アップデート"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Command="{Binding UpdateDeviceCommand}"
+                Clicked="OnUpdateBtnClicked"
                 HorizontalOptions="Center" />
-            
+
+            <Button
+                x:Name="TestBtm"
+                Text="４．テスト"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnLoginBtnClicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 

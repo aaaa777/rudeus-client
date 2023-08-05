@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 using rudeus_client.Model.Response;
 using System.Diagnostics;
+using Microsoft.VisualBasic;
 
 namespace rudeus_client.Model
 {
@@ -23,6 +24,7 @@ namespace rudeus_client.Model
         private string _deviceType;
 
         // jsonには含まれない
+        private string _username;
         private string _accessToken = "";
 
         public string DeviceId
@@ -31,7 +33,7 @@ namespace rudeus_client.Model
             set
             {
                 _deviceId = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(DeviceId));
             }
         }
 
@@ -41,7 +43,7 @@ namespace rudeus_client.Model
             set
             {
                 _deviceName = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(DeviceName));
             }
         }
 
@@ -55,7 +57,7 @@ namespace rudeus_client.Model
             set
             {
                 _deviceType = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(DeviceType));
             }
         }
 
@@ -69,17 +71,43 @@ namespace rudeus_client.Model
             set
             {
                 _accessToken = value;
-                OnPropertyChanged();
+                OnPropertyChanged(nameof(AccessToken));
             }
         }
 
-        public Device(string deviceId, string deviceName, string deviceType)
+        [JsonIgnore]
+        public string Username
+        {
+            get => _username;
+            set
+            {
+                _username = value;
+                OnPropertyChanged(nameof(Username));
+            }
+        }
+
+        private Device(string deviceId, string deviceName, string deviceType)
         {
             DeviceId = deviceId;
             DeviceName = deviceName;
             // DeviceOS = "windows";
             DeviceType = deviceType;
             // AccessToken = "";
+
+            // ToDo：レジストリを確認して既に登録されている場合その情報を読み込む
+
+
+        }
+
+        // シングルトン
+        private static Device _instance;
+        public static Device Load()
+        {
+            if (_instance == null)
+            {
+                _instance = new Device("test_id", "HIU-P123", "pc");
+            }
+            return _instance;
         }
 
         public string Register()
@@ -95,7 +123,7 @@ namespace rudeus_client.Model
             return AccessToken;
         }
 
-        public string Update()
+        public bool Update(string deviceStorage="")
         {
             // リモートに更新申請する
             UpdateResponse response = RemoteAPI.UpdateDevice(this);
@@ -103,19 +131,22 @@ namespace rudeus_client.Model
             // アクセストークンの表示
             Console.WriteLine($"{response.Status}");
 
-            return AccessToken;
+            return true;
         }
 
-        public string Login()
+
+        public async Task<bool> LoginAsync()
         {
             // リモートにログイン申請する
-            LoginResponse response = RemoteAPI.LoginDevice(this);
+            LoginResponse response = await RemoteAPI.LoginDevice(this);
+            // SAMLから取得したユーザ名をセットする
+            Username = response.ResponseData.Username;
 
             // アクセストークンの表示
             Console.WriteLine($"{response.Status}");
 
-            AccessToken = response.Status;
-            return AccessToken;
+            Username = response.ResponseData.Username;
+            return true;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

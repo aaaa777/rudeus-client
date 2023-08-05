@@ -13,5 +13,6 @@ namespace rudeus_client.Model.Response
 
     internal class UpdateResponseData
     {
+        public string Username { get; set; }
     }
 }
