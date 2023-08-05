@@ -8,11 +8,11 @@ namespace rudeus_client.Model.Response
 {
     internal class UpdateResponse : BaseResponse
     {
-        public UpdateResponseData ResponseData { get; set; }
+        public UpdateResponseData response_data { get; set; }
     }
 
     internal class UpdateResponseData
     {
-        public string Username { get; set; }
+        public string username { get; set; }
     }
 }

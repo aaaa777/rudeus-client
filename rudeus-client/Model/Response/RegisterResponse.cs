@@ -8,11 +8,11 @@ namespace rudeus_client.Model.Response
 {
     internal class RegisterResponse : BaseResponse
     {
-        public RegisterResponseData ResponseData { get; set; }
+        public RegisterResponseData response_data { get; set; }
     }
 
     internal class RegisterResponseData
     {
-        public string AccessToken { get; set; }
+        public string access_token { get; set; }
     }
 }

@@ -117,9 +117,9 @@ namespace rudeus_client.Model
             
 
             // アクセストークンの表示
-            Console.WriteLine($"{response.ResponseData.AccessToken}");
+            Console.WriteLine($"{response.response_data.access_token}");
 
-            AccessToken = response.ResponseData.AccessToken;
+            AccessToken = response.response_data.access_token;
             return AccessToken;
         }
 
@@ -129,7 +129,7 @@ namespace rudeus_client.Model
             UpdateResponse response = RemoteAPI.UpdateDevice(this);
 
             // アクセストークンの表示
-            Console.WriteLine($"{response.Status}");
+            Console.WriteLine($"{response.status}");
 
             return true;
         }
@@ -140,12 +140,12 @@ namespace rudeus_client.Model
             // リモートにログイン申請する
             LoginResponse response = await RemoteAPI.LoginDevice(this);
             // SAMLから取得したユーザ名をセットする
-            Username = response.ResponseData.Username;
+            Username = response.response_data.username;
 
             // アクセストークンの表示
-            Console.WriteLine($"{response.Status}");
+            Console.WriteLine($"{response.status}");
 
-            Username = response.ResponseData.Username;
+            Username = response.response_data.username;
             return true;
         }
 

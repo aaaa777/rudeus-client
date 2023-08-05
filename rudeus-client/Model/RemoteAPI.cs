@@ -47,7 +47,7 @@ namespace rudeus_client.Model
             var request = new HttpRequestMessage(HttpMethod.Post, requestPath);
             // using HttpResponseMessage response = sharedClient.GetAsync($"todos/1").Result;
 
-            var dummyResponse = $"{{\"Status\":\"ok\",\"ResponseData\": {{\"AccessToken\": \"abcvgjsdfgh\"}}}}";
+            var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
             return dummyResponse;
             // return response.Content.ReadAsStringAsync().Result;
         }
@@ -108,7 +108,7 @@ namespace rudeus_client.Model
             var response = Request(device.AccessToken, "/api/login", req);
 
             LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
-            loginResponse.ResponseData.Username = userId;
+            loginResponse.response_data.username = userId;
             return loginResponse;
         }
 

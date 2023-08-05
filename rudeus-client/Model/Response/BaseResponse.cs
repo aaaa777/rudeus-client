@@ -8,14 +8,14 @@ namespace rudeus_client.Model.Response
 {
     internal class BaseResponse
     {
+        public string status { get; set; }
+        public BaseResponse response_data { get; set; }
+
         public BaseResponse()
         {
-            Status = "ok";
+            status = "ok";
         }
 
-        public string Status { get; set; }
-
-        public BaseResponse ResponseData { get; set; }
     }
 
     internal class BaseResponseData

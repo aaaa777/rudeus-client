@@ -8,8 +8,8 @@ namespace rudeus_client.Model.Request
 {
     internal class BaseRequest
     {
-        public string Type { get; set; }
-        public string BaseRequestData { get; set; }
+        public string type { get; set; }
+        public string request_data { get; set; }
     }
     internal class BaseRequestData
     {

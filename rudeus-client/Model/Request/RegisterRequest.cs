@@ -8,24 +8,24 @@ namespace rudeus_client.Model.Request
 {
     internal class RegisterRequest : BaseRequest
     {
-        public RegisterRequestData RequestData { get; set; }
+        public RegisterRequestData request_data { get; set; }
 
         public RegisterRequest(string deviceId, string deviceName)
         {
-            Type = "register";
-            RequestData = new(deviceId, deviceName);
+            type = "register";
+            request_data = new(deviceId, deviceName);
         }
     }
     internal class RegisterRequestData
     {
-        public string DeviceId { get; set; }
-        public string DeviceName { get; set; }
+        public string device_id { get; set; }
+        public string device_name { get; set; }
 
 
         public RegisterRequestData(string deviceId, string deviceName)
         {
-            DeviceId = deviceId;
-            DeviceName = deviceName;
+            device_id = deviceId;
+            device_name = deviceName;
         }
     }
 }
