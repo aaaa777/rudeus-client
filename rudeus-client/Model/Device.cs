@@ -20,7 +20,7 @@ namespace rudeus_client.Model
     {
 
         private string _deviceId;
-        private string _deviceName;
+        private string _hostname;
         private string _deviceType;
 
         // jsonには含まれない
@@ -37,13 +37,13 @@ namespace rudeus_client.Model
             }
         }
 
-        public string DeviceName
+        public string Hostname
         {
-            get => _deviceName;
+            get => _hostname;
             set
             {
-                _deviceName = value;
-                OnPropertyChanged(nameof(DeviceName));
+                _hostname = value;
+                OnPropertyChanged(nameof(Hostname));
             }
         }
 
@@ -89,7 +89,7 @@ namespace rudeus_client.Model
         private Device(string deviceId, string deviceName, string deviceType)
         {
             DeviceId = deviceId;
-            DeviceName = deviceName;
+            Hostname = deviceName;
             // DeviceOS = "windows";
             DeviceType = deviceType;
             // AccessToken = "";

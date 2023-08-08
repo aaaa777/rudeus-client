@@ -73,7 +73,7 @@ namespace rudeus_client.Model
         /// <returns>RegisterResponse</returns>
         public static RegisterResponse RegisterDevice(Device device)
         {
-            RegisterRequest req = new(device.DeviceId, device.DeviceName);
+            RegisterRequest req = new(device.DeviceId, device.Hostname);
             var response = Request("", "/api/register", req);
             RegisterResponse res = JsonSerializer.Deserialize<RegisterResponse>(response);
             return res;
@@ -165,25 +165,28 @@ namespace rudeus_client.Model
             res.Response.Close();
             listener.Stop();
 
+            // リダイレクト先のローカルサーバーを起動
             HttpListener listener2 = new();
             listener2.Prefixes.Add(spListenerUrl);
             listener2.Start();
             Task<HttpListenerContext> idpResponseTask = listener2.GetContextAsync();
 
+            // idpからのレスポンスを待つ
             HttpListenerContext idpResponse = await idpResponseTask;
             string idpResponseText = new System.IO.StreamReader(idpResponse.Request.InputStream, System.Text.Encoding.UTF8).ReadToEnd();
 
             idpResponse.Response.Close();
             listener2.Stop();
 
+            // idpからのレスポンスをパース
             string SAMLResponse = System.Web.HttpUtility.ParseQueryString(idpResponseText).Get("SAMLResponse");
             byte[] base64EncodedXML = System.Convert.FromBase64String(SAMLResponse);
             string decodedXML = System.Text.Encoding.UTF8.GetString(base64EncodedXML);
             XmlDocument xmlDocument = new();
             xmlDocument.LoadXml(decodedXML);
 
-            NameTable nt = new NameTable();
-            XmlNamespaceManager nsmgr = new XmlNamespaceManager(nt);
+            NameTable nt = new();
+            XmlNamespaceManager nsmgr = new(nt);
             nsmgr.AddNamespace("saml", "urn:oasis:names:tc:SAML:2.0:assertion");
 
             XmlNodeList subjectNodes = xmlDocument.SelectNodes("//saml:Subject", nsmgr);

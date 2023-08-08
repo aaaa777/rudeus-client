@@ -5,11 +5,32 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:rudeus_client"
     xmlns:view="clr-namespace:rudeus_client.View"
-    Shell.FlyoutBehavior="Disabled">
+    >
 
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Home"
+             Icon="home.png">
+            <ShellContent Title="Home1"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+
+            <ShellContent Title="Home2"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+
+            <ShellContent Title="Home3"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
     <ShellContent
-        Title="Home"
+        Title="Home4"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+
+    <ShellContent Title="Home5"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage" />
 
 </Shell>

@@ -9,6 +9,9 @@ using System.ComponentModel;
 
 namespace rudeus_client.ViewModel
 {
+    /// <summary>
+    /// モデルの変更をViewに通知するためのViewModel
+    /// </summary>
     internal class MainPageViewModel : INotifyPropertyChanged
     {
 
@@ -41,10 +44,10 @@ namespace rudeus_client.ViewModel
         }
         public string MyDeviceName
         {
-            get => MyDevice.DeviceName;
+            get => MyDevice.Hostname;
             set
             {
-                MyDevice.DeviceName = value;
+                MyDevice.Hostname = value;
             }
         }
         public string MyDeviceAccessToken
@@ -64,13 +67,12 @@ namespace rudeus_client.ViewModel
             }
         }
 
-        public string Text { get => $"DeviceName: {MyDevice?.DeviceName}"; }
+        public string Text { get => $"DeviceName: {MyDevice?.Hostname}"; }
         public string Text2 { get => $"Username: {MyDevice?.Username}"; }
         public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
 
         public MainPageViewModel()
         {
-            // InitializeComponent();
             MyDevice = Model.Device.Load();
         }
 
