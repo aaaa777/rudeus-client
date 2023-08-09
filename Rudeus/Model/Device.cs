@@ -85,6 +85,7 @@ namespace Rudeus.Model
                 OnPropertyChanged(nameof(Username));
             }
         }
+        public static readonly Uri LoginUri = new ("http://win.nomiss.net/saml2/test/login");
 
         private Device(string deviceId, string deviceName, string deviceType)
         {
@@ -134,7 +135,10 @@ namespace Rudeus.Model
             return true;
         }
 
-
+        /// <summary>
+        /// SAML認証を行いユーザ名を取得し更新する
+        /// </summary>
+        /// <returns></returns>
         public async Task<bool> LoginAsync()
         {
             // リモートにログイン申請する

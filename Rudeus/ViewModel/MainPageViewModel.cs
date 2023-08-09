@@ -71,21 +71,26 @@ namespace Rudeus.ViewModel
         public string Text2 { get => $"Username: {MyDevice?.Username}"; }
         public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
 
-        public MainPageViewModel()
+        public void ReloadDevice()
         {
             MyDevice = Model.Device.Load();
+        }
+
+        public MainPageViewModel()
+        {
+            ReloadDevice();
         }
 
         public void RegisterDevice()
         {
             MyDevice.Register();
-            MyDevice = Model.Device.Load();
+            ReloadDevice();
         }
 
         public void UpdateDevice()
         {
             MyDevice.Update();
-            MyDevice = Model.Device.Load();
+            ReloadDevice();
         }
 
         /// <summary>
@@ -96,9 +101,22 @@ namespace Rudeus.ViewModel
         public async Task<bool> LoginDeviceAsync()
         {
             await MyDevice.LoginAsync();
-            MyDevice = Model.Device.Load();
+
+            ReloadDevice();
             return true;
         }
+
+        public async void OpenBrowser()
+        {
+
+            // await Browser.Default.OpenAsync(Model.Device.LoginUri);
+            // await RemoteAPI.StartSamlLoginAsync();
+
+            await RemoteAPI.StartSamlLoginAsync("");
+            // await MyDevice.LoginAsync();
+            MyDevice = Model.Device.Load();
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

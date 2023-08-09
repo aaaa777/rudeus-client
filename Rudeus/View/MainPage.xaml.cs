@@ -36,11 +36,11 @@ public partial class MainPage : ContentPage
 
 	private void OnLoginBtnClicked(object sender, EventArgs e)
 	{
-
+        //MainPageViewModel.OpenBrowser();
         // テスト用
         MainPageViewModel.LoginDeviceAsync();
         //Model.RemoteAPI.SAMLLoginAsync();
-        DisplayAlert("認証中…", "ブラウザでログイン操作をしてください", "キャンセル");
+        //DisplayAlert("認証中…", "ブラウザでログイン操作をしてください", "キャンセル");
         
         
     }
