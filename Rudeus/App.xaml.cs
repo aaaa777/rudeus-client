@@ -9,9 +9,11 @@ public partial class App : Application
 
     public App()
     {
+        
+        string[] Args = Environment.GetCommandLineArgs();
+
         if (!mutex.WaitOne(TimeSpan.Zero, true))
         {
-            string[] Args = Environment.GetCommandLineArgs();
             if(Args.Length > 1)
             {
                 Uri customUri = new(Args[1]);
@@ -26,7 +28,13 @@ public partial class App : Application
             Environment.Exit(0);
         }
 
-		InitializeComponent();
+        if (Args.Length != 1)
+        {
+            Current.Quit();
+            Environment.Exit(0);
+        }
+
+        InitializeComponent();
 
 		MainPage = new AppShell();
         // MainPage = new NavigationPage(new MainPage());

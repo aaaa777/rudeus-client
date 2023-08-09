@@ -83,6 +83,7 @@ namespace Rudeus.Model
 
         public static string SamlLoginPath = "/api/test/login";
         
+        public static string AppCallbackUri = "io.identitymodel.native://callback/?user=s2112";
 
         private static string Request(string accessToken, string requestPath, BaseRequest requestStruct)
         {
