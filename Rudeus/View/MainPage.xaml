@@ -10,12 +10,8 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
 
+                
             <Label
                 Text="{Binding Text}"
                 SemanticProperties.HeadingLevel="Level2"
@@ -36,35 +32,89 @@
                 SemanticProperties.Description="bind test"
                 FontSize="18"
                 HorizontalOptions="Center" />
-            
-            <Button
-                x:Name="RegisterBtn"
-                Text="１．デバイスの登録、アクセストークンの取得"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnRegisterBtnClicked"
+
+            <Entry
+                x:Name="ApiEndpoint"
+                Placeholder="http://win.nomiss.net"
+                Text="{Binding ApiEndpoint}"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="LoginBtn"
-                Text="２．ログイン認証"
-                SemanticProperties.Hint="initialize your pc"
-                Clicked="OnLoginBtnClicked"
-                HorizontalOptions="Center" />
+            <Grid
+                HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="50"/>
+                    <RowDefinition  Height="50"/>
+                    <RowDefinition  Height="50"/>
+                    <RowDefinition  Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
 
-            <Button
-                x:Name="UpdateBtn"
-                Text="３．デバイスの登録情報アップデート"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnUpdateBtnClicked"
-                HorizontalOptions="Center" />
+                <Entry
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    x:Name="登録パス"
+                    Placeholder="/api/register"
+                    Text="{Binding ApiRegisterPath}"
+                    HorizontalOptions="Center" />
+                    
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="RegisterBtn"
+                    Text="１．デバイスの登録、アクセストークンの取得"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnRegisterBtnClicked"
+                    HorizontalOptions="Center" />
 
-            <Button
-                x:Name="TestBtm"
-                Text="４．テスト"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnLoginBtnClicked"
-                HorizontalOptions="Center" />
+                    
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    x:Name="ログインパス"
+                    Placeholder="/api/login"
+                    Text="{Binding ApiLoginPath}"
+                    HorizontalOptions="Center" />
 
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="LoginBtn"
+                    Text="２．ログイン認証"
+                    SemanticProperties.Hint="initialize your pc"
+                    Clicked="OnLoginBtnClicked"
+                    HorizontalOptions="Center" />
+
+
+                <Entry
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    x:Name="アップデートパス"
+                    Placeholder="/api/update"
+                    Text="{Binding ApiUpdatePath}"
+                    HorizontalOptions="Center" />
+                    
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="UpdateBtn"
+                    Text="３．デバイスの登録情報アップデート"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnUpdateBtnClicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    x:Name="TestBtm"
+                    Text="４．テスト"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnLoginBtnClicked"
+                    HorizontalOptions="Center" />
+
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 

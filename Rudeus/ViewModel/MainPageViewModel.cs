@@ -67,6 +67,44 @@ namespace Rudeus.ViewModel
             }
         }
 
+        public string ApiRegisterPath
+        {
+            get => RemoteAPI.ApiRegisterPath;
+            set
+            {
+                RemoteAPI.ApiRegisterPath = value;
+                OnPropertyChanged(nameof(ApiRegisterPath));
+            }
+        }
+        public string ApiUpdatePath
+        {
+            get => RemoteAPI.ApiUpdatePath;
+            set
+            {
+                RemoteAPI.ApiUpdatePath = value;
+                OnPropertyChanged(nameof(ApiUpdatePath));
+            }
+        }
+        public string ApiLoginPath
+        {
+            get => RemoteAPI.ApiLoginPath;
+            set
+            {
+                RemoteAPI.ApiLoginPath = value;
+                OnPropertyChanged(nameof(ApiLoginPath));
+            }
+        }
+
+        public string ApiEndpoint
+        {
+            get => RemoteAPI.ApiEndpoint;
+            set
+            {
+                RemoteAPI.ApiEndpoint = value;
+                OnPropertyChanged(nameof(ApiEndpoint));
+            }
+        }
+
         public string Text { get => $"DeviceName: {MyDevice?.Hostname}"; }
         public string Text2 { get => $"Username: {MyDevice?.Username}"; }
         public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
@@ -78,6 +116,11 @@ namespace Rudeus.ViewModel
 
         public MainPageViewModel()
         {
+            ApiEndpoint = RemoteAPI.ApiEndpoint;
+            ApiRegisterPath = RemoteAPI.ApiRegisterPath;
+            ApiUpdatePath = RemoteAPI.ApiUpdatePath;
+            ApiLoginPath = RemoteAPI.ApiLoginPath;
+
             ReloadDevice();
         }
 

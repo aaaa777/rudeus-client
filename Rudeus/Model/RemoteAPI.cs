@@ -90,7 +90,15 @@ namespace Rudeus.Model
             Console.WriteLine($"Request: {payload}");
 
             var request = new HttpRequestMessage(HttpMethod.Post, requestPath);
-            // using HttpResponseMessage response = sharedClient.GetAsync($"todos/1").Result;
+            HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
+
+            if(false && response.StatusCode != HttpStatusCode.OK)
+            {
+                throw new Exception($"Request failed: {response.StatusCode}");
+            }
+
+            string responseString = response.Content.ReadAsStringAsync().Result;
+
 
             var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
             return dummyResponse;
@@ -138,9 +146,9 @@ namespace Rudeus.Model
             string oneTimeToken = "testtoken";
 
             await StartSamlLoginAsync(oneTimeToken);
-            string userId2 = await ReceiveSamlLoginAsync(oneTimeToken);
+            string userId = await ReceiveSamlLoginAsync(oneTimeToken);
 
-            string userId = "test_user";
+            //string userId = "test_user";
 
             // 取得したユーザー名を送信する
             LoginRequest req = new(device.AccessToken, userId);
@@ -215,7 +223,8 @@ namespace Rudeus.Model
             HttpListenerContext context = await listener.GetContextAsync();
 
             string requestText = new System.IO.StreamReader(context.Request.InputStream, System.Text.Encoding.UTF8).ReadToEnd();
-            NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(requestText);
+            string requestQuery = context.Request.Url.Query;
+            NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(requestQuery);
             string requestToken = queryDict.Get("token");
             string requestUser = queryDict.Get("user");
 
@@ -226,7 +235,7 @@ namespace Rudeus.Model
             res.OutputStream.Write(System.Text.Encoding.UTF8.GetBytes("Auth OK!"));
             res.OutputStream.Close();
 
-            return "test_user";
+            return requestUser;
         }
     }
 }
