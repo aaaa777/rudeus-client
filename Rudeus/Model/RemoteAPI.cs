@@ -20,6 +20,9 @@ using System.Security.Cryptography.Xml;
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 
+using CommunityToolkit.Maui.Alerts;
+
+
 namespace Rudeus.Model
 {
  
@@ -90,8 +93,10 @@ namespace Rudeus.Model
             var payload = JsonSerializer.Serialize(requestStruct);
             Console.WriteLine($"Request: {payload}");
 
+            // HTTPリクエスト送信
             var request = new HttpRequestMessage(HttpMethod.Post, requestPath);
             HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
+
 
             if(false && response.StatusCode != HttpStatusCode.OK)
             {
@@ -99,6 +104,11 @@ namespace Rudeus.Model
             }
 
             string responseString = response.Content.ReadAsStringAsync().Result;
+
+            Uri requestUri = new Uri(new Uri(ApiEndpoint), requestPath);
+            string requestUrlString = requestUri.ToString();
+            string logMessage = $"リクエスト: POST {requestUrlString}\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
+            DebugBox.Load().LastText = logMessage;
 
 
             var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
@@ -146,7 +156,10 @@ namespace Rudeus.Model
             //string userId = await SamlFlow.SAMLLoginAsync();
             string oneTimeToken = "testtoken";
 
+            // ブラウザを起動→HTTPリスナを起動
             await StartSamlLoginAsync(oneTimeToken);
+
+            // HTTPリスナ待ち→userの取得→返り
             string userId = await ReceiveSamlLoginAsync(oneTimeToken);
 
             //string userId = "test_user";
@@ -217,24 +230,11 @@ namespace Rudeus.Model
 
         public static async Task<string> ReceiveSamlLoginAsync(string token = "")
         {
-            HttpListener listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:11178/");
-            listener.Start();
-            Console.WriteLine("Listening...");
-            HttpListenerContext context = await listener.GetContextAsync();
-
-            string requestText = new System.IO.StreamReader(context.Request.InputStream, System.Text.Encoding.UTF8).ReadToEnd();
-            string requestQuery = context.Request.Url.Query;
-            NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(requestQuery);
-            string requestToken = queryDict.Get("token");
-            string requestUser = queryDict.Get("user");
-
-            HttpListenerResponse res = context.Response;
-            res.StatusCode = 200;
-            res.ContentType = "text/html";
-            res.ContentEncoding = System.Text.Encoding.UTF8;
-            res.OutputStream.Write(System.Text.Encoding.UTF8.GetBytes("Auth OK!"));
-            res.OutputStream.Close();
+            // HTTPリスナを待機
+            CallbackData data = await CallbackAPI.StartServer();
+ 
+            string requestToken = data.Query.Get("token");
+            string requestUser = data.Query.Get("user");
 
             return requestUser;
         }

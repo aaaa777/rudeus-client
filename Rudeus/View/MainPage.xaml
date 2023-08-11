@@ -82,7 +82,7 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     x:Name="LoginBtn"
-                    Text="２．ログイン認証"
+                    Text="２．ログイン認証(未完成)"
                     SemanticProperties.Hint="initialize your pc"
                     Clicked="OnLoginBtnClicked"
                     HorizontalOptions="Center" />
@@ -109,12 +109,18 @@
                     Grid.Row="3"
                     Grid.Column="1"
                     x:Name="TestBtm"
-                    Text="４．テスト"
+                    Text="４．HTTPレスポンスリセット"
                     SemanticProperties.Hint="Counts the number of times you click"
-                    Clicked="OnLoginBtnClicked"
+                    Clicked="OnResetBtnClicked"
                     HorizontalOptions="Center" />
 
             </Grid>
+            <Label
+                Text="{Binding DebugBoxLastText}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="bind test"
+                FontSize="16"
+                HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
 

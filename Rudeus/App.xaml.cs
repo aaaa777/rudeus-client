@@ -1,4 +1,5 @@
-﻿using System.Collections.Specialized;
+﻿using Rudeus.Model;
+using System.Collections.Specialized;
 using System.Reflection;
 
 namespace Rudeus;
@@ -16,13 +17,14 @@ public partial class App : Application
         {
             if(Args.Length > 1)
             {
-                Uri customUri = new(Args[1]);
-                HttpClient Client = new()
-                {
-                    BaseAddress = new Uri($"http://localhost:11178"),
-                };
-                NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(customUri.Query);
-                HttpResponseMessage res = Client.GetAsync($"/?user={queryDict.Get("user")}").Result;
+                Uri exeUri = new(Args[1]);
+                //HttpClient Client = new()
+                //{
+                //    BaseAddress = new Uri($"http://localhost:11178"),
+                //};
+                NameValueCollection query = System.Web.HttpUtility.ParseQueryString(exeUri.Query);
+                //HttpResponseMessage res = Client.GetAsync($"/?user={queryDict.Get("user")}").Result;
+                CallbackAPI.SendSamlCallback(query.Get("user"), query.Get("token"));
             }
             Current.Quit();
             Environment.Exit(0);

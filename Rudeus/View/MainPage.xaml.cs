@@ -15,7 +15,6 @@ public partial class MainPage : ContentPage
 
     public HttpClient sharedClient = new HttpClient();
 
-    private Device MyDevice { get; set; } = Device.Load();
     private MainPageViewModel MainPageViewModel { get; set; }
 
 
@@ -55,6 +54,11 @@ public partial class MainPage : ContentPage
     {
         MainPageViewModel.UpdateDevice();
 	}
+
+    private void OnResetBtnClicked(object sender, EventArgs e)
+    {
+        MainPageViewModel.UpdateDebugBoxText("");
+    }
 
 }
 

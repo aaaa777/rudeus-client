@@ -105,6 +105,16 @@ namespace Rudeus.ViewModel
             }
         }
 
+        // Requestなどを表示するためのデータバインド
+        public string DebugBoxLastText
+        {
+            get => DebugBox.Load().LastText;
+            set
+            {
+                DebugBox.Load().LastText = value;
+            }
+        }
+
         public string Text { get => $"DeviceName: {MyDevice?.Hostname}"; }
         public string Text2 { get => $"Username: {MyDevice?.Username}"; }
         public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
@@ -112,6 +122,10 @@ namespace Rudeus.ViewModel
         public void ReloadDevice()
         {
             MyDevice = Model.Device.Load();
+        }
+        public void ReloadDebugBox()
+        {
+            OnPropertyChanged(nameof(DebugBoxLastText));
         }
 
         public MainPageViewModel()
@@ -128,12 +142,21 @@ namespace Rudeus.ViewModel
         {
             MyDevice.Register();
             ReloadDevice();
+            DebugBox db = DebugBox.Load();
+            ReloadDebugBox();
         }
 
         public void UpdateDevice()
         {
             MyDevice.Update();
             ReloadDevice();
+            ReloadDebugBox();
+        }
+
+        public void UpdateDebugBoxText(string text)
+        {
+            DebugBoxLastText = text;
+            ReloadDebugBox();
         }
 
         /// <summary>
@@ -146,18 +169,8 @@ namespace Rudeus.ViewModel
             await MyDevice.LoginAsync();
 
             ReloadDevice();
+            ReloadDebugBox();
             return true;
-        }
-
-        public async void OpenBrowser()
-        {
-
-            // await Browser.Default.OpenAsync(Model.Device.LoginUri);
-            // await RemoteAPI.StartSamlLoginAsync();
-
-            await RemoteAPI.StartSamlLoginAsync("");
-            // await MyDevice.LoginAsync();
-            MyDevice = Model.Device.Load();
         }
 
 
