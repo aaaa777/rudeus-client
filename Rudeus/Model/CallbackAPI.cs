@@ -13,11 +13,36 @@ namespace Rudeus.Model
     /// </summary>
     internal class CallbackAPI
     {
+        private static HttpClient _samlClient = new();
+        private static HttpClient SamlClient
+        {
+            get
+            {
+                if (_samlClient.ToString() != SamlEndpoint)
+                {
+                    _samlClient = new()
+                    {
+                        BaseAddress = new Uri(SamlEndpoint),
+                    };
+
+                }
+                return _samlClient;
+            }
+        }
+        public static string SamlEndpoint { get; set; } = "http://win.nomiss.net/";
+
+        public static string SamlLoginPath = "/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login";
+
+
         public static readonly string CallbackPort = "11178";
         /// <summary>
         /// 簡易mutex
         /// </summary>
         private static bool mutex = false;
+
+        /// <summary>
+        /// コールバックリスナ
+        /// </summary>
         public static HttpListener CallbackListener
         { 
             get => CallbackListener;
@@ -27,6 +52,7 @@ namespace Rudeus.Model
                 CallbackListener = value;
             }
         }
+
         /// <summary>
         /// コールバックを叩く用のクライアント
         /// </summary>
@@ -105,8 +131,8 @@ namespace Rudeus.Model
         /// <returns></returns>
         public static bool SendCallback(Uri targetUri)
         {
-            NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(targetUri.Query);
-            HttpResponseMessage res = SharedClient.GetAsync($"/?user={queryDict.Get("user")}").Result;
+            // NameValueCollection queryDict = System.Web.HttpUtility.ParseQueryString(targetUri.Query);
+            HttpResponseMessage res = SharedClient.GetAsync(targetUri).Result;
 
             return res.StatusCode == HttpStatusCode.OK;
         }

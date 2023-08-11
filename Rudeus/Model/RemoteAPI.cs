@@ -51,69 +51,64 @@ namespace Rudeus.Model
             BaseAddress = new Uri("https://jsonplaceholder.typicode.com"),
         };
 
-        private static readonly HttpClient ApiClient = new()
+        private static HttpClient _apiClient = new();
+        private static HttpClient ApiClient
         {
-            BaseAddress = new Uri("http://win.nomiss.net"),
-        };
-
-        private static readonly HttpClient SamlClient = new()
-        {
-            BaseAddress = new Uri("http://win.nomiss.net"),
-        };
-
-
-        public static string ApiEndpoint
-        {
-            get => ApiClient.BaseAddress.ToString();
-            set
+            get
             {
-                ApiClient.BaseAddress = new Uri(value);
+                if (_apiClient.ToString() != ApiEndpoint)
+                {
+                    _apiClient = new()
+                    {
+                        BaseAddress = new Uri(ApiEndpoint),
+                    };
+
+                }
+                return _apiClient;
             }
         }
 
-        public static string SamlEndpoint
-        {
-            get => SamlClient.BaseAddress.ToString();
-            set
-            {
-                SamlClient.BaseAddress = new Uri(value);
-            }
-        }
+
+
+        public static string ApiEndpoint { get; set; } = "http://win.nomiss.net/";
+
 
         public static string ApiRegisterPath = "/api/register";
         public static string ApiUpdatePath = "/api/update";
         public static string ApiLoginPath = "/api/login";
-
-        public static string SamlLoginPath = "/api/test/login";
         
         public static string AppCallbackUri = "io.identitymodel.native://callback/?user=s2112";
 
-        private static string Request(string accessToken, string requestPath, BaseRequest requestStruct)
+        private static string Request(string accessToken, string requestPath, string payload)
         {
-            var payload = JsonSerializer.Serialize(requestStruct);
             Console.WriteLine($"Request: {payload}");
 
             // HTTPリクエスト送信
             var request = new HttpRequestMessage(HttpMethod.Post, requestPath);
+
+            // ToDo: サーバサイドエラーの例外処理
             HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
 
 
+            // APIリクエスト失敗時の例外だが、無効化してある
             if(false && response.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception($"Request failed: {response.StatusCode}");
             }
 
+            // レスポンスボディを取得
             string responseString = response.Content.ReadAsStringAsync().Result;
 
+            // DebugBoxのデータバインドを通してウィンドウに表示させる
             Uri requestUri = new Uri(new Uri(ApiEndpoint), requestPath);
             string requestUrlString = requestUri.ToString();
             string logMessage = $"リクエスト: POST {requestUrlString}\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
             DebugBox.Load().LastText = logMessage;
 
 
+            // レスポンス内容にかかわらずJSONのStringを返す
             var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
             return dummyResponse;
-            // return response.Content.ReadAsStringAsync().Result;
         }
 
 
@@ -126,7 +121,8 @@ namespace Rudeus.Model
         public static RegisterResponse RegisterDevice(Device device)
         {
             RegisterRequest req = new(device.DeviceId, device.Hostname);
-            var response = Request("", ApiRegisterPath, req);
+            var payload = JsonSerializer.Serialize(req);
+            var response = Request("", ApiRegisterPath, payload);
             RegisterResponse res = JsonSerializer.Deserialize<RegisterResponse>(response);
             return res;
         }
@@ -138,22 +134,22 @@ namespace Rudeus.Model
         public static UpdateResponse UpdateDevice(Device device)
         {
             UpdateRequest req = new(device.AccessToken, device.Username);
-            var response = Request(device.AccessToken, ApiUpdatePath, req);
+            var payload = JsonSerializer.Serialize(req);
+            var response = Request(device.AccessToken, ApiRegisterPath, payload);
             return JsonSerializer.Deserialize<UpdateResponse>(response);
         }
 
         /// <summary>
-        /// ログインして紐づけを行う
+        /// ログインして紐づけを行ったUserIdを取得
         /// localhostを使うのでWindowsのみ対応している
         /// </summary>
         /// 
         public static async Task<LoginResponse> LoginDevice(Device device)
         {
             // SAML認証を行う
-            // Todo：SAMLで取れたユーザー名か管理サーバで取れたユーザー名のどちらを利用する？
-            // OpenBrowser("http://www.ipentec.com");
-            // Request(device.AccessToken, "/api/saml_listener", @"{""type"": ""アサーションの送信""}");
-            //string userId = await SamlFlow.SAMLLoginAsync();
+            // 管理サーバがSPとなり、アプリにユーザ名を渡して管理サーバに戻す
+            
+            // 一時トークン
             string oneTimeToken = "testtoken";
 
             // ブラウザを起動→HTTPリスナを起動
@@ -162,13 +158,12 @@ namespace Rudeus.Model
             // HTTPリスナ待ち→userの取得→返り
             string userId = await ReceiveSamlLoginAsync(oneTimeToken);
 
-            //string userId = "test_user";
-
             // 取得したユーザー名を送信する
             LoginRequest req = new(device.AccessToken, userId);
-            //var response = Request(device.AccessToken, "/api/update", $"{{\"type\": \"update\", \"request_data\": {{ \"username\": \"{device.Username}\"}} }}");
-            var response = Request(device.AccessToken, ApiLoginPath, req);
+            var payload = JsonSerializer.Serialize(req);
+            var response = Request(device.AccessToken, ApiRegisterPath, payload);
 
+            // レスポンスをパースしUserIdを取得
             LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
             loginResponse.response_data.username = userId;
             return loginResponse;
@@ -201,7 +196,7 @@ namespace Rudeus.Model
         }
 
         /// <summary>
-        /// Windowsでは動作しない
+        /// WebAuthenticatorはWindowsでは動作しない
         /// </summary>
         /// <returns></returns>
         public static async Task<bool> SamlLoginAsync()
