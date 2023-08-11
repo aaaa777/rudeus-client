@@ -38,7 +38,7 @@
       </uap:VisualElements>
       <Extensions>
         <uap:Extension Category="windows.protocol">
-          <uap:Protocol Name="io.identitymodel.native"/>
+			<uap:Protocol Name="rudeus.client"/>
         </uap:Extension>
       </Extensions>
     </Application>
