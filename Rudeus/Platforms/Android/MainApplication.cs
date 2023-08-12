@@ -3,7 +3,10 @@ using Android.Runtime;
 
 namespace Rudeus;
 
-[Application]
+// [Application]
+[Application(
+	NetworkSecurityConfig = "@xml/network_security_config"
+)]
 public class MainApplication : MauiApplication
 {
 	public MainApplication(IntPtr handle, JniHandleOwnership ownership)
