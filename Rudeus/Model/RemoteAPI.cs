@@ -14,9 +14,6 @@ using Rudeus.Model.Response;
 using Rudeus.Model.Request;
 using System.Xml;
 
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using System.Security.Cryptography.Xml;
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 
@@ -77,7 +74,7 @@ namespace Rudeus.Model
         public static string ApiUpdatePath = "/api/update";
         public static string ApiLoginPath = "/api/login";
         
-        public static string AppCallbackUri = "io.identitymodel.native://callback/?user=s2112";
+        public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
         private static string Request(string accessToken, string requestPath, string payload)
         {
@@ -152,10 +149,10 @@ namespace Rudeus.Model
             // 一時トークン
             string oneTimeToken = "testtoken";
 
-            // ブラウザを起動→HTTPリスナを起動
+            // ブラウザを起動
             await StartSamlLoginAsync(oneTimeToken);
 
-            // HTTPリスナ待ち→userの取得→返り
+            // HTTPリスナ起動→userの取得→返り
             string userId = await ReceiveSamlLoginAsync(oneTimeToken);
 
             // 取得したユーザー名を送信する
@@ -173,7 +170,7 @@ namespace Rudeus.Model
         /// Saml SP initiated loginを開始する
         /// </summary>
         /// <returns></returns>
-        public static async Task<bool> StartSamlLoginAsync(string token)
+        public static async Task<bool> StartSamlLoginAsync(string token="")
         {
             try
             {
@@ -195,11 +192,22 @@ namespace Rudeus.Model
             return true;
         }
 
+        public static async Task<string> ReceiveSamlLoginAsync(string token="")
+        {
+            // HTTPリスナを待機
+            CallbackData data = await CallbackAPI.StartServer();
+
+            string requestToken = data.Query.Get("token");
+            string requestUser = data.Query.Get("user_id");
+
+            return requestUser;
+        }
+
         /// <summary>
         /// WebAuthenticatorはWindowsでは動作しない
         /// </summary>
         /// <returns></returns>
-        public static async Task<bool> SamlLoginAsync()
+        public static async Task<bool> SamlLoginWebAuthenticator()
         {
             try
             {
@@ -223,15 +231,5 @@ namespace Rudeus.Model
             return true;
         }
 
-        public static async Task<string> ReceiveSamlLoginAsync(string token = "")
-        {
-            // HTTPリスナを待機
-            CallbackData data = await CallbackAPI.StartServer();
- 
-            string requestToken = data.Query.Get("token");
-            string requestUser = data.Query.Get("user");
-
-            return requestUser;
-        }
     }
 }

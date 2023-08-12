@@ -139,7 +139,7 @@ namespace Rudeus.Model
         /// SAML認証を行いユーザ名を取得し更新する
         /// </summary>
         /// <returns></returns>
-        public async Task<bool> LoginAsync()
+        public async Task<string> LoginAsync()
         {
             // リモートにログイン申請する
             LoginResponse response = await RemoteAPI.LoginDevice(this);
@@ -150,7 +150,7 @@ namespace Rudeus.Model
             Console.WriteLine($"{response.status}");
 
             Username = response.response_data.username;
-            return true;
+            return Username;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

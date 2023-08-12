@@ -13,26 +13,6 @@ namespace Rudeus.Model
     /// </summary>
     internal class CallbackAPI
     {
-        private static HttpClient _samlClient = new();
-        private static HttpClient SamlClient
-        {
-            get
-            {
-                if (_samlClient.ToString() != SamlEndpoint)
-                {
-                    _samlClient = new()
-                    {
-                        BaseAddress = new Uri(SamlEndpoint),
-                    };
-
-                }
-                return _samlClient;
-            }
-        }
-        public static string SamlEndpoint { get; set; } = "http://win.nomiss.net/";
-
-        public static string SamlLoginPath = "/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login";
-
 
         public static readonly string CallbackPort = "11178";
         /// <summary>
@@ -146,7 +126,7 @@ namespace Rudeus.Model
         /// <returns></returns>
         public static bool SendSamlCallback(string userId, string token)
         {
-            Uri targetUri = new($"http://localhost:{CallbackPort}/?user={userId}&token={token}");
+            Uri targetUri = new($"http://localhost:{CallbackPort}/?user_id={userId}&token={token}");
             return SendCallback(targetUri);
         }
 
