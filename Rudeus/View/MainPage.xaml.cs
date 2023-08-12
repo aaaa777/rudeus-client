@@ -27,8 +27,7 @@ public partial class MainPage : ContentPage
     }
 
 	private void OnLoginBtnClicked(object sender, EventArgs e)
-	{
-        
+	{  
         // ViewModelのログイン処理を発火
         MainPageViewModel.LoginDeviceAsync();
         //DisplayAlert("認証中…", "ブラウザでログイン操作をしてください", "キャンセル");
@@ -36,6 +35,9 @@ public partial class MainPage : ContentPage
 
     private void OnRegisterBtnClicked(object sender, EventArgs e)
     {
+#if WINDOWS
+        Shell.Current.FlyoutIsPresented = true;
+#endif
         // ViewModelの登録処理を発火
         MainPageViewModel.RegisterDevice();
     }

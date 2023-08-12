@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="Rudeus.AppShell"
+    x:Name="ShellMain"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Rudeus"
@@ -9,6 +10,17 @@
     Shell.FlyoutBehavior="Flyout"
     >
 
+    <!--
+    <Shell.TitleView>
+        <Grid>
+            <Label 
+        Text="Rudeus Client"
+        HorizontalOptions="Start"
+        VerticalOptions="Center"
+        FontSize="Subtitle" />
+        </Grid>
+    </Shell.TitleView>
+    -->
     <FlyoutItem
         Title="APIテストページ"
         Route="APITestMenu">

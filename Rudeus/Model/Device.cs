@@ -87,12 +87,12 @@ namespace Rudeus.Model
         }
         public static readonly Uri LoginUri = new ("https://win.nomiss.net/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login");
 
-        private Device(string deviceId, string deviceName, string deviceType)
+        private Device()
         {
-            DeviceId = deviceId;
-            Hostname = deviceName;
+            //DeviceId = deviceId;
+            //Hostname = deviceName;
             // DeviceOS = "windows";
-            DeviceType = deviceType;
+            //DeviceType = deviceType;
             // AccessToken = "";
 
             // ToDo：レジストリを確認して既に登録されている場合その情報を読み込む
@@ -106,7 +106,9 @@ namespace Rudeus.Model
         {
             if (_instance == null)
             {
-                _instance = new Device("test_id", "HIU-P123", "pc");
+                Settings settings = Settings.Load();
+                _instance = new Device();
+                _instance.Username = settings.Get("DeviceUsername");
             }
             return _instance;
         }
@@ -150,6 +152,7 @@ namespace Rudeus.Model
             Console.WriteLine($"{response.status}");
 
             Username = response.response_data.username;
+            Settings.Load().Set("DeviceUsername", Username);
             return Username;
         }
 

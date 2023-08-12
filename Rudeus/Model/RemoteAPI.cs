@@ -154,6 +154,7 @@ namespace Rudeus.Model
 
             // HTTPリスナ起動→userの取得→返り
             string userId = await ReceiveSamlLoginAsync(oneTimeToken);
+            
 
             // 取得したユーザー名を送信する
             LoginRequest req = new(device.AccessToken, userId);
