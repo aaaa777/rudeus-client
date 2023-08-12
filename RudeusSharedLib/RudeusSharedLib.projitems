@@ -12,8 +12,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\NotifyOperation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\Operation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\RemoteAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Request\BaseRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Request\LoginRequest.cs" />
