@@ -132,7 +132,7 @@ namespace Rudeus.Model
         {
             UpdateRequest req = new(device.AccessToken, device.Username);
             var payload = JsonSerializer.Serialize(req);
-            var response = Request(device.AccessToken, ApiRegisterPath, payload);
+            var response = Request(device.AccessToken, ApiUpdatePath, payload);
             return JsonSerializer.Deserialize<UpdateResponse>(response);
         }
 
@@ -158,7 +158,7 @@ namespace Rudeus.Model
             // 取得したユーザー名を送信する
             LoginRequest req = new(device.AccessToken, userId);
             var payload = JsonSerializer.Serialize(req);
-            var response = Request(device.AccessToken, ApiRegisterPath, payload);
+            var response = Request(device.AccessToken, ApiLoginPath, payload);
 
             // レスポンスをパースしUserIdを取得
             LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
