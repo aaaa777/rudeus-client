@@ -82,7 +82,7 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     x:Name="LoginBtn"
-                    Text="２．ログイン認証(未完成)"
+                    Text="２．ログイン認証"
                     SemanticProperties.Hint="initialize your pc"
                     Clicked="OnLoginBtnClicked"
                     HorizontalOptions="Center" />

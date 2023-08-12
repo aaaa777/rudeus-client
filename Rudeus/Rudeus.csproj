@@ -60,4 +60,10 @@
 		<PackageReference Include="System.Security.Cryptography.Xml" Version="7.0.1" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="View\DashBoard.xaml.cs">
+	    <DependentUpon>DashBoard.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

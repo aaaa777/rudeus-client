@@ -21,7 +21,7 @@
 
     <FlyoutItem
         Title="設定"
-        Route="SubMenu">
+        Route="SubMenua">
         <ShellContent
             Title="Sub1"
             ContentTemplate="{DataTemplate local:MainPage}"

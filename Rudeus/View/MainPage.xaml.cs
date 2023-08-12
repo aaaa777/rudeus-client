@@ -7,7 +7,6 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 
-//namespace Rudeus.ViewModel;
 namespace Rudeus;
 
 public partial class MainPage : ContentPage
@@ -18,45 +17,38 @@ public partial class MainPage : ContentPage
     private MainPageViewModel MainPageViewModel { get; set; }
 
 
-    // public string Text { get => $"DeviceName: {MyDevice?.DeviceName}"; }
-    // public string Text2 { get => $"Username: {MyDevice?.Username}"; }
-    // public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
-
     public MainPage()
 	{
 		InitializeComponent();
-        // BindingContext = this;
         MainPageViewModel = new MainPageViewModel();
-        BindingContext = MainPageViewModel;
-        // Counter.Clicked += OnCounterClicked;
-        // Init.Clicked += OnInitClicked;
 
+        // Viewモデルをデータバインド
+        BindingContext = MainPageViewModel;
     }
 
 	private void OnLoginBtnClicked(object sender, EventArgs e)
 	{
-        //MainPageViewModel.OpenBrowser();
-        // テスト用
+        
+        // ViewModelのログイン処理を発火
         MainPageViewModel.LoginDeviceAsync();
-        //Model.RemoteAPI.SAMLLoginAsync();
         //DisplayAlert("認証中…", "ブラウザでログイン操作をしてください", "キャンセル");
-        
-        
     }
 
     private void OnRegisterBtnClicked(object sender, EventArgs e)
     {
-        // MyDevice.Register();
+        // ViewModelの登録処理を発火
         MainPageViewModel.RegisterDevice();
     }
 
     private void OnUpdateBtnClicked(object sender, EventArgs e)
     {
+        // ViewModelのアップデート処理を発火
         MainPageViewModel.UpdateDevice();
 	}
 
     private void OnResetBtnClicked(object sender, EventArgs e)
     {
+        // ViewModelのDebugBoxリセット処理を発火
         MainPageViewModel.UpdateDebugBoxText("");
     }
 

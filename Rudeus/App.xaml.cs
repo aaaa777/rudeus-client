@@ -17,13 +17,10 @@ public partial class App : Application
         {
             if(Args.Length > 1)
             {
+                // Todo: 引数がカスタムURIスキーム形式であるかどうかを判定する必要がある
                 Uri exeUri = new(Args[1]);
-                //HttpClient Client = new()
-                //{
-                //    BaseAddress = new Uri($"http://localhost:11178"),
-                //};
                 NameValueCollection query = System.Web.HttpUtility.ParseQueryString(exeUri.Query);
-                //HttpResponseMessage res = Client.GetAsync($"/?user={queryDict.Get("user")}").Result;
+
                 CallbackAPI.SendSamlCallback(query.Get("user_id"), query.Get("token"));
                 // 必要？
                 Task.Delay(10000);
@@ -32,6 +29,7 @@ public partial class App : Application
             Environment.Exit(0);
         }
 
+        // 変な引数構成の場合起動しない
         if (Args.Length != 1)
         {
             Current.Quit();
@@ -41,6 +39,5 @@ public partial class App : Application
         InitializeComponent();
 
 		MainPage = new AppShell();
-        // MainPage = new NavigationPage(new MainPage());
 	}
 }
