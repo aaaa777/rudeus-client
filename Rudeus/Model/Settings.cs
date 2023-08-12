@@ -12,16 +12,15 @@ namespace Rudeus.Model
     /// </summary>
     internal class Settings
     {
+#if WINDOWS
         private Microsoft.Win32.RegistryKey RegKey;
-
+#endif
         private static Settings _instanse;
         private Settings()
         {
-            this.RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
-
-            
-#if WINDOWS
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
+#if WINDOWS
+            this.RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
 #endif
         }
 
@@ -36,18 +35,23 @@ namespace Rudeus.Model
 
         public string Get(string key)
         {
+#if WINDOWS
             var value = RegKey.GetValue(key);
             if (value == null)
             {
                 return "";
             }
             return (string)value;
-            
+#else
+            return "";
+#endif
         }
 
         public void Set(string key, string value) 
         {
+#if WINDOWS
             RegKey.SetValue(key, value);
+#endif
         }
 
     }
