@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rudeus.Model.Operation
+namespace RudeusBg.Model.Operation
 {
     /// <summary>
     /// サーバから受け取った命令コードと実行クラスを対応付けるクラス
@@ -18,7 +18,7 @@ namespace Rudeus.Model.Operation
         {
             foreach (var op in Instanses)
             {
-                if(op.Equals(opcode))
+                if (op.Equals(opcode))
                 {
                     return op;
                 }
@@ -33,7 +33,7 @@ namespace Rudeus.Model.Operation
 
         public Operation()
         {
-            Operation.Instanses.Prepend(this);
+            Instanses.Prepend(this);
         }
 
     }
