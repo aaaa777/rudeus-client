@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 
-namespace Rudeus;
+namespace Rudeus.View;
 
 public partial class MainPage : ContentPage
 {

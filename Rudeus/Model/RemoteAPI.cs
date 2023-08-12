@@ -194,8 +194,12 @@ namespace Rudeus.Model
 
         public static async Task<string> ReceiveSamlLoginAsync(string token="")
         {
+            string responseText = @"
+                <!DOCTYPE html><html><head><title>Authorization Successful</title><script>window.close();</script></head><body><h1>Authorization done! Close browser</h1></body></html>
+            ";
+
             // HTTPリスナを待機
-            CallbackData data = await CallbackAPI.StartServer();
+            CallbackData data = await CallbackAPI.StartServer(responseText);
 
             string requestToken = data.Query.Get("token");
             string requestUser = data.Query.Get("user_id");

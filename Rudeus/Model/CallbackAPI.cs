@@ -51,7 +51,7 @@ namespace Rudeus.Model
         {
             if(mutex)
             {
-                throw new Exception("port already used");
+                StopServer();
             }
             mutex = true;
 

@@ -5,38 +5,48 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Rudeus"
     xmlns:view="clr-namespace:Rudeus.View"
-    FlyoutWidth="250"
+    
     Shell.FlyoutBehavior="Flyout"
     >
 
     <FlyoutItem
-        Title="ダッシュボード"
-        Route="MainMenu">
+        Title="APIテストページ"
+        Route="APITestMenu">
         <ShellContent
-            Title="Main"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            Title="APIテストページ"
+            ContentTemplate="{DataTemplate view:MainPage}"
             Route="MainPage" />
 
     </FlyoutItem>
 
     <FlyoutItem
-        Title="設定"
-        Route="SubMenua">
+        Title="ダッシュボード"
+        Route="DashBoardMenu">
         <ShellContent
-            Title="Sub1"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            Title="状態"
+            ContentTemplate="{DataTemplate view:DashBoard}"
+            Route="DashBoard" />
+
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="設定"
+        Route="SettingsMenu">
+        <ShellContent
+            Title="一般"
+            ContentTemplate="{DataTemplate view:MainPage}"
             Route="SubPage" />
 
 
         <ShellContent
             Title="Home4"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate view:MainPage}"
             Route="MainPage" />
 
 
         <ShellContent 
             Title="Home5"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate view:MainPage}"
             Route="MainPage" />
     </FlyoutItem>
     

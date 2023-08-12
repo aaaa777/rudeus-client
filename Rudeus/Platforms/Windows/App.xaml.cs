@@ -1,6 +1,9 @@
 ﻿using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
+using Rudeus.Model;
+using System.Collections.Specialized;
+using System.Reflection;
 using Windows.Graphics;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -13,13 +16,39 @@ namespace Rudeus.WinUI;
 /// </summary>
 public partial class App : MauiWinUIApplication
 {
+    private static readonly Mutex mutex = new(true, Assembly.GetEntryAssembly().GetName().Name);
 	/// <summary>
 	/// Initializes the singleton application object.  This is the first line of authored code
 	/// executed, and as such is the logical equivalent of main() or WinMain().
 	/// </summary>
 	public App()
 	{
-		this.InitializeComponent();
+        string[] Args = Environment.GetCommandLineArgs();
+
+        if (!mutex.WaitOne(TimeSpan.Zero, true))
+        {
+            if (Args.Length > 1)
+            {
+                // Todo: 引数がカスタムURIスキーム形式であるかどうかを判定する必要がある
+                Uri exeUri = new(Args[1]);
+                NameValueCollection query = System.Web.HttpUtility.ParseQueryString(exeUri.Query);
+
+                CallbackAPI.SendSamlCallback(query.Get("user_id"), query.Get("token"));
+                // 必要？
+                Task.Delay(10000);
+            }
+            // Current.Quit();
+            Environment.Exit(0);
+        }
+
+        // 変な引数構成の場合起動しない
+        if (Args.Length != 1)
+        {
+            // Current.Quit();
+            Environment.Exit(0);
+        }
+
+        this.InitializeComponent();
 
         // ウィンドウサイズの指定
 		int WindowWidth = 1024;
