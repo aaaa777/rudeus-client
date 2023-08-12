@@ -116,7 +116,7 @@ namespace Rudeus.Model
         public string Register()
         {
             // リモートに登録申請する
-            RegisterResponse response = RemoteAPI.RegisterDevice(this);
+            RegisterResponse response = RemoteAPI.RegisterDevice(this.DeviceId, this.Hostname);
             
 
             // アクセストークンの表示
@@ -129,7 +129,7 @@ namespace Rudeus.Model
         public bool Update(string deviceStorage="")
         {
             // リモートに更新申請する
-            UpdateResponse response = RemoteAPI.UpdateDevice(this);
+            UpdateResponse response = RemoteAPI.UpdateDevice(this.DeviceId, this.Hostname);
 
             // アクセストークンの表示
             Console.WriteLine($"{response.status}");
@@ -143,8 +143,30 @@ namespace Rudeus.Model
         /// <returns></returns>
         public async Task<string> LoginAsync()
         {
+
             // リモートにログイン申請する
-            LoginResponse response = await RemoteAPI.LoginDevice(this);
+            Task<LoginResponse> responseTask = RemoteAPI.LoginDevice(this.AccessToken);
+
+            // ブラウザを開く
+            try
+            {
+                BrowserLaunchOptions options = new BrowserLaunchOptions()
+                {
+                    LaunchMode = BrowserLaunchMode.SystemPreferred,
+                    TitleMode = BrowserTitleMode.Show,
+                    PreferredToolbarColor = Colors.Violet,
+                    PreferredControlColor = Colors.SandyBrown
+                };
+
+                await Browser.Default.OpenAsync(Model.Device.LoginUri, options);
+            }
+            catch (Exception ex)
+            {
+                // An unexpected error occurred. No browser may be installed on the device.
+            }
+
+            LoginResponse response = await responseTask;
+
             // SAMLから取得したユーザ名をセットする
             Username = response.response_data.username;
 

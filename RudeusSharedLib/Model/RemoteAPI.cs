@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Authentication;
 using System.Diagnostics;
-using Microsoft.Maui.Controls;
 using System.Net;
 
 using System.Text.Json;
 using Rudeus.Model.Response;
 using Rudeus.Model.Request;
-using System.Xml;
 
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 
-using CommunityToolkit.Maui.Alerts;
+
 
 
 namespace Rudeus.Model
@@ -115,9 +113,9 @@ namespace Rudeus.Model
         /// accesstokenを取得する
         /// </summary>
         /// <returns>RegisterResponse</returns>
-        public static RegisterResponse RegisterDevice(Device device)
+        public static RegisterResponse RegisterDevice(string deviceId, string hostname)
         {
-            RegisterRequest req = new(device.DeviceId, device.Hostname);
+            RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req);
             var response = Request("", ApiRegisterPath, payload);
             RegisterResponse res = JsonSerializer.Deserialize<RegisterResponse>(response);
@@ -128,11 +126,11 @@ namespace Rudeus.Model
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(Device device)
+        public static UpdateResponse UpdateDevice(string accessToken, string username)
         {
-            UpdateRequest req = new(device.AccessToken, device.Username);
+            UpdateRequest req = new(accessToken, username);
             var payload = JsonSerializer.Serialize(req);
-            var response = Request(device.AccessToken, ApiUpdatePath, payload);
+            var response = Request(accessToken, ApiUpdatePath, payload);
             return JsonSerializer.Deserialize<UpdateResponse>(response);
         }
 
@@ -141,7 +139,7 @@ namespace Rudeus.Model
         /// localhostを使うのでWindowsのみ対応している
         /// </summary>
         /// 
-        public static async Task<LoginResponse> LoginDevice(Device device)
+        public static async Task<LoginResponse> LoginDevice(string accessToken)
         {
             // SAML認証を行う
             // 管理サーバがSPとなり、アプリにユーザ名を渡して管理サーバに戻す
@@ -150,16 +148,17 @@ namespace Rudeus.Model
             string oneTimeToken = "testtoken";
 
             // ブラウザを起動
-            await StartSamlLoginAsync(oneTimeToken);
+            // RemoteAPIの管轄外になった
+            //await StartSamlLoginAsync(oneTimeToken);
 
             // HTTPリスナ起動→userの取得→返り
             string userId = await ReceiveSamlLoginAsync(oneTimeToken);
             
 
             // 取得したユーザー名を送信する
-            LoginRequest req = new(device.AccessToken, userId);
+            LoginRequest req = new(accessToken, userId);
             var payload = JsonSerializer.Serialize(req);
-            var response = Request(device.AccessToken, ApiLoginPath, payload);
+            var response = Request(accessToken, ApiLoginPath, payload);
 
             // レスポンスをパースしUserIdを取得
             LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
@@ -167,31 +166,6 @@ namespace Rudeus.Model
             return loginResponse;
         }
 
-        /// <summary>
-        /// Saml SP initiated loginを開始する
-        /// </summary>
-        /// <returns></returns>
-        public static async Task<bool> StartSamlLoginAsync(string token="")
-        {
-            try
-            {
-                BrowserLaunchOptions options = new BrowserLaunchOptions()
-                {
-                    LaunchMode = BrowserLaunchMode.SystemPreferred,
-                    TitleMode = BrowserTitleMode.Show,
-                    PreferredToolbarColor = Colors.Violet,
-                    PreferredControlColor = Colors.SandyBrown
-                };
-
-                await Browser.Default.OpenAsync(Model.Device.LoginUri, options);
-            }
-            catch (Exception ex)
-            {
-                // An unexpected error occurred. No browser may be installed on the device.
-                return false;
-            }
-            return true;
-        }
 
         public static async Task<string> ReceiveSamlLoginAsync(string token="")
         {
@@ -212,6 +186,7 @@ namespace Rudeus.Model
         /// WebAuthenticatorはWindowsでは動作しない
         /// </summary>
         /// <returns></returns>
+        /*
         public static async Task<bool> SamlLoginWebAuthenticator()
         {
             try
@@ -235,6 +210,6 @@ namespace Rudeus.Model
             }
             return true;
         }
-
+        */
     }
 }

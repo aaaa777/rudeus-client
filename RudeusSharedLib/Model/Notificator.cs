@@ -1,5 +1,5 @@
-﻿using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Core;
+﻿//using CommunityToolkit.Maui.Alerts;
+//using CommunityToolkit.Maui.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +10,7 @@ namespace Rudeus.Model
 {
     internal class Notificator
     {
+        /*
         public static async void ToastMessage(string message)
         {
             if (message == null)
@@ -27,5 +28,6 @@ namespace Rudeus.Model
 
             await toast.Show(cancellationTokenSource.Token);
         }
+        */
     }
 }

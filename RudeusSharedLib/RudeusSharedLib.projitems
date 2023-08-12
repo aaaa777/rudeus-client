@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3a757969-84e1-42b6-991a-2e871a4b706a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Rudeus</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\NotifyOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\Operation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RemoteAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\BaseRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\LoginRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\RegisterRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\UpdateRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\BaseResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\LoginResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\RegisterResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\UpdateResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Settings.cs" />
+  </ItemGroup>
+</Project>

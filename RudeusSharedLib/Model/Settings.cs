@@ -21,7 +21,7 @@ namespace Rudeus.Model
         {
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
 #if WINDOWS
-            this.RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
+            RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
 #endif
         }
 
