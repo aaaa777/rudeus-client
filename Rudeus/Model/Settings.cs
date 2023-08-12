@@ -12,8 +12,9 @@ namespace Rudeus.Model
     /// </summary>
     internal class Settings
     {
+        // ToDo: いつかシングルトンじゃなくてStaticに変更したい
 #if WINDOWS
-        private Microsoft.Win32.RegistryKey RegKey;
+        private static Microsoft.Win32.RegistryKey RegKey;
 #endif
         private static Settings _instanse;
         private Settings()
