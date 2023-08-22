@@ -78,13 +78,25 @@ namespace Rudeus.Model
         {
             Console.WriteLine($"Request: {payload}");
 
-            // HTTPリクエスト送信
-            var request = new HttpRequestMessage(HttpMethod.Post, requestPath);
+
+            // HTTPリクエスト作成
+            HttpRequestMessage request = new (HttpMethod.Post, requestPath);
+            
+            // トークンが存在する場合はヘッダーに付与
+            if(accessToken != null) 
+            {
+                request.Headers.Add("Authorization", $"Bearer {accessToken}");
+            }
+
+            // BodyにJSONをセット
+            request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
+
+            // リクエスト送信
+            // HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
+            HttpResponseMessage response = ApiClient.SendAsync(request).Result;
+
 
             // ToDo: サーバサイドエラーの例外処理
-            HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
-
-
             // APIリクエスト失敗時の例外だが、無効化してある
             if(false && response.StatusCode != HttpStatusCode.OK)
             {
@@ -95,9 +107,14 @@ namespace Rudeus.Model
             string responseString = response.Content.ReadAsStringAsync().Result;
 
             // DebugBoxのデータバインドを通してウィンドウに表示させる
-            Uri requestUri = new Uri(new Uri(ApiEndpoint), requestPath);
+            Uri requestUri = new (new Uri(ApiEndpoint), requestPath);
             string requestUrlString = requestUri.ToString();
-            string logMessage = $"リクエスト: POST {requestUrlString}\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
+            string accessTokenHeader = "";
+            if(accessToken != null)
+            {
+                accessTokenHeader = $"Authorization: Bearer {accessToken}";
+            }
+            string logMessage = $"リクエスト: POST {requestUrlString}\nリクエストヘッダ：\"{accessTokenHeader}\"\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
             DebugBox.Load().LastText = logMessage;
 
 
@@ -117,7 +134,7 @@ namespace Rudeus.Model
         {
             RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req);
-            var response = Request("", ApiRegisterPath, payload);
+            var response = Request(null, ApiRegisterPath, payload);
             RegisterResponse res = JsonSerializer.Deserialize<RegisterResponse>(response);
             return res;
         }

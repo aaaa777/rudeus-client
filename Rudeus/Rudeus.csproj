@@ -29,10 +29,14 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<DefaultLanguage>ja-jp</DefaultLanguage>
-		<!-- 
-		<WindowsPackageType>None</WindowsPackageType>
-		-->
+		
+		<!-- リリース時にExe化する設定 -->
+		<WindowsPackageType Condition=" '$(Configuration)' == 'Release' ">None</WindowsPackageType>
+		
+		<!-- .NETランタイム等の依存ライブラリを全て含める -->
 		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		
+		<!-- Androidパッケージに依存ライブラリを全て含める -->
 		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 		
 	</PropertyGroup>

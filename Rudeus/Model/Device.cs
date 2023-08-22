@@ -129,7 +129,7 @@ namespace Rudeus.Model
         public bool Update(string deviceStorage="")
         {
             // リモートに更新申請する
-            UpdateResponse response = RemoteAPI.UpdateDevice(this.DeviceId, this.Hostname);
+            UpdateResponse response = RemoteAPI.UpdateDevice(this.AccessToken, this.Hostname);
 
             // アクセストークンの表示
             Console.WriteLine($"{response.status}");
