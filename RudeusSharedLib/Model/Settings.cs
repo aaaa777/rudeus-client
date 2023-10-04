@@ -34,13 +34,13 @@ namespace Rudeus.Model
             return _instanse;
         }
 
-        public string Get(string key)
+        public string Get(string key, string defaultValue="")
         {
 #if WINDOWS
             var value = RegKey.GetValue(key);
             if (value == null)
             {
-                return "";
+                return defaultValue;
             }
             return (string)value;
 #else

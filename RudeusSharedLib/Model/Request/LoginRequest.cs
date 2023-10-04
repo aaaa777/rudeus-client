@@ -13,7 +13,7 @@ namespace Rudeus.Model.Request
 
         public LoginRequest(string accessToken, string username)
         {
-            type = "login";
+            type = "user_login";
             access_token = accessToken;
             request_data = new(username);
         }

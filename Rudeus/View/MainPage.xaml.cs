@@ -26,10 +26,10 @@ public partial class MainPage : ContentPage
         BindingContext = MainPageViewModel;
     }
 
-	private void OnLoginBtnClicked(object sender, EventArgs e)
+	private async void OnLoginBtnClicked(object sender, EventArgs e)
 	{  
         // ViewModelのログイン処理を発火
-        MainPageViewModel.LoginDeviceAsync();
+        await MainPageViewModel.LoginDeviceAsync();
         //DisplayAlert("認証中…", "ブラウザでログイン操作をしてください", "キャンセル");
     }
 

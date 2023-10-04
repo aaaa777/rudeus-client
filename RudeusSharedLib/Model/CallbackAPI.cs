@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+//using Windows.Web.Http;
 
 namespace Rudeus.Model
 {
@@ -51,7 +52,7 @@ namespace Rudeus.Model
         {
             if(mutex)
             {
-                StopServer();
+                await StopServer();
             }
             mutex = true;
 
@@ -95,9 +96,19 @@ namespace Rudeus.Model
         /// StartServer()で起動したリスナを停止する
         /// </summary>
         /// <exception cref="Exception"></exception>
-        public static void StopServer()
+        public static async Task StopServer()
         {
-            HttpResponseMessage res = SharedClient.GetAsync("/?stop_server=1").Result;
+            HttpResponseMessage res;
+            try
+            {
+                Task<HttpResponseMessage> resTask = SharedClient.GetAsync("/?stop_server=1");
+                resTask.Wait();
+                res = resTask.Result;
+            } catch (Exception ex)
+            {
+                throw new Exception("cant connect server");
+            }
+
             if(res?.StatusCode != HttpStatusCode.OK) {
                 throw new Exception("failed to stop server");
             }

@@ -10,22 +10,22 @@ namespace Rudeus.Model.Request
     {
         public RegisterRequestData request_data { get; set; }
 
-        public RegisterRequest(string deviceId, string deviceName)
+        public RegisterRequest(string deviceId, string hostname)
         {
-            type = "register";
-            request_data = new(deviceId, deviceName);
+            type = "device_initialize";
+            request_data = new(deviceId, hostname);
         }
     }
     internal class RegisterRequestData
     {
         public string device_id { get; set; }
-        public string device_name { get; set; }
+        public string hostname { get; set; }
 
 
-        public RegisterRequestData(string deviceId, string deviceName)
+        public RegisterRequestData(string deviceId, string hostname)
         {
             device_id = deviceId;
-            device_name = deviceName;
+            this.hostname = hostname;
         }
     }
 }

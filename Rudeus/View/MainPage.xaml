@@ -35,7 +35,7 @@
 
             <Entry
                 x:Name="ApiEndpoint"
-                Placeholder="http://win.nomiss.net"
+                Placeholder="https://manager.nomiss.net"
                 Text="{Binding ApiEndpoint}"
                 HorizontalOptions="Center" />
 
@@ -56,7 +56,7 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     x:Name="登録パス"
-                    Placeholder="/api/register"
+                    Placeholder="/api/device_initialize"
                     Text="{Binding ApiRegisterPath}"
                     HorizontalOptions="Center" />
                     
@@ -74,7 +74,7 @@
                     Grid.Row="1"
                     Grid.Column="0"
                     x:Name="ログインパス"
-                    Placeholder="/api/login"
+                    Placeholder="/api/user_login"
                     Text="{Binding ApiLoginPath}"
                     HorizontalOptions="Center" />
 
@@ -92,7 +92,7 @@
                     Grid.Row="2"
                     Grid.Column="0"
                     x:Name="アップデートパス"
-                    Placeholder="/api/update"
+                    Placeholder="/api/device_update"
                     Text="{Binding ApiUpdatePath}"
                     HorizontalOptions="Center" />
                     

@@ -65,13 +65,14 @@ namespace Rudeus.Model
 
 
 
-        public static string ApiEndpoint { get; set; } = "http://win.nomiss.net/";
+        public static string ApiEndpoint { get; set; } = "https://manager.nomiss.net/";
 
 
-        public static string ApiRegisterPath = "/api/register";
-        public static string ApiUpdatePath = "/api/update";
-        public static string ApiLoginPath = "/api/login";
+        public static string ApiRegisterPath = "/api/device_initialize";
+        public static string ApiUpdatePath = "/api/device_update";
+        public static string ApiLoginPath = "/api/user_login";
         
+        // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
         private static string Request(string accessToken, string requestPath, string payload)
@@ -117,6 +118,7 @@ namespace Rudeus.Model
             string logMessage = $"リクエスト: POST {requestUrlString}\nリクエストヘッダ：\"{accessTokenHeader}\"\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
             DebugBox.Load().LastText = logMessage;
 
+            return responseString;
 
             // レスポンス内容にかかわらずJSONのStringを返す
             var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
@@ -135,8 +137,13 @@ namespace Rudeus.Model
             RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req);
             var response = Request(null, ApiRegisterPath, payload);
-            RegisterResponse res = JsonSerializer.Deserialize<RegisterResponse>(response);
-            return res;
+            try
+            {
+                return JsonSerializer.Deserialize<RegisterResponse>(response);
+            } catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -148,7 +155,14 @@ namespace Rudeus.Model
             UpdateRequest req = new(accessToken, username);
             var payload = JsonSerializer.Serialize(req);
             var response = Request(accessToken, ApiUpdatePath, payload);
-            return JsonSerializer.Deserialize<UpdateResponse>(response);
+            try
+            {
+                return JsonSerializer.Deserialize<UpdateResponse>(response);
+            } catch (Exception e)
+            {
+                throw;
+            }
+            
         }
 
         /// <summary>
@@ -177,10 +191,16 @@ namespace Rudeus.Model
             var payload = JsonSerializer.Serialize(req);
             var response = Request(accessToken, ApiLoginPath, payload);
 
-            // レスポンスをパースしUserIdを取得
-            LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
-            loginResponse.response_data.username = userId;
-            return loginResponse;
+            try
+            {
+                // レスポンスをパースしUserIdを取得
+                LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
+                loginResponse.response_data.username = userId;
+                return loginResponse;
+            } catch (Exception ex)
+            {
+                throw;
+            }
         }
 
 

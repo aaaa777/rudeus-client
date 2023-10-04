@@ -115,7 +115,7 @@ namespace Rudeus.ViewModel
             }
         }
 
-        public string Text { get => $"DeviceName: {MyDevice?.Hostname}"; }
+        public string Text { get => $"Hostname: {MyDevice?.Hostname}"; }
         public string Text2 { get => $"Username: {MyDevice?.Username}"; }
         public string Text3 { get => $"AccessToken: {MyDevice?.AccessToken}"; }
 

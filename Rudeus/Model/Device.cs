@@ -85,7 +85,7 @@ namespace Rudeus.Model
                 OnPropertyChanged(nameof(Username));
             }
         }
-        public static readonly Uri LoginUri = new ("https://win.nomiss.net/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login");
+        public static readonly Uri LoginUri = new ("https://manager.nomiss.net/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login");
 
         private Device()
         {
@@ -96,8 +96,14 @@ namespace Rudeus.Model
             // AccessToken = "";
 
             // ToDo：レジストリを確認して既に登録されている場合その情報を読み込む
+            Settings settings = Settings.Load();
+            Guid g = System.Guid.NewGuid();
+            string guid = g.ToString().Substring(0, 8);
+            settings.Set("DeviceId", guid);
 
-
+            Username = settings.Get("DeviceUsername");
+            DeviceId = settings.Get("DeviceId");
+            Hostname = settings.Get("Hostname", "HIU-P12-123");
         }
 
         // シングルトン
@@ -106,17 +112,24 @@ namespace Rudeus.Model
         {
             if (_instance == null)
             {
-                Settings settings = Settings.Load();
+                //settings.Set("DeviceId", "1q2w3e4r5t6y7u");
                 _instance = new Device();
-                _instance.Username = settings.Get("DeviceUsername");
+
             }
             return _instance;
         }
 
         public string Register()
         {
-            // リモートに登録申請する
-            RegisterResponse response = RemoteAPI.RegisterDevice(this.DeviceId, this.Hostname);
+            RegisterResponse response;
+            try
+            {
+                // リモートに登録申請する
+                response = RemoteAPI.RegisterDevice(this.DeviceId, this.Hostname);
+            } catch (Exception ex)
+            {
+                return null;
+            }
             
 
             // アクセストークンの表示
@@ -128,8 +141,16 @@ namespace Rudeus.Model
 
         public bool Update(string deviceStorage="")
         {
-            // リモートに更新申請する
-            UpdateResponse response = RemoteAPI.UpdateDevice(this.AccessToken, this.Hostname);
+            UpdateResponse response;
+            try
+            {
+                // リモートに更新申請する
+                response = RemoteAPI.UpdateDevice(this.AccessToken, this.Hostname);
+            } catch (Exception ex)
+            {
+                return false;
+            }
+
 
             // アクセストークンの表示
             Console.WriteLine($"{response.status}");
