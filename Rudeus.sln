@@ -5,9 +5,11 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rudeus", "Rudeus\Rudeus.csproj", "{4BB752FC-1F72-4BAB-AFA0-A414465FEF3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBg", "RudeusBg\RudeusBg.csproj", "{2AE02423-85E4-4A7F-A0AC-54415CE03892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBg", "RudeusBg\RudeusBg.csproj", "{2AE02423-85E4-4A7F-A0AC-54415CE03892}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RudeusSharedLib", "RudeusSharedLib\RudeusSharedLib.shproj", "{3A757969-84E1-42B6-991A-2E871A4B706A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBgForm", "RudeusBgForm\RudeusBgForm.csproj", "{9756D22B-AFC9-457B-B2D1-B616CFF6B359}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{2AE02423-85E4-4A7F-A0AC-54415CE03892}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE02423-85E4-4A7F-A0AC-54415CE03892}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE02423-85E4-4A7F-A0AC-54415CE03892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9756D22B-AFC9-457B-B2D1-B616CFF6B359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9756D22B-AFC9-457B-B2D1-B616CFF6B359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9756D22B-AFC9-457B-B2D1-B616CFF6B359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9756D22B-AFC9-457B-B2D1-B616CFF6B359}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

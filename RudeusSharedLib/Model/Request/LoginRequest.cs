@@ -20,11 +20,11 @@ namespace Rudeus.Model.Request
     }
     internal class LoginRequestData
     {
-        public string username { get; set; }
+        public string user_id { get; set; }
 
         public LoginRequestData(string username)
         {
-            this.username = username;
+            this.user_id = username;
         }
     }
 }

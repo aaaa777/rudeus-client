@@ -213,7 +213,7 @@ namespace Rudeus.Model
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            string requestToken = data.Query.Get("token");
+            //string requestToken = data.Query.Get("token");
             string requestUser = data.Query.Get("user_id");
 
             return requestUser;

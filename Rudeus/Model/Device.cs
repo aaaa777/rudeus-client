@@ -85,7 +85,7 @@ namespace Rudeus.Model
                 OnPropertyChanged(nameof(Username));
             }
         }
-        public static readonly Uri LoginUri = new ("https://manager.nomiss.net/saml2/ab97ec9b-d121-4f5b-9fcc-dc858021ab77/login");
+        public static readonly Uri LoginUri = new ("https://manager.nomiss.net/saml2/27f2035d-d544-43a5-b710-c51d2786c02f/login");
 
         private Device()
         {
