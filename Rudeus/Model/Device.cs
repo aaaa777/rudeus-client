@@ -114,6 +114,7 @@ namespace Rudeus.Model
             Username = settings.Get("DeviceUsername");
             DeviceId = settings.Get("DeviceId");
             Hostname = settings.Get("Hostname");
+            AccessToken = settings.Get("AccessToken");
         }
 
         // シングルトン
@@ -146,6 +147,7 @@ namespace Rudeus.Model
             Console.WriteLine($"{response.response_data.access_token}");
 
             AccessToken = response.response_data.access_token;
+            Settings.Load().SetAccessToken( AccessToken );
             return AccessToken;
         }
 
@@ -178,7 +180,8 @@ namespace Rudeus.Model
             try
             {
                 // リモートにログイン申請する
-                Task<LoginResponse> responseTask = RemoteAPI.LoginDevice(this.AccessToken);
+                Task<string> studentIdTask = RemoteAPI.ReceiveStudentIdAsync();
+                //Task<LoginResponse> responseTask = RemoteAPI.LoginDevice(this.AccessToken);
 
                 // ブラウザを開く
                 BrowserLaunchOptions options = new BrowserLaunchOptions()
@@ -188,10 +191,17 @@ namespace Rudeus.Model
                     PreferredToolbarColor = Colors.Violet,
                     PreferredControlColor = Colors.SandyBrown
                 };
-
+                
                 await Browser.Default.OpenAsync(Model.Device.LoginUri, options);
 
-                LoginResponse response = await responseTask;
+                string studentId = await studentIdTask;
+
+                // Usernameを保存
+                Settings.Load().Set("DeviceUsername", Username);
+
+
+                // サーバーに情報送信
+                LoginResponse response = RemoteAPI.LoginDevice(this.AccessToken, studentId);
 
                 // SAMLから取得したユーザ名をセットする
                 Username = response.response_data.username;
@@ -204,8 +214,8 @@ namespace Rudeus.Model
             catch (Exception ex)
             {
                 // An unexpected error occurred. No browser may be installed on the device.
+                
             }
-            Settings.Load().Set("DeviceUsername", Username);
             return Username;
         }
 

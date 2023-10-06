@@ -172,11 +172,11 @@ namespace Rudeus.Model
         /// localhostを使うのでWindowsのみ対応している
         /// </summary>
         /// 
-        public static async Task<LoginResponse> LoginDevice(string accessToken)
+        public static async Task<string> ReceiveStudentIdAsync()
         {
             // SAML認証を行う
             // 管理サーバがSPとなり、アプリにユーザ名を渡して管理サーバに戻す
-            
+
             // 一時トークン
             string oneTimeToken = "testtoken";
 
@@ -187,11 +187,14 @@ namespace Rudeus.Model
             // HTTPリスナ起動→userの取得→返り
             string userIdBySaml = await ReceiveSamlLoginAsync(oneTimeToken);
             // mockサーバ用の設定
-            if(userIdBySaml == "jackson@example.com") {
+            if (userIdBySaml == "jackson@example.com") {
                 userIdBySaml = "s9999999@s.do-johodai.ac.jp";
             }
             string userId = Utils.ConcatStudentNumberFromMail(userIdBySaml);
-            
+            return userId;
+        }
+
+        public static LoginResponse LoginDevice(string accessToken, string userId) {
 
             // 取得したユーザー名を送信する
             LoginRequest req = new(userId);
@@ -206,7 +209,7 @@ namespace Rudeus.Model
                 return loginResponse;
             } catch (Exception ex)
             {
-                throw;
+                throw new Exception("server error");
             }
         }
 

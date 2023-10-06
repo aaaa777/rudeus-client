@@ -13,16 +13,16 @@ namespace Rudeus.Model
     internal class Settings
     {
         // ToDo: いつかシングルトンじゃなくてStaticに変更したい
-#if WINDOWS
+//#if WINDOWS
         private static Microsoft.Win32.RegistryKey RegKey;
-#endif
+//#endif
         private static Settings _instanse;
         private Settings()
         {
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
-#if WINDOWS
+//#if WINDOWS
             RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
-#endif
+//#endif
         }
 
         public static Settings Load()
@@ -36,23 +36,23 @@ namespace Rudeus.Model
 
         public string Get(string key, string defaultValue="")
         {
-#if WINDOWS
+//#if WINDOWS
             var value = RegKey.GetValue(key);
             if (value == null)
             {
                 return defaultValue;
             }
             return (string)value;
-#else
+//#else
             return "";
-#endif
+//#endif
         }
 
         public void Set(string key, string value) 
         {
-#if WINDOWS
+//#if WINDOWS
             RegKey.SetValue(key, value);
-#endif
+//#endif
         }
 
 
