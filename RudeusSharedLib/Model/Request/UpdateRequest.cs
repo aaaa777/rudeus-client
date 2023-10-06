@@ -11,10 +11,9 @@ namespace Rudeus.Model.Request
         public UpdateRequestData request_data { get; set; }
         public string access_token { get; set; }
 
-        public UpdateRequest(string access_token, string username=null, string hostname=null)
+        public UpdateRequest(string username=null, string hostname=null)
         {
             type = "device_update";
-            this.access_token = access_token;
             request_data = new(username, hostname);
         }
     }

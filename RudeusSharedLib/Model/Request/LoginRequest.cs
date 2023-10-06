@@ -9,12 +9,10 @@ namespace Rudeus.Model.Request
     internal class LoginRequest : BaseRequest
     {
         public LoginRequestData request_data { get; set; }
-        public string access_token { get; set; }
 
-        public LoginRequest(string accessToken, string username)
+        public LoginRequest(string username)
         {
             type = "user_login";
-            access_token = accessToken;
             request_data = new(username);
         }
     }

@@ -66,6 +66,7 @@ namespace Rudeus.Model
 
 
         public static string ApiEndpoint { get; set; } = "https://manager.nomiss.net/";
+        //public static string ApiEndpoint { get; set; } = "http://10.10.2.11/";
 
 
         public static string ApiRegisterPath = "/api/device_initialize";
@@ -152,7 +153,7 @@ namespace Rudeus.Model
         /// 
         public static UpdateResponse UpdateDevice(string accessToken, string hostname, string username)
         {
-            UpdateRequest req = new(accessToken, username, hostname);
+            UpdateRequest req = new(username, hostname);
             var payload = JsonSerializer.Serialize(req);
 
             var response = Request(accessToken, ApiUpdatePath, payload);
@@ -193,7 +194,7 @@ namespace Rudeus.Model
             
 
             // 取得したユーザー名を送信する
-            LoginRequest req = new(accessToken, userId);
+            LoginRequest req = new(userId);
             var payload = JsonSerializer.Serialize(req);
             var response = Request(accessToken, ApiLoginPath, payload);
 
