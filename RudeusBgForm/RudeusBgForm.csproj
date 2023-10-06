@@ -12,4 +12,6 @@
     <Folder Include="images\" />
   </ItemGroup>
 
+  <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
+
 </Project>
