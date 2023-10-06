@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\RemoteAPI.cs" />

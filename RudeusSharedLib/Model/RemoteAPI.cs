@@ -150,10 +150,11 @@ namespace Rudeus.Model
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(string accessToken, string username)
+        public static UpdateResponse UpdateDevice(string accessToken, string hostname, string username)
         {
-            UpdateRequest req = new(accessToken, username);
+            UpdateRequest req = new(accessToken, username, hostname);
             var payload = JsonSerializer.Serialize(req);
+
             var response = Request(accessToken, ApiUpdatePath, payload);
             try
             {
@@ -183,7 +184,12 @@ namespace Rudeus.Model
             //await StartSamlLoginAsync(oneTimeToken);
 
             // HTTPリスナ起動→userの取得→返り
-            string userId = await ReceiveSamlLoginAsync(oneTimeToken);
+            string userIdBySaml = await ReceiveSamlLoginAsync(oneTimeToken);
+            // mockサーバ用の設定
+            if(userIdBySaml == "jackson@example.com") {
+                userIdBySaml = "s9999999@s.do-johodai.ac.jp";
+            }
+            string userId = Utils.ConcatStudentNumberFromMail(userIdBySaml);
             
 
             // 取得したユーザー名を送信する

@@ -85,7 +85,7 @@ namespace Rudeus.Model
                 OnPropertyChanged(nameof(Username));
             }
         }
-        public static readonly Uri LoginUri = new ("https://manager.nomiss.net/saml2/27f2035d-d544-43a5-b710-c51d2786c02f/login");
+        public static readonly Uri LoginUri = new ("https://manager.nomiss.net/rudeus_login");
 
         private Device()
         {
@@ -97,13 +97,23 @@ namespace Rudeus.Model
 
             // ToDo：レジストリを確認して既に登録されている場合その情報を読み込む
             Settings settings = Settings.Load();
+
+            // 起動毎にGUIDを生成してDevideIdとしている
             Guid g = System.Guid.NewGuid();
             string guid = g.ToString().Substring(0, 8);
             settings.Set("DeviceId", guid);
 
+            // 起動毎にHostnameを生成
+            Random r1 = new Random();
+
+            string firstNumber  = r1.Next(10, 100).ToString();
+            string secondNumber = r1.Next(100, 1000).ToString();
+            string hostname = $"HIU-P{firstNumber}-{secondNumber}";
+            settings.Set("Hostname", hostname);
+
             Username = settings.Get("DeviceUsername");
             DeviceId = settings.Get("DeviceId");
-            Hostname = settings.Get("Hostname", "HIU-P12-123");
+            Hostname = settings.Get("Hostname");
         }
 
         // シングルトン
@@ -145,7 +155,7 @@ namespace Rudeus.Model
             try
             {
                 // リモートに更新申請する
-                response = RemoteAPI.UpdateDevice(this.AccessToken, this.Hostname);
+                response = RemoteAPI.UpdateDevice(this.AccessToken, this.Hostname, this.Username);
             } catch (Exception ex)
             {
                 return false;

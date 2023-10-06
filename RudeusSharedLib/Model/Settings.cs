@@ -55,5 +55,48 @@ namespace Rudeus.Model
 #endif
         }
 
+
+        public string GetAccessToken()
+        {
+            return Get("AccessToken");
+        }
+
+        public void SetAccessToken(string token)
+        {
+            Set("AccessToken", token);
+        }
+
+
+        public string GetDeviceId()
+        {
+            return Get("DeviceId");
+        }
+
+        public void SetDeviceId(string deviceId)
+        {
+            Set("DeviceId", deviceId);
+        }
+
+        
+        public string GetUsername()
+        {
+            return Get("DeviceUsername");
+        }
+
+        public void SetUsername(string username)
+        {
+            Set("DeviceUsername", username);
+        }
+
+
+        public string GetHostname()
+        {
+            return Get("DeviceHostname");
+        }
+
+        public void SetHostname(string hostname)
+        {
+            Set("DeviceHostname", hostname);
+        }
     }
 }
