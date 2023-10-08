@@ -11,6 +11,11 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RudeusSharedLib", "RudeusSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgForm", "RudeusBgForm\RudeusBgForm.csproj", "{9756D22B-AFC9-457B-B2D1-B616CFF6B359}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{3816213A-CC04-402D-AFE2-9B9466F98E8E}"
+	ProjectSection(SolutionItems) = preProject
+		InnoSetupConfig.iss = InnoSetupConfig.iss
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
