@@ -52,7 +52,7 @@ namespace Rudeus.Model
         {
             if(mutex)
             {
-                await StopServer();
+                throw new Exception("callback server already started");
             }
             mutex = true;
 
@@ -86,7 +86,10 @@ namespace Rudeus.Model
             }
             finally
             {
-                listener.Close();
+                try
+                {
+                    listener.Close();
+                } catch (Exception ex) { }
                 mutex = false;
             }
             return data;

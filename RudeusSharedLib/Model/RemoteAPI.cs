@@ -64,7 +64,7 @@ namespace Rudeus.Model
         }
 
 
-
+        public static readonly string SamlLoginUrl = "https://manager.nomiss.net/rudeus_login";
         public static string ApiEndpoint { get; set; } = "https://manager.nomiss.net/";
         //public static string ApiEndpoint { get; set; } = "http://10.10.2.11/";
 
@@ -221,7 +221,7 @@ namespace Rudeus.Model
         }
 
 
-        public static async Task<string> ReceiveSamlLoginAsync()
+        private static async Task<string> ReceiveSamlLoginAsync()
         {
             string responseText = @"
                 <!DOCTYPE html><html><head><title>Authorization Successful</title><script>window.close();</script></head><body><h1>Authorization done! Close browser</h1></body></html>

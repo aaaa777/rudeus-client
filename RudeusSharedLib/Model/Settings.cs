@@ -36,7 +36,7 @@ namespace Rudeus.Model
             return _instanse;
         }
 
-        public string Get(string key, string defaultValue="")
+        private string Get(string key, string defaultValue="")
         {
             string value = (string)RegKey.GetValue(key);
             if (value == null)
@@ -46,7 +46,7 @@ namespace Rudeus.Model
             return (string)value;
         }
 
-        public void Set(string key, string value) { RegKey.SetValue(key, value); }
+        private void Set(string key, string value) { RegKey.SetValue(key, value); }
 
         public string FirstHostnameKey = "FirstHostname";
         public string FirstHostname

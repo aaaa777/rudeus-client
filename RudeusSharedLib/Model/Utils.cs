@@ -7,6 +7,10 @@ namespace Rudeus.Model
 {
     internal class Utils
     {
+        public static readonly string WebPortalUrl = "https://portal.do-johodai.ac.jp";
+        public static readonly string Polite3Url = "https://polite3.do-johodai.ac.jp";
+        public static readonly string KyoumuUrl = "https://kyoumu.do-johodai.ac.jp";
+
         /// <summary>
         /// s9999999@s.do-johodai.ac.jp -> 9999999
         /// </summary>

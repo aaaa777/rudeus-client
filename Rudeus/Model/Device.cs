@@ -101,7 +101,7 @@ namespace Rudeus.Model
             // 起動毎にGUIDを生成してDevideIdとしている
             Guid g = System.Guid.NewGuid();
             string guid = g.ToString().Substring(0, 8);
-            settings.Set("DeviceId", guid);
+            settings.DeviceId = guid;
 
             // 起動毎にHostnameを生成
             Random r1 = new Random();
@@ -109,12 +109,12 @@ namespace Rudeus.Model
             string firstNumber  = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
             string hostname = $"HIU-P{firstNumber}-{secondNumber}";
-            settings.Set("Hostname", hostname);
+            settings.Hostname = hostname;
 
-            Username = settings.Get("DeviceUsername");
-            DeviceId = settings.Get("DeviceId");
-            Hostname = settings.Get("Hostname");
-            AccessToken = settings.Get("AccessToken");
+            Username = settings.Username;
+            DeviceId = settings.DeviceId;
+            Hostname = settings.Hostname;
+            AccessToken = settings.AccessToken;
         }
 
         // シングルトン
@@ -192,12 +192,12 @@ namespace Rudeus.Model
                     PreferredControlColor = Colors.SandyBrown
                 };
                 
-                await Browser.Default.OpenAsync(Model.Device.LoginUri, options);
+                await Browser.Default.OpenAsync(new Uri(RemoteAPI.SamlLoginUrl), options);
 
                 string studentId = await studentIdTask;
 
                 // Usernameを保存
-                Settings.Load().Set("DeviceUsername", Username);
+                Settings.Load().Username = Username;
 
 
                 // サーバーに情報送信
