@@ -209,7 +209,11 @@ namespace Rudeus.Model
             {
                 // レスポンスをパースしUserIdを取得
                 LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
-                loginResponse.response_data.username = userId;
+                //loginResponse.response_data.username = userId;
+                if (loginResponse == null)
+                {
+                    throw new Exception("server returned no data");
+                }
                 return loginResponse;
             } catch (Exception ex)
             {

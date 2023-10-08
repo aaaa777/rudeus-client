@@ -18,14 +18,14 @@ namespace RudeusBg
             {
                 BaseAddress = new Uri(endpoint)
             };
-            this.SetupDummyVal();
+            this.Register();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 PostInformation();
                 await Task.Delay(1000, stoppingToken);
             }
@@ -34,17 +34,25 @@ namespace RudeusBg
         private void PostInformation()
         {
             //string accessToken = settings.GetAccessToken();
+            Random r1 = new Random();
+            string firstNumber = r1.Next(10, 100).ToString();
+            string secondNumber = r1.Next(100, 1000).ToString();
+
             string accessToken = settings.Get("AccessToken");
             string username = settings.GetUsername();
-            string hostname = settings.GetHostname();
-            //RemoteAPI.UpdateDevice(accessToken, username);
-            _logger.LogInformation($"{accessToken}, {username}");
+            //string hostname = settings.GetHostname();
+            string hostname = $"HIU-P{firstNumber}-{secondNumber}";
+            
+            //_logger.LogInformation($"{accessToken}, {username}");
 
             UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
 
-            _logger.LogInformation($"res: {response.response_data}");
+            _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
         }
 
+        /// <summary>
+        /// deplicated
+        /// </summary>
         public void SetupDummyVal()
         {
             //settings.Set("AccessToken", "123");
@@ -55,14 +63,24 @@ namespace RudeusBg
             this.settings.SetUsername("2000111");
         }
 
-        public void SetupInitialize()
+        public void Register()
         {
             // ãNìÆñàÇ…GUIDÇê∂ê¨ÇµÇƒDevideIdÇ∆ÇµÇƒÇ¢ÇÈ
             Guid g = System.Guid.NewGuid();
             string guid8 = g.ToString().Substring(0, 8);
+            string deviceId = $"000000-{guid8}";
+            string hostname = "HIU-P12-234";
+            string username = "9999999";
 
-            RegisterResponse response = RemoteAPI.RegisterDevice($"000000-{guid8}", "HIU-P12-234");
-            RemoteAPI.LoginDevice(response.response_data.access_token, "9999999");
+            RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
+            string accessToken = response.response_data.access_token;
+
+            RemoteAPI.LoginDevice(accessToken, username);
+
+            settings.SetAccessToken(accessToken);
+            settings.SetHostname(hostname);
+            settings.SetDeviceId(deviceId);
+            settings.SetUsername(username);
         }
     }
 }
