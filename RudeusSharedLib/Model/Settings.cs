@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Win32;
 
 namespace Rudeus.Model
 {
@@ -14,14 +15,15 @@ namespace Rudeus.Model
     {
         // ToDo: いつかシングルトンじゃなくてStaticに変更したい
 //#if WINDOWS
-        private static Microsoft.Win32.RegistryKey RegKey;
+        private static RegistryKey RegKey;
 //#endif
         private static Settings _instanse;
         private Settings()
         {
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
 //#if WINDOWS
-            RegKey = Microsoft.Win32.Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
+            //RegKey = Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
+            RegKey = Registry.LocalMachine.CreateSubKey(@"Software\test\sub");
 //#endif
         }
 
@@ -97,6 +99,34 @@ namespace Rudeus.Model
         public void SetHostname(string hostname)
         {
             Set("DeviceHostname", hostname);
+        }
+
+        public string FirstHostname
+        {
+            set { Set("FirstHostname", value); }
+            get { return Get("FirstHostname"); }
+        }
+
+        public string Hostname
+        {
+            set { Set("DeviceHostname", value); }
+            get { return Get("DeviceHostname"); }
+        }
+
+        public string DeviceId
+        {
+            set { Set("DeviceId", value); }
+            get { return Get("DeviceId"); }
+        }
+        public string Username
+        {
+            set { Set("DeviceUsername", value); }
+            get { return Get("DeviceUsername"); }
+        }
+        public string AccessToken
+        {
+            set { Set("AccessToken", value); }
+            get { return Get("AccessToken"); }
         }
     }
 }

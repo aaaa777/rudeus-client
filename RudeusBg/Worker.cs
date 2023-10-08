@@ -18,6 +18,11 @@ namespace RudeusBg
             {
                 BaseAddress = new Uri(endpoint)
             };
+
+            if (IsFirstRun())
+            {
+                //
+            }
             this.Register();
         }
 
@@ -38,10 +43,11 @@ namespace RudeusBg
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
 
-            string accessToken = settings.Get("AccessToken");
+            string accessToken = settings.GetAccessToken();
             string username = settings.GetUsername();
             //string hostname = settings.GetHostname();
             string hostname = $"HIU-P{firstNumber}-{secondNumber}";
+            settings.SetHostname(hostname);
             
             //_logger.LogInformation($"{accessToken}, {username}");
 
@@ -78,9 +84,20 @@ namespace RudeusBg
             RemoteAPI.LoginDevice(accessToken, username);
 
             settings.SetAccessToken(accessToken);
+            settings.FirstHostname = hostname;
             settings.SetHostname(hostname);
             settings.SetDeviceId(deviceId);
             settings.SetUsername(username);
+        }
+
+        public bool IsFirstRun()
+        {
+            string accessToken = settings.AccessToken;
+            if(accessToken != null && accessToken != "")
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
