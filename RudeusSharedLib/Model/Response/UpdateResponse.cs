@@ -9,10 +9,16 @@ namespace Rudeus.Model.Response
     internal class UpdateResponse : BaseResponse
     {
         public UpdateResponseData response_data { get; set; }
+        public PushResponseData[] push_data { get; set; }
     }
 
     internal class UpdateResponseData
     {
         public string username { get; set; }
+    }
+
+    internal class PushResponseData
+    {
+
     }
 }

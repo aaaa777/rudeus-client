@@ -84,6 +84,10 @@ namespace Rudeus.Model
             // HTTPリクエスト作成
             HttpRequestMessage request = new (HttpMethod.Post, requestPath);
             
+            // ヘッダー付与
+            request.Headers.Add("Accept", "application/json");
+            //request.Headers.Add("Content-Type", "application/json");
+
             // トークンが存在する場合はヘッダーに付与
             if(accessToken != null) 
             {
@@ -151,9 +155,9 @@ namespace Rudeus.Model
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(string accessToken, string hostname, string username)
+        public static UpdateResponse UpdateDevice(string accessToken, string hostname, string _)
         {
-            UpdateRequest req = new(username, hostname);
+            UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req);
 
             var response = Request(accessToken, ApiUpdatePath, payload);
