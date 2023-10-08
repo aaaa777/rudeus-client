@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Management;
 
 namespace Rudeus.Model
 {
@@ -46,6 +47,41 @@ namespace Rudeus.Model
             }
 
             return true;
+        }
+
+        public static string GetPhysicalRamInfo()
+        {
+            ManagementClass mc = new ManagementClass("Win32_OperatingSystem");
+            ManagementObjectCollection moc = mc.GetInstances();
+
+            string ram = "";
+
+            foreach (ManagementObject mo in moc)
+            {
+                //合計物理メモリ
+                ram = (string)mo["TotalVisibleMemorySize"];
+
+                mo.Dispose();
+            }
+
+            moc.Dispose();
+            mc.Dispose();
+
+            return ram;
+        }
+
+        public static string[] GetStorageDeviceIdList()
+        {
+            var volumes = new ManagementClass("Win32_DiskDrive").GetInstances();
+            string[] volumeIdList = new string[volumes.Count];
+
+            int i = 0;
+            foreach (var volume in volumes)
+            {
+                volumeIdList[i] = (string)volume["SerialNumber"];
+                i++;
+            }
+            return volumeIdList;
         }
     }
 }
