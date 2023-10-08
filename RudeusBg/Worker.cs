@@ -43,17 +43,22 @@ namespace RudeusBg
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
 
-            string accessToken = settings.GetAccessToken();
-            string username = settings.GetUsername();
+            string accessToken = settings.AccessToken;
+            string username = settings.Username;
             //string hostname = settings.GetHostname();
             string hostname = $"HIU-P{firstNumber}-{secondNumber}";
-            settings.SetHostname(hostname);
-            
+            settings.Hostname = hostname;
+
             //_logger.LogInformation($"{accessToken}, {username}");
 
-            UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
+            try { 
+                UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
+                _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
+            } catch (Exception ex)
+            {
+                _logger.LogInformation("server connection failed");
+            }
 
-            _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
         }
 
         /// <summary>
@@ -63,10 +68,10 @@ namespace RudeusBg
         {
             //settings.Set("AccessToken", "123");
             //_logger.LogInformation(settings.Get("AccessToken"));
-            this.settings.SetAccessToken("112|laravel_sanctum_BCtYO6nnG7CqlKgPhk5gwTk8bEEXdqIGSfziIthAc73f957a");
-            this.settings.SetHostname("HIU-P12-643");
-            this.settings.SetDeviceId("123453212");
-            this.settings.SetUsername("2000111");
+            this.settings.AccessToken = "112|laravel_sanctum_BCtYO6nnG7CqlKgPhk5gwTk8bEEXdqIGSfziIthAc73f957a";
+            this.settings.Hostname = "HIU-P12-643";
+            this.settings.DeviceId = "123453212";
+            this.settings.Username = "2000111";
         }
 
         public void Register()
@@ -83,11 +88,11 @@ namespace RudeusBg
 
             RemoteAPI.LoginDevice(accessToken, username);
 
-            settings.SetAccessToken(accessToken);
+            settings.AccessToken = accessToken;
             settings.FirstHostname = hostname;
-            settings.SetHostname(hostname);
-            settings.SetDeviceId(deviceId);
-            settings.SetUsername(username);
+            settings.Hostname = hostname;
+            settings.DeviceId = deviceId;
+            settings.Username = username;
         }
 
         public bool IsFirstRun()

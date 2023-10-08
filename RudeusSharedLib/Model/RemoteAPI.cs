@@ -103,8 +103,7 @@ namespace Rudeus.Model
 
 
             // ToDo: サーバサイドエラーの例外処理
-            // APIリクエスト失敗時の例外だが、無効化してある
-            if(false && response.StatusCode != HttpStatusCode.OK)
+            if(response.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception($"Request failed: {response.StatusCode}");
             }
@@ -147,6 +146,7 @@ namespace Rudeus.Model
                 return JsonSerializer.Deserialize<RegisterResponse>(response);
             } catch (Exception ex)
             {
+                // JSONフォーマットが違った場合
                 throw;
             }
         }
@@ -155,7 +155,7 @@ namespace Rudeus.Model
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(string accessToken, string hostname, string _)
+        public static UpdateResponse UpdateDevice(string accessToken, string hostname="", string username="")
         {
             UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req);
@@ -166,6 +166,7 @@ namespace Rudeus.Model
                 return JsonSerializer.Deserialize<UpdateResponse>(response);
             } catch (Exception e)
             {
+                // JSONフォーマットが違った場合
                 throw;
             }
             
@@ -181,15 +182,12 @@ namespace Rudeus.Model
             // SAML認証を行う
             // 管理サーバがSPとなり、アプリにユーザ名を渡して管理サーバに戻す
 
-            // 一時トークン
-            string oneTimeToken = "testtoken";
-
             // ブラウザを起動
             // RemoteAPIの管轄外になった
             //await StartSamlLoginAsync(oneTimeToken);
 
             // HTTPリスナ起動→userの取得→返り
-            string userIdBySaml = await ReceiveSamlLoginAsync(oneTimeToken);
+            string userIdBySaml = await ReceiveSamlLoginAsync();
             // mockサーバ用の設定
             if (userIdBySaml == "jackson@example.com") {
                 userIdBySaml = "s9999999@s.do-johodai.ac.jp";
@@ -217,12 +215,13 @@ namespace Rudeus.Model
                 return loginResponse;
             } catch (Exception ex)
             {
+                // JSONフォーマットが違った場合
                 throw new Exception("server error");
             }
         }
 
 
-        public static async Task<string> ReceiveSamlLoginAsync(string token="")
+        public static async Task<string> ReceiveSamlLoginAsync()
         {
             string responseText = @"
                 <!DOCTYPE html><html><head><title>Authorization Successful</title><script>window.close();</script></head><body><h1>Authorization done! Close browser</h1></body></html>
@@ -231,8 +230,8 @@ namespace Rudeus.Model
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            //string requestToken = data.Query.Get("token");
             string requestUser = data.Query.Get("user_id");
+
 
             return requestUser;
         }

@@ -147,7 +147,7 @@ namespace Rudeus.Model
             Console.WriteLine($"{response.response_data.access_token}");
 
             AccessToken = response.response_data.access_token;
-            Settings.Load().SetAccessToken( AccessToken );
+            Settings.Load().AccessToken = AccessToken;
             return AccessToken;
         }
 

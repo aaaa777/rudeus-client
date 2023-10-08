@@ -14,17 +14,17 @@ namespace Rudeus.Model
     internal class Settings
     {
         // ToDo: いつかシングルトンじゃなくてStaticに変更したい
-//#if WINDOWS
+
         private static RegistryKey RegKey;
-//#endif
+
         private static Settings _instanse;
         private Settings()
         {
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
-//#if WINDOWS
-            //RegKey = Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
-            RegKey = Registry.LocalMachine.CreateSubKey(@"Software\test\sub");
-//#endif
+
+            RegKey = Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
+            //RegKey = Registry.LocalMachine.CreateSubKey(@"Software\test\sub");
+
         }
 
         public static Settings Load()
@@ -38,95 +38,49 @@ namespace Rudeus.Model
 
         public string Get(string key, string defaultValue="")
         {
-//#if WINDOWS
-            var value = RegKey.GetValue(key);
+            string value = (string)RegKey.GetValue(key);
             if (value == null)
             {
                 return defaultValue;
             }
             return (string)value;
-//#else
-            return "";
-//#endif
         }
 
-        public void Set(string key, string value) 
-        {
-//#if WINDOWS
-            RegKey.SetValue(key, value);
-//#endif
-        }
+        public void Set(string key, string value) { RegKey.SetValue(key, value); }
 
-
-        public string GetAccessToken()
-        {
-            return Get("AccessToken");
-        }
-
-        public void SetAccessToken(string token)
-        {
-            Set("AccessToken", token);
-        }
-
-
-        public string GetDeviceId()
-        {
-            return Get("DeviceId");
-        }
-
-        public void SetDeviceId(string deviceId)
-        {
-            Set("DeviceId", deviceId);
-        }
-
-        
-        public string GetUsername()
-        {
-            return Get("DeviceUsername");
-        }
-
-        public void SetUsername(string username)
-        {
-            Set("DeviceUsername", username);
-        }
-
-
-        public string GetHostname()
-        {
-            return Get("DeviceHostname");
-        }
-
-        public void SetHostname(string hostname)
-        {
-            Set("DeviceHostname", hostname);
-        }
-
+        public string FirstHostnameKey = "FirstHostname";
         public string FirstHostname
         {
-            set { Set("FirstHostname", value); }
-            get { return Get("FirstHostname"); }
+            set { Set(FirstHostnameKey, value); }
+            get { return Get(FirstHostnameKey); }
         }
 
+        public string HostnameKey = "DeviceHostname";
         public string Hostname
         {
-            set { Set("DeviceHostname", value); }
-            get { return Get("DeviceHostname"); }
+            set { Set(HostnameKey, value); }
+            get { return Get(HostnameKey); }
         }
 
+        public string DeviceIdKey = "DeviceId";
         public string DeviceId
         {
-            set { Set("DeviceId", value); }
-            get { return Get("DeviceId"); }
+            set { Set(DeviceIdKey, value); }
+            get { return Get(DeviceIdKey); }
         }
+
+        public string UsernameKey = "DeviceUsername";
         public string Username
         {
-            set { Set("DeviceUsername", value); }
-            get { return Get("DeviceUsername"); }
+            set { Set(UsernameKey, value); }
+            get { return Get(UsernameKey); }
         }
+
+        public string AccessTokenKey = "AccessToken";
         public string AccessToken
         {
-            set { Set("AccessToken", value); }
-            get { return Get("AccessToken"); }
+            set { Set(AccessTokenKey, value); }
+            get { return Get(AccessTokenKey); }
         }
     }
 }
