@@ -6,7 +6,8 @@
     <TargetFramework>net7.0-windows10.0.18362.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<ApplicationManifest>app.manifest</ApplicationManifest>
+	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+	<ApplicationManifest Condition="'$(Configuration)' != 'Release'">app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

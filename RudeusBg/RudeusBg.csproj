@@ -18,9 +18,5 @@
     <PackageReference Include="System.Management" Version="7.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
-
   <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
 </Project>

@@ -14,7 +14,7 @@ class Program
 
 #if (!DEBUG)
         // See https://aka.ms/new-console-template for more information
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Setting Task Scheduler");
 
         Thread.GetDomain().SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal);
         var pri = (WindowsPrincipal)Thread.CurrentPrincipal;
@@ -26,14 +26,17 @@ class Program
             {
                 WorkingDirectory = Environment.CurrentDirectory,
                 FileName = Assembly.GetEntryAssembly().Location,
-                Verb = "RunAs"
+                Verb = "RunAs",
+                UseShellExecute = true
             };
 
             if (args.Length >= 1)
                 proc.Arguments = string.Join(" ", args);
-
+            
+            Console.WriteLine("This program must be run as Administrator");
+            
             //別プロセスで本アプリを起動する
-            Process.Start(proc);
+            //Process.Start(proc);
 
             //現在プロセス終了
             return;
@@ -78,6 +81,6 @@ class Program
             td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\BackgroundService.exe", "", null));
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
-
+        Console.WriteLine("Task is set successfully");
     }
 }
