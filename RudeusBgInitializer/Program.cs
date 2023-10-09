@@ -62,10 +62,8 @@ class Program
             // Register the task in the root folder.
             // (Use the username here to ensure remote registration works.)
             ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, "SYSTEM");
-        }
-        using (TaskService ts = new TaskService(null, null, null, null))
-        {
-            // タスクトレイプロセス
+
+            // タスクトレイプロセス登録
             TaskDefinition td2 = ts.NewTask();
             td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
             td2.Triggers.Add(new LogonTrigger());
