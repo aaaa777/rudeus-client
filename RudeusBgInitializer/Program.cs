@@ -66,9 +66,17 @@ class Program
             // タスクトレイプロセス登録
             TaskDefinition td2 = ts.NewTask();
             td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
-            td2.Triggers.Add(new LogonTrigger());
+            LogonTrigger ld2 = new LogonTrigger();
+
+            // https://answers.microsoft.com/ja-jp/windows/forum/all/%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%90%E3%83%BC/5b0e3884-fcb6-467c-b11a-77d09e801295
+            ld2.Delay = TimeSpan.FromMinutes(1);
+            td2.Triggers.Add(ld2);
+
+            td2.Principal.UserId = WindowsIdentity.GetCurrent().Name;
+            td2.Principal.LogonType = TaskLogonType.InteractiveToken;
+
             td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\BackgroundService.exe", "", null));
-            ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, null);
+            ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
 
     }

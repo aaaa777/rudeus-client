@@ -10,7 +10,7 @@ UninstallDisplayIcon={autopf}\HIU\BackgroundService.exe
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:Inno Setup Examples Output  
-OutputBaseFilename=HIUSM_Installer
+OutputBaseFilename=HIU_System_Manager_Installer
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
 ; anything but x64.
 ArchitecturesAllowed=x64

@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		InnoSetupConfig.iss = InnoSetupConfig.iss
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBgInitializer", "RudeusBgInitializer\RudeusBgInitializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgInitializer", "RudeusBgInitializer\RudeusBgInitializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
