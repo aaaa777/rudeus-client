@@ -28,12 +28,16 @@ namespace RudeusBg
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            bool isOneShot = true;
+            do
             {
                 //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 PostInformation();
                 await Task.Delay(1000, stoppingToken);
             }
+            while (!isOneShot && !stoppingToken.IsCancellationRequested);
+            
+            Environment.Exit(0);
         }
 
         private void PostInformation()
