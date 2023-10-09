@@ -10,8 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\CertificateAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\AddCertOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\AddVPNOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\NotifyOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\Operation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\UpdateOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
@@ -25,5 +29,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Response\RegisterResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Response\UpdateResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\VPNAPI.cs" />
   </ItemGroup>
 </Project>
