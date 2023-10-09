@@ -61,6 +61,7 @@ namespace RudeusBg
             // set randomized hostname
             string accessToken = settings.AccessToken;
             string username = settings.Username;
+
             //string hostname = settings.GetHostname();
             string hostname = $"HIU-P{firstNumber}-{secondNumber}";
             settings.Hostname = hostname;

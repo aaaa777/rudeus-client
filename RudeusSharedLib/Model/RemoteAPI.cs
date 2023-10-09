@@ -27,24 +27,45 @@ namespace Rudeus.Model
     internal class RemoteAPI
     {
 
-        
+        private static X509Certificate2 ApiCertificate { get { return CertificateAPI.GetCertificate("manager.nomiss.net"); } }
 
         /// <summary>
         /// Todo: クライアント証明書を追加する
         /// https://stackoverflow.com/questions/40014047/add-client-certificate-to-net-core-httpclient
         /// </summary>
-        private static readonly HttpClientHandler handler = new()
+        private static HttpClientHandler CliCertHandler
         {
-            ClientCertificateOptions = ClientCertificateOption.Manual,
-            SslProtocols = SslProtocols.Tls12,
-        //    ClientCertificates = new X509CertificateCollection(),
-            ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-        };
+            get
+            {
+                return new()
+                {
+                    ClientCertificateOptions = ClientCertificateOption.Manual,
+                    SslProtocols = SslProtocols.Tls12,
+                    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+                };
+            }
+        }
 
-        private static readonly HttpClient sharedClient = new()
+
+        private static HttpClient _cliCertApiClient;
+
+        private static HttpClient CliCertApiClient
         {
-            BaseAddress = new Uri("https://jsonplaceholder.typicode.com"),
-        };
+            get
+            {
+
+                HttpClientHandler hch = CliCertHandler;
+                hch.ClientCertificates.Add(ApiCertificate);
+
+                _cliCertApiClient = new(hch)
+                {
+                    BaseAddress = new Uri(ApiEndpoint),
+                };
+
+                
+                return _cliCertApiClient;
+            }
+        }
 
         private static HttpClient _apiClient = new();
         private static HttpClient ApiClient
@@ -100,7 +121,16 @@ namespace Rudeus.Model
 
             // リクエスト送信
             // HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
-            HttpResponseMessage response = ApiClient.SendAsync(request).Result;
+            // HttpResponseMessage response = ApiClient.SendAsync(request).Result;
+            HttpResponseMessage response;
+            try
+            {
+                response = CliCertApiClient.SendAsync(request).Result;
+            }
+            catch 
+            {
+                response = ApiClient.SendAsync(request).Result;
+            }
 
 
             // ToDo: サーバサイドエラーの例外処理

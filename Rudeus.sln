@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgForm", "RudeusBgFor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{3816213A-CC04-402D-AFE2-9B9466F98E8E}"
 	ProjectSection(SolutionItems) = preProject
+		ca.crt = ca.crt
 		InnoSetupConfig.iss = InnoSetupConfig.iss
+		stu2.crt = stu2.crt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgInitializer", "RudeusBgInitializer\RudeusBgInitializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
