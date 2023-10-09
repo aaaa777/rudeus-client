@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Management;
+using Rudeus.Model.Operations;
 
 namespace Rudeus.Model
 {

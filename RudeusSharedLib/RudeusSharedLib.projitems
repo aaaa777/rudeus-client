@@ -11,11 +11,11 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\CertificateAPI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\AddCertOperation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\AddVPNOperation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\NotifyOperation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\Operation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Operation\UpdateOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddCertOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddVPNOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\NotifyOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\Operation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\UpdateOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />

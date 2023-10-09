@@ -1,5 +1,6 @@
 using Rudeus.Model;
 using Rudeus.Model.Response;
+using Rudeus.Model.Operations;
 
 namespace RudeusBg
 {
@@ -25,6 +26,8 @@ namespace RudeusBg
                 // デバイスIDを発行
                 Register();
             }
+
+            Operation.InitializeOperations();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -33,7 +36,14 @@ namespace RudeusBg
             do
             {
                 //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                PostInformation();
+                UpdateResponse res = PostInformation();
+                PushResponseData[] pdList = res.push_data;
+
+                foreach (PushResponseData pd in pdList)
+                {
+                    Operation.Run(pd.opcode);
+                }
+
                 await Task.Delay(1000, stoppingToken);
             }
             while (!isOneShot && !stoppingToken.IsCancellationRequested);
@@ -41,7 +51,7 @@ namespace RudeusBg
             Environment.Exit(0);
         }
 
-        private void PostInformation()
+        private UpdateResponse PostInformation()
         {
             //string accessToken = settings.GetAccessToken();
             Random r1 = new Random();
@@ -60,11 +70,12 @@ namespace RudeusBg
             try { 
                 UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
                 _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
+                return response;
             } catch (Exception ex)
             {
                 _logger.LogInformation("server connection failed");
             }
-
+            return null;
         }
 
         /// <summary>
@@ -109,6 +120,11 @@ namespace RudeusBg
                 return true;
             }
             return false;
+        }
+
+        private void CallOperation(string opcode)
+        {
+            Operation.Run(opcode);
         }
     }
 }

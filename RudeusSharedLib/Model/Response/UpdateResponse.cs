@@ -19,6 +19,7 @@ namespace Rudeus.Model.Response
 
     internal class PushResponseData
     {
-
+        public string opcode { get; set; }
+        public string data { get; set; }
     }
 }

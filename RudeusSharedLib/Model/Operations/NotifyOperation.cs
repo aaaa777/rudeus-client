@@ -6,16 +6,21 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusBg.Model.Operation
+namespace Rudeus.Model.Operations
 {
-    internal class UpdateOperation : Operation
+    internal class NotifyOperation
     {
         public string Opcode = "Update";
 
-        public void Start()
+        public NotifyOperation()
         {
-            //CertificateAPI;
+            new Operation(Opcode, Start);
+        }
+
+        public string Start()
+        {
             Console.WriteLine($"{Opcode} executed");
+            return null;
         }
     }
 }
