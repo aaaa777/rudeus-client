@@ -222,6 +222,11 @@ namespace Rudeus.Model
         }
 
 
+        public static bool IsAccessTokenAvailable(string accessToken)
+        {
+            return true;
+        }
+
         private static async Task<string> ReceiveSamlLoginAsync()
         {
             string responseText = @"

@@ -19,11 +19,12 @@ namespace RudeusBg
                 BaseAddress = new Uri(endpoint)
             };
 
-            if (IsFirstRun())
+            // 使用可能なアクセストークンがない場合
+            if (IsFirstRun() || RemoteAPI.IsAccessTokenAvailable(settings.AccessToken))
             {
-                //
+                // デバイスIDを発行
+                Register();
             }
-            this.Register();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -47,6 +48,7 @@ namespace RudeusBg
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
 
+            // set randomized hostname
             string accessToken = settings.AccessToken;
             string username = settings.Username;
             //string hostname = settings.GetHostname();
