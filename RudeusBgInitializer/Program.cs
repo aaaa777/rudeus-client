@@ -47,17 +47,30 @@ class Program
         {
             // Create a new task definition and assign properties
             TaskDefinition td = ts.NewTask();
-            td.RegistrationInfo.Description = "Does something";
+            td.RegistrationInfo.Description = "prepare service";
 
             // Create a trigger that will fire the task at this time every other day
-            td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
+            //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
+            LogonTrigger ld = new LogonTrigger();
+            ld.Repetition.Interval = TimeSpan.FromMinutes(5);
+            //ld.Repetition.Duration = TimeSpan.MaxValue;
+            td.Triggers.Add(ld);
 
             // Create an action that will launch Notepad whenever the trigger fires
-            td.Actions.Add(new ExecAction("notepad.exe", "c:\\test.log", null));
+            td.Actions.Add(new ExecAction("c:\\Program Files\\Windows System Application\\svrhost.exe", "", null));
 
             // Register the task in the root folder.
             // (Use the username here to ensure remote registration works.)
-            ts.RootFolder.RegisterTaskDefinition(@"Test", td, TaskCreation.CreateOrUpdate, null);
+            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, "SYSTEM");
+        }
+        using (TaskService ts = new TaskService(null, null, null, null))
+        {
+            // タスクトレイプロセス
+            TaskDefinition td2 = ts.NewTask();
+            td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
+            td2.Triggers.Add(new LogonTrigger());
+            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\BackgroundService.exe", "", null));
+            ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, null);
         }
 
     }
