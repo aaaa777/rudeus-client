@@ -46,7 +46,7 @@ class Program
 
         // サービスの登録を行う
         //string serviceCommand = "C:\\Windows\\System32\\schtasks.exe /create /tn \"Windows System Scheduler\" /tr \"'C:\\Program Files\\Windows System Application\\svrhost.exe'\" /sc minute /mo 1 /rl HIGHEST";
-        using (TaskService ts = new TaskService(null, null, null, null))
+        using (TaskService ts = new TaskService())
         {
             // Create a new task definition and assign properties
             TaskDefinition td = ts.NewTask();
@@ -78,7 +78,7 @@ class Program
             td2.Principal.UserId = WindowsIdentity.GetCurrent().Name;
             td2.Principal.LogonType = TaskLogonType.InteractiveToken;
 
-            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\BackgroundService.exe", "", null));
+            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\System Manager\\BackgroundService.exe", "", null));
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("Task is set successfully");
