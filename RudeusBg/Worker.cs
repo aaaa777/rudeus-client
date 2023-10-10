@@ -125,7 +125,7 @@ namespace RudeusBg
 
         private void CallOperation(string opcode)
         {
-            Operation.Run(opcode);
+            //Operation.Run(opcode);
         }
     }
 }

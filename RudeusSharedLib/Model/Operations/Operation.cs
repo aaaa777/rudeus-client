@@ -14,6 +14,7 @@ namespace Rudeus.Model.Operations
     {
         private string Opcode;
         private Func<string> Callback;
+        private static bool IsInitialized = false;
         public static Operation[] Instanses { get; set; } = new Operation[0];
 
         public static Operation Run(string opcode)
@@ -35,6 +36,9 @@ namespace Rudeus.Model.Operations
 
         public static void InitializeOperations()
         {
+            if(IsInitialized) { return; }
+            IsInitialized = true;
+
             new AddCertOperation();
             new AddVPNOperation();
             new NotifyOperation();
