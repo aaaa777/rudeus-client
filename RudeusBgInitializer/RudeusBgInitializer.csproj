@@ -2,13 +2,14 @@
 
   <PropertyGroup>
 	<OutputType Condition="'$(Configuration)' != 'Release'">Exe</OutputType>
-	<OutputType Condition="'$(Configuration)' == 'Release'">WinExe</OutputType>
+	<OutputType Condition="'$(Configuration)' == 'Release'">Exe</OutputType>
     <TargetFramework>net7.0-windows10.0.18362.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<!--
 	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
-	<ApplicationManifest Condition="'$(Configuration)' != 'Release'">app.manifest</ApplicationManifest>
-	<UseWindowsForms>True</UseWindowsForms>
+	-->
+	<ApplicationManifest Condition="'$(Configuration)' == 'Release'">app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

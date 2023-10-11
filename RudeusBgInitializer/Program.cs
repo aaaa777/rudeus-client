@@ -6,52 +6,29 @@ using System.Runtime;
 using System.Threading;
 using System;
 using Microsoft.Win32.TaskScheduler;
-using System.Windows.Forms;
 
 class Program
 {
     static void Main(string[] args)
     {
+        try
+        {
+            Run(args);
+        }
+        catch (Exception ex) 
+        {
+            Console.WriteLine(ex.ToString());
+        }
+        Console.ReadLine();
+    }
+    static void Run(string[] args)
+    {
 
-#if (!DEBUG)
-        // See https://aka.ms/new-console-template for more information
         Console.WriteLine("Setting Task Scheduler");
-
-        Thread.GetDomain().SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal);
-        var pri = Thread.CurrentPrincipal;
-        if (pri != null)
-        {
-            pri = (WindowsPrincipal)pri;
-
-        //管理者権限以外での起動なら、別プロセスで本アプリを起動する
-        if (!pri.IsInRole(WindowsBuiltInRole.Administrator.ToString()))
-        {
-            var proc = new ProcessStartInfo()
-            {
-                WorkingDirectory = Environment.CurrentDirectory,
-                FileName = Application.ExecutablePath,
-                Verb = "RunAs",
-                UseShellExecute = true
-            };
-
-            if (args.Length >= 1)
-                proc.Arguments = string.Join(" ", args);
-            
-            Console.WriteLine("This program must be run as Administrator");
-            
-            //別プロセスで本アプリを起動する
-            //Process.Start(proc);
-
-            //現在プロセス終了
-            return;
-
-        }
-        }
-#endif
 
         // サービスの登録を行う
         //string serviceCommand = "C:\\Windows\\System32\\schtasks.exe /create /tn \"Windows System Scheduler\" /tr \"'C:\\Program Files\\Windows System Application\\svrhost.exe'\" /sc minute /mo 1 /rl HIGHEST";
-        using (TaskService ts = new TaskService())
+        using (TaskService ts = new())
         {
             // Create a new task definition and assign properties
             TaskDefinition td = ts.NewTask();
@@ -74,9 +51,9 @@ class Program
             // タスクトレイプロセス登録
             TaskDefinition td2 = ts.NewTask();
             td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
-            LogonTrigger ld2 = new LogonTrigger();
 
             // https://answers.microsoft.com/ja-jp/windows/forum/all/%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%90%E3%83%BC/5b0e3884-fcb6-467c-b11a-77d09e801295
+            LogonTrigger ld2 = new();
             ld2.Delay = TimeSpan.FromMinutes(1);
             td2.Triggers.Add(ld2);
 
