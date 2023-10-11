@@ -20,8 +20,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgInitializer", "Rude
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgPost", "RudeusBgPost\RudeusBgPost.csproj", "{923AB694-4753-4F29-879C-EA2C33E756EB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "output", "output", "{D2FB2B93-495C-4D72-927A-55C4387910EA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,13 +82,11 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{D2FB2B93-495C-4D72-927A-55C4387910EA} = {3816213A-CC04-402D-AFE2-9B9466F98E8E}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RudeusSharedLib\RudeusSharedLib.projitems*{1b243447-c4d2-4ed9-8fb5-d2221210d357}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{2ae02423-85e4-4a7f-a0ac-54415ce03892}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{3a757969-84e1-42b6-991a-2e871a4b706a}*SharedItemsImports = 13
 		RudeusSharedLib\RudeusSharedLib.projitems*{923ab694-4753-4f29-879c-ea2c33e756eb}*SharedItemsImports = 5

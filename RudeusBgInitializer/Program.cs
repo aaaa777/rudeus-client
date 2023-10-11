@@ -6,6 +6,7 @@ using System.Runtime;
 using System.Threading;
 using System;
 using Microsoft.Win32.TaskScheduler;
+using Rudeus.Model;
 
 class Program
 {
@@ -13,7 +14,8 @@ class Program
     {
         try
         {
-            Run(args);
+            RegisterTasks(args);
+            InstallCertificate();
         }
         catch (Exception ex) 
         {
@@ -21,7 +23,7 @@ class Program
         }
         Console.ReadLine();
     }
-    static void Run(string[] args)
+    static void RegisterTasks(string[] args)
     {
 
         Console.WriteLine("Setting Task Scheduler");
@@ -48,6 +50,7 @@ class Program
             // (Use the username here to ensure remote registration works.)
             ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, "SYSTEM");
 
+
             // タスクトレイプロセス登録
             TaskDefinition td2 = ts.NewTask();
             td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
@@ -64,5 +67,19 @@ class Program
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("Task is set successfully");
+    }
+
+    public static void InstallCertificate()
+    {
+        string capath = "ca.crt";
+        string p12path = "stu2.p12";
+#if (DEBUG)
+        capath = @"C:\Users\a774n\source\repos\Rudeus\ca.crt";
+        p12path = @"C:\Users\a774n\source\repos\Rudeus\stu2.p12";
+#endif
+        CertificateAPI.InstallCertificateIntoRoot(capath);
+        CertificateAPI.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
+
+        Console.WriteLine("Certificate is installed successfully");
     }
 }

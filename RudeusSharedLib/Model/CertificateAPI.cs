@@ -7,16 +7,24 @@ namespace Rudeus.Model
 {
     internal class CertificateAPI
     {
-        static void InstallCertificateFromString(string certificate)
+        public static void InstallPkcs12IntoMy(string path, string password)
         {
-            if (string.IsNullOrEmpty(certificate))
-            {
-                throw new ArgumentNullException();
-            }
-            return;
+            X509Certificate2 cert = new(path, password);
+            X509Store store = new(StoreName.My);
+            store.Open(OpenFlags.ReadWrite);
+            store.Add(cert);
         }
 
-        static void UninstallCertificateFromString(string certificate)
+        // popup warning
+        public static void InstallCertificateIntoRoot(string path)
+        {
+            X509Certificate2 cert = new(path);
+            X509Store store = new(StoreName.Root);
+            store.Open(OpenFlags.ReadWrite);
+            store.Add(cert);
+        }
+
+        public static void UninstallCertificateFromString(string certificate)
         {
 
         }

@@ -21,16 +21,18 @@ ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
-;SignTool=signtool.exe sign /a /n $qMy Common Name$q /t http://timestamp.comodoca.com/authenticode /d $qMy Program$q $f
+;SignTool=
 
 [Dirs]
 Name: "{autopf}\Windows System Application";
 Name: "{autopf}\HIU\Service Manager";
 
 [Files]
-Source: "RudeusBgForm/bin/Release/net7.0-windows10.0.17763.0/publish/win-x64/RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: ;
-Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "InitializeService.exe"; Flags: ;                    
-Source: "RudeusBg/bin/Release/net7.0-windows10.0.18362.0/win-x64/publish/win-x64/RudeusBg.exe"; DestDir: "{autopf}/Windows System Application"; DestName: "svrhost.exe"; Flags: uninsneveruninstall restartreplace;
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: signonce;
+Source: "RudeusBg\bin\Release\net7.0-windows10.0.18362.0\win-x64\publish\win-x64\RudeusBg.exe"; DestDir: "{autopf}\Windows System Application"; DestName: "svrhost.exe"; Flags: uninsneveruninstall restartreplace;
+Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{tmp}"; DestName: "InitializeService.exe"; Flags: ;
+Source: "ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
+Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
 ;Source: "MyProg.chm"; DestDir: "{autopf}/HIU"
 ;Source: "Readme.txt"; DestDir: "{autopf}/HIU"; Flags: isreadme
 
@@ -38,4 +40,4 @@ Source: "RudeusBg/bin/Release/net7.0-windows10.0.18362.0/win-x64/publish/win-x64
 ;Name: "{group}/LaunchTT"; Filename: "{autopf}/HIU/BackGroundService.exe"
 
 [Run]
-Filename: {autopf}\HIU\Service Manager\InitializeService.exe;
+Filename: {tmp}\InitializeService.exe;
