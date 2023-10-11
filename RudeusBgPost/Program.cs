@@ -23,8 +23,6 @@ class Program
 
 
         // POSTを実行
-
-        //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
         var pdList = PostInformation();
         if (pdList == null) 
         {
@@ -33,12 +31,13 @@ class Program
 
         foreach (PushResponseData pd in pdList)
         {
-            if(pd.opcode == null)
+            if(pd.type == null)
             {
                 continue;
             }
-            Operation.Run(pd.opcode);
+            Operation.Run(pd.type);
         }
+
 
         Environment.Exit(0);
     }

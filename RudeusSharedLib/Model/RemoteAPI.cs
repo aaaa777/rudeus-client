@@ -14,9 +14,7 @@ using Rudeus.Model.Request;
 
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
-
-
-
+using System.Diagnostics.CodeAnalysis;
 
 namespace Rudeus.Model
 {
@@ -166,11 +164,11 @@ namespace Rudeus.Model
         public static RegisterResponse RegisterDevice(string deviceId, string hostname)
         {
             RegisterRequest req = new(deviceId, hostname);
-            var payload = JsonSerializer.Serialize(req);
+            var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
             var response = Request(null, ApiRegisterPath, payload);
             try
             {
-                var jsonResponse = JsonSerializer.Deserialize<RegisterResponse>(response);
+                var jsonResponse = JsonSerializer.Deserialize(response, RegisterResponseContext.Default.RegisterResponse);
                 if (jsonResponse != null) 
                 { 
                     return jsonResponse;
@@ -191,12 +189,12 @@ namespace Rudeus.Model
         public static UpdateResponse UpdateDevice(string accessToken, string hostname="", string username="")
         {
             UpdateRequest req = new(hostname);
-            var payload = JsonSerializer.Serialize(req);
+            var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
             var response = Request(accessToken, ApiUpdatePath, payload);
             try
             {
-                var jsonResponse = JsonSerializer.Deserialize<UpdateResponse>(response);
+                var jsonResponse = JsonSerializer.Deserialize(response, UpdateResponseContext.Default.UpdateResponse);
                 if (jsonResponse != null)
                 {
                     return jsonResponse;
@@ -239,13 +237,13 @@ namespace Rudeus.Model
 
             // 取得したユーザー名を送信する
             LoginRequest req = new(userId);
-            var payload = JsonSerializer.Serialize(req);
+            var payload = JsonSerializer.Serialize(req, LoginRequestContext.Default.LoginRequest);
             var response = Request(accessToken, ApiLoginPath, payload);
 
             try
             {
                 // レスポンスをパースしUserIdを取得
-                var jsonResponse = JsonSerializer.Deserialize<LoginResponse>(response);
+                var jsonResponse = JsonSerializer.Deserialize(response, LoginResponseContext.Default.LoginResponse);
                 if (jsonResponse != null)
                 {
                     return jsonResponse;

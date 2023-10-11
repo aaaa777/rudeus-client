@@ -7,4 +7,12 @@ IHost host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-host.Run();
+try
+{
+    host.Run();
+} 
+catch(Exception ex)
+{
+    Console.WriteLine(ex.ToString());
+    Console.ReadLine();
+}

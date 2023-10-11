@@ -47,11 +47,11 @@ namespace RudeusBg
 
             foreach (PushResponseData pd in pdList)
             {
-                if (pd.opcode == null)
+                if (pd.type == null)
                 {
                     continue;
                 }
-                Operation.Run(pd.opcode);
+                Operation.Run(pd.type);
             }
 
             await Task.Delay(5000, stoppingToken);
@@ -89,19 +89,6 @@ namespace RudeusBg
             return null;
         }
 
-        /// <summary>
-        /// deplicated
-        /// </summary>
-        public void SetupDummyVal()
-        {
-            //settings.Set("AccessToken", "123");
-            //_logger.LogInformation(settings.Get("AccessToken"));
-            this.settings.AccessToken = "112|laravel_sanctum_BCtYO6nnG7CqlKgPhk5gwTk8bEEXdqIGSfziIthAc73f957a";
-            this.settings.Hostname = "HIU-P12-643";
-            this.settings.DeviceId = "123453212";
-            this.settings.Username = "2000111";
-        }
-
         public void Register()
         {
             // ãNìÆñàÇ…GUIDÇê∂ê¨ÇµÇƒDevideIdÇ∆ÇµÇƒÇ¢ÇÈ
@@ -135,7 +122,7 @@ namespace RudeusBg
 
         private void CallOperation(string opcode)
         {
-            //Operation.Run(opcode);
+            //Operation.Run(type);
         }
     }
 }
