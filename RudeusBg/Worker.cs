@@ -36,7 +36,11 @@ namespace RudeusBg
             do
             {
                 //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                UpdateResponse res = PostInformation();
+                var res = PostInformation();
+                if(res == null)
+                {
+                    break;
+                }
                 PushResponseData[] pdList = res.push_data;
 
                 foreach (PushResponseData pd in pdList)
@@ -51,7 +55,7 @@ namespace RudeusBg
             Environment.Exit(0);
         }
 
-        private UpdateResponse PostInformation()
+        private UpdateResponse? PostInformation()
         {
             //string accessToken = settings.GetAccessToken();
             Random r1 = new Random();
@@ -68,11 +72,13 @@ namespace RudeusBg
 
             //_logger.LogInformation($"{accessToken}, {username}");
 
-            try { 
+            try
+            { 
                 UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
                 _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
                 return response;
-            } catch (Exception ex)
+            } 
+            catch
             {
                 _logger.LogInformation("server connection failed");
             }

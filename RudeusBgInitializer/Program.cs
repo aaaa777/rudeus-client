@@ -6,6 +6,7 @@ using System.Runtime;
 using System.Threading;
 using System;
 using Microsoft.Win32.TaskScheduler;
+using System.Windows.Forms;
 
 class Program
 {
@@ -17,15 +18,18 @@ class Program
         Console.WriteLine("Setting Task Scheduler");
 
         Thread.GetDomain().SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal);
-        var pri = (WindowsPrincipal)Thread.CurrentPrincipal;
+        var pri = Thread.CurrentPrincipal;
+        if (pri != null)
+        {
+            pri = (WindowsPrincipal)pri;
 
         //管理者権限以外での起動なら、別プロセスで本アプリを起動する
-        if (!pri.IsInRole(WindowsBuiltInRole.Administrator))
+        if (!pri.IsInRole(WindowsBuiltInRole.Administrator.ToString()))
         {
             var proc = new ProcessStartInfo()
             {
                 WorkingDirectory = Environment.CurrentDirectory,
-                FileName = Assembly.GetEntryAssembly().Location,
+                FileName = Application.ExecutablePath,
                 Verb = "RunAs",
                 UseShellExecute = true
             };
@@ -41,6 +45,7 @@ class Program
             //現在プロセス終了
             return;
 
+        }
         }
 #endif
 

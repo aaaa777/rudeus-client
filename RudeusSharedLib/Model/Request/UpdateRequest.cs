@@ -10,7 +10,7 @@ namespace Rudeus.Model.Request
     {
         public UpdateRequestData request_data { get; set; }
 
-        public UpdateRequest(string hostname=null)
+        public UpdateRequest(string? hostname=null)
         {
             type = "device_update";
             request_data = new(hostname);
@@ -18,10 +18,10 @@ namespace Rudeus.Model.Request
     }
     internal class UpdateRequestData
     {
-        public string username { get; set; }
-        public string hostname { get; set; }
+        public string? username { get; set; }
+        public string? hostname { get; set; }
 
-        public UpdateRequestData(string hostname)
+        public UpdateRequestData(string? hostname)
         {
             this.hostname = hostname;
         }

@@ -2,7 +2,6 @@ using System.Reflection;
 using System.Windows.Forms;
 using Rudeus.Model;
 using Rudeus.Model.Response;
-using System.Reflection;
 
 namespace RudeusBgForm
 {
@@ -16,14 +15,17 @@ namespace RudeusBgForm
             taskTrayIcon.MouseClick += notifyIcon1_Click;
         }
 
-        private void notifyIcon1_Click(object sender, MouseEventArgs e)
+        private void notifyIcon1_Click(object? sender, MouseEventArgs e)
         {
             // アイコンをクリックしたときにも右クリックメニューを表示する
             // https://akamist.com/blog/archives/1243
             if (e.Button == MouseButtons.Left)
             {
-                MethodInfo method = typeof(NotifyIcon).GetMethod("ShowContextMenu", BindingFlags.Instance | BindingFlags.NonPublic);
-                method.Invoke(taskTrayIcon, null);
+                var method = typeof(NotifyIcon).GetMethod("ShowContextMenu", BindingFlags.Instance | BindingFlags.NonPublic);
+                if (method != null)
+                {
+                    method.Invoke(taskTrayIcon, null);
+                }
             }
         }
 
@@ -43,7 +45,8 @@ namespace RudeusBgForm
             {
                 // 更新を確認
                 Notificate();
-            } catch (Exception ex)
+            } 
+            catch
             {
 
             }
@@ -69,7 +72,7 @@ namespace RudeusBgForm
                 LoginResponse res = RemoteAPI.LoginDevice(settings.AccessToken, userId);
                 settings.Username = userId;
             }
-            catch (Exception ex)
+            catch
             {
                 // ログインして送信に失敗
             }

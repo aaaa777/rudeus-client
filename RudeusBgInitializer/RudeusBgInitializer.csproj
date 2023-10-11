@@ -8,6 +8,7 @@
     <Nullable>enable</Nullable>
 	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 	<ApplicationManifest Condition="'$(Configuration)' != 'Release'">app.manifest</ApplicationManifest>
+	<UseWindowsForms>True</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>

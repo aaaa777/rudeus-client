@@ -18,7 +18,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\UpdateOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Updater.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\DebugBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\RemoteAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Request\BaseRequest.cs" />
