@@ -27,30 +27,34 @@ namespace RudeusBg
                 Register();
             }
 
-            Operation.InitializeOperations();
+            Operation.InitializeDefaultOperations();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            bool isOneShot = true;
-            do
+            //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+            var res = PostInformation();
+            if(res == null)
             {
-                //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                var res = PostInformation();
-                if(res == null)
-                {
-                    break;
-                }
-                PushResponseData[] pdList = res.push_data;
-
-                foreach (PushResponseData pd in pdList)
-                {
-                    Operation.Run(pd.opcode);
-                }
-
-                await Task.Delay(1000, stoppingToken);
+                Environment.Exit(0);
             }
-            while (!isOneShot && !stoppingToken.IsCancellationRequested);
+
+            var pdList = res.push_data;
+            if(pdList == null)
+            {
+                Environment.Exit(0);
+            }
+
+            foreach (PushResponseData pd in pdList)
+            {
+                if (pd.opcode == null)
+                {
+                    continue;
+                }
+                Operation.Run(pd.opcode);
+            }
+
+            await Task.Delay(5000, stoppingToken);
             
             Environment.Exit(0);
         }
@@ -108,7 +112,7 @@ namespace RudeusBg
             string username = "9999999";
 
             RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
-            string accessToken = response.response_data.access_token;
+            string accessToken = response.response_data?.access_token ?? throw new Exception("Access Token not found in response");
 
             RemoteAPI.LoginDevice(accessToken, username);
 

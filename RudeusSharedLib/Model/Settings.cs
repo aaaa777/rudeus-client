@@ -15,9 +15,9 @@ namespace Rudeus.Model
     {
         // ToDo: いつかシングルトンじゃなくてStaticに変更したい
 
-        private static RegistryKey RegKey;
+        private static RegistryKey? RegKey;
 
-        private static Settings _instanse;
+        private static Settings? _instanse;
         private Settings()
         {
             // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
@@ -38,15 +38,12 @@ namespace Rudeus.Model
 
         private string Get(string key, string defaultValue="")
         {
-            string value = (string)RegKey.GetValue(key);
-            if (value == null)
-            {
-                return defaultValue;
-            }
+            var value = RegKey?.GetValue(key) ?? new Exception();
+
             return (string)value;
         }
 
-        private void Set(string key, string value) { RegKey.SetValue(key, value); }
+        private void Set(string key, string value) { RegKey?.SetValue(key, value); }
 
         public string FirstHostnameKey = "FirstHostname";
         public string FirstHostname

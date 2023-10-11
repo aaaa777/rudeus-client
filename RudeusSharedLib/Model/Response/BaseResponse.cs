@@ -9,7 +9,7 @@ namespace Rudeus.Model.Response
     internal class BaseResponse
     {
         public string status { get; set; }
-        public BaseResponse response_data { get; set; }
+        public BaseResponse? response_data { get; set; }
 
         public BaseResponse()
         {

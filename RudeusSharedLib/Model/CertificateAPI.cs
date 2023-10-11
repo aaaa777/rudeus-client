@@ -22,7 +22,7 @@ namespace Rudeus.Model
         }
 
 
-        public static X509Certificate2 GetCertificate(string issuer) 
+        public static X509Certificate2? GetCertificate(string issuer) 
         {
             // https://qiita.com/jkomatsu/items/27e2527ac3f176854d6e
             X509Store store = new(StoreName.My, StoreLocation.CurrentUser);

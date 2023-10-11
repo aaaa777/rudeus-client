@@ -17,10 +17,10 @@ namespace Rudeus.Model.Operations
             new Operation(Opcode, Start);
         }
 
-        public string Start()
+        public bool Start()
         {
             Console.WriteLine($"{Opcode} executed");
-            return null;
+            return true;
         }
     }
 }

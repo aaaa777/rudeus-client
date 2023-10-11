@@ -12,21 +12,34 @@ namespace Rudeus.Model.Operations
     /// </summary>
     internal class Operation
     {
-        private string Opcode;
-        private Func<string> Callback;
-        private static bool IsInitialized = false;
-        public static Operation[] Instanses { get; set; } = new Operation[0];
+        private readonly string Opcode = "undefined";
+        private readonly Func<bool> Start;
+        private static bool IsInitializedDefault = false;
+        public static Operation[] Operations { get; set; } = Array.Empty<Operation>();
 
-        public static Operation Run(string opcode)
+        public Operation(string opcode, Func<bool> callback)
         {
+            Opcode = opcode;
+            Start = callback;
+
+            _ = Operations.Prepend(this);
+        }
+
+
+        public static Operation? Run(string opcode)
+        {
+            var operation = Search(opcode);
+            operation?.Start();
+            return operation;
+        }
+        public static Operation? Search(string opcode) {
             // opcodeが一致するものを検索
-            foreach (Operation op in Instanses)
+            foreach (Operation operation in Operations)
             {
-                if (op.Equals(opcode))
+                if (operation.Equals(opcode))
                 {
-                    // Callbackを呼び出して実行したOperationを返却
-                    op.Callback();
-                    return op;
+                    // Operationを返却
+                    return operation;
                 }
             }
 
@@ -34,28 +47,20 @@ namespace Rudeus.Model.Operations
             return null;
         }
 
-        public static void InitializeOperations()
+        public static void InitializeDefaultOperations()
         {
-            if(IsInitialized) { return; }
-            IsInitialized = true;
+            if(IsInitializedDefault) { return; }
+            IsInitializedDefault = true;
 
-            new AddCertOperation();
-            new AddVPNOperation();
-            new NotifyOperation();
-            new UpdateOperation();
+            _ = new AddCertOperation();
+            _ = new AddVPNOperation();
+            _ = new NotifyOperation();
+            _ = new UpdateOperation();
         }
 
         public bool Equals(string opcode)
         {
             return opcode == Opcode;
-        }
-
-        public Operation(string opcode, Func<string> callback)
-        {
-            Opcode = opcode;
-            Callback = callback;
-            
-            Instanses.Prepend(this);
         }
 
     }

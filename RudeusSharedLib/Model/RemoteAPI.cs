@@ -27,7 +27,7 @@ namespace Rudeus.Model
     internal class RemoteAPI
     {
 
-        private static X509Certificate2 ApiCertificate { get { return CertificateAPI.GetCertificate("manager.nomiss.net"); } }
+        private static X509Certificate2? ApiCertificate { get { return CertificateAPI.GetCertificate("manager.nomiss.net"); } }
 
         /// <summary>
         /// Todo: クライアント証明書を追加する
@@ -47,7 +47,7 @@ namespace Rudeus.Model
         }
 
 
-        private static HttpClient _cliCertApiClient;
+        private static HttpClient? _cliCertApiClient;
 
         private static HttpClient CliCertApiClient
         {
@@ -55,7 +55,8 @@ namespace Rudeus.Model
             {
 
                 HttpClientHandler hch = CliCertHandler;
-                hch.ClientCertificates.Add(ApiCertificate);
+                var cert = ApiCertificate ?? throw new Exception("certificate not found");
+                hch.ClientCertificates.Add(cert);
 
                 _cliCertApiClient = new(hch)
                 {
@@ -85,7 +86,7 @@ namespace Rudeus.Model
         }
 
 
-        public static readonly string SamlLoginUrl = "https://manager.nomiss.net/rudeus_login";
+        public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
         
         public static string ApiEndpoint { get; set; } = "https://manager.nomiss.net/";
         //public static string ApiEndpoint { get; set; } = "http://10.10.2.11/";
@@ -98,7 +99,7 @@ namespace Rudeus.Model
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
-        private static string Request(string accessToken, string requestPath, string payload)
+        private static string Request(string? accessToken, string requestPath, string payload)
         {
             Console.WriteLine($"Request: {payload}");
 
@@ -150,14 +151,9 @@ namespace Rudeus.Model
             {
                 accessTokenHeader = $"Authorization: Bearer {accessToken}";
             }
-            string logMessage = $"リクエスト: POST {requestUrlString}\nリクエストヘッダ：\"{accessTokenHeader}\"\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
-            DebugBox.Load().LastText = logMessage;
+            //string logMessage = $"リクエスト: POST {requestUrlString}\nリクエストヘッダ：\"{accessTokenHeader}\"\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
 
             return responseString;
-
-            // レスポンス内容にかかわらずJSONのStringを返す
-            var dummyResponse = $"{{\"status\":\"ok\",\"response_data\": {{\"access_token\": \"abcvgjsdfghdsadsa\"}}}}";
-            return dummyResponse;
         }
 
 
@@ -174,8 +170,14 @@ namespace Rudeus.Model
             var response = Request(null, ApiRegisterPath, payload);
             try
             {
-                return JsonSerializer.Deserialize<RegisterResponse>(response);
-            } catch (Exception ex)
+                var jsonResponse = JsonSerializer.Deserialize<RegisterResponse>(response);
+                if (jsonResponse != null) 
+                { 
+                    return jsonResponse;
+                }
+                throw new Exception("JSONSerializer return null");
+            }
+            catch
             {
                 // JSONフォーマットが違った場合
                 throw;
@@ -194,8 +196,14 @@ namespace Rudeus.Model
             var response = Request(accessToken, ApiUpdatePath, payload);
             try
             {
-                return JsonSerializer.Deserialize<UpdateResponse>(response);
-            } catch (Exception e)
+                var jsonResponse = JsonSerializer.Deserialize<UpdateResponse>(response);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new Exception("JSONSerializer return null");
+            } 
+            catch
             {
                 // JSONフォーマットが違った場合
                 throw;
@@ -237,14 +245,14 @@ namespace Rudeus.Model
             try
             {
                 // レスポンスをパースしUserIdを取得
-                LoginResponse loginResponse = JsonSerializer.Deserialize<LoginResponse>(response);
-                //loginResponse.response_data.username = userId;
-                if (loginResponse == null)
+                var jsonResponse = JsonSerializer.Deserialize<LoginResponse>(response);
+                if (jsonResponse != null)
                 {
-                    throw new Exception("server returned no data");
+                    return jsonResponse;
                 }
-                return loginResponse;
-            } catch (Exception ex)
+                throw new Exception("JSONSerializer return null");
+            }
+            catch
             {
                 // JSONフォーマットが違った場合
                 throw new Exception("server error");
@@ -266,7 +274,7 @@ namespace Rudeus.Model
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            string requestUser = data.Query.Get("user_id");
+            string requestUser = data.Query?.Get("user_id") ?? throw new Exception("invaild request received");
 
 
             return requestUser;

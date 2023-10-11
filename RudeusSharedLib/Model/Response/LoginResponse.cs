@@ -8,11 +8,11 @@ namespace Rudeus.Model.Response
 {
     internal class LoginResponse : BaseResponse
     {
-        public LoginResponseData response_data { get; set; }
+        public LoginResponseData? response_data { get; set; }
     }
 
     internal class LoginResponseData
     {
-        public string username { get; set; }
+        public string? username { get; set; }
     }
 }

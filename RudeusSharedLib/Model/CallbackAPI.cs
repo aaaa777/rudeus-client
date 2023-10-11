@@ -42,6 +42,18 @@ namespace Rudeus.Model
             BaseAddress = new Uri($"http://localhost:{CallbackPort}")
         };
 
+        public static HttpListener? CreateListener() 
+        {
+            try
+            {
+                return new HttpListener();
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         /// <summary>
         /// イベントリスナをスタートする
         /// </summary>
@@ -57,22 +69,27 @@ namespace Rudeus.Model
             mutex = true;
 
             CallbackData data = new();
-            HttpListener listener = new();
+            HttpListener? listener = CreateListener();
             try
             {
+                if(listener == null)
+                {
+                    throw new Exception("Listener couldn't started");
+                }
                 listener.Prefixes.Add($"http://localhost:{CallbackPort}/");
                 listener.Start();
 
                 HttpListenerContext context = await listener.GetContextAsync();
 
-                data.RequestText = new System.IO.StreamReader(context.Request.InputStream, System.Text.Encoding.UTF8).ReadToEnd();
-                data.Query = System.Web.HttpUtility.ParseQueryString(context.Request.Url.Query);
+                data.RequestText = new StreamReader(context.Request.InputStream, Encoding.UTF8).ReadToEnd();
+                var url = context.Request.Url ?? throw new Exception("request url doesnt exist");
+                data.Query = System.Web.HttpUtility.ParseQueryString(url.Query);
 
                 HttpListenerResponse res = context.Response;
                 res.StatusCode = 200;
                 res.ContentType = "text/html";
-                res.ContentEncoding = System.Text.Encoding.UTF8;
-                res.OutputStream.Write(System.Text.Encoding.UTF8.GetBytes(responseMessage));
+                res.ContentEncoding = Encoding.UTF8;
+                res.OutputStream.Write(Encoding.UTF8.GetBytes(responseMessage));
                 res.OutputStream.Close();
 
                 if(data.Query.Get("stop_server") == "1") 
@@ -80,17 +97,15 @@ namespace Rudeus.Model
                     throw new Exception("callback listener stopped");
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 throw;
             }
             finally
             {
-                try
-                {
-                    listener.Close();
-                } catch (Exception ex) { }
-                mutex = false;
+                try { listener?.Close(); }
+                catch { }
+                finally { mutex = false; }
             }
             return data;
         }
@@ -99,7 +114,7 @@ namespace Rudeus.Model
         /// StartServer()で起動したリスナを停止する
         /// </summary>
         /// <exception cref="Exception"></exception>
-        public static async Task StopServer()
+        public static void StopServer()
         {
             HttpResponseMessage res;
             try
@@ -107,7 +122,8 @@ namespace Rudeus.Model
                 Task<HttpResponseMessage> resTask = SharedClient.GetAsync("/?stop_server=1");
                 resTask.Wait();
                 res = resTask.Result;
-            } catch (Exception ex)
+            }
+            catch
             {
                 throw new Exception("cant connect server");
             }
@@ -148,7 +164,7 @@ namespace Rudeus.Model
     
     internal class CallbackData
     {
-        public NameValueCollection Query { get; set; }
-        public string RequestText { get; set; }
+        public NameValueCollection? Query { get; set; }
+        public string? RequestText { get; set; }
     }
 }

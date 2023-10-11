@@ -5,13 +5,13 @@ using Rudeus.Model.Operations;
 
 class Program
 {
-    private static Settings settings;
+    private static Settings settings = Settings.Load();
 
     static void Main(string[] args)
     {
         // 初期化
         settings = Settings.Load();
-        Operation.InitializeOperations();
+        Operation.InitializeDefaultOperations();
 
 
         // 使用可能なアクセストークンがない場合
@@ -23,25 +23,27 @@ class Program
 
 
         // POSTを実行
-        bool isOneShot = true;
-        do
+
+        //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+        var pdList = PostInformation();
+        if (pdList == null) 
         {
-            //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            UpdateResponse res = PostInformation();
-            PushResponseData[] pdList = res.push_data;
-
-            foreach (PushResponseData pd in pdList)
-            {
-                Operation.Run(pd.opcode);
-            }
-
+            Environment.Exit(0);
         }
-        while (!isOneShot);
+
+        foreach (PushResponseData pd in pdList)
+        {
+            if(pd.opcode == null)
+            {
+                continue;
+            }
+            Operation.Run(pd.opcode);
+        }
 
         Environment.Exit(0);
     }
 
-    private static UpdateResponse PostInformation()
+    private static PushResponseData[]? PostInformation()
     {
         //string accessToken = settings.GetAccessToken();
         Random r1 = new Random();
@@ -62,9 +64,9 @@ class Program
         {
             UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
             Console.WriteLine($"req: changing hostname into `{hostname}` => res: {response.status}");
-            return response;
+            return response.push_data;
         }
-        catch (Exception ex)
+        catch
         {
             Console.WriteLine("server connection failed");
         }
@@ -81,7 +83,7 @@ class Program
         string username = "9999999";
 
         RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
-        string accessToken = response.response_data.access_token;
+        string accessToken = response?.response_data?.access_token ?? throw new Exception("Server doesnt return AccessToken"); // RemoteAPI側でバリデートすべきだった？
 
         RemoteAPI.LoginDevice(accessToken, username);
 
