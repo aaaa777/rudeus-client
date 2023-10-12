@@ -6,7 +6,7 @@ AppVersion=0.1.1
 WizardStyle=modern
 DefaultDirName={autopf}\HIU
 DefaultGroupName=HIU
-UninstallDisplayIcon={autopf}\HIU\BackgroundService.exe
+UninstallDisplayIcon={autopf}\HIU\BackGroundService.exe
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:Inno Setup Examples Output  
@@ -21,15 +21,15 @@ ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
-;SignTool=
+SignTool=signcmdtmpkey
 
 [Dirs]
 Name: "{autopf}\Windows System Application";
 Name: "{autopf}\HIU\Service Manager";
 
 [Files]
-Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: signonce;
-Source: "RudeusBg\bin\Release\net7.0-windows10.0.18362.0\win-x64\publish\win-x64\RudeusBg.exe"; DestDir: "{autopf}\Windows System Application"; DestName: "svrhost.exe"; Flags: uninsneveruninstall restartreplace;
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: sign restartreplace;
+Source: "RudeusBg\bin\Release\net7.0-windows10.0.18362.0\win-x64\publish\win-x64\RudeusBg.exe"; DestDir: "{autopf}\Windows System Application"; DestName: "svrhost.exe"; Flags: sign uninsneveruninstall;
 Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{tmp}"; DestName: "InitializeService.exe"; Flags: ;
 Source: "ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
 Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";

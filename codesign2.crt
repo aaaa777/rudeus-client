@@ -1,0 +1,88 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=JP, CN=manager.nomiss.net, ST=Hokkaido, L=Ebetsu, O=HIU, OU=Lab124 TeamC
+        Validity
+            Not Before: Oct 12 01:46:48 2023 GMT
+            Not After : Oct 11 01:46:48 2024 GMT
+        Subject: C=JP, ST=Hokkaido, O=HIU, OU=Student, CN=9999998/emailAddress=s9999998@s.do-johodai.ac.jp
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:a3:7c:d4:3c:42:df:60:50:79:33:18:1a:8b:42:
+                    b3:76:66:3d:00:dd:ac:28:60:f6:6c:68:ae:35:90:
+                    ee:a5:bf:77:5b:9d:f3:df:58:4d:29:df:16:eb:c5:
+                    ce:27:0b:a2:ea:4f:87:d1:9e:5e:c2:7d:c7:5f:26:
+                    98:30:3d:8c:16:b7:e2:6c:a3:25:22:f7:5f:d8:95:
+                    44:de:2a:24:05:ea:25:2b:17:ce:ac:54:9d:6a:b6:
+                    f0:30:7a:a2:99:c5:75:01:59:0d:62:07:70:dc:57:
+                    12:c9:dd:e8:b9:9f:be:ba:1a:b2:7d:18:e7:7c:a5:
+                    29:de:a3:03:51:61:33:67:bd:6e:7e:4f:a6:a2:e3:
+                    d5:93:14:43:bc:bf:a9:4e:ad:67:c3:ea:46:d4:53:
+                    05:31:c8:4b:d2:fe:39:34:72:4a:6c:3a:4f:94:17:
+                    ee:d6:44:07:5f:6d:a5:91:14:3d:ac:a7:42:dc:cc:
+                    27:22:2f:3b:ce:43:ec:81:07:3c:19:fd:4c:3a:68:
+                    51:94:65:56:7a:eb:c4:b1:df:1f:a3:a5:84:17:e4:
+                    f9:f6:7d:16:4f:64:8b:48:a4:6a:41:5c:66:77:1f:
+                    0d:c4:42:db:7c:e5:37:bc:86:08:2e:44:27:d6:2a:
+                    e2:65:c9:bc:c8:6d:62:ab:74:eb:4c:ee:d2:50:ba:
+                    60:9d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints:
+                CA:FALSE
+            Netscape Cert Type:
+                SSL Client, S/MIME, Object Signing
+            Netscape Comment:
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier:
+                2F:F0:91:EF:77:2D:A7:97:DC:9D:39:28:A8:2A:D0:CE:AF:1C:87:1D
+            X509v3 Authority Key Identifier:
+                DirName:/C=JP/CN=manager.nomiss.net/ST=Hokkaido/L=Ebetsu/O=HIU/OU=Lab124 TeamC
+                serial:0F:FF:AB:4E:66:04:8D:4E:E2:B9:B3:BC:EF:01:1C:A7:7D:86:84:BE
+
+    Signature Algorithm: sha256WithRSAEncryption
+         08:89:3a:c0:80:d2:c0:97:55:a0:a6:37:bb:3c:e5:fa:2e:d8:
+         38:90:a5:6b:f6:69:08:78:73:3c:90:be:df:6a:69:0f:1b:bd:
+         73:9a:ec:3a:c0:e7:0d:ba:96:36:db:46:60:46:8c:51:e8:f2:
+         5e:d7:da:38:06:6c:29:12:d4:38:76:63:d3:ca:f6:aa:58:3a:
+         25:fc:94:cd:1c:c9:11:c5:84:1d:50:e4:48:2a:0e:2e:9b:bb:
+         e9:cf:dd:e4:f0:bc:79:bc:b0:79:f0:04:de:4f:2c:38:77:7b:
+         a2:ba:27:7c:6d:5d:98:83:a8:dd:df:91:c7:c4:c0:55:68:96:
+         cf:9c:30:49:ca:10:7b:1f:ae:e4:c3:60:37:17:da:3f:92:f0:
+         fe:1b:e4:70:b5:db:40:61:da:60:1b:35:df:72:71:ec:d4:dd:
+         7a:e0:95:d4:98:98:31:24:8e:63:b8:80:4a:49:66:e3:2c:97:
+         83:63:63:07:5d:2d:b1:6c:2a:9e:a4:d9:2f:19:78:8d:f1:1f:
+         36:38:49:ca:7c:5b:1d:de:e3:ac:81:72:e2:35:b6:c6:97:40:
+         1c:47:94:46:97:9b:26:1c:13:18:97:a5:62:8b:7d:fc:80:67:
+         ec:56:45:f0:7d:62:e0:13:54:0e:dc:ea:97:b4:b4:9d:0e:65:
+         0c:62:37:f3
+-----BEGIN CERTIFICATE-----
+MIIEejCCA2KgAwIBAgIBAjANBgkqhkiG9w0BAQsFADBzMQswCQYDVQQGEwJKUDEb
+MBkGA1UEAwwSbWFuYWdlci5ub21pc3MubmV0MREwDwYDVQQIDAhIb2trYWlkbzEP
+MA0GA1UEBwwGRWJldHN1MQwwCgYDVQQKDANISVUxFTATBgNVBAsMDExhYjEyNCBU
+ZWFtQzAeFw0yMzEwMTIwMTQ2NDhaFw0yNDEwMTEwMTQ2NDhaMH4xCzAJBgNVBAYT
+AkpQMREwDwYDVQQIDAhIb2trYWlkbzEMMAoGA1UECgwDSElVMRAwDgYDVQQLDAdT
+dHVkZW50MRAwDgYDVQQDDAc5OTk5OTk4MSowKAYJKoZIhvcNAQkBFhtzOTk5OTk5
+OEBzLmRvLWpvaG9kYWkuYWMuanAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQCjfNQ8Qt9gUHkzGBqLQrN2Zj0A3awoYPZsaK41kO6lv3dbnfPfWE0p3xbr
+xc4nC6LqT4fRnl7CfcdfJpgwPYwWt+JsoyUi91/YlUTeKiQF6iUrF86sVJ1qtvAw
+eqKZxXUBWQ1iB3DcVxLJ3ei5n766GrJ9GOd8pSneowNRYTNnvW5+T6ai49WTFEO8
+v6lOrWfD6kbUUwUxyEvS/jk0ckpsOk+UF+7WRAdfbaWRFD2sp0LczCciLzvOQ+yB
+BzwZ/Uw6aFGUZVZ668Sx3x+jpYQX5Pn2fRZPZItIpGpBXGZ3Hw3EQtt85Te8hggu
+RCfWKuJlybzIbWKrdOtM7tJQumCdAgMBAAGjggEMMIIBCDAJBgNVHRMEAjAAMBEG
+CWCGSAGG+EIBAQQEAwIEsDAsBglghkgBhvhCAQ0EHxYdT3BlblNTTCBHZW5lcmF0
+ZWQgQ2VydGlmaWNhdGUwHQYDVR0OBBYEFC/wke93LaeX3J05KKgq0M6vHIcdMIGa
+BgNVHSMEgZIwgY+hd6R1MHMxCzAJBgNVBAYTAkpQMRswGQYDVQQDDBJtYW5hZ2Vy
+Lm5vbWlzcy5uZXQxETAPBgNVBAgMCEhva2thaWRvMQ8wDQYDVQQHDAZFYmV0c3Ux
+DDAKBgNVBAoMA0hJVTEVMBMGA1UECwwMTGFiMTI0IFRlYW1DghQP/6tOZgSNTuK5
+s7zvARynfYaEvjANBgkqhkiG9w0BAQsFAAOCAQEACIk6wIDSwJdVoKY3uzzl+i7Y
+OJCla/ZpCHhzPJC+32ppDxu9c5rsOsDnDbqWNttGYEaMUejyXtfaOAZsKRLUOHZj
+08r2qlg6JfyUzRzJEcWEHVDkSCoOLpu76c/d5PC8ebywefAE3k8sOHd7oronfG1d
+mIOo3d+Rx8TAVWiWz5wwScoQex+u5MNgNxfaP5Lw/hvkcLXbQGHaYBs133Jx7NTd
+euCV1JiYMSSOY7iASklm4yyXg2NjB10tsWwqnqTZLxl4jfEfNjhJynxbHd7jrIFy
+4jW2xpdAHEeURpebJhwTGJelYot9/IBn7FZF8H1i4BNUDtzql7S0nQ5lDGI38w==
+-----END CERTIFICATE-----
