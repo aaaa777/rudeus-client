@@ -42,7 +42,7 @@ namespace Rudeus.Model
             X509Certificate2Collection col_date = col_all.Find(X509FindType.FindByTimeValid, DateTime.Now, true);
 
             // 次に署名者の名前（CA証明書のCNなど）で絞り込む
-            X509Certificate2Collection col_issuer = col_date.Find(X509FindType.FindByIssuerName, "manager.nomiss.net", true);
+            X509Certificate2Collection col_issuer = col_date.Find(X509FindType.FindByIssuerName, issuer, true);
 
             // 見つかった証明書を出力
             // X509Certificate2のオブジェクトなので、HttpClientとかでクライアント証明書として使える

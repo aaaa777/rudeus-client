@@ -47,18 +47,21 @@ namespace Rudeus.Model
 
         private static HttpClient? _cliCertApiClient;
 
+        // GetCliCertApiClientの方が良かったかも
         private static HttpClient CliCertApiClient
         {
             get
             {
-
+                // 証明書ストアからクライアント証明書を取得
                 HttpClientHandler hch = CliCertHandler;
                 var cert = ApiCertificate ?? throw new Exception("certificate not found");
+
+                // クライアント証明書をリクエストクライアントに追加
                 hch.ClientCertificates.Add(cert);
 
                 _cliCertApiClient = new(hch)
                 {
-                    BaseAddress = new Uri(ApiEndpoint),
+                    BaseAddress = new Uri(ApiEndpointWithCert),
                 };
 
                 
@@ -67,15 +70,15 @@ namespace Rudeus.Model
         }
 
         private static HttpClient _apiClient = new();
-        private static HttpClient ApiClient
+        private static HttpClient NoCertApiClient
         {
             get
             {
-                if (_apiClient.ToString() != ApiEndpoint)
+                if (_apiClient.ToString() != ApiEndpointWithoutCert)
                 {
                     _apiClient = new()
                     {
-                        BaseAddress = new Uri(ApiEndpoint),
+                        BaseAddress = new Uri(ApiEndpointWithoutCert),
                     };
 
                 }
@@ -86,8 +89,8 @@ namespace Rudeus.Model
 
         public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
         
-        public static string ApiEndpoint { get; set; } = "https://manager.nomiss.net/";
-        //public static string ApiEndpoint { get; set; } = "http://10.10.2.11/";
+        public static readonly string ApiEndpointWithCert = "https://manager.nomiss.net/";
+        public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
 
 
         public static string ApiRegisterPath = "/api/device_initialize";
@@ -97,6 +100,7 @@ namespace Rudeus.Model
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
+        // POST送信メソッド
         private static string Request(string? accessToken, string requestPath, string payload)
         {
             Console.WriteLine($"Request: {payload}");
@@ -119,16 +123,18 @@ namespace Rudeus.Model
             request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
 
             // リクエスト送信
-            // HttpResponseMessage response = ApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
-            // HttpResponseMessage response = ApiClient.SendAsync(request).Result;
+            // HttpResponseMessage response = NoCertApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
+            // HttpResponseMessage response = NoCertApiClient.SendAsync(request).Result;
             HttpResponseMessage response;
             try
             {
+                // 証明書付きAPIエンドポイントにリクエスト
                 response = CliCertApiClient.SendAsync(request).Result;
             }
             catch 
             {
-                response = ApiClient.SendAsync(request).Result;
+                // 証明書無しAPIエンドポイントにフォールバック(例外補足無し)
+                response = NoCertApiClient.SendAsync(request).Result;
             }
 
 
@@ -140,16 +146,6 @@ namespace Rudeus.Model
 
             // レスポンスボディを取得
             string responseString = response.Content.ReadAsStringAsync().Result;
-
-            // DebugBoxのデータバインドを通してウィンドウに表示させる
-            Uri requestUri = new (new Uri(ApiEndpoint), requestPath);
-            string requestUrlString = requestUri.ToString();
-            string accessTokenHeader = "";
-            if(accessToken != null)
-            {
-                accessTokenHeader = $"Authorization: Bearer {accessToken}";
-            }
-            //string logMessage = $"リクエスト: POST {requestUrlString}\nリクエストヘッダ：\"{accessTokenHeader}\"\nボディ: {payload}\n\nレスポンスステータス: {response.StatusCode}\nレスポンスボディ: {responseString}";
 
             return responseString;
         }

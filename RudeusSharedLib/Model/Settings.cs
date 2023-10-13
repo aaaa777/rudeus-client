@@ -38,9 +38,16 @@ namespace Rudeus.Model
 
         private string Get(string key, string defaultValue="")
         {
-            var value = RegKey?.GetValue(key) ?? new Exception();
+            try
+            {
+                var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
 
-            return (string)value;
+                return (string)value;
+            }
+            catch
+            { 
+                return defaultValue;
+            }
         }
 
         private void Set(string key, string value) { RegKey?.SetValue(key, value); }

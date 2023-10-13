@@ -71,6 +71,7 @@ namespace RudeusBgForm
             教務情報WebシステムToolStripMenuItem = new ToolStripMenuItem();
             testMassageToolStripMenuItem = new ToolStripMenuItem();
             tastSausageToolStripMenuItem = new ToolStripMenuItem();
+            s9999999としてログイン中ToolStripMenuItem = new ToolStripMenuItem();
             iconMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -87,14 +88,14 @@ namespace RudeusBgForm
             iconMenu.ImageScalingSize = new Size(20, 20);
             iconMenu.Items.AddRange(new ToolStripItem[] { testMessageToolStripMenuItem, リンク集ToolStripMenuItem, testMassageToolStripMenuItem, tastSausageToolStripMenuItem });
             iconMenu.Name = "contextMenuStrip1";
-            iconMenu.Size = new Size(132, 92);
+            iconMenu.Size = new Size(181, 114);
             iconMenu.Opening += contextMenuStrip1_Opening;
             // 
             // testMessageToolStripMenuItem
             // 
-            testMessageToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { testMessageToolStripMenuItem1 });
+            testMessageToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { s9999999としてログイン中ToolStripMenuItem, testMessageToolStripMenuItem1 });
             testMessageToolStripMenuItem.Name = "testMessageToolStripMenuItem";
-            testMessageToolStripMenuItem.Size = new Size(131, 22);
+            testMessageToolStripMenuItem.Size = new Size(180, 22);
             testMessageToolStripMenuItem.Text = "ログイン";
             testMessageToolStripMenuItem.Click += testMessageToolStripMenuItem_Click;
             // 
@@ -109,7 +110,7 @@ namespace RudeusBgForm
             // 
             リンク集ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ポータルToolStripMenuItem, pOLITE3ToolStripMenuItem, 教務情報WebシステムToolStripMenuItem });
             リンク集ToolStripMenuItem.Name = "リンク集ToolStripMenuItem";
-            リンク集ToolStripMenuItem.Size = new Size(131, 22);
+            リンク集ToolStripMenuItem.Size = new Size(180, 22);
             リンク集ToolStripMenuItem.Text = "リンク集";
             // 
             // ポータルToolStripMenuItem
@@ -136,16 +137,24 @@ namespace RudeusBgForm
             // testMassageToolStripMenuItem
             // 
             testMassageToolStripMenuItem.Name = "testMassageToolStripMenuItem";
-            testMassageToolStripMenuItem.Size = new Size(131, 22);
+            testMassageToolStripMenuItem.Size = new Size(180, 22);
             testMassageToolStripMenuItem.Text = "更新を確認";
             testMassageToolStripMenuItem.Click += testMassageToolStripMenuItem_Click;
             // 
             // tastSausageToolStripMenuItem
             // 
             tastSausageToolStripMenuItem.Name = "tastSausageToolStripMenuItem";
-            tastSausageToolStripMenuItem.Size = new Size(131, 22);
+            tastSausageToolStripMenuItem.Size = new Size(180, 22);
             tastSausageToolStripMenuItem.Text = "終了";
             tastSausageToolStripMenuItem.Click += tastSausageToolStripMenuItem_Click;
+            // 
+            // s9999999としてログイン中ToolStripMenuItem
+            // 
+            s9999999としてログイン中ToolStripMenuItem.Enabled = false;
+            s9999999としてログイン中ToolStripMenuItem.Name = "s9999999としてログイン中ToolStripMenuItem";
+            s9999999としてログイン中ToolStripMenuItem.Size = new Size(202, 22);
+            s9999999としてログイン中ToolStripMenuItem.Text = "s9999999としてログイン中";
+            s9999999としてログイン中ToolStripMenuItem.Click += s9999999としてログイン中ToolStripMenuItem_Click;
             // 
             // TaskTrayForm
             // 
@@ -171,5 +180,6 @@ namespace RudeusBgForm
         private ToolStripMenuItem ポータルToolStripMenuItem;
         private ToolStripMenuItem pOLITE3ToolStripMenuItem;
         private ToolStripMenuItem 教務情報WebシステムToolStripMenuItem;
+        private ToolStripMenuItem s9999999としてログイン中ToolStripMenuItem;
     }
 }

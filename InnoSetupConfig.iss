@@ -21,7 +21,7 @@ ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
-SignTool=signcmdtmpkey
+SignTool=signlocalcodesign
 
 [Dirs]
 Name: "{autopf}\Windows System Application";

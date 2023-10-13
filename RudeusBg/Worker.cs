@@ -8,17 +8,12 @@ namespace RudeusBg
     {
         private readonly ILogger<Worker> _logger;
         private Settings settings;
-        private string endpoint = "http://10.10.2.11/";
-        private HttpClient client;
 
         public Worker(ILogger<Worker> logger)
         {
             _logger = logger;
             settings = Settings.Load();
-            client = new HttpClient
-            {
-                BaseAddress = new Uri(endpoint)
-            };
+
 
             // 使用可能なアクセストークンがない場合
             if (IsFirstRun() || RemoteAPI.IsAccessTokenAvailable(settings.AccessToken))
@@ -28,6 +23,7 @@ namespace RudeusBg
             }
 
             Operation.InitializeDefaultOperations();
+            BgUpdater.Run();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -81,7 +77,7 @@ namespace RudeusBg
                 UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
                 _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
                 return response;
-            } 
+            }
             catch
             {
                 _logger.LogInformation("server connection failed");

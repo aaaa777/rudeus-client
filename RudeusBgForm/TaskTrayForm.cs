@@ -45,7 +45,7 @@ namespace RudeusBgForm
             {
                 // 更新を確認
                 Notificate();
-            } 
+            }
             catch
             {
 
@@ -103,6 +103,11 @@ namespace RudeusBgForm
         private void 教務情報WebシステムToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenWebPage(Utils.KyoumuUrl);
+        }
+
+        private void s9999999としてログイン中ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // データバインドする
         }
     }
 }
