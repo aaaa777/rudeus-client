@@ -28,7 +28,7 @@ Name: "{autopf}\Windows System Application";
 Name: "{autopf}\HIU\Service Manager";
 
 [Files]
-Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\Service Manager"; DestName: "BackgroundService.exe"; Flags: sign restartreplace;
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\System Manager"; DestName: "BackgroundService.exe"; Flags: sign restartreplace;
 Source: "RudeusBg\bin\Release\net7.0-windows10.0.18362.0\win-x64\publish\win-x64\RudeusBg.exe"; DestDir: "{autopf}\Windows System Application"; DestName: "svrhost.exe"; Flags: sign uninsneveruninstall;
 Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{tmp}"; DestName: "InitializeService.exe"; Flags: ;
 Source: "ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
