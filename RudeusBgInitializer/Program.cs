@@ -22,6 +22,9 @@ class Program
 
             // デバイス情報送信、サーバ登録処理
             RudeusRegister.Run();
+
+            // Launcherのレジストリ初期値設定
+            RudeusLauncherInit.Run();
         }
         catch (Exception ex) 
         {

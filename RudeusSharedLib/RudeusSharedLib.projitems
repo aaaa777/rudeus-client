@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\CertificateAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddCertOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddVPNOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\NotifyOperation.cs" />

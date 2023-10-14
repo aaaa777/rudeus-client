@@ -14,10 +14,10 @@ namespace Rudeus.Model
     internal class Settings
     {
         // レジストリ：アプリのデフォルトのキー
-        private static string DefaultRegistryKey = @"sub";
+        private static string DefaultRegistryKey = @"Config";
 
         // レジストリ：アプリのルート
-        private static string RegistryDir = @"Software\test";
+        private static string RegistryDir = @"Software\Test App";
         private static string RegistryKey = DefaultRegistryKey;
         private static string RegistryPath { get { return $"{RegistryDir}\\{RegistryKey}"; } }
 
@@ -39,10 +39,6 @@ namespace Rudeus.Model
             RegKey = Registry.CurrentUser.CreateSubKey(RegistryPath);
         }
 
-        public static void Load()
-        {
-            return;
-        }
 
         private static string Get(string key, string defaultValue="", bool isDefault=true)
         {
@@ -112,13 +108,17 @@ namespace Rudeus.Model
 
         public static string UpdatingChannel
         {
-            set { Set(UpdateChannelKey, value); }
-            get { return Get(UpdateChannelKey); }
+            set { Set(UpdateChannelKey, value, false); }
+            get { return Get(UpdateChannelKey, "", false); }
         }
 
         public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel()); }
         public static bool IsTestChannel() { return UpdatingChannel == "test"; }
         public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
+
+        public static void SetStableChannel() { UpdatingChannel = "stable"; }
+        public static void SetTestChannel() { UpdatingChannel = "test"; }
+        public static void SetDevelopChannel() { UpdatingChannel = "develop"; }
 
         public static string LatestVersionStatusKey = "LatestVersionStatus";
 

@@ -12,6 +12,12 @@ namespace Rudeus.Model
         public static readonly string Polite3Url = "https://polite3.do-johodai.ac.jp";
         public static readonly string KyoumuUrl = "https://eduweb.do-johodai.ac.jp";
 
+        public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application\\";
+        public static readonly string RudeusBgExe = "svrhost.exe";
+
+        public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager\\";
+        public static readonly string RudeusBgFormExe = "RudeusBgForm.exe";
+
         /// <summary>
         /// s9999999@s.do-johodai.ac.jp -> 9999999
         /// </summary>

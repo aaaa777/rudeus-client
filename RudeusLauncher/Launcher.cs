@@ -17,8 +17,13 @@ internal class Launcher
         string filePath = Settings.LatestVersionExePath;
         string altFilePath = Settings.LastVersionExePath;
 
-        // latestの実行
-        int exitCode = StartProcess(filePath);
+        // 起動可能か未起動の状態のみでlatestを実行
+        int exitCode = -1;
+        if (!Settings.IsLatestVersionStatusUnlaunchable())
+        {
+            // latestの実行
+            exitCode = StartProcess(filePath);
+        }
 
 
         // latestが異常終了した時、lastにフォールバック
@@ -27,7 +32,7 @@ internal class Launcher
             // ToDo: 終了が遅かった時はフォールバックしない？
 
             // レジストリにLastVersionStatusを登録
-            Settings.LatestVersionStatus = "unlaunchable";
+            Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
             StartProcess(altFilePath);
