@@ -87,36 +87,36 @@ namespace RudeusBgForm
             iconMenu.ImageScalingSize = new Size(20, 20);
             iconMenu.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginNav, ToolStripMenuItemLinkList, ToolStripMenuItemCheckUpdate, ToolStripMenuItemExit });
             iconMenu.Name = "contextMenuStrip1";
-            iconMenu.Size = new Size(181, 114);
+            iconMenu.Size = new Size(132, 92);
             iconMenu.Opening += contextMenuStrip1_Opening;
             // 
             // ToolStripMenuItemLoginNav
             // 
             ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton });
             ToolStripMenuItemLoginNav.Name = "ToolStripMenuItemLoginNav";
-            ToolStripMenuItemLoginNav.Size = new Size(180, 22);
+            ToolStripMenuItemLoginNav.Size = new Size(131, 22);
             ToolStripMenuItemLoginNav.Text = "ログイン";
             // 
             // ToolStripMenuItemLoginStatus
             // 
             ToolStripMenuItemLoginStatus.Enabled = false;
             ToolStripMenuItemLoginStatus.Name = "ToolStripMenuItemLoginStatus";
-            ToolStripMenuItemLoginStatus.Size = new Size(202, 22);
+            ToolStripMenuItemLoginStatus.Size = new Size(199, 22);
             ToolStripMenuItemLoginStatus.Text = "ログインしていません";
             ToolStripMenuItemLoginStatus.Click += ToolStripMenuItemLoginStatus_Click;
             // 
             // ToolStripMenuItemLoginButton
             // 
             ToolStripMenuItemLoginButton.Name = "ToolStripMenuItemLoginButton";
-            ToolStripMenuItemLoginButton.Size = new Size(202, 22);
-            ToolStripMenuItemLoginButton.Text = "HIUPC Managerにログイン";
+            ToolStripMenuItemLoginButton.Size = new Size(199, 22);
+            ToolStripMenuItemLoginButton.Text = "情報大アカウントでログイン";
             ToolStripMenuItemLoginButton.Click += testMessageToolStripMenuItem1_Click;
             // 
             // ToolStripMenuItemLinkList
             // 
             ToolStripMenuItemLinkList.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLinkPortal, ToolStripMenuItemLinkPolite3, ToolStripMenuItemLinkKyomu });
             ToolStripMenuItemLinkList.Name = "ToolStripMenuItemLinkList";
-            ToolStripMenuItemLinkList.Size = new Size(180, 22);
+            ToolStripMenuItemLinkList.Size = new Size(131, 22);
             ToolStripMenuItemLinkList.Text = "リンク集";
             // 
             // ToolStripMenuItemLinkPortal
@@ -143,14 +143,14 @@ namespace RudeusBgForm
             // ToolStripMenuItemCheckUpdate
             // 
             ToolStripMenuItemCheckUpdate.Name = "ToolStripMenuItemCheckUpdate";
-            ToolStripMenuItemCheckUpdate.Size = new Size(180, 22);
+            ToolStripMenuItemCheckUpdate.Size = new Size(131, 22);
             ToolStripMenuItemCheckUpdate.Text = "更新を確認";
             ToolStripMenuItemCheckUpdate.Click += testMassageToolStripMenuItem_Click;
             // 
             // ToolStripMenuItemExit
             // 
             ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
-            ToolStripMenuItemExit.Size = new Size(180, 22);
+            ToolStripMenuItemExit.Size = new Size(131, 22);
             ToolStripMenuItemExit.Text = "終了";
             ToolStripMenuItemExit.Click += ToolStripMenuItemExit_Click;
             // 
