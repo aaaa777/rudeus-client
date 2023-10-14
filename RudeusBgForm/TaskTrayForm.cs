@@ -11,6 +11,10 @@ namespace RudeusBgForm
         {
             InitializeComponent();
             taskTrayIcon.MouseClick += notifyIcon1_Click;
+            if (Settings.Username != "")
+            {
+                ToolStripMenuItemLoginStatus.Text = $"s{Settings.Username}としてログイン中";
+            }
         }
 
         private void notifyIcon1_Click(object? sender, MouseEventArgs e)
@@ -25,16 +29,6 @@ namespace RudeusBgForm
                     method.Invoke(taskTrayIcon, null);
                 }
             }
-        }
-
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void testMessageToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void testMassageToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +54,7 @@ namespace RudeusBgForm
             string userIdOld = Settings.Username;
             try
             {
+                // 学生IDを取得するためlocalhostでコールバックを待機
                 Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
 
                 // ログイン画面を開く
@@ -69,6 +64,8 @@ namespace RudeusBgForm
                 // 管理サーバに送信
                 LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
                 Settings.Username = userId;
+
+                ToolStripMenuItemLoginStatus.Text = $"s{userId}としてログイン中";
             }
             catch
             {
@@ -81,31 +78,31 @@ namespace RudeusBgForm
             // 右クリックメニューを開いたとき
         }
 
-        private void tastSausageToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemExit_Click(object sender, EventArgs e)
         {
             // 終了
             Application.Exit();
         }
 
-        private void ポータルToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemLinkPortal_Click(object sender, EventArgs e)
         {
             // ポータルを開く
             OpenWebPage(Utils.WebPortalUrl);
         }
 
-        private void pOLITE3ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemLinkPolite3_Click(object sender, EventArgs e)
         {
             OpenWebPage(Utils.Polite3Url);
         }
 
-        private void 教務情報WebシステムToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemLinkKyomu_Click(object sender, EventArgs e)
         {
             OpenWebPage(Utils.KyoumuUrl);
         }
 
-        private void s9999999としてログイン中ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemLoginStatus_Click(object sender, EventArgs e)
         {
-            // データバインドする
+            // 無効化済み
         }
     }
 }

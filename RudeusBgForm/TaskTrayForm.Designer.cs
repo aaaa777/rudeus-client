@@ -63,15 +63,15 @@ namespace RudeusBgForm
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskTrayForm));
             taskTrayIcon = new NotifyIcon(components);
             iconMenu = new ContextMenuStrip(components);
-            testMessageToolStripMenuItem = new ToolStripMenuItem();
-            testMessageToolStripMenuItem1 = new ToolStripMenuItem();
-            リンク集ToolStripMenuItem = new ToolStripMenuItem();
-            ポータルToolStripMenuItem = new ToolStripMenuItem();
-            pOLITE3ToolStripMenuItem = new ToolStripMenuItem();
-            教務情報WebシステムToolStripMenuItem = new ToolStripMenuItem();
-            testMassageToolStripMenuItem = new ToolStripMenuItem();
-            tastSausageToolStripMenuItem = new ToolStripMenuItem();
-            s9999999としてログイン中ToolStripMenuItem = new ToolStripMenuItem();
+            ToolStripMenuItemLoginNav = new ToolStripMenuItem();
+            ToolStripMenuItemLoginStatus = new ToolStripMenuItem();
+            ToolStripMenuItemLoginButton = new ToolStripMenuItem();
+            ToolStripMenuItemLinkList = new ToolStripMenuItem();
+            ToolStripMenuItemLinkPortal = new ToolStripMenuItem();
+            ToolStripMenuItemLinkPolite3 = new ToolStripMenuItem();
+            ToolStripMenuItemLinkKyomu = new ToolStripMenuItem();
+            ToolStripMenuItemCheckUpdate = new ToolStripMenuItem();
+            ToolStripMenuItemExit = new ToolStripMenuItem();
             iconMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,82 +79,80 @@ namespace RudeusBgForm
             // 
             taskTrayIcon.ContextMenuStrip = iconMenu;
             taskTrayIcon.Icon = (Icon)resources.GetObject("taskTrayIcon.Icon");
-            taskTrayIcon.Text = "クリック: Webポータルを開きます\r\n右クリック: メニュ―を開きます";
+            taskTrayIcon.Text = "クリックでメニュ―を開きます";
             taskTrayIcon.Visible = true;
-            taskTrayIcon.MouseDoubleClick += notifyIcon1_MouseDoubleClick;
             // 
             // iconMenu
             // 
             iconMenu.ImageScalingSize = new Size(20, 20);
-            iconMenu.Items.AddRange(new ToolStripItem[] { testMessageToolStripMenuItem, リンク集ToolStripMenuItem, testMassageToolStripMenuItem, tastSausageToolStripMenuItem });
+            iconMenu.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginNav, ToolStripMenuItemLinkList, ToolStripMenuItemCheckUpdate, ToolStripMenuItemExit });
             iconMenu.Name = "contextMenuStrip1";
             iconMenu.Size = new Size(181, 114);
             iconMenu.Opening += contextMenuStrip1_Opening;
             // 
-            // testMessageToolStripMenuItem
+            // ToolStripMenuItemLoginNav
             // 
-            testMessageToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { s9999999としてログイン中ToolStripMenuItem, testMessageToolStripMenuItem1 });
-            testMessageToolStripMenuItem.Name = "testMessageToolStripMenuItem";
-            testMessageToolStripMenuItem.Size = new Size(180, 22);
-            testMessageToolStripMenuItem.Text = "ログイン";
-            testMessageToolStripMenuItem.Click += testMessageToolStripMenuItem_Click;
+            ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton });
+            ToolStripMenuItemLoginNav.Name = "ToolStripMenuItemLoginNav";
+            ToolStripMenuItemLoginNav.Size = new Size(180, 22);
+            ToolStripMenuItemLoginNav.Text = "ログイン";
             // 
-            // testMessageToolStripMenuItem1
+            // ToolStripMenuItemLoginStatus
             // 
-            testMessageToolStripMenuItem1.Name = "testMessageToolStripMenuItem1";
-            testMessageToolStripMenuItem1.Size = new Size(202, 22);
-            testMessageToolStripMenuItem1.Text = "HIUPC Managerにログイン";
-            testMessageToolStripMenuItem1.Click += testMessageToolStripMenuItem1_Click;
+            ToolStripMenuItemLoginStatus.Enabled = false;
+            ToolStripMenuItemLoginStatus.Name = "ToolStripMenuItemLoginStatus";
+            ToolStripMenuItemLoginStatus.Size = new Size(202, 22);
+            ToolStripMenuItemLoginStatus.Text = "ログインしていません";
+            ToolStripMenuItemLoginStatus.Click += ToolStripMenuItemLoginStatus_Click;
             // 
-            // リンク集ToolStripMenuItem
+            // ToolStripMenuItemLoginButton
             // 
-            リンク集ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ポータルToolStripMenuItem, pOLITE3ToolStripMenuItem, 教務情報WebシステムToolStripMenuItem });
-            リンク集ToolStripMenuItem.Name = "リンク集ToolStripMenuItem";
-            リンク集ToolStripMenuItem.Size = new Size(180, 22);
-            リンク集ToolStripMenuItem.Text = "リンク集";
+            ToolStripMenuItemLoginButton.Name = "ToolStripMenuItemLoginButton";
+            ToolStripMenuItemLoginButton.Size = new Size(202, 22);
+            ToolStripMenuItemLoginButton.Text = "HIUPC Managerにログイン";
+            ToolStripMenuItemLoginButton.Click += testMessageToolStripMenuItem1_Click;
             // 
-            // ポータルToolStripMenuItem
+            // ToolStripMenuItemLinkList
             // 
-            ポータルToolStripMenuItem.Name = "ポータルToolStripMenuItem";
-            ポータルToolStripMenuItem.Size = new Size(183, 22);
-            ポータルToolStripMenuItem.Text = "Webポータル";
-            ポータルToolStripMenuItem.Click += ポータルToolStripMenuItem_Click;
+            ToolStripMenuItemLinkList.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLinkPortal, ToolStripMenuItemLinkPolite3, ToolStripMenuItemLinkKyomu });
+            ToolStripMenuItemLinkList.Name = "ToolStripMenuItemLinkList";
+            ToolStripMenuItemLinkList.Size = new Size(180, 22);
+            ToolStripMenuItemLinkList.Text = "リンク集";
             // 
-            // pOLITE3ToolStripMenuItem
+            // ToolStripMenuItemLinkPortal
             // 
-            pOLITE3ToolStripMenuItem.Name = "pOLITE3ToolStripMenuItem";
-            pOLITE3ToolStripMenuItem.Size = new Size(183, 22);
-            pOLITE3ToolStripMenuItem.Text = "POLITE3";
-            pOLITE3ToolStripMenuItem.Click += pOLITE3ToolStripMenuItem_Click;
+            ToolStripMenuItemLinkPortal.Name = "ToolStripMenuItemLinkPortal";
+            ToolStripMenuItemLinkPortal.Size = new Size(183, 22);
+            ToolStripMenuItemLinkPortal.Text = "Webポータル";
+            ToolStripMenuItemLinkPortal.Click += ToolStripMenuItemLinkPortal_Click;
             // 
-            // 教務情報WebシステムToolStripMenuItem
+            // ToolStripMenuItemLinkPolite3
             // 
-            教務情報WebシステムToolStripMenuItem.Name = "教務情報WebシステムToolStripMenuItem";
-            教務情報WebシステムToolStripMenuItem.Size = new Size(183, 22);
-            教務情報WebシステムToolStripMenuItem.Text = "教務情報Webシステム";
-            教務情報WebシステムToolStripMenuItem.Click += 教務情報WebシステムToolStripMenuItem_Click;
+            ToolStripMenuItemLinkPolite3.Name = "ToolStripMenuItemLinkPolite3";
+            ToolStripMenuItemLinkPolite3.Size = new Size(183, 22);
+            ToolStripMenuItemLinkPolite3.Text = "POLITE3";
+            ToolStripMenuItemLinkPolite3.Click += ToolStripMenuItemLinkPolite3_Click;
             // 
-            // testMassageToolStripMenuItem
+            // ToolStripMenuItemLinkKyomu
             // 
-            testMassageToolStripMenuItem.Name = "testMassageToolStripMenuItem";
-            testMassageToolStripMenuItem.Size = new Size(180, 22);
-            testMassageToolStripMenuItem.Text = "更新を確認";
-            testMassageToolStripMenuItem.Click += testMassageToolStripMenuItem_Click;
+            ToolStripMenuItemLinkKyomu.Name = "ToolStripMenuItemLinkKyomu";
+            ToolStripMenuItemLinkKyomu.Size = new Size(183, 22);
+            ToolStripMenuItemLinkKyomu.Text = "教務情報Webシステム";
+            ToolStripMenuItemLinkKyomu.Click += ToolStripMenuItemLinkKyomu_Click;
             // 
-            // tastSausageToolStripMenuItem
+            // ToolStripMenuItemCheckUpdate
             // 
-            tastSausageToolStripMenuItem.Name = "tastSausageToolStripMenuItem";
-            tastSausageToolStripMenuItem.Size = new Size(180, 22);
-            tastSausageToolStripMenuItem.Text = "終了";
-            tastSausageToolStripMenuItem.Click += tastSausageToolStripMenuItem_Click;
+            ToolStripMenuItemCheckUpdate.Name = "ToolStripMenuItemCheckUpdate";
+            ToolStripMenuItemCheckUpdate.Size = new Size(180, 22);
+            ToolStripMenuItemCheckUpdate.Text = "更新を確認";
+            ToolStripMenuItemCheckUpdate.Click += testMassageToolStripMenuItem_Click;
             // 
-            // s9999999としてログイン中ToolStripMenuItem
+            // ToolStripMenuItemExit
             // 
-            s9999999としてログイン中ToolStripMenuItem.Enabled = false;
-            s9999999としてログイン中ToolStripMenuItem.Name = "s9999999としてログイン中ToolStripMenuItem";
-            s9999999としてログイン中ToolStripMenuItem.Size = new Size(202, 22);
-            s9999999としてログイン中ToolStripMenuItem.Text = "s9999999としてログイン中";
-            s9999999としてログイン中ToolStripMenuItem.Click += s9999999としてログイン中ToolStripMenuItem_Click;
+            ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
+            ToolStripMenuItemExit.Size = new Size(180, 22);
+            ToolStripMenuItemExit.Text = "終了";
+            ToolStripMenuItemExit.Click += ToolStripMenuItemExit_Click;
             // 
             // TaskTrayForm
             // 
@@ -172,14 +170,14 @@ namespace RudeusBgForm
 
         private NotifyIcon taskTrayIcon;
         private ContextMenuStrip iconMenu;
-        private ToolStripMenuItem testMessageToolStripMenuItem;
-        private ToolStripMenuItem testMessageToolStripMenuItem1;
-        private ToolStripMenuItem testMassageToolStripMenuItem;
-        private ToolStripMenuItem tastSausageToolStripMenuItem;
-        private ToolStripMenuItem リンク集ToolStripMenuItem;
-        private ToolStripMenuItem ポータルToolStripMenuItem;
-        private ToolStripMenuItem pOLITE3ToolStripMenuItem;
-        private ToolStripMenuItem 教務情報WebシステムToolStripMenuItem;
-        private ToolStripMenuItem s9999999としてログイン中ToolStripMenuItem;
+        private ToolStripMenuItem ToolStripMenuItemLoginNav;
+        private ToolStripMenuItem ToolStripMenuItemLoginButton;
+        private ToolStripMenuItem ToolStripMenuItemCheckUpdate;
+        private ToolStripMenuItem ToolStripMenuItemExit;
+        private ToolStripMenuItem ToolStripMenuItemLinkList;
+        private ToolStripMenuItem ToolStripMenuItemLinkPortal;
+        private ToolStripMenuItem ToolStripMenuItemLinkPolite3;
+        private ToolStripMenuItem ToolStripMenuItemLinkKyomu;
+        private ToolStripMenuItem ToolStripMenuItemLoginStatus;
     }
 }
