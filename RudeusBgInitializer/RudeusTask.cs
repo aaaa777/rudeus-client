@@ -56,7 +56,7 @@ internal class RudeusTask
             td2.Principal.UserId = WindowsIdentity.GetCurrent().Name;
             td2.Principal.LogonType = TaskLogonType.InteractiveToken;
 
-            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\System Manager\\BackgroundService.exe", "", null));
+            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\System Manager\\RudeusBgForm.exe", "", null));
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("Task is set successfully");

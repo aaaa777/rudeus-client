@@ -13,12 +13,13 @@ namespace Rudeus.Model
     /// </summary>
     internal class Settings
     {
-        // Set Default key store
+        // レジストリ：アプリのデフォルトのキー
         private static string DefaultRegistryKey = @"sub";
 
+        // レジストリ：アプリのルート
         private static string RegistryDir = @"Software\test";
         private static string RegistryKey = DefaultRegistryKey;
-        private static string RegistryPath { get { return RegistryDir + RegistryKey; } }
+        private static string RegistryPath { get { return $"{RegistryDir}\\{RegistryKey}"; } }
 
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
@@ -43,8 +44,13 @@ namespace Rudeus.Model
             return;
         }
 
-        private static string Get(string key, string defaultValue="")
+        private static string Get(string key, string defaultValue="", bool isDefault=true)
         {
+            if (isDefault)
+            {
+                UpdateRegistryKey();
+            }
+
             try
             {
                 var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
@@ -57,7 +63,15 @@ namespace Rudeus.Model
             }
         }
 
-        private static void Set(string key, string value) { RegKey?.SetValue(key, value); }
+        private static void Set(string key, string value, bool isDefault=true) 
+        {
+            if (isDefault)
+            {
+                UpdateRegistryKey();
+            }
+
+            RegKey?.SetValue(key, value); 
+        }
 
         public static string FirstHostnameKey = "FirstHostname";
         public static string FirstHostname
@@ -110,8 +124,8 @@ namespace Rudeus.Model
 
         public static string LatestVersionStatus
         {
-            set { Set(LatestVersionStatusKey, value); }
-            get { return Get(LatestVersionStatusKey); }
+            set { Set(LatestVersionStatusKey, value, false); }
+            get { return Get(LatestVersionStatusKey, "", false); }
         }
 
         public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
@@ -126,16 +140,16 @@ namespace Rudeus.Model
 
         public static string LastVersionExePath
         {
-            set { Set(LastVersionExePathKey, value); }
-            get { return Get(LastVersionExePathKey); }
+            set { Set(LastVersionExePathKey, value, false); }
+            get { return Get(LastVersionExePathKey, "", false); }
         }
 
         public static string LatestVersionExePathKey = "LatestVersionExePath";
 
         public static string LatestVersionExePath
         {
-            set { Set(LatestVersionExePathKey, value); }
-            get { return Get(LatestVersionExePathKey); }
+            set { Set(LatestVersionExePathKey, value, false); }
+            get { return Get(LatestVersionExePathKey, "", false); }
         }
 
         // LastUpdateFailedはキャッシュに利用？
@@ -143,8 +157,8 @@ namespace Rudeus.Model
 
         private static string LastUpdateFailed
         {
-            set { Set(LastUpdateFailedKey, value); }
-            get { return Get(LastUpdateFailedKey); }
+            set { Set(LastUpdateFailedKey, value, false); }
+            get { return Get(LastUpdateFailedKey, "", false); }
         }
 
         public static bool IsLastUpdateFailed() { return LastUpdateFailed == "yes"; }
@@ -156,8 +170,8 @@ namespace Rudeus.Model
 
         public static string LastUpdateVersion
         {
-            get { return Get(LastUpdateVersionKey); }
-            set { Set(LastUpdateVersionKey, value); }
+            set { Set(LastUpdateVersionKey, value, false); }
+            get { return Get(LastUpdateVersionKey, "", false); }
         }
 
         public static string UpdateCheckUrl1 = "http://";

@@ -19,6 +19,7 @@ ArchitecturesAllowed=x64
 ; 64-bit Program Files directory and the 64-bit view of the registry.
 ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
+DisableDirPage=yes
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
 SignTool=signlocalcodesign
@@ -30,18 +31,26 @@ Name: "{autopf}\HIU\Service Manager";
 [Files]
 Source: "RudeusBgForm\bin\publish\RudeusBgForm.exe"; \
   DestDir: "{autopf}\HIU\System Manager"; \
-  DestName: "BackgroundService.exe"; \
-  BeforeInstall: TaskKill('BackgroundService.exe'); \
-  Flags: sign restartreplace;
+  BeforeInstall: TaskKill('RudeusBgForm.exe'); \
+  Flags: signonce ignoreversion;
+
+Source: "RudeusBgForm\bin\publish\*"; \
+  Excludes: "RudeusBgForm.exe"; \
+  DestDir: "{autopf}\HIU\System Manager"; \
+  Flags: ignoreversion;
 
 Source: "RudeusBg\bin\publish\RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
   DestName: "svrhost.exe"; \
-  Flags: sign uninsneveruninstall;
+  Flags: signonce uninsneveruninstall ignoreversion;
+
+Source: "RudeusBgInitializer\bin\publish\RudeusBgInitializer.exe"; \
+  DestDir: "{tmp}"; \
+  Flags: signonce ignoreversion;
 
 Source: "RudeusBgInitializer\bin\publish\*"; \
   DestDir: "{tmp}"; \
-  Flags: ;
+  Flags: ignoreversion;
 
 Source: "ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
 Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
@@ -54,6 +63,12 @@ Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
 [Run]
 Filename: {tmp}\RudeusBgInitializer.exe;
 
+[Languages]
+Name: en; MessagesFile: "compiler:Default.isl"
+
+[CustomMessages]
+en.InstallingLabel=少女セットアップ中...
+
 [Code]
 procedure TaskKill(FileName: String);
 var
@@ -61,4 +76,18 @@ var
 begin
     Exec('taskkill.exe', '/f /im ' + '"' + FileName + '"', '', SW_HIDE,
      ewWaitUntilTerminated, ResultCode);
+end;
+
+procedure InitializeWizard;
+begin
+  with TNewStaticText.Create(WizardForm) do
+  begin
+    Parent := WizardForm.FilenameLabel.Parent;
+    Left := WizardForm.FilenameLabel.Left;
+    Top := WizardForm.FilenameLabel.Top;
+    Width := WizardForm.FilenameLabel.Width;
+    Height := WizardForm.FilenameLabel.Height;
+    Caption := ExpandConstant('{cm:InstallingLabel}');
+  end;
+  WizardForm.FilenameLabel.Visible := False;
 end;
