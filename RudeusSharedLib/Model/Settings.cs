@@ -13,30 +13,37 @@ namespace Rudeus.Model
     /// </summary>
     internal class Settings
     {
-        // ToDo: いつかシングルトンじゃなくてStaticに変更したい
+        // Set Default key store
+        private static string DefaultRegistryKey = @"sub";
 
-        private static RegistryKey? RegKey;
+        private static string RegistryDir = @"Software\test";
+        private static string RegistryKey = DefaultRegistryKey;
+        private static string RegistryPath { get { return RegistryDir + RegistryKey; } }
 
-        private static Settings? _instanse;
-        private Settings()
+        private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
+
+
+        public static void UpdateRegistryKey(string? registryKey=null)
         {
-            // レジストリに対応していないプラットフォームの場合、別の場所に保存する必要がある
-
-            RegKey = Registry.CurrentUser.CreateSubKey(@"Software\test\sub");
-            //RegKey = Registry.LocalMachine.CreateSubKey(@"Software\test\sub");
-
-        }
-
-        public static Settings Load()
-        {
-            if(_instanse == null)
+            if (registryKey != null)
             {
-                _instanse = new Settings();
+                RegistryKey = registryKey; 
             }
-            return _instanse;
+            else
+            {
+                // nullの場合デフォルト値にリセット
+                RegistryKey = DefaultRegistryKey;
+            }
+
+            RegKey = Registry.CurrentUser.CreateSubKey(RegistryPath);
         }
 
-        private string Get(string key, string defaultValue="")
+        public static void Load()
+        {
+            return;
+        }
+
+        private static string Get(string key, string defaultValue="")
         {
             try
             {
@@ -50,41 +57,109 @@ namespace Rudeus.Model
             }
         }
 
-        private void Set(string key, string value) { RegKey?.SetValue(key, value); }
+        private static void Set(string key, string value) { RegKey?.SetValue(key, value); }
 
-        public string FirstHostnameKey = "FirstHostname";
-        public string FirstHostname
+        public static string FirstHostnameKey = "FirstHostname";
+        public static string FirstHostname
         {
             set { Set(FirstHostnameKey, value); }
             get { return Get(FirstHostnameKey); }
         }
 
-        public string HostnameKey = "DeviceHostname";
-        public string Hostname
+        public static string HostnameKey = "DeviceHostname";
+        public static string Hostname
         {
             set { Set(HostnameKey, value); }
             get { return Get(HostnameKey); }
         }
 
-        public string DeviceIdKey = "DeviceId";
-        public string DeviceId
+        public static string DeviceIdKey = "DeviceId";
+        public static string DeviceId
         {
             set { Set(DeviceIdKey, value); }
             get { return Get(DeviceIdKey); }
         }
 
-        public string UsernameKey = "DeviceUsername";
-        public string Username
+        public static string UsernameKey = "DeviceUsername";
+        public static string Username
         {
             set { Set(UsernameKey, value); }
             get { return Get(UsernameKey); }
         }
 
-        public string AccessTokenKey = "AccessToken";
-        public string AccessToken
+        public static string AccessTokenKey = "AccessToken";
+        public static string AccessToken
         {
             set { Set(AccessTokenKey, value); }
             get { return Get(AccessTokenKey); }
         }
+
+        public static string UpdateChannelKey = "UpdatingChannel";
+
+        public static string UpdatingChannel
+        {
+            set { Set(UpdateChannelKey, value); }
+            get { return Get(UpdateChannelKey); }
+        }
+
+        public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel()); }
+        public static bool IsTestChannel() { return UpdatingChannel == "test"; }
+        public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
+
+        public static string LatestVersionStatusKey = "LatestVersionStatus";
+
+        public static string LatestVersionStatus
+        {
+            set { Set(LatestVersionStatusKey, value); }
+            get { return Get(LatestVersionStatusKey); }
+        }
+
+        public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
+        public static bool IsLatestVersionStatusDownloaded() { return LatestVersionStatus == "downloaded"; }
+        public static bool IsLatestVersionStatusUnlaunchable() { return LatestVersionStatus == "unlaunchable"; }
+
+        public static void SetLatestVersionStatusOk() { LatestVersionStatus = "ok"; }
+        public static void SetLatestVersionStatusDownloaded() { LatestVersionStatus = "downloaded"; }
+        public static void SetLatestVersionStatusUnlaunchable() { LatestVersionStatus = "unlaunchable"; }
+
+        public static string LastVersionExePathKey = "LastVersionExePath";
+
+        public static string LastVersionExePath
+        {
+            set { Set(LastVersionExePathKey, value); }
+            get { return Get(LastVersionExePathKey); }
+        }
+
+        public static string LatestVersionExePathKey = "LatestVersionExePath";
+
+        public static string LatestVersionExePath
+        {
+            set { Set(LatestVersionExePathKey, value); }
+            get { return Get(LatestVersionExePathKey); }
+        }
+
+        // LastUpdateFailedはキャッシュに利用？
+        private static string LastUpdateFailedKey = "IsLastUpdateFailed";
+
+        private static string LastUpdateFailed
+        {
+            set { Set(LastUpdateFailedKey, value); }
+            get { return Get(LastUpdateFailedKey); }
+        }
+
+        public static bool IsLastUpdateFailed() { return LastUpdateFailed == "yes"; }
+        public static void SetLastUpdateFailedYes() { LastUpdateFailed = "yes"; }
+        public static void SetLastUpdateFailedNo() { LastUpdateFailed = "no"; }
+
+
+        public static string LastUpdateVersionKey = "LastUpdateVersion";
+
+        public static string LastUpdateVersion
+        {
+            get { return Get(LastUpdateVersionKey); }
+            set { Set(LastUpdateVersionKey, value); }
+        }
+
+        public static string UpdateCheckUrl1 = "http://";
     }
 }

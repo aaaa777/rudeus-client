@@ -1,5 +1,4 @@
-﻿using AutoUpdaterDotNET;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,7 +15,7 @@ namespace Rudeus.Model
 
         public static void Run()
         {
-            AutoUpdater.Start(UpdateCheckUrl);
+
         }
     }
 }

@@ -7,10 +7,8 @@ namespace RudeusBgForm
 {
     public partial class TaskTrayForm : Form
     {
-        private Settings settings;
         public TaskTrayForm()
         {
-            this.settings = Settings.Load();
             InitializeComponent();
             taskTrayIcon.MouseClick += notifyIcon1_Click;
         }
@@ -59,7 +57,7 @@ namespace RudeusBgForm
         /// <param name="e"></param>
         private async void testMessageToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            string userIdOld = settings.Username;
+            string userIdOld = Settings.Username;
             try
             {
                 Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
@@ -69,8 +67,8 @@ namespace RudeusBgForm
                 string userId = await userIdTask;
 
                 // 管理サーバに送信
-                LoginResponse res = RemoteAPI.LoginDevice(settings.AccessToken, userId);
-                settings.Username = userId;
+                LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
+                Settings.Username = userId;
             }
             catch
             {

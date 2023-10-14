@@ -7,34 +7,36 @@ namespace RudeusBg
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private Settings settings;
 
         public Worker(ILogger<Worker> logger)
         {
             _logger = logger;
-            settings = Settings.Load();
-
-
-            // 使用可能なアクセストークンがない場合
-            if (IsFirstRun() || RemoteAPI.IsAccessTokenAvailable(settings.AccessToken))
-            {
-                // デバイスIDを発行
-                Register();
-            }
-
-            Operation.InitializeDefaultOperations();
-            BgUpdater.Run();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            //_logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            var res = PostInformation();
+            _logger.LogInformation($"Worker running at: {Settings.DeviceId}");
+            
+            // 使用可能なアクセストークンがない場合、再発行
+            if (IsFirstRun() || !RemoteAPI.IsAccessTokenAvailable(Settings.AccessToken))
+            {
+                // デバイスIDを発行
+                Utils.RegisterDeviceAndSetData();
+            }
+
+            // UpdateDeviceの実行
+            UpdateResponse? res = PostInformation();
+            
+            // レスポンスがなかった場合
             if(res == null)
             {
                 Environment.Exit(0);
             }
 
+            // Operationの初期化
+            Operation.InitializeDefaultOperations();
+
+            // レスポンスのpush_dataのパース処理
             var pdList = res.push_data;
             if(pdList == null)
             {
@@ -55,26 +57,21 @@ namespace RudeusBg
             Environment.Exit(0);
         }
 
+        // UpdateDeviceを実行
         private UpdateResponse? PostInformation()
         {
-            //string accessToken = settings.GetAccessToken();
+            string accessToken = Settings.AccessToken;
+
+            // set randomized hostname
             Random r1 = new Random();
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
-
-            // set randomized hostname
-            string accessToken = settings.AccessToken;
-            string username = settings.Username;
-
-            //string hostname = settings.GetHostname();
             string hostname = $"HIU-P{firstNumber}-{secondNumber}";
-            settings.Hostname = hostname;
-
-            //_logger.LogInformation($"{accessToken}, {username}");
+            Settings.Hostname = hostname;
 
             try
             { 
-                UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname, username);
+                UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname);
                 _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
                 return response;
             }
@@ -85,6 +82,7 @@ namespace RudeusBg
             return null;
         }
 
+        // deprecated
         public void Register()
         {
             // 起動毎にGUIDを生成してDevideIdとしている
@@ -99,17 +97,18 @@ namespace RudeusBg
 
             RemoteAPI.LoginDevice(accessToken, username);
 
-            settings.AccessToken = accessToken;
-            settings.FirstHostname = hostname;
-            settings.Hostname = hostname;
-            settings.DeviceId = deviceId;
-            settings.Username = username;
+            Settings.UpdateRegistryKey();
+            Settings.AccessToken = accessToken;
+            Settings.FirstHostname = hostname;
+            Settings.Hostname = hostname;
+            Settings.DeviceId = deviceId;
+            Settings.Username = username;
         }
 
         public bool IsFirstRun()
         {
-            string accessToken = settings.AccessToken;
-            if(accessToken != null && accessToken != "")
+            string accessToken = Settings.AccessToken;
+            if(accessToken == null && accessToken == "")
             {
                 return true;
             }

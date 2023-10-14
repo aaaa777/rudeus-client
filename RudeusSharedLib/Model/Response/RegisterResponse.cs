@@ -7,12 +7,13 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 #pragma warning disable IDE1006 // 命名スタイル
+#pragma warning disable CS8618 // null 非許容のフィールドには、コンストラクターの終了時に null 以外の値が入っていなければなりません。Null 許容として宣言することをご検討ください。
 namespace Rudeus.Model.Response
 {
     internal class RegisterResponse : BaseResponse
     {
         [JsonPropertyName(nameof(response_data))]
-        public RegisterResponseData? response_data { get; set; }
+        public RegisterResponseData response_data { get; set; }
     }
 
     internal class RegisterResponseData

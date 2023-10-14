@@ -88,5 +88,48 @@ namespace Rudeus.Model
             }
             return volumeIdList;
         }
+
+        public static string GetDeviceId()
+        {
+            // ToDo: デバイスIDを実際に取得するコードに置き換え
+            Guid g = Guid.NewGuid();
+            string guid8 = g.ToString().Substring(0, 8);
+            return $"000000-{guid8}";
+        }
+
+        public static string GetHostname()
+        {
+            // ToDo: ホスト名を実際に取得するコードに置き換え
+            Random r1 = new Random();
+            string firstNumber = r1.Next(10, 100).ToString();
+            string secondNumber = r1.Next(100, 1000).ToString();
+            return $"HIU-P{firstNumber}-{secondNumber}";
+        }
+
+        public static void RegisterDeviceAndSetData()
+        {
+            string hostname = GetHostname();
+            string deviceId = GetDeviceId();
+
+            // デフォルトのレジストリにセット
+            Settings.UpdateRegistryKey();
+            Settings.Hostname = hostname;
+            Settings.FirstHostname = hostname;
+            Settings.DeviceId = deviceId;
+
+            // 発行
+            try
+            {
+                Response.RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
+
+                Settings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
+                Console.WriteLine($"registered device: `{hostname}`: {response.status}");
+                return;
+            }
+            catch
+            {
+                Console.WriteLine("server connection failed, device is not registered yet");
+            }
+        }
     }
 }

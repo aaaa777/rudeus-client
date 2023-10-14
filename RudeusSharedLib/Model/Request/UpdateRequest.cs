@@ -23,9 +23,6 @@ namespace Rudeus.Model.Request
     }
     internal class UpdateRequestData
     {
-        [JsonPropertyName(nameof(username))]
-        public string? username { get; set; }
-
         [JsonPropertyName(nameof(hostname))]
         public string? hostname { get; set; }
 

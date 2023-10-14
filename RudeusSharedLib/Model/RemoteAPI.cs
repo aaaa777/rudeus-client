@@ -182,7 +182,7 @@ namespace Rudeus.Model
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(string accessToken, string hostname="", string username="")
+        public static UpdateResponse UpdateDevice(string accessToken, string? hostname=null)
         {
             UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);

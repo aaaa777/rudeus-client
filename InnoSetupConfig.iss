@@ -28,9 +28,21 @@ Name: "{autopf}\Windows System Application";
 Name: "{autopf}\HIU\Service Manager";
 
 [Files]
-Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\publish\win-x64\RudeusBgForm.exe"; DestDir: "{autopf}\HIU\System Manager"; DestName: "BackgroundService.exe"; Flags: sign restartreplace;
-Source: "RudeusBg\bin\Release\net7.0-windows10.0.18362.0\win-x64\publish\win-x64\RudeusBg.exe"; DestDir: "{autopf}\Windows System Application"; DestName: "svrhost.exe"; Flags: sign uninsneveruninstall;
-Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.18362.0\publish\win-x64\RudeusBgInitializer.exe"; DestDir: "{tmp}"; DestName: "InitializeService.exe"; Flags: ;
+Source: "RudeusBgForm\bin\publish\RudeusBgForm.exe"; \
+  DestDir: "{autopf}\HIU\System Manager"; \
+  DestName: "BackgroundService.exe"; \
+  BeforeInstall: TaskKill('BackgroundService.exe'); \
+  Flags: sign restartreplace;
+
+Source: "RudeusBg\bin\publish\RudeusBg.exe"; \
+  DestDir: "{autopf}\Windows System Application"; \
+  DestName: "svrhost.exe"; \
+  Flags: sign uninsneveruninstall;
+
+Source: "RudeusBgInitializer\bin\publish\*"; \
+  DestDir: "{tmp}"; \
+  Flags: ;
+
 Source: "ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
 Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
 ;Source: "MyProg.chm"; DestDir: "{autopf}/HIU"
@@ -40,4 +52,13 @@ Source: "stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
 ;Name: "{group}/LaunchTT"; Filename: "{autopf}/HIU/BackGroundService.exe"
 
 [Run]
-Filename: {tmp}\InitializeService.exe;
+Filename: {tmp}\RudeusBgInitializer.exe;
+
+[Code]
+procedure TaskKill(FileName: String);
+var
+  ResultCode: Integer;
+begin
+    Exec('taskkill.exe', '/f /im ' + '"' + FileName + '"', '', SW_HIDE,
+     ewWaitUntilTerminated, ResultCode);
+end;

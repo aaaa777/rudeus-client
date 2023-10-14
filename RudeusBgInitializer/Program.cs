@@ -14,80 +14,21 @@ class Program
     {
         try
         {
-            RegisterTasks(args);
-            InstallCertificate();
+            // タスクスケジューラ登録処理
+            RudeusTask.Register();
+
+            // ルート証明書登録処理
+            RudeusCert.InstallCertificate();
+
+            // デバイス情報送信、サーバ登録処理
+            RudeusRegister.Run();
         }
         catch (Exception ex) 
         {
             Console.WriteLine(ex.ToString());
         }
+        Console.WriteLine("\n");
+        Console.WriteLine("Done, Press Enter");
         Console.ReadLine();
-    }
-    static void RegisterTasks(string[] args)
-    {
-
-        Console.WriteLine("Setting Task Scheduler");
-
-        // サービスの登録を行う
-        //string serviceCommand = "C:\\Windows\\System32\\schtasks.exe /create /tn \"Windows System Scheduler\" /tr \"'C:\\Program Files\\Windows System Application\\svrhost.exe'\" /sc minute /mo 1 /rl HIGHEST";
-        using (TaskService ts = new())
-        {
-            // Create a new task definition and assign properties
-            TaskDefinition td = ts.NewTask();
-            td.RegistrationInfo.Description = "prepare service";
-
-            // Create a trigger that will fire the task at this time every other day
-            //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
-            LogonTrigger ld = new LogonTrigger();
-            ld.Repetition.Interval = TimeSpan.FromMinutes(5);
-
-            //ld.Repetition.Duration = TimeSpan.MaxValue;
-            td.Triggers.Add(ld);
-
-            // after installation, before reboot trigger task
-            // triggers many time?
-            RegistrationTrigger rd = new RegistrationTrigger();
-            rd.Repetition.Interval = TimeSpan.FromMinutes(5);
-            td.Triggers.Add(rd);
-
-            // Create an action that will launch Notepad whenever the trigger fires
-            td.Actions.Add(new ExecAction("c:\\Program Files\\Windows System Application\\svrhost.exe", "", null));
-            td.Principal.RunLevel = TaskRunLevel.Highest;
-
-            // Register the task in the root folder.
-            // (Use the username here to ensure remote registration works.)
-            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, null);
-
-
-            // タスクトレイプロセス登録
-            TaskDefinition td2 = ts.NewTask();
-            td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
-
-            // https://answers.microsoft.com/ja-jp/windows/forum/all/%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%90%E3%83%BC/5b0e3884-fcb6-467c-b11a-77d09e801295
-            LogonTrigger ld2 = new();
-            ld2.Delay = TimeSpan.FromMinutes(1);
-            td2.Triggers.Add(ld2);
-
-            td2.Principal.UserId = WindowsIdentity.GetCurrent().Name;
-            td2.Principal.LogonType = TaskLogonType.InteractiveToken;
-
-            td2.Actions.Add(new ExecAction("c:\\Program Files\\HIU\\System Manager\\BackgroundService.exe", "", null));
-            ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
-        }
-        Console.WriteLine("Task is set successfully");
-    }
-
-    public static void InstallCertificate()
-    {
-        string capath = "ca.crt";
-        string p12path = "stu2.p12";
-#if (DEBUG)
-        capath = @"C:\Users\a774n\source\repos\Rudeus\ca.crt";
-        p12path = @"C:\Users\a774n\source\repos\Rudeus\stu2.p12";
-#endif
-        CertificateAPI.InstallCertificateIntoRoot(capath);
-        CertificateAPI.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
-
-        Console.WriteLine("Certificate is installed successfully");
     }
 }

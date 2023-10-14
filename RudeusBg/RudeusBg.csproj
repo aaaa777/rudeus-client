@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net7.0-windows10.0.18362.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-RudeusBg-ed41d21d-eded-44d3-b326-2471bfb3d360</UserSecretsId>
@@ -13,10 +12,10 @@
 	<OutputType Condition="'$(Configuration)' == 'Release'">Exe</OutputType>
 	<OutputType Condition="'$(Configuration)' != 'Release'">Exe</OutputType>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
+	<TargetFramework>net7.0-windows7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autoupdater.NET.Official" Version="1.8.4" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
     <PackageReference Include="System.Management" Version="7.0.2" />
   </ItemGroup>
