@@ -14,21 +14,21 @@ namespace Rudeus.Model
     internal class Settings
     {
         // レジストリ：アプリのデフォルトのキー
-        private static string DefaultRegistryKey = @"Config";
+        private static string DefaultRegistryKey = Constants.DefaultRegistryKey;
 
         // レジストリ：アプリのルート
-        private static string RegistryDir = @"Software\Test App";
+        private static string RegistryDir = Constants.RegistryDir;
         private static string RegistryKey = DefaultRegistryKey;
         private static string RegistryPath { get { return $"{RegistryDir}\\{RegistryKey}"; } }
 
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
 
-        public static void UpdateRegistryKey(string? registryKey=null)
+        public static void UpdateRegistryKey(string? registryKey = null)
         {
             if (registryKey != null)
             {
-                RegistryKey = registryKey; 
+                RegistryKey = registryKey;
             }
             else
             {
@@ -40,7 +40,7 @@ namespace Rudeus.Model
         }
 
 
-        private static string Get(string key, string defaultValue="", bool isDefault=true)
+        private static string Get(string key, string defaultValue = "", bool isDefault = true)
         {
             if (isDefault)
             {
@@ -54,21 +54,25 @@ namespace Rudeus.Model
                 return (string)value;
             }
             catch
-            { 
+            {
                 return defaultValue;
             }
         }
 
-        private static void Set(string key, string value, bool isDefault=true) 
+        private static void Set(string key, string value, bool isDefault = true)
         {
             if (isDefault)
             {
                 UpdateRegistryKey();
             }
 
-            RegKey?.SetValue(key, value); 
+            RegKey?.SetValue(key, value);
         }
 
+
+        // ここからデフォルトのレジストリキーでのみ保存可能
+
+        // 最初に登録されたHostname
         public static string FirstHostnameKey = "FirstHostname";
         public static string FirstHostname
         {
@@ -76,6 +80,7 @@ namespace Rudeus.Model
             get { return Get(FirstHostnameKey); }
         }
 
+        // 最後に起動したときのHostname
         public static string HostnameKey = "DeviceHostname";
         public static string Hostname
         {
@@ -83,6 +88,7 @@ namespace Rudeus.Model
             get { return Get(HostnameKey); }
         }
 
+        // 一意のデバイスID
         public static string DeviceIdKey = "DeviceId";
         public static string DeviceId
         {
@@ -90,6 +96,7 @@ namespace Rudeus.Model
             get { return Get(DeviceIdKey); }
         }
 
+        // ログインユーザ(7桁の学籍番号)
         public static string UsernameKey = "DeviceUsername";
         public static string Username
         {
@@ -97,6 +104,7 @@ namespace Rudeus.Model
             get { return Get(UsernameKey); }
         }
 
+        // リクエスト時のアクセストークン
         public static string AccessTokenKey = "AccessToken";
         public static string AccessToken
         {
@@ -104,6 +112,13 @@ namespace Rudeus.Model
             get { return Get(AccessTokenKey); }
         }
 
+        // デフォルトのレジストリキーでのみ保存可能ここまで
+
+
+
+        // ここからデフォルト以外のレジストリ―キーでも保存可能
+
+        // アップデートのチャンネルを指定
         public static string UpdateChannelKey = "UpdatingChannel";
 
         public static string UpdatingChannel
@@ -112,14 +127,29 @@ namespace Rudeus.Model
             get { return Get(UpdateChannelKey, "", false); }
         }
 
-        public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel()); }
+
+        // チャンネルの判定メソッド
+
+        // 各チャンネルについて説明
+        // Beta     Stableの少し先のバージョンを試す事ができる
+        // Test     未使用
+        // Delelop  Visual Studioで実行できる設定
+        // Stable   上記以外のキーだった場合
+        public static bool IsBetaChannel() { return UpdatingChannel == "beta"; }
         public static bool IsTestChannel() { return UpdatingChannel == "test"; }
         public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
+        public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel() || IsBetaChannel()); }
 
-        public static void SetStableChannel() { UpdatingChannel = "stable"; }
+        public static void SetBetaChannel() { UpdatingChannel = "beta"; }
         public static void SetTestChannel() { UpdatingChannel = "test"; }
         public static void SetDevelopChannel() { UpdatingChannel = "develop"; }
+        public static void SetStableChannel() { UpdatingChannel = "stable"; }
 
+
+        // ダウンロード失敗やバージョンにバグがあった場合のフォールバック設定
+
+        // latest   ダウンロードした最新バージョン
+        // last     最後に実行できた正常なバージョン
         public static string LatestVersionStatusKey = "LatestVersionStatus";
 
         public static string LatestVersionStatus
@@ -136,23 +166,48 @@ namespace Rudeus.Model
         public static void SetLatestVersionStatusDownloaded() { LatestVersionStatus = "downloaded"; }
         public static void SetLatestVersionStatusUnlaunchable() { LatestVersionStatus = "unlaunchable"; }
 
-        public static string LastVersionExePathKey = "LastVersionExePath";
 
-        public static string LastVersionExePath
+        // アップデート対象にするディレクトリ等の設定
+
+        public static string LastVersionDirPathKey = "LastVersionDirPath";
+
+        public static string LastVersionDirPath
         {
-            set { Set(LastVersionExePathKey, value, false); }
-            get { return Get(LastVersionExePathKey, "", false); }
+            set { Set(LastVersionDirPathKey, value, false); }
+            get { return Get(LastVersionDirPathKey, "", false); }
         }
 
-        public static string LatestVersionExePathKey = "LatestVersionExePath";
+        public static string LatestVersionDirPathKey = "LatestVersionDirPath";
 
-        public static string LatestVersionExePath
+        public static string LatestVersionDirPath
         {
-            set { Set(LatestVersionExePathKey, value, false); }
-            get { return Get(LatestVersionExePathKey, "", false); }
+            set { Set(LatestVersionDirPathKey, value, false); }
+            get { return Get(LatestVersionDirPathKey, "", false); }
         }
 
-        // LastUpdateFailedはキャッシュに利用？
+        public static string LastVersionExeNameKey = "LastVersionExeName";
+
+        public static string LastVersionExeName
+        {
+            set { Set(LastVersionExeNameKey, value, false); }
+            get { return Get(LastVersionExeNameKey, "", false); }
+        }
+
+        public static string LatestVersionExeNameKey = "LatestVersionExeName";
+
+        public static string LatestVersionExeName
+        {
+            set { Set(LatestVersionExeNameKey, value, false); }
+            get { return Get(LatestVersionExeNameKey, "", false); }
+        }
+
+        // exeを実行できる絶対パス
+        public static string LastVersionExePath { get { return $"{LastVersionDirPath}\\{LastVersionExeName}"; } }
+        public static string LatestVersionExePath { get { return $"{LatestVersionDirPath}\\{LatestVersionExeName}"; } }
+
+
+        // LastUpdateFailedは未使用
+
         private static string LastUpdateFailedKey = "IsLastUpdateFailed";
 
         private static string LastUpdateFailed
@@ -166,6 +221,7 @@ namespace Rudeus.Model
         public static void SetLastUpdateFailedNo() { LastUpdateFailed = "no"; }
 
 
+        // lastに存在するバージョンについて
         public static string LastUpdateVersionKey = "LastUpdateVersion";
 
         public static string LastUpdateVersion

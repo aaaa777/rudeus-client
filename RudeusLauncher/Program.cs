@@ -9,16 +9,14 @@ public class Program
     public static void Main(string[] args)
     {
 #if(DEBUG)
-        args = new string[] { $"latest\\Testapp.exe", $"last\\Testapp.exe", "TestApp" };
+        args = new string[] { $"TestApp" };
 #endif
-        if(args.Length < 2)
+        if(args.Length < 1)
         {
             return;
         }
 
-        string latestAppPath = args[0];
-        string lastAppPath = args[1];
-        string registryKey = args[2];
+        string registryKey = args[1];
 
         // アップデート確認・実行
         Updater.Run(registryKey);

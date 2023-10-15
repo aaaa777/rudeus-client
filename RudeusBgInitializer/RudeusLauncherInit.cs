@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 internal class RudeusLauncherInit
 {
-    private readonly static string RudeusBgRegKey = "Bg";
-    private readonly static string RudeusBgFormRegKey = "Task";
+    private readonly static string RudeusBgRegKey = Constants.RudeusBgRegKey;
+    private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
 
     public static void Run()
     {
@@ -17,7 +17,8 @@ internal class RudeusLauncherInit
         Settings.UpdateRegistryKey(RudeusBgRegKey);
 
         Settings.SetStableChannel();
-        Settings.LastVersionExePath = $"{Utils.RudeusBgDir}{Utils.RudeusBgExe}";
+        Settings.LastVersionDirPath = Constants.RudeusBgDir;
+        Settings.LastVersionExeName = Constants.RudeusBgExeName;
         Settings.LastUpdateVersion = "0.0.0.0";
         Settings.SetLatestVersionStatusOk();
 
@@ -26,7 +27,8 @@ internal class RudeusLauncherInit
         Settings.UpdateRegistryKey(RudeusBgFormRegKey);
 
         Settings.SetStableChannel();
-        Settings.LastVersionExePath = $"{Utils.RudeusBgFormDir}{Utils.RudeusBgFormExe}";
+        Settings.LastVersionDirPath = Constants.RudeusBgFormDir;
+        Settings.LastVersionExeName = Constants.RudeusBgFormExeName;
         Settings.LastUpdateVersion = "0.0.0.0";
         Settings.SetLatestVersionStatusOk();
 

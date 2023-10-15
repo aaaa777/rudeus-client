@@ -14,6 +14,9 @@ class Program
     {
         try
         {
+            // Launcherのレジストリ初期値設定
+            RudeusLauncherInit.Run();
+
             // タスクスケジューラ登録処理
             RudeusTask.Register();
 
@@ -22,9 +25,6 @@ class Program
 
             // デバイス情報送信、サーバ登録処理
             RudeusRegister.Run();
-
-            // Launcherのレジストリ初期値設定
-            RudeusLauncherInit.Run();
         }
         catch (Exception ex) 
         {

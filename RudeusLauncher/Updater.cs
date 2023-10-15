@@ -42,16 +42,21 @@ internal class Updater
 
     private static void StartUpdate()
     {
-        // latestが起動確認できている場合のみlastに移動させる
+        // latestが起動確認できている場合のみlastにコピーさせる
         if (Settings.IsLatestVersionStatusOk())
         {
             SwitchLatestDirLast();
         }
 
 
+        // 一時ディレクトリにダウンロード開始
+        string tmpLatestPath = DownloadLatest();
+
         // latestを使用不能にマーク
         Settings.SetLatestVersionStatusUnlaunchable();
 
+        // 一時ディレクトリを移動
+        MvTempLatest(tmpLatestPath);
 
         //throw new NotImplementedException();
         
@@ -61,6 +66,21 @@ internal class Updater
     private static void SwitchLatestDirLast()
     {
         // del, mv latest last
+        Directory.Delete(Settings.LastVersionDirPath);
+        Directory.Move(Settings.LatestVersionDirPath, Settings.LastVersionDirPath);
+    }
+
+    // Latestをダウンロードした一時ディレクトリ名を返す
+    private static string DownloadLatest()
+    {
+
+        return $"temp\\";
+    }
+
+    //
+    private static void MvTempLatest(string tmpDirName)
+    {
+        Directory.Move(tmpDirName, Settings.LatestVersionDirPath);
     }
 
     public static bool ShouldUpdate()

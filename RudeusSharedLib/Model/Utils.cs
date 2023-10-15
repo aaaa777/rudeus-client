@@ -8,15 +8,15 @@ namespace Rudeus.Model
 {
     internal class Utils
     {
-        public static readonly string WebPortalUrl = "https://portal.do-johodai.ac.jp";
-        public static readonly string Polite3Url = "https://polite3.do-johodai.ac.jp";
-        public static readonly string KyoumuUrl = "https://eduweb.do-johodai.ac.jp";
+        public static readonly string WebPortalUrl = Constants.WebPortalUrl;
+        public static readonly string Polite3Url = Constants.Polite3Url;
+        public static readonly string KyoumuUrl = Constants.KyoumuUrl;
 
-        public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application\\";
-        public static readonly string RudeusBgExe = "svrhost.exe";
+        //public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application";
+        //public static readonly string RudeusBgExe = "RudeusBg.exe";
 
-        public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager\\";
-        public static readonly string RudeusBgFormExe = "RudeusBgForm.exe";
+        //public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager";
+        //public static readonly string RudeusBgFormExe = "RudeusBgForm.exe";
 
         /// <summary>
         /// s9999999@s.do-johodai.ac.jp -> 9999999
