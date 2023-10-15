@@ -13,11 +13,11 @@ namespace Rudeus.Model.Operations
     internal class Operation
     {
         private readonly string Opcode = "undefined";
-        private readonly Func<bool> Start;
+        private Func<string, bool> Start;
         private static bool IsInitializedDefault = false;
         public static Operation[] Operations { get; set; } = Array.Empty<Operation>();
 
-        public Operation(string opcode, Func<bool> callback)
+        public Operation(string opcode, Func<string, bool> callback)
         {
             Opcode = opcode;
             Start = callback;
@@ -26,10 +26,10 @@ namespace Rudeus.Model.Operations
         }
 
 
-        public static Operation? Run(string opcode)
+        public static Operation? Run(string opcode, string message="")
         {
             var operation = Search(opcode);
-            operation?.Start();
+            operation?.Start(message);
             return operation;
         }
         public static Operation? Search(string opcode) {

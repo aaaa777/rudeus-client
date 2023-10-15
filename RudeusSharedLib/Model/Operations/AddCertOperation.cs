@@ -17,7 +17,7 @@ namespace Rudeus.Model.Operations
             new Operation(Opcode, Start);
         }
 
-        public bool Start()
+        public bool Start(string messasge)
         {
 
             Console.WriteLine($"{Opcode} executed");
