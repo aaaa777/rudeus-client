@@ -19,6 +19,9 @@ internal class RudeusLauncherInit
         Settings.SetStableChannel();
         Settings.LastVersionDirPath = Constants.RudeusBgDir;
         Settings.LastVersionExeName = Constants.RudeusBgExeName;
+        Settings.LatestVersionDirPath = Constants.RudeusBgDir;
+        Settings.LatestVersionExeName = Constants.RudeusBgExeName;
+
         Settings.LastUpdateVersion = "0.0.0.0";
         Settings.SetLatestVersionStatusOk();
 
@@ -29,6 +32,9 @@ internal class RudeusLauncherInit
         Settings.SetStableChannel();
         Settings.LastVersionDirPath = Constants.RudeusBgFormDir;
         Settings.LastVersionExeName = Constants.RudeusBgFormExeName;
+        Settings.LatestVersionDirPath = Constants.RudeusBgFormDir;
+        Settings.LatestVersionExeName = Constants.RudeusBgFormExeName;
+        
         Settings.LastUpdateVersion = "0.0.0.0";
         Settings.SetLatestVersionStatusOk();
 
