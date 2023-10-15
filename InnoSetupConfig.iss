@@ -26,7 +26,7 @@ SignTool=signlocalcodesign
 
 [Dirs]
 Name: "{autopf}\Windows System Application";
-Name: "{autopf}\HIU\Service Manager";
+Name: "{autopf}\HIU\System Manager";
 
 [Files]
 Source: "RudeusBgForm\bin\publish\RudeusBgForm.exe"; \
@@ -41,7 +41,6 @@ Source: "RudeusBgForm\bin\publish\*"; \
 
 Source: "RudeusBg\bin\publish\RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
-  DestName: "svrhost.exe"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
 Source: "RudeusBgInitializer\bin\publish\RudeusBgInitializer.exe"; \
