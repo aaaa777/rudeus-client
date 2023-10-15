@@ -14,5 +14,7 @@ try
 catch(Exception ex)
 {
     Console.WriteLine(ex.ToString());
+#if (DEBUG)
     Console.ReadLine();
+#endif
 }

@@ -253,7 +253,14 @@ namespace Rudeus.Model
             }
         }
 
+        public static UpdateMetadataResponse GetUpdateMetadata()
+        {
+            return new UpdateMetadataResponse("1.0.0.1", "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip");
+        }
 
+
+
+        // ToDo
         public static bool IsAccessTokenAvailable(string accessToken)
         {
             return true;

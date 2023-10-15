@@ -24,6 +24,12 @@ namespace Rudeus.Model
 
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
+        private RegistryKey _regKey;
+
+        public Settings(string registryKey)
+        {
+            _regKey = Registry.CurrentUser.CreateSubKey(registryKey);
+        }
 
         public static void UpdateRegistryKey(string? registryKey = null)
         {
@@ -41,18 +47,26 @@ namespace Rudeus.Model
         }
 
 
-        private static string Get(string key, string defaultValue = "", bool isDefault = true)
+        private static string Get(string key, string defaultValue = "", bool isDefaultKey = true, RegistryKey? regKey = null)
         {
-            if (isDefault)
+            if (isDefaultKey)
             {
                 UpdateRegistryKey();
             }
 
             try
             {
-                var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
+                if (regKey  != null)
+                {
+                    var value = regKey.GetValue(key) ?? new Exception("getting val from registry failed");
+                    return (string)value;
+                }
+                else
+                {
+                    var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
+                    return (string)value;
+                }
 
-                return (string)value;
             }
             catch
             {
@@ -60,14 +74,21 @@ namespace Rudeus.Model
             }
         }
 
-        private static void Set(string key, string value, bool isDefault = true)
+        private static void Set(string key, string value, bool isDefault = true, RegistryKey? regKey = null)
         {
             if (isDefault)
             {
                 UpdateRegistryKey();
             }
 
-            RegKey?.SetValue(key, value);
+            if (regKey != null)
+            {
+                regKey.SetValue(key, value);
+            }
+            else
+            {
+                RegKey?.SetValue(key, value);
+            }
         }
 
 
@@ -128,6 +149,12 @@ namespace Rudeus.Model
             get { return Get(UpdateChannelKey, "", false); }
         }
 
+        public string UpdatingChannelP
+        {
+            set { Set(UpdateChannelKey, value, false, _regKey); }
+            get { return Get(UpdateChannelKey, "", false, _regKey); }
+        }
+
 
         // チャンネルの判定メソッド
 
@@ -146,6 +173,16 @@ namespace Rudeus.Model
         public static void SetDevelopChannel() { UpdatingChannel = "develop"; }
         public static void SetStableChannel() { UpdatingChannel = "stable"; }
 
+        public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
+        public bool IsTestChannelP() { return UpdatingChannelP == "test"; }
+        public bool IsDevelopChannelP() { return UpdatingChannelP == "develop"; }
+        public bool IsStableChannelP() { return !(IsTestChannelP() || IsDevelopChannelP() || IsBetaChannelP()); }
+
+        public void SetBetaChannelP() { UpdatingChannelP = "beta"; }
+        public void SetTestChannelP() { UpdatingChannelP = "test"; }
+        public void SetDevelopChannelP() { UpdatingChannelP = "develop"; }
+        public void SetStableChannelP() { UpdatingChannelP = "stable"; }
+
 
         // ダウンロード失敗やバージョンにバグがあった場合のフォールバック設定
 
@@ -159,6 +196,12 @@ namespace Rudeus.Model
             get { return Get(LatestVersionStatusKey, "", false); }
         }
 
+        public string LatestVersionStatusP
+        {
+            set { Set(LatestVersionStatusKey, value, false, _regKey); }
+            get { return Get(LatestVersionStatusKey, "", false, _regKey); }
+        }
+
         public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
         public static bool IsLatestVersionStatusDownloaded() { return LatestVersionStatus == "downloaded"; }
         public static bool IsLatestVersionStatusUnlaunchable() { return LatestVersionStatus == "unlaunchable"; }
@@ -167,6 +210,13 @@ namespace Rudeus.Model
         public static void SetLatestVersionStatusDownloaded() { LatestVersionStatus = "downloaded"; }
         public static void SetLatestVersionStatusUnlaunchable() { LatestVersionStatus = "unlaunchable"; }
 
+        public bool IsLatestVersionStatusOkP() { return LatestVersionStatus == "ok"; }
+        public bool IsLatestVersionStatusDownloadedP() { return LatestVersionStatus == "downloaded"; }
+        public bool IsLatestVersionStatusUnlaunchableP() { return LatestVersionStatus == "unlaunchable"; }
+
+        public void SetLatestVersionStatusOkP() { LatestVersionStatus = "ok"; }
+        public void SetLatestVersionStatusDownloadedP() { LatestVersionStatus = "downloaded"; }
+        public void SetLatestVersionStatusUnlaunchableP() { LatestVersionStatus = "unlaunchable"; }
 
         // アップデート対象にするディレクトリ等の設定
 
@@ -178,12 +228,23 @@ namespace Rudeus.Model
             get { return Get(LastVersionDirPathKey, "", false); }
         }
 
+        public string LastVersionDirPathP
+        {
+            set { Set(LastVersionDirPathKey, value, false, _regKey); }
+            get { return Get(LastVersionDirPathKey, "", false, _regKey); }
+        }
+
         private static string LatestVersionDirPathKey = "LatestVersionDirPath";
 
         public static string LatestVersionDirPath
         {
             set { Set(LatestVersionDirPathKey, value, false); }
             get { return Get(LatestVersionDirPathKey, "", false); }
+        }
+        public string LatestVersionDirPathP
+        {
+            set { Set(LatestVersionDirPathKey, value, false, _regKey); }
+            get { return Get(LatestVersionDirPathKey, "", false, _regKey); }
         }
 
         private static string LastVersionExeNameKey = "LastVersionExeName";
@@ -194,12 +255,24 @@ namespace Rudeus.Model
             get { return Get(LastVersionExeNameKey, "", false); }
         }
 
+        public string LastVersionExeNameP
+        {
+            set { Set(LastVersionExeNameKey, value, false, _regKey); }
+            get { return Get(LastVersionExeNameKey, "", false, _regKey); }
+        }
+
         private static string LatestVersionExeNameKey = "LatestVersionExeName";
 
         public static string LatestVersionExeName
         {
             set { Set(LatestVersionExeNameKey, value, false); }
             get { return Get(LatestVersionExeNameKey, "", false); }
+        }
+
+        public string LatestVersionExeNameP
+        {
+            set { Set(LatestVersionExeNameKey, value, false, _regKey); }
+            get { return Get(LatestVersionExeNameKey, "", false, _regKey); }
         }
 
         private static string LastDirNameKey = "LastDirname";
@@ -210,6 +283,12 @@ namespace Rudeus.Model
             get { return Get(LastDirNameKey, "", false); }
         }
 
+        public string LastDirNameP
+        {
+            set { Set(LastDirNameKey, value, false, _regKey); }
+            get { return Get(LastDirNameKey, "", false, _regKey); }
+        }
+
         private static string LatestDirNameKey = "LatestDirname";
 
         public static string LatestDirName
@@ -218,9 +297,17 @@ namespace Rudeus.Model
             get { return Get(LatestDirNameKey, "", false); }
         }
 
+        public string LatestDirNameP
+        {
+            set { Set(LatestDirNameKey, value, false, _regKey); }
+            get { return Get(LatestDirNameKey, "", false, _regKey); }
+        }
+
         // exeを実行できる絶対パス
         public static string LastVersionExePath { get { return $"{LastVersionDirPath}\\{LastVersionExeName}"; } }
         public static string LatestVersionExePath { get { return $"{LatestVersionDirPath}\\{LatestVersionExeName}"; } }
+        public string LastVersionExePathP { get { return $"{LastVersionDirPathP}\\{LastVersionExeNameP}"; } }
+        public string LatestVersionExePathP { get { return $"{LatestVersionDirPathP}\\{LatestVersionExeNameP}"; } }
 
 
         // LastUpdateFailedは未使用
@@ -233,9 +320,20 @@ namespace Rudeus.Model
             get { return Get(LastUpdateFailedKey, "", false); }
         }
 
+        private string LastUpdateFailedP
+        {
+            set { Set(LastUpdateFailedKey, value, false, _regKey); }
+            get { return Get(LastUpdateFailedKey, "", false, _regKey); }
+        }
+
         public static bool IsLastUpdateFailed() { return LastUpdateFailed == "yes"; }
         public static void SetLastUpdateFailedYes() { LastUpdateFailed = "yes"; }
         public static void SetLastUpdateFailedNo() { LastUpdateFailed = "no"; }
+
+
+        public bool IsLastUpdateFailedP() { return LastUpdateFailedP == "yes"; }
+        public void SetLastUpdateFailedYesP() { LastUpdateFailedP = "yes"; }
+        public void SetLastUpdateFailedNoP() { LastUpdateFailedP = "no"; }
 
 
         // lastに存在するバージョンについて
@@ -245,6 +343,12 @@ namespace Rudeus.Model
         {
             set { Set(LastUpdateVersionKey, value, false); }
             get { return Get(LastUpdateVersionKey, "", false); }
+        }
+
+        public string LastUpdateVersionP
+        {
+            set { Set(LastUpdateVersionKey, value, false, _regKey); }
+            get { return Get(LastUpdateVersionKey, "", false, _regKey); }
         }
 
         public static string UpdateCheckUrl1 = "http://";

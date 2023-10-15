@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 internal class Launcher
 {
-    public static void Run(string registryKey)
+    public static int Run(string registryKey)
     {
         // レジストリを切り替え
         Settings.UpdateRegistryKey(registryKey);
@@ -35,7 +35,7 @@ internal class Launcher
             Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
-            StartProcess(lastExePath);
+            exitCode = StartProcess(lastExePath);
         }
         else
         {
@@ -43,6 +43,7 @@ internal class Launcher
             Settings.SetLatestVersionStatusOk();
         }
 
+        return exitCode;
     }
 
     public static int StartProcess(string filePath)

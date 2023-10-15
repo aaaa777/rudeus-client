@@ -64,5 +64,7 @@ namespace Rudeus.Model
         // レジストリ：アプリのルート
         public static string RegistryDir = @"Software\Test App";
 
+        public static int ForceUpdateExitCode = 2001;
+        public static int LaunchTwiceExitCode = 2002;
     }
 }

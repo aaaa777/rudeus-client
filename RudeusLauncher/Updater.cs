@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Compression;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Model;
+using Rudeus.Model.Response;
 
 internal class Updater
 {
@@ -17,7 +20,9 @@ internal class Updater
 
         // アップデート情報取得
         // 最終的にRemoteAPIを利用したい
-        string latestVersionFromUrl = "1.0.0.1";
+        UpdateMetadataResponse res = RemoteAPI.GetUpdateMetadata();
+        string latestVersionRemote = res.response_data.latest_version;
+        string latestVersionZipUrl = res.response_data.latest_raw_zip;
 
         // アップデート判定
         if (!ShouldUpdate()) 
@@ -28,7 +33,7 @@ internal class Updater
         // アップデート開始
         try
         {
-            StartUpdate();
+            StartUpdate(latestVersionZipUrl);
         }
         catch
         {
@@ -40,7 +45,7 @@ internal class Updater
         Settings.SetLatestVersionStatusDownloaded();
     }
 
-    private static void StartUpdate()
+    private static void StartUpdate(string url)
     {
         // レジストリを切り替え
         Settings.UpdateRegistryKey(RegistryKey);
@@ -65,7 +70,7 @@ internal class Updater
         }
 
         // 一時ディレクトリにダウンロード開始
-        string tmpLatestPath = DownloadLatest();
+        string tmpLatestPath = DownloadLatest(url);
 
 
         // 一時ディレクトリを移動
@@ -90,21 +95,27 @@ internal class Updater
         }
     }
 
-    // Latestをダウンロードした一時ディレクトリ名を返す
-    private static string DownloadLatest()
+    // Latestをダウンロード
+    // 返りはダウンロードした一時ディレクトリ名
+    private static string DownloadLatest(string url)
     {
         Guid g = Guid.NewGuid();
         string guid8 = g.ToString().Substring(0, 8);
         string tempDir = $"{Path.GetTempPath()}{guid8}";
-#if (DEBUG)
-        Utils.CopyDirectory(@"C:\Users\a774n\source\repos\Rudeus\RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0", tempDir, true);
-#else
-    
-#endif
+
+        Directory.CreateDirectory(tempDir);
+
+        //Utils.CopyDirectory(@"C:\Users\a774n\source\repos\Rudeus\RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0", tempDir, true);
+
+        WebClient wc = new();
+        wc.DownloadFile(url, $"{tempDir}\\RudeusBg_release.zip");
+        ZipFile.ExtractToDirectory($"{tempDir}\\RudeusBg_release.zip", tempDir);
+        File.Delete($"{tempDir}\\RudeusBg_release.zip");
+
         return tempDir;
     }
 
-    //
+    // 一時フォルダをそのままlatestに移動
     private static void MvTempLatest(string tmpDirName)
     {
         Directory.Move(tmpDirName, $"{Settings.LatestVersionDirPath}");
@@ -112,6 +123,10 @@ internal class Updater
 
     public static bool ShouldUpdate()
     {
+#if(DEBUG)
         return true;
+#else
+        return false;
+#endif
     }
 }

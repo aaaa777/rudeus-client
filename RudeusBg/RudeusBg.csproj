@@ -9,9 +9,11 @@
 	<PublishTrimmed>true</PublishTrimmed>
 	<!--
 	-->
+	<SelfContained>true</SelfContained>
 	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+	
 	<OutputType Condition="'$(Configuration)' == 'Release'">Exe</OutputType>
-	<OutputType Condition="'$(Configuration)' != 'Release'">Exe</OutputType>
+	<OutputType Condition="'$(Configuration)' != 'Release'">WinExe</OutputType>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<TargetFramework>net7.0-windows7.0</TargetFramework>
   </PropertyGroup>

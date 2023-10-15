@@ -1,10 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+	<OutputType Condition="'$(Configuration)' != 'Release'">Exe</OutputType>
+	<OutputType Condition="'$(Configuration)' == 'Release'">WinExe</OutputType>
+    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  
+	<PublishTrimmed>true</PublishTrimmed>
+	<PublishSingleFile >true</PublishSingleFile>
+	<StartupObject>Program</StartupObject>
+	<ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />

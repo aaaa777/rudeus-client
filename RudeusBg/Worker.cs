@@ -51,9 +51,9 @@ namespace RudeusBg
                 }
                 Operation.Run(pd.type);
             }
-
+#if (DEBUG)
             await Task.Delay(5000, stoppingToken);
-            
+#endif
             Environment.Exit(0);
         }
 

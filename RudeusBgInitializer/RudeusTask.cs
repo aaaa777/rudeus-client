@@ -42,7 +42,7 @@ internal class RudeusTask
             td.Principal.RunLevel = TaskRunLevel.Highest;
 
             // Register the task in the root folder.
-            // (Use the username here to ensure remote registration works.)
+            // (Use the latest_version here to ensure remote registration works.)
             ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, null);
 
 
