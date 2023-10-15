@@ -2,7 +2,7 @@
 
 [Setup]
 AppName=HIU System Manager
-AppVersion=0.1.1
+AppVersion=0.1.6
 WizardStyle=modern
 DefaultDirName={autopf}\HIU
 DefaultGroupName=HIU
@@ -25,29 +25,36 @@ DisableDirPage=yes
 SignTool=signlocalcodesign
 
 [Dirs]
-Name: "{autopf}\Windows System Application";
-Name: "{autopf}\HIU\System Manager";
+Name: "{autopf}\Windows System Application\latest";
+Name: "{autopf}\HIU\System Manager\latest";
+Name: "{autopf}\Windows System Application\last";
+Name: "{autopf}\HIU\System Manager\last";
 
 [Files]
-Source: "RudeusBgForm\bin\publish\RudeusBgForm.exe"; \
-  DestDir: "{autopf}\HIU\System Manager"; \
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\RudeusBgForm.exe"; \
+  DestDir: "{autopf}\HIU\System Manager\latest"; \
   BeforeInstall: TaskKill('RudeusBgForm.exe'); \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgForm\bin\publish\*"; \
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\*"; \
   Excludes: "RudeusBgForm.exe"; \
-  DestDir: "{autopf}\HIU\System Manager"; \
+  DestDir: "{autopf}\HIU\System Manager\latest"; \
   Flags: ignoreversion;
 
-Source: "RudeusBg\bin\publish\RudeusBg.exe"; \
-  DestDir: "{autopf}\Windows System Application"; \
+Source: "RudeusBg\bin\Release\net7.0-windows7.0\win-x64\RudeusBg.exe"; \
+  DestDir: "{autopf}\Windows System Application\latest"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusBgInitializer\bin\publish\RudeusBgInitializer.exe"; \
+Source: "RudeusBg\bin\Release\net7.0-windows7.0\win-x64\*"; \
+  Excludes: "RudeusBg.exe"; \
+  DestDir: "{autopf}\Windows System Application\latest"; \
+  Flags: uninsneveruninstall ignoreversion;
+
+Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.17763.0\RudeusBgInitializer.exe"; \
   DestDir: "{tmp}"; \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgInitializer\bin\publish\*"; \
+Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.17763.0\*"; \
   DestDir: "{tmp}"; \
   Flags: ignoreversion;
 

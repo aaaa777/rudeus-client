@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Win32;
@@ -169,7 +170,7 @@ namespace Rudeus.Model
 
         // アップデート対象にするディレクトリ等の設定
 
-        public static string LastVersionDirPathKey = "LastVersionDirPath";
+        private static string LastVersionDirPathKey = "LastVersionDirPath";
 
         public static string LastVersionDirPath
         {
@@ -177,7 +178,7 @@ namespace Rudeus.Model
             get { return Get(LastVersionDirPathKey, "", false); }
         }
 
-        public static string LatestVersionDirPathKey = "LatestVersionDirPath";
+        private static string LatestVersionDirPathKey = "LatestVersionDirPath";
 
         public static string LatestVersionDirPath
         {
@@ -185,7 +186,7 @@ namespace Rudeus.Model
             get { return Get(LatestVersionDirPathKey, "", false); }
         }
 
-        public static string LastVersionExeNameKey = "LastVersionExeName";
+        private static string LastVersionExeNameKey = "LastVersionExeName";
 
         public static string LastVersionExeName
         {
@@ -193,12 +194,28 @@ namespace Rudeus.Model
             get { return Get(LastVersionExeNameKey, "", false); }
         }
 
-        public static string LatestVersionExeNameKey = "LatestVersionExeName";
+        private static string LatestVersionExeNameKey = "LatestVersionExeName";
 
         public static string LatestVersionExeName
         {
             set { Set(LatestVersionExeNameKey, value, false); }
             get { return Get(LatestVersionExeNameKey, "", false); }
+        }
+
+        private static string LastDirNameKey = "LastDirname";
+
+        public static string LastDirName
+        {
+            set { Set(LastDirNameKey, value, false); }
+            get { return Get(LastDirNameKey, "", false); }
+        }
+
+        private static string LatestDirNameKey = "LatestDirname";
+
+        public static string LatestDirName
+        {
+            set { Set(LatestDirNameKey, value, false); }
+            get { return Get(LatestDirNameKey, "", false); }
         }
 
         // exeを実行できる絶対パス

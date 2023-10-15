@@ -9,14 +9,16 @@ public class Program
     public static void Main(string[] args)
     {
 #if(DEBUG)
-        args = new string[] { $"TestApp" };
+        args = new string[] { Constants.RudeusBgFormRegKey };
 #endif
         if(args.Length < 1)
         {
             return;
         }
 
-        string registryKey = args[1];
+        string registryKey = args[0];
+
+        // ToDo: 重複実行中にプロセスキルをする
 
         // アップデート確認・実行
         Updater.Run(registryKey);

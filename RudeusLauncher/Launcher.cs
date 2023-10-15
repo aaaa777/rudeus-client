@@ -14,15 +14,15 @@ internal class Launcher
         // レジストリを切り替え
         Settings.UpdateRegistryKey(registryKey);
 
-        string filePath = Settings.LatestVersionExePath;
-        string altFilePath = Settings.LastVersionExePath;
+        string latestExePath = Settings.LatestVersionExePath;
+        string lastExePath = Settings.LastVersionExePath;
 
-        // 起動可能か未起動の状態のみでlatestを実行
+        // 起動可能かダウンロード後未起動の状態のみでlatestを実行
         int exitCode = -1;
         if (!Settings.IsLatestVersionStatusUnlaunchable())
         {
             // latestの実行
-            exitCode = StartProcess(filePath);
+            exitCode = StartProcess(latestExePath);
         }
 
 
@@ -31,11 +31,16 @@ internal class Launcher
         {
             // ToDo: 終了が遅かった時はフォールバックしない？
 
-            // レジストリにLastVersionStatusを登録
+            // レジストリにLatestが異常終了することを記録
             Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
-            StartProcess(altFilePath);
+            StartProcess(lastExePath);
+        }
+        else
+        {
+            // Latestの実行に成功したことを記録
+            Settings.SetLatestVersionStatusOk();
         }
 
     }
@@ -46,7 +51,7 @@ internal class Launcher
         try
         {
             Process ps = Process.Start(filePath);
-            //ps.WaitForExit();
+            ps.WaitForExit();
 
             return ps.ExitCode;
         }

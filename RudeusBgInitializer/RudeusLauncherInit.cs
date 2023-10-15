@@ -14,29 +14,38 @@ internal class RudeusLauncherInit
     public static void Run()
     {
         // RudeusBgのLaunch設定
+        
         Settings.UpdateRegistryKey(RudeusBgRegKey);
 
         Settings.SetStableChannel();
-        Settings.LastVersionDirPath = Constants.RudeusBgDir;
-        Settings.LastVersionExeName = Constants.RudeusBgExeName;
-        Settings.LatestVersionDirPath = Constants.RudeusBgDir;
-        Settings.LatestVersionExeName = Constants.RudeusBgExeName;
+        Settings.LastVersionDirPath = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLastName}";
+        Settings.LastVersionExeName = $"{Constants.RudeusBgExeName}";
+        Settings.LastDirName = Constants.RudeusBgLastName;
+
+        Settings.LatestVersionDirPath = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLatestName}";
+        Settings.LatestVersionExeName = $"{Constants.RudeusBgExeName}";
+        Settings.LatestDirName = Constants.RudeusBgLatestName;
 
         Settings.LastUpdateVersion = "0.0.0.0";
-        Settings.SetLatestVersionStatusOk();
+        Settings.SetLatestVersionStatusDownloaded();
 
 
         // RudeusBgFormのLaunch設定
+        
         Settings.UpdateRegistryKey(RudeusBgFormRegKey);
 
         Settings.SetStableChannel();
-        Settings.LastVersionDirPath = Constants.RudeusBgFormDir;
-        Settings.LastVersionExeName = Constants.RudeusBgFormExeName;
-        Settings.LatestVersionDirPath = Constants.RudeusBgFormDir;
-        Settings.LatestVersionExeName = Constants.RudeusBgFormExeName;
-        
+        Settings.LastVersionDirPath = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
+        Settings.LastVersionExeName = $"{Constants.RudeusBgFormExeName}";
+        Settings.LastDirName = Constants.RudeusBgLastName;
+
+        Settings.LatestVersionDirPath = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLatestName}";
+        Settings.LatestVersionExeName = $"{Constants.RudeusBgFormExeName}";
+        Settings.LatestDirName = Constants.RudeusBgLatestName;
+
         Settings.LastUpdateVersion = "0.0.0.0";
-        Settings.SetLatestVersionStatusOk();
+        Settings.SetLatestVersionStatusDownloaded();
+
 
         Console.WriteLine("Settings loaded for launcher");
     }

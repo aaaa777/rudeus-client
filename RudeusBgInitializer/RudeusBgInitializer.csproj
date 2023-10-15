@@ -7,8 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<!--
-	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 	-->
+	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 

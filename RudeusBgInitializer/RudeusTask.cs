@@ -37,8 +37,8 @@ internal class RudeusTask
             td.Triggers.Add(rd);
 
             // Create an action that will launch Notepad whenever the trigger fires
-            td.Actions.Add(new ExecAction($"{Constants.RudeusBgExePath}", "", null));
-            //td.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey}", null));
+            //td.Actions.Add(new ExecAction($"{Constants.RudeusBgExePath}", "", null));
+            td.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey}", null));
             td.Principal.RunLevel = TaskRunLevel.Highest;
 
             // Register the task in the root folder.
@@ -58,8 +58,8 @@ internal class RudeusTask
             td2.Principal.UserId = WindowsIdentity.GetCurrent().Name;
             td2.Principal.LogonType = TaskLogonType.InteractiveToken;
 
-            td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormExePath}", "", null));
-            //td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormLauncherExePath}", $"{Constants.RudeusBgFormRegKey}", null));
+            //td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormExePath}", "", null));
+            td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormLauncherExePath}", $"{Constants.RudeusBgFormRegKey}", null));
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("Task is set successfully");
