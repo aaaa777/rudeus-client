@@ -115,9 +115,9 @@ namespace Rudeus.Model
         public static int ForceUpdateExitCode = 2001;
         public static int LaunchTwiceExitCode = 2002;
 
-#if (DEBUG)
+
         public static string DummyUpdateUrl = "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip";
         public static string DummyVersion = "1.0.0.1";
-#endif
+
     }
 }
