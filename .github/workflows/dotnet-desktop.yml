@@ -104,31 +104,45 @@ jobs:
         Compress-Archive -Path net7.0-windows10.0.17763.0\* -Destination RudeusLauncher.zip
     
     # Create release
-    - name: Create release in github
-      id: create_release
-      uses: actions/create-release@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_ACCESSTOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        body: |
-          Built automatically.
-        draft: false
-        prerelease: false
+    #- name: Create release in github
+    #  id: create_release
+    #  uses: actions/create-release@v1.0.0
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.RELEASE_ACCESSTOKEN }}
+    #  with:
+    #    tag_name: ${{ github.ref }}
+    #    release_name: Release ${{ github.ref }}
+    #    body: |
+    #      Built automatically.
+    #    draft: false
+    #    prerelease: false
 
     # Upload release file
-    - name: Upload Release Asset
-      id: upload-release-asset-linux
-      uses: actions/upload-release-asset@v1.0.2
+    #- name: Upload Release Asset
+    #  id: upload-release-asset-linux
+    #  uses: actions/upload-release-asset@v1.0.2
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.RELEASE_ACCESSTOKEN }}
+    #  with:
+    #    upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #    asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip
+    #    asset_name: RudeusLauncher.zip
+    #    asset_content_type: application/zip
+
+    # 
+    - name: Deploy Windows release
+      if: matrix.os == 'windows-latest'
+      uses: WebFreak001/deploy-nightly@v2.0.0
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_ACCESSTOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip
-        asset_name: RudeusLauncher.zip
-        asset_content_type: application/zip
-    
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/125728409/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
+        release_id: 125728409 # same as above (id can just be taken out the upload_url, it's used to find old releases)
+        asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip # path to archive to upload
+        asset_name: Rudeus_launcher-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+        asset_content_type: application/zip # required by GitHub API
+        max_releases: 7 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     #- name: Decode the pfx
     #  run: |
