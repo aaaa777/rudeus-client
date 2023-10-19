@@ -95,13 +95,13 @@ jobs:
     # Compile installer
 
     # Zip installer
-    - uses: montudor/action-zip@v1
-      with:
-        args: zip -r RudeusLauncher.zip net7.0-windows10.0.17763.0\*
-    #- name: Zip artifacts
-    #  run: |
-    #    cd RudeusLauncher\bin\Release\
-    #    zip -r net7.0-windows10.0.17763.0\* RudeusLauncher.zip
+    #- uses: montudor/action-zip@v1
+    #  with:
+    #    args: zip -r RudeusLauncher.zip net7.0-windows10.0.17763.0\*
+    - name: Zip artifacts
+      run: |
+        cd RudeusLauncher\bin\Release\
+        Compress-Archive -Path net7.0-windows10.0.17763.0\* -Destination RudeusLauncher.zip
     
     # Create release
     - name: Create release in github
