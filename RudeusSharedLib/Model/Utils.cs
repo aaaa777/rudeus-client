@@ -170,5 +170,35 @@ namespace Rudeus.Model
                 }
             }
         }
+
+        /// <summary>ドット区切り数字列を比較する</summary>
+        /// <param name="a">対象文字列A</param>
+        /// <param name="b">対象文字列B</param>
+        /// <param name="number">比較する列数 (0なら全て)</param>
+        /// <returns>A-Bの符号 (1, 0, -1)</returns>
+        public static int CompareVersionString(string a, string b, int number = 0)
+        {
+            string[] aSeries = a.Split('.');
+            string[] bSeries = b.Split('.');
+            int aNum, bNum;
+            number = (number > 0) ? Math.Min(number, aSeries.Length) : aSeries.Length;
+            for (var i = 0; i < number; i++)
+            {
+                if (i >= bSeries.Length) { return 1; }
+                
+                if(!int.TryParse(aSeries[i], out aNum))
+                {
+                    aNum = 0;                    
+                }
+
+                if(!int.TryParse(bSeries[i], out bNum))
+                {
+                    bNum = 0;
+                }
+
+                if (aNum > bNum) { return 1; } else if (aNum < bNum) { return -1; }
+            }
+            return (aSeries.Length == bSeries.Length) ? 0 : -1;
+        }
     }
 }

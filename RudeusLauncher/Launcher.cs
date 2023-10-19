@@ -13,6 +13,7 @@ internal class Launcher
     {
         // レジストリを切り替え
         Settings.UpdateRegistryKey(registryKey);
+        Settings settings = new(registryKey);
 
         string latestExePath = Settings.LatestVersionExePath;
         string lastExePath = Settings.LastVersionExePath;
@@ -22,13 +23,22 @@ internal class Launcher
         if (!Settings.IsLatestVersionStatusUnlaunchable())
         {
             // latestの実行
+            Console.WriteLine("Trying launching latest version");
             exitCode = StartProcess(latestExePath);
+        }
+        else
+        {
+            Console.WriteLine("Last version is selected cuz latest version is marked `unlaunchable`");
+            Console.WriteLine("After next update comes, latest version will be tryed launching");
         }
 
 
         // latestが異常終了した時、lastにフォールバック
         if (exitCode != 0)
         {
+            Console.WriteLine("Latest version returned wrong exit code");
+            Console.WriteLine("Trying launching last version");
+
             // ToDo: 終了が遅かった時はフォールバックしない？
 
             // レジストリにLatestが異常終了することを記録
@@ -39,6 +49,9 @@ internal class Launcher
         }
         else
         {
+            Console.WriteLine("Latest version returned exit code 0");
+            Console.WriteLine("Latest version status is ok");
+
             // Latestの実行に成功したことを記録
             Settings.SetLatestVersionStatusOk();
         }

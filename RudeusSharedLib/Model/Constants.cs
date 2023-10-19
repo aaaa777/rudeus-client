@@ -18,7 +18,7 @@ namespace Rudeus.Model
         // タスクスケジューラに登録するインストール先
         public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application";
         public static readonly string RudeusBgExeName = "RudeusBg.exe";
-        //public static readonly string RudeusBgExePath = $"{RudeusBgDir}\\{RudeusBgExeName}";
+
         public static readonly string RudeusBgLatestName = "latest";
         public static readonly string RudeusBgLastName = "last";
 
@@ -32,14 +32,27 @@ namespace Rudeus.Model
         // タスクスケジューラに登録するインストール先
         public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager";
         public static readonly string RudeusBgFormExeName = "RudeusBgForm.exe";
-        //public static readonly string RudeusBgFormExePath = $"{RudeusBgFormDir}\\{RudeusBgFormExeName}";
+
         public static readonly string RudeusBgFormLatestName = "latest";
         public static readonly string RudeusBgFormLastName = "last";
 
         public static readonly string RudeusBgFormLauncherExePath = "c:\\Program Files\\Windows System Application\\RudeusLauncher.exe";
 
-        // SAMLログインのlocalhostコールバックポート
-        public static readonly string CallbackPort = "11178";
+
+
+        //////////////////// 
+        /// API Settings ///
+        ////////////////////
+
+#if(DEBUG)
+        // SAMLログインのエントリーページ
+        public static readonly string SamlLoginUrl = "http://10.10.2.11/rudeus_login";
+
+        // クライアント証明書認証が必要なAPIエンドポイント
+        public static readonly string ApiEndpointWithCert = "http://10.10.2.11/";
+
+        // クライアント証明書認証が不要なAPIエンドポイント
+        public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
 
         // APIのパス
         public static string ApiRegisterPath = "/api/device_initialize";
@@ -49,6 +62,9 @@ namespace Rudeus.Model
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
+        // SAMLログインのlocalhostコールバックポート
+        public static readonly string CallbackPort = "11178";
+#else
         // SAMLログインのエントリーページ
         public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
 
@@ -58,13 +74,50 @@ namespace Rudeus.Model
         // クライアント証明書認証が不要なAPIエンドポイント
         public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
 
+        // APIのパス
+        public static string ApiRegisterPath = "/api/device_initialize";
+        public static string ApiUpdatePath = "/api/device_update";
+        public static string ApiLoginPath = "/api/user_login";
+
+        // カスタムURIスキームで起動する場合の設定
+        public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
+
+        // SAMLログインのlocalhostコールバックポート
+        public static readonly string CallbackPort = "11178";
+#endif
+
+
+
+        /////////////////////////
+        /// Registry settings ///
+        /////////////////////////
+
+#if (DEBUG)
         // レジストリ：アプリのデフォルトのキー
         public static string DefaultRegistryKey = @"Config";
 
         // レジストリ：アプリのルート
         public static string RegistryDir = @"Software\Test App";
+#else
+        // レジストリ：アプリのデフォルトのキー
+        public static string DefaultRegistryKey = @"Config";
 
+        // レジストリ：アプリのルート
+        public static string RegistryDir = @"Software\Test App";
+#endif
+
+
+
+        /////////////////////////
+        /// Launcher settings ///
+        /////////////////////////
+        
         public static int ForceUpdateExitCode = 2001;
         public static int LaunchTwiceExitCode = 2002;
+
+#if (DEBUG)
+        public static string DummyUpdateUrl = "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip";
+        public static string DummyVersion = "1.0.0.1";
+#endif
     }
 }

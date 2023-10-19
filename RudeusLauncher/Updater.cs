@@ -22,26 +22,35 @@ internal class Updater
         // 最終的にRemoteAPIを利用したい
         UpdateMetadataResponse res = RemoteAPI.GetUpdateMetadata();
         string latestVersionRemote = res.response_data.latest_version;
+        string latestVersionLocal = "1.0.0.0";
         string latestVersionZipUrl = res.response_data.latest_raw_zip;
 
         // アップデート判定
         if (!ShouldUpdate()) 
-        { 
+        {
+            Console.WriteLine("Nothing to update");
             return;
         }
+        Console.WriteLine("Update found");
 
         // アップデート開始
         try
         {
+            Console.WriteLine($"Updating `{latestVersionLocal}` ->`{latestVersionRemote}` ...");
             StartUpdate(latestVersionZipUrl);
         }
         catch
         {
             // アップデート失敗、フォールバック処理
+            Console.WriteLine("Update failed");
+            Console.WriteLine("Updating app will be retryed on next launching");
             return;
         }
 
-        // アップデート完了、起動先変更
+        // アップデート完了
+        Console.WriteLine("Update is completed");
+
+        //起動先変更
         Settings.SetLatestVersionStatusDownloaded();
     }
 

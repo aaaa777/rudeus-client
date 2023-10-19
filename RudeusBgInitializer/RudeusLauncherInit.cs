@@ -17,7 +17,11 @@ internal class RudeusLauncherInit
         
         Settings.UpdateRegistryKey(RudeusBgRegKey);
 
+#if (DEBUG)
+        Settings.SetDevelopChannel();
+#else
         Settings.SetStableChannel();
+#endif
         Settings.LastVersionDirPath = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLastName}";
         Settings.LastVersionExeName = $"{Constants.RudeusBgExeName}";
         Settings.LastDirName = Constants.RudeusBgLastName;
@@ -26,25 +30,29 @@ internal class RudeusLauncherInit
         Settings.LatestVersionExeName = $"{Constants.RudeusBgExeName}";
         Settings.LatestDirName = Constants.RudeusBgLatestName;
 
-        Settings.LastUpdateVersion = "0.0.0.0";
+        Settings.CurrentVersion = "0.0.0.0";
         Settings.SetLatestVersionStatusDownloaded();
 
 
         // RudeusBgFormのLaunch設定
         
-        Settings.UpdateRegistryKey(RudeusBgFormRegKey);
-
+        //Settings.UpdateRegistryKey(RudeusBgFormRegKey);
+        Settings bfSettings = new(RudeusBgFormRegKey);
+#if (DEBUG)
+        bfSettings.SetDevelopChannelP();
+#else
         Settings.SetStableChannel();
-        Settings.LastVersionDirPath = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
-        Settings.LastVersionExeName = $"{Constants.RudeusBgFormExeName}";
-        Settings.LastDirName = Constants.RudeusBgLastName;
+#endif
+        bfSettings.LastVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
+        bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+        bfSettings.LastDirNameP = Constants.RudeusBgLastName;
 
-        Settings.LatestVersionDirPath = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLatestName}";
-        Settings.LatestVersionExeName = $"{Constants.RudeusBgFormExeName}";
-        Settings.LatestDirName = Constants.RudeusBgLatestName;
+        bfSettings.LatestVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLatestName}";
+        bfSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+        bfSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 
-        Settings.LastUpdateVersion = "0.0.0.0";
-        Settings.SetLatestVersionStatusDownloaded();
+        bfSettings.CurrentVersionP = "0.0.0.0";
+        bfSettings.SetLatestVersionStatusDownloadedP();
 
 
         Console.WriteLine("Settings loaded for launcher");

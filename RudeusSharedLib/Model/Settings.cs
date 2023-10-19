@@ -28,7 +28,7 @@ namespace Rudeus.Model
 
         public Settings(string registryKey)
         {
-            _regKey = Registry.CurrentUser.CreateSubKey(registryKey);
+            _regKey = Registry.CurrentUser.CreateSubKey($"{RegistryDir}\\{registryKey}");
         }
 
         public static void UpdateRegistryKey(string? registryKey = null)
@@ -56,7 +56,7 @@ namespace Rudeus.Model
 
             try
             {
-                if (regKey  != null)
+                if (regKey != null)
                 {
                     var value = regKey.GetValue(key) ?? new Exception("getting val from registry failed");
                     return (string)value;
@@ -310,47 +310,24 @@ namespace Rudeus.Model
         public string LatestVersionExePathP { get { return $"{LatestVersionDirPathP}\\{LatestVersionExeNameP}"; } }
 
 
-        // LastUpdateFailedは未使用
-
-        private static string LastUpdateFailedKey = "IsLastUpdateFailed";
-
-        private static string LastUpdateFailed
-        {
-            set { Set(LastUpdateFailedKey, value, false); }
-            get { return Get(LastUpdateFailedKey, "", false); }
-        }
-
-        private string LastUpdateFailedP
-        {
-            set { Set(LastUpdateFailedKey, value, false, _regKey); }
-            get { return Get(LastUpdateFailedKey, "", false, _regKey); }
-        }
-
-        public static bool IsLastUpdateFailed() { return LastUpdateFailed == "yes"; }
-        public static void SetLastUpdateFailedYes() { LastUpdateFailed = "yes"; }
-        public static void SetLastUpdateFailedNo() { LastUpdateFailed = "no"; }
-
-
-        public bool IsLastUpdateFailedP() { return LastUpdateFailedP == "yes"; }
-        public void SetLastUpdateFailedYesP() { LastUpdateFailedP = "yes"; }
-        public void SetLastUpdateFailedNoP() { LastUpdateFailedP = "no"; }
-
-
         // lastに存在するバージョンについて
-        public static string LastUpdateVersionKey = "LastUpdateVersion";
+        public static string CurrentVersionKey = "CurrentVersion";
 
-        public static string LastUpdateVersion
+        public static string CurrentVersion
         {
-            set { Set(LastUpdateVersionKey, value, false); }
-            get { return Get(LastUpdateVersionKey, "", false); }
+            set { Set(CurrentVersionKey, value, false); }
+            get { return Get(CurrentVersionKey, "", false); }
         }
 
-        public string LastUpdateVersionP
+        public string CurrentVersionP
         {
-            set { Set(LastUpdateVersionKey, value, false, _regKey); }
-            get { return Get(LastUpdateVersionKey, "", false, _regKey); }
+            set { Set(CurrentVersionKey, value, false, _regKey); }
+            get { return Get(CurrentVersionKey, "", false, _regKey); }
         }
 
-        public static string UpdateCheckUrl1 = "http://";
+
+        // for debugging
+
+        //public static string 
     }
 }

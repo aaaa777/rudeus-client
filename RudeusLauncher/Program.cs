@@ -9,8 +9,8 @@ public class Program
     public static void Main(string[] args)
     {
 #if(DEBUG)
-        //args = new string[] { Constants.RudeusBgFormRegKey };
-        args = new string[] { Constants.RudeusBgRegKey };
+        args = new string[] { Constants.RudeusBgFormRegKey };
+        //args = new string[] { Constants.RudeusBgRegKey };
 #endif
         if (args.Length < 1)
         {

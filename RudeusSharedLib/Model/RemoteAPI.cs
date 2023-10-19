@@ -87,15 +87,15 @@ namespace Rudeus.Model
         }
 
 
-        public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
+        public static readonly string SamlLoginUrl = Constants.SamlLoginUrl;
         
-        public static readonly string ApiEndpointWithCert = "https://manager.nomiss.net/";
-        public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
+        public static readonly string ApiEndpointWithCert = Constants.ApiEndpointWithCert;
+        public static readonly string ApiEndpointWithoutCert = Constants.ApiEndpointWithoutCert;
 
 
-        public static string ApiRegisterPath = "/api/device_initialize";
-        public static string ApiUpdatePath = "/api/device_update";
-        public static string ApiLoginPath = "/api/user_login";
+        public static string ApiRegisterPath = Constants.ApiRegisterPath;
+        public static string ApiUpdatePath = Constants.ApiUpdatePath;
+        public static string ApiLoginPath = Constants.ApiLoginPath;
         
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -255,7 +255,7 @@ namespace Rudeus.Model
 
         public static UpdateMetadataResponse GetUpdateMetadata()
         {
-            return new UpdateMetadataResponse("1.0.0.1", "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip");
+            return new UpdateMetadataResponse(Constants.DummyVersion, Constants.DummyUpdateUrl);
         }
 
 
