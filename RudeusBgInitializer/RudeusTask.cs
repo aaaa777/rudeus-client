@@ -60,6 +60,8 @@ internal class RudeusTask
 
             //td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormExePath}", "", null));
             td2.Actions.Add(new ExecAction($"{Constants.RudeusBgFormLauncherExePath}", $"{Constants.RudeusBgFormRegKey}", null));
+            td2.Principal.RunLevel = TaskRunLevel.Highest;
+            
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("Task is set successfully");

@@ -9,7 +9,10 @@ public class Program
     public static void Main(string[] args)
     {
 #if(DEBUG)
-        args = new string[] { Constants.RudeusBgFormRegKey };
+        if(args.Length == 0)
+        {
+            args = new string[] { Constants.RudeusBgFormRegKey };
+        }
         //args = new string[] { Constants.RudeusBgRegKey };
 #endif
         if (args.Length < 1)
