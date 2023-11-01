@@ -9,14 +9,21 @@ using System.Threading.Tasks;
 #pragma warning disable CS8618 // null 非許容のフィールドには、コンストラクターの終了時に null 以外の値が入っていなければなりません。Null 許容として宣言することをご検討ください。
 namespace Rudeus.Model.Response
 {
-    internal class UpdateMetadataResponse : BaseResponse
+    //internal class UpdateMetadataResponse : BaseResponse
+    internal class UpdateMetadataResponse
     {
-        [JsonPropertyName(nameof(response_data))]
-        public UpdateMetadataResponseData response_data { get; set; }
+        [JsonPropertyName(nameof(status))]
+        public string status { get; set; }
 
+        [JsonPropertyName(nameof(request_data))]
+        public UpdateMetadataResponseData request_data { get; set; }
+
+        // JsonSerializerでparameterless constructorが必要
+        // https://stackoverflow.com/questions/72000907/each-parameter-in-the-deserialization-constructor-on-type-must-bind-to-an-object
+        public UpdateMetadataResponse() { }
         public UpdateMetadataResponse(string latestVersion, string url) 
         {
-            response_data = new UpdateMetadataResponseData(latestVersion, url);
+            request_data = new UpdateMetadataResponseData(latestVersion, url);
         }
 
     }
@@ -29,10 +36,12 @@ namespace Rudeus.Model.Response
         [JsonPropertyName(nameof(stable_zip_url))]
         public string stable_zip_url { get; set; }
 
-        public UpdateMetadataResponseData(string? stableVersion, string? stableZipUrl)
+        public UpdateMetadataResponseData() { }
+
+        public UpdateMetadataResponseData(string stable_version, string stable_zip_url)
         {
-            this.stable_version = stableVersion;
-            this.stable_zip_url = stableZipUrl;
+            this.stable_version = stable_version;
+            this.stable_zip_url = stable_zip_url;
         }
     }
 

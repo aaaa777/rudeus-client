@@ -18,7 +18,7 @@ namespace Rudeus.Model.Response
         
         public BaseResponse()
         {
-            status = "ok";
+            status = "unknown";
         }
 
     }

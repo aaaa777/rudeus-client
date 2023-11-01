@@ -144,6 +144,8 @@ namespace Rudeus.Model
             // HttpResponseMessage response = NoCertApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
             // HttpResponseMessage response = NoCertApiClient.SendAsync(request).Result;
             HttpResponseMessage response;
+
+            // Todo: 証明書付きAPIエンドポイントと無しの区別を付けてメソッドを分離
             try
             {
                 // 証明書付きAPIエンドポイントにリクエスト
@@ -271,15 +273,16 @@ namespace Rudeus.Model
             }
         }
 
-        public static UpdateMetadataResponse GetUpdateMetadata()
+        public static UpdateMetadataResponse GetUpdateMetadata(string accessToken)
         {
             //return new UpdateMetadataResponse(Constants.DummyVersion, Constants.DummyUpdateUrl);
             
             //var response = GetRequest(null, ApiUpdateMetadataPath);
-            var response = PostRequest(null, ApiUpdateMetadataPath, JsonSerializer.Serialize(new EmptyRequest(), EmptyRequestContext.Default.EmptyRequest));
+            var response = PostRequest(accessToken, ApiUpdateMetadataPath, JsonSerializer.Serialize(new EmptyRequest(), EmptyRequestContext.Default.EmptyRequest));
             try
             {
-                var jsonResponse = JsonSerializer.Deserialize(response, UpdateMetadataResponseContext.Default.UpdateMetadataResponse);
+                var con = UpdateMetadataResponseContext.Default.UpdateMetadataResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
                 if (jsonResponse != null)
                 {
                     return jsonResponse;
@@ -298,6 +301,15 @@ namespace Rudeus.Model
         // ToDo
         public static bool IsAccessTokenAvailable(string accessToken)
         {
+            try
+            {
+                GetUpdateMetadata(accessToken);
+            }
+            catch
+            {
+                return false;
+            }
+
             return true;
         }
 

@@ -159,27 +159,51 @@ namespace Rudeus.Model
         // チャンネルの判定メソッド
 
         // 各チャンネルについて説明
+        // Stable   安定版(デフォルト) 下記以外のキーだった場合
         // Beta     Stableの少し先のバージョンを試す事ができる
-        // Test     未使用
-        // Delelop  Visual Studioで実行できる設定
-        // Stable   上記以外のキーだった場合
+        // Delelop  Visual StudioのDebugビルドで実行できる設定
+        // Test     (Developのみ)レジストリで値を変更可能な設定
         public static bool IsBetaChannel() { return UpdatingChannel == "beta"; }
-        public static bool IsTestChannel() { return UpdatingChannel == "test"; }
+        public static bool IsTestChannel() 
+        {
+#if(DEBUG)
+            return UpdatingChannel == "test";
+#else
+            return false
+#endif
+        }
         public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
         public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel() || IsBetaChannel()); }
 
         public static void SetBetaChannel() { UpdatingChannel = "beta"; }
-        public static void SetTestChannel() { UpdatingChannel = "test"; }
+        public static void SetTestChannel() 
+        {
+#if(DEBUG)
+            UpdatingChannel = "test";
+#endif
+        }
         public static void SetDevelopChannel() { UpdatingChannel = "develop"; }
         public static void SetStableChannel() { UpdatingChannel = "stable"; }
 
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
-        public bool IsTestChannelP() { return UpdatingChannelP == "test"; }
+        public bool IsTestChannelP() 
+        {
+#if (DEBUG)
+            return UpdatingChannelP == "test";
+#else
+            return false
+#endif
+        }
         public bool IsDevelopChannelP() { return UpdatingChannelP == "develop"; }
         public bool IsStableChannelP() { return !(IsTestChannelP() || IsDevelopChannelP() || IsBetaChannelP()); }
 
         public void SetBetaChannelP() { UpdatingChannelP = "beta"; }
-        public void SetTestChannelP() { UpdatingChannelP = "test"; }
+        public void SetTestChannelP() 
+        {
+#if(DEBUG)
+            UpdatingChannelP = "test";
+#endif
+        }
         public void SetDevelopChannelP() { UpdatingChannelP = "develop"; }
         public void SetStableChannelP() { UpdatingChannelP = "stable"; }
 
