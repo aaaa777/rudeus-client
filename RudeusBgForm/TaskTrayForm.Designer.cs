@@ -66,13 +66,13 @@ namespace RudeusBgForm
             ToolStripMenuItemLoginNav = new ToolStripMenuItem();
             ToolStripMenuItemLoginStatus = new ToolStripMenuItem();
             ToolStripMenuItemLoginButton = new ToolStripMenuItem();
+            ログアウトToolStripMenuItem = new ToolStripMenuItem();
             ToolStripMenuItemLinkList = new ToolStripMenuItem();
             ToolStripMenuItemLinkPortal = new ToolStripMenuItem();
             ToolStripMenuItemLinkPolite3 = new ToolStripMenuItem();
             ToolStripMenuItemLinkKyomu = new ToolStripMenuItem();
             ToolStripMenuItemCheckUpdate = new ToolStripMenuItem();
             ToolStripMenuItemExit = new ToolStripMenuItem();
-            ログアウトToolStripMenuItem = new ToolStripMenuItem();
             iconMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -112,6 +112,13 @@ namespace RudeusBgForm
             ToolStripMenuItemLoginButton.Size = new Size(199, 22);
             ToolStripMenuItemLoginButton.Text = "情報大アカウントでログイン";
             ToolStripMenuItemLoginButton.Click += testMessageToolStripMenuItem1_Click;
+            // 
+            // ログアウトToolStripMenuItem
+            // 
+            ログアウトToolStripMenuItem.Name = "ログアウトToolStripMenuItem";
+            ログアウトToolStripMenuItem.Size = new Size(199, 22);
+            ログアウトToolStripMenuItem.Text = "ログアウト";
+            ログアウトToolStripMenuItem.Click += ログアウトToolStripMenuItem_Click;
             // 
             // ToolStripMenuItemLinkList
             // 
@@ -154,13 +161,6 @@ namespace RudeusBgForm
             ToolStripMenuItemExit.Size = new Size(180, 22);
             ToolStripMenuItemExit.Text = "終了";
             ToolStripMenuItemExit.Click += ToolStripMenuItemExit_Click;
-            // 
-            // ログアウトToolStripMenuItem
-            // 
-            ログアウトToolStripMenuItem.Name = "ログアウトToolStripMenuItem";
-            ログアウトToolStripMenuItem.Size = new Size(199, 22);
-            ログアウトToolStripMenuItem.Text = "ログアウト";
-            ログアウトToolStripMenuItem.Click += ログアウトToolStripMenuItem_Click;
             // 
             // TaskTrayForm
             // 
