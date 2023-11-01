@@ -72,6 +72,7 @@ namespace RudeusBgForm
             ToolStripMenuItemLinkKyomu = new ToolStripMenuItem();
             ToolStripMenuItemCheckUpdate = new ToolStripMenuItem();
             ToolStripMenuItemExit = new ToolStripMenuItem();
+            ログアウトToolStripMenuItem = new ToolStripMenuItem();
             iconMenu.SuspendLayout();
             SuspendLayout();
             // 
@@ -87,14 +88,14 @@ namespace RudeusBgForm
             iconMenu.ImageScalingSize = new Size(20, 20);
             iconMenu.Items.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginNav, ToolStripMenuItemLinkList, ToolStripMenuItemCheckUpdate, ToolStripMenuItemExit });
             iconMenu.Name = "contextMenuStrip1";
-            iconMenu.Size = new Size(132, 92);
+            iconMenu.Size = new Size(181, 114);
             iconMenu.Opening += contextMenuStrip1_Opening;
             // 
             // ToolStripMenuItemLoginNav
             // 
-            ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton });
+            ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton, ログアウトToolStripMenuItem });
             ToolStripMenuItemLoginNav.Name = "ToolStripMenuItemLoginNav";
-            ToolStripMenuItemLoginNav.Size = new Size(131, 22);
+            ToolStripMenuItemLoginNav.Size = new Size(180, 22);
             ToolStripMenuItemLoginNav.Text = "ログイン";
             // 
             // ToolStripMenuItemLoginStatus
@@ -116,7 +117,7 @@ namespace RudeusBgForm
             // 
             ToolStripMenuItemLinkList.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLinkPortal, ToolStripMenuItemLinkPolite3, ToolStripMenuItemLinkKyomu });
             ToolStripMenuItemLinkList.Name = "ToolStripMenuItemLinkList";
-            ToolStripMenuItemLinkList.Size = new Size(131, 22);
+            ToolStripMenuItemLinkList.Size = new Size(180, 22);
             ToolStripMenuItemLinkList.Text = "リンク集";
             // 
             // ToolStripMenuItemLinkPortal
@@ -143,16 +144,23 @@ namespace RudeusBgForm
             // ToolStripMenuItemCheckUpdate
             // 
             ToolStripMenuItemCheckUpdate.Name = "ToolStripMenuItemCheckUpdate";
-            ToolStripMenuItemCheckUpdate.Size = new Size(131, 22);
+            ToolStripMenuItemCheckUpdate.Size = new Size(180, 22);
             ToolStripMenuItemCheckUpdate.Text = "更新を確認";
             ToolStripMenuItemCheckUpdate.Click += testMassageToolStripMenuItem_Click;
             // 
             // ToolStripMenuItemExit
             // 
             ToolStripMenuItemExit.Name = "ToolStripMenuItemExit";
-            ToolStripMenuItemExit.Size = new Size(131, 22);
+            ToolStripMenuItemExit.Size = new Size(180, 22);
             ToolStripMenuItemExit.Text = "終了";
             ToolStripMenuItemExit.Click += ToolStripMenuItemExit_Click;
+            // 
+            // ログアウトToolStripMenuItem
+            // 
+            ログアウトToolStripMenuItem.Name = "ログアウトToolStripMenuItem";
+            ログアウトToolStripMenuItem.Size = new Size(199, 22);
+            ログアウトToolStripMenuItem.Text = "ログアウト";
+            ログアウトToolStripMenuItem.Click += ログアウトToolStripMenuItem_Click;
             // 
             // TaskTrayForm
             // 
@@ -179,5 +187,6 @@ namespace RudeusBgForm
         private ToolStripMenuItem ToolStripMenuItemLinkPolite3;
         private ToolStripMenuItem ToolStripMenuItemLinkKyomu;
         private ToolStripMenuItem ToolStripMenuItemLoginStatus;
+        private ToolStripMenuItem ログアウトToolStripMenuItem;
     }
 }

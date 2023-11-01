@@ -104,5 +104,12 @@ namespace RudeusBgForm
         {
             // 無効化済み
         }
+
+        private void ログアウトToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // ログアウト処理
+            Settings.Username = string.Empty;
+            ToolStripMenuItemLoginStatus.Text = "ログインしていません";
+        }
     }
 }
