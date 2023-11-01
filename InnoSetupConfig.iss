@@ -34,30 +34,30 @@ Name: "{autopf}\HIU\System Manager\last";
 Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\win-x64\RudeusBgForm.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
   BeforeInstall: TaskKill('RudeusBgForm.exe'); \
-  Flags: signonce ignoreversion;
+  Flags: signonce ignoreversion restartreplace;
 
-Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\win-x64\*.dll"; \
+Source: "RudeusBgForm\bin\Release\net7.0-windows10.0.17763.0\win-x64\*"; \
   Excludes: "RudeusBgForm.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
-  Flags: ignoreversion;
+  Flags: ignoreversion restartreplace;
 
 Source: "RudeusBg\bin\Release\net7.0-windows7.0\win-x64\RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
-  Flags: signonce uninsneveruninstall ignoreversion;
+  Flags: signonce uninsneveruninstall ignoreversion restartreplace;
 
-Source: "RudeusBg\bin\Release\net7.0-windows7.0\win-x64\*.dll"; \
+Source: "RudeusBg\bin\Release\net7.0-windows7.0\win-x64\*"; \
   Excludes: "RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
-  Flags: uninsneveruninstall ignoreversion;
+  Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusLauncher\bin\Release\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
-  Flags: signonce uninsneveruninstall ignoreversion;
+  Flags: signonce uninsneveruninstall ignoreversion restartreplace;
 
-Source: "RudeusLauncher\bin\Release\net7.0-windows10.0.17763.0\*.dll"; \
+Source: "RudeusLauncher\bin\Release\net7.0-windows10.0.17763.0\*"; \
   Excludes: "RudeusLauncher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
-  Flags: uninsneveruninstall ignoreversion;
+  Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusBgInitializer\bin\Release\net7.0-windows10.0.17763.0\RudeusBgInitializer.exe"; \
   DestDir: "{tmp}"; \

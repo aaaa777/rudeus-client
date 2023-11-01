@@ -21,9 +21,9 @@ internal class Updater
         // アップデート情報取得
         // 最終的にRemoteAPIを利用したい
         UpdateMetadataResponse res = RemoteAPI.GetUpdateMetadata();
-        string latestVersionRemote = res.response_data.latest_version;
+        string latestVersionRemote = res.response_data.stable_version;
         string latestVersionLocal = "1.0.0.0";
-        string latestVersionZipUrl = res.response_data.latest_raw_zip;
+        string latestVersionZipUrl = res.response_data.stable_zip_url;
 
         // アップデート判定
         if (!ShouldUpdate()) 

@@ -96,18 +96,32 @@ namespace Rudeus.Model
         public static string ApiRegisterPath = Constants.ApiRegisterPath;
         public static string ApiUpdatePath = Constants.ApiUpdatePath;
         public static string ApiLoginPath = Constants.ApiLoginPath;
-        
+        public static string ApiUpdateMetadataPath = Constants.ApiUpdateMetadataPath;
+
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
 
         // POST送信メソッド
-        private static string Request(string? accessToken, string requestPath, string payload)
+        private static string PostRequest(string? accessToken, string requestPath, string payload)
+        {
+            return Request(accessToken, requestPath, payload, HttpMethod.Post);
+        }
+
+        // GET送信メソッド
+        private static string GetRequest(string? accessToken, string requestPath, string? payload=null)
+        {
+            return Request(accessToken, requestPath, payload, HttpMethod.Get);
+        }
+
+
+        // HTTP汎用送信メソッド
+        private static string Request(string? accessToken, string requestPath, string? payload, HttpMethod method)
         {
             Console.WriteLine($"Request: {payload}");
 
 
             // HTTPリクエスト作成
-            HttpRequestMessage request = new (HttpMethod.Post, requestPath);
+            HttpRequestMessage request = new (method, requestPath);
             
             // ヘッダー付与
             request.Headers.Add("Accept", "application/json");
@@ -119,8 +133,12 @@ namespace Rudeus.Model
                 request.Headers.Add("Authorization", $"Bearer {accessToken}");
             }
 
-            // BodyにJSONをセット
-            request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
+            // JSON形式payloadがある場合
+            if(payload != null)
+            {
+                // BodyにJSONをセット
+                request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
+            }
 
             // リクエスト送信
             // HttpResponseMessage response = NoCertApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
@@ -161,7 +179,7 @@ namespace Rudeus.Model
         {
             RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
-            var response = Request(null, ApiRegisterPath, payload);
+            var response = PostRequest(null, ApiRegisterPath, payload);
             try
             {
                 var jsonResponse = JsonSerializer.Deserialize(response, RegisterResponseContext.Default.RegisterResponse);
@@ -187,7 +205,7 @@ namespace Rudeus.Model
             UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
-            var response = Request(accessToken, ApiUpdatePath, payload);
+            var response = PostRequest(accessToken, ApiUpdatePath, payload);
             try
             {
                 var jsonResponse = JsonSerializer.Deserialize(response, UpdateResponseContext.Default.UpdateResponse);
@@ -234,7 +252,7 @@ namespace Rudeus.Model
             // 取得したユーザー名を送信する
             LoginRequest req = new(userId);
             var payload = JsonSerializer.Serialize(req, LoginRequestContext.Default.LoginRequest);
-            var response = Request(accessToken, ApiLoginPath, payload);
+            var response = PostRequest(accessToken, ApiLoginPath, payload);
 
             try
             {
@@ -255,7 +273,24 @@ namespace Rudeus.Model
 
         public static UpdateMetadataResponse GetUpdateMetadata()
         {
-            return new UpdateMetadataResponse(Constants.DummyVersion, Constants.DummyUpdateUrl);
+            //return new UpdateMetadataResponse(Constants.DummyVersion, Constants.DummyUpdateUrl);
+            
+            //var response = GetRequest(null, ApiUpdateMetadataPath);
+            var response = PostRequest(null, ApiUpdateMetadataPath, JsonSerializer.Serialize(new EmptyRequest(), EmptyRequestContext.Default.EmptyRequest));
+            try
+            {
+                var jsonResponse = JsonSerializer.Deserialize(response, UpdateMetadataResponseContext.Default.UpdateMetadataResponse);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new Exception("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
         }
 
 
@@ -280,35 +315,5 @@ namespace Rudeus.Model
 
             return requestUser;
         }
-
-        /// <summary>
-        /// WebAuthenticatorはWindowsでは動作しない
-        /// </summary>
-        /// <returns></returns>
-        /*
-        public static async Task<bool> SamlLoginWebAuthenticator()
-        {
-            try
-            {
-                WebAuthenticatorResult authResult = await WebAuthenticator.Default.AuthenticateAsync(
-                new WebAuthenticatorOptions()
-                {
-                    Url = new Uri("http://win.nomiss.net"),
-                    CallbackUrl = new Uri("io.identitymodel.native://callback"),
-                    PrefersEphemeralWebBrowserSession = true,
-                });
-                var res = authResult;
-                string accessToken = authResult?.AccessToken;
-
-                // Do something with the token
-            }
-            catch (TaskCanceledException e)
-            {
-                // Use stopped auth
-                return false;
-            }
-            return true;
-        }
-        */
     }
 }

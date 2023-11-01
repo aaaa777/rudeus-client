@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\NotifyOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\Operation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\UpdateOperation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\EmptyRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Response\UpdateMetadataResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Updater.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />

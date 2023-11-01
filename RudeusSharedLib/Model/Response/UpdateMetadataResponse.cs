@@ -14,31 +14,31 @@ namespace Rudeus.Model.Response
         [JsonPropertyName(nameof(response_data))]
         public UpdateMetadataResponseData response_data { get; set; }
 
-        public UpdateMetadataResponse(string latest_version, string url) 
+        public UpdateMetadataResponse(string latestVersion, string url) 
         {
-            response_data = new UpdateMetadataResponseData(latest_version, url);
+            response_data = new UpdateMetadataResponseData(latestVersion, url);
         }
 
     }
 
     internal class UpdateMetadataResponseData
     {
-        [JsonPropertyName(nameof(latest_version))]
-        public string latest_version { get; set; }
+        [JsonPropertyName(nameof(stable_version))]
+        public string stable_version { get; set; }
 
-        [JsonPropertyName(nameof(latest_raw_zip))]
-        public string latest_raw_zip { get; set; }
+        [JsonPropertyName(nameof(stable_zip_url))]
+        public string stable_zip_url { get; set; }
 
-        public UpdateMetadataResponseData(string? latest_version, string? latest_raw_zip)
+        public UpdateMetadataResponseData(string? stableVersion, string? stableZipUrl)
         {
-            this.latest_version = latest_version;
-            this.latest_raw_zip = latest_raw_zip;
+            this.stable_version = stableVersion;
+            this.stable_zip_url = stableZipUrl;
         }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]
     [JsonSerializable(typeof(UpdateMetadataResponse))]
-    internal partial class UpdateMetadataContext : JsonSerializerContext
+    internal partial class UpdateMetadataResponseContext : JsonSerializerContext
     {
     }
 }
