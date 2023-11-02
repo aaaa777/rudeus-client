@@ -35,6 +35,12 @@ public class Program
             exitCode = Launcher.Run(registryKey);
             Console.WriteLine("Application stopped");
         }
+        // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行
         while (exitCode == Constants.ForceUpdateExitCode);
+
+#if (DEBUG)
+        Console.WriteLine("Program end. Press enter key to exit");
+        Console.ReadLine();
+#endif
     }
 }

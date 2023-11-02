@@ -22,11 +22,11 @@ internal class Updater
         // 最終的にRemoteAPIを利用したい
         UpdateMetadataResponse res = RemoteAPI.GetUpdateMetadata(Settings.AccessToken);
         string latestVersionRemote = res.request_data.stable_version;
-        string latestVersionLocal = "1.0.0.0";
+        string latestVersionLocal = new Settings(registryKey).CurrentVersionP;
         string latestVersionZipUrl = res.request_data.stable_zip_url;
 
         // アップデート判定
-        if (!ShouldUpdate()) 
+        if (!ShouldUpdate(latestVersionLocal, latestVersionRemote)) 
         {
             Console.WriteLine("Nothing to update");
             return;
@@ -38,6 +38,9 @@ internal class Updater
         {
             Console.WriteLine($"Updating `{latestVersionLocal}` ->`{latestVersionRemote}` ...");
             StartUpdate(latestVersionZipUrl);
+            
+            // アップデート成功後、バージョンを変更
+            Settings.CurrentVersion = latestVersionRemote;
         }
         catch
         {
@@ -130,12 +133,12 @@ internal class Updater
         Directory.Move(tmpDirName, $"{Settings.LatestVersionDirPath}");
     }
 
-    public static bool ShouldUpdate()
+    public static bool ShouldUpdate(string localVersion, string remoteVersion)
     {
-#if(DEBUG)
-        return true;
-#else
+        if (Utils.CompareVersionString(localVersion, remoteVersion) == 1)
+        {
+            return true;
+        }
         return false;
-#endif
     }
 }
