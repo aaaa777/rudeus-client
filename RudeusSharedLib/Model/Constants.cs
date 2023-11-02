@@ -79,6 +79,7 @@ namespace Rudeus.Model
         public static string ApiRegisterPath = "/api/device_initialize";
         public static string ApiUpdatePath = "/api/device_update";
         public static string ApiLoginPath = "/api/user_login";
+        public static string ApiUpdateMetadataPath = "/api/update_metadata";
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";

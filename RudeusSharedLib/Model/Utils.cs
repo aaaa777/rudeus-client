@@ -110,8 +110,10 @@ namespace Rudeus.Model
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
             return $"HIU-P{firstNumber}-{secondNumber}";
+            // System.Net.Dns.GetHostName();
         }
 
+        // Todo: ダミーデータではなく実環境での初期化を行う
         public static void RegisterDeviceAndSetData()
         {
             string hostname = GetHostname();

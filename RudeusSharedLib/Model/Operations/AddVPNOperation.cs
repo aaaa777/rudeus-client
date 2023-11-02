@@ -10,11 +10,12 @@ namespace Rudeus.Model.Operations
 {
     internal class AddVPNOperation
     {
-        public string Opcode = "Update";
+        public string Opcode = "vpn_add";
 
         public AddVPNOperation()
         {
-            new Operation(Opcode, Start);
+            OperationWrapper opw = new OperationWrapper(Opcode, this.Start);
+            OperationsController.AddOperation(opw);
         }
 
         public bool Start(string messasge)

@@ -9,17 +9,19 @@
 	<PublishTrimmed>true</PublishTrimmed>
 	<!--
 	-->
+	<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
 	<SelfContained>true</SelfContained>
 	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 	
 	<OutputType Condition="'$(Configuration)' == 'Release'">Exe</OutputType>
 	<OutputType Condition="'$(Configuration)' != 'Release'">WinExe</OutputType>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
-	<TargetFramework>net7.0-windows7.0</TargetFramework>
+	<TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
     <PackageReference Include="System.Management" Version="7.0.2" />
   </ItemGroup>
 

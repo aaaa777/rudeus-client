@@ -134,6 +134,8 @@ namespace Rudeus.Model
             get { return Get(AccessTokenKey); }
         }
 
+        // 最終チェックのWindowsバージョン
+
         // デフォルトのレジストリキーでのみ保存可能ここまで
 
 
@@ -169,7 +171,7 @@ namespace Rudeus.Model
 #if(DEBUG)
             return UpdatingChannel == "test";
 #else
-            return false
+            return false;
 #endif
         }
         public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
@@ -191,7 +193,7 @@ namespace Rudeus.Model
 #if (DEBUG)
             return UpdatingChannelP == "test";
 #else
-            return false
+            return false;
 #endif
         }
         public bool IsDevelopChannelP() { return UpdatingChannelP == "develop"; }

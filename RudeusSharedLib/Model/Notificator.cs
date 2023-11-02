@@ -1,5 +1,6 @@
 ﻿//using CommunityToolkit.Maui.Alerts;
 //using CommunityToolkit.Maui.Core;
+using Microsoft.Toolkit.Uwp.Notifications;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,5 +31,15 @@ namespace Rudeus.Model
             await toast.Show(cancellationTokenSource.Token);
         }
         */
+
+        public static void Toast(string title, string message)
+        {
+            new ToastContentBuilder()
+                //.AddArgument("action", "viewConversation")
+                //.AddArgument("conversationId", 9813)
+                .AddText(title)
+                .AddText(message)
+                .Show();
+        }
     }
 }

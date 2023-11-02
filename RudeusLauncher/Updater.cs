@@ -16,6 +16,12 @@ internal class Updater
     public static string tempdir;
     public static void Run(string registryKey)
     {
+        // Todo: Bgの方のアップデート機能を追加すること
+        if(registryKey != Constants.RudeusBgFormRegKey)
+        {
+            return;
+        }
+
         RegistryKey = registryKey;
 
         // アップデート情報取得
@@ -135,7 +141,8 @@ internal class Updater
 
     public static bool ShouldUpdate(string localVersion, string remoteVersion)
     {
-        if (Utils.CompareVersionString(localVersion, remoteVersion) == 1)
+        int conStat = Utils.CompareVersionString(localVersion, remoteVersion);
+        if (conStat == -1)
         {
             return true;
         }

@@ -10,33 +10,35 @@ namespace Rudeus.Model.Operations
     /// <summary>
     /// サーバから受け取った命令コードと実行クラスを対応付けるクラス
     /// </summary>
-    internal class Operation
+    internal class OperationsController
     {
-        private readonly string Opcode = "undefined";
+        private string Opcode = "undefined";
         private Func<string, bool> Start;
         private static bool IsInitializedDefault = false;
-        public static Operation[] Operations { get; set; } = Array.Empty<Operation>();
+        public static List<OperationWrapper> Operations { get; set; } = new List<OperationWrapper>();
 
-        public Operation(string opcode, Func<string, bool> callback)
+        public static void AddOperation(OperationWrapper operation)
         {
-            Opcode = opcode;
-            Start = callback;
-
-            _ = Operations.Prepend(this);
+            Operations.Add(operation);
         }
 
 
-        public static Operation? Run(string opcode, string message="")
+        public static OperationWrapper? Run(string opcode, string? message="")
         {
+            if(message == null)
+            {
+                message = string.Empty;
+            }
             var operation = Search(opcode);
             operation?.Start(message);
             return operation;
         }
-        public static Operation? Search(string opcode) {
+        public static OperationWrapper? Search(string opcode)
+        {
             // opcodeが一致するものを検索
-            foreach (Operation operation in Operations)
+            foreach (OperationWrapper operation in Operations)
             {
-                if (operation.Equals(opcode))
+                if (operation.Opcode == opcode)
                 {
                     // Operationを返却
                     return operation;

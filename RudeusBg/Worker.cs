@@ -1,6 +1,8 @@
 using Rudeus.Model;
 using Rudeus.Model.Response;
 using Rudeus.Model.Operations;
+using Microsoft.Toolkit.Uwp.Notifications;
+using System.Diagnostics.CodeAnalysis;
 
 namespace RudeusBg
 {
@@ -34,7 +36,11 @@ namespace RudeusBg
             }
 
             // Operationの初期化
-            Operation.InitializeDefaultOperations();
+            OperationsController.InitializeDefaultOperations();
+
+#if (DEBUG)
+            OperationsController.Run("notify_toast", "push通知テストです");
+#endif
 
             // レスポンスのpush_dataのパース処理
             var pdList = res.push_data;
@@ -49,7 +55,7 @@ namespace RudeusBg
                 {
                     continue;
                 }
-                Operation.Run(pd.type);
+                OperationsController.Run(pd.type, pd.message);
             }
 #if (DEBUG)
             await Task.Delay(5000, stoppingToken);
@@ -117,7 +123,7 @@ namespace RudeusBg
 
         private void CallOperation(string opcode)
         {
-            //Operation.Run(type);
+            //OperationsController.Run(type);
         }
     }
 }

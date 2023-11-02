@@ -10,11 +10,12 @@ namespace Rudeus.Model.Operations
 {
     internal class AddCertOperation
     {
-        public string Opcode = "Update";
+        public string Opcode = "cert_add";
 
         public AddCertOperation()
         {
-            new Operation(Opcode, Start);
+            OperationWrapper opw = new OperationWrapper(Opcode, this.Start);
+            OperationsController.AddOperation(opw);
         }
 
         public bool Start(string messasge)
