@@ -1,10 +1,10 @@
 ; -- InnoSetupConfig.iss --
-#define BuildType "Release"
-;#define BuildType "Debug"
+;#define BuildType "Release"
+#define BuildType "Debug"
 
 [Setup]
 AppName=HIU System Manager
-AppVersion=0.1.6
+AppVersion=0.1.7
 WizardStyle=modern
 DefaultDirName={autopf}\HIU
 DefaultGroupName=HIU
@@ -12,7 +12,7 @@ UninstallDisplayIcon={autopf}\HIU\BackGroundService.exe
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:Inno Setup Examples Output  
-OutputBaseFilename=HIU_System_Manager_Installer
+OutputBaseFilename=HIU_System_Manager_Installer_{#BuildType}
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
 ; anything but x64.
 ArchitecturesAllowed=x64
@@ -53,12 +53,12 @@ Source: "RudeusBg\bin\{#BuildType}\net7.0-windows7.0\win-x64\*"; \
   Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
-  DestDir: "{autopf}\Windows System Application"; \
+  DestDir: "{autopf}\Windows System Application\last"; \
   Flags: signonce uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\*"; \
   Excludes: "RudeusLauncher.exe"; \
-  DestDir: "{autopf}\Windows System Application"; \
+  DestDir: "{autopf}\Windows System Application\last"; \
   Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusBgInitializer.exe"; \
