@@ -11,7 +11,9 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\CertificateAPI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\DeviceChanges.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\UpdateRequestBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\Watcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\WatchItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddCertOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddVPNOperation.cs" />
