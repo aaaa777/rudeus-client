@@ -23,7 +23,7 @@ namespace RudeusBgForm
 #if (DEBUG)
             // Debugビルドの場合終了前に待ちが入る
             Console.WriteLine("Program end. Press Enter to exit");
-            Console.ReadLine();
+            //Console.ReadLine();
 #endif
         }
     }

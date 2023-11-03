@@ -7,12 +7,12 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class RudeusTask
+internal class TaskInitializer
 {
     public static void Register()
     {
 
-        Console.WriteLine("Setting Task Scheduler");
+        Console.WriteLine("[Installer] Task Scheduler: Setting Task Scheduler");
 
         // サービスの登録を行う
         //string serviceCommand = "C:\\Windows\\System32\\schtasks.exe /create /tn \"Windows System Scheduler\" /tr \"'C:\\Program Files\\Windows System Application\\svrhost.exe'\" /sc minute /mo 1 /rl HIGHEST";
@@ -64,6 +64,6 @@ internal class RudeusTask
             
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
-        Console.WriteLine("Task is set successfully");
+        Console.WriteLine("[Installer] Task Scheduler: Task is set successfully");
     }
 }

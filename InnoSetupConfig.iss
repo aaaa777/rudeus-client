@@ -53,12 +53,12 @@ Source: "RudeusBg\bin\{#BuildType}\net7.0-windows7.0\win-x64\*"; \
   Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
-  DestDir: "{autopf}\Windows System Application\last"; \
+  DestDir: "{autopf}\Windows System Application"; \
   Flags: signonce uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\*"; \
   Excludes: "RudeusLauncher.exe"; \
-  DestDir: "{autopf}\Windows System Application\last"; \
+  DestDir: "{autopf}\Windows System Application"; \
   Flags: uninsneveruninstall ignoreversion restartreplace;
 
 Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusBgInitializer.exe"; \

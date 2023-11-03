@@ -15,6 +15,6 @@ catch(Exception ex)
 {
     Console.WriteLine(ex.ToString());
 #if (DEBUG)
-    Console.ReadLine();
+    //Console.ReadLine();
 #endif
 }

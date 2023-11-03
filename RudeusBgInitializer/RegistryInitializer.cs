@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-internal class RudeusLauncherInit
+internal class RegistryInitializer
 {
     private readonly static string RudeusBgRegKey = Constants.RudeusBgRegKey;
     private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
@@ -55,6 +55,6 @@ internal class RudeusLauncherInit
         bfSettings.SetLatestVersionStatusDownloadedP();
 
 
-        Console.WriteLine("Settings loaded for launcher");
+        Console.WriteLine("[Installer] Registry: Settings loaded for launcher");
     }
 }

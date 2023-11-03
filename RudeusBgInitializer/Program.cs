@@ -15,23 +15,27 @@ class Program
         try
         {
             // Launcherのレジストリ初期値設定
-            RudeusLauncherInit.Run();
+            RegistryInitializer.Run();
 
             // タスクスケジューラ登録処理
-            RudeusTask.Register();
+            TaskInitializer.Register();
 
             // ルート証明書登録処理
-            RudeusCert.InstallCertificate();
+            Certificate.InstallDefaults();
 
             // デバイス情報送信、サーバ登録処理
-            RudeusRegister.Run();
+            ServerRegister.Run();
         }
         catch (Exception ex) 
         {
             Console.WriteLine(ex.ToString());
         }
+
+#if (DEBUG)
         Console.WriteLine("\n");
-        Console.WriteLine("Done, Press Enter");
+        Console.WriteLine("[Installer] Done, Press Enter");
         Console.ReadLine();
+#endif
+
     }
 }

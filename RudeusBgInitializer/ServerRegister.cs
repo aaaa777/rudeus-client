@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class RudeusRegister
+internal class ServerRegister
 {
     public static void Run()
     {
