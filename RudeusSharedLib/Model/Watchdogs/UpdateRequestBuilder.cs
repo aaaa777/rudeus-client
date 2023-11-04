@@ -19,6 +19,11 @@ namespace Rudeus.Model.Watchdogs
             {
                 request.request_data.hostname = value;
             }
+            
+            if (key == "spec")
+            {
+                request.request_data.spec = value;
+            }
         }
         public UpdateRequest BuildRequest() 
         {

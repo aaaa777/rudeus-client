@@ -113,6 +113,16 @@ namespace Rudeus.Model
             // System.Net.Dns.GetHostName();
         }
 
+        public static string GetSpec()
+        {
+            return "Intel Xeon E5 2250;128GB";
+        }
+
+        public static string GetWinVersion()
+        {
+            return "12345.6789";
+        }
+
         // Todo: ダミーデータではなく実環境での初期化を行う
         public static void RegisterDeviceAndSetData()
         {

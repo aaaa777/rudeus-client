@@ -148,13 +148,12 @@ namespace Rudeus.Model
             // Todo: 証明書付きAPIエンドポイントと無しの区別を付けてメソッドを分離
             try
             {
-                // 証明書付きAPIエンドポイントにリクエスト
-                response = CliCertApiClient.SendAsync(request).Result;
+                response = RequestEndpoints(request);
             }
-            catch 
+            catch (Exception ex)
             {
-                // 証明書無しAPIエンドポイントにフォールバック(例外補足無し)
-                response = NoCertApiClient.SendAsync(request).Result;
+                Console.WriteLine($"Error: {ex.Message}");
+                throw;
             }
 
 
@@ -170,14 +169,41 @@ namespace Rudeus.Model
             return responseString;
         }
 
+        private static HttpResponseMessage RequestEndpoints(HttpRequestMessage request)
+        {
+            HttpResponseMessage? response;
+            try
+            {
+                // 証明書付きAPIエンドポイントにリクエスト
+                response = CliCertApiClient.SendAsync(request).Result;
+            }
+            catch 
+            {
+                response = null;
+            }
+
+            if(response == null)
+            {
+                try
+                {
+                    // 証明書無しAPIエンドポイントにフォールバック
+                    response = NoCertApiClient.SendAsync(request).Result;
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+            return response ?? throw new Exception("Unknown exception");
+        }
 
 
-        /// <summary>
-        /// デバイスを登録する
-        /// accesstokenを取得する
-        /// </summary>
-        /// <returns>RegisterResponse</returns>
-        public static RegisterResponse RegisterDevice(string deviceId, string hostname)
+/// <summary>
+/// デバイスを登録する
+/// accesstokenを取得する
+/// </summary>
+/// <returns>RegisterResponse</returns>
+public static RegisterResponse RegisterDevice(string deviceId, string hostname)
         {
             RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);

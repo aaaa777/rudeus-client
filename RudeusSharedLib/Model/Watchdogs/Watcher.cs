@@ -7,14 +7,16 @@ namespace Rudeus.Model.Watchdogs
 {
     class Watcher
     {
-        private WatchItem[] WatchItems =
-        {
-            //new WatchItem("device_id", GetDeviceId, Utils.GetDeviceId),
-            new WatchItem("hostname", GetHostname, Utils.GetHostname),
-        };
+        private WatchItem[] WatchItems;
+        
         public Watcher() 
         {
-            
+            WatchItems = new WatchItem[]
+            {
+                //new WatchItem("device_id", GetDeviceId, Utils.GetDeviceId),
+                new WatchItem("hostname", GetHostname, Utils.GetHostname),
+                //new WatchItem("hostname", GetSpec, Utils.GetSpec),
+            };
         }
 
         public UpdateRequest BuildUpdateRequestWithChanges()
@@ -38,6 +40,12 @@ namespace Rudeus.Model.Watchdogs
         private static string GetHostname()
         {
             return Settings.Hostname;
+        }
+
+        private static string GetSpec()
+        {
+            throw new NotImplementedException();
+            //return Settings.Spec;
         }
     }
 }

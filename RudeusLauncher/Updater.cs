@@ -26,7 +26,21 @@ internal class Updater
 
         // アップデート情報取得
         // 最終的にRemoteAPIを利用したい
-        UpdateMetadataResponse res = RemoteAPI.GetUpdateMetadata(Settings.AccessToken);
+        UpdateMetadataResponse? res = null;
+        try
+        {
+            res = RemoteAPI.GetUpdateMetadata(Settings.AccessToken);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        if (res == null)
+        {
+            return;
+        }
+
         string latestVersionRemote = res.request_data.stable_version;
         string latestVersionLocal = new Settings(registryKey).CurrentVersionP;
         string latestVersionZipUrl = res.request_data.stable_zip_url;

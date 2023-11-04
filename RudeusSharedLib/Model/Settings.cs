@@ -8,11 +8,8 @@ using Microsoft.Win32;
 
 namespace Rudeus.Model
 {
-    /// <summary>
-    /// 設定をレジストリに保管するモデル
-    /// レジストリがない場合の変換や暗号化を行う予定
-    /// </summary>
-    internal class Settings
+
+    internal class Settings : ISettings
     {
         // レジストリ：アプリのデフォルトのキー
         private static string DefaultRegistryKey = Constants.DefaultRegistryKey;
@@ -25,6 +22,11 @@ namespace Rudeus.Model
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
         private RegistryKey _regKey;
+
+        public Settings()
+        {
+            _regKey = Registry.CurrentUser.CreateSubKey($"{RegistryDir}\\{DefaultRegistryKey}");
+        }
 
         public Settings(string registryKey)
         {
@@ -102,6 +104,12 @@ namespace Rudeus.Model
             get { return Get(FirstHostnameKey); }
         }
 
+        public string FirstHostnameP 
+        {
+            set { Set(FirstHostnameKey, value, false, _regKey); }
+            get { return Get(FirstHostnameKey, "", false, _regKey); }
+        }
+
         // 最後に起動したときのHostname
         public static string HostnameKey = "DeviceHostname";
         public static string Hostname
@@ -166,7 +174,7 @@ namespace Rudeus.Model
         // Delelop  Visual StudioのDebugビルドで実行できる設定
         // Test     (Developのみ)レジストリで値を変更可能な設定
         public static bool IsBetaChannel() { return UpdatingChannel == "beta"; }
-        public static bool IsTestChannel() 
+        public static bool IsTestChannel()
         {
 #if(DEBUG)
             return UpdatingChannel == "test";
@@ -178,7 +186,7 @@ namespace Rudeus.Model
         public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel() || IsBetaChannel()); }
 
         public static void SetBetaChannel() { UpdatingChannel = "beta"; }
-        public static void SetTestChannel() 
+        public static void SetTestChannel()
         {
 #if(DEBUG)
             UpdatingChannel = "test";
@@ -188,7 +196,7 @@ namespace Rudeus.Model
         public static void SetStableChannel() { UpdatingChannel = "stable"; }
 
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
-        public bool IsTestChannelP() 
+        public bool IsTestChannelP()
         {
 #if (DEBUG)
             return UpdatingChannelP == "test";
@@ -200,7 +208,7 @@ namespace Rudeus.Model
         public bool IsStableChannelP() { return !(IsTestChannelP() || IsDevelopChannelP() || IsBetaChannelP()); }
 
         public void SetBetaChannelP() { UpdatingChannelP = "beta"; }
-        public void SetTestChannelP() 
+        public void SetTestChannelP()
         {
 #if(DEBUG)
             UpdatingChannelP = "test";

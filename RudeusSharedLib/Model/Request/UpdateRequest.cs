@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,10 @@ namespace Rudeus.Model.Request
         [JsonPropertyName(nameof(request_data))]
         public UpdateRequestData request_data { get; set; }
 
+        public UpdateRequest() 
+        {
+            request_data = new();
+        }
         public UpdateRequest(string? hostname=null)
         {
             request_data = new(hostname);
@@ -24,7 +29,14 @@ namespace Rudeus.Model.Request
     internal class UpdateRequestData
     {
         [JsonPropertyName(nameof(hostname))]
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string? hostname { get; set; }
+
+        [JsonPropertyName(nameof(spec))]
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+        public string? spec { get; set; }
+
+        public UpdateRequestData() { }
 
         public UpdateRequestData(string? hostname)
         {
