@@ -29,14 +29,14 @@ internal class Launcher
         else
         {
             Console.WriteLine("Last version is selected cuz latest version is marked `unlaunchable`");
-            Console.WriteLine("After next update comes, latest version will be tryed launching");
+            Console.WriteLine("After next update comes, latest version will be tryed to launch");
         }
 
 
         // latestが異常終了した時、lastにフォールバック
         if (exitCode != 0)
         {
-            Console.WriteLine("Latest version returned wrong exit code");
+            Console.WriteLine("Latest version returned wrong exit code or skipperd");
             Console.WriteLine("Trying launching last version");
 
             // ToDo: 終了が遅かった時はフォールバックしない？
