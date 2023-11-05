@@ -13,7 +13,6 @@ public class Program
         {
             args = new string[] { Constants.RudeusBgFormRegKey };
         }
-        //args = new string[] { Constants.RudeusBgRegKey };
 #endif
         if (args.Length < 1)
         {
@@ -39,8 +38,8 @@ public class Program
         while (exitCode == Constants.ForceUpdateExitCode);
 
 #if (DEBUG)
-        Console.WriteLine("Program end. Press enter key to exit");
-        Console.ReadLine();
+        Console.WriteLine("Program end.");
+        //Console.ReadLine();
 #endif
     }
 }
