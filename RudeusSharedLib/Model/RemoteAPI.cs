@@ -199,12 +199,12 @@ namespace Rudeus.Model
         }
 
 
-/// <summary>
-/// デバイスを登録する
-/// accesstokenを取得する
-/// </summary>
-/// <returns>RegisterResponse</returns>
-public static RegisterResponse RegisterDevice(string deviceId, string hostname)
+        /// <summary>
+        /// デバイスを登録する
+        /// accesstokenを取得する
+        /// </summary>
+        /// <returns>RegisterResponse</returns>
+        public static RegisterResponse RegisterDevice(string deviceId, string hostname)
         {
             RegisterRequest req = new(deviceId, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
