@@ -23,14 +23,19 @@ namespace Rudeus.Model
 
         private RegistryKey _regKey;
 
+        private static RegistryKey CreateRegKey(string keyName)
+        {
+            return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
+        }
+
         public Settings()
         {
-            _regKey = Registry.CurrentUser.CreateSubKey($"{RegistryDir}\\{DefaultRegistryKey}");
+            _regKey = CreateRegKey($"{RegistryDir}\\{DefaultRegistryKey}");
         }
 
         public Settings(string registryKey)
         {
-            _regKey = Registry.CurrentUser.CreateSubKey($"{RegistryDir}\\{registryKey}");
+            _regKey = CreateRegKey($"{RegistryDir}\\{registryKey}");
         }
 
         public static void UpdateRegistryKey(string? registryKey = null)
@@ -45,7 +50,7 @@ namespace Rudeus.Model
                 RegistryKey = DefaultRegistryKey;
             }
 
-            RegKey = Registry.CurrentUser.CreateSubKey(RegistryPath);
+            RegKey = CreateRegKey(RegistryPath);
         }
 
 
@@ -93,6 +98,23 @@ namespace Rudeus.Model
             }
         }
 
+        // Inno Setup UserData
+        public static string InitedUsername
+        {
+            get 
+            {
+                return (string)(CreateRegKey(Constants.InnoSetupUserDataKey).GetValue("Username") ?? new Exception("Setup Username missing"));
+            }
+        }
+
+        // Pxx-xxx
+        public static string InitedLabelId
+        {
+            get
+            {
+                return (string)(CreateRegKey(Constants.InnoSetupUserDataKey).GetValue("LabelId") ?? new Exception("Setup LabelId missing"));
+            }
+        }
 
         // ここからデフォルトのレジストリキーでのみ保存可能
 
