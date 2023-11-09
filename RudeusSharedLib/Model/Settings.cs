@@ -164,6 +164,14 @@ namespace Rudeus.Model
             get { return Get(AccessTokenKey); }
         }
 
+        // ラベルに記載されたID
+        public static string LabeledIdKey = "LabeledId";
+        public static string LabeledId
+        {
+            set { Set(LabeledIdKey, value); }
+            get { return Get(LabeledIdKey); }
+        }
+
         // 最終チェックのWindowsバージョン
 
         // デフォルトのレジストリキーでのみ保存可能ここまで
@@ -381,7 +389,12 @@ namespace Rudeus.Model
             get { return Get(CurrentVersionKey, "", false, _regKey); }
         }
 
-
+        public string NetworkIFListKey = "NetworkIFList";
+        public string NetworkIFList
+        {
+            set { Set(NetworkIFListKey, value, false, _regKey); }
+            get { return Get(NetworkIFListKey, "", false, _regKey); }
+        }
         // for debugging
 
         //public static string 

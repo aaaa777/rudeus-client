@@ -15,23 +15,24 @@ internal class RegistryInitializer
     {
         // RudeusBgのLaunch設定
         
-        Settings.UpdateRegistryKey(RudeusBgRegKey);
+        //Settings.UpdateRegistryKey(RudeusBgRegKey);
+        Settings bgSettings = new(RudeusBgRegKey);
 
 #if (DEBUG)
-        Settings.SetDevelopChannel();
+        bgSettings.SetDevelopChannelP();
 #else
-        Settings.SetStableChannel();
+        bgSettings.SetStableChannelP();
 #endif
-        Settings.LastVersionDirPath = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLastName}";
-        Settings.LastVersionExeName = $"{Constants.RudeusBgExeName}";
-        Settings.LastDirName = Constants.RudeusBgLastName;
+        bgSettings.LastVersionDirPathP = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLastName}";
+        bgSettings.LastVersionExeNameP = $"{Constants.RudeusBgExeName}";
+        bgSettings.LastDirNameP = Constants.RudeusBgLastName;
 
-        Settings.LatestVersionDirPath = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLatestName}";
-        Settings.LatestVersionExeName = $"{Constants.RudeusBgExeName}";
-        Settings.LatestDirName = Constants.RudeusBgLatestName;
+        bgSettings.LatestVersionDirPathP = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLatestName}";
+        bgSettings.LatestVersionExeNameP = $"{Constants.RudeusBgExeName}";
+        bgSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 
-        Settings.CurrentVersion = "0.0.0.0";
-        Settings.SetLatestVersionStatusDownloaded();
+        bgSettings.CurrentVersionP = "0.0.0.0";
+        bgSettings.SetLatestVersionStatusDownloadedP();
 
 
         // RudeusBgFormのLaunch設定
