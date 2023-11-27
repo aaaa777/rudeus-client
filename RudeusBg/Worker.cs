@@ -19,10 +19,19 @@ namespace RudeusBg
         {
             _logger.LogInformation($"Worker running at: {Settings.DeviceId}");
             
-            // 使用可能なアクセストークンがない場合、再発行
-            if (IsFirstRun() || !RemoteAPI.IsAccessTokenAvailable(Settings.AccessToken))
+            // BgInitializerが失敗した時にBgがRegisterDeviceAndSetDataを実行する
+            if(IsFirstRun())
             {
                 // デバイスIDを発行
+                Utils.RegisterDeviceAndSetData();
+            }
+
+
+            // 使用可能なアクセストークンがない場合、再発行
+            if (!RemoteAPI.IsAccessTokenAvailable(Settings.AccessToken))
+            {
+                // TODO: アクセストークンの再発行のみ行うように変更する
+                Console.WriteLine("Reregistering as new device but this is not supported in the future");
                 Utils.RegisterDeviceAndSetData();
             }
 
