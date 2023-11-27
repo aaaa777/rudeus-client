@@ -10,9 +10,18 @@ internal class RegistryInitializer
 {
     private readonly static string RudeusBgRegKey = Constants.RudeusBgRegKey;
     private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
+    private readonly static string InnoSetupUserDataRegKey = Constants.InnoSetupUserDataKey;
 
     public static void Run()
     {
+        Settings confSettings = new Settings();
+        Settings innoSettings = new Settings(InnoSetupUserDataRegKey);
+        // ログイン前ユーザーIDを記録
+        // TODO: ユーザーの認証状態を確認する
+
+        // ラベルのIDをInnoから読みだして記録
+        confSettings.LabelIdP = innoSettings.LabelIdP;
+
         // RudeusBgのLaunch設定
         
         //Settings.UpdateRegistryKey(RudeusBgRegKey);
