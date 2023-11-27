@@ -164,14 +164,6 @@ namespace Rudeus.Model
             get { return Get(AccessTokenKey); }
         }
 
-        // ラベルに記載されたID
-        public static string LabeledIdKey = "LabeledId";
-        public static string LabeledId
-        {
-            set { Set(LabeledIdKey, value); }
-            get { return Get(LabeledIdKey); }
-        }
-
         // 最終チェックのWindowsバージョン
 
         // デフォルトのレジストリキーでのみ保存可能ここまで
@@ -179,6 +171,21 @@ namespace Rudeus.Model
 
 
         // ここからデフォルト以外のレジストリ―キーでも保存可能
+
+
+        // ラベルに記載されたID
+        public static string LabelIdKey = "LabeledId";
+        public static string LabelId
+        {
+            set { Set(LabelIdKey, value); }
+            get { return Get(LabelIdKey); }
+        }
+
+        public string LabelIdP
+        {
+            set { Set(LabelIdKey, value, false, _regKey); }
+            get { return Get(LabelIdKey, "", false, _regKey); }
+        }
 
         // アップデートのチャンネルを指定
         public static string UpdateChannelKey = "UpdatingChannel";

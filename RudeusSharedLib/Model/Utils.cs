@@ -123,6 +123,7 @@ namespace Rudeus.Model
             return "12345.6789";
         }
 
+        // BgInitializerか、BgInitializerが失敗した後のBgの初回起動で実行する
         // Todo: ダミーデータではなく実環境での初期化を行う
         public static void RegisterDeviceAndSetData()
         {

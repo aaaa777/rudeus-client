@@ -46,7 +46,7 @@ namespace Rudeus.Model
 
 #if(DEBUG)
         // SAMLログインのエントリーページ
-        public static readonly string SamlLoginUrl = "http://10.10.2.11/rudeus_login";
+        public static readonly string SamlLoginUrl = "http://win.nomiss.net/rudeus_login";
 
         // クライアント証明書認証が必要なAPIエンドポイント
         public static readonly string ApiEndpointWithCert = "http://10.10.2.11/";
@@ -95,7 +95,7 @@ namespace Rudeus.Model
         /////////////////////////
 
         // Inno Setupで設定されたユーザ名とHIU-PXXのデータのキー
-        public static string InnoSetupUserDataKey = @"Software\Test App\Setup";
+        public static string InnoSetupUserDataKey = @"Setup";
 #if (DEBUG)
         // レジストリ：アプリのデフォルトのキー
         public static string DefaultRegistryKey = @"Config";
