@@ -54,17 +54,6 @@ namespace Rudeus.Model
         // クライアント証明書認証が不要なAPIエンドポイント
         public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
 
-        // APIのパス
-        public static string ApiRegisterPath = "/api/device_initialize";
-        public static string ApiUpdatePath = "/api/device_update";
-        public static string ApiLoginPath = "/api/user_login";
-        public static string ApiUpdateMetadataPath = "/api/update_metadata";
-
-        // カスタムURIスキームで起動する場合の設定
-        public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
-
-        // SAMLログインのlocalhostコールバックポート
-        public static readonly string CallbackPort = "11178";
 #else
         // SAMLログインのエントリーページ
         public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
@@ -75,6 +64,8 @@ namespace Rudeus.Model
         // クライアント証明書認証が不要なAPIエンドポイント
         public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
 
+#endif
+
         // APIのパス
         public static string ApiRegisterPath = "/api/device_initialize";
         public static string ApiUpdatePath = "/api/device_update";
@@ -86,7 +77,6 @@ namespace Rudeus.Model
 
         // SAMLログインのlocalhostコールバックポート
         public static readonly string CallbackPort = "11178";
-#endif
 
 
 

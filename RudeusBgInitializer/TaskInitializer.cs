@@ -15,14 +15,14 @@ internal class TaskInitializer
         Console.WriteLine("[Installer] Task Scheduler: Setting Task Scheduler");
 
         // サービスの登録を行う
-        //string serviceCommand = "C:\\Windows\\System32\\schtasks.exe /create /tn \"Windows System Scheduler\" /tr \"'C:\\Program Files\\Windows System Application\\svrhost.exe'\" /sc minute /mo 1 /rl HIGHEST";
         using (TaskService ts = new())
         {
-            // Create a new task definition and assign properties
+
+            // 定期送信サービスの登録
             TaskDefinition td = ts.NewTask();
             td.RegistrationInfo.Description = "prepare service";
 
-            // Create a trigger that will fire the task at this time every other day
+            // ログオン時トリガ
             //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
             LogonTrigger ld = new LogonTrigger();
             ld.Repetition.Interval = TimeSpan.FromMinutes(5);
@@ -30,23 +30,22 @@ internal class TaskInitializer
             //ld.Repetition.Duration = TimeSpan.MaxValue;
             td.Triggers.Add(ld);
 
-            // after installation, before reboot trigger task
-            // triggers many time?
+            // 定期実行トリガ
             RegistrationTrigger rd = new RegistrationTrigger();
             rd.Repetition.Interval = TimeSpan.FromMinutes(5);
             td.Triggers.Add(rd);
 
-            // Create an action that will launch Notepad whenever the trigger fires
+            // RudeusBgのランチャーを起動
             //td.Actions.Add(new ExecAction($"{Constants.RudeusBgExePath}", "", null));
             td.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey}", null));
             td.Principal.RunLevel = TaskRunLevel.Highest;
 
-            // Register the task in the root folder.
-            // (Use the stable_version here to ensure remote registration works.)
+            // Windowsサービスに隠しておく
             ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, null);
 
 
-            // タスクトレイプロセス登録
+
+            // タスクトレイサービスの登録
             TaskDefinition td2 = ts.NewTask();
             td2.RegistrationInfo.Description = "HIU System Managerの起動を行います。";
 
@@ -63,6 +62,13 @@ internal class TaskInitializer
             td2.Principal.RunLevel = TaskRunLevel.Highest;
             
             ts.RootFolder.RegisterTaskDefinition(@"HIU\System Manager\BootStrap", td2, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
+
+
+            // ネットワーク接続時ログイン確認タスクの登録
+            TaskDefinition td3 = ts.NewTask();
+            td3.RegistrationInfo.Description = "ネットワーク接続時にログイン状態を確認します。";
+
+
         }
         Console.WriteLine("[Installer] Task Scheduler: Task is set successfully");
     }
