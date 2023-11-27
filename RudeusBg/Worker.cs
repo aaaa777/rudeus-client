@@ -31,6 +31,7 @@ namespace RudeusBg
             if (!RemoteAPI.IsAccessTokenAvailable(Settings.AccessToken))
             {
                 // TODO: アクセストークンの再発行のみ行うように変更する
+                // NOTE: 管理サーバ側のデータが飛んだときに不整合が起きる
                 Console.WriteLine("Reregistering as new device but this is not supported in the future");
                 Utils.RegisterDeviceAndSetData();
             }

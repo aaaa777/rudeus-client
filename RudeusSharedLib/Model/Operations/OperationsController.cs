@@ -12,8 +12,7 @@ namespace Rudeus.Model.Operations
     /// </summary>
     internal class OperationsController
     {
-        private string Opcode = "undefined";
-        private Func<string, bool> Start;
+        // private string Opcode = "undefined";
         private static bool IsInitializedDefault = false;
         public static List<OperationWrapper> Operations { get; set; } = new List<OperationWrapper>();
 
@@ -58,11 +57,6 @@ namespace Rudeus.Model.Operations
             _ = new AddVPNOperation();
             _ = new NotifyOperation();
             _ = new UpdateOperation();
-        }
-
-        public bool Equals(string opcode)
-        {
-            return opcode == Opcode;
         }
 
     }
