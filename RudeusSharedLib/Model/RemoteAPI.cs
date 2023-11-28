@@ -26,6 +26,7 @@ namespace Rudeus.Model
     internal class RemoteAPI
     {
 
+        // クライアント証明書を取得
         private static X509Certificate2? ApiCertificate { get { return CertificateAPI.GetCertificate("manager.nomiss.net"); } }
 
         /// <summary>
@@ -170,17 +171,21 @@ namespace Rudeus.Model
             return responseString;
         }
 
+        // HttpRequestをConstants.forceClientCertAuthに応じて送信する
         private static HttpResponseMessage RequestEndpoints(HttpRequestMessage request)
         {
-            HttpResponseMessage? response;
-            try
+            HttpResponseMessage? response = null;
+            if (Constants.forceClientCertAuth) 
             {
-                // 証明書付きAPIエンドポイントにリクエスト
-                response = CliCertApiClient.SendAsync(request).Result;
-            }
-            catch 
-            {
-                response = null;
+                try
+                {
+                    // 証明書付きAPIエンドポイントにリクエスト
+                    response = CliCertApiClient.SendAsync(request).Result;
+                }
+                catch 
+                {
+                    response = null;
+                }
             }
 
             if(response == null)
@@ -206,7 +211,8 @@ namespace Rudeus.Model
         /// <returns>RegisterResponse</returns>
         public static RegisterResponse RegisterDevice(string deviceId, string hostname)
         {
-            RegisterRequest req = new(deviceId, hostname);
+            // TODO: manage_idは最初に取得する
+            RegisterRequest req = new(deviceId, hostname, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
             var response = PostRequest(null, ApiRegisterPath, payload);
             try

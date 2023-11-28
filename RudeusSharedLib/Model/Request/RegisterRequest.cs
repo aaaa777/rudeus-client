@@ -16,9 +16,9 @@ namespace Rudeus.Model.Request
         [JsonPropertyName(nameof(request_data))]
         public RegisterRequestData request_data { get; set; }
 
-        public RegisterRequest(string deviceId, string hostname)
+        public RegisterRequest(string deviceId, string hostname, string manageId)
         {
-            request_data = new(deviceId, hostname);
+            request_data = new(deviceId, hostname, manageId);
         }
     }
     internal class RegisterRequestData
@@ -30,10 +30,19 @@ namespace Rudeus.Model.Request
         [JsonPropertyName(nameof(hostname))]
         public string? hostname { get; set; }
 
-        public RegisterRequestData(string deviceId, string hostname)
+        [JsonPropertyName(nameof(manage_id))]
+        public string? manage_id { get; set; }
+
+        [JsonPropertyName(nameof(product_name))]
+        public string? product_name { get; set; }
+
+
+        public RegisterRequestData(string deviceId, string hostname, string manageId)
         {
             device_id = deviceId;
             this.hostname = hostname;
+            this.manage_id = manageId;
+            this.product_name = "Rudeus Test Client";
         }
     }
 

@@ -6,6 +6,9 @@ namespace Rudeus.Model
 {
     class Constants
     {
+        // クライアント認証の強制
+        public static readonly bool forceClientCertAuth = false;
+
         // タスクトレイリンク集
         public static readonly string WebPortalUrl = "https://portal.do-johodai.ac.jp";
         public static readonly string Polite3Url = "https://polite3.do-johodai.ac.jp";

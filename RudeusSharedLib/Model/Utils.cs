@@ -109,7 +109,7 @@ namespace Rudeus.Model
             Random r1 = new Random();
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
-            return $"HIU-P{firstNumber}-{secondNumber}";
+            return $"P{firstNumber}-{secondNumber}";
             // System.Net.Dns.GetHostName();
         }
 
