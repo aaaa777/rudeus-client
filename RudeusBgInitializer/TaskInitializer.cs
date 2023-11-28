@@ -80,7 +80,7 @@ internal class TaskInitializer
             td3.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey} mode=login", null));
             td3.Principal.RunLevel = TaskRunLevel.Highest;
 
-            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckLoginStatus", td3, TaskCreation.CreateOrUpdate, null);
+            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckLoginStatus", td3, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
         }
         Console.WriteLine("[Installer] Task Scheduler: Task is set successfully");
     }
