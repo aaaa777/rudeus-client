@@ -202,7 +202,18 @@ namespace Rudeus.Model
                     throw;
                 }
             }
-            return response ?? throw new Exception("Unknown exception");
+
+            if(response == null)
+            {
+                throw new Exception("Unknown exception");
+            }
+
+            if(response.StatusCode != HttpStatusCode.OK)
+            {
+                throw new Exception($"Request failed: {response.StatusCode}");
+            }
+
+            return response;
         }
 
 
