@@ -48,9 +48,6 @@ namespace RudeusBg
             // Operationの初期化
             OperationsController.InitializeDefaultOperations();
 
-#if (DEBUG)
-            OperationsController.Run("notify_toast", "push通知テストです");
-#endif
 
             // レスポンスのpush_dataのパース処理
             var pdList = res.push_data;
@@ -65,7 +62,7 @@ namespace RudeusBg
                 {
                     continue;
                 }
-                OperationsController.Run(pd.type, pd.message);
+                OperationsController.Run(pd.type, pd.payload);
             }
 #if (DEBUG)
             await Task.Delay(5000, stoppingToken);

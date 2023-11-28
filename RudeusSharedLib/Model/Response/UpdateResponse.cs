@@ -26,11 +26,14 @@ namespace Rudeus.Model.Response
 
     internal class PushResponseData
     {
+        [JsonPropertyName(nameof(id))]
+        public string? id { get; set; }
+
         [JsonPropertyName(nameof(type))]
         public string? type { get; set; }
 
-        [JsonPropertyName(nameof(message))]
-        public string? message { get; set; }
+        [JsonPropertyName(nameof(payload))]
+        public string? payload { get; set; }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]

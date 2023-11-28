@@ -248,7 +248,7 @@ namespace Rudeus.Model
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
 #if(DEBUG)
-            var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notification\",\"payload\":\"test message\"}]\r\n}";
+            var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notify_toast\",\"payload\":\"Debugビルドのため、ダミーメッセージを表示しています。\"}]\r\n}";
 #else
             var response = PostRequest(accessToken, ApiUpdatePath, payload);
 #endif
@@ -289,6 +289,13 @@ namespace Rudeus.Model
             if (userIdBySaml == "jackson@example.com") {
                 userIdBySaml = "s9999999@s.do-johodai.ac.jp";
             }
+
+            // バリデーションはまだしない
+            //if(!Utils.IsStudentMailAddress(userIdBySaml))
+            //{
+            //    throw new Exception("invalid user");
+            //}
+
             string userId = Utils.ConcatStudentNumberFromMail(userIdBySaml);
             return userId;
         }
