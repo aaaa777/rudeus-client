@@ -65,7 +65,7 @@ namespace Rudeus.Model
         public static readonly string ApiEndpointWithCert = "https://manager.nomiss.net/";
 
         // クライアント証明書認証が不要なAPIエンドポイント
-        public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
+        public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
 
 #endif
 
