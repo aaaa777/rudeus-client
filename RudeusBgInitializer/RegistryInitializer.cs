@@ -27,22 +27,13 @@ internal class RegistryInitializer
         //Settings.UpdateRegistryKey(RudeusBgRegKey);
         Settings bgSettings = new(RudeusBgRegKey);
 
-#if (DEBUG)
+#if (DEVELOPMENT)
         bgSettings.SetDevelopChannelP();
 #else
         bgSettings.SetStableChannelP();
 #endif
 
-        // Debug時にProgram Filesを向かないように設定する
-#if (DEBUG)
-        bgSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bgSettings.LastVersionExeNameP = $"{Constants.RudeusBgExeName}";
-        bgSettings.LastDirNameP = Constants.RudeusBgLastName;
 
-        bgSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bgSettings.LatestVersionExeNameP = $"{Constants.RudeusBgExeName}";
-        bgSettings.LatestDirNameP = Constants.RudeusBgLatestName;
-#else
         bgSettings.LastVersionDirPathP = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLastName}";
         bgSettings.LastVersionExeNameP = $"{Constants.RudeusBgExeName}";
         bgSettings.LastDirNameP = Constants.RudeusBgLastName;
@@ -50,7 +41,7 @@ internal class RegistryInitializer
         bgSettings.LatestVersionDirPathP = $"{Constants.RudeusBgDir}\\{Constants.RudeusBgLatestName}";
         bgSettings.LatestVersionExeNameP = $"{Constants.RudeusBgExeName}";
         bgSettings.LatestDirNameP = Constants.RudeusBgLatestName;
-#endif
+
         bgSettings.CurrentVersionP = "0.0.0.0";
         bgSettings.SetLatestVersionStatusDownloadedP();
 
@@ -59,22 +50,13 @@ internal class RegistryInitializer
         
         //Settings.UpdateRegistryKey(RudeusBgFormRegKey);
         Settings bfSettings = new(RudeusBgFormRegKey);
-#if (DEBUG)
+#if (DEVELOPMENT)
         bfSettings.SetDevelopChannelP();
 #else
         Settings.SetStableChannel();
 #endif
 
-        // Debug時にProgram Filesを向かないように設定する
-#if (DEBUG)
-        bfSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-        bfSettings.LastDirNameP = Constants.RudeusBgFormLastName;
 
-        bfSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bfSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-        bfSettings.LatestDirNameP = Constants.RudeusBgFormLatestName;
-#else
         bfSettings.LastVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
         bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
         bfSettings.LastDirNameP = Constants.RudeusBgLastName;
@@ -85,7 +67,7 @@ internal class RegistryInitializer
 
         bfSettings.CurrentVersionP = "0.0.0.0";
         bfSettings.SetLatestVersionStatusDownloadedP();
-#endif
+
 
 
         Console.WriteLine("[Installer] Registry: Settings loaded for launcher");

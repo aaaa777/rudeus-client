@@ -296,13 +296,43 @@ namespace Rudeus.Model
         public static string LastVersionDirPath
         {
             set { Set(LastVersionDirPathKey, value, false); }
-            get { return Get(LastVersionDirPathKey, "", false); }
+            get {
+#if (DEVELOPMENT)
+                string dir;
+                if (RegistryKey == "Bg")
+                {
+                    dir = "RudeusBg";
+                }
+                else
+                {
+                    dir = "RudeusBgForm";
+                }
+                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+#else
+                return Get(LastVersionDirPathKey, "", false); 
+#endif            
+            }
         }
 
         public string LastVersionDirPathP
         {
             set { Set(LastVersionDirPathKey, value, false, _regKey); }
-            get { return Get(LastVersionDirPathKey, "", false, _regKey); }
+            get {
+#if (DEVELOPMENT)
+                string dir;
+                if (_regKey.Name == CreateRegKey($"{RegistryDir}\\Bg").Name)
+                {
+                    dir = "RudeusBg";
+                }
+                else
+                {
+                    dir = "RudeusBgForm";
+                }
+                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+#else
+                return Get(LastVersionDirPathKey, "", false, _regKey); 
+#endif      
+            }
         }
 
         private static string LatestVersionDirPathKey = "LatestVersionDirPath";
@@ -310,12 +340,42 @@ namespace Rudeus.Model
         public static string LatestVersionDirPath
         {
             set { Set(LatestVersionDirPathKey, value, false); }
-            get { return Get(LatestVersionDirPathKey, "", false); }
+            get {
+#if (DEVELOPMENT)
+                string dir;
+                if (RegistryKey == "Bg")
+                {
+                    dir = "RudeusBg";
+                }
+                else
+                {
+                    dir = "RudeusBgForm";
+                }
+                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+#else
+                return Get(LatestVersionDirPathKey, "", false); 
+#endif
+            }
         }
         public string LatestVersionDirPathP
         {
             set { Set(LatestVersionDirPathKey, value, false, _regKey); }
-            get { return Get(LatestVersionDirPathKey, "", false, _regKey); }
+            get {
+#if (DEVELOPMENT)
+                string dir;
+                if (_regKey.Name == CreateRegKey($"{RegistryDir}\\Bg").Name)
+                {
+                    dir = "RudeusBg";
+                }
+                else
+                {
+                    dir = "RudeusBgForm";
+                }
+                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+#else
+                return Get(LatestVersionDirPathKey, "", false, _regKey); 
+#endif
+            }
         }
 
         private static string LastVersionExeNameKey = "LastVersionExeName";

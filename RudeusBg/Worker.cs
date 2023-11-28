@@ -7,6 +7,7 @@ using System.CommandLine;
 using System.CommandLine.Invocation;
 using System.Linq;
 using System.Diagnostics;
+using Windows.System.Inventory;
 
 namespace RudeusBg
 {
@@ -63,9 +64,18 @@ namespace RudeusBg
                 }
             }
 
+            if (argsDict.GetValueOrDefault("mode", "default") == "test")
+            {
+                IReadOnlyList<InstalledDesktopApp> apps = await InstalledDesktopApp.GetInventoryAsync();
+                foreach (InstalledDesktopApp app in apps)
+                {
+                    Console.WriteLine(app.DisplayName);
+                }
+            }
 
 
-#if (DEBUG)
+
+#if (!RELEASE)
             await Task.Delay(5000, stoppingToken);
 #endif
             Environment.Exit(0);

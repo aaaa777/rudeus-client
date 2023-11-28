@@ -9,7 +9,7 @@ internal class CertificateInstaller
 {
     public static void InstallDefaults()
     {
-#if (DEBUG)
+#if (DEVELOPMENT)
         Console.WriteLine("[Installer] Cert: Certificate installation is skipped because this is Debug build.");
         Console.WriteLine("[Installer] Cert: There is 2ways to install Certificate, execute Release build or install manually.");
 #else

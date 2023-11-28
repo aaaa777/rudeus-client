@@ -11,6 +11,7 @@
 	<PublishSingleFile>true</PublishSingleFile>
 	<StartupObject>Program</StartupObject>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
+	<Configurations>Debug;Release;Debug(Offline);Development</Configurations>
   </PropertyGroup>
 
   <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />

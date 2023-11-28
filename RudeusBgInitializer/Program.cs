@@ -31,7 +31,7 @@ class Program
             Console.WriteLine(ex.ToString());
         }
 
-#if (DEBUG)
+#if (!RELEASE)
         Console.WriteLine("\n");
         Console.WriteLine("[Installer] Done, Press Enter");
         Console.ReadLine();

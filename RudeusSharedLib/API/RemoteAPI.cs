@@ -227,7 +227,7 @@ namespace Rudeus.Model
             // TODO: manage_idは最初に取得する
             RegisterRequest req = new(deviceId, hostname, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
-#if (DEBUG)
+#if (DEVELOPMENT)
             // デバッグ用のダミーレスポンス
             var response = "{\r\n\"status\":\"ok\",\r\n\"response_data\":{\r\n\"access_token\":\"debug|dummy_access_token\"\r\n}\r\n}";
 #else
@@ -258,7 +258,7 @@ namespace Rudeus.Model
             UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
-#if(DEBUG)
+#if(DEVELOPMENT)
             var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notify_toast\",\"payload\":\"Debugビルドのため、ダミーメッセージを表示しています。\"}]\r\n}";
 #else
             var response = PostRequest(accessToken, ApiUpdatePath, payload);
@@ -317,7 +317,7 @@ namespace Rudeus.Model
             LoginRequest req = new(userId);
             var payload = JsonSerializer.Serialize(req, LoginRequestContext.Default.LoginRequest);
 
-#if (DEBUG)
+#if (DEVELOPMENT)
             var response = "{\r\n\"status\":\"ok\"\r\n}";
 #else
             var response = PostRequest(accessToken, ApiLoginPath, payload);

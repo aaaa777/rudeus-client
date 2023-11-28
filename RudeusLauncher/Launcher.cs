@@ -14,8 +14,6 @@ internal class Launcher
     {
 #if(DEBUG)
         Console.WriteLine("[Launcher] Debug build is running");
-#else
-        Console.WriteLine("[Launcher] Release build is running");
 #endif
         // レジストリを切り替え
         //Settings.UpdateRegistryKey(registryKey);

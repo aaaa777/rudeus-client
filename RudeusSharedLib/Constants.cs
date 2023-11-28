@@ -89,19 +89,12 @@ namespace Rudeus.Model
 
         // Inno Setupで設定されたユーザ名とHIU-PXXのデータのキー
         public static string InnoSetupUserDataKey = @"Setup";
-#if (DEBUG)
-        // レジストリ：アプリのデフォルトのキー
-        public static string DefaultRegistryKey = @"Config";
 
-        // レジストリ：アプリのルート
-        public static string RegistryDir = @"Software\Test App Debug";
-#else
         // レジストリ：アプリのデフォルトのキー
         public static string DefaultRegistryKey = @"Config";
 
         // レジストリ：アプリのルート
         public static string RegistryDir = @"Software\Test App";
-#endif
 
 
 

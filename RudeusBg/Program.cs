@@ -21,7 +21,7 @@ class Program
         catch(Exception ex)
         {
             Console.WriteLine(ex.ToString());
-#if (DEBUG)
+#if (!RELEASE)
     //Console.ReadLine();
 #endif
         }

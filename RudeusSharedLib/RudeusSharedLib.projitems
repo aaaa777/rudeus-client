@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)API\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Certificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\InstalledApplications.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Watchdogs\UpdateRequestBuilder.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Watchdogs\Watcher.cs" />

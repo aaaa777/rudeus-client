@@ -50,9 +50,10 @@ public class Program
         // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行
         while (exitCode == Constants.ForceUpdateExitCode);
 
-#if (DEBUG)
+#if (!RELEASE)
         Console.WriteLine("Program end.");
         //Console.ReadLine();
 #endif
+        Environment.Exit(exitCode);
     }
 }
