@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "RudeusLauncher": {
+      "commandName": "Project"
+    },
+    "Launch Bg": {
+      "commandName": "Project",
+      "commandLineArgs": "Bg"
+    },
+    "Launch Tray": {
+      "commandName": "Project",
+      "commandLineArgs": "Tray"
+    }
+  }
+}
