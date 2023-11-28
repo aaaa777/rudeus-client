@@ -68,7 +68,19 @@ internal class TaskInitializer
             TaskDefinition td3 = ts.NewTask();
             td3.RegistrationInfo.Description = "ネットワーク接続時にログイン状態を確認します。";
 
+            EventTrigger et = new();
+            et.Subscription = @"<QueryList>"
+                + "<Query Id=\"0\" Path=\"Microsoft-Windows-NetworkProfile/Operational\">"
+                + "<Select Path=\"Microsoft-Windows-NetworkProfile/Operational\">*[System[(EventID=4004)]]</Select>"
+                + "</Query>"
+                + "</QueryList>";
 
+            td3.Triggers.Add(et);
+
+            td3.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey} mode=login", null));
+            td3.Principal.RunLevel = TaskRunLevel.Highest;
+
+            ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckLoginStatus", td3, TaskCreation.CreateOrUpdate, null);
         }
         Console.WriteLine("[Installer] Task Scheduler: Task is set successfully");
     }
