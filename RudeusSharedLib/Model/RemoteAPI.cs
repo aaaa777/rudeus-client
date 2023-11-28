@@ -175,7 +175,9 @@ namespace Rudeus.Model
         private static HttpResponseMessage RequestEndpoints(HttpRequestMessage request)
         {
             HttpResponseMessage? response = null;
-            if (Constants.forceClientCertAuth) 
+
+            // クライアント認証を強制する設定の場合
+            if (!Constants.disableClientCertAuth) 
             {
                 try
                 {
