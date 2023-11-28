@@ -216,7 +216,12 @@ namespace Rudeus.Model
             // TODO: manage_idは最初に取得する
             RegisterRequest req = new(deviceId, hostname, hostname);
             var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
+#if (DEBUG)
+            // デバッグ用のダミーレスポンス
+            var response = "{\r\n\"status\":\"ok\",\r\n\"response_data\":{\r\n\"access_token\":\"debug|dummy_access_token\"\r\n}\r\n}";
+#else
             var response = PostRequest(null, ApiRegisterPath, payload);
+#endif
             try
             {
                 var jsonResponse = JsonSerializer.Deserialize(response, RegisterResponseContext.Default.RegisterResponse);
@@ -242,7 +247,11 @@ namespace Rudeus.Model
             UpdateRequest req = new(hostname);
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
+#if(DEBUG)
+            var response = "{\r\n\"status\":\"ok\"\r\n}";
+#else
             var response = PostRequest(accessToken, ApiUpdatePath, payload);
+#endif
             try
             {
                 var jsonResponse = JsonSerializer.Deserialize(response, UpdateResponseContext.Default.UpdateResponse);
@@ -289,8 +298,12 @@ namespace Rudeus.Model
             // 取得したユーザー名を送信する
             LoginRequest req = new(userId);
             var payload = JsonSerializer.Serialize(req, LoginRequestContext.Default.LoginRequest);
-            var response = PostRequest(accessToken, ApiLoginPath, payload);
 
+#if (DEBUG)
+            var response = "{\r\n\"status\":\"ok\"\r\n}";
+#else
+            var response = PostRequest(accessToken, ApiLoginPath, payload);
+#endif
             try
             {
                 // レスポンスをパースしUserIdを取得
