@@ -9,34 +9,37 @@
     <Import_RootNamespace>Rudeus</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Model\CallbackAPI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\CertificateAPI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\IRemoteAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\CallbackAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Certificate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ISettings.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\UpdateRequestBuilder.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\Watcher.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Watchdogs\WatchItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Watchdogs\UpdateRequestBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Watchdogs\Watcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Watchdogs\WatchItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddCertOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\AddVPNOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\NotifyOperation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\OperationsController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\OperationWrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Operations\UpdateOperation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\EmptyRequest.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\UpdateMetadataResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\EmptyRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\UpdateMetadataResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Notificator.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\RemoteAPI.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\BaseRequest.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\LoginRequest.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\RegisterRequest.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Request\UpdateRequest.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\BaseResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\LoginResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\RegisterResponse.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Response\UpdateResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\RemoteAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\BaseRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\LoginRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\RegisterRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\UpdateRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\BaseResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\LoginResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\RegisterResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\UpdateResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Settings.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\VPNAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\VPN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)API\" />
   </ItemGroup>
 </Project>

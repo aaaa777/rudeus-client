@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Rudeus.Model
 {
-    internal class VPNAPI
+    internal class VPN
     {
         public static void AddVpnSetting()
         {

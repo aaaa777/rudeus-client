@@ -27,7 +27,7 @@ namespace Rudeus.Model
     {
 
         // クライアント証明書を取得
-        private static X509Certificate2? ApiCertificate { get { return CertificateAPI.GetCertificate("manager.nomiss.net"); } }
+        private static X509Certificate2? ApiCertificate { get { return Certificate.GetCertificate("manager.nomiss.net"); } }
 
         /// <summary>
         /// Todo: クライアント証明書を追加する

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Rudeus.Model
 {
-    internal class CertificateAPI
+    internal class Certificate
     {
         public static void InstallPkcs12IntoMy(string path, string password)
         {
