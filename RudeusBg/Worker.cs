@@ -18,9 +18,24 @@ namespace RudeusBg
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation($"Worker running at: {Settings.DeviceId}");
+
+            // 初期化
+            Initialize();
+
+            // UpdateDeviceの実行
+            UpdateResponse? res = PostInformation();
             
+            HandleResponseData(res);
+#if (DEBUG)
+            await Task.Delay(5000, stoppingToken);
+#endif
+            Environment.Exit(0);
+        }
+
+        private void Initialize()
+        {
             // BgInitializerが失敗した時にBgがRegisterDeviceAndSetDataを実行する
-            if(IsFirstRun())
+            if (IsFirstRun())
             {
                 // デバイスIDを発行
                 Utils.RegisterDeviceAndSetData();
@@ -35,12 +50,12 @@ namespace RudeusBg
                 Console.WriteLine("Reregistering as new device but this is not supported in the future");
                 Utils.RegisterDeviceAndSetData();
             }
+        }
 
-            // UpdateDeviceの実行
-            UpdateResponse? res = PostInformation();
-            
+        private void HandleResponseData(UpdateResponse? res)
+        {
             // レスポンスがなかった場合
-            if(res == null)
+            if (res == null)
             {
                 Environment.Exit(0);
             }
@@ -51,7 +66,7 @@ namespace RudeusBg
 
             // レスポンスのpush_dataのパース処理
             var pdList = res.push_data;
-            if(pdList == null)
+            if (pdList == null)
             {
                 Environment.Exit(0);
             }
@@ -64,11 +79,8 @@ namespace RudeusBg
                 }
                 OperationsController.Run(pd.type, pd.payload);
             }
-#if (DEBUG)
-            await Task.Delay(5000, stoppingToken);
-#endif
-            Environment.Exit(0);
         }
+
 
         // UpdateDeviceを実行
         private UpdateResponse? PostInformation()
