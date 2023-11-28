@@ -66,7 +66,7 @@ namespace RudeusBgForm
             ToolStripMenuItemLoginNav = new ToolStripMenuItem();
             ToolStripMenuItemLoginStatus = new ToolStripMenuItem();
             ToolStripMenuItemLoginButton = new ToolStripMenuItem();
-            ログアウトToolStripMenuItem = new ToolStripMenuItem();
+            LogoutToolStripMenuItem = new ToolStripMenuItem();
             ToolStripMenuItemLinkList = new ToolStripMenuItem();
             ToolStripMenuItemLinkPortal = new ToolStripMenuItem();
             ToolStripMenuItemLinkPolite3 = new ToolStripMenuItem();
@@ -93,7 +93,7 @@ namespace RudeusBgForm
             // 
             // ToolStripMenuItemLoginNav
             // 
-            ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton, ログアウトToolStripMenuItem });
+            ToolStripMenuItemLoginNav.DropDownItems.AddRange(new ToolStripItem[] { ToolStripMenuItemLoginStatus, ToolStripMenuItemLoginButton, LogoutToolStripMenuItem });
             ToolStripMenuItemLoginNav.Name = "ToolStripMenuItemLoginNav";
             ToolStripMenuItemLoginNav.Size = new Size(180, 22);
             ToolStripMenuItemLoginNav.Text = "ログイン";
@@ -113,12 +113,12 @@ namespace RudeusBgForm
             ToolStripMenuItemLoginButton.Text = "情報大アカウントでログイン";
             ToolStripMenuItemLoginButton.Click += testMessageToolStripMenuItem1_Click;
             // 
-            // ログアウトToolStripMenuItem
+            // LogoutToolStripMenuItem
             // 
-            ログアウトToolStripMenuItem.Name = "ログアウトToolStripMenuItem";
-            ログアウトToolStripMenuItem.Size = new Size(199, 22);
-            ログアウトToolStripMenuItem.Text = "ログアウト";
-            ログアウトToolStripMenuItem.Click += ログアウトToolStripMenuItem_Click;
+            LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem";
+            LogoutToolStripMenuItem.Size = new Size(199, 22);
+            LogoutToolStripMenuItem.Text = "ログアウト";
+            LogoutToolStripMenuItem.Click += LogoutToolStripMenuItem_Click;
             // 
             // ToolStripMenuItemLinkList
             // 
@@ -187,6 +187,6 @@ namespace RudeusBgForm
         private ToolStripMenuItem ToolStripMenuItemLinkPolite3;
         private ToolStripMenuItem ToolStripMenuItemLinkKyomu;
         private ToolStripMenuItem ToolStripMenuItemLoginStatus;
-        private ToolStripMenuItem ログアウトToolStripMenuItem;
+        private ToolStripMenuItem LogoutToolStripMenuItem;
     }
 }
