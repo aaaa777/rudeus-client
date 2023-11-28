@@ -8,12 +8,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-#if(DEBUG)
-        if(args.Length == 0)
-        {
-            args = new string[] { Constants.RudeusBgFormRegKey };
-        }
-#endif
         if (args.Length < 1)
         {
             return;
