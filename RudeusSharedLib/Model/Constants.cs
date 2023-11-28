@@ -94,7 +94,7 @@ namespace Rudeus.Model
         public static string DefaultRegistryKey = @"Config";
 
         // レジストリ：アプリのルート
-        public static string RegistryDir = @"Software\Test App";
+        public static string RegistryDir = @"Software\Test App Debug";
 #else
         // レジストリ：アプリのデフォルトのキー
         public static string DefaultRegistryKey = @"Config";

@@ -11,6 +11,11 @@ internal class Launcher
 {
     public static int Run(string registryKey)
     {
+#if(DEBUG)
+        Console.WriteLine("[Launcher] Debug build is running");
+#else
+        Console.WriteLine("[Launcher] Release build is running");
+#endif
         // レジストリを切り替え
         Settings.UpdateRegistryKey(registryKey);
         Settings settings = new(registryKey);
@@ -47,6 +52,7 @@ internal class Launcher
             // lastを実行、フォールバックは無し
             exitCode = StartProcess(lastExePath);
         }
+        // latestが正常終了した時、そのまま終了
         else
         {
             Console.WriteLine("Latest version returned exit code 0");
