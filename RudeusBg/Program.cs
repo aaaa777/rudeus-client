@@ -1,20 +1,30 @@
 using RudeusBg;
 
-IHost host = Host.CreateDefaultBuilder(args)
-    .ConfigureServices(services =>
+class Program
+{
+    internal static string[] commandArgs;
+    public static void Main(string[] args)
     {
-        services.AddHostedService<Worker>();
-    })
-    .Build();
+        commandArgs = args;
 
-try
-{
-    host.Run();
-} 
-catch(Exception ex)
-{
-    Console.WriteLine(ex.ToString());
+        IHost host = Host.CreateDefaultBuilder(args)
+            .ConfigureServices(services =>
+            {
+                services.AddHostedService<Worker>();
+            })
+            .Build();
+
+        try
+        {
+            host.Run();
+        } 
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
 #if (DEBUG)
     //Console.ReadLine();
 #endif
+        }
+
+    }
 }

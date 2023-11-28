@@ -1,8 +1,15 @@
-﻿{
+{
   "profiles": {
     "RudeusBg": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
+    },
+    "login": {
+      "commandName": "Project",
+      "commandLineArgs": "mode=login",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }

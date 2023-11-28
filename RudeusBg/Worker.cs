@@ -3,29 +3,70 @@ using Rudeus.Model.Response;
 using Rudeus.Model.Operations;
 using Microsoft.Toolkit.Uwp.Notifications;
 using System.Diagnostics.CodeAnalysis;
+using System.CommandLine;
+using System.CommandLine.Invocation;
+using System.Linq;
+using System.Diagnostics;
 
 namespace RudeusBg
 {
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
+        private string[] _args;
+
+        private RootCommand RootCommand;
 
         public Worker(ILogger<Worker> logger)
         {
             _logger = logger;
+            _args = Program.commandArgs;
+
         }
+    
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation($"Worker running at: {Settings.DeviceId}");
 
+            var argsDict = _args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
+
             // 初期化
             Initialize();
 
-            // UpdateDeviceの実行
-            UpdateResponse? res = PostInformation();
-            
-            HandleResponseData(res);
+            // 通常起動時
+            if (argsDict.GetValueOrDefault("mode", "default") == "default")
+            {
+                // UpdateDeviceの実行
+                UpdateResponse? res = PostInformation();
+                
+                HandleResponseData(res);
+            }
+
+            if (argsDict.GetValueOrDefault("mode", "default") == "login")
+            {
+                string userIdOld = Settings.Username;
+                try
+                {
+                    // 学生IDを取得するためlocalhostでコールバックを待機
+                    Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
+
+                    // ログイン画面を開く
+                    OpenWebPage(RemoteAPI.SamlLoginUrl);
+                    string userId = await userIdTask;
+
+                    // 管理サーバに送信
+                    LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
+                    Settings.Username = userId;
+                }
+                catch
+                {
+                    // ログインして送信に失敗
+                }
+            }
+
+
+
 #if (DEBUG)
             await Task.Delay(5000, stoppingToken);
 #endif
@@ -143,6 +184,17 @@ namespace RudeusBg
         private void CallOperation(string opcode)
         {
             //OperationsController.Run(type);
+        }
+
+        private void OpenWebPage(string url)
+        {
+            new Process
+            {
+                StartInfo = new ProcessStartInfo(url)
+                {
+                    UseShellExecute = true
+                }
+            }.Start();
         }
     }
 }
