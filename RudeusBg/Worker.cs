@@ -68,6 +68,14 @@ namespace RudeusBg
             if (argsDict.GetValueOrDefault("mode", "default") == "test")
             {
                 var apps = await InstalledApplications.LoadAsync();
+                try
+                {
+                    RemoteAPI.SendInstalledApps(Settings.AccessToken, apps);
+                }
+                catch (Exception ex) 
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
 
 
