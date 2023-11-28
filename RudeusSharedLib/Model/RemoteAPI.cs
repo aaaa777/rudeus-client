@@ -248,7 +248,7 @@ namespace Rudeus.Model
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
 #if(DEBUG)
-            var response = "{\r\n\"status\":\"ok\"\r\n}";
+            var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notification\",\"payload\":\"test message\"}]\r\n}";
 #else
             var response = PostRequest(accessToken, ApiUpdatePath, payload);
 #endif
