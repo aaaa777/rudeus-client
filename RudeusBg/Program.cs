@@ -2,7 +2,7 @@ using RudeusBg;
 
 class Program
 {
-    internal static string[] commandArgs;
+    internal static string[]? commandArgs;
     public static void Main(string[] args)
     {
         commandArgs = args;

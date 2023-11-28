@@ -10,6 +10,10 @@
     "Launch Tray": {
       "commandName": "Project",
       "commandLineArgs": "Tray"
+    },
+    "Launch Bg login": {
+      "commandName": "Project",
+      "commandLineArgs": "Bg mode=login"
     }
   }
 }

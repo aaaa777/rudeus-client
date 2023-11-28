@@ -8,13 +8,27 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        if (args.Length < 1)
+        if (args.Length < 1 )
+        {
+            return;
+        }
+
+        if (args[0] != Constants.RudeusBgRegKey && args[0] != Constants.RudeusBgFormRegKey)
         {
             return;
         }
 
         string registryKey = args[0];
         int exitCode = -1;
+
+        Settings settings = new(registryKey);
+
+        string argsStr = "";
+
+        if (args.Length > 1)
+        {
+            argsStr = string.Join(" ", args[1..]);
+        }
 
         do
         {
@@ -25,7 +39,12 @@ public class Program
             Console.WriteLine("Update process done");
 
             // アプリ起動
-            exitCode = Launcher.Run(registryKey);
+            exitCode = Launcher.Run(
+                settings.LatestVersionExePathP,
+                settings.LastVersionExePathP,
+                settings.IsLatestVersionStatusUnlaunchableP(),
+                argsStr
+            );
             Console.WriteLine("Application stopped");
         }
         // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行

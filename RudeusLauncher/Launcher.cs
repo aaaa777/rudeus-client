@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 internal class Launcher
 {
-    public static int Run(string registryKey)
+    //public static int Run(string registryKey, string args="")
+    public static int Run(string latestExePath, string lastExePath, bool skipLatest, string args="")
     {
 #if(DEBUG)
         Console.WriteLine("[Launcher] Debug build is running");
@@ -17,19 +18,19 @@ internal class Launcher
         Console.WriteLine("[Launcher] Release build is running");
 #endif
         // レジストリを切り替え
-        Settings.UpdateRegistryKey(registryKey);
-        Settings settings = new(registryKey);
+        //Settings.UpdateRegistryKey(registryKey);
+        //Settings settings = new(registryKey);
 
-        string latestExePath = Settings.LatestVersionExePath;
-        string lastExePath = Settings.LastVersionExePath;
+        //string latestExePath = Settings.LatestVersionExePath;
+        //string lastExePath = Settings.LastVersionExePath;
 
         // 起動可能かダウンロード後未起動の状態のみでlatestを実行
         int exitCode = -1;
-        if (!Settings.IsLatestVersionStatusUnlaunchable())
+        if (!skipLatest)
         {
             // latestの実行
             Console.WriteLine("Trying launching latest version");
-            exitCode = StartProcess(latestExePath);
+            exitCode = StartProcess(latestExePath, args);
         }
         else
         {
@@ -41,7 +42,10 @@ internal class Launcher
         // latestが異常終了した時、lastにフォールバック
         if (exitCode != 0)
         {
-            Console.WriteLine("Latest version returned wrong exit code or skipperd");
+            if (!skipLatest)
+            {
+                Console.WriteLine("Latest version returned wrong exit code");
+            }
             Console.WriteLine("Trying launching last version");
 
             // ToDo: 終了が遅かった時はフォールバックしない？
@@ -50,7 +54,7 @@ internal class Launcher
             Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
-            exitCode = StartProcess(lastExePath);
+            exitCode = StartProcess(lastExePath, args);
         }
         // latestが正常終了した時、そのまま終了
         else
@@ -65,13 +69,19 @@ internal class Launcher
         return exitCode;
     }
 
-    public static int StartProcess(string filePath)
+    public static int StartProcess(string filePath, string args="")
     {
         //int psExitCode = -1;
         try
         {
-            Process ps = Process.Start(filePath);
-            ps.WaitForExit();
+            Process ps = Process.Start(filePath, args);
+            
+            bool isExited = ps.WaitForExit(0);
+
+            while(!ps.WaitForExit(10_000))
+            {
+                // waiting for exit
+            }
 
             return ps.ExitCode;
         }

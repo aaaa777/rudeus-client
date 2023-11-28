@@ -35,11 +35,11 @@ internal class RegistryInitializer
 
         // Debug時にProgram Filesを向かないように設定する
 #if (DEBUG)
-        bgSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+        bgSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
         bgSettings.LastVersionExeNameP = $"{Constants.RudeusBgExeName}";
         bgSettings.LastDirNameP = Constants.RudeusBgLastName;
 
-        bgSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+        bgSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBg\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
         bgSettings.LatestVersionExeNameP = $"{Constants.RudeusBgExeName}";
         bgSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 #else
@@ -67,13 +67,13 @@ internal class RegistryInitializer
 
         // Debug時にProgram Filesを向かないように設定する
 #if (DEBUG)
-        bgSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bgSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-        bgSettings.LastDirNameP = Constants.RudeusBgFormLastName;
+        bfSettings.LastVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+        bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+        bfSettings.LastDirNameP = Constants.RudeusBgFormLastName;
 
-        bgSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-        bgSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-        bgSettings.LatestDirNameP = Constants.RudeusBgFormLatestName;
+        bfSettings.LatestVersionDirPathP = $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\..\\RudeusBgForm\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
+        bfSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+        bfSettings.LatestDirNameP = Constants.RudeusBgFormLatestName;
 #else
         bfSettings.LastVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
         bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
