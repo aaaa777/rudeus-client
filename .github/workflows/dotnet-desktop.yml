@@ -136,10 +136,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
       with:
-        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/125728409/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/131780577/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
         release_id: 125728409 # same as above (id can just be taken out the upload_url, it's used to find old releases)
         asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip # path to archive to upload
-        asset_name: Rudeus_launcher-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+        asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
         max_releases: 7 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
 
