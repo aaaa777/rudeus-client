@@ -12,6 +12,8 @@ namespace Rudeus.Model
         public abstract static UpdateResponse UpdateDevice(string accessToken, string? hostname = null);
         public abstract static LoginResponse LoginDevice(string accessToken, string userId);
 
+        public abstract static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplications> apps);
+
         public abstract static Task<string> ReceiveStudentIdAsync();
 
         // もしかしてRemoteAPIが持つべきではない？

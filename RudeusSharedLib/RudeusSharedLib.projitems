@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)API\CallbackAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\SendInstalledAppRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Certificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\InstalledApplications.cs" />
@@ -39,8 +40,5 @@
     <Compile Include="$(MSBuildThisFileDirectory)API\Response\UpdateResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\VPN.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)API\" />
   </ItemGroup>
 </Project>

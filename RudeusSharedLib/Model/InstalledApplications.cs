@@ -2,52 +2,29 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
+using Windows.System.Inventory;
 
 namespace Rudeus.Model
 {
-    // https://stackoverflow.com/questions/14207487/getting-a-list-of-all-applications
-    public class DesktopWindow
+    internal class InstalledApplication
     {
-        public IntPtr Handle { get; set; }
-        public string Title { get; set; } = string.Empty;
-        public bool IsVisible { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Version { get; set; } = string.Empty;
     }
-
-    public class User32Helper
+    internal class InstalledApplications
     {
-        public delegate bool EnumDelegate(IntPtr hWnd, int lParam);
-
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool IsWindowVisible(IntPtr hWnd);
-
-        [DllImport("user32.dll", EntryPoint = "GetWindowText",
-            ExactSpelling = false, CharSet = CharSet.Auto, SetLastError = true)]
-        public static extern int GetWindowText(IntPtr hWnd, StringBuilder lpWindowText, int nMaxCount);
-
-        [DllImport("user32.dll", EntryPoint = "EnumDesktopWindows",
-            ExactSpelling = false, CharSet = CharSet.Auto, SetLastError = true)]
-        public static extern bool EnumDesktopWindows(IntPtr hDesktop, EnumDelegate lpEnumCallbackFunction,
-            IntPtr lParam);
-
-        public static List<DesktopWindow> GetDesktopWindows()
+        public static async Task<List<InstalledApplication>> LoadAsync()
         {
-            var collection = new List<DesktopWindow>();
-            EnumDelegate filter = delegate (IntPtr hWnd, int lParam)
+            var resApps = new List<InstalledApplication>();
+
+            IReadOnlyList<InstalledDesktopApp> apps = await InstalledDesktopApp.GetInventoryAsync();
+            foreach (InstalledDesktopApp app in apps)
             {
-                var result = new StringBuilder(255);
-                GetWindowText(hWnd, result, result.Capacity + 1);
-                string title = result.ToString();
-
-                var isVisible = !string.IsNullOrEmpty(title) && IsWindowVisible(hWnd);
-
-                collection.Add(new DesktopWindow { Handle = hWnd, Title = title, IsVisible = isVisible });
-
-                return true;
-            };
-
-            EnumDesktopWindows(IntPtr.Zero, filter, IntPtr.Zero);
-            return collection;
+                Console.Write(app.DisplayVersion + "; ");
+                Console.WriteLine(app.DisplayName);
+                resApps.Add(new InstalledApplication() { Name = app.DisplayName, Version = app.DisplayVersion });
+            }
+            return resApps;
         }
     }
 }

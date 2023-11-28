@@ -37,7 +37,7 @@ namespace RudeusBg
             if (argsDict.GetValueOrDefault("mode", "default") == "default")
             {
                 // UpdateDeviceの実行
-                UpdateResponse? res = PostInformation();
+                UpdateResponse? res = await PostInformation();
                 
                 HandleResponseData(res);
             }
@@ -64,13 +64,10 @@ namespace RudeusBg
                 }
             }
 
+            // テスト実装確認用
             if (argsDict.GetValueOrDefault("mode", "default") == "test")
             {
-                IReadOnlyList<InstalledDesktopApp> apps = await InstalledDesktopApp.GetInventoryAsync();
-                foreach (InstalledDesktopApp app in apps)
-                {
-                    Console.WriteLine(app.DisplayName);
-                }
+                var apps = await InstalledApplications.LoadAsync();
             }
 
 
@@ -132,28 +129,43 @@ namespace RudeusBg
 
 
         // UpdateDeviceを実行
-        private UpdateResponse? PostInformation()
+        private async Task<UpdateResponse>? PostInformation()
         {
             string accessToken = Settings.AccessToken;
+
+
 
             // set randomized hostname
             Random r1 = new Random();
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
-            string hostname = $"HIU-P{firstNumber}-{secondNumber}";
+            string hostname = $"P{firstNumber}-{secondNumber}";
             Settings.Hostname = hostname;
 
+            UpdateResponse? response = null;
             try
             { 
-                UpdateResponse response = RemoteAPI.UpdateDevice(accessToken, hostname);
+                response = RemoteAPI.UpdateDevice(accessToken, hostname);
                 _logger.LogInformation($"req: changing hostname into `{hostname}` => res: {response.status}");
-                return response;
             }
             catch
             {
                 _logger.LogInformation("server connection failed");
             }
-            return null;
+
+            // インストール済みアプリ送信
+            try
+            {
+                List<InstalledApplication> installedApps = await InstalledApplications.LoadAsync();
+                RemoteAPI.SendInstalledApps(accessToken, installedApps);
+            }
+            catch
+            {
+                _logger.LogInformation("failed to send installed apps");
+            }
+
+
+            return response;
         }
 
         // deprecated

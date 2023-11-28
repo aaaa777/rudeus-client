@@ -15,6 +15,7 @@ using Rudeus.Model.Request;
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
+using Windows.Networking;
 //using Newtonsoft.Json;
 
 namespace Rudeus.Model
@@ -259,7 +260,7 @@ namespace Rudeus.Model
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
 #if(DEVELOPMENT)
-            var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notify_toast\",\"payload\":\"Debugビルドのため、ダミーメッセージを表示しています。\"}]\r\n}";
+            var response = "{\r\n\"status\":\"ok\",\r\n\"push_data\":[{\"id\":\"1\",\"type\":\"notify_toast\",\"payload\":\"Developmentビルドのため、ダミーメッセージを表示しています。\"}]\r\n}";
 #else
             var response = PostRequest(accessToken, ApiUpdatePath, payload);
 #endif
@@ -280,6 +281,33 @@ namespace Rudeus.Model
             
         }
 
+        public static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplication> apps)
+        {
+            SendInstalledAppsRequest req = new(apps);
+            var payload = JsonSerializer.Serialize(req, SendInstalledAppsRequestContext.Default.SendInstalledAppsRequest);
+
+#if(DEVELOPMENT)
+            var response = "{\r\n\"status\":\"ok\"}";
+#else
+            var response = PostRequest(accessToken, ApiUpdatePath, payload);
+#endif
+            try
+            {
+                var jsonResponse = JsonSerializer.Deserialize(response, BaseResponseContext.Default.BaseResponse);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new Exception("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
+        // TODO: CallbackAPIに移動する
         /// <summary>
         /// ログインして紐づけを行ったUserIdを取得
         /// localhostを使うのでWindowsのみ対応している
