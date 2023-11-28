@@ -15,8 +15,6 @@ namespace RudeusBg
         private readonly ILogger<Worker> _logger;
         private string[] _args;
 
-        private RootCommand RootCommand;
-
         public Worker(ILogger<Worker> logger)
         {
             _logger = logger;
