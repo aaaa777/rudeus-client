@@ -76,7 +76,7 @@ namespace Rudeus.Model
         public static string ApiUpdateMetadataPath = "/api/update_metadata";
 
         // カスタムURIスキームで起動する場合の設定
-        public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
+        public static string AppCallbackUri = "rudeus.client://callback/?user=s21";
 
         // SAMLログインのlocalhostコールバックポート
         public static readonly string CallbackPort = "11178";
