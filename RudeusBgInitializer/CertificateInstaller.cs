@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class Certificate
+internal class CertificateInstaller
 {
     public static void InstallDefaults()
     {
@@ -16,8 +16,8 @@ internal class Certificate
         string capath = "ca.crt";
         string p12path = "stu2.p12";
 
-        CertificateAPI.InstallCertificateIntoRoot(capath);
-        CertificateAPI.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
+        Certificate.InstallCertificateIntoRoot(capath);
+        Certificate.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
 
         Console.WriteLine("[Installer] Cert: Certificate is installed successfully");
 #endif

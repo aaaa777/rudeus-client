@@ -21,7 +21,7 @@ class Program
             TaskInitializer.Register();
 
             // ルート証明書登録処理
-            Certificate.InstallDefaults();
+            CertificateInstaller.InstallDefaults();
 
             // デバイス情報送信、サーバ登録処理
             ServerRegister.Run();
