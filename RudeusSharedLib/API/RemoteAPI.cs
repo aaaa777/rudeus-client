@@ -407,6 +407,20 @@ namespace Rudeus.Model
             return true;
         }
 
+        public static bool IsRemoteReachable()
+        {
+            try
+            {
+                GetUpdateMetadata(Settings.AccessToken);
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         private static async Task<string> ReceiveSamlLoginAsync()
         {
             string responseText = @"

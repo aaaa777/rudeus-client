@@ -20,5 +20,7 @@ namespace Rudeus.Model
 
         // もしかしてRemoteAPIが持つべきではない？
         public abstract static bool IsAccessTokenAvailable(string accessToken);
+
+        public abstract static bool IsRemoteReachable();
     }
 }
