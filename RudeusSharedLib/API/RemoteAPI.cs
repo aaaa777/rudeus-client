@@ -96,6 +96,7 @@ namespace Rudeus.Model
         public static readonly string ApiEndpointWithoutCert = Constants.ApiEndpointWithoutCert;
 
 
+        public static string ApiCheckStatusPath = Constants.ApiCheckStatusPath;
         public static string ApiRegisterPath = Constants.ApiRegisterPath;
         public static string ApiUpdatePath = Constants.ApiUpdatePath;
         public static string ApiLoginPath = Constants.ApiLoginPath;
@@ -168,6 +169,8 @@ namespace Rudeus.Model
 
             // レスポンスボディを取得
             string responseString = response.Content.ReadAsStringAsync().Result;
+
+            Console.WriteLine($"Response: {responseString}");
 
             return responseString;
         }
@@ -411,7 +414,7 @@ namespace Rudeus.Model
         {
             try
             {
-                GetUpdateMetadata(Settings.AccessToken);
+                GetRequest(null, ApiCheckStatusPath);
             }
             catch
             {

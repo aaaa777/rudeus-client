@@ -70,6 +70,7 @@ namespace Rudeus.Model
 #endif
 
         // APIのパス
+        public static string ApiCheckStatusPath = "/admin";
         public static string ApiRegisterPath = "/api/device_initialize";
         public static string ApiUpdatePath = "/api/device_update";
         public static string ApiLoginPath = "/api/user_login";

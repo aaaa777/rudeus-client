@@ -30,6 +30,13 @@ namespace RudeusBg
 
             var argsDict = _args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
 
+            if(!RemoteAPI.IsRemoteReachable())
+            {
+                _logger.LogInformation("server is not reachable");
+                Environment.Exit(0);
+            }
+
+
             // èâä˙âª
             Initialize();
 
