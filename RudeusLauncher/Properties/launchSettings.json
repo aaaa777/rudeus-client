@@ -9,7 +9,7 @@
     },
     "Launch Tray": {
       "commandName": "Project",
-      "commandLineArgs": "Tray"
+      "commandLineArgs": "Task"
     },
     "Launch Bg login": {
       "commandName": "Project",
