@@ -128,7 +128,17 @@ jobs:
     #    asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip
     #    asset_name: RudeusLauncher.zip
     #    asset_content_type: application/zip
+    - name: Delete old assets
+      uses: mknejp/delete-release-assets@v1
+      with:
+        token: ${{ github.token }}
+        tag: head # This may also be of the form 'refs/tags/staging'
 
+        # Optional another repository
+        #repository: aaaa777/rudeus-client
+
+        # Pick one of:
+        assets: Rudeus_launcher_head_${{ matrix.configuration }}.zip
     # 
     - name: Deploy Windows release
       #if: matrix.os == 'windows-latest'
