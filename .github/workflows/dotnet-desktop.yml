@@ -100,8 +100,19 @@ jobs:
     #    args: zip -r RudeusLauncher.zip net7.0-windows10.0.17763.0\*
     - name: Zip artifacts
       run: |
-        cd RudeusLauncher\bin\Release\
-        Compress-Archive -Path net7.0-windows10.0.17763.0\* -Destination RudeusLauncher.zip
+        Compress-Archive -Path RudeusLauncher\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\* \
+          -Destination RudeusLauncher${{ matrix.configuration }}.zip
+        Compress-Archive -Path RudeusBg\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* \
+          -Destination RudeusBg${{ matrix.configuration }}.zip
+        Compress-Archive -Path RudeusBgForm\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* \
+          -Destination RudeusBgForm${{ matrix.configuration }}.zip
+        Compress-Archive -Path RudeusBgInitializer\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* \
+          -Destination RudeusBgInitializer${{ matrix.configuration }}.zip
+        Compress-Archive -Path RudeusBgInitializer${{ matrix.configuration }}.zip \
+          -Path RudeusBg${{ matrix.configuration }}.zip \
+          -Path RudeusBgForm${{ matrix.configuration }}.zip \
+          -Path RudeusLauncher${{ matrix.configuration }}.zip \
+          -Destination RudeusPackage${{ matrix.configuration }}.zip
     
     # Create release
     #- name: Create release in github
@@ -148,7 +159,7 @@ jobs:
       with:
         upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/131780577/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
         release_id: 125728409 # same as above (id can just be taken out the upload_url, it's used to find old releases)
-        asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip # path to archive to upload
+        asset_path: .\RudeusPackage${{ matrix.configuration }}.zip # path to archive to upload
         #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_name: Rudeus_launcher_head_${{ matrix.configuration }}.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
