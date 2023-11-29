@@ -68,6 +68,7 @@ namespace Rudeus.Model
             }
             mutex = true;
 
+            string failedMessasge = "This is not vailed mail";
             CallbackData data = new();
             HttpListener? listener = CreateListener();
             try
@@ -84,8 +85,23 @@ namespace Rudeus.Model
                 data.RequestText = new StreamReader(context.Request.InputStream, Encoding.UTF8).ReadToEnd();
                 var url = context.Request.Url ?? throw new Exception("request url doesnt exist");
                 data.Query = System.Web.HttpUtility.ParseQueryString(url.Query);
+                string userId = data.Query.Get("user_id") ?? throw new Exception("user_id not found");
 
-                HttpListenerResponse res = context.Response;
+
+                HttpListenerResponse res;
+
+                if (!Utils.IsStudentMailAddress(userId))
+                {
+                    res = context.Response;
+                    res.StatusCode = 400;
+                    res.ContentType = "text/html";
+                    res.ContentEncoding = Encoding.UTF8;
+                    res.OutputStream.Write(Encoding.UTF8.GetBytes(failedMessasge));
+                    res.OutputStream.Close();
+                    return data;
+                }
+
+                res = context.Response;
                 res.StatusCode = 200;
                 res.ContentType = "text/html";
                 res.ContentEncoding = Encoding.UTF8;

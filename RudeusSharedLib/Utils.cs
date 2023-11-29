@@ -148,6 +148,7 @@ namespace Rudeus.Model
             catch
             {
                 Console.WriteLine("server connection failed, device is not registered yet");
+                throw;
             }
         }
 
