@@ -2,6 +2,8 @@
 ;#define BuildType "Release"
 #define BuildType "Debug"
 
+; TODO: auto generateセクションを先頭に用意して複数ビルドを自動化するC#プロジェクトの作成
+
 [Setup]
 AppId=7225E697-A594-4F3E-ABE9-8E8D9BAFEC9F
 AppName=HIU System Manager
@@ -25,7 +27,7 @@ CreateAppDir=no
 DisableDirPage=yes
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
-UserInfoPage=yes
+;UserInfoPage=yes
 SignTool=signlocalcodesign
 
 [Dirs]
@@ -45,11 +47,11 @@ Source: "RudeusBgForm\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
   Flags: ignoreversion;
 
-Source: "RudeusBg\bin\{#BuildType}\net7.0-windows7.0\win-x64\RudeusBg.exe"; \
+Source: "RudeusBg\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusBg\bin\{#BuildType}\net7.0-windows7.0\win-x64\*"; \
+Source: "RudeusBg\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   Excludes: "RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: uninsneveruninstall ignoreversion;
@@ -63,11 +65,11 @@ Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\*"; \
   DestDir: "{autopf}\Windows System Application"; \
   Flags: uninsneveruninstall ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusBgInitializer.exe"; \
+Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgInitializer.exe"; \
   DestDir: "{tmp}"; \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\*"; \
+Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   DestDir: "{tmp}"; \
   Flags: ignoreversion;
 
@@ -93,19 +95,20 @@ Name: en; MessagesFile: "compiler:Default.isl"
 en.InstallingLabel=少女セットアップ中...
 
 [Code]
+
 // UserInfo時のシリアル整合性を確認   
-function CheckSerial(Serial: String): Boolean;
-begin
+//function CheckSerial(Serial: String): Boolean;
+//begin
 // serial format is HIU-PXX-XXX(XXX)
 // TODO: HIU-[]-[]のように入力させる
-Serial := Trim(Serial);
-if not Copy(Serial, 1, 5) = 'HIU-P' then
-  result := false
-else if not Copy(Serial, 8, 8) = '-' then
-  result := false
-else
-  result := true
-end;
+//Serial := Trim(Serial);
+//if not Copy(Serial, 1, 5) = 'HIU-P' then
+//  result := false
+//else if not Copy(Serial, 8, 8) = '-' then
+//  result := false
+//else
+//  result := true
+//end;
 
 // インストール前にバックグラウンドタスクを停止する
 procedure TaskKill(FileName: String);
