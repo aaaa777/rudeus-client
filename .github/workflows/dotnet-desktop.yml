@@ -86,7 +86,7 @@ jobs:
 
     # Build the application
     - name: Build the application
-      run: dotnet build --no-restore -c Release
+      run: dotnet build --no-restore -c ${{ matrix.configuration }}
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
