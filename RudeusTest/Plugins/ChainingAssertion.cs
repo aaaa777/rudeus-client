@@ -7,6 +7,10 @@
 * http://chainingassertion.codeplex.com/
 *--------------------------------------------------------------------------*/
 
+#pragma warning disable CS8600, CS8601, CS8602, CS8603, CS8604, CS8605, CS8610, CS8618, CS8619 // Suppress Nullability warnings
+#pragma warning disable CS8765, CS8767 // Suppress Nullability warnings
+#pragma warning disable xUnit2005 // Do not use identity check on value type
+
 /* -- Tutorial --
  * | at first, include this file on xUnit.net Project.
  * 

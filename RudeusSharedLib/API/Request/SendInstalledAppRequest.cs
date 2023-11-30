@@ -31,11 +31,7 @@ namespace Rudeus.API.Request
         {
             foreach(var app in apps)
             {
-                this.apps.Add(new SendInstalledAppsAppData()
-                {
-                    name = app.Name,
-                    version = app.Version
-                });
+                this.apps.Add(new SendInstalledAppsAppData(app.Name, app.Version));
             }
 
         }
@@ -49,6 +45,11 @@ namespace Rudeus.API.Request
         [JsonPropertyName(nameof(version))]
         public string version { get; set; }
         
+        public SendInstalledAppsAppData(string name, string version)
+        {
+            this.name = name;
+            this.version = version;
+        }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]
