@@ -9,13 +9,16 @@ namespace Rudeus.Watchdogs
     class Watcher
     {
         private WatchItem[] WatchItems;
+
+        public ILocalMachine LM { get; set; } = LocalMachine.GetInstance();
+        
         
         public Watcher() 
         {
             WatchItems = new WatchItem[]
             {
                 //new WatchItem("device_id", GetDeviceId, Utils.GetDeviceId),
-                new WatchItem("hostname", GetHostname, Utils.GetHostname),
+                new WatchItem("hostname", GetHostname, LM.GetHostname),
                 //new WatchItem("hostname", GetSpec, Utils.GetSpec),
             };
         }

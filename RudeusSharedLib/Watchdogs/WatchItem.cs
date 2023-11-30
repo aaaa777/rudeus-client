@@ -7,22 +7,22 @@ namespace Rudeus.Watchdogs
     internal class WatchItem
     {
         public string Name;
-        public Func<string> GetLastStatus { get; set; }
-        public Func<string> GetLatestStatus { get; set; }
-        public WatchItem(string name, Func<string> getLastStatus, Func<string> getLatestStatus)
+        public Func<string> GetLastStatusFunc { get; set; }
+        public Func<string> GetLatestStatusFunc { get; set; }
+        public WatchItem(string name, Func<string> getLastStatusFunc, Func<string> getLatestStatusFunc)
         {
             Name = name;
-            GetLastStatus = getLastStatus;
-            GetLatestStatus = getLatestStatus;
+            GetLastStatusFunc = getLastStatusFunc;
+            GetLatestStatusFunc = getLatestStatusFunc;
         }
         public bool IsChanged()
         {
-            return GetLastStatus() == GetLatestStatus();
+            return GetLastStatusFunc() == GetLatestStatusFunc();
         }
 
         public string Status()
         {
-            return GetLatestStatus();
+            return GetLatestStatusFunc();
         }
     }
 }

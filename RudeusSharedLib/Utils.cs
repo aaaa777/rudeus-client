@@ -17,11 +17,8 @@ namespace Rudeus
         public static readonly string Polite3Url = Constants.Polite3Url;
         public static readonly string KyoumuUrl = Constants.KyoumuUrl;
 
-        //public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application";
-        //public static readonly string RudeusBgExe = "RudeusBg.exe";
-
-        //public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager";
-        //public static readonly string RudeusBgFormExe = "RudeusBgForm.exe";
+        // DI for static class
+        public static ILocalMachine LM { get; set; } = LocalMachine.GetInstance();
 
         /// <summary>
         /// s9999999@s.do-johodai.ac.jp -> 9999999
@@ -65,75 +62,12 @@ namespace Rudeus
             return true;
         }
 
-        public static string GetPhysicalRamInfo()
-        {
-            ManagementClass mc = new ManagementClass("Win32_OperatingSystem");
-            ManagementObjectCollection moc = mc.GetInstances();
-
-            string ram = "";
-
-            foreach (ManagementObject mo in moc)
-            {
-                //合計物理メモリ
-                ram = (string)mo["TotalVisibleMemorySize"];
-
-                mo.Dispose();
-            }
-
-            moc.Dispose();
-            mc.Dispose();
-
-            return ram;
-        }
-
-        public static string[] GetStorageDeviceIdList()
-        {
-            var volumes = new ManagementClass("Win32_DiskDrive").GetInstances();
-            string[] volumeIdList = new string[volumes.Count];
-
-            int i = 0;
-            foreach (var volume in volumes)
-            {
-                volumeIdList[i] = (string)volume["SerialNumber"];
-                i++;
-            }
-            return volumeIdList;
-        }
-
-        public static string GetDeviceId()
-        {
-            // ToDo: デバイスIDを実際に取得するコードに置き換え
-            Guid g = Guid.NewGuid();
-            string guid8 = g.ToString().Substring(0, 8);
-            return $"000000-{guid8}";
-        }
-
-        public static string GetHostname()
-        {
-            // ToDo: ホスト名を実際に取得するコードに置き換え
-            Random r1 = new Random();
-            string firstNumber = r1.Next(10, 100).ToString();
-            string secondNumber = r1.Next(100, 1000).ToString();
-            return $"P{firstNumber}-{secondNumber}";
-            // System.Net.Dns.GetHostName();
-        }
-
-        public static string GetSpec()
-        {
-            return "Intel Xeon E5 2250;128GB";
-        }
-
-        public static string GetWinVersion()
-        {
-            return "12345.6789";
-        }
-
         // BgInitializerか、BgInitializerが失敗した後のBgの初回起動で実行する
         // Todo: ダミーデータではなく実環境での初期化を行う
         public static void RegisterDeviceAndSetData()
         {
-            string hostname = GetHostname();
-            string deviceId = GetDeviceId();
+            string hostname = LM.GetHostname();
+            string deviceId = LM.GetDeviceId();
 
             // デフォルトのレジストリにセット
             Settings.UpdateRegistryKey();
