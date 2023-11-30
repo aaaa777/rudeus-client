@@ -22,7 +22,7 @@ namespace RudeusBg
         {
             _logger = logger;
             _args = Program.commandArgs;
-
+            
         }
     
 

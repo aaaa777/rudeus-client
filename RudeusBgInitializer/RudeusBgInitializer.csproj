@@ -11,7 +11,7 @@
 	-->
 	<SelfContained>true</SelfContained>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
-	<Configurations>Debug;Release;Debug(Offline);Development</Configurations>
+	<Configurations>Debug;Release;Development</Configurations>
   </PropertyGroup>
 
   <ItemGroup>

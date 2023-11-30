@@ -12,7 +12,7 @@
 	
 	<PublishReadyToRun Condition="'$(Configuration)' == 'Release'">true</PublishReadyToRun>
 	<SelfContained>true</SelfContained>
-	<Configurations>Debug;Release;Debug(Offline);Development</Configurations>
+	<Configurations>Debug;Release;Development</Configurations>
 	<!--
 	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 	-->
