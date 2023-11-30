@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 //using Windows.Web.Http;
 
-namespace Rudeus.Model
+namespace Rudeus.API
 {
     /// <summary>
     /// シンプルなGET形式のコールバックツール

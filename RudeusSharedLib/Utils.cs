@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using System.Management;
 using Rudeus.Model.Operations;
+using Rudeus;
+using Rudeus.Model;
+using Rudeus.API;
+using Rudeus.API.Request;
+using Rudeus.API.Response;
 
-namespace Rudeus.Model
+namespace Rudeus
 {
-    internal class Utils
+    public class Utils : IUtils
     {
         public static readonly string WebPortalUrl = Constants.WebPortalUrl;
         public static readonly string Polite3Url = Constants.Polite3Url;
@@ -29,7 +34,7 @@ namespace Rudeus.Model
             string username = mailAddress.Split("@")[0];
             string studentId = username.Split("s")[1];
 
-            if(studentId.Length != 7)
+            if (studentId.Length != 7)
             {
                 throw new Exception();
             }
@@ -46,8 +51,8 @@ namespace Rudeus.Model
         {
             string username = mailAddress.Split('@')[0];
             string fqdn = mailAddress.Split("@")[1];
-            
-            if(fqdn != "example.com" && fqdn != "s.do-johodai.ac.jp")
+
+            if (fqdn != "example.com" && fqdn != "s.do-johodai.ac.jp")
             {
                 return false;
             }
@@ -139,7 +144,7 @@ namespace Rudeus.Model
             // 発行
             try
             {
-                Response.RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
+                RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
 
                 Settings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
                 Console.WriteLine($"registered device: `{hostname}`: {response.status}");
@@ -188,24 +193,24 @@ namespace Rudeus.Model
         /// <summary>ドット区切り数字列を比較する</summary>
         /// <param name="a">対象文字列A</param>
         /// <param name="b">対象文字列B</param>
-        /// <param name="number">比較する列数 (0なら全て)</param>
+        /// <param name="depth">比較する列数 (0なら全て)</param>
         /// <returns>A-Bの符号 (1, 0, -1)</returns>
-        public static int CompareVersionString(string a, string b, int number = 0)
+        public static int CompareVersionString(string a, string b, int depth = 0)
         {
             string[] aSeries = a.Split('.');
             string[] bSeries = b.Split('.');
             int aNum, bNum;
-            number = (number > 0) ? Math.Min(number, aSeries.Length) : aSeries.Length;
-            for (var i = 0; i < number; i++)
+            depth = (depth > 0) ? Math.Min(depth, aSeries.Length) : aSeries.Length;
+            for (var i = 0; i < depth; i++)
             {
                 if (i >= bSeries.Length) { return 1; }
-                
-                if(!int.TryParse(aSeries[i], out aNum))
+
+                if (!int.TryParse(aSeries[i], out aNum))
                 {
-                    aNum = 0;                    
+                    aNum = 0;
                 }
 
-                if(!int.TryParse(bSeries[i], out bNum))
+                if (!int.TryParse(bSeries[i], out bNum))
                 {
                     bNum = 0;
                 }

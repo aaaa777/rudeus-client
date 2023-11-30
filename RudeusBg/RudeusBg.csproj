@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <Compile Include="..\RudeusSharedLib\API\ICallbackAPI.cs" Link="ICallbackAPI.cs" />
+    <Compile Include="..\RudeusSharedLib\IUtils.cs" Link="IUtils.cs" />
   </ItemGroup>
 
   <ItemGroup>

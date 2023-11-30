@@ -9,8 +9,9 @@ using System.Diagnostics;
 using System.Net;
 
 using System.Text.Json;
-using Rudeus.Model.Response;
-using Rudeus.Model.Request;
+using Rudeus.API.Response;
+using Rudeus.API.Request;
+using Rudeus.Model;
 
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
@@ -18,7 +19,7 @@ using System.Diagnostics.CodeAnalysis;
 using Windows.Networking;
 //using Newtonsoft.Json;
 
-namespace Rudeus.Model
+namespace Rudeus.API
 {
  
     /// <summary>
@@ -121,32 +122,9 @@ namespace Rudeus.Model
         // HTTP汎用送信メソッド
         private static string Request(string? accessToken, string requestPath, string? payload, HttpMethod method)
         {
-            Console.WriteLine($"Request: {payload}");
-
-
-            // HTTPリクエスト作成
-            HttpRequestMessage request = new (method, requestPath);
-            
-            // ヘッダー付与
-            request.Headers.Add("Accept", "application/json");
-            //request.Headers.Add("Content-Type", "application/json");
-
-            // トークンが存在する場合はヘッダーに付与
-            if(accessToken != null) 
-            {
-                request.Headers.Add("Authorization", $"Bearer {accessToken}");
-            }
-
-            // JSON形式payloadがある場合
-            if(payload != null)
-            {
-                // BodyにJSONをセット
-                request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
-            }
+            HttpRequestMessage request = BuildHttpRequestMessage(accessToken, requestPath, payload, method);
 
             // リクエスト送信
-            // HttpResponseMessage response = NoCertApiClient.PostAsync(requestPath, new StringContent(payload, Encoding.UTF8, "application/json")).Result;
-            // HttpResponseMessage response = NoCertApiClient.SendAsync(request).Result;
             HttpResponseMessage response;
 
             // Todo: 証明書付きAPIエンドポイントと無しの区別を付けてメソッドを分離
@@ -162,7 +140,7 @@ namespace Rudeus.Model
 
 
             // ToDo: サーバサイドエラーの例外処理
-            if(response.StatusCode != HttpStatusCode.OK)
+            if (response.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception($"Request failed: {response.StatusCode}");
             }
@@ -173,6 +151,35 @@ namespace Rudeus.Model
             Console.WriteLine($"Response: {responseString}");
 
             return responseString;
+
+        }
+
+        public static HttpRequestMessage BuildHttpRequestMessage(string? accessToken, string requestPath, string? payload, HttpMethod method)
+        {
+            Console.WriteLine($"Request: {payload}");
+
+
+            // HTTPリクエスト作成
+            HttpRequestMessage request = new(method, requestPath);
+
+            // ヘッダー付与
+            request.Headers.Add("Accept", "application/json");
+            //request.Headers.Add("Content-Type", "application/json");
+
+            // トークンが存在する場合はヘッダーに付与
+            if (accessToken != null)
+            {
+                request.Headers.Add("Authorization", $"Bearer {accessToken}");
+            }
+
+            // JSON形式payloadがある場合
+            if (payload != null)
+            {
+                // BodyにJSONをセット
+                request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
+            }
+
+            return request;
         }
 
         // HttpRequestをConstants.forceClientCertAuthに応じて送信する

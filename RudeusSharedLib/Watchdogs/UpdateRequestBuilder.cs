@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Rudeus.Model.Request;
+using Rudeus.API.Request;
 
-namespace Rudeus.Model.Watchdogs
+namespace Rudeus.Watchdogs
 {
     class UpdateRequestBuilder
     {

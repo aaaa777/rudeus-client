@@ -1,5 +1,6 @@
-﻿using Rudeus.Model;
-using Rudeus.Model.Response;
+﻿using Rudeus;
+using Rudeus.API;
+using Rudeus.API.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
