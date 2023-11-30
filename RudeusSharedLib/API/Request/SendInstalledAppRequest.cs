@@ -17,7 +17,14 @@ namespace Rudeus.API.Request
         [JsonPropertyName(nameof(request_data))]
         public SendInstalledAppsRequestData request_data { get; set; }
 
+
+/* プロジェクト 'RudeusBgForm' からのマージされていない変更
+前:
         public SendInstalledAppsRequest(List<InstalledApplication> apps)
+後:
+        public SendInstalledAppsRequest(List<Model.ApplicationData> apps)
+*/
+        public SendInstalledAppsRequest(List<ApplicationData> apps)
         {
             request_data = new(apps);
         }
@@ -27,7 +34,14 @@ namespace Rudeus.API.Request
         [JsonPropertyName(nameof(apps))]
         public List<SendInstalledAppsAppData> apps { get; set; } = new();
 
+
+/* プロジェクト 'RudeusBgForm' からのマージされていない変更
+前:
         public SendInstalledAppsRequestData(List<InstalledApplication> apps) 
+後:
+        public SendInstalledAppsRequestData(List<Model.ApplicationData> apps) 
+*/
+        public SendInstalledAppsRequestData(List<ApplicationData> apps) 
         {
             foreach(var app in apps)
             {

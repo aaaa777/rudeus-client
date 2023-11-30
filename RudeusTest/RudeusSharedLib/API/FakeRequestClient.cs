@@ -7,11 +7,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Constants = Rudeus.Constants;
+using static Rudeus.API.Exceptions;
 
 namespace RudeusTest.RudeusSharedLib.API
 {
     internal class FakeRequestClient : IRequestClient
     {
+        bool RaiseUnreachableException;
+        bool RaiseUnauthorizedException;
+        bool RaiseUnexceptResponseException;
+
+        public FakeRequestClient()
+        {
+            RaiseUnreachableException = false;
+            RaiseUnauthorizedException = false;
+            RaiseUnexceptResponseException = false;
+        }
+
+        public FakeRequestClient(bool raiseUnreachableException, bool raiseUnauthorizedException, bool raiseUnexceptResponseException)
+        {
+            RaiseUnreachableException = raiseUnreachableException;
+            RaiseUnauthorizedException = raiseUnauthorizedException;
+            RaiseUnexceptResponseException = raiseUnexceptResponseException;
+        }
         public HttpResponseMessage Request(HttpRequestMessage message)
         {
             throw new NotImplementedException();
@@ -19,12 +37,33 @@ namespace RudeusTest.RudeusSharedLib.API
 
         public string RequestString(HttpRequestMessage message)
         {
-            string? path = message.RequestUri?.AbsolutePath;
+            string? path = message.RequestUri.ToString();
 
             if (path == null)
             {
                 throw new Exception("Request Path not specified");
             }
+
+
+            // Dummy Exception
+
+            if(RaiseUnreachableException)
+            {
+                throw new ServerUnavailableException("Server Unreachable");
+            }
+
+            if(RaiseUnauthorizedException)
+            {
+                throw new AccessTokenUnavailableException("Access Token Unavailable");
+            }
+
+            if(RaiseUnexceptResponseException)
+            {
+                throw new UnexpectedResponseException("Unexpected Response");
+            }
+
+
+            // Dummy Response
 
             if(path == Constants.ApiRegisterPath)
             {
@@ -44,7 +83,7 @@ namespace RudeusTest.RudeusSharedLib.API
             if(path == Constants.ApiUpdateMetadataPath)
             {
                 throw new NotImplementedException();
-                return OKResponseString;
+                //return OKResponseString;
             }
 
             if(path == Constants.ApiCheckStatusPath)
@@ -55,8 +94,8 @@ namespace RudeusTest.RudeusSharedLib.API
             throw new Exception("Unexpected Request Path");
         }
 
-        public string OKResponseString = @"{""status"": ""OK""}";
-        public string RegisterDeviceResponseString = @"{""status"": ""OK"", ""device_id"": ""test_device_id""}";
-        public string OKWithPushDataResponseString = @"{""status"": ""OK"", ""push_data"": {""id"": ""1"", ""type"": ""notify_toast"", ""body"": ""test message""}}";
+        public string OKResponseString = @"{""status"": ""ok""}";
+        public string RegisterDeviceResponseString = @"{""status"": ""ok"", ""device_id"": ""test_device_id""}";
+        public string OKWithPushDataResponseString = @"{""status"": ""ok"", ""push_data"": [ {""id"": ""1"", ""type"": ""notify_toast"", ""body"": ""test message""} ] }";
     }
 }

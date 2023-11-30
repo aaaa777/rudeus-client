@@ -183,7 +183,7 @@ namespace RudeusBg
             // TODO: WatchDogs
             try
             {
-                List<InstalledApplication> installedApps = await InstalledApplications.LoadAsync();
+                List<ApplicationData> installedApps = await InstalledApplications.LoadAsync();
                 RemoteAPI.SendInstalledApps(accessToken, installedApps);
             }
             catch

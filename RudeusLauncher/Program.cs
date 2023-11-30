@@ -46,7 +46,7 @@ public class Program
                 settings.IsLatestVersionStatusUnlaunchableP(),
                 argsStr
             );
-            Console.WriteLine("Application stopped");
+            Console.WriteLine("ApplicationData stopped");
         }
         // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行
         while (exitCode == Constants.ForceUpdateExitCode);

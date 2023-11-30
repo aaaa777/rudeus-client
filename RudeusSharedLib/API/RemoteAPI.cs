@@ -90,7 +90,7 @@ namespace Rudeus.API
                 return _apiClient;
             }
         }
-        public static RequestClient RequestClient { get; set; } = new(Constants.ApiEndpointWithoutCert);
+        public static IRequestClient RequestClient { get; set; } = new RequestClient(Constants.ApiEndpointWithoutCert);
 
         public static readonly string SamlLoginUrl = Constants.SamlLoginUrl;
         
@@ -297,7 +297,14 @@ namespace Rudeus.API
             
         }
 
+
+/* プロジェクト 'RudeusBgForm' からのマージされていない変更
+前:
         public static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplication> apps)
+後:
+        public static BaseResponse SendInstalledApps(string accessToken, List<Model.ApplicationData> apps)
+*/
+        public static BaseResponse SendInstalledApps(string accessToken, List<ApplicationData> apps)
         {
             SendInstalledAppsRequest req = new(apps);
             var payload = JsonSerializer.Serialize(req, SendInstalledAppsRequestContext.Default.SendInstalledAppsRequest);

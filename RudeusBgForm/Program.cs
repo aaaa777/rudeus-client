@@ -18,7 +18,7 @@ namespace RudeusBgForm
             ApplicationConfiguration.Initialize();
             form = new TaskTrayForm();
             Application.Run();
-            //Application.Run(form);
+            //ApplicationData.Run(form);
 
 #if (!RELEASE)
             // Debugビルドの場合終了前に待ちが入る
