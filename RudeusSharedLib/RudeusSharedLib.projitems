@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)api\Exceptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\ICallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)api\RequestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Request\IRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Request\SendInstalledAppRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Certificate.cs" />

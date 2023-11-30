@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Request
 {
-    internal class LoginRequest : BaseRequest
+    internal class LoginRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
         public string type { get; set; } = "user_login";
@@ -18,7 +18,7 @@ namespace Rudeus.API.Request
 
         public LoginRequest(string username)
         {
-            request_data = new(username);
+            request_data = new LoginRequestData(username);
         }
     }
     internal class LoginRequestData

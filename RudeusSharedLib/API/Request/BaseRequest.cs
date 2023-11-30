@@ -5,10 +5,11 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
+// Sample code
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Request
 {
-    internal class BaseRequest
+    internal class BaseRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
         public string? type { get; set; }

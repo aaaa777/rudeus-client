@@ -9,7 +9,7 @@ using Rudeus.Model;
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Request
 {
-    internal class SendInstalledAppsRequest : BaseRequest
+    internal class SendInstalledAppsRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
         public string type { get; set; } = "send_installed_app_request";

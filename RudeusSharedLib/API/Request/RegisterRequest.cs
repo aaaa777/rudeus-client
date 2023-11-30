@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Rudeus.API.Request
 {
-    internal class RegisterRequest : BaseRequest
+    internal class RegisterRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
         public string type { get; set; } = "device_initialize";
@@ -18,7 +18,7 @@ namespace Rudeus.API.Request
 
         public RegisterRequest(string deviceId, string hostname, string manageId)
         {
-            request_data = new(deviceId, hostname, manageId);
+            request_data = new RegisterRequestData(deviceId, hostname, manageId);
         }
     }
     internal class RegisterRequestData

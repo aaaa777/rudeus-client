@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Request
 {
-    internal class EmptyRequest : BaseRequest
+    internal class EmptyRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
-        public string type { get; set; } = "empty_request";
+        public string type { get; } = "empty_request";
 
         [JsonPropertyName(nameof(request_data))]
         public EmptyRequestData request_data { get; set; }
