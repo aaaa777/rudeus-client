@@ -13,9 +13,9 @@ namespace RudeusTest.RudeusSharedLib.API
 {
     internal class FakeRequestClient : IRequestClient
     {
-        bool RaiseUnreachableException;
-        bool RaiseUnauthorizedException;
-        bool RaiseUnexceptResponseException;
+        public bool RaiseUnreachableException;
+        public bool RaiseUnauthorizedException;
+        public bool RaiseUnexceptResponseException;
 
         public FakeRequestClient()
         {

@@ -2,6 +2,7 @@
 
 using Rudeus.API.Request;
 using System.Net;
+using static Rudeus.API.Exceptions;
 
 namespace Rudeus.API
 {
@@ -26,16 +27,16 @@ namespace Rudeus.API
             }
             catch (HttpRequestException e)
             {
-                throw new Exceptions.ServerUnavailableException(e.Message);
+                throw new ServerUnavailableException(e.Message);
             }
 
             if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
-                throw new Exceptions.AccessTokenUnavailableException("アクセストークンが無効です");
+                throw new AccessTokenUnavailableException("アクセストークンが無効です");
             }
             else if (response.StatusCode != HttpStatusCode.OK)
             {
-                throw new Exceptions.UnexpectedResponseException("予期しないレスポンスが返されました");
+                throw new UnexpectedResponseException("予期しないレスポンスが返されました");
             }
 
             return response;

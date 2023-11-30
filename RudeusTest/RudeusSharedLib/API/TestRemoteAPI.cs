@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Rudeus.API.Exceptions;
 
 namespace RudeusTest.RudeusSharedLib.API
 {
@@ -64,6 +65,20 @@ namespace RudeusTest.RudeusSharedLib.API
             Assert.Equal("test_access_token", message.Headers.Authorization.Parameter);
             Assert.Equal("test_path", message.RequestUri.ToString());
             Assert.Equal("test_payload", message.Content.ReadAsStringAsync().Result);
+        }
+
+
+        [Fact]
+        public void TestRegisterDeviceException()
+        {
+            RemoteAPI.RequestClient = new FakeRequestClient()
+            {
+                RaiseUnreachableException = true
+            };
+
+            var exception = Record.Exception(() => RemoteAPI.RegisterDevice("test_device_id", "test_hostname"));
+
+            Assert.IsType<ServerUnavailableException>(exception);
         }
     }
 }
