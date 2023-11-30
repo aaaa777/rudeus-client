@@ -9,8 +9,9 @@ using System.Diagnostics;
 using System.Net;
 
 using System.Text.Json;
-using Rudeus.Model.Response;
-using Rudeus.Model.Request;
+using Rudeus.API.Response;
+using Rudeus.API.Request;
+using Rudeus.Model;
 
 using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
@@ -18,7 +19,7 @@ using System.Diagnostics.CodeAnalysis;
 using Windows.Networking;
 //using Newtonsoft.Json;
 
-namespace Rudeus.Model
+namespace Rudeus.API
 {
  
     /// <summary>

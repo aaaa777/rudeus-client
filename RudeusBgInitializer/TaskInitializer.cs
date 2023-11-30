@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.TaskScheduler;
-using Rudeus.Model;
+using Rudeus.API;
+using Rudeus;
 using System;
 using System.Collections.Generic;
 using System.Linq;

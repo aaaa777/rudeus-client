@@ -1,5 +1,7 @@
+using Rudeus.API;
+using Rudeus.API.Response;
 using Rudeus.Model;
-using Rudeus.Model.Response;
+using Rudeus;
 using Rudeus.Model.Operations;
 using Microsoft.Toolkit.Uwp.Notifications;
 using System.Diagnostics.CodeAnalysis;

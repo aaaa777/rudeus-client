@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 #pragma warning disable IDE1006 // 命名スタイル
-namespace Rudeus.Model.Request
+namespace Rudeus.API.Request
 {
     internal class UpdateRequest : BaseRequest
     {

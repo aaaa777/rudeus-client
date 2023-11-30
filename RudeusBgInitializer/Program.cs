@@ -6,7 +6,7 @@ using System.Runtime;
 using System.Threading;
 using System;
 using Microsoft.Win32.TaskScheduler;
-using Rudeus.Model;
+using Rudeus.API;
 
 class Program
 {

@@ -1,4 +1,4 @@
-﻿namespace Rudeus.Model
+﻿namespace Rudeus
 {
     public interface IUtils
     {

@@ -1,9 +1,10 @@
-﻿using Rudeus.Model.Request;
+﻿using Rudeus.API.Request;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Rudeus.Model;
 
-namespace Rudeus.Model.Watchdogs
+namespace Rudeus.Watchdogs
 {
     class Watcher
     {

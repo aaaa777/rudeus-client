@@ -5,8 +5,10 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using Rudeus.API;
+using Rudeus.API.Response;
 using Rudeus.Model;
-using Rudeus.Model.Response;
+using Rudeus;
 
 internal class Updater
 {

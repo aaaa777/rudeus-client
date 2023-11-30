@@ -1,10 +1,11 @@
-﻿using Rudeus.Model.Request;
-using Rudeus.Model.Response;
+﻿using Rudeus.API.Request;
+using Rudeus.API.Response;
+using Rudeus.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rudeus.Model
+namespace Rudeus.API
 {
     internal interface IRemoteAPI
     {

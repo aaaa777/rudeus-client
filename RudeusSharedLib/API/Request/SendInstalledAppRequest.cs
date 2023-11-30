@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Rudeus.Model;
 
 #pragma warning disable IDE1006 // 命名スタイル
-namespace Rudeus.Model.Request
+namespace Rudeus.API.Request
 {
     internal class SendInstalledAppsRequest : BaseRequest
     {

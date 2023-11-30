@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Management;
 using Rudeus.Model.Operations;
+using Rudeus;
+using Rudeus.Model;
+using Rudeus.API;
+using Rudeus.API.Request;
+using Rudeus.API.Response;
 
-namespace Rudeus.Model
+namespace Rudeus
 {
     public class Utils : IUtils
     {
@@ -139,7 +144,7 @@ namespace Rudeus.Model
             // 発行
             try
             {
-                Response.RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
+                RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
 
                 Settings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
                 Console.WriteLine($"registered device: `{hostname}`: {response.status}");
