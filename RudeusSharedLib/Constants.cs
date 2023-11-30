@@ -70,11 +70,11 @@ namespace Rudeus
 #endif
 
         // APIのパス
-        public static string ApiCheckStatusPath = "/admin";
-        public static string ApiRegisterPath = "/api/device_initialize";
-        public static string ApiUpdatePath = "/api/device_update";
-        public static string ApiLoginPath = "/api/user_login";
-        public static string ApiUpdateMetadataPath = "/api/update_metadata";
+        public static readonly string ApiCheckStatusPath = "/admin";
+        public static readonly string ApiRegisterPath = "/api/device_initialize";
+        public static readonly string ApiUpdatePath = "/api/device_update";
+        public static readonly string ApiLoginPath = "/api/user_login";
+        public static readonly string ApiUpdateMetadataPath = "/api/update_metadata";
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s21";

@@ -32,7 +32,9 @@ namespace RudeusBg
 
             var argsDict = _args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
 
-            if(!RemoteAPI.IsRemoteReachable())
+            string mode = argsDict.GetValueOrDefault("mode", "default");
+
+            if (!RemoteAPI.IsRemoteReachable())
             {
                 _logger.LogInformation("server is not reachable");
                 Environment.Exit(0);
@@ -40,46 +42,29 @@ namespace RudeusBg
 
 
             // 初期化
-            Initialize();
+            ValidateAccessToken();
 
             // 通常起動時
-            if (argsDict.GetValueOrDefault("mode", "default") == "default")
+            if (mode == "default")
             {
                 // UpdateDeviceの実行
-                UpdateResponse? res = await PostInformation();
+                UpdateResponse res = await SendRegularReport();
                 
-                HandleResponseData(res);
+                HandlePushDataFromResponse(res);
             }
 
-            if (argsDict.GetValueOrDefault("mode", "default") == "login")
+            if (mode == "login")
             {
                 string userIdOld = Settings.Username;
                 Console.WriteLine("old user id:" + userIdOld);
                 if(userIdOld == "")
                 {
-
-                    try
-                    {
-                        // 学生IDを取得するためlocalhostでコールバックを待機
-                        Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
-
-                        // ログイン画面を開く
-                        OpenWebPage(RemoteAPI.SamlLoginUrl);
-                        string userId = await userIdTask;
-
-                        // 管理サーバに送信
-                        LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
-                        Settings.Username = userId;
-                    }
-                    catch
-                    {
-                        // ログインして送信に失敗
-                    }
+                    await StartLoginFlow();
                 }
             }
 
             // テスト実装確認用
-            if (argsDict.GetValueOrDefault("mode", "default") == "test")
+            if (mode == "test")
             {
                 var apps = await InstalledApplications.LoadAsync();
                 try
@@ -100,7 +85,28 @@ namespace RudeusBg
             Environment.Exit(0);
         }
 
-        private void Initialize()
+        private async Task StartLoginFlow()
+        {
+            try
+            {
+                // 学生IDを取得するためlocalhostでコールバックを待機
+                Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
+
+                // ログイン画面を開く
+                OpenWebPage(RemoteAPI.SamlLoginUrl);
+                string userId = await userIdTask;
+
+                // 管理サーバに送信
+                LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
+                Settings.Username = userId;
+            }
+            catch
+            {
+                // ログインして送信に失敗
+            }
+        }
+
+        private void ValidateAccessToken()
         {
             // BgInitializerが失敗した時にBgがRegisterDeviceAndSetDataを実行する
             if (IsFirstRun())
@@ -120,7 +126,7 @@ namespace RudeusBg
             }
         }
 
-        private void HandleResponseData(UpdateResponse? res)
+        private void HandlePushDataFromResponse(UpdateResponse? res)
         {
             // レスポンスがなかった場合
             if (res == null)
@@ -151,11 +157,9 @@ namespace RudeusBg
 
 
         // UpdateDeviceを実行
-        private async Task<UpdateResponse>? PostInformation()
+        private async Task<UpdateResponse> SendRegularReport()
         {
             string accessToken = Settings.AccessToken;
-
-
 
             // set randomized hostname
             Random r1 = new Random();
@@ -176,6 +180,7 @@ namespace RudeusBg
             }
 
             // インストール済みアプリ送信
+            // TODO: WatchDogs
             try
             {
                 List<InstalledApplication> installedApps = await InstalledApplications.LoadAsync();
@@ -190,29 +195,6 @@ namespace RudeusBg
             return response;
         }
 
-        // deprecated
-        public void Register()
-        {
-            // 起動毎にGUIDを生成してDevideIdとしている
-            Guid g = System.Guid.NewGuid();
-            string guid8 = g.ToString().Substring(0, 8);
-            string deviceId = $"000000-{guid8}";
-            string hostname = "HIU-P12-234";
-            string username = "9999999";
-
-            RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
-            string accessToken = response.response_data?.access_token ?? throw new Exception("Access Token not found in response");
-
-            RemoteAPI.LoginDevice(accessToken, username);
-
-            Settings.UpdateRegistryKey();
-            Settings.AccessToken = accessToken;
-            Settings.FirstHostname = hostname;
-            Settings.Hostname = hostname;
-            Settings.DeviceId = deviceId;
-            Settings.Username = username;
-        }
-
         public bool IsFirstRun()
         {
             string accessToken = Settings.AccessToken;
@@ -221,11 +203,6 @@ namespace RudeusBg
                 return true;
             }
             return false;
-        }
-
-        private void CallOperation(string opcode)
-        {
-            //OperationsController.Run(type);
         }
 
         private void OpenWebPage(string url)

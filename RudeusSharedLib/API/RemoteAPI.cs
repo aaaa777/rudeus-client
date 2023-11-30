@@ -17,6 +17,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using Windows.Networking;
+using static Rudeus.API.Exceptions;
 //using Newtonsoft.Json;
 
 namespace Rudeus.API
@@ -89,7 +90,7 @@ namespace Rudeus.API
                 return _apiClient;
             }
         }
-
+        public static RequestClient RequestClient { get; set; } = new(Constants.ApiEndpointWithoutCert);
 
         public static readonly string SamlLoginUrl = Constants.SamlLoginUrl;
         
@@ -97,11 +98,11 @@ namespace Rudeus.API
         public static readonly string ApiEndpointWithoutCert = Constants.ApiEndpointWithoutCert;
 
 
-        public static string ApiCheckStatusPath = Constants.ApiCheckStatusPath;
-        public static string ApiRegisterPath = Constants.ApiRegisterPath;
-        public static string ApiUpdatePath = Constants.ApiUpdatePath;
-        public static string ApiLoginPath = Constants.ApiLoginPath;
-        public static string ApiUpdateMetadataPath = Constants.ApiUpdateMetadataPath;
+        public static string ApiCheckStatusPath { get; } = Constants.ApiCheckStatusPath;
+        public static string ApiRegisterPath { get; } = Constants.ApiRegisterPath;
+        public static string ApiUpdatePath { get; } = Constants.ApiUpdatePath;
+        public static string ApiLoginPath { get; } = Constants.ApiLoginPath;
+        public static string ApiUpdateMetadataPath { get; } = Constants.ApiUpdateMetadataPath;
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -113,14 +114,14 @@ namespace Rudeus.API
         }
 
         // GET送信メソッド
-        private static string GetRequest(string? accessToken, string requestPath, string? payload=null)
+        private static string GetRequest(string? accessToken, string requestPath, string payload="")
         {
             return Request(accessToken, requestPath, payload, HttpMethod.Get);
         }
 
 
         // HTTP汎用送信メソッド
-        private static string Request(string? accessToken, string requestPath, string? payload, HttpMethod method)
+        private static string Request(string? accessToken, string requestPath, string payload, HttpMethod method)
         {
             HttpRequestMessage request = BuildHttpRequestMessage(accessToken, requestPath, payload, method);
 
@@ -128,25 +129,33 @@ namespace Rudeus.API
             HttpResponseMessage response;
 
             // Todo: 証明書付きAPIエンドポイントと無しの区別を付けてメソッドを分離
-            try
-            {
-                response = RequestEndpoints(request);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                throw;
-            }
+            //try
+            //{
+            //    response = RequestEndpoints(request);
+            //}
+            //catch (TimeoutException ex)
+            //{
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //    throw new ServerUnavailableException(ex.Message);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"Error: {ex.Message}");
+            //    throw new UnexpectedResponseException(ex.Message);
+            //}
 
+            //response = RequestClient.Request(request);
+            
 
             // ToDo: サーバサイドエラーの例外処理
-            if (response.StatusCode != HttpStatusCode.OK)
-            {
-                throw new Exception($"Request failed: {response.StatusCode}");
-            }
+            //if (response.StatusCode != HttpStatusCode.OK)
+            //{
+            //    throw new Exception($"Request failed: {response.StatusCode}");
+            //}
 
             // レスポンスボディを取得
-            string responseString = response.Content.ReadAsStringAsync().Result;
+            //string responseString = response.Content.ReadAsStringAsync().Result;
+            string responseString = RequestClient.RequestString(request);
 
             Console.WriteLine($"Response: {responseString}");
 
@@ -154,7 +163,7 @@ namespace Rudeus.API
 
         }
 
-        public static HttpRequestMessage BuildHttpRequestMessage(string? accessToken, string requestPath, string? payload, HttpMethod method)
+        public static HttpRequestMessage BuildHttpRequestMessage(string? accessToken, string requestPath, string payload, HttpMethod method)
         {
             Console.WriteLine($"Request: {payload}");
 
@@ -167,17 +176,14 @@ namespace Rudeus.API
             //request.Headers.Add("Content-Type", "application/json");
 
             // トークンが存在する場合はヘッダーに付与
-            if (accessToken != null)
+            if (accessToken != null && accessToken != "")
             {
                 request.Headers.Add("Authorization", $"Bearer {accessToken}");
             }
 
-            // JSON形式payloadがある場合
-            if (payload != null)
-            {
-                // BodyにJSONをセット
-                request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
-            }
+            // BodyにJSONをセット
+            request.Content = new StringContent(payload, Encoding.UTF8, "application/json");
+            
 
             return request;
         }
@@ -421,7 +427,7 @@ namespace Rudeus.API
         {
             try
             {
-                GetRequest(null, ApiCheckStatusPath);
+                GetRequest(null, Constants.ApiCheckStatusPath);
             }
             catch
             {
