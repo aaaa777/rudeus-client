@@ -6,7 +6,7 @@ using Rudeus.Model.Operations;
 
 namespace Rudeus.Model
 {
-    internal class Utils
+    public class Utils
     {
         public static readonly string WebPortalUrl = Constants.WebPortalUrl;
         public static readonly string Polite3Url = Constants.Polite3Url;
