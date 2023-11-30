@@ -52,22 +52,27 @@ namespace RudeusBg
             if (argsDict.GetValueOrDefault("mode", "default") == "login")
             {
                 string userIdOld = Settings.Username;
-                try
+                Console.WriteLine("old user id:" + userIdOld);
+                if(userIdOld == "")
                 {
-                    // 学生IDを取得するためlocalhostでコールバックを待機
-                    Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
 
-                    // ログイン画面を開く
-                    OpenWebPage(RemoteAPI.SamlLoginUrl);
-                    string userId = await userIdTask;
+                    try
+                    {
+                        // 学生IDを取得するためlocalhostでコールバックを待機
+                        Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
 
-                    // 管理サーバに送信
-                    LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
-                    Settings.Username = userId;
-                }
-                catch
-                {
-                    // ログインして送信に失敗
+                        // ログイン画面を開く
+                        OpenWebPage(RemoteAPI.SamlLoginUrl);
+                        string userId = await userIdTask;
+
+                        // 管理サーバに送信
+                        LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
+                        Settings.Username = userId;
+                    }
+                    catch
+                    {
+                        // ログインして送信に失敗
+                    }
                 }
             }
 
