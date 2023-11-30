@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 #pragma warning disable CS8618 // null 非許容のフィールドには、コンストラクターの終了時に null 以外の値が入っていなければなりません。Null 許容として宣言することをご検討ください。
 namespace Rudeus.API.Response
 {
-    internal class LoginResponse : BaseResponse
+    internal class LoginResponse : IResponse
     {
+        [JsonPropertyName(nameof(status))]
+        public string status { get; set; } = string.Empty;
+
         [JsonPropertyName(nameof(response_data))]
         public LoginResponseData response_data { get; set; }
 

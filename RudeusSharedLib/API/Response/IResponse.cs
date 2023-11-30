@@ -1,10 +1,9 @@
 ﻿// Requestクラスはクラス定義がインターフェースのような役割なので、共通インターフェースは小さくしてある
 
-namespace Rudeus.API.Request
+namespace Rudeus.API.Response
 {
-    internal interface IRequest
+    internal interface IResponse
     {
-        string? type { get; }
+        string status { get; set; }
     }
-
 }

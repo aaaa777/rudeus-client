@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)api\RequestClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Request\IRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Request\SendInstalledAppRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Response\IResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Certificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />

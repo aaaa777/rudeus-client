@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Response
 {
-    internal class BaseResponse
+    internal class BaseResponse : IResponse
     {
         [JsonPropertyName(nameof(status))]
         public string status { get; set; } = string.Empty;
 
         [JsonPropertyName(nameof(response_data))]
         public BaseResponse? response_data { get; set; }
-        
+
         public BaseResponse()
         {
             status = "unknown";
