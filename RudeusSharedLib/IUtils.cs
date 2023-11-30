@@ -2,13 +2,13 @@
 {
     public interface IUtils
     {
-        public abstract string ConcatStudentNumberFromMail(string mailAddress);
+        public abstract static string ConcatStudentNumberFromMail(string mailAddress);
 
-        public abstract bool IsStudentMailAddress(string mailAddress);
+        public abstract static bool IsStudentMailAddress(string mailAddress);
 
-        public abstract string GetPhysicalRamInfo();
+        public abstract static string GetPhysicalRamInfo();
 
-        public abstract string[] GetStorageDeviceIdList();
+        public abstract static string[] GetStorageDeviceIdList();
 
         public abstract static string GetDeviceId();
 
@@ -18,7 +18,7 @@
 
         public abstract static void RegisterDeviceAndSetData();
 
-        public abstract static void CopyDirectory(string sourceDir, string destDir);
+        public abstract static void CopyDirectory(string sourceDir, string destDir, bool recursive);
 
         public abstract static int CompareVersionString(string a, string b, int depth);
     }
