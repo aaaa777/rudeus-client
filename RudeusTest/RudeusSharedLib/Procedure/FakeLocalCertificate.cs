@@ -10,10 +10,10 @@ namespace RudeusTest.RudeusSharedLib.Procedure
 {
     internal class FakeLocalCertificate : ILocalCertificate
     {
-        public static ILocalCertificate GetInstance()
-        {
-            return new FakeLocalCertificate();
-        }
+        public static ILocalCertificate _fakeLocalCertificate = new FakeLocalCertificate();
+        public static ILocalCertificate GetInstance() { return _fakeLocalCertificate; }
+
+        public static ILocalCertificate Create() { return new FakeLocalCertificate(); }
 
         private FakeLocalCertificate() { }
 

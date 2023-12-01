@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Procedure;
+using RudeusSharedLibTest.RudeusSharedLib.Model;
 
 namespace RudeusTest.RudeusSharedLib.Procedure
 {
@@ -13,7 +14,7 @@ namespace RudeusTest.RudeusSharedLib.Procedure
         [Fact]
         public void TestInstallDefaults()
         {
-            CertificateInstaller.lc = FakeLocalCertificate.GetInstance();
+            CertificateInstaller.lc = FakeLocalCertificate.Create();
 
             CertificateInstaller.Run();
         }
@@ -21,7 +22,10 @@ namespace RudeusTest.RudeusSharedLib.Procedure
         [Fact]
         public void TestRegistryInitializer()
         {
-            RegistryInitializer.Settings = FakeSettings.GetInstance();
+            RegistryInitializer.ConfSettings = FakeSettings.Create();
+            RegistryInitializer.InnoSettings = FakeSettings.Create();
+            RegistryInitializer.BgSettings = FakeSettings.Create();
+            RegistryInitializer.BfSettings = FakeSettings.Create();
 
             RegistryInitializer.Run();
         }

@@ -1,17 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <NoWarn>1701;1702;CS0436;MSB3270</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <NoWarn>1701;1702;CS0436;MSB3270</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,19 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\" />
     <Folder Include="RudeusBgInitializer\" />
-    <Folder Include="RudeusSharedLib\Model\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RudeusBgForm\RudeusBgForm.csproj" />
-    <ProjectReference Include="..\RudeusBgInitializer\RudeusBgInitializer.csproj" />
-    <ProjectReference Include="..\RudeusBg\RudeusBg.csproj" />
-    <ProjectReference Include="..\RudeusLauncher\RudeusLauncher.csproj" />
-    <ProjectReference Include="..\RudeusUninstaller\RudeusUninstaller.csproj" />
-  </ItemGroup>
-
-  <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
 
 </Project>

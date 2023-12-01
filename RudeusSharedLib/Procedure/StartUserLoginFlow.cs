@@ -52,6 +52,7 @@ namespace Rudeus.Procedure
                     UseShellExecute = true
                 }
             }.Start();
+            return true;
         }
     }
 }

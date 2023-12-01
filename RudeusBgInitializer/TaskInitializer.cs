@@ -12,7 +12,7 @@ using Rudeus.Procedure;
 // この手続きだけはInitializer内でしか使わないのでこちらに移動
 namespace Rudeus.Procedure
 {
-    partial class TaskInitializer
+    partial class TaskInitializer : IProcedure
     {
         public static void Run()
         {
