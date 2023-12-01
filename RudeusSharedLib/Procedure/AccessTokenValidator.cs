@@ -5,7 +5,7 @@ namespace Rudeus.Procedure
 {
     internal class AccessTokenValidator : IProcedure
     {
-        public static void Run()
+        public void Run()
         {
             // BgInitializer‚ª¸”s‚µ‚½‚ÉBg‚ªRegisterDeviceAndSetData‚ğÀs‚·‚é
             if (IsFirstRun())
@@ -25,7 +25,7 @@ namespace Rudeus.Procedure
             }
         }
 
-        public static bool IsFirstRun()
+        public bool IsFirstRun()
         {
             string accessToken = Settings.AccessToken;
             if (accessToken == null && accessToken == "")

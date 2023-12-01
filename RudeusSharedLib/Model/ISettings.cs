@@ -6,7 +6,7 @@ namespace Rudeus.Model
     /// 設定をレジストリに保管するモデル
     /// レジストリがない場合の変換や暗号化を行う予定
     /// </summary>
-    internal interface ISettings
+    public interface ISettings
     {
         //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
         string LabelIdP { get; set; }

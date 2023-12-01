@@ -9,7 +9,7 @@ using Microsoft.Win32;
 namespace Rudeus.Model
 {
 
-    internal class Settings : ISettings
+    public class Settings : ISettings
     {
         // レジストリ：アプリのデフォルトのキー
         private static string DefaultRegistryKey = Constants.DefaultRegistryKey;

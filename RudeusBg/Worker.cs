@@ -11,16 +11,22 @@ using Windows.System.Inventory;
 
 namespace RudeusBg
 {
-    public class Worker : BackgroundService
+    public class Worker : BackgroundService, IWorker
     {
         private readonly ILogger<Worker> _logger;
         private string[] _args;
+
+        // DI for static class
+        public IProcedure ATVProcedure = new AccessTokenValidator();
+        public IProcedure SREProcedure = new ScheduledRegularExecuter();
+        public IProcedure SURFProcedure = new StartUserLoginFlow();
+
+        public static Settings settings { get; set; } = new Settings();
 
         public Worker(ILogger<Worker> logger)
         {
             _logger = logger;
             _args = Program.commandArgs;
-            
         }
     
 
@@ -40,20 +46,20 @@ namespace RudeusBg
 
 
             // 初期化
-            AccessTokenValidator.Run();
+            ATVProcedure.Run();
 
             // 通常起動時
             if (mode == "default")
             {
                 // UpdateDeviceの実行
-                ScheduledRegularExecuter.Run();
+                SREProcedure.Run();
 
                 //InstalledAppsSender.Run();
             }
 
             if (mode == "login")
             {
-                StartUserLoginFlow.Run();
+                SURFProcedure.Run();
             }
 
             // テスト実装確認用

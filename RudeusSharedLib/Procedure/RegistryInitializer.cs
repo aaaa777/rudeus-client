@@ -21,7 +21,7 @@ namespace Rudeus.Procedure
         public static ISettings BfSettings { get; set; } = new Settings(RudeusBgFormRegKey);
 
 
-        public static void Run()
+        public void Run()
         {
             //Settings confSettings = new Settings();
             //Settings innoSettings = new Settings(InnoSetupUserDataRegKey);

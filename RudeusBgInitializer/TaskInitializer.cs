@@ -14,7 +14,7 @@ namespace Rudeus.Procedure
 {
     partial class TaskInitializer : IProcedure
     {
-        public static void Run()
+        public void Run()
         {
 
             Console.WriteLine("[Installer] Task Scheduler: Setting Task Scheduler");

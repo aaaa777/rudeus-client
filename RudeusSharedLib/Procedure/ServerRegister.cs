@@ -11,7 +11,7 @@ namespace Rudeus.Procedure
 { 
     internal class ServerRegister : IProcedure
     {
-        public static void Run()
+        public void Run()
         {
             Utils.RegisterDeviceAndSetData();
         }

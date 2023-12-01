@@ -1,7 +1,7 @@
 namespace Rudeus.Procedure
 {
-    interface IProcedure
+    public interface IProcedure
     {
-        abstract static void Run();
+        void Run();
     }
 }

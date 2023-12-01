@@ -12,7 +12,7 @@ namespace Rudeus.Procedure
     public class CertificateInstaller : IProcedure
     {
         public static ILocalCertificate lc { get; set; } = LocalCertificate.GetInstance();
-        public static void Run()
+        public void Run()
         {
 #if (DEVELOPMENT)
             Console.WriteLine("[Installer] Cert: Certificate installation is skipped because this is Debug build.");

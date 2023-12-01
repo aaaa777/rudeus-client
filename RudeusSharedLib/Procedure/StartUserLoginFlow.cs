@@ -10,9 +10,10 @@ namespace Rudeus.Procedure
 {
     internal class StartUserLoginFlow : IProcedure
     {
+        // DI for testing
         public static Func<string, bool> OpenBrowser { get; set; } = OpenWebPage;
 
-        public static async void Run()
+        public async void Run()
         {
             string userIdOld = Settings.Username;
             Console.WriteLine("old user id:" + userIdOld);
@@ -22,7 +23,7 @@ namespace Rudeus.Procedure
             }
         }
 
-        private static async Task StartLoginFlow()
+        private async Task StartLoginFlow()
         {
             try
             {
