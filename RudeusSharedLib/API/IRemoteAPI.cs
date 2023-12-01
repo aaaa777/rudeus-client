@@ -9,6 +9,8 @@ namespace Rudeus.API
 {
     internal interface IRemoteAPI
     {
+        public abstract static IRequestClient RequestClient { get; set; }
+
         // メソッドは必ず例外処理を行うこと
         // 開発時以外はサーバ起因の例外しか発生しないので、基本はリトライ処理だけでいい
         public abstract static RegisterResponse RegisterDevice(string deviceId, string hostname);
@@ -18,6 +20,8 @@ namespace Rudeus.API
         public abstract static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplications> apps);
 
         public abstract static Task<string> ReceiveStudentIdAsync();
+
+        public abstract static UpdateMetadataResponse GetUpdateMetadata(string accessToken);
 
         // もしかしてRemoteAPIが持つべきではない？
         public abstract static bool IsAccessTokenAvailable(string accessToken);

@@ -16,8 +16,10 @@ namespace RudeusTest.RudeusSharedLib.API
         public void TestRegisterDevice()
         {
             RemoteAPI.RequestClient = new FakeRequestClient();
+            string deviceId = "test_device_id";
+            string hostname = "test_hostname";
 
-            var response = RemoteAPI.RegisterDevice("test_device_id", "test_hostname");
+            var response = RemoteAPI.RegisterDevice(deviceId, hostname);
 
             Assert.Equal("ok", response.status);
         }
@@ -26,8 +28,10 @@ namespace RudeusTest.RudeusSharedLib.API
         public void TestLoginDevice()
         {
             RemoteAPI.RequestClient = new FakeRequestClient();
+            string accessToken = "test_access_token";
+            string username = "test_username";
 
-            var response = RemoteAPI.LoginDevice("test_access_token", "test_user_id");
+            var response = RemoteAPI.LoginDevice(accessToken, username);
 
             Assert.Equal("ok", response.status);
         }
@@ -36,8 +40,10 @@ namespace RudeusTest.RudeusSharedLib.API
         public void TestUpdateDevice()
         {
             RemoteAPI.RequestClient = new FakeRequestClient();
+            string accessToken = "test_access_token";
+            string hostname = "test_hostname";
 
-            var response = RemoteAPI.UpdateDevice("test_access_token", "test_hostname");
+            var response = RemoteAPI.UpdateDevice(accessToken, hostname);
 
             Assert.Equal("ok", response.status);
             Assert.Equal("1", response.push_data[0].id);
@@ -47,10 +53,11 @@ namespace RudeusTest.RudeusSharedLib.API
         public void TestSendInstalledApps()
         {
             RemoteAPI.RequestClient = new FakeRequestClient();
+            string accessToken = "test_access_token";
+            ApplicationData appData = new("Apex Legends", "123.456");
+            List<ApplicationData> apps = new List<ApplicationData>() { appData };
 
-            List<ApplicationData> apps = new List<ApplicationData>() { new("Apex Legends", "123.456") };
-
-            var response = RemoteAPI.SendInstalledApps("test_access_token", apps);
+            var response = RemoteAPI.SendInstalledApps(accessToken, apps);
 
             Assert.Equal("ok", response.status);
         }
@@ -59,12 +66,16 @@ namespace RudeusTest.RudeusSharedLib.API
         [Fact]
         public void TestBuildHttpRequestMessage()
         {
-            var message = RemoteAPI.BuildHttpRequestMessage("test_access_token", "test_path", "test_payload", HttpMethod.Get);
+            string accessToken = "test_access_token";
+            string requestPath = "test_path";
+            string payload = @"{""test_payload"": ""test""}";
+
+            var message = RemoteAPI.BuildHttpRequestMessage(accessToken, requestPath, payload, HttpMethod.Get);
 
             Assert.Equal(HttpMethod.Get, message.Method);
-            Assert.Equal("test_access_token", message.Headers.Authorization.Parameter);
-            Assert.Equal("test_path", message.RequestUri.ToString());
-            Assert.Equal("test_payload", message.Content.ReadAsStringAsync().Result);
+            Assert.Equal(accessToken, message.Headers.Authorization?.Parameter);
+            Assert.Equal(requestPath, message.RequestUri?.ToString());
+            Assert.Equal(payload, message.Content?.ReadAsStringAsync().Result);
         }
 
 
