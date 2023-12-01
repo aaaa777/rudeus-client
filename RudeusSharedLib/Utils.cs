@@ -153,5 +153,11 @@ namespace Rudeus
             }
             return (aSeries.Length == bSeries.Length) ? 0 : -1;
         }
+
+        public static Dictionary<string, string> ParseArgs(string[] args)
+        {
+            var argsDict = args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
+            return argsDict;
+        }
     }
 }

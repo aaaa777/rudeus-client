@@ -11,5 +11,7 @@
         public abstract static void CopyDirectory(string sourceDir, string destDir, bool recursive);
 
         public abstract static int CompareVersionString(string a, string b, int depth);
+
+        public abstract static Dictionary<string, string> ParseArgs(string[] args);
     }
 }
