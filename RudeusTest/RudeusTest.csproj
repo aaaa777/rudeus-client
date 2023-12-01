@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="RudeusBgInitializer\" />
     <Folder Include="RudeusSharedLib\Model\" />
   </ItemGroup>
 

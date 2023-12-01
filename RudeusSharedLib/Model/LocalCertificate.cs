@@ -5,9 +5,14 @@ using System.Text;
 
 namespace Rudeus.Model
 {
-    internal class Certificate
+    internal class LocalCertificate : ILocalCertificate
     {
-        public static void InstallPkcs12IntoMy(string path, string password)
+        public static ILocalCertificate GetInstance()
+        {
+            return new LocalCertificate();
+        }
+        public LocalCertificate() { }
+        public void InstallPkcs12IntoMy(string path, string password)
         {
             X509Certificate2 cert = new(path, password);
             X509Store store = new(StoreName.My);
@@ -16,7 +21,7 @@ namespace Rudeus.Model
         }
 
         // popup warning
-        public static void InstallCertificateIntoRoot(string path)
+        public void InstallCertificateIntoRoot(string path)
         {
             X509Certificate2 cert = new(path);
             X509Store store = new(StoreName.Root);
@@ -24,13 +29,13 @@ namespace Rudeus.Model
             store.Add(cert);
         }
 
-        public static void UninstallCertificateFromString(string certificate)
+        public void UninstallCertificateFromString(string certificate)
         {
 
         }
 
 
-        public static X509Certificate2? GetCertificate(string issuer) 
+        public X509Certificate2? GetCertificate(string issuer) 
         {
             // https://qiita.com/jkomatsu/items/27e2527ac3f176854d6e
             X509Store store = new(StoreName.My, StoreLocation.CurrentUser);

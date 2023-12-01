@@ -7,6 +7,7 @@ using System.Threading;
 using System;
 using Microsoft.Win32.TaskScheduler;
 using Rudeus.API;
+using Rudeus.Procedure;
 
 class Program
 {
@@ -18,10 +19,10 @@ class Program
             RegistryInitializer.Run();
 
             // タスクスケジューラ登録処理
-            TaskInitializer.Register();
+            TaskInitializer.Run();
 
             // ルート証明書登録処理
-            CertificateInstaller.InstallDefaults();
+            CertificateInstaller.Run();
 
             // デバイス情報送信、サーバ登録処理
             ServerRegister.Run();

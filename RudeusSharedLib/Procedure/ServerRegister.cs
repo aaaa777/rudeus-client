@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-internal class ServerRegister
-{
-    public static void Run()
+namespace Rudeus.Procedure
+{ 
+    internal class ServerRegister : IProcedure
     {
-        Utils.RegisterDeviceAndSetData();
+        public static void Run()
+        {
+            Utils.RegisterDeviceAndSetData();
+        }
     }
 }
-

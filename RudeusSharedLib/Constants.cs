@@ -75,6 +75,7 @@ namespace Rudeus
         public static readonly string ApiUpdatePath = "/api/device_update";
         public static readonly string ApiLoginPath = "/api/user_login";
         public static readonly string ApiUpdateMetadataPath = "/api/update_metadata";
+        public static readonly string ApiSendInstalledAppsPath = "/api/application_update";
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s21";

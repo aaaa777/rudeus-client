@@ -30,7 +30,7 @@ namespace Rudeus.API
     {
 
         // クライアント証明書を取得
-        private static X509Certificate2? ApiCertificate { get { return Certificate.GetCertificate("manager.nomiss.net"); } }
+        private static X509Certificate2? ApiCertificate { get { return LocalCertificate.GetInstance().GetCertificate("manager.nomiss.net"); } }
 
         /// <summary>
         /// Todo: クライアント証明書を追加する
@@ -103,6 +103,7 @@ namespace Rudeus.API
         public static string ApiUpdatePath { get; } = Constants.ApiUpdatePath;
         public static string ApiLoginPath { get; } = Constants.ApiLoginPath;
         public static string ApiUpdateMetadataPath { get; } = Constants.ApiUpdateMetadataPath;
+        public static string ApiSendInstalledAppsPath { get; } = Constants.ApiSendInstalledAppsPath;
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -312,7 +313,7 @@ namespace Rudeus.API
 #if(DEVELOPMENT)
             var response = "{\r\n\"status\":\"ok\"}";
 #else
-            var response = PostRequest(accessToken, ApiUpdatePath, payload);
+            var response = PostRequest(accessToken, ApiSendInstalledAppsPath, payload);
 #endif
             try
             {

@@ -34,9 +34,16 @@ namespace Rudeus.API
             {
                 throw new AccessTokenUnavailableException("アクセストークンが無効です");
             }
-            else if (response.StatusCode != HttpStatusCode.OK)
+
+            if (response.StatusCode == HttpStatusCode.BadRequest)
             {
-                throw new UnexpectedResponseException("予期しないレスポンスが返されました");
+                // バグの可能性が高い
+                throw new ServerUnavailableException(response.Content.ReadAsStringAsync().Result);
+            }
+
+            if (response.StatusCode != HttpStatusCode.OK)
+            {
+                throw new UnexpectedResponseException($"`{message.RequestUri.ToString()}`で予期しないステータスコード`{response.StatusCode}`が返されました");
             }
 
             return response;
@@ -44,14 +51,9 @@ namespace Rudeus.API
 
         public string RequestString(HttpRequestMessage message)
         {
-            try
-            {
-                return Request(message).Content.ReadAsStringAsync().Result;
-            }
-            catch (Exception e)
-            {
-                throw new Exceptions.UnexpectedResponseException(e.Message);
-            }
+            HttpResponseMessage res = Request(message);
+            return  res.Content.ReadAsStringAsync().Result;
+            
         }
     }
 }

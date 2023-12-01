@@ -9,6 +9,7 @@ namespace Rudeus.Model
     internal interface ISettings
     {
         //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
+        string LabelIdP { get; set; }
         string CurrentVersionP { get; set; }
         string LastDirNameP { get; set; }
         string LastVersionDirPathP { get; set; }
