@@ -135,13 +135,15 @@ jobs:
       uses: mknejp/delete-release-assets@v1
       with:
         token: ${{ github.token }}
-        tag: head # This may also be of the form 'refs/tags/staging'
+        tag: latest # This may also be of the form 'refs/tags/staging'
 
         # Optional another repository
         #repository: aaaa777/rudeus-client
 
         # Pick one of:
         assets: Rudeus_launcher_head_${{ matrix.configuration }}.zip
+
+        fail-if-no-assets: false
     # 
     - name: Deploy Windows release
       #if: matrix.os == 'windows-latest'
@@ -158,12 +160,19 @@ jobs:
         max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
-    #- name: Decode the pfx
-    #  run: |
-    #    $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
-    #    $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
-    #    [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
+    - name: Decode the pfx
+      run: |
+        $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
+        $certificatePath = Join-Path -Path "." -ChildPath GitHubActionsWorkflow.pfx
+        [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
+    - name: 'Run Test Script'
+      run: |
+        Copy-Item -Path C:/"Program Files (x86)"/"Windows Kits"/10/bin/10.0.22621.0/x86/signtool.exe -Destination .
+
+    - name: Compile Inno Setup
+    #  run: iscc.exe /?
+      run: iscc.exe '/Ssigntool2=$p .\signtool.exe sign /v /f $q.\GitHubActionsWorkflow.pfx$q /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $f' InnoSetupConfig.iss
     # Create the app package by building and packaging the Windows Application Packaging project
     #- name: Create the app package
     #  run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
@@ -174,8 +183,8 @@ jobs:
     #    Configuration: ${{ matrix.configuration }}
 
     # Remove the pfx
-    #- name: Remove the pfx
-    #  run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+    - name: Remove the pfx
+      run: Remove-Item -path .\GitHubActionsWorkflow.pfx
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     #- name: Upload build artifacts
