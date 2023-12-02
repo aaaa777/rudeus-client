@@ -12,6 +12,7 @@ namespace Rudeus.Procedure
         private int _runCount = 0;
         public int RunCount { get { return _runCount; } }
 
+        // TODO: 自分自身を返すメソッドはインターフェースで定義できない問題の対応
         public static FakeProcedure Create() { return new FakeProcedure(); }
 
         public void Run() { _runCount++; }
