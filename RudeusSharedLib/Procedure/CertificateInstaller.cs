@@ -13,9 +13,9 @@ namespace Rudeus.Procedure
     {
         public ILocalCertificate _localCertificate { get; set; }
 
-        public CertificateInstaller()
+        public CertificateInstaller(ILocalCertificate? lc = null)
         {
-
+            _localCertificate = lc ?? new LocalCertificate();
         }
         public void Run()
         {

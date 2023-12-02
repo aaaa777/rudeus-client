@@ -13,12 +13,13 @@ namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
         [Fact]
         public void TestRun()
         {
-            RegistryInitializer re = new RegistryInitializer();
-            re.ConfSettings = FakeSettings.Create();
-            re.InnoSettings = FakeSettings.Create();
-            re.BgSettings = FakeSettings.Create();
-            re.BfSettings = FakeSettings.Create();
-
+            var re = new RegistryInitializer(
+                cfs: FakeSettings.Create(),
+                ins: FakeSettings.Create(),
+                bgs: FakeSettings.Create(),
+                bfs: FakeSettings.Create()
+            );
+            
             re.Run();
         }
     }

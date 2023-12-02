@@ -15,11 +15,18 @@ namespace Rudeus.Procedure
         private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
         private readonly static string InnoSetupUserDataRegKey = Constants.InnoSetupUserDataKey;
 
-        public ISettings ConfSettings { get; set; } = new Settings();
-        public  ISettings InnoSettings { get; set; } = new Settings(InnoSetupUserDataRegKey);
-        public ISettings BgSettings { get; set; } = new Settings(RudeusBgRegKey);
-        public ISettings BfSettings { get; set; } = new Settings(RudeusBgFormRegKey);
+        public ISettings ConfSettings { get; set; }
+        public  ISettings InnoSettings { get; set; }
+        public ISettings BgSettings { get; set; }
+        public ISettings BfSettings { get; set; }
 
+        public RegistryInitializer(ISettings? cfs = null, ISettings? ins = null, ISettings? bgs = null, ISettings? bfs = null)
+        {
+            ConfSettings = cfs ?? new Settings();
+            InnoSettings = ins ?? new Settings(InnoSetupUserDataRegKey);
+            BgSettings = bgs ?? new Settings(RudeusBgRegKey);
+            BfSettings = bfs ?? new Settings(RudeusBgFormRegKey);
+        }
 
         public void Run()
         {
@@ -37,7 +44,7 @@ namespace Rudeus.Procedure
             //Settings bgSettings = new(RudeusBgRegKey);
 
 #if (DEVELOPMENT)
-            bgSettings.SetDevelopChannelP();
+            BgSettings.SetDevelopChannelP();
 #else
             BgSettings.SetStableChannelP();
 #endif
@@ -58,24 +65,24 @@ namespace Rudeus.Procedure
             // RudeusBgFormのLaunch設定
         
             //Settings.UpdateRegistryKey(RudeusBgFormRegKey);
-            Settings bfSettings = new(RudeusBgFormRegKey);
+            //Settings BfSettings = new(RudeusBgFormRegKey);
 #if (DEVELOPMENT)
-            bfSettings.SetDevelopChannelP();
+            BfSettings.SetDevelopChannelP();
 #else
-            Settings.SetStableChannel();
+            BfSettings.SetStableChannelP();
 #endif
 
 
-            bfSettings.LastVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
-            bfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-            bfSettings.LastDirNameP = Constants.RudeusBgLastName;
+            BfSettings.LastVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLastName}";
+            BfSettings.LastVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+            BfSettings.LastDirNameP = Constants.RudeusBgLastName;
 
-            bfSettings.LatestVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLatestName}";
-            bfSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
-            bfSettings.LatestDirNameP = Constants.RudeusBgLatestName;
+            BfSettings.LatestVersionDirPathP = $"{Constants.RudeusBgFormDir}\\{Constants.RudeusBgLatestName}";
+            BfSettings.LatestVersionExeNameP = $"{Constants.RudeusBgFormExeName}";
+            BfSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 
-            bfSettings.CurrentVersionP = "0.0.0.0";
-            bfSettings.SetLatestVersionStatusDownloadedP();
+            BfSettings.CurrentVersionP = "0.0.0.0";
+            BfSettings.SetLatestVersionStatusDownloadedP();
 
 
 
