@@ -140,12 +140,24 @@ namespace Rudeus.Model
             get { return Get(HostnameKey); }
         }
 
+        public string HostnameP
+        {
+            set { Set(HostnameKey, value, false, _regKey); }
+            get { return Get(HostnameKey, "", false, _regKey); }
+        }
+
         // 一意のデバイスID
         public static string DeviceIdKey = "DeviceId";
         public static string DeviceId
         {
             set { Set(DeviceIdKey, value); }
             get { return Get(DeviceIdKey); }
+        }
+
+        public string DeviceIdP
+        {
+            set { Set(DeviceIdKey, value, false, _regKey); }
+            get { return Get(DeviceIdKey, "", false, _regKey); }
         }
 
         // ログインユーザ(7桁の学籍番号)
@@ -156,12 +168,24 @@ namespace Rudeus.Model
             get { return Get(UsernameKey); }
         }
 
+        public string UsernameP
+        {
+            set { Set(UsernameKey, value, false, _regKey); }
+            get { return Get(UsernameKey, "", false, _regKey); }
+        }
+
         // リクエスト時のアクセストークン
         public static string AccessTokenKey = "AccessToken";
         public static string AccessToken
         {
             set { Set(AccessTokenKey, value); }
             get { return Get(AccessTokenKey); }
+        }
+
+        public string AccessTokenP
+        {
+            set { Set(AccessTokenKey, value, false, _regKey); }
+            get { return Get(AccessTokenKey, "", false, _regKey); }
         }
 
         // 最終チェックのWindowsバージョン

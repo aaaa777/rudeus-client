@@ -11,27 +11,58 @@ namespace Rudeus.Model
     {
         // TODO: ダミーのレジストリを作成する
 
+        private Dictionary<string, string> _data = new();
         private static ISettings _fakeSettings = new FakeSettings();
         public static ISettings GetInstance() { return _fakeSettings; }
 
         public static ISettings Create() { return new FakeSettings(); }
 
-        public string LabelIdP { get => "P12-345"; set { } }
-        public string CurrentVersionP { get => "1.0.0"; set { } }
-        public string LastDirNameP { get => "test"; set { } }
-        public string LastVersionDirPathP { get => "/test"; set { } }
-        public string LastVersionExeNameP { get => "test.exe"; set { } }
+        private string Get(string key)
+        {
+            if (_data.ContainsKey(key))
+            {
+                return _data[key];
+            }
+            else
+            {
+                return "";
+            }
+        }
 
-        public string LastVersionExePathP => throw new NotImplementedException();
+        private void Set(string key, string value)
+        {
+            if (_data.ContainsKey(key))
+            {
+                _data[key] = value;
+            }
+            else
+            {
+                _data.Add(key, value);
+            }
+        }
 
-        public string LatestDirNameP { get => "test"; set { } }
-        public string LatestVersionDirPathP { get => "/test"; set { } }
-        public string LatestVersionExeNameP { get => "test.exe"; set { } }
+        public string LabelIdP { get => Get("LI"); set => Set("LI", value); }
+        public string CurrentVersionP { get => Get("CV"); set => Set("CV", value); }
+        public string LastDirNameP { get => Get("LD"); set => Set("LD", value); }
+        public string LastVersionDirPathP { get => Get("LVD"); set => Set("LVD", value); }
+        public string LastVersionExeNameP { get => Get("LVEN"); set => Set("LVEN", value); }
 
-        public string LatestVersionExePathP => throw new NotImplementedException();
+        public string LastVersionExePathP { get => Get("LVEP"); set => Set("LVEP", value); }
 
-        public string LatestVersionStatusP { get => "1.0.0"; set { } }
-        public string UpdatingChannelP { get => "test"; set { } }
+        public string LatestDirNameP { get => Get("LTD"); set => Set("LTD", value); }
+        public string LatestVersionDirPathP { get => Get("LTVDP"); set => Set("LTVPD", value); }
+        public string LatestVersionExeNameP { get => Get("LTVEN"); set => Set("LTVEN", value); }
+
+        public string LatestVersionExePathP { get => Get("LTVEP"); set => Set("LTTVEP", value); }
+
+        public string LatestVersionStatusP { get => Get("LTVS"); set => Set("LTVS", value); }
+        public string UpdatingChannelP { get => Get("UC"); set => Set("UC", value); }
+
+        public string AccessTokenP { get => Get("AT"); set => Set("AT", value); }
+        public string DeviceIdP { get => Get("DI"); set => Set("DI", value); }
+        public string FirstHostnameP { get => Get("FH"); set => Set("FH", value); }
+        public string HostnameP { get => Get("H"); set => Set("H", value); }
+        public string UsernameP { get => Get("U"); set => Set("U", value); }
 
         public bool IsBetaChannelP()
         {

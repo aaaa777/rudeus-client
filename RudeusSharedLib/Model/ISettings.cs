@@ -9,6 +9,15 @@ namespace Rudeus.Model
     public interface ISettings
     {
         //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
+
+        //static abstract void Set(string key, string value, bool isDefaultKey, RegistryKey regKey);
+
+        string AccessTokenP { get; set; }
+        string DeviceIdP { get; set; }
+        string FirstHostnameP { get; set; }
+        string HostnameP { get; set; }
+        string UsernameP { get; set; }
+
         string LabelIdP { get; set; }
         string CurrentVersionP { get; set; }
         string LastDirNameP { get; set; }
