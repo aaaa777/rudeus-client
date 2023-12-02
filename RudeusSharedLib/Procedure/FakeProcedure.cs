@@ -10,9 +10,11 @@ namespace Rudeus.Procedure
     internal class FakeProcedure : IProcedure
     {
         private int _runCount = 0;
+        public int RunCount { get { return _runCount; } }
 
-        public static IProcedure Create() { return new FakeProcedure(); }
+        public static FakeProcedure Create() { return new FakeProcedure(); }
 
         public void Run() { _runCount++; }
+
     }
 }
