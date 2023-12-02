@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Procedure;
 
-namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
+namespace RudeusSharedLibTest.Procedure
 {
     public class FakeProcedureTests
     {

@@ -16,6 +16,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -30,14 +33,6 @@
   <ItemGroup>
     <Folder Include="Properties\" />
     <Folder Include="RudeusSharedLib\Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RudeusBgForm\RudeusBgForm.csproj" />
-    <ProjectReference Include="..\RudeusBgInitializer\RudeusBgInitializer.csproj" />
-    <ProjectReference Include="..\RudeusBg\RudeusBg.csproj" />
-    <ProjectReference Include="..\RudeusLauncher\RudeusLauncher.csproj" />
-    <ProjectReference Include="..\RudeusUninstaller\RudeusUninstaller.csproj" />
   </ItemGroup>
 
   <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
