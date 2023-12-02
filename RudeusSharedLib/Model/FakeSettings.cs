@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusSharedLibTest.RudeusSharedLib.Model
+namespace Rudeus.Model
 {
     internal class FakeSettings : ISettings
     {

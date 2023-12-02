@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="RudeusSharedLib\Model\" />
   </ItemGroup>
 
   <ItemGroup>

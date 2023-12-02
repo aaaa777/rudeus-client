@@ -18,6 +18,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)API\Request\SendInstalledAppRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Response\IResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FakeLocalCertificate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)procedure\FakeProcedure.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\FakeSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ILocalCertificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)procedure\AccessTokenValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\CertificateInstaller.cs" />
