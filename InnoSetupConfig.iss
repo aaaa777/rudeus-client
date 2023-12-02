@@ -36,7 +36,7 @@ DisableDirPage=yes
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
 ;UserInfoPage=yes
 ;SignTool=signtoolexe sign /f $qC:\Users\a774n\source\repos\Rudeus\codesign2.p12$q /p exampleexampleexample /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $f
-SignTool=signtool2
+SignTool=signtool2 $f
 
 [Dirs]
 Name: "{autopf}\Windows System Application\latest";

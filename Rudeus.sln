@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 	ProjectSection(SolutionItems) = preProject
 		ca.crt = ca.crt
 		codesign2.crt = codesign2.crt
+		.github\workflows\dotnet-desktop.yml = .github\workflows\dotnet-desktop.yml
 		InnoSetupConfig.iss = InnoSetupConfig.iss
 		README.md = README.md
 		stu2.crt = stu2.crt
