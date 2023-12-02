@@ -58,6 +58,8 @@ jobs:
 
     env:
       Solution_Name: Rudeus.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      DOTNET_INSTALL_DIR: '.\.dotnet'
+      #PATH: ${{ env.DOTNET_INSTALL_DIR }};%PATH%;
       #Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       #Wap_Project_Directory: your-wap-project-directory-name    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       #Wap_Project_Path:   your-wap-project-path                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
@@ -68,21 +70,52 @@ jobs:
       with:
         fetch-depth: 0
 
+    #- name: Cache dotnet
+    #  id: cache-dotnet
+    #  uses: actions/cache@v3
+    #  with:
+    #    path: ${{ env.DOTNET_INSTALL_DIR }}
+    #    key: ${{ runner.os }}-dotnet-7
+    #    restore-keys: ${{ runner.os }}-dotnet-7
+
     # Install the .NET Core workload
     - name: Install .NET Core
+    #  if: ${{ steps.cache-dotnet.outputs.cache-hit != 'true' }}
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
+
+    #- name: Set installed/cached dotnet path [${{ env.DOTNET_INSTALL_DIR }}]
+    #  run: echo "${{ env.DOTNET_INSTALL_DIR }}" | Out-File -FilePath $ENV:GITHUB_PATH -Encoding utf8 -Append
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
 
+    - name: Load cache
+      id: cache-dotnet-restore
+      uses: actions/cache/restore@v3
+      with:
+        path: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+    #      ${{ env.USERPROFILE }}\.nuget\packages
+        key: ${{ runner.os }}-${{ matrix.configuration }}-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+
+
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
+      if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
+
+    # Cache nuget package
+    - name: Cache nuget packages
+      id: cache-dotnet-save
+      if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
+      uses: actions/cache/save@v3
+      with:
+        path: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
 
     # Build the application
     - name: Build the application
