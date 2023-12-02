@@ -91,34 +91,33 @@ jobs:
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
 
-    - name: Load cache
-      id: cache-dotnet-restore
-      uses: actions/cache/restore@v3
-      with:
-        path: |
-          C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
-          D:\a\rudeus-client\rudeus-client\**\obj
-    #      ${{ env.USERPROFILE }}\.nuget\packages
-        key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+    #- name: Load cache
+    #  id: cache-dotnet-restore
+    #  uses: actions/cache/restore@v3
+    #  with:
+    #    path: |
+    #      C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+    #      D:\a\rudeus-client\rudeus-client\**\obj
+    #    key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
-      if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
+    #  if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
 
     # Cache nuget package
-    - name: Cache nuget packages
-      id: cache-dotnet-save
-      if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
-      uses: actions/cache/save@v3
-      with:
-        path: |
-          C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
-          D:\a\rudeus-client\rudeus-client\**\obj
-        key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+    #- name: Cache nuget packages
+    #  id: cache-dotnet-save
+    #  if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
+    #  uses: actions/cache/save@v3
+    #  with:
+    #    path: |
+    #      C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+    #      D:\a\rudeus-client\rudeus-client\**\obj
+    #    key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Build the application
