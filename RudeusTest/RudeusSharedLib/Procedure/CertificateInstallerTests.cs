@@ -14,9 +14,14 @@ namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
         [Fact]
         public void TestRun()
         {
-            CertificateInstaller ci = new CertificateInstaller(lc: FakeLocalCertificate.Create());
+            var lc = FakeLocalCertificate.Create();
+            CertificateInstaller ci = new CertificateInstaller(
+                lc: lc
+            );
 
             ci.Run();
+
+            //Assert.True(lc.InstallCertificateIntoRootCalled);
         }
     }
 }

@@ -13,14 +13,22 @@ namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
         [Fact]
         public void TestRun()
         {
+            var cfs = FakeSettings.Create();
+            var ins = FakeSettings.Create();
+            var bgs = FakeSettings.Create();
+            var bfs = FakeSettings.Create();
+            //var fakeLocalMachine = FakeLocalMachine.Create();
+
             var re = new RegistryInitializer(
-                cfs: FakeSettings.Create(),
-                ins: FakeSettings.Create(),
-                bgs: FakeSettings.Create(),
-                bfs: FakeSettings.Create()
+                cfs: cfs,
+                ins: ins,
+                bgs: bgs,
+                bfs: bfs
             );
             
             re.Run();
+
+
         }
     }
 }
