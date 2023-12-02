@@ -49,7 +49,7 @@ namespace RudeusBg
 
 
             // ‰Šú‰»
-            _accessTokenValidator.Run();
+            await _accessTokenValidator.Run();
 
             // ’Êí‹N“®
             if (mode == "default")

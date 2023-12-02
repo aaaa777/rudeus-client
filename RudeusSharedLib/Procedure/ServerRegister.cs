@@ -20,7 +20,7 @@ namespace Rudeus.Procedure
             _localMachine = lm ?? LocalMachine.GetInstance();
             _settings = cs ?? new Settings();
         }
-        public void Run()
+        public async Task Run()
         {
             string hostname = _localMachine.GetHostname();
             string deviceId = _localMachine.GetDeviceId();
