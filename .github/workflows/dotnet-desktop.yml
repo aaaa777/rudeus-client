@@ -98,13 +98,13 @@ jobs:
     #- uses: montudor/action-zip@v1
     #  with:
     #    args: zip -r RudeusLauncher.zip net7.0-windows10.0.17763.0\*
-    - name: Zip artifacts
-      run: |
-        Compress-Archive -Path RudeusLauncher\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\* -Destination RudeusLauncher${{ matrix.configuration }}.zip
-        Compress-Archive -Path RudeusBg\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBg${{ matrix.configuration }}.zip
-        Compress-Archive -Path RudeusBgForm\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgForm${{ matrix.configuration }}.zip
-        Compress-Archive -Path RudeusBgInitializer\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgInitializer${{ matrix.configuration }}.zip
-        Compress-Archive -Path RudeusBgInitializer${{ matrix.configuration }}.zip,RudeusBg${{ matrix.configuration }}.zip,RudeusBgForm${{ matrix.configuration }}.zip,RudeusLauncher${{ matrix.configuration }}.zip -Destination RudeusPackage${{ matrix.configuration }}.zip
+    #- name: Zip artifacts
+    #  run: |
+    #    Compress-Archive -Path RudeusLauncher\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\* -Destination RudeusLauncher${{ matrix.configuration }}.zip
+    #    Compress-Archive -Path RudeusBg\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBg${{ matrix.configuration }}.zip
+    #    Compress-Archive -Path RudeusBgForm\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgForm${{ matrix.configuration }}.zip
+    #    Compress-Archive -Path RudeusBgInitializer\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgInitializer${{ matrix.configuration }}.zip
+    #    Compress-Archive -Path RudeusBgInitializer${{ matrix.configuration }}.zip,RudeusBg${{ matrix.configuration }}.zip,RudeusBgForm${{ matrix.configuration }}.zip,RudeusLauncher${{ matrix.configuration }}.zip -Destination RudeusPackage${{ matrix.configuration }}.zip
     
     # Create release
     #- name: Create release in github
@@ -147,7 +147,7 @@ jobs:
         Get-ChildItem -Path .
 
     - name: Compile Inno Setup
-    #  run: iscc.exe /?
+      # TODO: $pÇ∆$fÅASignTool=ÇÃãììÆÇ™ÇÊÇ≠ÇÌÇ©Ç¡ÇƒÇ¢Ç»Ç¢ÇÃÇ≈í≤ç∏Ç∑ÇÈ
       run: iscc.exe '/Ssigntool2=.\signtool.exe sign /v /f $qD:\a\rudeus-client\rudeus-client\GitHubActionsWorkflow.pfx$q /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $p' InnoSetupConfig.iss
       env:
         Configuration: ${{ matrix.configuration }}
@@ -194,7 +194,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
       with:
         upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
-        #release_id: 132351782 # same as above (id can just be taken out the upload_url, it's used to find old releases)
+        release_id: 132351782 # same as above (id can just be taken out the upload_url, it's used to find old releases)
         asset_path: C:\Users\runneradmin\Documents\Inno Setup Examples Output\HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # path to archive to upload
         #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_name: Rudeus_launcher_head_${{ matrix.configuration }}.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
