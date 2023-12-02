@@ -9,22 +9,30 @@ using Rudeus.API;
 using Rudeus.API.Response;
 using Rudeus.Model;
 using Rudeus;
+using Rudeus.Procedure;
 
-internal class Updater
+internal class Updater : IProcedure
 {
-    private static string? RegistryKey;
-    public static string lastVersionDirName = "last";
-    public static string latestVersionDirName = "latest";
-    public static string tempdir;
-    public static void Run(string registryKey)
+    private string? RegistryKey;
+    public ISettings _settings { get; set; }
+    public string lastVersionDirName = "last";
+    public string latestVersionDirName = "latest";
+    public string tempdir;
+
+    public Updater(ISettings? aps = null)
+    {
+        _settings = aps ?? new Settings();
+    }
+
+    public async Task Run()
     {
         // Todo: Bgの方のアップデート機能を追加すること
-        if(registryKey != Constants.RudeusBgFormRegKey)
-        {
-            return;
-        }
+        //if(registryKey != Constants.RudeusBgFormRegKey)
+        //{
+        //    return;
+        //}
 
-        RegistryKey = registryKey;
+        //RegistryKey = registryKey;
 
         // アップデート情報取得
         // 最終的にRemoteAPIを利用したい
@@ -43,8 +51,9 @@ internal class Updater
             return;
         }
 
+        string latestVersionLocal = _settings.CurrentVersionP;
+
         string latestVersionRemote = res.request_data.stable_version;
-        string latestVersionLocal = new Settings(registryKey).CurrentVersionP;
         string latestVersionZipUrl = res.request_data.stable_zip_url;
 
         // アップデート判定
@@ -62,7 +71,7 @@ internal class Updater
             StartUpdate(latestVersionZipUrl);
             
             // アップデート成功後、バージョンを変更
-            Settings.CurrentVersion = latestVersionRemote;
+            _settings.CurrentVersionP = latestVersionRemote;
         }
         catch
         {
@@ -79,10 +88,10 @@ internal class Updater
         Settings.SetLatestVersionStatusDownloaded();
     }
 
-    private static void StartUpdate(string url)
+    private void StartUpdate(string url)
     {
         // レジストリを切り替え
-        Settings.UpdateRegistryKey(RegistryKey);
+        //Settings.UpdateRegistryKey(RegistryKey);
 
         // latestが起動確認できている場合のみlastにコピーさせる
         if (Settings.IsLatestVersionStatusOk())
@@ -114,10 +123,10 @@ internal class Updater
         // 何もなければ終了
     }
 
-    private static void SwitchLatestDirLast()
+    private void SwitchLatestDirLast()
     {
         // del, mv latest last
-        Settings.UpdateRegistryKey(RegistryKey);
+        //Settings.UpdateRegistryKey(RegistryKey);
         if (Directory.Exists(Settings.LastVersionDirPath))
         {
             Directory.Delete(Settings.LastVersionDirPath, true);
@@ -131,7 +140,7 @@ internal class Updater
 
     // Latestをダウンロード
     // 返りはダウンロードした一時ディレクトリ名
-    private static string DownloadLatest(string url)
+    private string DownloadLatest(string url)
     {
         Guid g = Guid.NewGuid();
         string guid8 = g.ToString().Substring(0, 8);
@@ -150,18 +159,15 @@ internal class Updater
     }
 
     // 一時フォルダをそのままlatestに移動
-    private static void MvTempLatest(string tmpDirName)
+    private void MvTempLatest(string tmpDirName)
     {
         Directory.Move(tmpDirName, $"{Settings.LatestVersionDirPath}");
     }
 
-    public static bool ShouldUpdate(string localVersion, string remoteVersion)
+    public bool ShouldUpdate(string localVersion, string remoteVersion)
     {
         int conStat = Utils.CompareVersionString(localVersion, remoteVersion);
-        if (conStat == -1)
-        {
-            return true;
-        }
-        return false;
+        return conStat == -1;
+        
     }
 }

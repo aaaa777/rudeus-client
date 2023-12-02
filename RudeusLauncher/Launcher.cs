@@ -1,17 +1,34 @@
 ﻿using Rudeus.Model;
+using Rudeus.Procedure;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Rudeus.Procedure;
 
 
-internal class Launcher
+internal class Launcher : IReturnsExitCode
 {
     //public static int Run(string registryKey, string args="")
-    public static int Run(string latestExePath, string lastExePath, bool skipLatest, string args="")
+    public ISettings _appSettings { get; set; }
+    public string args { get; set; }
+
+    public int ExitCode { get; set; }
+
+    public Launcher(ISettings aps, string args="")
     {
+        _appSettings = aps;
+        this.args = args;
+        ExitCode = -1;
+    }
+
+    public async Task Run()
+    {
+        string latestExePath = _appSettings.LatestVersionExePathP;
+        string lastExePath = _appSettings.LastVersionExePathP;
+        bool skipLatest = _appSettings.IsLatestVersionStatusUnlaunchableP();
 #if(DEBUG)
         Console.WriteLine("[Launcher] Debug build is running");
 #endif
@@ -23,12 +40,12 @@ internal class Launcher
         //string lastExePath = Settings.LastVersionExePath;
 
         // 起動可能かダウンロード後未起動の状態のみでlatestを実行
-        int exitCode = -1;
+        //ExitCode = -1;
         if (!skipLatest)
         {
             // latestの実行
             Console.WriteLine("Trying launching latest version");
-            exitCode = StartProcess(latestExePath, args);
+            ExitCode = StartProcess(latestExePath, args);
         }
         else
         {
@@ -38,7 +55,7 @@ internal class Launcher
 
 
         // latestが異常終了した時、lastにフォールバック
-        if (exitCode != 0)
+        if (ExitCode != 0)
         {
             if (!skipLatest)
             {
@@ -52,7 +69,7 @@ internal class Launcher
             Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
-            exitCode = StartProcess(lastExePath, args);
+            ExitCode = StartProcess(lastExePath, args);
         }
         // latestが正常終了した時、そのまま終了
         else
@@ -64,7 +81,7 @@ internal class Launcher
             Settings.SetLatestVersionStatusOk();
         }
 
-        return exitCode;
+        return;
     }
 
     public static int StartProcess(string filePath, string args="")
