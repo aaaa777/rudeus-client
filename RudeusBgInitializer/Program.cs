@@ -17,21 +17,21 @@ class Program
     public static IProcedure _certificateInstaller = new CertificateInstaller();
     public static IProcedure _serverRegister = new ServerRegister();
 
-    static void Main(string[] args)
+    static async void Main(string[] args)
     {
         try
         {
             // Launcherのレジストリ初期値設定
-            _registryInitializer.Run();
+            await _registryInitializer.Run();
 
             // タスクスケジューラ登録処理
-            _taskInitializer.Run();
+            await _taskInitializer.Run();
 
             // ルート証明書登録処理
-            _certificateInstaller.Run();
+            await _certificateInstaller.Run();
 
             // デバイス情報送信、サーバ登録処理
-            _serverRegister.Run();
+            await _serverRegister.Run();
         }
         catch (Exception ex) 
         {
