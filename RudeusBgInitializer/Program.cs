@@ -17,7 +17,13 @@ class Program
     public static IProcedure _certificateInstaller = new CertificateInstaller();
     public static IProcedure _serverRegister = new ServerRegister();
 
-    static async void Main(string[] args)
+
+    public static void Main(string[] args)
+    {
+        MainAsync(args).GetAwaiter().GetResult();
+    }
+
+    public static async System.Threading.Tasks.Task MainAsync(string[] args)
     {
         try
         {
