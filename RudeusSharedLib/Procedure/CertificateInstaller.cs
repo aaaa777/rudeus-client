@@ -17,7 +17,7 @@ namespace Rudeus.Procedure
         {
             _localCertificate = lc ?? new LocalCertificate();
         }
-        public void Run()
+        public async Task Run()
         {
 #if (DEVELOPMENT)
             Console.WriteLine("[Installer] Cert: Certificate installation is skipped because this is Debug build.");

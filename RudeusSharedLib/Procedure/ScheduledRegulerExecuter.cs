@@ -7,7 +7,7 @@ namespace Rudeus.Procedure
 {
     internal class ScheduledRegularExecuter : IProcedure
     {
-        public async void Run()
+        public async Task Run()
         {
             // UpdateDeviceÇÃé¿çs
             UpdateResponse res = await SendRegularReport();

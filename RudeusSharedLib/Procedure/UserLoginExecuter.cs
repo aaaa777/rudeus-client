@@ -13,7 +13,7 @@ namespace Rudeus.Procedure
         // DI for testing
         public static Func<string, bool> OpenBrowser { get; set; } = OpenWebPage;
 
-        public async void Run()
+        public async Task Run()
         {
             string userIdOld = Settings.Username;
             Console.WriteLine("old user id:" + userIdOld);

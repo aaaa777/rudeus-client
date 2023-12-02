@@ -15,7 +15,7 @@ namespace Rudeus.Procedure
         // TODO: 自分自身を返すメソッドはインターフェースで定義できない問題の対応
         public static FakeProcedure Create() { return new FakeProcedure(); }
 
-        public void Run() { _runCount++; }
+        public async Task Run() { _runCount++; }
 
     }
 }

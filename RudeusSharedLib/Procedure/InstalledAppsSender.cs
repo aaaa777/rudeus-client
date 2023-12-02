@@ -8,7 +8,7 @@ namespace Rudeus.Procedure
 {
     internal class InstalledAppsSender : IProcedure
     {
-        public async void Run()
+        public async Task Run()
         {
             string accessToken = Settings.AccessToken;
             // インストール済みアプリ送信

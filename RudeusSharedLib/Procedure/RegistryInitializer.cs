@@ -28,7 +28,7 @@ namespace Rudeus.Procedure
             BfSettings = bfs ?? new Settings(RudeusBgFormRegKey);
         }
 
-        public void Run()
+        public async Task Run()
         {
             //Settings confSettings = new Settings();
             //Settings innoSettings = new Settings(InnoSetupUserDataRegKey);
