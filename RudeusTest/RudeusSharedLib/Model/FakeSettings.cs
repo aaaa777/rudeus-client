@@ -15,7 +15,7 @@ namespace RudeusSharedLibTest.RudeusSharedLib.Model
 
         public static ISettings Create() { return new FakeSettings(); }
 
-        public string LabelIdP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LabelIdP { get => "P12-345"; set => throw new NotImplementedException(); }
         public string CurrentVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string LastDirNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string LastVersionDirPathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

@@ -15,10 +15,10 @@ namespace Rudeus.Procedure
         private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
         private readonly static string InnoSetupUserDataRegKey = Constants.InnoSetupUserDataKey;
 
-        public static ISettings ConfSettings { get; set; } = new Settings();
-        public static ISettings InnoSettings { get; set; } = new Settings(InnoSetupUserDataRegKey);
-        public static ISettings BgSettings { get; set; } = new Settings(RudeusBgRegKey);
-        public static ISettings BfSettings { get; set; } = new Settings(RudeusBgFormRegKey);
+        public ISettings ConfSettings { get; set; } = new Settings();
+        public  ISettings InnoSettings { get; set; } = new Settings(InnoSetupUserDataRegKey);
+        public ISettings BgSettings { get; set; } = new Settings(RudeusBgRegKey);
+        public ISettings BfSettings { get; set; } = new Settings(RudeusBgFormRegKey);
 
 
         public void Run()

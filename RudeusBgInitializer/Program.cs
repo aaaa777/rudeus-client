@@ -11,21 +11,27 @@ using Rudeus.Procedure;
 
 class Program
 {
+    // DI for static class
+    public static IProcedure _registryInitializer = new RegistryInitializer();
+    public static IProcedure _taskInitializer = new TaskInitializer();
+    public static IProcedure _certificateInstaller = new CertificateInstaller();
+    public static IProcedure _serverRegister = new ServerRegister();
+
     static void Main(string[] args)
     {
         try
         {
             // Launcherのレジストリ初期値設定
-            RegistryInitializer.Run();
+            _registryInitializer.Run();
 
             // タスクスケジューラ登録処理
-            TaskInitializer.Run();
+            _taskInitializer.Run();
 
             // ルート証明書登録処理
-            CertificateInstaller.Run();
+            _certificateInstaller.Run();
 
             // デバイス情報送信、サーバ登録処理
-            ServerRegister.Run();
+            _serverRegister.Run();
         }
         catch (Exception ex) 
         {

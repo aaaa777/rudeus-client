@@ -91,7 +91,12 @@ namespace RudeusTest.RudeusSharedLib.API
                 return OKResponseString;
             }
 
-            throw new Exception("Unexpected Request Path");
+            if(path == Constants.ApiSendInstalledAppsPath)
+            {
+                return OKResponseString;
+            }
+
+            throw new Exception("FakeRequestClientに設定されていないAPIパスです");
         }
 
         public string OKResponseString = @"{""status"": ""ok""}";

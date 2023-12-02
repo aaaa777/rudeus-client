@@ -9,7 +9,7 @@ using static Rudeus.API.Exceptions;
 
 namespace RudeusTest.RudeusSharedLib.API
 {
-    public class TestRemoteAPI
+    public class RemoteAPITests
     {
         // TODO: Remoteに影響されないテストの作成方法
         [Fact]

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RudeusTest.RudeusSharedLib
 {
-    public class TestConstants
+    public class ConstantsTests
+
     {
         // Note: 変数やメソッドの定義はInterfaceで、メソッドのロジックをテストするのはTestで行うべき
         // Note: つまりConstantsクラスにはテストは必要ない

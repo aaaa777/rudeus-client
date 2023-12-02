@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RudeusTest.RudeusSharedLib.API
 {
-    internal class TestCallbackAPI
+    internal class CallbackAPITests
     {
     }
 }

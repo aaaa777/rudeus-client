@@ -8,7 +8,8 @@ using Rudeus;
 
 namespace RudeusTest.RudeusSharedLib
 {
-    public class TestUtils
+    public class UtilsTests
+
     {
         [Fact(DisplayName = "IsStudentMailAddress")]
         public void TestIsStudentMailAddress()

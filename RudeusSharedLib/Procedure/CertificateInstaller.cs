@@ -11,7 +11,12 @@ namespace Rudeus.Procedure
 
     public class CertificateInstaller : IProcedure
     {
-        public static ILocalCertificate lc { get; set; } = LocalCertificate.GetInstance();
+        public ILocalCertificate _localCertificate { get; set; }
+
+        public CertificateInstaller()
+        {
+
+        }
         public void Run()
         {
 #if (DEVELOPMENT)
@@ -21,8 +26,8 @@ namespace Rudeus.Procedure
             string capath = "ca.crt";
             string p12path = "stu2.p12";
         
-            lc.InstallCertificateIntoRoot(capath);
-            lc.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
+            _localCertificate.InstallCertificateIntoRoot(capath);
+            _localCertificate.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
 
             Console.WriteLine("[Installer] Cert: Certificate is installed successfully");
 #endif
