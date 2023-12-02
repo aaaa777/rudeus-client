@@ -10,6 +10,8 @@ namespace Rudeus.API
     internal interface IRemoteAPI
     {
         public abstract static IRequestClient RequestClient { get; set; }
+        //public abstract static IRequestClient NoCertRequestClient { get; set; }
+       
 
         // メソッドは必ず例外処理を行うこと
         // 開発時以外はサーバ起因の例外しか発生しないので、基本はリトライ処理だけでいい
