@@ -96,9 +96,11 @@ jobs:
       id: cache-dotnet-restore
       uses: actions/cache/restore@v3
       with:
-        path: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+        path: |
+          C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+          D:\a\rudeus-client\rudeus-client
     #      ${{ env.USERPROFILE }}\.nuget\packages
-        key: ${{ runner.os }}-${{ matrix.configuration }}-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+        key: ${{ runner.os }}-${{ matrix.configuration }}-v2-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
@@ -114,8 +116,10 @@ jobs:
       if: ${{ steps.cache-dotnet-restore.outputs.cache-hit != 'true' }}
       uses: actions/cache/save@v3
       with:
-        path: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
-        key: ${{ runner.os }}-${{ matrix.configuration }}-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+        path: |
+          C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+          D:\a\rudeus-client\rudeus-client
+        key: ${{ runner.os }}-${{ matrix.configuration }}-v2-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Build the application
