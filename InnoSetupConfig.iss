@@ -1,8 +1,15 @@
 ; -- InnoSetupConfig.iss --
 ;#define BuildType "Release"
-#define BuildType "Debug"
+;#define BuildType GetEnv("buildenv")
+#if GetEnv("RUDEUS_BUILD_TYPE") != ""
+#define DefaultBuildType GetEnv("RUDEUS_BUILD_TYPE")
+#else
+#define DefaultBuildType "Debug"
+#endif
 
 ; TODO: auto generateセクションを先頭に用意して複数ビルドを自動化するC#プロジェクトの作成
+; TODO: ビルド時に何らかの環境変数でコンパイルを指定できるようにする
+; RUDEUS_BUILD_TYPE := Debug | Release
 
 [Setup]
 AppId=7225E697-A594-4F3E-ABE9-8E8D9BAFEC9F
@@ -15,7 +22,7 @@ UninstallDisplayIcon={autopf}\HIU\BackGroundService.exe
 Compression=lzma2
 SolidCompression=yes
 OutputDir=userdocs:Inno Setup Examples Output  
-OutputBaseFilename=HIU_System_Manager_Installer_{#BuildType}
+OutputBaseFilename=HIU_System_Manager_Installer_{#DefaultBuildType}
 ; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
 ; anything but x64.
 ArchitecturesAllowed=x64
@@ -37,39 +44,39 @@ Name: "{autopf}\Windows System Application\last";
 Name: "{autopf}\HIU\System Manager\last";
 
 [Files]
-Source: "RudeusBgForm\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgForm.exe"; \
+Source: "RudeusBgForm\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgForm.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
   BeforeInstall: TaskKill('RudeusBgForm.exe'); \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgForm\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+Source: "RudeusBgForm\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   Excludes: "RudeusBgForm.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
   Flags: ignoreversion;
 
-Source: "RudeusBg\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBg.exe"; \
+Source: "RudeusBg\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusBg\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+Source: "RudeusBg\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   Excludes: "RudeusBg.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: uninsneveruninstall ignoreversion;
 
-Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
+Source: "RudeusLauncher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusLauncher\bin\{#BuildType}\net7.0-windows10.0.17763.0\*"; \
+Source: "RudeusLauncher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\*"; \
   Excludes: "RudeusLauncher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
   Flags: uninsneveruninstall ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgInitializer.exe"; \
+Source: "RudeusBgInitializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgInitializer.exe"; \
   DestDir: "{tmp}"; \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#BuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+Source: "RudeusBgInitializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   DestDir: "{tmp}"; \
   Flags: ignoreversion;
 
