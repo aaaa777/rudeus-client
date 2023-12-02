@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		ca.crt = ca.crt
 		codesign2.crt = codesign2.crt
 		InnoSetupConfig.iss = InnoSetupConfig.iss
+		README.md = README.md
 		stu2.crt = stu2.crt
 	EndProjectSection
 EndProject
@@ -25,19 +26,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusLauncher", "RudeusLau
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusSharedLibTest", "RudeusTest\RudeusSharedLibTest.csproj", "{5C85ADDC-4440-40BE-AF91-F918FBA0799E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBgTest", "RudeusBgTest\RudeusBgTest.csproj", "{4C826742-178B-4A72-832B-5996165F8517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgTest", "RudeusBgTest\RudeusBgTest.csproj", "{4C826742-178B-4A72-832B-5996165F8517}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2AE02423-85E4-4A7F-A0AC-54415CE03892} = {2AE02423-85E4-4A7F-A0AC-54415CE03892}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBgInitializerTest", "RudeusBgInitializerTest\RudeusBgInitializerTest.csproj", "{AC5C361C-71E5-4C56-A18E-B6366F24A75C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgInitializerTest", "RudeusBgInitializerTest\RudeusBgInitializerTest.csproj", "{AC5C361C-71E5-4C56-A18E-B6366F24A75C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1B243447-C4D2-4ED9-8FB5-D2221210D357} = {1B243447-C4D2-4ED9-8FB5-D2221210D357}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusBgFormTest", "RudeusBgFormTest\RudeusBgFormTest.csproj", "{0561B695-1394-4F4B-989B-FBB2572A5765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgFormTest", "RudeusBgFormTest\RudeusBgFormTest.csproj", "{0561B695-1394-4F4B-989B-FBB2572A5765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusLauncherTest", "RudeusLauncherTest\RudeusLauncherTest.csproj", "{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusLauncherTest", "RudeusLauncherTest\RudeusLauncherTest.csproj", "{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
