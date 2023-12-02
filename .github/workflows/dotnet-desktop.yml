@@ -115,6 +115,7 @@ jobs:
       uses: actions/cache/save@v3
       with:
         path: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+        key: ${{ runner.os }}-${{ matrix.configuration }}-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Build the application
