@@ -26,7 +26,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\RegistryInitializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)procedure\ScheduledRegulerExecuter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\ServerRegister.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Procedure\StartUserLoginFlow.cs" />
+    <Compile Include="..\RudeusSharedLib\Procedure\UserLoginExecuter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)procedure\TaskInitializer.cs" />
     <Compile Include="..\RudeusSharedLib\Model\LocalCertificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />

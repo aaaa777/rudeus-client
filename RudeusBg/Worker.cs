@@ -17,9 +17,9 @@ namespace RudeusBg
         private string[] _args;
 
         // DI for static class
-        public IProcedure ATVProcedure = new AccessTokenValidator();
-        public IProcedure SREProcedure = new ScheduledRegularExecuter();
-        public IProcedure SURFProcedure = new StartUserLoginFlow();
+        public IProcedure _accessTokenValidator = new AccessTokenValidator();
+        public IProcedure _scheduledRelularExecuter = new ScheduledRegularExecuter();
+        public IProcedure _userLoginExecuter = new UserLoginExecuter();
 
         public static Settings settings { get; set; } = new Settings();
 
@@ -46,20 +46,20 @@ namespace RudeusBg
 
 
             // 初期化
-            ATVProcedure.Run();
+            _accessTokenValidator.Run();
 
             // 通常起動時
             if (mode == "default")
             {
                 // UpdateDeviceの実行
-                SREProcedure.Run();
+                _scheduledRelularExecuter.Run();
 
                 //InstalledAppsSender.Run();
             }
 
             if (mode == "login")
             {
-                SURFProcedure.Run();
+                _userLoginExecuter.Run();
             }
 
             // テスト実装確認用

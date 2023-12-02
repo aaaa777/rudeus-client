@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
+namespace RudeusSharedLibTest.RudeusSharedLib.Model
 {
     internal class FakeLocalCertificate : ILocalCertificate
     {
