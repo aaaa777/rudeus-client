@@ -258,12 +258,12 @@ namespace Rudeus.API
                 { 
                     return jsonResponse;
                 }
-                throw new Exception("JSONSerializer return null");
+                throw new UnexpectedResponseException("JSONSerializer return null");
             }
             catch
             {
                 // JSONフォーマットが違った場合
-                throw;
+                throw new UnexpectedResponseException("Server response invalid json");
             }
         }
 
@@ -288,7 +288,7 @@ namespace Rudeus.API
                 {
                     return jsonResponse;
                 }
-                throw new Exception("JSONSerializer return null");
+                throw new UnexpectedResponseException("JSONSerializer return null");
             } 
             catch
             {
@@ -322,7 +322,7 @@ namespace Rudeus.API
                 {
                     return jsonResponse;
                 }
-                throw new Exception("JSONSerializer return null");
+                throw new UnexpectedResponseException("JSONSerializer return null");
             }
             catch
             {
@@ -382,12 +382,12 @@ namespace Rudeus.API
                 {
                     return jsonResponse;
                 }
-                throw new Exception("JSONSerializer return null");
+                throw new UnexpectedResponseException("JSONSerializer return null");
             }
             catch
             {
                 // JSONフォーマットが違った場合
-                throw new Exception("server error");
+                throw new UnexpectedResponseException("server error");
             }
         }
 
@@ -405,7 +405,7 @@ namespace Rudeus.API
                 {
                     return jsonResponse;
                 }
-                throw new Exception("JSONSerializer return null");
+                throw new UnexpectedResponseException("JSONSerializer return null");
             }
             catch
             {
@@ -454,7 +454,7 @@ namespace Rudeus.API
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            string requestUser = data.Query?.Get("user_id") ?? throw new Exception("invaild request received");
+            string requestUser = data.Query?.Get("user_id") ?? throw new UnexpectedResponseException("invaild request received");
 
 
             return requestUser;
