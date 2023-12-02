@@ -231,6 +231,6 @@ jobs:
         release_id: 138580038 # same as above (id can just be taken out the upload_url, it's used to find old releases)
         asset_path: C:\Users\runneradmin\Documents\Inno Setup Examples Output\HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # path to archive to upload
         #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
-        asset_name: Rudeus_launcher_head_${{ matrix.configuration }}.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+        asset_name: HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
         #max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
