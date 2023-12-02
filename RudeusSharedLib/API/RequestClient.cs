@@ -1,4 +1,4 @@
-// HTTPƒŠƒNƒGƒXƒg‚ÌƒXƒ^ƒuì¬—pRESTƒNƒ‰ƒCƒAƒ“ƒg
+ï»¿// HTTPãƒªã‚¯ã‚¨ã‚¹ãƒˆã®ã‚¹ã‚¿ãƒ–ä½œæˆç”¨RESTã‚¯ãƒ©ã‚¤ã‚¢ãƒ³ãƒˆ
 
 using Rudeus.API.Request;
 using System.Net;
@@ -32,18 +32,18 @@ namespace Rudeus.API
 
             if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
-                throw new AccessTokenUnavailableException("ƒAƒNƒZƒXƒg[ƒNƒ“‚ª–³Œø‚Å‚·");
+                throw new AccessTokenUnavailableException("ã‚¢ã‚¯ã‚»ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³ãŒç„¡åŠ¹ã§ã™");
             }
 
             if (response.StatusCode == HttpStatusCode.BadRequest)
             {
-                // ƒoƒO‚Ì‰Â”\«‚ª‚‚¢
+                // ãƒã‚°ã®å¯èƒ½æ€§ãŒé«˜ã„
                 throw new ServerUnavailableException(response.Content.ReadAsStringAsync().Result);
             }
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
-                throw new UnexpectedResponseException($"`{message.RequestUri.ToString()}`‚Å—\Šú‚µ‚È‚¢ƒXƒe[ƒ^ƒXƒR[ƒh`{response.StatusCode}`‚ª•Ô‚³‚ê‚Ü‚µ‚½");
+                throw new UnexpectedResponseException($"`{message.RequestUri.ToString()}`ã§äºˆæœŸã—ãªã„ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ã‚³ãƒ¼ãƒ‰`{response.StatusCode}`ãŒè¿”ã•ã‚Œã¾ã—ãŸ");
             }
 
             return response;
