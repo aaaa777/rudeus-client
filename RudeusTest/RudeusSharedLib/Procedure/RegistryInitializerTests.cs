@@ -1,5 +1,5 @@
 ﻿using Rudeus.Procedure;
-using RudeusSharedLibTest.RudeusSharedLib.Model;
+using Rudeus.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
