@@ -1,8 +1,8 @@
 ; -- InnoSetupConfig.iss --
 ;#define BuildType "Release"
 ;#define BuildType GetEnv("buildenv")
-#if GetEnv("RUDEUS_BUILD_TYPE") != ""
-#define DefaultBuildType GetEnv("RUDEUS_BUILD_TYPE")
+#if GetEnv("Configuration") != ""
+#define DefaultBuildType GetEnv("Configuration")
 #else
 #define DefaultBuildType "Debug"
 #endif
