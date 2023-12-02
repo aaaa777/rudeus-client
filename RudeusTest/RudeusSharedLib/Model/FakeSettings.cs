@@ -9,97 +9,98 @@ namespace RudeusSharedLibTest.RudeusSharedLib.Model
 {
     internal class FakeSettings : ISettings
     {
+        // TODO: ダミーのレジストリを作成する
 
         private static ISettings _fakeSettings = new FakeSettings();
         public static ISettings GetInstance() { return _fakeSettings; }
 
         public static ISettings Create() { return new FakeSettings(); }
 
-        public string LabelIdP { get => "P12-345"; set => throw new NotImplementedException(); }
-        public string CurrentVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastDirNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastVersionDirPathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LastVersionExeNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LabelIdP { get => "P12-345"; set { } }
+        public string CurrentVersionP { get => "1.0.0"; set { } }
+        public string LastDirNameP { get => "test"; set { } }
+        public string LastVersionDirPathP { get => "/test"; set { } }
+        public string LastVersionExeNameP { get => "test.exe"; set { } }
 
         public string LastVersionExePathP => throw new NotImplementedException();
 
-        public string LatestDirNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LatestVersionDirPathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string LatestVersionExeNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LatestDirNameP { get => "test"; set { } }
+        public string LatestVersionDirPathP { get => "/test"; set { } }
+        public string LatestVersionExeNameP { get => "test.exe"; set { } }
 
         public string LatestVersionExePathP => throw new NotImplementedException();
 
-        public string LatestVersionStatusP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string UpdatingChannelP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LatestVersionStatusP { get => "1.0.0"; set { } }
+        public string UpdatingChannelP { get => "test"; set { } }
 
         public bool IsBetaChannelP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsDevelopChannelP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsLatestVersionStatusDownloadedP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsLatestVersionStatusOkP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsLatestVersionStatusUnlaunchableP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsStableChannelP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public bool IsTestChannelP()
         {
-            throw new NotImplementedException();
+            return false;
         }
 
         public void SetBetaChannelP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetDevelopChannelP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetLatestVersionStatusDownloadedP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetLatestVersionStatusOkP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetLatestVersionStatusUnlaunchableP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetStableChannelP()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void SetTestChannelP()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
