@@ -57,7 +57,7 @@ jobs:
 
     env:
       Solution_Name: Rudeus.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      DOTNET_INSTALL_DIR: '.\.dotnet'
+      #DOTNET_INSTALL_DIR: '.\.dotnet'
       #PATH: ${{ env.DOTNET_INSTALL_DIR }};%PATH%;
       #Test_Project_Path: your-test-project-path                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       #Wap_Project_Directory: your-wap-project-directory-name    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
@@ -97,9 +97,9 @@ jobs:
       with:
         path: |
           C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
-          D:\a\rudeus-client\rudeus-client
+          D:\a\rudeus-client\rudeus-client\**\obj
     #      ${{ env.USERPROFILE }}\.nuget\packages
-        key: ${{ runner.os }}-${{ matrix.configuration }}-v2-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+        key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
@@ -117,8 +117,8 @@ jobs:
       with:
         path: |
           C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
-          D:\a\rudeus-client\rudeus-client
-        key: ${{ runner.os }}-${{ matrix.configuration }}-v2-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
+          D:\a\rudeus-client\rudeus-client\**\obj
+        key: ${{ runner.os }}-${{ matrix.configuration }}-v3-dotnet-${{ hashFiles('**/*.csproj', '**/*.sln') }}
 
 
     # Build the application
