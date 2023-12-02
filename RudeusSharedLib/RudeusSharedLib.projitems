@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)API\CallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)api\Exceptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\FakeRequestClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\ICallbackAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRequestClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\RequestClient.cs" />
