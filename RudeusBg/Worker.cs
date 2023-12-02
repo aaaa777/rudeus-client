@@ -26,7 +26,7 @@ namespace RudeusBg
         public Worker(ILogger<Worker> logger, IProcedure? at = null, IProcedure? sr = null, IProcedure? ul = null)
         {
             _logger = logger;
-            _args = Program.commandArgs;
+            _args = Program.commandArgs ?? new string[] { };
             _accessTokenValidator = at ?? new AccessTokenValidator(settings);
             _scheduledRelularExecuter = sr ?? new ScheduledRegularExecuter();
             _userLoginExecuter = ul ?? new UserLoginExecuter();
