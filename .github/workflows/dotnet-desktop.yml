@@ -131,33 +131,6 @@ jobs:
     #    asset_path: .\RudeusLauncher\bin\Release\RudeusLauncher.zip
     #    asset_name: RudeusLauncher.zip
     #    asset_content_type: application/zip
-    - name: Delete old assets
-      uses: mknejp/delete-release-assets@v1
-      with:
-        token: ${{ github.token }}
-        tag: latest # This may also be of the form 'refs/tags/staging'
-
-        # Optional another repository
-        #repository: aaaa777/rudeus-client
-
-        # Pick one of:
-        assets: Rudeus_launcher_head_${{ matrix.configuration }}.zip
-
-        fail-if-no-assets: false
-    # 
-    - name: Deploy Windows release
-      #if: matrix.os == 'windows-latest'
-      uses: WebFreak001/deploy-nightly@v2.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
-      with:
-        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
-        release_id: 132351782 # same as above (id can just be taken out the upload_url, it's used to find old releases)
-        asset_path: .\RudeusPackage${{ matrix.configuration }}.zip # path to archive to upload
-        #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
-        asset_name: Rudeus_launcher_head_${{ matrix.configuration }}.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
-        asset_content_type: application/zip # required by GitHub API
-        max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
@@ -176,14 +149,18 @@ jobs:
     - name: Compile Inno Setup
     #  run: iscc.exe /?
       run: iscc.exe '/Ssigntool2=.\signtool.exe sign /v /f $qD:\a\rudeus-client\rudeus-client\GitHubActionsWorkflow.pfx$q /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $p' InnoSetupConfig.iss
+      env:
+        Configuration: ${{ matrix.configuration }}
+
+    
     # Create the app package by building and packaging the Windows Application Packaging project
     #- name: Create the app package
     #  run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
-      env:
+    #  env:
     #    Appx_Bundle: Always
     #    Appx_Bundle_Platforms: x86|x64
     #    Appx_Package_Build_Mode: StoreUpload
-        Configuration: ${{ matrix.configuration }}
+    #    Configuration: ${{ matrix.configuration }}
 
     # Remove the pfx
     - name: Remove the pfx
@@ -195,3 +172,31 @@ jobs:
     #  with:
     #    name: MSIX Package
     #    path: ${{ env.Wap_Project_Directory }}\AppPackages
+
+    - name: Delete old assets
+      uses: mknejp/delete-release-assets@v1
+      with:
+        token: ${{ github.token }}
+        tag: latest # This may also be of the form 'refs/tags/staging'
+
+        # Optional another repository
+        #repository: aaaa777/rudeus-client
+
+        # Pick one of:
+        assets: Installer_latest_${{ matrix.configuration }}.exe
+
+        fail-if-no-assets: false
+    # 
+    - name: Deploy Windows release assets
+      #if: matrix.os == 'windows-latest'
+      uses: WebFreak001/deploy-nightly@v2.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
+      with:
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
+        #release_id: 132351782 # same as above (id can just be taken out the upload_url, it's used to find old releases)
+        asset_path: C:\Users\runneradmin\Documents\Inno Setup Examples Output\HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # path to archive to upload
+        #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+        asset_name: Rudeus_launcher_head_${{ matrix.configuration }}.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
+        asset_content_type: application/zip # required by GitHub API
+        #max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
