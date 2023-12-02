@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Rudeus.Procedure;
 using RudeusSharedLibTest.RudeusSharedLib.Model;
 
-namespace RudeusTest.RudeusSharedLib.Procedure
+namespace RudeusSharedLibTest.RudeusSharedLib.Procedure
 {
     public class CertificateInstallerTests
     {

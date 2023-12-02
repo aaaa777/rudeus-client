@@ -1,4 +1,4 @@
-namespace RudeusTest
+namespace RudeusSharedLibTest
 {
     public class UnitTestSample
     {
