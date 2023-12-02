@@ -11,3 +11,9 @@
 - [x] /api/check_access_token
 - [x] /api/application_update
 - [x] /api/check_server_status
+
+# Secrets to be added
+
+- `Base64_Encoded_Pfx` - コードサイン用のPFXファイルをBase64エンコードしたもの
+- `Pfx_Passphrase` - コードサイン用のPFXファイルのパスワードをBase64エンコードしたもの
+- 

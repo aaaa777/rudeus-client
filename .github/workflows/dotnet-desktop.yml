@@ -229,10 +229,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # automatically provided by github actions
       with:
-        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/138580038/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
-        release_id: 138580038 # same as above (id can just be taken out the upload_url, it's used to find old releases)
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label} # find out this value by opening https://api.github.com/repos/<owner>/<repo>/releases in your browser and copy the full "upload_url" value including the {?name,label} part
+        release_id: 132351782 # same as above (id can just be taken out the upload_url, it's used to find old releases)
         asset_path: C:\Users\runneradmin\Documents\Inno Setup Examples Output\HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # path to archive to upload
         #asset_name: Rudeus_launcher-${{ matrix.configuration }}-$$.zip # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_name: HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
-        #max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+        max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
