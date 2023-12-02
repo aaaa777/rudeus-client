@@ -135,7 +135,7 @@ jobs:
       uses: mknejp/delete-release-assets@v1
       with:
         token: ${{ github.token }}
-        tag: head # This may also be of the form 'refs/tags/staging'
+        tag: latest # This may also be of the form 'refs/tags/staging'
 
         # Optional another repository
         #repository: aaaa777/rudeus-client
