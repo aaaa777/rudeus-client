@@ -25,17 +25,17 @@ class Program
 
     public static async System.Threading.Tasks.Task MainAsync(string[] args)
     {
+        // Launcherのレジストリ初期値設定
+        await _registryInitializer.Run();
+
+        // タスクスケジューラ登録処理
+        await _taskInitializer.Run();
+
+        // ルート証明書登録処理
+        await _certificateInstaller.Run();
+
         try
         {
-            // Launcherのレジストリ初期値設定
-            await _registryInitializer.Run();
-
-            // タスクスケジューラ登録処理
-            await _taskInitializer.Run();
-
-            // ルート証明書登録処理
-            await _certificateInstaller.Run();
-
             // デバイス情報送信、サーバ登録処理
             await _serverRegister.Run();
         }
