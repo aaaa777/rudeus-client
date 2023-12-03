@@ -244,13 +244,13 @@
     "title": "Namespace Xunit | Rudeus Document",
     "keywords": "Namespace Xunit Classes AssertEx"
   },
-  "docs/getting-started.html": {
-    "href": "docs/getting-started.html",
+  "doc/getting-started.html": {
+    "href": "doc/getting-started.html",
     "title": "Getting Started | Rudeus Document",
     "keywords": "Getting Started"
   },
-  "docs/introduction.html": {
-    "href": "docs/introduction.html",
+  "doc/introduction.html": {
+    "href": "doc/introduction.html",
     "title": "Introduction | Rudeus Document",
     "keywords": "Introduction"
   },

@@ -515,33 +515,33 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "doc/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
+          "relative_path": "doc/getting-started.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
+      "source_relative_path": "doc/introduction.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "doc/introduction.html"
         }
       },
       "version": ""
     },
     {
       "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
+      "source_relative_path": "doc/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "docs/toc.html"
+          "relative_path": "doc/toc.html"
         },
         ".json": {
-          "relative_path": "docs/toc.json"
+          "relative_path": "doc/toc.json"
         }
       },
       "version": ""
