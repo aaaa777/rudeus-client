@@ -1,30 +1,31 @@
-using RudeusBg;
-
-class Program
+namespace Rudeus.Bg
 {
-    internal static string[]? commandArgs;
-    public static void Main(string[] args)
+    class Program
     {
-        commandArgs = args;
+        internal static string[]? commandArgs;
+        public static void Main(string[] args)
+        {
+            commandArgs = args;
 
-        IHost host = Host.CreateDefaultBuilder(args)
-            .ConfigureServices(services =>
+            IHost host = Host.CreateDefaultBuilder(args)
+                .ConfigureServices(services =>
+                {
+                    services.AddHostedService<Worker>();
+                })
+                .Build();
+
+            try
             {
-                services.AddHostedService<Worker>();
-            })
-            .Build();
-
-        try
-        {
-            host.Run();
-        } 
-        catch(Exception ex)
-        {
-            Console.WriteLine(ex.ToString());
+                host.Run();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
 #if (!RELEASE)
-    //Console.ReadLine();
+                //Console.ReadLine();
 #endif
-        }
+            }
 
+        }
     }
 }

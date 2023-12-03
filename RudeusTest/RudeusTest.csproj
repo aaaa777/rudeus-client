@@ -32,9 +32,11 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="RudeusSharedLib\Model\" />
+    <Folder Include="RudeusLib\Model\" />
   </ItemGroup>
 
-  <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
+  </ItemGroup>
 
 </Project>

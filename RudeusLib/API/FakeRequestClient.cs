@@ -11,7 +11,7 @@ using static Rudeus.API.Exceptions;
 
 namespace Rudeus.API
 {
-    internal class FakeRequestClient : IRequestClient
+    public class FakeRequestClient : IRequestClient
     {
         public bool RaiseUnreachableException;
         public bool RaiseUnauthorizedException;

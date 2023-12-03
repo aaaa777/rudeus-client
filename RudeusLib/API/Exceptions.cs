@@ -1,7 +1,7 @@
 
 namespace Rudeus.API
 {
-    class Exceptions
+    public class Exceptions
     {
         public class ServerUnavailableException : System.Exception
         {

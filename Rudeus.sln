@@ -28,7 +28,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusUninstaller", "Rudeus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusLauncher", "RudeusLauncher\RudeusLauncher.csproj", "{BE9569B8-AA21-4061-891C-48FDC3A08A01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusSharedLibTest", "RudeusTest\RudeusSharedLibTest.csproj", "{5C85ADDC-4440-40BE-AF91-F918FBA0799E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusTest", "RudeusTest\RudeusTest.csproj", "{5C85ADDC-4440-40BE-AF91-F918FBA0799E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgTest", "RudeusBgTest\RudeusBgTest.csproj", "{4C826742-178B-4A72-832B-5996165F8517}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -267,7 +267,6 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RudeusSharedLib\RudeusSharedLib.projitems*{1b243447-c4d2-4ed9-8fb5-d2221210d357}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{3a757969-84e1-42b6-991a-2e871a4b706a}*SharedItemsImports = 13
-		RudeusSharedLib\RudeusSharedLib.projitems*{5c85addc-4440-40be-af91-f918fba0799e}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{9756d22b-afc9-457b-b2d1-b616cff6b359}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{be9569b8-aa21-4061-891c-48fdc3a08a01}*SharedItemsImports = 5
 	EndGlobalSection

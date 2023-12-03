@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Procedure;
 
-namespace RudeusSharedLibTest.Procedure
+namespace RudeusLibTest.Procedure
 {
     public class CertificateInstallerTests
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusSharedLibTest.API
+namespace RudeusLibTest.API
 {
     internal class CallbackAPITests
     {

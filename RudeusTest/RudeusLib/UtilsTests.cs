@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus;
 
-namespace RudeusSharedLibTest
+namespace RudeusLibTest
 {
     public class UtilsTests
 

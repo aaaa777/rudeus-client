@@ -11,7 +11,7 @@ namespace Rudeus.Model
     /// <summary>
     /// ローカルマシンの証明書を操作するモデルのFake実装
     /// </summary>
-    internal class FakeLocalCertificate : ILocalCertificate
+    public class FakeLocalCertificate : ILocalCertificate
     {
         public static ILocalCertificate _fakeLocalCertificate = new FakeLocalCertificate();
 

@@ -12,7 +12,7 @@ namespace Rudeus.Procedure
     /// <summary>
     /// ローカルマシンに必要なレジストリを初期化する手続き
     /// </summary>
-    internal class RegistryInitializer : IProcedure
+    public class RegistryInitializer : IProcedure
     {
         private readonly static string RudeusBgRegKey = Constants.RudeusBgRegKey;
         private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
