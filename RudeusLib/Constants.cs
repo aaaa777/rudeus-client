@@ -7,7 +7,7 @@ namespace Rudeus
     /// <summary>
     /// 定数を定義するクラス
     /// </summary>
-    class Constants
+    public class Constants
     {
         /// <summary>
         /// クライアント認証を強制しない場合はtrue

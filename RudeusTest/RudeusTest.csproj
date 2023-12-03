@@ -36,6 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RudeusLauncher\RudeusLauncher.csproj" />
     <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
   </ItemGroup>
 
