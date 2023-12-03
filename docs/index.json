@@ -244,6 +244,16 @@
     "title": "Namespace Xunit | Rudeus Document",
     "keywords": "Namespace Xunit Classes AssertEx"
   },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Rudeus Document",
+    "keywords": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | Rudeus Document",
+    "keywords": "Introduction"
+  },
   "index.html": {
     "href": "index.html",
     "title": "This is the HOMEPAGE. | Rudeus Document",

@@ -19,6 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		InnoSetupConfig.iss = InnoSetupConfig.iss
 		README.md = README.md
 		stu2.crt = stu2.crt
+		DocFX\toc.yml = DocFX\toc.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgInitializer", "RudeusBgInitializer\RudeusBgInitializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
