@@ -41,6 +41,7 @@
     <ProjectReference Include="..\RudeusBg\Command.csproj" />
     <ProjectReference Include="..\RudeusLauncher\Launcher.csproj" />
     <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
+    <ProjectReference Include="..\RudeusUninstaller\Uninstaller.csproj" />
   </ItemGroup>
 
 </Project>

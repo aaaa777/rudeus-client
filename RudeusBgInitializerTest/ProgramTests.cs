@@ -1,8 +1,8 @@
 
-using RudeusBgInitializer;
+using Rudeus.Initializer;
 using Rudeus.Procedure;
 
-namespace RudeusBgInitializerTest
+namespace Rudeus.Initializer.Test
 {
     public class ProgramTests
     {
