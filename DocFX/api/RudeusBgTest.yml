@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RudeusBgTest
+  commentId: N:RudeusBgTest
+  id: RudeusBgTest
+  children:
+  - RudeusBgTest.UnitTest1
+  langs:
+  - csharp
+  - vb
+  name: RudeusBgTest
+  nameWithType: RudeusBgTest
+  fullName: RudeusBgTest
+  type: Namespace
+  assemblies:
+  - RudeusBgTest
+references:
+- uid: RudeusBgTest.UnitTest1
+  commentId: T:RudeusBgTest.UnitTest1
+  href: RudeusBgTest.UnitTest1.html
+  name: UnitTest1
+  nameWithType: UnitTest1
+  fullName: RudeusBgTest.UnitTest1

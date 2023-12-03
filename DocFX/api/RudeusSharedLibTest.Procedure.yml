@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: RudeusSharedLibTest.Procedure
+  commentId: N:RudeusSharedLibTest.Procedure
+  id: RudeusSharedLibTest.Procedure
+  children:
+  - RudeusSharedLibTest.Procedure.CertificateInstallerTests
+  - RudeusSharedLibTest.Procedure.FakeProcedureTests
+  - RudeusSharedLibTest.Procedure.RegistryInitializerTests
+  langs:
+  - csharp
+  - vb
+  name: RudeusSharedLibTest.Procedure
+  nameWithType: RudeusSharedLibTest.Procedure
+  fullName: RudeusSharedLibTest.Procedure
+  type: Namespace
+  assemblies:
+  - RudeusSharedLibTest
+references:
+- uid: RudeusSharedLibTest.Procedure.CertificateInstallerTests
+  commentId: T:RudeusSharedLibTest.Procedure.CertificateInstallerTests
+  href: RudeusSharedLibTest.Procedure.CertificateInstallerTests.html
+  name: CertificateInstallerTests
+  nameWithType: CertificateInstallerTests
+  fullName: RudeusSharedLibTest.Procedure.CertificateInstallerTests
+- uid: RudeusSharedLibTest.Procedure.FakeProcedureTests
+  commentId: T:RudeusSharedLibTest.Procedure.FakeProcedureTests
+  href: RudeusSharedLibTest.Procedure.FakeProcedureTests.html
+  name: FakeProcedureTests
+  nameWithType: FakeProcedureTests
+  fullName: RudeusSharedLibTest.Procedure.FakeProcedureTests
+- uid: RudeusSharedLibTest.Procedure.RegistryInitializerTests
+  commentId: T:RudeusSharedLibTest.Procedure.RegistryInitializerTests
+  href: RudeusSharedLibTest.Procedure.RegistryInitializerTests.html
+  name: RegistryInitializerTests
+  nameWithType: RegistryInitializerTests
+  fullName: RudeusSharedLibTest.Procedure.RegistryInitializerTests

@@ -1,0 +1,821 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Model.ILocalMachine
+  commentId: T:Rudeus.Model.ILocalMachine
+  id: ILocalMachine
+  parent: Rudeus.Model
+  children:
+  - Rudeus.Model.ILocalMachine.GetDeviceId
+  - Rudeus.Model.ILocalMachine.GetHostname
+  - Rudeus.Model.ILocalMachine.GetInstance
+  - Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
+  - Rudeus.Model.ILocalMachine.GetSpec
+  - Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
+  - Rudeus.Model.ILocalMachine.GetWinVersion
+  langs:
+  - csharp
+  - vb
+  name: ILocalMachine
+  nameWithType: ILocalMachine
+  fullName: Rudeus.Model.ILocalMachine
+  type: Interface
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: ILocalMachine
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 5
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  summary: ローカルマシンの情報を取得するモデルのインターフェース
+  example: []
+  syntax:
+    content: public interface ILocalMachine
+    content.vb: Public Interface ILocalMachine
+  extensionMethods:
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: Rudeus.Model.ILocalMachine.GetInstance
+  commentId: M:Rudeus.Model.ILocalMachine.GetInstance
+  id: GetInstance
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetInstance()
+  nameWithType: ILocalMachine.GetInstance()
+  fullName: Rudeus.Model.ILocalMachine.GetInstance()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetInstance
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 7
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: public static abstract ILocalMachine GetInstance()
+    return:
+      type: Rudeus.Model.ILocalMachine
+    content.vb: Public Shared MustInherit Function GetInstance() As ILocalMachine
+  overload: Rudeus.Model.ILocalMachine.GetInstance*
+- uid: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
+  commentId: M:Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
+  id: GetPhysicalRamInfo
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetPhysicalRamInfo()
+  nameWithType: ILocalMachine.GetPhysicalRamInfo()
+  fullName: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetPhysicalRamInfo
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 9
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetPhysicalRamInfo()
+    return:
+      type: System.String
+    content.vb: Function GetPhysicalRamInfo() As String
+  overload: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo*
+- uid: Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
+  commentId: M:Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
+  id: GetStorageDeviceIdList
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetStorageDeviceIdList()
+  nameWithType: ILocalMachine.GetStorageDeviceIdList()
+  fullName: Rudeus.Model.ILocalMachine.GetStorageDeviceIdList()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetStorageDeviceIdList
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 10
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: List<string> GetStorageDeviceIdList()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Function GetStorageDeviceIdList() As List(Of String)
+  overload: Rudeus.Model.ILocalMachine.GetStorageDeviceIdList*
+- uid: Rudeus.Model.ILocalMachine.GetDeviceId
+  commentId: M:Rudeus.Model.ILocalMachine.GetDeviceId
+  id: GetDeviceId
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetDeviceId()
+  nameWithType: ILocalMachine.GetDeviceId()
+  fullName: Rudeus.Model.ILocalMachine.GetDeviceId()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetDeviceId
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 12
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetDeviceId()
+    return:
+      type: System.String
+    content.vb: Function GetDeviceId() As String
+  overload: Rudeus.Model.ILocalMachine.GetDeviceId*
+- uid: Rudeus.Model.ILocalMachine.GetHostname
+  commentId: M:Rudeus.Model.ILocalMachine.GetHostname
+  id: GetHostname
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetHostname()
+  nameWithType: ILocalMachine.GetHostname()
+  fullName: Rudeus.Model.ILocalMachine.GetHostname()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetHostname
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 14
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetHostname()
+    return:
+      type: System.String
+    content.vb: Function GetHostname() As String
+  overload: Rudeus.Model.ILocalMachine.GetHostname*
+- uid: Rudeus.Model.ILocalMachine.GetWinVersion
+  commentId: M:Rudeus.Model.ILocalMachine.GetWinVersion
+  id: GetWinVersion
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetWinVersion()
+  nameWithType: ILocalMachine.GetWinVersion()
+  fullName: Rudeus.Model.ILocalMachine.GetWinVersion()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetWinVersion
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 16
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetWinVersion()
+    return:
+      type: System.String
+    content.vb: Function GetWinVersion() As String
+  overload: Rudeus.Model.ILocalMachine.GetWinVersion*
+- uid: Rudeus.Model.ILocalMachine.GetSpec
+  commentId: M:Rudeus.Model.ILocalMachine.GetSpec
+  id: GetSpec
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetSpec()
+  nameWithType: ILocalMachine.GetSpec()
+  fullName: Rudeus.Model.ILocalMachine.GetSpec()
+  type: Method
+  source:
+    remote:
+      path: RudeusSharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetSpec
+    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    startLine: 18
+  assemblies:
+  - RudeusBg
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetSpec()
+    return:
+      type: System.String
+    content.vb: Function GetSpec() As String
+  overload: Rudeus.Model.ILocalMachine.GetSpec*
+references:
+- uid: Rudeus.Model
+  commentId: N:Rudeus.Model
+  href: Rudeus.html
+  name: Rudeus.Model
+  nameWithType: Rudeus.Model
+  fullName: Rudeus.Model
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Model
+    name: Model
+    href: Rudeus.Model.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Model
+    name: Model
+    href: Rudeus.Model.html
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Rudeus.Model.ILocalMachine.GetInstance*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetInstance
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetInstance
+  name: GetInstance
+  nameWithType: ILocalMachine.GetInstance
+  fullName: Rudeus.Model.ILocalMachine.GetInstance
+- uid: Rudeus.Model.ILocalMachine
+  commentId: T:Rudeus.Model.ILocalMachine
+  parent: Rudeus.Model
+  href: Rudeus.Model.ILocalMachine.html
+  name: ILocalMachine
+  nameWithType: ILocalMachine
+  fullName: Rudeus.Model.ILocalMachine
+- uid: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetPhysicalRamInfo
+  name: GetPhysicalRamInfo
+  nameWithType: ILocalMachine.GetPhysicalRamInfo
+  fullName: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Rudeus.Model.ILocalMachine.GetStorageDeviceIdList*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetStorageDeviceIdList
+  name: GetStorageDeviceIdList
+  nameWithType: ILocalMachine.GetStorageDeviceIdList
+  fullName: Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Rudeus.Model.ILocalMachine.GetDeviceId*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetDeviceId
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetDeviceId
+  name: GetDeviceId
+  nameWithType: ILocalMachine.GetDeviceId
+  fullName: Rudeus.Model.ILocalMachine.GetDeviceId
+- uid: Rudeus.Model.ILocalMachine.GetHostname*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetHostname
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetHostname
+  name: GetHostname
+  nameWithType: ILocalMachine.GetHostname
+  fullName: Rudeus.Model.ILocalMachine.GetHostname
+- uid: Rudeus.Model.ILocalMachine.GetWinVersion*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetWinVersion
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetWinVersion
+  name: GetWinVersion
+  nameWithType: ILocalMachine.GetWinVersion
+  fullName: Rudeus.Model.ILocalMachine.GetWinVersion
+- uid: Rudeus.Model.ILocalMachine.GetSpec*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetSpec
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetSpec
+  name: GetSpec
+  nameWithType: ILocalMachine.GetSpec
+  fullName: Rudeus.Model.ILocalMachine.GetSpec

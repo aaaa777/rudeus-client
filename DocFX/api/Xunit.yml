@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Xunit
+  commentId: N:Xunit
+  id: Xunit
+  children:
+  - Xunit.AssertEx
+  langs:
+  - csharp
+  - vb
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+  type: Namespace
+  assemblies:
+  - RudeusBgInitializerTest
+references:
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit

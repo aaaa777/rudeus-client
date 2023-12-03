@@ -1,0 +1,116 @@
+### YamlMime:TableOfContent
+items:
+- uid: Rudeus
+  name: Rudeus
+  items:
+  - uid: Rudeus.IUtils
+    name: IUtils
+  - uid: Rudeus.Utils
+    name: Utils
+- uid: Rudeus.API
+  name: Rudeus.API
+  items:
+  - uid: Rudeus.API.IRequestClient
+    name: IRequestClient
+  - uid: Rudeus.API.RequestClient
+    name: RequestClient
+- uid: Rudeus.Model
+  name: Rudeus.Model
+  items:
+  - uid: Rudeus.Model.FakeSettings
+    name: FakeSettings
+  - uid: Rudeus.Model.ILocalCertificate
+    name: ILocalCertificate
+  - uid: Rudeus.Model.ILocalMachine
+    name: ILocalMachine
+  - uid: Rudeus.Model.ISettings
+    name: ISettings
+  - uid: Rudeus.Model.LocalMachine
+    name: LocalMachine
+  - uid: Rudeus.Model.Settings
+    name: Settings
+- uid: Rudeus.Procedure
+  name: Rudeus.Procedure
+  items:
+  - uid: Rudeus.Procedure.CertificateInstaller
+    name: CertificateInstaller
+  - uid: Rudeus.Procedure.FakeProcedure
+    name: FakeProcedure
+  - uid: Rudeus.Procedure.IFakeProcedure
+    name: IFakeProcedure
+  - uid: Rudeus.Procedure.ILauncher
+    name: ILauncher
+  - uid: Rudeus.Procedure.IProcedure
+    name: IProcedure
+- uid: RudeusBg
+  name: RudeusBg
+  items:
+  - uid: RudeusBg.IWorker
+    name: IWorker
+  - uid: RudeusBg.Worker
+    name: Worker
+- uid: RudeusBgForm
+  name: RudeusBgForm
+  items:
+  - uid: RudeusBgForm.TaskTrayForm
+    name: TaskTrayForm
+- uid: RudeusBgFormTest
+  name: RudeusBgFormTest
+  items:
+  - uid: RudeusBgFormTest.UnitTest1
+    name: UnitTest1
+- uid: RudeusBgInitializer
+  name: RudeusBgInitializer
+  items:
+  - uid: RudeusBgInitializer.Program
+    name: Program
+- uid: RudeusBgInitializerTest
+  name: RudeusBgInitializerTest
+  items:
+  - uid: RudeusBgInitializerTest.ProgramTests
+    name: ProgramTests
+  - uid: RudeusBgInitializerTest.TaskInitializerTests
+    name: TaskInitializerTests
+- uid: RudeusBgTest
+  name: RudeusBgTest
+  items:
+  - uid: RudeusBgTest.UnitTest1
+    name: UnitTest1
+- uid: RudeusLauncherTest
+  name: RudeusLauncherTest
+  items:
+  - uid: RudeusLauncherTest.LauncherTests
+    name: LauncherTests
+  - uid: RudeusLauncherTest.ProgramTests
+    name: ProgramTests
+  - uid: RudeusLauncherTest.UpdaterTests
+    name: UpdaterTests
+- uid: RudeusSharedLibTest
+  name: RudeusSharedLibTest
+  items:
+  - uid: RudeusSharedLibTest.ConstantsTests
+    name: ConstantsTests
+  - uid: RudeusSharedLibTest.UnitTestSample
+    name: UnitTestSample
+  - uid: RudeusSharedLibTest.UtilsTests
+    name: UtilsTests
+- uid: RudeusSharedLibTest.API
+  name: RudeusSharedLibTest.API
+  items:
+  - uid: RudeusSharedLibTest.API.RemoteAPITests
+    name: RemoteAPITests
+- uid: RudeusSharedLibTest.Procedure
+  name: RudeusSharedLibTest.Procedure
+  items:
+  - uid: RudeusSharedLibTest.Procedure.CertificateInstallerTests
+    name: CertificateInstallerTests
+  - uid: RudeusSharedLibTest.Procedure.FakeProcedureTests
+    name: FakeProcedureTests
+  - uid: RudeusSharedLibTest.Procedure.RegistryInitializerTests
+    name: RegistryInitializerTests
+- uid: Xunit
+  name: Xunit
+  items:
+  - uid: Xunit.AssertEx
+    name: AssertEx
+memberLayout: SamePage

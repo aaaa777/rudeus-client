@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Procedure
+  commentId: N:Rudeus.Procedure
+  id: Rudeus.Procedure
+  children:
+  - Rudeus.Procedure.CertificateInstaller
+  - Rudeus.Procedure.FakeProcedure
+  - Rudeus.Procedure.IFakeProcedure
+  - Rudeus.Procedure.ILauncher
+  - Rudeus.Procedure.IProcedure
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Procedure
+  nameWithType: Rudeus.Procedure
+  fullName: Rudeus.Procedure
+  type: Namespace
+  assemblies:
+  - RudeusBg
+references:
+- uid: Rudeus.Procedure.FakeProcedure
+  commentId: T:Rudeus.Procedure.FakeProcedure
+  href: Rudeus.Procedure.FakeProcedure.html
+  name: FakeProcedure
+  nameWithType: FakeProcedure
+  fullName: Rudeus.Procedure.FakeProcedure
+- uid: Rudeus.Procedure.CertificateInstaller
+  commentId: T:Rudeus.Procedure.CertificateInstaller
+  href: Rudeus.Procedure.CertificateInstaller.html
+  name: CertificateInstaller
+  nameWithType: CertificateInstaller
+  fullName: Rudeus.Procedure.CertificateInstaller
+- uid: Rudeus.Procedure.IFakeProcedure
+  commentId: T:Rudeus.Procedure.IFakeProcedure
+  parent: Rudeus.Procedure
+  href: Rudeus.Procedure.IFakeProcedure.html
+  name: IFakeProcedure
+  nameWithType: IFakeProcedure
+  fullName: Rudeus.Procedure.IFakeProcedure
+- uid: Rudeus.Procedure.IProcedure
+  commentId: T:Rudeus.Procedure.IProcedure
+  parent: Rudeus.Procedure
+  href: Rudeus.Procedure.IProcedure.html
+  name: IProcedure
+  nameWithType: IProcedure
+  fullName: Rudeus.Procedure.IProcedure
+- uid: Rudeus.Procedure.ILauncher
+  commentId: T:Rudeus.Procedure.ILauncher
+  href: Rudeus.Procedure.ILauncher.html
+  name: ILauncher
+  nameWithType: ILauncher
+  fullName: Rudeus.Procedure.ILauncher
+- uid: Rudeus.Procedure
+  commentId: N:Rudeus.Procedure
+  href: Rudeus.html
+  name: Rudeus.Procedure
+  nameWithType: Rudeus.Procedure
+  fullName: Rudeus.Procedure
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Procedure
+    name: Procedure
+    href: Rudeus.Procedure.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Procedure
+    name: Procedure
+    href: Rudeus.Procedure.html

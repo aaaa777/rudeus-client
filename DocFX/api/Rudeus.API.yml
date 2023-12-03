@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.API
+  commentId: N:Rudeus.API
+  id: Rudeus.API
+  children:
+  - Rudeus.API.IRequestClient
+  - Rudeus.API.RequestClient
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.API
+  nameWithType: Rudeus.API
+  fullName: Rudeus.API
+  type: Namespace
+  assemblies:
+  - RudeusBg
+references:
+- uid: Rudeus.API.IRequestClient
+  commentId: T:Rudeus.API.IRequestClient
+  parent: Rudeus.API
+  href: Rudeus.API.IRequestClient.html
+  name: IRequestClient
+  nameWithType: IRequestClient
+  fullName: Rudeus.API.IRequestClient
+- uid: Rudeus.API.RequestClient
+  commentId: T:Rudeus.API.RequestClient
+  href: Rudeus.API.RequestClient.html
+  name: RequestClient
+  nameWithType: RequestClient
+  fullName: Rudeus.API.RequestClient
+- uid: Rudeus.API
+  commentId: N:Rudeus.API
+  href: Rudeus.html
+  name: Rudeus.API
+  nameWithType: Rudeus.API
+  fullName: Rudeus.API
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html

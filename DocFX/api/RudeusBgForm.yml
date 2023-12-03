@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RudeusBgForm
+  commentId: N:RudeusBgForm
+  id: RudeusBgForm
+  children:
+  - RudeusBgForm.TaskTrayForm
+  langs:
+  - csharp
+  - vb
+  name: RudeusBgForm
+  nameWithType: RudeusBgForm
+  fullName: RudeusBgForm
+  type: Namespace
+  assemblies:
+  - RudeusBgForm
+references:
+- uid: RudeusBgForm.TaskTrayForm
+  commentId: T:RudeusBgForm.TaskTrayForm
+  href: RudeusBgForm.TaskTrayForm.html
+  name: TaskTrayForm
+  nameWithType: TaskTrayForm
+  fullName: RudeusBgForm.TaskTrayForm

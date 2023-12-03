@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Model
+  commentId: N:Rudeus.Model
+  id: Rudeus.Model
+  children:
+  - Rudeus.Model.FakeSettings
+  - Rudeus.Model.ILocalCertificate
+  - Rudeus.Model.ILocalMachine
+  - Rudeus.Model.ISettings
+  - Rudeus.Model.LocalMachine
+  - Rudeus.Model.Settings
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Model
+  nameWithType: Rudeus.Model
+  fullName: Rudeus.Model
+  type: Namespace
+  assemblies:
+  - RudeusBg
+references:
+- uid: Rudeus.Model.FakeSettings
+  commentId: T:Rudeus.Model.FakeSettings
+  href: Rudeus.Model.FakeSettings.html
+  name: FakeSettings
+  nameWithType: FakeSettings
+  fullName: Rudeus.Model.FakeSettings
+- uid: Rudeus.Model.ILocalCertificate
+  commentId: T:Rudeus.Model.ILocalCertificate
+  parent: Rudeus.Model
+  href: Rudeus.Model.ILocalCertificate.html
+  name: ILocalCertificate
+  nameWithType: ILocalCertificate
+  fullName: Rudeus.Model.ILocalCertificate
+- uid: Rudeus.Model.ILocalMachine
+  commentId: T:Rudeus.Model.ILocalMachine
+  parent: Rudeus.Model
+  href: Rudeus.Model.ILocalMachine.html
+  name: ILocalMachine
+  nameWithType: ILocalMachine
+  fullName: Rudeus.Model.ILocalMachine
+- uid: Rudeus.Model.ISettings
+  commentId: T:Rudeus.Model.ISettings
+  parent: Rudeus.Model
+  href: Rudeus.Model.ISettings.html
+  name: ISettings
+  nameWithType: ISettings
+  fullName: Rudeus.Model.ISettings
+- uid: Rudeus.Model.LocalMachine
+  commentId: T:Rudeus.Model.LocalMachine
+  href: Rudeus.Model.LocalMachine.html
+  name: LocalMachine
+  nameWithType: LocalMachine
+  fullName: Rudeus.Model.LocalMachine
+- uid: Rudeus.Model.Settings
+  commentId: T:Rudeus.Model.Settings
+  parent: Rudeus.Model
+  href: Rudeus.Model.Settings.html
+  name: Settings
+  nameWithType: Settings
+  fullName: Rudeus.Model.Settings
+- uid: Rudeus.Model
+  commentId: N:Rudeus.Model
+  href: Rudeus.html
+  name: Rudeus.Model
+  nameWithType: Rudeus.Model
+  fullName: Rudeus.Model
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Model
+    name: Model
+    href: Rudeus.Model.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Model
+    name: Model
+    href: Rudeus.Model.html
