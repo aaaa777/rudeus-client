@@ -1,6 +1,16 @@
 # Rudeus
 
 
+# Documentations
+
+- [API Document](https://aaaa777.github.io/rudeus-client/)
+
+
+# Requirements
+
+- .NET Core 7
+
+
 # API support
 
 - [x] /api/device_initialize
@@ -17,3 +27,8 @@
 - `Base64_Encoded_Pfx` - コードサイン用のPFXファイルをBase64エンコードしたもの
 - `Pfx_Passphrase` - コードサイン用のPFXファイルのパスワードをBase64エンコードしたもの
 - 
+
+
+# Generate document command
+
+`docfx DocFX\docfx.json`
