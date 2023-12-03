@@ -9,7 +9,7 @@
 	  
 	<PublishTrimmed>true</PublishTrimmed>
 	<PublishSingleFile>true</PublishSingleFile>
-	<StartupObject>Program</StartupObject>
+	<StartupObject>Rudeus.Launcher.Program</StartupObject>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<Configurations>Debug;Release;Development</Configurations>
   </PropertyGroup>

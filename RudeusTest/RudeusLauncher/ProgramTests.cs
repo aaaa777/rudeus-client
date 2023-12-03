@@ -1,4 +1,6 @@
-namespace RudeusLauncherTest
+using Rudeus.Launcher;
+
+namespace Rudeus.Launcher.Test
 {
     public class ProgramTests
     {

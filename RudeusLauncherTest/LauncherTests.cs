@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusLauncherTest
+namespace Rudeus.Launcher.Test
 {
     public class LauncherTests
     {

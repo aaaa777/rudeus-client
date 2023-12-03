@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Rudeus.Procedure
+namespace Rudeus.Launcher.Procedure
 {
     /// <summary>
     /// LauncherはExitCodeを返すべき手続きだったので作成
