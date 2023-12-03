@@ -17,9 +17,9 @@ namespace RudeusBg
         private string[] _args;
 
         // DI for static class
-        public IProcedure _accessTokenValidator { get; set; }
-        public IProcedure _scheduledRelularExecuter { get; set; }
-        public IProcedure _userLoginExecuter { get; set; }
+        public IProcedure AccessTokenValidator { get; set; }
+        public IProcedure ScheduledRelularExecuter { get; set; }
+        public IProcedure UserLoginExecuter { get; set; }
 
         public static Settings settings { get; set; } = new Settings();
 
@@ -27,9 +27,9 @@ namespace RudeusBg
         {
             _logger = logger;
             _args = Program.commandArgs ?? new string[] { };
-            _accessTokenValidator = at ?? new AccessTokenValidator(settings);
-            _scheduledRelularExecuter = sr ?? new ScheduledRegularExecuter();
-            _userLoginExecuter = ul ?? new UserLoginExecuter();
+            AccessTokenValidator = at ?? new AccessTokenValidator(settings);
+            ScheduledRelularExecuter = sr ?? new ScheduledRegularExecuter();
+            UserLoginExecuter = ul ?? new UserLoginExecuter();
         }
     
 
@@ -49,20 +49,20 @@ namespace RudeusBg
 
 
             // 初期化
-            await _accessTokenValidator.Run();
+            await AccessTokenValidator.Run();
 
             // 通常起動時
             if (mode == "default")
             {
                 // UpdateDeviceの実行
-                await _scheduledRelularExecuter.Run();
+                await ScheduledRelularExecuter.Run();
 
                 //InstalledAppsSender.Run();
             }
 
             if (mode == "login")
             {
-                await _userLoginExecuter.Run();
+                await UserLoginExecuter.Run();
             }
 
             // テスト実装確認用

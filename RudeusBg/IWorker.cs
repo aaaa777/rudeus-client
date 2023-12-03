@@ -9,8 +9,8 @@ namespace RudeusBg
 {
     public interface IWorker
     {
-        static IProcedure ATVProcedure;
-        static IProcedure SREProcedure;
-        static IProcedure SURFProcedure;
+        IProcedure AccessTokenValidator { get; set; }
+        IProcedure ScheduledRelularExecuter { get; set; }
+        IProcedure UserLoginExecuter { get; set; }
     }
 }
