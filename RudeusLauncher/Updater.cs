@@ -15,13 +15,13 @@ using Rudeus.Procedure;
 /// <summary>
 /// 起動アプリのアップデートを行う手続き
 /// </summary>
-internal class Updater : IProcedure
+public class Updater : IProcedure
 {
     private string? RegistryKey;
     public ISettings _settings { get; set; }
-    public string lastVersionDirName = "last";
-    public string latestVersionDirName = "latest";
-    public string tempdir;
+    private string lastVersionDirName = "last";
+    private string latestVersionDirName = "latest";
+    private string tempdir;
 
     public Updater(ISettings? aps = null)
     {

@@ -11,14 +11,14 @@ namespace RudeusSharedLibTest.Procedure
     public class CertificateInstallerTests
     {
         [Fact]
-        public void TestRun()
+        public async void TestRun()
         {
             var lc = FakeLocalCertificate.Create();
             CertificateInstaller ci = new CertificateInstaller(
                 lc: lc
             );
 
-            ci.Run();
+            await ci.Run();
 
             //Assert.True(lc.InstallCertificateIntoRootCalled);
         }

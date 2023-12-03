@@ -13,7 +13,7 @@ using Rudeus.Procedure;
 /// <summary>
 /// アプリの起動を行う手続き
 /// </summary>
-internal class Launcher : ILauncher
+public class Launcher : ILauncher
 {
     //public static int Run(string registryKey, string Args="")
     public ISettings AppSettings { get; set; }
@@ -21,11 +21,15 @@ internal class Launcher : ILauncher
 
     public int ExitCode { get; set; }
 
-    public Launcher(ISettings aps, string args="")
+    public Func<string, string, int> StartProcess { get; set; }
+
+
+    public Launcher(ISettings aps, string args= "", Func<string, string, int>? startProcess = null)
     {
         AppSettings = aps;
         this.Args = args;
         ExitCode = -1;
+        StartProcess = startProcess ?? _startProcess;
     }
 
     /// <inheritdoc/>
@@ -50,7 +54,7 @@ internal class Launcher : ILauncher
         {
             // latestの実行
             Console.WriteLine("Trying launching latest version");
-            ExitCode = StartProcess(latestExePath, Args);
+            ExitCode = _startProcess(latestExePath, Args);
         }
         else
         {
@@ -89,7 +93,7 @@ internal class Launcher : ILauncher
         return;
     }
 
-    public int StartProcess(string filePath, string args="")
+    private int _startProcess(string filePath, string args="")
     {
         //int psExitCode = -1;
         try

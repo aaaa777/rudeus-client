@@ -10,7 +10,7 @@ namespace Rudeus.Model
     /// <summary>
     /// レジストリの設定を保持するモデルのFake実装
     /// </summary>
-    internal class FakeSettings : ISettings
+    public class FakeSettings : ISettings
     {
         // TODO: ダミーのレジストリを作成する
 
@@ -89,7 +89,7 @@ namespace Rudeus.Model
 
         public bool IsLatestVersionStatusUnlaunchableP()
         {
-            return false;
+            return LatestVersionStatusP == "unlaunchable";
         }
 
         public bool IsStableChannelP()
@@ -124,7 +124,7 @@ namespace Rudeus.Model
 
         public void SetLatestVersionStatusUnlaunchableP()
         {
-            
+            LatestVersionStatusP = "unlaunchable";
         }
 
         public void SetStableChannelP()

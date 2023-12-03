@@ -11,7 +11,7 @@ namespace RudeusSharedLibTest.Procedure
     public class RegistryInitializerTests
     {
         [Fact]
-        public void TestRun()
+        public async void TestRun()
         {
             var cfs = FakeSettings.Create();
             var ins = FakeSettings.Create();
@@ -26,7 +26,7 @@ namespace RudeusSharedLibTest.Procedure
                 bfs: bfs
             );
             
-            re.Run();
+            await re.Run();
 
 
         }

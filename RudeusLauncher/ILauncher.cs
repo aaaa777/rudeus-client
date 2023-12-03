@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// LauncherはExitCodeを返すべき手続きだったので作成
+    /// </summary>
     public interface ILauncher : IProcedure
     {
         int ExitCode { get; set; }
