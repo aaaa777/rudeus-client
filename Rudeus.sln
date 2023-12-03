@@ -44,6 +44,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusBgFormTest", "RudeusB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusLauncherTest", "RudeusLauncherTest\RudeusLauncherTest.csproj", "{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusLib", "RudeusLib\RudeusLib.csproj", "{656B1061-72A0-4617-924A-770E40600AEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,24 @@ Global
 		{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}.Release|x64.Build.0 = Release|Any CPU
 		{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E0478F4-B29B-4912-B4F0-BAFADF8827DE}.Release|x86.Build.0 = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|x64.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Debug|x86.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|x64.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|x64.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|x86.ActiveCfg = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Development|x86.Build.0 = Debug|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x64.ActiveCfg = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x64.Build.0 = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,7 +266,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RudeusSharedLib\RudeusSharedLib.projitems*{1b243447-c4d2-4ed9-8fb5-d2221210d357}*SharedItemsImports = 5
-		RudeusSharedLib\RudeusSharedLib.projitems*{2ae02423-85e4-4a7f-a0ac-54415ce03892}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{3a757969-84e1-42b6-991a-2e871a4b706a}*SharedItemsImports = 13
 		RudeusSharedLib\RudeusSharedLib.projitems*{5c85addc-4440-40be-af91-f918fba0799e}*SharedItemsImports = 5
 		RudeusSharedLib\RudeusSharedLib.projitems*{9756d22b-afc9-457b-b2d1-b616cff6b359}*SharedItemsImports = 5
