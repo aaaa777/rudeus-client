@@ -54,7 +54,7 @@ public class Launcher : ILauncher
         {
             // latestの実行
             Console.WriteLine("Trying launching latest version");
-            ExitCode = _startProcess(latestExePath, Args);
+            ExitCode = StartProcess(latestExePath, Args);
         }
         else
         {

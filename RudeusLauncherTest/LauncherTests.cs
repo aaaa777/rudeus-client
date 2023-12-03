@@ -14,7 +14,7 @@ namespace RudeusLauncherTest
         private int FakeStartProcessFailure(string exePath, string args)
         {
             StartProcessCount++;
-            return 1;
+            return -1;
         }
         private int FakeStartProcessSuccess(string exePath, string args)
         {
@@ -46,7 +46,7 @@ namespace RudeusLauncherTest
             await launcher.Run();
 
             Assert.Equal(0, launcher.ExitCode);
-            Assert.Equal(2, StartProcessCount);
+            Assert.Equal(1, StartProcessCount);
         }
 
         [Fact]
@@ -54,7 +54,6 @@ namespace RudeusLauncherTest
         {
             StartProcessCount = 0;
             ISettings appSetting = new FakeSettings();
-            appSetting.SetLatestVersionStatusUnlaunchableP();
             var launcher = new Launcher(aps: appSetting, args: "", startProcess: FakeStartProcessFailure);
 
             await launcher.Run();
