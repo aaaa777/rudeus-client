@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rudeus.Bg
+namespace Rudeus.Command
 {
     public interface IWorker
     {

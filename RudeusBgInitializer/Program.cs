@@ -8,7 +8,9 @@ using System;
 using Microsoft.Win32.TaskScheduler;
 using Rudeus.API;
 using Rudeus.Procedure;
-namespace RudeusBgInitializer
+using Rudeus.Initializer.Procedure;
+
+namespace Rudeus.Initializer
 {
 
     public class Program

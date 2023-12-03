@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using Rudeus.Procedure;
 
 // この手続きだけはInitializer内でしか使わないのでこちらに移動
-namespace Rudeus.Procedure
+namespace Rudeus.Initializer.Procedure
 {
     partial class TaskInitializer : IProcedure
     {

@@ -1,4 +1,4 @@
-namespace Rudeus.Bg
+namespace Rudeus.Command
 {
     class Program
     {

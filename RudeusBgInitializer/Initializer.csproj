@@ -12,6 +12,7 @@
 	<SelfContained>true</SelfContained>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
 	<Configurations>Debug;Release;Development</Configurations>
+	<StartupObject>Rudeus.Initializer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +24,8 @@
     <PackageReference Include="TaskScheduler" Version="2.10.1" />
   </ItemGroup>
 
-  <Import Project="..\RudeusSharedLib\RudeusSharedLib.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
+  </ItemGroup>
 
 </Project>

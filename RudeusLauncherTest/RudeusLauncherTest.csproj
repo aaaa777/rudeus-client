@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RudeusLauncher\RudeusLauncher.csproj" />
+    <ProjectReference Include="..\RudeusLauncher\Launcher.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics;
 using Windows.System.Inventory;
 
-namespace Rudeus.Bg
+namespace Rudeus.Command
 {
     public class Worker : BackgroundService, IWorker
     {
