@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\ILocalCertificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\AccessTokenValidator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\CertificateInstaller.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Procedure\IFakeProcedure.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\InstalledAppsSender.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\IProcedure.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\RegistryInitializer.cs" />

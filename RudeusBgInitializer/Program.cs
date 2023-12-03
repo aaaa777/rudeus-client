@@ -8,47 +8,60 @@ using System;
 using Microsoft.Win32.TaskScheduler;
 using Rudeus.API;
 using Rudeus.Procedure;
-
-class Program
+namespace RudeusBgInitializer
 {
-    // DI for static class
-    public static IProcedure _registryInitializer = new RegistryInitializer();
-    public static IProcedure _taskInitializer = new TaskInitializer();
-    public static IProcedure _certificateInstaller = new CertificateInstaller();
-    public static IProcedure _serverRegister = new ServerRegister();
 
-
-    public static void Main(string[] args)
+    public class Program
     {
-        MainAsync(args).GetAwaiter().GetResult();
-    }
+        // DI for static class
+        public static IProcedure _registryInitializer { get; set; }
+        public static IProcedure _taskInitializer { get; set; }
+        public static IProcedure _certificateInstaller { get; set; }
+        public static IProcedure _serverRegister { get; set; }
 
-    public static async System.Threading.Tasks.Task MainAsync(string[] args)
-    {
-        // Launcherのレジストリ初期値設定
-        await _registryInitializer.Run();
+        public static bool? CheckLogMessage { get; set; }
 
-        // タスクスケジューラ登録処理
-        await _taskInitializer.Run();
-
-        // ルート証明書登録処理
-        await _certificateInstaller.Run();
-
-        try
+        public static void Main(string[] args)
         {
-            // デバイス情報送信、サーバ登録処理
-            await _serverRegister.Run();
+            _registryInitializer ??= new RegistryInitializer();
+            _taskInitializer ??= new TaskInitializer();
+            _certificateInstaller ??= new CertificateInstaller();
+            _serverRegister ??= new ServerRegister();
+            CheckLogMessage ??= true;
+            MainAsync(args).GetAwaiter().GetResult();
+
         }
-        catch (Exception ex) 
+
+        public static async System.Threading.Tasks.Task MainAsync(string[] args)
         {
-            Console.WriteLine(ex.ToString());
-        }
+            // Launcherのレジストリ初期値設定
+            await _registryInitializer.Run();
+
+            // タスクスケジューラ登録処理
+            await _taskInitializer.Run();
+
+            // ルート証明書登録処理
+            await _certificateInstaller.Run();
+
+            try
+            {
+                // デバイス情報送信、サーバ登録処理
+                await _serverRegister.Run();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
 
 #if (!RELEASE)
-        Console.WriteLine("\n");
-        Console.WriteLine("[Installer] Done, Press Enter");
-        Console.ReadLine();
+            if (CheckLogMessage == true)
+            {
+                Console.WriteLine("\n");
+                Console.WriteLine("[Installer] Done, Press Enter");
+                Console.ReadLine();
+            }
 #endif
 
+        }
     }
 }

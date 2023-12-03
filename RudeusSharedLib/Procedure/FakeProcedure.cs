@@ -10,7 +10,7 @@ namespace Rudeus.Procedure
     /// <summary>
     /// IProcedureのFake実装
     /// </summary>
-    internal class FakeProcedure : IProcedure
+    public class FakeProcedure : IFakeProcedure
     {
         private int _runCount = 0;
         /// <summary>
