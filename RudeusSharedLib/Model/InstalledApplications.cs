@@ -6,6 +6,9 @@ using Windows.System.Inventory;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// 取得したインストール済みアプリのデータを保持する構造体
+    /// </summary>
     internal class ApplicationData
     {
         public string Name { get; set; } = string.Empty;
@@ -18,6 +21,10 @@ namespace Rudeus.Model
             Version = version;
         }
     }
+
+    /// <summary>
+    /// インストール済みアプリのデータを取得するモデル
+    /// </summary>
     internal class InstalledApplications
     {
         public static async Task<List<ApplicationData>> LoadAsync()

@@ -6,8 +6,15 @@ using System.Text;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// 管理サーバにインストール済みアプリを送信する
+    /// </summary>
     internal class InstalledAppsSender : IProcedure
     {
+        /// <summary>
+        /// 実行する
+        /// </summary>
+        /// <returns></returns>
         public async Task Run()
         {
             string accessToken = Settings.AccessToken;

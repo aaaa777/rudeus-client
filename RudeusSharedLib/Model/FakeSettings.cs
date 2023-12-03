@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// レジストリの設定を保持するモデルのFake実装
+    /// </summary>
     internal class FakeSettings : ISettings
     {
         // TODO: ダミーのレジストリを作成する

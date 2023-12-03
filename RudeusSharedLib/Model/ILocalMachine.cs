@@ -1,5 +1,8 @@
 ﻿namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンの情報を取得するモデルのインターフェース
+    /// </summary>
     public interface ILocalMachine
     {
         public abstract static ILocalMachine GetInstance();

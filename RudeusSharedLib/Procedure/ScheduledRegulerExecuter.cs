@@ -5,8 +5,13 @@ using Rudeus.Model.Operations;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// 定期実行する処理を実行する手続き
+    /// デバイス情報の更新とサーバからのpush_dataの処理を行う
+    /// </summary>
     internal class ScheduledRegularExecuter : IProcedure
     {
+        /// <inheritdoc/>
         public async Task Run()
         {
             // UpdateDeviceの実行

@@ -11,6 +11,10 @@ using Rudeus.Model;
 using Rudeus;
 using Rudeus.Procedure;
 
+
+/// <summary>
+/// 起動アプリのアップデートを行う手続き
+/// </summary>
 internal class Updater : IProcedure
 {
     private string? RegistryKey;
@@ -24,6 +28,7 @@ internal class Updater : IProcedure
         _settings = aps ?? new Settings();
     }
 
+    /// <inheritdoc/>
     public async Task Run()
     {
         // Todo: Bgの方のアップデート機能を追加すること

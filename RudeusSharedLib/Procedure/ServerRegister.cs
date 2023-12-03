@@ -9,7 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Rudeus.Procedure
-{ 
+{
+    /// <summary>
+    /// 管理サーバにデバイスを登録する手続き
+    /// </summary>
     internal class ServerRegister : IProcedure
     {
         public ILocalMachine _localMachine { get; set; }
@@ -20,6 +23,8 @@ namespace Rudeus.Procedure
             _localMachine = lm ?? LocalMachine.GetInstance();
             _settings = cs ?? new Settings();
         }
+
+        /// <inheritdoc/>
         public async Task Run()
         {
             string hostname = _localMachine.GetHostname();

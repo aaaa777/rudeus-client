@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// 通知を行うクラス
+    /// </summary>
     internal class Notificator
     {
         /*

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンのVPN設定を操作するモデル
+    /// </summary>
     internal class VPN
     {
         public static void AddVpnSetting()

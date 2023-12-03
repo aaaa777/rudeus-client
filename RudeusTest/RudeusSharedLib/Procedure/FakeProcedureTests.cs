@@ -10,12 +10,12 @@ namespace RudeusSharedLibTest.Procedure
     public class FakeProcedureTests
     {
         [Fact]
-        public void TestRun()
+        public async Task TestRun()
         {
-            var fp = FakeProcedure.Create();
+            var fp = new FakeProcedure();
             
-            fp.Run();
-            fp.Run();
+            await fp.Run();
+            await fp.Run();
 
             Assert.Equal(2, fp.RunCount);
         }

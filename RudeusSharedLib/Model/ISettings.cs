@@ -4,7 +4,6 @@ namespace Rudeus.Model
 {
     /// <summary>
     /// 設定をレジストリに保管するモデル
-    /// レジストリがない場合の変換や暗号化を行う予定
     /// </summary>
     public interface ISettings
     {

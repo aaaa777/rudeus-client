@@ -3,6 +3,9 @@ using Rudeus.Model;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// アクセストークンの有効性を確認し、無効なら再発行する手続き
+    /// </summary>
     internal class AccessTokenValidator : IProcedure
     {
 
@@ -13,6 +16,7 @@ namespace Rudeus.Procedure
             _settings = cs ?? new Settings();
         }
 
+        /// <inheritdoc/>
         public async Task Run()
         {
             // BgInitializerが失敗した時にBgがRegisterDeviceAndSetDataを実行する

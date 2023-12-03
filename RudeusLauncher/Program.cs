@@ -12,7 +12,7 @@ public class Program
     public static string _argsStr { get; set; }
 
     public static IProcedure _updater { get; set; }
-    public static IReturnsExitCode _launcher { get; set; }
+    public static ILauncher _launcher { get; set; }
 
     // 実質的なコンストラクタ
     public static void Main(string[] args)

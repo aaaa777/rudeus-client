@@ -4,18 +4,33 @@ using System.Text;
 
 namespace Rudeus
 {
+    /// <summary>
+    /// 定数を定義するクラス
+    /// </summary>
     class Constants
     {
-        // クライアント認証の強制
+        /// <summary>
+        /// クライアント認証を強制しない場合はtrue
+        /// </summary>
         public static readonly bool disableClientCertAuth = true;
 
-        // タスクトレイリンク集
+        /// <summary>
+        /// Webポータルのタスクトレイリンク
+        /// </summary>
         public static readonly string WebPortalUrl = "https://portal.do-johodai.ac.jp";
+        /// <summary>
+        /// Polite3のタスクトレイリンク
+        /// </summary>
         public static readonly string Polite3Url = "https://polite3.do-johodai.ac.jp";
+        /// <summary>
+        /// 教務Webシステムのタスクトレイリンク
+        /// </summary>
         public static readonly string KyoumuUrl = "https://eduweb.do-johodai.ac.jp";
 
-        // RudeusBg
-        // レジストリ：RudeusBgのキー
+        /// <summary>
+        /// RudeusBgが使用するレジストリのキー
+        /// </summary>
+        // NOTE: 以下はハードコーディングされている箇所があるので変更できません
         public readonly static string RudeusBgRegKey = "Bg";
 
         // タスクスケジューラに登録するインストール先
@@ -28,8 +43,9 @@ namespace Rudeus
         public static readonly string RudeusBgLauncherExePath = "c:\\Program Files\\Windows System ApplicationData\\RudeusLauncher.exe";
 
 
-        // RudeusBgForm
-        // レジストリ：RudeusBgのキー
+        /// <summary>
+        /// RudeusBgFormが使用するレジストリのキー
+        /// </summary>
         public readonly static string RudeusBgFormRegKey = "Task";
 
         // タスクスケジューラに登録するインストール先
@@ -43,33 +59,47 @@ namespace Rudeus
 
 
 
-        //////////////////// 
-        /// API Settings ///
-        ////////////////////
+        //////////////////////
+        //// API Settings ////
+        //////////////////////
 
 #if(DEBUG)
-        // SAMLログインのエントリーページ
+        /// <summary>
+        /// SAMLログインのエントリーページ
+        /// </summary>
         public static readonly string SamlLoginUrl = "http://win.nomiss.net/rudeus_login";
 
-        // クライアント証明書認証が必要なAPIエンドポイント
+        /// <summary>
+        /// クライアント証明書認証が必要なAPIエンドポイント
+        /// </summary>
         public static readonly string ApiEndpointWithCert = "http://10.10.2.11/";
 
-        // クライアント証明書認証が不要なAPIエンドポイント
+        /// <summary>
+        /// クライアント証明書認証が不要なAPIエンドポイント
+        /// </summary>
         public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
 
 #else
-        // SAMLログインのエントリーページ
+        /// <summary>
+        /// SAMLログインのエントリーページ
+        /// </summary>
         public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
 
-        // クライアント証明書認証が必要なAPIエンドポイント
+        /// <summary>
+        /// クライアント証明書認証が必要なAPIエンドポイント
+        /// </summary>
         public static readonly string ApiEndpointWithCert = "https://manager.nomiss.net/";
 
-        // クライアント証明書認証が不要なAPIエンドポイント
+        /// <summary>
+        /// クライアント証明書認証が不要なAPIエンドポイント
+        /// </summary>
         public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
 
 #endif
 
-        // APIのパス
+        /// <summary>
+        /// APIのパス
+        /// </summary>
         public static readonly string ApiCheckStatusPath = "/admin";
         public static readonly string ApiRegisterPath = "/api/device_initialize";
         public static readonly string ApiUpdatePath = "/api/device_update";
@@ -77,34 +107,50 @@ namespace Rudeus
         public static readonly string ApiUpdateMetadataPath = "/api/update_metadata";
         public static readonly string ApiSendInstalledAppsPath = "/api/application_update";
 
-        // カスタムURIスキームで起動する場合の設定
+        /// <summary>
+        /// カスタムURIスキームで起動する場合の設定
+        /// </summary>
         public static string AppCallbackUri = "rudeus.client://callback/?user=s21";
 
-        // SAMLログインのlocalhostコールバックポート
+        /// <summary>
+        /// SAMLログインのlocalhostコールバックポート
+        /// </summary>
         public static readonly string CallbackPort = "11178";
 
 
 
-        /////////////////////////
-        /// Registry settings ///
-        /////////////////////////
+        ///////////////////////////
+        //// Registry settings ////
+        ///////////////////////////
 
-        // Inno Setupで設定されたユーザ名とHIU-PXXのデータのキー
+        /// <summary>
+        /// Inno Setupで設定されたユーザ名とHIU-PXXのデータのキー
+        /// </summary>
         public static string InnoSetupUserDataKey = @"Setup";
 
-        // レジストリ：アプリのデフォルトのキー
+        /// <summary>
+        /// アプリのデフォルトのレジストリキー
+        /// </summary>
         public static string DefaultRegistryKey = @"Config";
 
-        // レジストリ：アプリのルート
+        /// <summary>
+        /// アプリのルートレジストリパス
+        /// </summary>
         public static string RegistryDir = @"Software\Test App";
 
 
 
-        /////////////////////////
-        /// Launcher settings ///
-        /////////////////////////
+        ///////////////////////////
+        //// Launcher settings ////
+        ///////////////////////////
         
+        /// <summary>
+        /// アップデートの強制実行時にLauncherに返すエラーコード
+        /// </summary>
         public static int ForceUpdateExitCode = 2001;
+        /// <summary>
+        /// 未使用エラーコード
+        /// </summary>
         public static int LaunchTwiceExitCode = 2002;
 
 

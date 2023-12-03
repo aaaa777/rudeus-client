@@ -27,12 +27,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\CertificateInstaller.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\InstalledAppsSender.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\IProcedure.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Procedure\IReturnsExitCode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\RegistryInitializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\ScheduledRegulerExecuter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\ServerRegister.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Procedure\UserLoginExecuter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Procedure\TaskInitializer.cs" />
     <Compile Include="..\RudeusSharedLib\Model\LocalCertificate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\IRemoteAPI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ILocalMachine.cs" />

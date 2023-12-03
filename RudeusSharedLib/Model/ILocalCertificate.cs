@@ -2,6 +2,9 @@
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンの証明書を操作するモデルのインターフェース
+    /// </summary>
     public interface ILocalCertificate
     {
         abstract static ILocalCertificate GetInstance();

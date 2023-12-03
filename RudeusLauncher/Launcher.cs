@@ -9,26 +9,31 @@ using System.Threading.Tasks;
 using Rudeus.Procedure;
 
 
-internal class Launcher : IReturnsExitCode
+
+/// <summary>
+/// アプリの起動を行う手続き
+/// </summary>
+internal class Launcher : ILauncher
 {
-    //public static int Run(string registryKey, string args="")
-    public ISettings _appSettings { get; set; }
-    public string args { get; set; }
+    //public static int Run(string registryKey, string Args="")
+    public ISettings AppSettings { get; set; }
+    public string Args { get; set; }
 
     public int ExitCode { get; set; }
 
     public Launcher(ISettings aps, string args="")
     {
-        _appSettings = aps;
-        this.args = args;
+        AppSettings = aps;
+        this.Args = args;
         ExitCode = -1;
     }
 
+    /// <inheritdoc/>
     public async Task Run()
     {
-        string latestExePath = _appSettings.LatestVersionExePathP;
-        string lastExePath = _appSettings.LastVersionExePathP;
-        bool skipLatest = _appSettings.IsLatestVersionStatusUnlaunchableP();
+        string latestExePath = AppSettings.LatestVersionExePathP;
+        string lastExePath = AppSettings.LastVersionExePathP;
+        bool skipLatest = AppSettings.IsLatestVersionStatusUnlaunchableP();
 #if(DEBUG)
         Console.WriteLine("[Launcher] Debug build is running");
 #endif
@@ -45,7 +50,7 @@ internal class Launcher : IReturnsExitCode
         {
             // latestの実行
             Console.WriteLine("Trying launching latest version");
-            ExitCode = StartProcess(latestExePath, args);
+            ExitCode = StartProcess(latestExePath, Args);
         }
         else
         {
@@ -69,7 +74,7 @@ internal class Launcher : IReturnsExitCode
             Settings.SetLatestVersionStatusUnlaunchable();
 
             // lastを実行、フォールバックは無し
-            ExitCode = StartProcess(lastExePath, args);
+            ExitCode = StartProcess(lastExePath, Args);
         }
         // latestが正常終了した時、そのまま終了
         else
@@ -84,18 +89,18 @@ internal class Launcher : IReturnsExitCode
         return;
     }
 
-    public static int StartProcess(string filePath, string args="")
+    public int StartProcess(string filePath, string args="")
     {
         //int psExitCode = -1;
         try
         {
             Process ps = Process.Start(filePath, args);
             
-            bool isExited = ps.WaitForExit(0);
+            //bool isExited = ps.WaitForExit(0);
 
             while(!ps.WaitForExit(10_000))
             {
-                // waiting for exit
+                // waiting for exit loop
             }
 
             return ps.ExitCode;

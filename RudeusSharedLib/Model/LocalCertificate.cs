@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンの証明書を操作するモデル
+    /// </summary>
     internal class LocalCertificate : ILocalCertificate
     {
         public static ILocalCertificate GetInstance()

@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Rudeus.Procedure
-{ 
+{
+    /// <summary>
+    /// ローカルマシンに必要なレジストリを初期化する手続き
+    /// </summary>
     internal class RegistryInitializer : IProcedure
     {
         private readonly static string RudeusBgRegKey = Constants.RudeusBgRegKey;
@@ -28,6 +31,7 @@ namespace Rudeus.Procedure
             BfSettings = bfs ?? new Settings(RudeusBgFormRegKey);
         }
 
+        /// <inheritdoc/>
         public async Task Run()
         {
             //Settings confSettings = new Settings();

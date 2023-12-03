@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Procedure
 {
-
+    /// <summary>
+    /// ローカルマシンに証明書をインストールする手続き
+    /// </summary>
     public class CertificateInstaller : IProcedure
     {
         public ILocalCertificate _localCertificate { get; set; }

@@ -11,6 +11,9 @@ using Rudeus.API.Response;
 
 namespace Rudeus
 {
+    /// <summary>
+    /// ユーティリティクラス
+    /// </summary>
     public class Utils : IUtils
     {
         public static readonly string WebPortalUrl = Constants.WebPortalUrl;
@@ -64,6 +67,7 @@ namespace Rudeus
 
         // BgInitializerか、BgInitializerが失敗した後のBgの初回起動で実行する
         // Todo: ダミーデータではなく実環境での初期化を行う
+        /// <inheritdoc/>
         public static void RegisterDeviceAndSetData()
         {
             string hostname = LM.GetHostname();
@@ -91,6 +95,7 @@ namespace Rudeus
             }
         }
 
+        /// <inheritdoc/>
         public static void CopyDirectory(string sourceDir, string destinationDir, bool recursive)
         {
             // Get information about the source directory
@@ -124,11 +129,7 @@ namespace Rudeus
             }
         }
 
-        /// <summary>ドット区切り数字列を比較する</summary>
-        /// <param name="a">対象文字列A</param>
-        /// <param name="b">対象文字列B</param>
-        /// <param name="depth">比較する列数 (0なら全て)</param>
-        /// <returns>A-Bの符号 (1, 0, -1)</returns>
+        /// <inheritdoc/>
         public static int CompareVersionString(string a, string b, int depth = 0)
         {
             string[] aSeries = a.Split('.');
@@ -154,6 +155,7 @@ namespace Rudeus
             return (aSeries.Length == bSeries.Length) ? 0 : -1;
         }
 
+        /// <inheritdoc/>
         public static Dictionary<string, string> ParseArgs(string[] args)
         {
             var argsDict = args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);

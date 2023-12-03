@@ -8,7 +8,9 @@ using Microsoft.Win32;
 
 namespace Rudeus.Model
 {
-
+    /// <summary>
+    /// レジストリに設定を保持するモデル
+    /// </summary>
     public class Settings : ISettings
     {
         // レジストリ：アプリのデフォルトのキー

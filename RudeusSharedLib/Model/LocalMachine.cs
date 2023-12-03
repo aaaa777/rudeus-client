@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンの情報を取得するモデル
+    /// </summary>
     public class LocalMachine : ILocalMachine
     {
         public static ILocalMachine GetInstance()

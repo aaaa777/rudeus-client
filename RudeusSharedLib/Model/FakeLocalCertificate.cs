@@ -8,11 +8,23 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Model
 {
+    /// <summary>
+    /// ローカルマシンの証明書を操作するモデルのFake実装
+    /// </summary>
     internal class FakeLocalCertificate : ILocalCertificate
     {
         public static ILocalCertificate _fakeLocalCertificate = new FakeLocalCertificate();
+
+        /// <summary>
+        /// 単一のインスタンスを取得する
+        /// </summary>
+        /// <returns></returns>
         public static ILocalCertificate GetInstance() { return _fakeLocalCertificate; }
 
+        /// <summary>
+        /// 新しいインスタンスを生成する
+        /// </summary>
+        /// <returns></returns>
         public static ILocalCertificate Create() { return new FakeLocalCertificate(); }
 
         private FakeLocalCertificate() { }

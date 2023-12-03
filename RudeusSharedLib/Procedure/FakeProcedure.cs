@@ -7,14 +7,21 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// IProcedureのFake実装
+    /// </summary>
     internal class FakeProcedure : IProcedure
     {
         private int _runCount = 0;
+        /// <summary>
+        /// Runメソッドが呼ばれた回数
+        /// </summary>
         public int RunCount { get { return _runCount; } }
 
         // TODO: 自分自身を返すメソッドはインターフェースで定義できない問題の対応
-        public static FakeProcedure Create() { return new FakeProcedure(); }
+        public FakeProcedure() { }
 
+        /// <inheritdoc/>
         public async Task Run() { _runCount++; }
 
     }

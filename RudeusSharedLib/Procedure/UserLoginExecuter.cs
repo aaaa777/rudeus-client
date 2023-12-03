@@ -8,11 +8,15 @@ using System.Diagnostics;
 
 namespace Rudeus.Procedure
 {
+    /// <summary>
+    /// ユーザーのログインを行う手続き
+    /// </summary>
     internal class UserLoginExecuter : IProcedure
     {
         // DI for testing
         public static Func<string, bool> OpenBrowser { get; set; } = OpenWebPage;
 
+        /// <inheritdoc/>
         public async Task Run()
         {
             string userIdOld = Settings.Username;
