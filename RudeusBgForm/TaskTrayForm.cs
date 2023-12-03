@@ -5,7 +5,7 @@ using Rudeus.API.Response;
 using Rudeus.Model;
 using Rudeus;
 
-namespace RudeusBgForm
+namespace Rudeus.WinFormApp
 {
     public partial class TaskTrayForm : Form
     {

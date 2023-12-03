@@ -13,7 +13,7 @@ namespace Rudeus.Procedure
     /// <summary>
     /// 管理サーバにデバイスを登録する手続き
     /// </summary>
-    internal class ServerRegister : IProcedure
+    public class ServerRegister : IProcedure
     {
         public ILocalMachine _localMachine { get; set; }
         public ISettings _settings { get; set; }

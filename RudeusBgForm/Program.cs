@@ -1,4 +1,4 @@
-namespace RudeusBgForm
+namespace Rudeus.WinFormApp
 {
     internal static class Program
     {
