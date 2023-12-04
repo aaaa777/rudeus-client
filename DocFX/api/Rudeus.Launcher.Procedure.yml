@@ -5,6 +5,7 @@ items:
   id: Rudeus.Launcher.Procedure
   children:
   - Rudeus.Launcher.Procedure.ILauncher
+  - Rudeus.Launcher.Procedure.Launcher
   langs:
   - csharp
   - vb
@@ -22,6 +23,12 @@ references:
   name: ILauncher
   nameWithType: ILauncher
   fullName: Rudeus.Launcher.Procedure.ILauncher
+- uid: Rudeus.Launcher.Procedure.Launcher
+  commentId: T:Rudeus.Launcher.Procedure.Launcher
+  href: Rudeus.Launcher.Procedure.Launcher.html
+  name: Launcher
+  nameWithType: Launcher
+  fullName: Rudeus.Launcher.Procedure.Launcher
 - uid: Rudeus.Launcher.Procedure
   commentId: N:Rudeus.Launcher.Procedure
   href: Rudeus.html

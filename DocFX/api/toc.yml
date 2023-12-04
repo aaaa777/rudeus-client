@@ -28,6 +28,37 @@ items:
     name: RemoteAPI
   - uid: Rudeus.API.RequestClient
     name: RequestClient
+- uid: Rudeus.API.Request
+  name: Rudeus.API.Request
+  items:
+  - uid: Rudeus.API.Request.BaseRequest
+    name: BaseRequest
+  - uid: Rudeus.API.Request.BaseRequestData
+    name: BaseRequestData
+  - uid: Rudeus.API.Request.EmptyRequest
+    name: EmptyRequest
+  - uid: Rudeus.API.Request.EmptyRequestData
+    name: EmptyRequestData
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+  - uid: Rudeus.API.Request.LoginRequest
+    name: LoginRequest
+  - uid: Rudeus.API.Request.LoginRequestData
+    name: LoginRequestData
+  - uid: Rudeus.API.Request.RegisterRequest
+    name: RegisterRequest
+  - uid: Rudeus.API.Request.RegisterRequestData
+    name: RegisterRequestData
+  - uid: Rudeus.API.Request.SendInstalledAppsAppData
+    name: SendInstalledAppsAppData
+  - uid: Rudeus.API.Request.SendInstalledAppsRequest
+    name: SendInstalledAppsRequest
+  - uid: Rudeus.API.Request.SendInstalledAppsRequestData
+    name: SendInstalledAppsRequestData
+  - uid: Rudeus.API.Request.UpdateRequest
+    name: UpdateRequest
+  - uid: Rudeus.API.Request.UpdateRequestData
+    name: UpdateRequestData
 - uid: Rudeus.API.Response
   name: Rudeus.API.Response
   items:
@@ -51,6 +82,11 @@ items:
     name: UpdateResponse
   - uid: Rudeus.API.Response.UpdateResponseData
     name: UpdateResponseData
+- uid: Rudeus.API.Test
+  name: Rudeus.API.Test
+  items:
+  - uid: Rudeus.API.Test.RemoteAPITests
+    name: RemoteAPITests
 - uid: Rudeus.Application
   name: Rudeus.Application
   items:
@@ -68,16 +104,21 @@ items:
   items:
   - uid: Rudeus.Initializer.Program
     name: Program
+- uid: Rudeus.Initializer.Procedure
+  name: Rudeus.Initializer.Procedure
+  items:
+  - uid: Rudeus.Initializer.Procedure.TaskInitializer
+    name: TaskInitializer
 - uid: Rudeus.Initializer.Test
   name: Rudeus.Initializer.Test
   items:
   - uid: Rudeus.Initializer.Test.ProgramTests
     name: ProgramTests
+  - uid: Rudeus.Initializer.Test.TaskInitializerTests
+    name: TaskInitializerTests
 - uid: Rudeus.Launcher
   name: Rudeus.Launcher
   items:
-  - uid: Rudeus.Launcher.Launcher
-    name: Launcher
   - uid: Rudeus.Launcher.Program
     name: Program
   - uid: Rudeus.Launcher.Updater
@@ -87,6 +128,8 @@ items:
   items:
   - uid: Rudeus.Launcher.Procedure.ILauncher
     name: ILauncher
+  - uid: Rudeus.Launcher.Procedure.Launcher
+    name: Launcher
 - uid: Rudeus.Launcher.Test
   name: Rudeus.Launcher.Test
   items:
@@ -138,34 +181,24 @@ items:
     name: ServerRegister
   - uid: Rudeus.Procedure.UserLoginExecuter
     name: UserLoginExecuter
-- uid: RudeusBgInitializerTest
-  name: RudeusBgInitializerTest
+- uid: Rudeus.Procedure.Test
+  name: Rudeus.Procedure.Test
   items:
-  - uid: RudeusBgInitializerTest.TaskInitializerTests
-    name: TaskInitializerTests
-- uid: RudeusLibTest
-  name: RudeusLibTest
-  items:
-  - uid: RudeusLibTest.ConstantsTests
-    name: ConstantsTests
-  - uid: RudeusLibTest.UnitTestSample
-    name: UnitTestSample
-  - uid: RudeusLibTest.UtilsTests
-    name: UtilsTests
-- uid: RudeusLibTest.API
-  name: RudeusLibTest.API
-  items:
-  - uid: RudeusLibTest.API.RemoteAPITests
-    name: RemoteAPITests
-- uid: RudeusLibTest.Procedure
-  name: RudeusLibTest.Procedure
-  items:
-  - uid: RudeusLibTest.Procedure.CertificateInstallerTests
+  - uid: Rudeus.Procedure.Test.CertificateInstallerTests
     name: CertificateInstallerTests
-  - uid: RudeusLibTest.Procedure.FakeProcedureTests
+  - uid: Rudeus.Procedure.Test.FakeProcedureTests
     name: FakeProcedureTests
-  - uid: RudeusLibTest.Procedure.RegistryInitializerTests
+  - uid: Rudeus.Procedure.Test.RegistryInitializerTests
     name: RegistryInitializerTests
+- uid: Rudeus.Test
+  name: Rudeus.Test
+  items:
+  - uid: Rudeus.Test.ConstantsTests
+    name: ConstantsTests
+  - uid: Rudeus.Test.UnitTestSample
+    name: UnitTestSample
+  - uid: Rudeus.Test.UtilsTests
+    name: UtilsTests
 - uid: Xunit
   name: Xunit
   items:

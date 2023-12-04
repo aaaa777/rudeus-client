@@ -1,0 +1,151 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.API.Request
+  commentId: N:Rudeus.API.Request
+  id: Rudeus.API.Request
+  children:
+  - Rudeus.API.Request.BaseRequest
+  - Rudeus.API.Request.BaseRequestData
+  - Rudeus.API.Request.EmptyRequest
+  - Rudeus.API.Request.EmptyRequestData
+  - Rudeus.API.Request.IRequest
+  - Rudeus.API.Request.LoginRequest
+  - Rudeus.API.Request.LoginRequestData
+  - Rudeus.API.Request.RegisterRequest
+  - Rudeus.API.Request.RegisterRequestData
+  - Rudeus.API.Request.SendInstalledAppsAppData
+  - Rudeus.API.Request.SendInstalledAppsRequest
+  - Rudeus.API.Request.SendInstalledAppsRequestData
+  - Rudeus.API.Request.UpdateRequest
+  - Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.API.Request
+  nameWithType: Rudeus.API.Request
+  fullName: Rudeus.API.Request
+  type: Namespace
+  assemblies:
+  - SharedLib
+references:
+- uid: Rudeus.API.Request.BaseRequest
+  commentId: T:Rudeus.API.Request.BaseRequest
+  href: Rudeus.API.Request.BaseRequest.html
+  name: BaseRequest
+  nameWithType: BaseRequest
+  fullName: Rudeus.API.Request.BaseRequest
+- uid: Rudeus.API.Request.BaseRequestData
+  commentId: T:Rudeus.API.Request.BaseRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.BaseRequestData.html
+  name: BaseRequestData
+  nameWithType: BaseRequestData
+  fullName: Rudeus.API.Request.BaseRequestData
+- uid: Rudeus.API.Request.EmptyRequest
+  commentId: T:Rudeus.API.Request.EmptyRequest
+  href: Rudeus.API.Request.EmptyRequest.html
+  name: EmptyRequest
+  nameWithType: EmptyRequest
+  fullName: Rudeus.API.Request.EmptyRequest
+- uid: Rudeus.API.Request.EmptyRequestData
+  commentId: T:Rudeus.API.Request.EmptyRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.EmptyRequestData.html
+  name: EmptyRequestData
+  nameWithType: EmptyRequestData
+  fullName: Rudeus.API.Request.EmptyRequestData
+- uid: Rudeus.API.Request.IRequest
+  commentId: T:Rudeus.API.Request.IRequest
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.IRequest.html
+  name: IRequest
+  nameWithType: IRequest
+  fullName: Rudeus.API.Request.IRequest
+- uid: Rudeus.API.Request.LoginRequest
+  commentId: T:Rudeus.API.Request.LoginRequest
+  href: Rudeus.API.Request.LoginRequest.html
+  name: LoginRequest
+  nameWithType: LoginRequest
+  fullName: Rudeus.API.Request.LoginRequest
+- uid: Rudeus.API.Request.LoginRequestData
+  commentId: T:Rudeus.API.Request.LoginRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.LoginRequestData.html
+  name: LoginRequestData
+  nameWithType: LoginRequestData
+  fullName: Rudeus.API.Request.LoginRequestData
+- uid: Rudeus.API.Request.RegisterRequest
+  commentId: T:Rudeus.API.Request.RegisterRequest
+  href: Rudeus.API.Request.RegisterRequest.html
+  name: RegisterRequest
+  nameWithType: RegisterRequest
+  fullName: Rudeus.API.Request.RegisterRequest
+- uid: Rudeus.API.Request.RegisterRequestData
+  commentId: T:Rudeus.API.Request.RegisterRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.RegisterRequestData.html
+  name: RegisterRequestData
+  nameWithType: RegisterRequestData
+  fullName: Rudeus.API.Request.RegisterRequestData
+- uid: Rudeus.API.Request.SendInstalledAppsRequest
+  commentId: T:Rudeus.API.Request.SendInstalledAppsRequest
+  href: Rudeus.API.Request.SendInstalledAppsRequest.html
+  name: SendInstalledAppsRequest
+  nameWithType: SendInstalledAppsRequest
+  fullName: Rudeus.API.Request.SendInstalledAppsRequest
+- uid: Rudeus.API.Request.SendInstalledAppsRequestData
+  commentId: T:Rudeus.API.Request.SendInstalledAppsRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.SendInstalledAppsRequestData.html
+  name: SendInstalledAppsRequestData
+  nameWithType: SendInstalledAppsRequestData
+  fullName: Rudeus.API.Request.SendInstalledAppsRequestData
+- uid: Rudeus.API.Request.SendInstalledAppsAppData
+  commentId: T:Rudeus.API.Request.SendInstalledAppsAppData
+  href: Rudeus.API.Request.SendInstalledAppsAppData.html
+  name: SendInstalledAppsAppData
+  nameWithType: SendInstalledAppsAppData
+  fullName: Rudeus.API.Request.SendInstalledAppsAppData
+- uid: Rudeus.API.Request.UpdateRequest
+  commentId: T:Rudeus.API.Request.UpdateRequest
+  href: Rudeus.API.Request.UpdateRequest.html
+  name: UpdateRequest
+  nameWithType: UpdateRequest
+  fullName: Rudeus.API.Request.UpdateRequest
+- uid: Rudeus.API.Request.UpdateRequestData
+  commentId: T:Rudeus.API.Request.UpdateRequestData
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.UpdateRequestData.html
+  name: UpdateRequestData
+  nameWithType: UpdateRequestData
+  fullName: Rudeus.API.Request.UpdateRequestData
+- uid: Rudeus.API.Request
+  commentId: N:Rudeus.API.Request
+  href: Rudeus.html
+  name: Rudeus.API.Request
+  nameWithType: Rudeus.API.Request
+  fullName: Rudeus.API.Request
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html

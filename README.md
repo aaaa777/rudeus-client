@@ -1,3 +1,5 @@
+[![.NET Core Desktop](https://github.com/aaaa777/rudeus-client/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/aaaa777/rudeus-client/actions/workflows/dotnet-desktop.yml)
+
 # Rudeus
 
 

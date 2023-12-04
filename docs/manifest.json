@@ -82,6 +82,156 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.BaseRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.BaseRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.BaseRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.BaseRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.EmptyRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.EmptyRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.EmptyRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.EmptyRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.IRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.IRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.LoginRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.LoginRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.LoginRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.LoginRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.RegisterRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.RegisterRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.RegisterRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.RegisterRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsAppData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsAppData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.RequestClient.yml",
       "output": {
         ".html": {
@@ -202,6 +352,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Test.RemoteAPITests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Test.RemoteAPITests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.yml",
       "output": {
         ".html": {
@@ -282,6 +452,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Initializer.Procedure.TaskInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Initializer.Procedure.TaskInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Initializer.Procedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Initializer.Procedure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Initializer.Program.yml",
       "output": {
         ".html": {
@@ -296,6 +486,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Initializer.Test.ProgramTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Initializer.Test.TaskInitializerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Initializer.Test.TaskInitializerTests.html"
         }
       },
       "version": ""
@@ -322,20 +522,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Launcher.yml",
+      "source_relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Launcher.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.yml",
+      "source_relative_path": "api/Rudeus.Launcher.Procedure.Launcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.Launcher.html"
         }
       },
       "version": ""
@@ -602,6 +802,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.Test.CertificateInstallerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.Test.CertificateInstallerTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.Test.FakeProcedureTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.Test.FakeProcedureTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.Test.RegistryInitializerTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.Test.RegistryInitializerTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Procedure.UserLoginExecuter.yml",
       "output": {
         ".html": {
@@ -622,6 +862,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Test.ConstantsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Test.ConstantsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Test.UnitTestSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Test.UnitTestSample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Test.UtilsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Test.UtilsTests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Utils.yml",
       "output": {
         ".html": {
@@ -636,126 +916,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusBgInitializerTest.TaskInitializerTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusBgInitializerTest.TaskInitializerTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusBgInitializerTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusBgInitializerTest.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.API.RemoteAPITests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.API.RemoteAPITests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.API.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.API.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.ConstantsTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.ConstantsTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.Procedure.CertificateInstallerTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.Procedure.CertificateInstallerTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.Procedure.FakeProcedureTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.Procedure.FakeProcedureTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.Procedure.RegistryInitializerTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.Procedure.RegistryInitializerTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.Procedure.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.Procedure.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.UnitTestSample.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.UnitTestSample.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.UtilsTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.UtilsTests.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/RudeusLibTest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/RudeusLibTest.html"
         }
       },
       "version": ""

@@ -4,7 +4,6 @@ items:
   commentId: N:Rudeus.Launcher
   id: Rudeus.Launcher
   children:
-  - Rudeus.Launcher.Launcher
   - Rudeus.Launcher.Program
   - Rudeus.Launcher.Updater
   langs:
@@ -17,12 +16,6 @@ items:
   assemblies:
   - Launcher
 references:
-- uid: Rudeus.Launcher.Launcher
-  commentId: T:Rudeus.Launcher.Launcher
-  href: Rudeus.Launcher.Launcher.html
-  name: Launcher
-  nameWithType: Launcher
-  fullName: Rudeus.Launcher.Launcher
 - uid: Rudeus.Launcher.Program
   commentId: T:Rudeus.Launcher.Program
   href: Rudeus.Launcher.Program.html

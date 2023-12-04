@@ -5,6 +5,7 @@ items:
   id: Rudeus.Initializer.Test
   children:
   - Rudeus.Initializer.Test.ProgramTests
+  - Rudeus.Initializer.Test.TaskInitializerTests
   langs:
   - csharp
   - vb
@@ -21,3 +22,9 @@ references:
   name: ProgramTests
   nameWithType: ProgramTests
   fullName: Rudeus.Initializer.Test.ProgramTests
+- uid: Rudeus.Initializer.Test.TaskInitializerTests
+  commentId: T:Rudeus.Initializer.Test.TaskInitializerTests
+  href: Rudeus.Initializer.Test.TaskInitializerTests.html
+  name: TaskInitializerTests
+  nameWithType: TaskInitializerTests
+  fullName: Rudeus.Initializer.Test.TaskInitializerTests

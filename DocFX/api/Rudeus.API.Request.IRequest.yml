@@ -1,0 +1,1540 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.API.Request.IRequest
+  commentId: T:Rudeus.API.Request.IRequest
+  id: IRequest
+  parent: Rudeus.API.Request
+  children:
+  - Rudeus.API.Request.IRequest.type
+  langs:
+  - csharp
+  - vb
+  name: IRequest
+  nameWithType: IRequest
+  fullName: Rudeus.API.Request.IRequest
+  type: Interface
+  source:
+    remote:
+      path: SharedLib/API/Request/IRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IRequest
+    path: ../SharedLib/API/Request/IRequest.cs
+    startLine: 4
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: public interface IRequest
+    content.vb: Public Interface IRequest
+  extensionMethods:
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.AsDynamic``1
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNotNull``1
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.Request.IRequest)
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest)
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNull``1
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.Request.IRequest)
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest)
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+  - Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.API.Request.IRequest,System.Boolean}},System.String)
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: Rudeus.API.Request.IRequest.type
+  commentId: P:Rudeus.API.Request.IRequest.type
+  id: type
+  parent: Rudeus.API.Request.IRequest
+  langs:
+  - csharp
+  - vb
+  name: type
+  nameWithType: IRequest.type
+  fullName: Rudeus.API.Request.IRequest.type
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/IRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: type
+    path: ../SharedLib/API/Request/IRequest.cs
+    startLine: 6
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: string? type { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property type As String
+  overload: Rudeus.API.Request.IRequest.type*
+references:
+- uid: Rudeus.API.Request
+  commentId: N:Rudeus.API.Request
+  href: Rudeus.html
+  name: Rudeus.API.Request
+  nameWithType: Rudeus.API.Request
+  fullName: Rudeus.API.Request
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<IRequest>(IRequest)
+  nameWithType: AssertEx.AsDynamic<IRequest>(IRequest)
+  fullName: Xunit.AssertEx.AsDynamic<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.AsDynamic(Of IRequest)(IRequest)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest)
+  name.vb: AsDynamic(Of IRequest)(IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(Rudeus.API.Request.IRequest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(Rudeus.API.Request.IRequest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<IRequest>(IRequest)
+  nameWithType: AssertEx.IsNotNull<IRequest>(IRequest)
+  fullName: Xunit.AssertEx.IsNotNull<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.IsNotNull(Of IRequest)(IRequest)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest)
+  name.vb: IsNotNull(Of IRequest)(IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(Rudeus.API.Request.IRequest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(Rudeus.API.Request.IRequest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.Request.IRequest)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<IRequest>(IRequest, IRequest)
+  nameWithType: AssertEx.IsNotSameReferenceAs<IRequest>(IRequest, IRequest)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of IRequest)(IRequest, IRequest)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  name.vb: IsNotSameReferenceAs(Of IRequest)(IRequest, IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<IRequest>(IRequest, IRequest)
+  nameWithType: AssertEx.IsNot<IRequest>(IRequest, IRequest)
+  fullName: Xunit.AssertEx.IsNot<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.IsNot(Of IRequest)(IRequest, IRequest)
+  fullName.vb: Xunit.AssertEx.IsNot(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  name.vb: IsNot(Of IRequest)(IRequest, IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<IRequest>(IRequest, IRequest, IEqualityComparer<IRequest>)
+  nameWithType: AssertEx.IsNot<IRequest>(IRequest, IRequest, IEqualityComparer<IRequest>)
+  fullName: Xunit.AssertEx.IsNot<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest, System.Collections.Generic.IEqualityComparer<Rudeus.API.Request.IRequest>)
+  nameWithType.vb: AssertEx.IsNot(Of IRequest)(IRequest, IRequest, IEqualityComparer(Of IRequest))
+  fullName.vb: Xunit.AssertEx.IsNot(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest, System.Collections.Generic.IEqualityComparer(Of Rudeus.API.Request.IRequest))
+  name.vb: IsNot(Of IRequest)(IRequest, IRequest, IEqualityComparer(Of IRequest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<IRequest>(IRequest)
+  nameWithType: AssertEx.IsNull<IRequest>(IRequest)
+  fullName: Xunit.AssertEx.IsNull<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.IsNull(Of IRequest)(IRequest)
+  fullName.vb: Xunit.AssertEx.IsNull(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest)
+  name.vb: IsNull(Of IRequest)(IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(Rudeus.API.Request.IRequest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(Rudeus.API.Request.IRequest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.Request.IRequest)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<IRequest>(IRequest, IRequest)
+  nameWithType: AssertEx.IsSameReferenceAs<IRequest>(IRequest, IRequest)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of IRequest)(IRequest, IRequest)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  name.vb: IsSameReferenceAs(Of IRequest)(IRequest, IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<IRequest>(IRequest, IRequest)
+  nameWithType: AssertEx.Is<IRequest>(IRequest, IRequest)
+  fullName: Xunit.AssertEx.Is<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  nameWithType.vb: AssertEx.Is(Of IRequest)(IRequest, IRequest)
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest)
+  name.vb: Is(Of IRequest)(IRequest, IRequest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<IRequest>(IRequest, IRequest, IEqualityComparer<IRequest>)
+  nameWithType: AssertEx.Is<IRequest>(IRequest, IRequest, IEqualityComparer<IRequest>)
+  fullName: Xunit.AssertEx.Is<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest, System.Collections.Generic.IEqualityComparer<Rudeus.API.Request.IRequest>)
+  nameWithType.vb: AssertEx.Is(Of IRequest)(IRequest, IRequest, IEqualityComparer(Of IRequest))
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, Rudeus.API.Request.IRequest, System.Collections.Generic.IEqualityComparer(Of Rudeus.API.Request.IRequest))
+  name.vb: Is(Of IRequest)(IRequest, IRequest, IEqualityComparer(Of IRequest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,Rudeus.API.Request.IRequest,System.Collections.Generic.IEqualityComparer{Rudeus.API.Request.IRequest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: )
+- uid: Rudeus.API.Request.IRequest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.API.Request.IRequest,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<IRequest>(IRequest, Expression<Func<IRequest, bool>>, string)
+  nameWithType: AssertEx.Is<IRequest>(IRequest, Expression<Func<IRequest, bool>>, string)
+  fullName: Xunit.AssertEx.Is<Rudeus.API.Request.IRequest>(Rudeus.API.Request.IRequest, System.Linq.Expressions.Expression<System.Func<Rudeus.API.Request.IRequest, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of IRequest)(IRequest, Expression(Of Func(Of IRequest, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.API.Request.IRequest)(Rudeus.API.Request.IRequest, System.Linq.Expressions.Expression(Of System.Func(Of Rudeus.API.Request.IRequest, Boolean)), String)
+  name.vb: Is(Of IRequest)(IRequest, Expression(Of Func(Of IRequest, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,System.Linq.Expressions.Expression{System.Func{Rudeus.API.Request.IRequest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.API.Request.IRequest,System.Linq.Expressions.Expression{System.Func{Rudeus.API.Request.IRequest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: )
+  - name: (
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.API.Request.IRequest
+    name: IRequest
+    href: Rudeus.API.Request.IRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Rudeus.API.Request.IRequest.type*
+  commentId: Overload:Rudeus.API.Request.IRequest.type
+  href: Rudeus.API.Request.IRequest.html#Rudeus_API_Request_IRequest_type
+  name: type
+  nameWithType: IRequest.type
+  fullName: Rudeus.API.Request.IRequest.type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

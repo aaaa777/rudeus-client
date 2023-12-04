@@ -34,6 +34,81 @@
     "title": "Class RemoteAPI | Rudeus Document",
     "keywords": "Class RemoteAPI Namespace Rudeus.API Assembly SharedLib.dll 管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない public class RemoteAPI Inheritance object RemoteAPI Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Fields ApiEndpointWithCert public static readonly string ApiEndpointWithCert Field Value string ApiEndpointWithoutCert public static readonly string ApiEndpointWithoutCert Field Value string AppCallbackUri public static string AppCallbackUri Field Value string SamlLoginUrl public static readonly string SamlLoginUrl Field Value string Properties ApiCheckStatusPath public static string ApiCheckStatusPath { get; } Property Value string ApiLoginPath public static string ApiLoginPath { get; } Property Value string ApiRegisterPath public static string ApiRegisterPath { get; } Property Value string ApiSendInstalledAppsPath public static string ApiSendInstalledAppsPath { get; } Property Value string ApiUpdateMetadataPath public static string ApiUpdateMetadataPath { get; } Property Value string ApiUpdatePath public static string ApiUpdatePath { get; } Property Value string RequestClient public static IRequestClient RequestClient { get; set; } Property Value IRequestClient Methods BuildHttpRequestMessage(string?, string, string, HttpMethod) public static HttpRequestMessage BuildHttpRequestMessage(string? accessToken, string requestPath, string payload, HttpMethod method) Parameters accessToken string requestPath string payload string method HttpMethod Returns HttpRequestMessage GetUpdateMetadata(string) public static UpdateMetadataResponse GetUpdateMetadata(string accessToken) Parameters accessToken string Returns UpdateMetadataResponse IsAccessTokenAvailable(string) public static bool IsAccessTokenAvailable(string accessToken) Parameters accessToken string Returns bool IsRemoteReachable() public static bool IsRemoteReachable() Returns bool LoginDevice(string, string) public static LoginResponse LoginDevice(string accessToken, string userId) Parameters accessToken string userId string Returns LoginResponse ReceiveStudentIdAsync() ログインして紐づけを行ったUserIdを取得 localhostを使うのでWindowsのみ対応している public static Task<string> ReceiveStudentIdAsync() Returns Task<string> RegisterDevice(string, string) デバイスを登録する accesstokenを取得する public static RegisterResponse RegisterDevice(string deviceId, string hostname) Parameters deviceId string hostname string Returns RegisterResponse RegisterResponse SendInstalledApps(string, List<ApplicationData>) public static BaseResponse SendInstalledApps(string accessToken, List<ApplicationData> apps) Parameters accessToken string apps List<ApplicationData> Returns BaseResponse UpdateDevice(string, string?) デバイスIDとアクセストークンを利用してデバイス情報を更新する public static UpdateResponse UpdateDevice(string accessToken, string? hostname = null) Parameters accessToken string hostname string Returns UpdateResponse"
   },
+  "api/Rudeus.API.Request.BaseRequest.html": {
+    "href": "api/Rudeus.API.Request.BaseRequest.html",
+    "title": "Class BaseRequest | Rudeus Document",
+    "keywords": "Class BaseRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class BaseRequest : IRequest Inheritance object BaseRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Properties request_data [JsonPropertyName(\"request_data\")] public BaseRequestData? request_data { get; set; } Property Value BaseRequestData type [JsonPropertyName(\"type\")] public string? type { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.BaseRequestData.html": {
+    "href": "api/Rudeus.API.Request.BaseRequestData.html",
+    "title": "Class BaseRequestData | Rudeus Document",
+    "keywords": "Class BaseRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class BaseRequestData Inheritance object BaseRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string)"
+  },
+  "api/Rudeus.API.Request.EmptyRequest.html": {
+    "href": "api/Rudeus.API.Request.EmptyRequest.html",
+    "title": "Class EmptyRequest | Rudeus Document",
+    "keywords": "Class EmptyRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class EmptyRequest : IRequest Inheritance object EmptyRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors EmptyRequest() public EmptyRequest() Properties request_data [JsonPropertyName(\"request_data\")] public EmptyRequestData request_data { get; set; } Property Value EmptyRequestData type [JsonPropertyName(\"type\")] public string type { get; } Property Value string"
+  },
+  "api/Rudeus.API.Request.EmptyRequestData.html": {
+    "href": "api/Rudeus.API.Request.EmptyRequestData.html",
+    "title": "Class EmptyRequestData | Rudeus Document",
+    "keywords": "Class EmptyRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class EmptyRequestData Inheritance object EmptyRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors EmptyRequestData() public EmptyRequestData()"
+  },
+  "api/Rudeus.API.Request.IRequest.html": {
+    "href": "api/Rudeus.API.Request.IRequest.html",
+    "title": "Interface IRequest | Rudeus Document",
+    "keywords": "Interface IRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public interface IRequest Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Properties type string? type { get; } Property Value string"
+  },
+  "api/Rudeus.API.Request.LoginRequest.html": {
+    "href": "api/Rudeus.API.Request.LoginRequest.html",
+    "title": "Class LoginRequest | Rudeus Document",
+    "keywords": "Class LoginRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class LoginRequest : IRequest Inheritance object LoginRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors LoginRequest(string) public LoginRequest(string username) Parameters username string Properties request_data [JsonPropertyName(\"request_data\")] public LoginRequestData request_data { get; set; } Property Value LoginRequestData type [JsonPropertyName(\"type\")] public string type { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.LoginRequestData.html": {
+    "href": "api/Rudeus.API.Request.LoginRequestData.html",
+    "title": "Class LoginRequestData | Rudeus Document",
+    "keywords": "Class LoginRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class LoginRequestData Inheritance object LoginRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors LoginRequestData(string) public LoginRequestData(string userId) Parameters userId string Properties user_id [JsonPropertyName(\"user_id\")] public string user_id { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.RegisterRequest.html": {
+    "href": "api/Rudeus.API.Request.RegisterRequest.html",
+    "title": "Class RegisterRequest | Rudeus Document",
+    "keywords": "Class RegisterRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class RegisterRequest : IRequest Inheritance object RegisterRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors RegisterRequest(string, string, string) public RegisterRequest(string deviceId, string hostname, string manageId) Parameters deviceId string hostname string manageId string Properties request_data [JsonPropertyName(\"request_data\")] public RegisterRequestData request_data { get; set; } Property Value RegisterRequestData type [JsonPropertyName(\"type\")] public string type { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.RegisterRequestData.html": {
+    "href": "api/Rudeus.API.Request.RegisterRequestData.html",
+    "title": "Class RegisterRequestData | Rudeus Document",
+    "keywords": "Class RegisterRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class RegisterRequestData Inheritance object RegisterRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors RegisterRequestData(string, string, string) public RegisterRequestData(string deviceId, string hostname, string manageId) Parameters deviceId string hostname string manageId string Properties device_id [JsonPropertyName(\"device_id\")] public string? device_id { get; set; } Property Value string hostname [JsonPropertyName(\"hostname\")] public string? hostname { get; set; } Property Value string manage_id [JsonPropertyName(\"manage_id\")] public string? manage_id { get; set; } Property Value string product_name [JsonPropertyName(\"product_name\")] public string? product_name { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.SendInstalledAppsAppData.html": {
+    "href": "api/Rudeus.API.Request.SendInstalledAppsAppData.html",
+    "title": "Class SendInstalledAppsAppData | Rudeus Document",
+    "keywords": "Class SendInstalledAppsAppData Namespace Rudeus.API.Request Assembly SharedLib.dll public class SendInstalledAppsAppData Inheritance object SendInstalledAppsAppData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors SendInstalledAppsAppData(string, string) public SendInstalledAppsAppData(string name, string version) Parameters name string version string Properties name [JsonPropertyName(\"name\")] public string name { get; set; } Property Value string version [JsonPropertyName(\"version\")] public string version { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.SendInstalledAppsRequest.html": {
+    "href": "api/Rudeus.API.Request.SendInstalledAppsRequest.html",
+    "title": "Class SendInstalledAppsRequest | Rudeus Document",
+    "keywords": "Class SendInstalledAppsRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class SendInstalledAppsRequest : IRequest Inheritance object SendInstalledAppsRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors SendInstalledAppsRequest(List<ApplicationData>) public SendInstalledAppsRequest(List<ApplicationData> apps) Parameters apps List<ApplicationData> Properties request_data [JsonPropertyName(\"request_data\")] public SendInstalledAppsRequestData request_data { get; set; } Property Value SendInstalledAppsRequestData type [JsonPropertyName(\"type\")] public string type { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.SendInstalledAppsRequestData.html": {
+    "href": "api/Rudeus.API.Request.SendInstalledAppsRequestData.html",
+    "title": "Class SendInstalledAppsRequestData | Rudeus Document",
+    "keywords": "Class SendInstalledAppsRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class SendInstalledAppsRequestData Inheritance object SendInstalledAppsRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors SendInstalledAppsRequestData(List<ApplicationData>) public SendInstalledAppsRequestData(List<ApplicationData> apps) Parameters apps List<ApplicationData> Properties apps [JsonPropertyName(\"apps\")] public List<SendInstalledAppsAppData> apps { get; set; } Property Value List<SendInstalledAppsAppData>"
+  },
+  "api/Rudeus.API.Request.UpdateRequest.html": {
+    "href": "api/Rudeus.API.Request.UpdateRequest.html",
+    "title": "Class UpdateRequest | Rudeus Document",
+    "keywords": "Class UpdateRequest Namespace Rudeus.API.Request Assembly SharedLib.dll public class UpdateRequest : IRequest Inheritance object UpdateRequest Implements IRequest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors UpdateRequest() public UpdateRequest() UpdateRequest(string?) public UpdateRequest(string? hostname = null) Parameters hostname string Properties request_data [JsonPropertyName(\"request_data\")] public UpdateRequestData request_data { get; set; } Property Value UpdateRequestData type [JsonPropertyName(\"type\")] public string type { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.UpdateRequestData.html": {
+    "href": "api/Rudeus.API.Request.UpdateRequestData.html",
+    "title": "Class UpdateRequestData | Rudeus Document",
+    "keywords": "Class UpdateRequestData Namespace Rudeus.API.Request Assembly SharedLib.dll public class UpdateRequestData Inheritance object UpdateRequestData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors UpdateRequestData() public UpdateRequestData() UpdateRequestData(string?) public UpdateRequestData(string? hostname) Parameters hostname string Properties hostname [JsonPropertyName(\"hostname\")] [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] public string? hostname { get; set; } Property Value string spec [JsonPropertyName(\"spec\")] [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] public string? spec { get; set; } Property Value string"
+  },
+  "api/Rudeus.API.Request.html": {
+    "href": "api/Rudeus.API.Request.html",
+    "title": "Namespace Rudeus.API.Request | Rudeus Document",
+    "keywords": "Namespace Rudeus.API.Request Classes BaseRequest BaseRequestData EmptyRequest EmptyRequestData LoginRequest LoginRequestData RegisterRequest RegisterRequestData SendInstalledAppsAppData SendInstalledAppsRequest SendInstalledAppsRequestData UpdateRequest UpdateRequestData Interfaces IRequest"
+  },
   "api/Rudeus.API.RequestClient.html": {
     "href": "api/Rudeus.API.RequestClient.html",
     "title": "Class RequestClient | Rudeus Document",
@@ -94,6 +169,16 @@
     "title": "Namespace Rudeus.API.Response | Rudeus Document",
     "keywords": "Namespace Rudeus.API.Response Classes BaseResponse LoginResponse LoginResponseData PushResponseData RegisterResponse RegisterResponseData UpdateMetadataResponse UpdateMetadataResponseData UpdateResponse UpdateResponseData"
   },
+  "api/Rudeus.API.Test.RemoteAPITests.html": {
+    "href": "api/Rudeus.API.Test.RemoteAPITests.html",
+    "title": "Class RemoteAPITests | Rudeus Document",
+    "keywords": "Class RemoteAPITests Namespace Rudeus.API.Test Assembly Test.dll public class RemoteAPITests Inheritance object RemoteAPITests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestBuildHttpRequestMessage() [Fact] public void TestBuildHttpRequestMessage() TestLoginDevice() [Fact] public void TestLoginDevice() TestRegisterDevice() [Fact] public void TestRegisterDevice() TestRegisterDeviceException() [Fact] public void TestRegisterDeviceException() TestSendInstalledApps() [Fact] public void TestSendInstalledApps() TestUpdateDevice() [Fact] public void TestUpdateDevice()"
+  },
+  "api/Rudeus.API.Test.html": {
+    "href": "api/Rudeus.API.Test.html",
+    "title": "Namespace Rudeus.API.Test | Rudeus Document",
+    "keywords": "Namespace Rudeus.API.Test Classes RemoteAPITests"
+  },
   "api/Rudeus.API.html": {
     "href": "api/Rudeus.API.html",
     "title": "Namespace Rudeus.API | Rudeus Document",
@@ -134,6 +219,16 @@
     "title": "Interface IUtils | Rudeus Document",
     "keywords": "Interface IUtils Namespace Rudeus Assembly SharedLib.dll ユーティリティクラスのインターフェース public interface IUtils Extension Methods AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods CompareVersionString(string, string, int) ドット区切り数字列を比較する public static abstract int CompareVersionString(string a, string b, int depth) Parameters a string 対象文字列A b string 対象文字列B depth int 比較する列数 (0なら全て) Returns int A-Bの符号 (1, 0, -1) ConcatStudentNumberFromMail(string) メールアドレスから学籍番号を抽出する public static abstract string ConcatStudentNumberFromMail(string mailAddress) Parameters mailAddress string sXXXXXXX@s.do-johodai.ac.jpのメールアドレス Returns string XXXXXXXの数字部分 CopyDirectory(string, string, bool) ディレクトリを再帰的にコピーする public static abstract void CopyDirectory(string sourceDir, string destDir, bool recursive) Parameters sourceDir string destDir string recursive bool IsStudentMailAddress(string) メールアドレスが学生用のものかどうかを判定する public static abstract bool IsStudentMailAddress(string mailAddress) Parameters mailAddress string メールアドレス Returns bool ParseArgs(string[]) key=value形式の引数をパースする public static abstract Dictionary<string, string> ParseArgs(string[] args) Parameters args string[] Returns Dictionary<string, string> RegisterDeviceAndSetData() 廃止予定 デバイスを登録し、データを設定する public static abstract void RegisterDeviceAndSetData()"
   },
+  "api/Rudeus.Initializer.Procedure.TaskInitializer.html": {
+    "href": "api/Rudeus.Initializer.Procedure.TaskInitializer.html",
+    "title": "Class TaskInitializer | Rudeus Document",
+    "keywords": "Class TaskInitializer Namespace Rudeus.Initializer.Procedure Assembly Initializer.dll タスクスケジューラーの初期化を行う手続き public class TaskInitializer : IProcedure Inheritance object TaskInitializer Implements IProcedure Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods Run() 処理を実行する public Task Run() Returns Task"
+  },
+  "api/Rudeus.Initializer.Procedure.html": {
+    "href": "api/Rudeus.Initializer.Procedure.html",
+    "title": "Namespace Rudeus.Initializer.Procedure | Rudeus Document",
+    "keywords": "Namespace Rudeus.Initializer.Procedure Classes TaskInitializer タスクスケジューラーの初期化を行う手続き"
+  },
   "api/Rudeus.Initializer.Program.html": {
     "href": "api/Rudeus.Initializer.Program.html",
     "title": "Class Program | Rudeus Document",
@@ -144,30 +239,35 @@
     "title": "Class ProgramTests | Rudeus Document",
     "keywords": "Class ProgramTests Namespace Rudeus.Initializer.Test Assembly Test.dll public class ProgramTests Inheritance object ProgramTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestMain() [Fact] public void TestMain()"
   },
+  "api/Rudeus.Initializer.Test.TaskInitializerTests.html": {
+    "href": "api/Rudeus.Initializer.Test.TaskInitializerTests.html",
+    "title": "Class TaskInitializerTests | Rudeus Document",
+    "keywords": "Class TaskInitializerTests Namespace Rudeus.Initializer.Test Assembly Test.dll public class TaskInitializerTests Inheritance object TaskInitializerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string)"
+  },
   "api/Rudeus.Initializer.Test.html": {
     "href": "api/Rudeus.Initializer.Test.html",
     "title": "Namespace Rudeus.Initializer.Test | Rudeus Document",
-    "keywords": "Namespace Rudeus.Initializer.Test Classes ProgramTests"
+    "keywords": "Namespace Rudeus.Initializer.Test Classes ProgramTests TaskInitializerTests"
   },
   "api/Rudeus.Initializer.html": {
     "href": "api/Rudeus.Initializer.html",
     "title": "Namespace Rudeus.Initializer | Rudeus Document",
     "keywords": "Namespace Rudeus.Initializer Classes Program"
   },
-  "api/Rudeus.Launcher.Launcher.html": {
-    "href": "api/Rudeus.Launcher.Launcher.html",
-    "title": "Class Launcher | Rudeus Document",
-    "keywords": "Class Launcher Namespace Rudeus.Launcher Assembly Launcher.dll アプリの起動を行う手続き public class Launcher : ILauncher, IProcedure Inheritance object Launcher Implements ILauncher IProcedure Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors Launcher(ISettings, string, Func<string, string, int>?) public Launcher(ISettings aps, string args = \"\", Func<string, string, int>? startProcess = null) Parameters aps ISettings args string startProcess Func<string, string, int> Properties AppSettings public ISettings AppSettings { get; set; } Property Value ISettings Args public string Args { get; set; } Property Value string ExitCode public int ExitCode { get; set; } Property Value int StartProcess public Func<string, string, int> StartProcess { get; set; } Property Value Func<string, string, int> Methods Run() 処理を実行する public Task Run() Returns Task"
-  },
   "api/Rudeus.Launcher.Procedure.ILauncher.html": {
     "href": "api/Rudeus.Launcher.Procedure.ILauncher.html",
     "title": "Interface ILauncher | Rudeus Document",
     "keywords": "Interface ILauncher Namespace Rudeus.Launcher.Procedure Assembly Launcher.dll LauncherはExitCodeを返すべき手続きだったので作成 public interface ILauncher : IProcedure Inherited Members IProcedure.Run() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Properties ExitCode int ExitCode { get; set; } Property Value int"
   },
+  "api/Rudeus.Launcher.Procedure.Launcher.html": {
+    "href": "api/Rudeus.Launcher.Procedure.Launcher.html",
+    "title": "Class Launcher | Rudeus Document",
+    "keywords": "Class Launcher Namespace Rudeus.Launcher.Procedure Assembly Launcher.dll アプリの起動を行う手続き public class Launcher : ILauncher, IProcedure Inheritance object Launcher Implements ILauncher IProcedure Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors Launcher(ISettings, string, Func<string, string, int>?) public Launcher(ISettings aps, string args = \"\", Func<string, string, int>? startProcess = null) Parameters aps ISettings args string startProcess Func<string, string, int> Properties AppSettings public ISettings AppSettings { get; set; } Property Value ISettings Args public string Args { get; set; } Property Value string ExitCode public int ExitCode { get; set; } Property Value int StartProcess public Func<string, string, int> StartProcess { get; set; } Property Value Func<string, string, int> Methods Run() 処理を実行する public Task Run() Returns Task"
+  },
   "api/Rudeus.Launcher.Procedure.html": {
     "href": "api/Rudeus.Launcher.Procedure.html",
     "title": "Namespace Rudeus.Launcher.Procedure | Rudeus Document",
-    "keywords": "Namespace Rudeus.Launcher.Procedure Interfaces ILauncher LauncherはExitCodeを返すべき手続きだったので作成"
+    "keywords": "Namespace Rudeus.Launcher.Procedure Classes Launcher アプリの起動を行う手続き Interfaces ILauncher LauncherはExitCodeを返すべき手続きだったので作成"
   },
   "api/Rudeus.Launcher.Program.html": {
     "href": "api/Rudeus.Launcher.Program.html",
@@ -202,7 +302,7 @@
   "api/Rudeus.Launcher.html": {
     "href": "api/Rudeus.Launcher.html",
     "title": "Namespace Rudeus.Launcher | Rudeus Document",
-    "keywords": "Namespace Rudeus.Launcher Classes Launcher アプリの起動を行う手続き Program Updater 起動アプリのアップデートを行う手続き"
+    "keywords": "Namespace Rudeus.Launcher Classes Program Updater 起動アプリのアップデートを行う手続き"
   },
   "api/Rudeus.Model.ApplicationData.html": {
     "href": "api/Rudeus.Model.ApplicationData.html",
@@ -294,6 +394,26 @@
     "title": "Class ServerRegister | Rudeus Document",
     "keywords": "Class ServerRegister Namespace Rudeus.Procedure Assembly SharedLib.dll 管理サーバにデバイスを登録する手続き public class ServerRegister : IProcedure Inheritance object ServerRegister Implements IProcedure Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Constructors ServerRegister(ILocalMachine?, ISettings?) public ServerRegister(ILocalMachine? lm = null, ISettings? cs = null) Parameters lm ILocalMachine cs ISettings Properties _localMachine public ILocalMachine _localMachine { get; set; } Property Value ILocalMachine _settings public ISettings _settings { get; set; } Property Value ISettings Methods Run() 処理を実行する public Task Run() Returns Task"
   },
+  "api/Rudeus.Procedure.Test.CertificateInstallerTests.html": {
+    "href": "api/Rudeus.Procedure.Test.CertificateInstallerTests.html",
+    "title": "Class CertificateInstallerTests | Rudeus Document",
+    "keywords": "Class CertificateInstallerTests Namespace Rudeus.Procedure.Test Assembly Test.dll public class CertificateInstallerTests Inheritance object CertificateInstallerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public void TestRun()"
+  },
+  "api/Rudeus.Procedure.Test.FakeProcedureTests.html": {
+    "href": "api/Rudeus.Procedure.Test.FakeProcedureTests.html",
+    "title": "Class FakeProcedureTests | Rudeus Document",
+    "keywords": "Class FakeProcedureTests Namespace Rudeus.Procedure.Test Assembly Test.dll public class FakeProcedureTests Inheritance object FakeProcedureTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public Task TestRun() Returns Task"
+  },
+  "api/Rudeus.Procedure.Test.RegistryInitializerTests.html": {
+    "href": "api/Rudeus.Procedure.Test.RegistryInitializerTests.html",
+    "title": "Class RegistryInitializerTests | Rudeus Document",
+    "keywords": "Class RegistryInitializerTests Namespace Rudeus.Procedure.Test Assembly Test.dll public class RegistryInitializerTests Inheritance object RegistryInitializerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public void TestRun()"
+  },
+  "api/Rudeus.Procedure.Test.html": {
+    "href": "api/Rudeus.Procedure.Test.html",
+    "title": "Namespace Rudeus.Procedure.Test | Rudeus Document",
+    "keywords": "Namespace Rudeus.Procedure.Test Classes CertificateInstallerTests FakeProcedureTests RegistryInitializerTests"
+  },
   "api/Rudeus.Procedure.UserLoginExecuter.html": {
     "href": "api/Rudeus.Procedure.UserLoginExecuter.html",
     "title": "Class UserLoginExecuter | Rudeus Document",
@@ -304,6 +424,26 @@
     "title": "Namespace Rudeus.Procedure | Rudeus Document",
     "keywords": "Namespace Rudeus.Procedure Classes AccessTokenValidator アクセストークンの有効性を確認し、無効なら再発行する手続き CertificateInstaller ローカルマシンに証明書をインストールする手続き FakeProcedure IProcedureのFake実装 RegistryInitializer ローカルマシンに必要なレジストリを初期化する手続き ScheduledRegularExecuter 定期実行する処理を実行する手続き デバイス情報の更新とサーバからのpush_dataの処理を行う ServerRegister 管理サーバにデバイスを登録する手続き UserLoginExecuter ユーザーのログインを行う手続き Interfaces IFakeProcedure IProcedure ひとまとまりの処理を実行するインターフェース 例えば、アクセストークンの再発行、インストール済みアプリの送信など"
   },
+  "api/Rudeus.Test.ConstantsTests.html": {
+    "href": "api/Rudeus.Test.ConstantsTests.html",
+    "title": "Class ConstantsTests | Rudeus Document",
+    "keywords": "Class ConstantsTests Namespace Rudeus.Test Assembly Test.dll public class ConstantsTests Inheritance object ConstantsTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string)"
+  },
+  "api/Rudeus.Test.UnitTestSample.html": {
+    "href": "api/Rudeus.Test.UnitTestSample.html",
+    "title": "Class UnitTestSample | Rudeus Document",
+    "keywords": "Class UnitTestSample Namespace Rudeus.Test Assembly Test.dll public class UnitTestSample Inheritance object UnitTestSample Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestTest() [Fact(DisplayName = \"テストの書き方サンプル\")] public void TestTest()"
+  },
+  "api/Rudeus.Test.UtilsTests.html": {
+    "href": "api/Rudeus.Test.UtilsTests.html",
+    "title": "Class UtilsTests | Rudeus Document",
+    "keywords": "Class UtilsTests Namespace Rudeus.Test Assembly Test.dll public class UtilsTests Inheritance object UtilsTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestCompareVersionString() [Fact(DisplayName = \"CompareVersionString\")] public void TestCompareVersionString() TestConcatStudentNumberFromMail() [Fact(DisplayName = \"ConcatStudentNumberFromMail\")] public void TestConcatStudentNumberFromMail() TestIsStudentMailAddress() [Fact(DisplayName = \"IsStudentMailAddress\")] public void TestIsStudentMailAddress()"
+  },
+  "api/Rudeus.Test.html": {
+    "href": "api/Rudeus.Test.html",
+    "title": "Namespace Rudeus.Test | Rudeus Document",
+    "keywords": "Namespace Rudeus.Test Classes ConstantsTests UnitTestSample UtilsTests"
+  },
   "api/Rudeus.Utils.html": {
     "href": "api/Rudeus.Utils.html",
     "title": "Class Utils | Rudeus Document",
@@ -313,66 +453,6 @@
     "href": "api/Rudeus.html",
     "title": "Namespace Rudeus | Rudeus Document",
     "keywords": "Namespace Rudeus Classes Constants 定数を定義するクラス Utils ユーティリティクラス Interfaces IUtils ユーティリティクラスのインターフェース"
-  },
-  "api/RudeusBgInitializerTest.TaskInitializerTests.html": {
-    "href": "api/RudeusBgInitializerTest.TaskInitializerTests.html",
-    "title": "Class TaskInitializerTests | Rudeus Document",
-    "keywords": "Class TaskInitializerTests Namespace RudeusBgInitializerTest Assembly Test.dll public class TaskInitializerTests Inheritance object TaskInitializerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string)"
-  },
-  "api/RudeusBgInitializerTest.html": {
-    "href": "api/RudeusBgInitializerTest.html",
-    "title": "Namespace RudeusBgInitializerTest | Rudeus Document",
-    "keywords": "Namespace RudeusBgInitializerTest Classes TaskInitializerTests"
-  },
-  "api/RudeusLibTest.API.RemoteAPITests.html": {
-    "href": "api/RudeusLibTest.API.RemoteAPITests.html",
-    "title": "Class RemoteAPITests | Rudeus Document",
-    "keywords": "Class RemoteAPITests Namespace RudeusLibTest.API Assembly Test.dll public class RemoteAPITests Inheritance object RemoteAPITests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestBuildHttpRequestMessage() [Fact] public void TestBuildHttpRequestMessage() TestLoginDevice() [Fact] public void TestLoginDevice() TestRegisterDevice() [Fact] public void TestRegisterDevice() TestRegisterDeviceException() [Fact] public void TestRegisterDeviceException() TestSendInstalledApps() [Fact] public void TestSendInstalledApps() TestUpdateDevice() [Fact] public void TestUpdateDevice()"
-  },
-  "api/RudeusLibTest.API.html": {
-    "href": "api/RudeusLibTest.API.html",
-    "title": "Namespace RudeusLibTest.API | Rudeus Document",
-    "keywords": "Namespace RudeusLibTest.API Classes RemoteAPITests"
-  },
-  "api/RudeusLibTest.ConstantsTests.html": {
-    "href": "api/RudeusLibTest.ConstantsTests.html",
-    "title": "Class ConstantsTests | Rudeus Document",
-    "keywords": "Class ConstantsTests Namespace RudeusLibTest Assembly Test.dll public class ConstantsTests Inheritance object ConstantsTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string)"
-  },
-  "api/RudeusLibTest.Procedure.CertificateInstallerTests.html": {
-    "href": "api/RudeusLibTest.Procedure.CertificateInstallerTests.html",
-    "title": "Class CertificateInstallerTests | Rudeus Document",
-    "keywords": "Class CertificateInstallerTests Namespace RudeusLibTest.Procedure Assembly Test.dll public class CertificateInstallerTests Inheritance object CertificateInstallerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public void TestRun()"
-  },
-  "api/RudeusLibTest.Procedure.FakeProcedureTests.html": {
-    "href": "api/RudeusLibTest.Procedure.FakeProcedureTests.html",
-    "title": "Class FakeProcedureTests | Rudeus Document",
-    "keywords": "Class FakeProcedureTests Namespace RudeusLibTest.Procedure Assembly Test.dll public class FakeProcedureTests Inheritance object FakeProcedureTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public Task TestRun() Returns Task"
-  },
-  "api/RudeusLibTest.Procedure.RegistryInitializerTests.html": {
-    "href": "api/RudeusLibTest.Procedure.RegistryInitializerTests.html",
-    "title": "Class RegistryInitializerTests | Rudeus Document",
-    "keywords": "Class RegistryInitializerTests Namespace RudeusLibTest.Procedure Assembly Test.dll public class RegistryInitializerTests Inheritance object RegistryInitializerTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestRun() [Fact] public void TestRun()"
-  },
-  "api/RudeusLibTest.Procedure.html": {
-    "href": "api/RudeusLibTest.Procedure.html",
-    "title": "Namespace RudeusLibTest.Procedure | Rudeus Document",
-    "keywords": "Namespace RudeusLibTest.Procedure Classes CertificateInstallerTests FakeProcedureTests RegistryInitializerTests"
-  },
-  "api/RudeusLibTest.UnitTestSample.html": {
-    "href": "api/RudeusLibTest.UnitTestSample.html",
-    "title": "Class UnitTestSample | Rudeus Document",
-    "keywords": "Class UnitTestSample Namespace RudeusLibTest Assembly Test.dll public class UnitTestSample Inheritance object UnitTestSample Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestTest() [Fact(DisplayName = \"テストの書き方サンプル\")] public void TestTest()"
-  },
-  "api/RudeusLibTest.UtilsTests.html": {
-    "href": "api/RudeusLibTest.UtilsTests.html",
-    "title": "Class UtilsTests | Rudeus Document",
-    "keywords": "Class UtilsTests Namespace RudeusLibTest Assembly Test.dll public class UtilsTests Inheritance object UtilsTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Extension Methods AssertEx.AsDynamic<T>(T) AssertEx.IsNotNull<T>(T) AssertEx.IsNotSameReferenceAs<T>(T, T) AssertEx.IsNot<T>(T, T) AssertEx.IsNot<T>(T, T, IEqualityComparer<T>) AssertEx.IsNull<T>(T) AssertEx.IsSameReferenceAs<T>(T, T) AssertEx.Is<T>(T, T) AssertEx.Is<T>(T, T, IEqualityComparer<T>) AssertEx.Is<T>(T, Expression<Func<T, bool>>, string) AssertEx.IsInstanceOf<TExpected>(object) AssertEx.IsNotInstanceOf<TWrong>(object) AssertEx.IsNotStructuralEqual(object, object, string) AssertEx.IsStructuralEqual(object, object, string) Methods TestCompareVersionString() [Fact(DisplayName = \"CompareVersionString\")] public void TestCompareVersionString() TestConcatStudentNumberFromMail() [Fact(DisplayName = \"ConcatStudentNumberFromMail\")] public void TestConcatStudentNumberFromMail() TestIsStudentMailAddress() [Fact(DisplayName = \"IsStudentMailAddress\")] public void TestIsStudentMailAddress()"
-  },
-  "api/RudeusLibTest.html": {
-    "href": "api/RudeusLibTest.html",
-    "title": "Namespace RudeusLibTest | Rudeus Document",
-    "keywords": "Namespace RudeusLibTest Classes ConstantsTests UnitTestSample UtilsTests"
   },
   "api/Xunit.AssertEx.html": {
     "href": "api/Xunit.AssertEx.html",
