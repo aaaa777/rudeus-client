@@ -184,7 +184,7 @@ jobs:
 
     - name: Compile Inno Setup
       # TODO: $pÇ∆$fÅASignTool=ÇÃãììÆÇ™ÇÊÇ≠ÇÌÇ©Ç¡ÇƒÇ¢Ç»Ç¢ÇÃÇ≈í≤ç∏Ç∑ÇÈ
-      run: iscc.exe '/Ssigntool2=.\signtool.exe sign /v /f $qD:\a\rudeus-client\rudeus-client\GitHubActionsWorkflow.pfx$q /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $p' InnoSetupConfig.iss
+      run: iscc.exe '/Ssigntool2=.\signtool.exe sign /v /f $qD:\a\rudeus-client\rudeus-client\GitHubActionsWorkflow.pfx$q /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d $qSystem Program$q /fd SHA256 $p' Installer\InnoSetupConfig.iss
       env:
         Configuration: ${{ matrix.configuration }}
 
