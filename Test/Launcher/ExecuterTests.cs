@@ -9,7 +9,7 @@ using Rudeus.Launcher.Procedure;
 
 namespace Rudeus.Launcher.Test
 {
-    public class LauncherTests
+    public class ExecuterTests
     {
         // TODO: このヘルパーメソッド部分のテストが必要なら新規クラスを作成する
         private int StartProcessCount = 0;
