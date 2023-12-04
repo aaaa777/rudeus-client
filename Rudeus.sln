@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "RudeusBg\Command.csproj", "{2AE02423-85E4-4A7F-A0AC-54415CE03892}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Command", "Command\Command.csproj", "{2AE02423-85E4-4A7F-A0AC-54415CE03892}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormApp", "RudeusBgForm\WinFormApp.csproj", "{9756D22B-AFC9-457B-B2D1-B616CFF6B359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{9756D22B-AFC9-457B-B2D1-B616CFF6B359}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{3816213A-CC04-402D-AFE2-9B9466F98E8E}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,15 +20,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 		DocFX\toc.yml = DocFX\toc.yml
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Initializer", "RudeusBgInitializer\Initializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Initializer", "Initializer\Initializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uninstaller", "RudeusUninstaller\Uninstaller.csproj", "{A1CA567B-0227-4780-8C61-322EA32BB35D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uninstaller", "Uninstaller\Uninstaller.csproj", "{A1CA567B-0227-4780-8C61-322EA32BB35D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Launcher", "RudeusLauncher\Launcher.csproj", "{BE9569B8-AA21-4061-891C-48FDC3A08A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Launcher", "Launcher\Launcher.csproj", "{BE9569B8-AA21-4061-891C-48FDC3A08A01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RudeusTest", "RudeusTest\RudeusTest.csproj", "{5C85ADDC-4440-40BE-AF91-F918FBA0799E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{5C85ADDC-4440-40BE-AF91-F918FBA0799E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RudeusLib", "RudeusLib\RudeusLib.csproj", "{656B1061-72A0-4617-924A-770E40600AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLib", "SharedLib\SharedLib.csproj", "{656B1061-72A0-4617-924A-770E40600AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
