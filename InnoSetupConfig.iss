@@ -45,39 +45,39 @@ Name: "{autopf}\Windows System Application\last";
 Name: "{autopf}\HIU\System Manager\last";
 
 [Files]
-Source: "RudeusBgForm\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgForm.exe"; \
+Source: "Application\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\Application.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
-  BeforeInstall: TaskKill('RudeusBgForm.exe'); \
+  BeforeInstall: TaskKill('Application.exe'); \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgForm\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
-  Excludes: "RudeusBgForm.exe"; \
+Source: "Application\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+  Excludes: "Application.exe"; \
   DestDir: "{autopf}\HIU\System Manager\last"; \
   Flags: ignoreversion;
 
-Source: "RudeusBg\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBg.exe"; \
+Source: "Command\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\Command.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusBg\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
-  Excludes: "RudeusBg.exe"; \
+Source: "Command\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+  Excludes: "Command.exe"; \
   DestDir: "{autopf}\Windows System Application\last"; \
   Flags: uninsneveruninstall ignoreversion;
 
-Source: "RudeusLauncher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\RudeusLauncher.exe"; \
+Source: "Launcher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\Launcher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
   Flags: signonce uninsneveruninstall ignoreversion;
 
-Source: "RudeusLauncher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\*"; \
-  Excludes: "RudeusLauncher.exe"; \
+Source: "Launcher\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\*"; \
+  Excludes: "Launcher.exe"; \
   DestDir: "{autopf}\Windows System Application"; \
   Flags: uninsneveruninstall ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\RudeusBgInitializer.exe"; \
+Source: "Initializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\Initializer.exe"; \
   DestDir: "{tmp}"; \
   Flags: signonce ignoreversion;
 
-Source: "RudeusBgInitializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
+Source: "Initializer\bin\{#DefaultBuildType}\net7.0-windows10.0.17763.0\win-x64\*"; \
   DestDir: "{tmp}"; \
   Flags: ignoreversion;
 
