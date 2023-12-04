@@ -12,7 +12,10 @@ using Rudeus.Procedure;
 // この手続きだけはInitializer内でしか使わないのでこちらに移動
 namespace Rudeus.Initializer.Procedure
 {
-    partial class TaskInitializer : IProcedure
+    /// <summary>
+    /// タスクスケジューラーの初期化を行う手続き
+    /// </summary>
+    public class TaskInitializer : IProcedure
     {
         public async System.Threading.Tasks.Task Run()
         {

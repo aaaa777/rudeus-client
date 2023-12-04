@@ -6,10 +6,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Rudeus.Launcher.Procedure;
 
 
-namespace Rudeus.Launcher
+namespace Rudeus.Launcher.Procedure
 {
     /// <summary>
     /// アプリの起動を行う手続き
