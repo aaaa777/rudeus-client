@@ -1,4 +1,4 @@
-namespace Rudeus.WinFormApp
+namespace Rudeus.Application
 {
     internal static class Program
     {
@@ -10,14 +10,14 @@ namespace Rudeus.WinFormApp
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
             
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             form = new TaskTrayForm();
-            Application.Run();
+            System.Windows.Forms.Application.Run();
             //ApplicationData.Run(form);
 
 #if (!RELEASE)

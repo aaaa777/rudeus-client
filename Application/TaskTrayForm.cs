@@ -5,7 +5,7 @@ using Rudeus.API.Response;
 using Rudeus.Model;
 using Rudeus;
 
-namespace Rudeus.WinFormApp
+namespace Rudeus.Application
 {
     public partial class TaskTrayForm : Form
     {
@@ -83,7 +83,7 @@ namespace Rudeus.WinFormApp
         private void ToolStripMenuItemExit_Click(object sender, EventArgs e)
         {
             // èIóπ
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void ToolStripMenuItemLinkPortal_Click(object sender, EventArgs e)

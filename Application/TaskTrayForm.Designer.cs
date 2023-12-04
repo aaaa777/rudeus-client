@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 using Microsoft.Toolkit.Uwp.Notifications;
 
-namespace Rudeus.WinFormApp
+namespace Rudeus.Application
 {
     partial class TaskTrayForm
 

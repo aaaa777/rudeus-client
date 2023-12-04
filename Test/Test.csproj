@@ -40,12 +40,6 @@
     <ProjectReference Include="..\Command\Command.csproj" />
     <ProjectReference Include="..\Initializer\Initializer.csproj" />
     <ProjectReference Include="..\Launcher\Launcher.csproj" />
-    <ProjectReference Include="..\RudeusBgForm\WinFormApp.csproj" />
-    <ProjectReference Include="..\RudeusBgInitializer\Initializer.csproj" />
-    <ProjectReference Include="..\RudeusBg\Command.csproj" />
-    <ProjectReference Include="..\RudeusLauncher\Launcher.csproj" />
-    <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
-    <ProjectReference Include="..\RudeusUninstaller\Uninstaller.csproj" />
     <ProjectReference Include="..\SharedLib\SharedLib.csproj" />
     <ProjectReference Include="..\Uninstaller\Uninstaller.csproj" />
   </ItemGroup>
