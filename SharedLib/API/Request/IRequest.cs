@@ -2,7 +2,7 @@
 
 namespace Rudeus.API.Request
 {
-    internal interface IRequest
+    public interface IRequest
     {
         string? type { get; }
     }

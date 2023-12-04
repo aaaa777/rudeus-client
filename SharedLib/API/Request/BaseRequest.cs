@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 #pragma warning disable IDE1006 // 命名スタイル
 namespace Rudeus.API.Request
 {
-    internal class BaseRequest : IRequest
+    public class BaseRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
         public string? type { get; set; }
