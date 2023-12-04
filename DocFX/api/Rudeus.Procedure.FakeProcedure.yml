@@ -17,14 +17,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusSharedLib/Procedure/FakeProcedure.cs
+      path: SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FakeProcedure
-    path: ../RudeusSharedLib/Procedure/FakeProcedure.cs
+    path: ../SharedLib/Procedure/FakeProcedure.cs
     startLine: 12
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   summary: IProcedureのFake実装
   example: []
@@ -46,46 +46,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure)
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure)
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNull``1
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure)
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure)
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.FakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.FakeProcedure})
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.FakeProcedure,System.Boolean}},System.String)
-  - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.FakeProcedure,System.Boolean}},System.String)
   - Rudeus.Procedure.FakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.FakeProcedure,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Procedure.FakeProcedure.RunCount
   commentId: P:Rudeus.Procedure.FakeProcedure.RunCount
@@ -100,14 +72,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Procedure/FakeProcedure.cs
+      path: SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RunCount
-    path: ../RudeusSharedLib/Procedure/FakeProcedure.cs
+    path: ../SharedLib/Procedure/FakeProcedure.cs
     startLine: 18
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   summary: Runメソッドが呼ばれた回数
   example: []
@@ -133,14 +105,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: RudeusSharedLib/Procedure/FakeProcedure.cs
+      path: SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../RudeusSharedLib/Procedure/FakeProcedure.cs
+    path: ../SharedLib/Procedure/FakeProcedure.cs
     startLine: 21
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: public FakeProcedure()
@@ -162,14 +134,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Procedure/FakeProcedure.cs
+      path: SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
-    path: ../RudeusSharedLib/Procedure/FakeProcedure.cs
+    path: ../SharedLib/Procedure/FakeProcedure.cs
     startLine: 24
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   example: []
   syntax:

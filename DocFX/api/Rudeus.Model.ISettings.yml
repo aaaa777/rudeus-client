@@ -45,14 +45,14 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ISettings
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 7
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   summary: 設定をレジストリに保管するモデル
   example: []
@@ -61,46 +61,18 @@ items:
     content.vb: Public Interface ISettings
   extensionMethods:
   - Rudeus.Model.ISettings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.ISettings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.ISettings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings)
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings)
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNot``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNull``1
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.ISettings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings)
   - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings)
   - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(Rudeus.Model.ISettings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.ISettings})
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.ISettings,System.Boolean}},System.String)
-  - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.ISettings,System.Boolean}},System.String)
   - Rudeus.Model.ISettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.ISettings,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Model.ISettings.AccessTokenP
   commentId: P:Rudeus.Model.ISettings.AccessTokenP
@@ -115,14 +87,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 13
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string AccessTokenP { get; set; }
@@ -144,14 +116,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: DeviceIdP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 14
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string DeviceIdP { get; set; }
@@ -173,14 +145,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FirstHostnameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 15
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string FirstHostnameP { get; set; }
@@ -202,14 +174,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: HostnameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 16
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string HostnameP { get; set; }
@@ -231,14 +203,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UsernameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 17
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string UsernameP { get; set; }
@@ -260,14 +232,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LabelIdP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 19
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LabelIdP { get; set; }
@@ -289,14 +261,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CurrentVersionP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 20
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string CurrentVersionP { get; set; }
@@ -318,14 +290,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastDirNameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 21
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LastDirNameP { get; set; }
@@ -347,14 +319,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionDirPathP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 22
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LastVersionDirPathP { get; set; }
@@ -376,14 +348,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExeNameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 23
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LastVersionExeNameP { get; set; }
@@ -405,14 +377,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExePathP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 24
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LastVersionExePathP { get; }
@@ -434,14 +406,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestDirNameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 25
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LatestDirNameP { get; set; }
@@ -463,14 +435,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionDirPathP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 26
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LatestVersionDirPathP { get; set; }
@@ -492,14 +464,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExeNameP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 27
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LatestVersionExeNameP { get; set; }
@@ -521,14 +493,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExePathP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 28
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LatestVersionExePathP { get; }
@@ -550,14 +522,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionStatusP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 29
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string LatestVersionStatusP { get; set; }
@@ -579,14 +551,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdatingChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 30
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string UpdatingChannelP { get; set; }
@@ -608,14 +580,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsBetaChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 32
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsBetaChannelP()
@@ -636,14 +608,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsDevelopChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 33
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsDevelopChannelP()
@@ -664,14 +636,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusDownloadedP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 34
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsLatestVersionStatusDownloadedP()
@@ -692,14 +664,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusOkP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 35
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsLatestVersionStatusOkP()
@@ -720,14 +692,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusUnlaunchableP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 36
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsLatestVersionStatusUnlaunchableP()
@@ -748,14 +720,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStableChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 37
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsStableChannelP()
@@ -776,14 +748,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsTestChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 38
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: bool IsTestChannelP()
@@ -804,14 +776,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetBetaChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 39
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetBetaChannelP()
@@ -830,14 +802,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetDevelopChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 40
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetDevelopChannelP()
@@ -856,14 +828,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusDownloadedP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 41
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetLatestVersionStatusDownloadedP()
@@ -882,14 +854,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusOkP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 42
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetLatestVersionStatusOkP()
@@ -908,14 +880,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusUnlaunchableP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 43
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetLatestVersionStatusUnlaunchableP()
@@ -934,14 +906,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetStableChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 44
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetStableChannelP()
@@ -960,14 +932,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ISettings.cs
+      path: SharedLib/Model/ISettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetTestChannelP
-    path: ../RudeusSharedLib/Model/ISettings.cs
+    path: ../SharedLib/Model/ISettings.cs
     startLine: 45
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void SetTestChannelP()

@@ -38,14 +38,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AssertEx
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 137
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   syntax:
     content: >-
@@ -86,14 +86,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 142
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Equal, if T is IEnumerable then compare value equality
   example: []
@@ -125,14 +125,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 156
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.True(predicate(value))
   example: []
@@ -166,14 +166,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 182
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Equal
   example: []
@@ -207,14 +207,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 188
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Equal(sequence value compare)
   example: []
@@ -246,14 +246,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 194
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Equal(sequence value compare)
   example: []
@@ -285,14 +285,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 200
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.True(actual.SequenceEqual(expected, comparer))
   example: []
@@ -326,14 +326,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Is
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 206
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.True(actual.SequenceEqual(expected, comparison))
   example: []
@@ -367,14 +367,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 212
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotEqual, if T is IEnumerable then check value equality
   example: []
@@ -406,14 +406,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 226
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotEqual
   example: []
@@ -447,14 +447,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 232
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotEqual(sequence value compare)
   example: []
@@ -486,14 +486,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 238
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotEqual(sequence value compare)
   example: []
@@ -525,14 +525,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 244
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.False(actual.SequenceEqual(notExpected, comparer))
   example: []
@@ -566,14 +566,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNot
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 250
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.False(actual.SequenceEqual(notExpected, comparison))
   example: []
@@ -607,14 +607,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNull
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 256
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Null
   example: []
@@ -644,14 +644,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNotNull
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 262
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotNull
   example: []
@@ -681,14 +681,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsTrue
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 268
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Is(true)
   example: []
@@ -716,14 +716,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsFalse
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 274
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Is(false)
   example: []
@@ -751,14 +751,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsSameReferenceAs
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 280
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.Same
   example: []
@@ -790,14 +790,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNotSameReferenceAs
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 286
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.NotSame
   example: []
@@ -829,14 +829,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsInstanceOf
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 292
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.IsType
   example: []
@@ -868,14 +868,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNotInstanceOf
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 299
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert.IsNotType
   example: []
@@ -905,14 +905,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStructuralEqual
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 358
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert by deep recursive value equality compare
   example: []
@@ -944,14 +944,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsNotStructuralEqual
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 382
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: Assert by deep recursive value equality compare
   example: []
@@ -983,14 +983,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+      path: Test/Plugins/ChainingAssertion.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AsDynamic
-    path: ../RudeusBgInitializerTest/Plugins/ChainingAssertion.cs
+    path: ../Test/Plugins/ChainingAssertion.cs
     startLine: 506
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: Xunit
   summary: to DynamicAccessor that can call private method/field/property/indexer.
   example: []
@@ -1719,6 +1719,7 @@ references:
   nameWithType: TExpected
   fullName: TExpected
 - uid: TExpected
+  commentId: '!:TExpected'
   name: TExpected
   nameWithType: TExpected
   fullName: TExpected

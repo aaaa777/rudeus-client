@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Launcher.Procedure
+  commentId: N:Rudeus.Launcher.Procedure
+  id: Rudeus.Launcher.Procedure
+  children:
+  - Rudeus.Launcher.Procedure.ILauncher
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Launcher.Procedure
+  nameWithType: Rudeus.Launcher.Procedure
+  fullName: Rudeus.Launcher.Procedure
+  type: Namespace
+  assemblies:
+  - Launcher
+references:
+- uid: Rudeus.Launcher.Procedure.ILauncher
+  commentId: T:Rudeus.Launcher.Procedure.ILauncher
+  parent: Rudeus.Launcher.Procedure
+  href: Rudeus.Launcher.Procedure.ILauncher.html
+  name: ILauncher
+  nameWithType: ILauncher
+  fullName: Rudeus.Launcher.Procedure.ILauncher
+- uid: Rudeus.Launcher.Procedure
+  commentId: N:Rudeus.Launcher.Procedure
+  href: Rudeus.html
+  name: Rudeus.Launcher.Procedure
+  nameWithType: Rudeus.Launcher.Procedure
+  fullName: Rudeus.Launcher.Procedure
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Launcher
+    name: Launcher
+    href: Rudeus.Launcher.html
+  - name: .
+  - uid: Rudeus.Launcher.Procedure
+    name: Procedure
+    href: Rudeus.Launcher.Procedure.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Launcher
+    name: Launcher
+    href: Rudeus.Launcher.html
+  - name: .
+  - uid: Rudeus.Launcher.Procedure
+    name: Procedure
+    href: Rudeus.Launcher.Procedure.html

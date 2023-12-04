@@ -16,60 +16,32 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/Procedure/IFakeProcedure.cs
+      path: SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IFakeProcedure
-    path: ../RudeusSharedLib/Procedure/IFakeProcedure.cs
+    path: ../SharedLib/Procedure/IFakeProcedure.cs
     startLine: 2
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: 'public interface IFakeProcedure : IProcedure'
     content.vb: Public Interface IFakeProcedure Inherits IProcedure
   extensionMethods:
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure)
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure)
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNull``1
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure)
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure)
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(Rudeus.Procedure.IFakeProcedure,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.IFakeProcedure})
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.IFakeProcedure,System.Boolean}},System.String)
-  - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.IFakeProcedure,System.Boolean}},System.String)
   - Rudeus.Procedure.IFakeProcedure.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.IFakeProcedure,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Procedure.IFakeProcedure.RunCount
   commentId: P:Rudeus.Procedure.IFakeProcedure.RunCount
@@ -84,14 +56,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Procedure/IFakeProcedure.cs
+      path: SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RunCount
-    path: ../RudeusSharedLib/Procedure/IFakeProcedure.cs
+    path: ../SharedLib/Procedure/IFakeProcedure.cs
     startLine: 4
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: int RunCount { get; }
@@ -113,14 +85,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Procedure/IFakeProcedure.cs
+      path: SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
-    path: ../RudeusSharedLib/Procedure/IFakeProcedure.cs
+    path: ../SharedLib/Procedure/IFakeProcedure.cs
     startLine: 6
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: Task Run()

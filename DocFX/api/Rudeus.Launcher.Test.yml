@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Launcher.Test
+  commentId: N:Rudeus.Launcher.Test
+  id: Rudeus.Launcher.Test
+  children:
+  - Rudeus.Launcher.Test.LauncherTests
+  - Rudeus.Launcher.Test.ProgramTests
+  - Rudeus.Launcher.Test.UpdaterTests
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Launcher.Test
+  nameWithType: Rudeus.Launcher.Test
+  fullName: Rudeus.Launcher.Test
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Rudeus.Launcher.Test.LauncherTests
+  commentId: T:Rudeus.Launcher.Test.LauncherTests
+  href: Rudeus.Launcher.Test.LauncherTests.html
+  name: LauncherTests
+  nameWithType: LauncherTests
+  fullName: Rudeus.Launcher.Test.LauncherTests
+- uid: Rudeus.Launcher.Test.ProgramTests
+  commentId: T:Rudeus.Launcher.Test.ProgramTests
+  href: Rudeus.Launcher.Test.ProgramTests.html
+  name: ProgramTests
+  nameWithType: ProgramTests
+  fullName: Rudeus.Launcher.Test.ProgramTests
+- uid: Rudeus.Launcher.Test.UpdaterTests
+  commentId: T:Rudeus.Launcher.Test.UpdaterTests
+  href: Rudeus.Launcher.Test.UpdaterTests.html
+  name: UpdaterTests
+  nameWithType: UpdaterTests
+  fullName: Rudeus.Launcher.Test.UpdaterTests

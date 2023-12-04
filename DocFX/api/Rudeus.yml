@@ -4,6 +4,7 @@ items:
   commentId: N:Rudeus
   id: Rudeus
   children:
+  - Rudeus.Constants
   - Rudeus.IUtils
   - Rudeus.Utils
   langs:
@@ -14,8 +15,14 @@ items:
   fullName: Rudeus
   type: Namespace
   assemblies:
-  - RudeusBg
+  - SharedLib
 references:
+- uid: Rudeus.Constants
+  commentId: T:Rudeus.Constants
+  href: Rudeus.Constants.html
+  name: Constants
+  nameWithType: Constants
+  fullName: Rudeus.Constants
 - uid: Rudeus.IUtils
   commentId: T:Rudeus.IUtils
   parent: Rudeus

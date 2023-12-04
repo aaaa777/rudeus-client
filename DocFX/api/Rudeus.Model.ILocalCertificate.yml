@@ -19,14 +19,14 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ILocalCertificate
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 7
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   summary: ローカルマシンの証明書を操作するモデルのインターフェース
   example: []
@@ -35,16 +35,8 @@ items:
     content.vb: Public Interface ILocalCertificate
   extensionMethods:
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Model.ILocalCertificate.GetInstance
   commentId: M:Rudeus.Model.ILocalCertificate.GetInstance
@@ -59,14 +51,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetInstance
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 9
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static abstract ILocalCertificate GetInstance()
@@ -87,14 +79,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetCertificate
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 10
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: X509Certificate2? GetCertificate(string issuer)
@@ -121,14 +113,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InstallCertificateIntoRoot
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 11
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void InstallCertificateIntoRoot(string path)
@@ -153,14 +145,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InstallPkcs12IntoMy
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 12
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void InstallPkcs12IntoMy(string path, string password)
@@ -187,14 +179,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalCertificate.cs
+      path: SharedLib/Model/ILocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UninstallCertificateFromString
-    path: ../RudeusSharedLib/Model/ILocalCertificate.cs
+    path: ../SharedLib/Model/ILocalCertificate.cs
     startLine: 13
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: void UninstallCertificateFromString(string certificate)

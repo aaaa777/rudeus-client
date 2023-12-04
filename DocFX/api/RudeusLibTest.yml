@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: RudeusLibTest
+  commentId: N:RudeusLibTest
+  id: RudeusLibTest
+  children:
+  - RudeusLibTest.ConstantsTests
+  - RudeusLibTest.UnitTestSample
+  - RudeusLibTest.UtilsTests
+  langs:
+  - csharp
+  - vb
+  name: RudeusLibTest
+  nameWithType: RudeusLibTest
+  fullName: RudeusLibTest
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: RudeusLibTest.ConstantsTests
+  commentId: T:RudeusLibTest.ConstantsTests
+  href: RudeusLibTest.ConstantsTests.html
+  name: ConstantsTests
+  nameWithType: ConstantsTests
+  fullName: RudeusLibTest.ConstantsTests
+- uid: RudeusLibTest.UtilsTests
+  commentId: T:RudeusLibTest.UtilsTests
+  href: RudeusLibTest.UtilsTests.html
+  name: UtilsTests
+  nameWithType: UtilsTests
+  fullName: RudeusLibTest.UtilsTests
+- uid: RudeusLibTest.UnitTestSample
+  commentId: T:RudeusLibTest.UnitTestSample
+  href: RudeusLibTest.UnitTestSample.html
+  name: UnitTestSample
+  nameWithType: UnitTestSample
+  fullName: RudeusLibTest.UnitTestSample

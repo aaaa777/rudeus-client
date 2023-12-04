@@ -21,14 +21,14 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ILocalMachine
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 5
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   summary: ローカルマシンの情報を取得するモデルのインターフェース
   example: []
@@ -37,16 +37,8 @@ items:
     content.vb: Public Interface ILocalMachine
   extensionMethods:
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Model.ILocalMachine.GetInstance
   commentId: M:Rudeus.Model.ILocalMachine.GetInstance
@@ -61,14 +53,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetInstance
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 7
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static abstract ILocalMachine GetInstance()
@@ -89,14 +81,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetPhysicalRamInfo
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 9
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string GetPhysicalRamInfo()
@@ -117,14 +109,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetStorageDeviceIdList
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 10
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: List<string> GetStorageDeviceIdList()
@@ -145,14 +137,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetDeviceId
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 12
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string GetDeviceId()
@@ -173,14 +165,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetHostname
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 14
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string GetHostname()
@@ -201,14 +193,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetWinVersion
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 16
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string GetWinVersion()
@@ -229,14 +221,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/ILocalMachine.cs
+      path: SharedLib/Model/ILocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetSpec
-    path: ../RudeusSharedLib/Model/ILocalMachine.cs
+    path: ../SharedLib/Model/ILocalMachine.cs
     startLine: 18
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: string GetSpec()

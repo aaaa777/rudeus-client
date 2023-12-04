@@ -16,60 +16,32 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/API/IRequestClient.cs
+      path: SharedLib/API/IRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IRequestClient
-    path: ../RudeusSharedLib/API/IRequestClient.cs
+    path: ../SharedLib/API/IRequestClient.cs
     startLine: 4
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.API
   syntax:
     content: public interface IRequestClient
     content.vb: Public Interface IRequestClient
   extensionMethods:
   - Rudeus.API.IRequestClient.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotNull``1
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotNull``1
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient)
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient)
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNot``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNull``1
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNull``1
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsNull``1
   - Rudeus.API.IRequestClient.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient)
   - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient)
   - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(Rudeus.API.IRequestClient,System.Collections.Generic.IEqualityComparer{Rudeus.API.IRequestClient})
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.API.IRequestClient,System.Boolean}},System.String)
-  - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.API.IRequestClient,System.Boolean}},System.String)
   - Rudeus.API.IRequestClient.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.API.IRequestClient,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.API.IRequestClient.Request(System.Net.Http.HttpRequestMessage)
   commentId: M:Rudeus.API.IRequestClient.Request(System.Net.Http.HttpRequestMessage)
@@ -84,14 +56,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/API/IRequestClient.cs
+      path: SharedLib/API/IRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Request
-    path: ../RudeusSharedLib/API/IRequestClient.cs
+    path: ../SharedLib/API/IRequestClient.cs
     startLine: 7
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.API
   syntax:
     content: HttpResponseMessage Request(HttpRequestMessage message)
@@ -115,14 +87,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/API/IRequestClient.cs
+      path: SharedLib/API/IRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RequestString
-    path: ../RudeusSharedLib/API/IRequestClient.cs
+    path: ../SharedLib/API/IRequestClient.cs
     startLine: 9
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.API
   syntax:
     content: string RequestString(HttpRequestMessage message)

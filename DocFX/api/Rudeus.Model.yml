@@ -4,10 +4,13 @@ items:
   commentId: N:Rudeus.Model
   id: Rudeus.Model
   children:
+  - Rudeus.Model.ApplicationData
+  - Rudeus.Model.FakeLocalCertificate
   - Rudeus.Model.FakeSettings
   - Rudeus.Model.ILocalCertificate
   - Rudeus.Model.ILocalMachine
   - Rudeus.Model.ISettings
+  - Rudeus.Model.InstalledApplications
   - Rudeus.Model.LocalMachine
   - Rudeus.Model.Settings
   langs:
@@ -18,8 +21,14 @@ items:
   fullName: Rudeus.Model
   type: Namespace
   assemblies:
-  - RudeusBg
+  - SharedLib
 references:
+- uid: Rudeus.Model.FakeLocalCertificate
+  commentId: T:Rudeus.Model.FakeLocalCertificate
+  href: Rudeus.Model.FakeLocalCertificate.html
+  name: FakeLocalCertificate
+  nameWithType: FakeLocalCertificate
+  fullName: Rudeus.Model.FakeLocalCertificate
 - uid: Rudeus.Model.FakeSettings
   commentId: T:Rudeus.Model.FakeSettings
   href: Rudeus.Model.FakeSettings.html
@@ -40,6 +49,18 @@ references:
   name: ILocalMachine
   nameWithType: ILocalMachine
   fullName: Rudeus.Model.ILocalMachine
+- uid: Rudeus.Model.ApplicationData
+  commentId: T:Rudeus.Model.ApplicationData
+  href: Rudeus.Model.ApplicationData.html
+  name: ApplicationData
+  nameWithType: ApplicationData
+  fullName: Rudeus.Model.ApplicationData
+- uid: Rudeus.Model.InstalledApplications
+  commentId: T:Rudeus.Model.InstalledApplications
+  href: Rudeus.Model.InstalledApplications.html
+  name: InstalledApplications
+  nameWithType: InstalledApplications
+  fullName: Rudeus.Model.InstalledApplications
 - uid: Rudeus.Model.ISettings
   commentId: T:Rudeus.Model.ISettings
   parent: Rudeus.Model

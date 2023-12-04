@@ -20,14 +20,14 @@ items:
   type: Interface
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IUtils
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 5
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ユーティリティクラスのインターフェース
   example: []
@@ -36,16 +36,8 @@ items:
     content.vb: Public Interface IUtils
   extensionMethods:
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
   commentId: M:Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
@@ -60,14 +52,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ConcatStudentNumberFromMail
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 12
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: メールアドレスから学籍番号を抽出する
   example: []
@@ -98,14 +90,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStudentMailAddress
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 19
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: メールアドレスが学生用のものかどうかを判定する
   example: []
@@ -136,14 +128,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RegisterDeviceAndSetData
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 25
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: >-
     廃止予定
@@ -167,14 +159,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CopyDirectory
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 33
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ディレクトリを再帰的にコピーする
   example: []
@@ -208,14 +200,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CompareVersionString
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 40
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ドット区切り数字列を比較する
   example: []
@@ -252,14 +244,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/IUtils.cs
+      path: SharedLib/IUtils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ParseArgs
-    path: ../RudeusSharedLib/IUtils.cs
+    path: ../SharedLib/IUtils.cs
     startLine: 47
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: key=value形式の引数をパースする
   example: []

@@ -21,14 +21,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LocalMachine
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 10
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   summary: ローカルマシンの情報を取得するモデル
   example: []
@@ -49,46 +49,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine)
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine)
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNot``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNull``1
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine)
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine)
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(Rudeus.Model.LocalMachine,System.Collections.Generic.IEqualityComparer{Rudeus.Model.LocalMachine})
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.LocalMachine,System.Boolean}},System.String)
-  - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.LocalMachine,System.Boolean}},System.String)
   - Rudeus.Model.LocalMachine.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.LocalMachine,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Model.LocalMachine.GetInstance
   commentId: M:Rudeus.Model.LocalMachine.GetInstance
@@ -103,14 +75,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetInstance
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 12
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -134,14 +106,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetPhysicalRamInfo
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 22
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -165,14 +137,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetStorageDeviceIdList
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 43
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -196,14 +168,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetDeviceId
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 55
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -227,14 +199,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetHostname
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 63
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -258,14 +230,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetWinVersion
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 73
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -289,14 +261,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/LocalMachine.cs
+      path: SharedLib/Model/LocalMachine.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetSpec
-    path: ../RudeusSharedLib/Model/LocalMachine.cs
+    path: ../SharedLib/Model/LocalMachine.cs
     startLine: 78
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:

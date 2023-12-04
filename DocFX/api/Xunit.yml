@@ -13,7 +13,7 @@ items:
   fullName: Xunit
   type: Namespace
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
 references:
 - uid: Xunit.AssertEx
   commentId: T:Xunit.AssertEx

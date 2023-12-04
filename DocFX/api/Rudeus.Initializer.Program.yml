@@ -1,0 +1,2133 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Initializer.Program
+  commentId: T:Rudeus.Initializer.Program
+  id: Program
+  parent: Rudeus.Initializer
+  children:
+  - Rudeus.Initializer.Program.CheckLogMessage
+  - Rudeus.Initializer.Program.Main(System.String[])
+  - Rudeus.Initializer.Program.MainAsync(System.String[])
+  - Rudeus.Initializer.Program._certificateInstaller
+  - Rudeus.Initializer.Program._registryInitializer
+  - Rudeus.Initializer.Program._serverRegister
+  - Rudeus.Initializer.Program._taskInitializer
+  langs:
+  - csharp
+  - vb
+  name: Program
+  nameWithType: Program
+  fullName: Rudeus.Initializer.Program
+  type: Class
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: Program
+    path: ../Initializer/Program.cs
+    startLine: 15
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public class Program
+    content.vb: Public Class Program
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - Rudeus.Initializer.Program.Xunit.AssertEx.AsDynamic``1
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsNotNull``1
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Initializer.Program)
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program)
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsNull``1
+  - Rudeus.Initializer.Program.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Initializer.Program)
+  - Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(Rudeus.Initializer.Program)
+  - Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+  - Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Initializer.Program,System.Boolean}},System.String)
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: Rudeus.Initializer.Program._registryInitializer
+  commentId: P:Rudeus.Initializer.Program._registryInitializer
+  id: _registryInitializer
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: _registryInitializer
+  nameWithType: Program._registryInitializer
+  fullName: Rudeus.Initializer.Program._registryInitializer
+  type: Property
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: _registryInitializer
+    path: ../Initializer/Program.cs
+    startLine: 18
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static IProcedure _registryInitializer { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Shared Property _registryInitializer As IProcedure
+  overload: Rudeus.Initializer.Program._registryInitializer*
+- uid: Rudeus.Initializer.Program._taskInitializer
+  commentId: P:Rudeus.Initializer.Program._taskInitializer
+  id: _taskInitializer
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: _taskInitializer
+  nameWithType: Program._taskInitializer
+  fullName: Rudeus.Initializer.Program._taskInitializer
+  type: Property
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: _taskInitializer
+    path: ../Initializer/Program.cs
+    startLine: 19
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static IProcedure _taskInitializer { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Shared Property _taskInitializer As IProcedure
+  overload: Rudeus.Initializer.Program._taskInitializer*
+- uid: Rudeus.Initializer.Program._certificateInstaller
+  commentId: P:Rudeus.Initializer.Program._certificateInstaller
+  id: _certificateInstaller
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: _certificateInstaller
+  nameWithType: Program._certificateInstaller
+  fullName: Rudeus.Initializer.Program._certificateInstaller
+  type: Property
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: _certificateInstaller
+    path: ../Initializer/Program.cs
+    startLine: 20
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static IProcedure _certificateInstaller { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Shared Property _certificateInstaller As IProcedure
+  overload: Rudeus.Initializer.Program._certificateInstaller*
+- uid: Rudeus.Initializer.Program._serverRegister
+  commentId: P:Rudeus.Initializer.Program._serverRegister
+  id: _serverRegister
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: _serverRegister
+  nameWithType: Program._serverRegister
+  fullName: Rudeus.Initializer.Program._serverRegister
+  type: Property
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: _serverRegister
+    path: ../Initializer/Program.cs
+    startLine: 21
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static IProcedure _serverRegister { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Shared Property _serverRegister As IProcedure
+  overload: Rudeus.Initializer.Program._serverRegister*
+- uid: Rudeus.Initializer.Program.CheckLogMessage
+  commentId: P:Rudeus.Initializer.Program.CheckLogMessage
+  id: CheckLogMessage
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: CheckLogMessage
+  nameWithType: Program.CheckLogMessage
+  fullName: Rudeus.Initializer.Program.CheckLogMessage
+  type: Property
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CheckLogMessage
+    path: ../Initializer/Program.cs
+    startLine: 23
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static bool? CheckLogMessage { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Shared Property CheckLogMessage As Boolean?
+  overload: Rudeus.Initializer.Program.CheckLogMessage*
+- uid: Rudeus.Initializer.Program.Main(System.String[])
+  commentId: M:Rudeus.Initializer.Program.Main(System.String[])
+  id: Main(System.String[])
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: Main(string[])
+  nameWithType: Program.Main(string[])
+  fullName: Rudeus.Initializer.Program.Main(string[])
+  type: Method
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: Main
+    path: ../Initializer/Program.cs
+    startLine: 25
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static void Main(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+    content.vb: Public Shared Sub Main(args As String())
+  overload: Rudeus.Initializer.Program.Main*
+  nameWithType.vb: Program.Main(String())
+  fullName.vb: Rudeus.Initializer.Program.Main(String())
+  name.vb: Main(String())
+- uid: Rudeus.Initializer.Program.MainAsync(System.String[])
+  commentId: M:Rudeus.Initializer.Program.MainAsync(System.String[])
+  id: MainAsync(System.String[])
+  parent: Rudeus.Initializer.Program
+  langs:
+  - csharp
+  - vb
+  name: MainAsync(string[])
+  nameWithType: Program.MainAsync(string[])
+  fullName: Rudeus.Initializer.Program.MainAsync(string[])
+  type: Method
+  source:
+    remote:
+      path: Initializer/Program.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: MainAsync
+    path: ../Initializer/Program.cs
+    startLine: 36
+  assemblies:
+  - Initializer
+  namespace: Rudeus.Initializer
+  syntax:
+    content: public static Task MainAsync(string[] args)
+    parameters:
+    - id: args
+      type: System.String[]
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function MainAsync(args As String()) As Task
+  overload: Rudeus.Initializer.Program.MainAsync*
+  nameWithType.vb: Program.MainAsync(String())
+  fullName.vb: Rudeus.Initializer.Program.MainAsync(String())
+  name.vb: MainAsync(String())
+references:
+- uid: Rudeus.Initializer
+  commentId: N:Rudeus.Initializer
+  href: Rudeus.html
+  name: Rudeus.Initializer
+  nameWithType: Rudeus.Initializer
+  fullName: Rudeus.Initializer
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Initializer
+    name: Initializer
+    href: Rudeus.Initializer.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Initializer
+    name: Initializer
+    href: Rudeus.Initializer.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<Program>(Program)
+  nameWithType: AssertEx.AsDynamic<Program>(Program)
+  fullName: Xunit.AssertEx.AsDynamic<Rudeus.Initializer.Program>(Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.AsDynamic(Of Program)(Program)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program)
+  name.vb: AsDynamic(Of Program)(Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(Rudeus.Initializer.Program)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(Rudeus.Initializer.Program)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<Program>(Program)
+  nameWithType: AssertEx.IsNotNull<Program>(Program)
+  fullName: Xunit.AssertEx.IsNotNull<Rudeus.Initializer.Program>(Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.IsNotNull(Of Program)(Program)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program)
+  name.vb: IsNotNull(Of Program)(Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(Rudeus.Initializer.Program)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(Rudeus.Initializer.Program)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Initializer.Program)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<Program>(Program, Program)
+  nameWithType: AssertEx.IsNotSameReferenceAs<Program>(Program, Program)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of Program)(Program, Program)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  name.vb: IsNotSameReferenceAs(Of Program)(Program, Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<Program>(Program, Program)
+  nameWithType: AssertEx.IsNot<Program>(Program, Program)
+  fullName: Xunit.AssertEx.IsNot<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.IsNot(Of Program)(Program, Program)
+  fullName.vb: Xunit.AssertEx.IsNot(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  name.vb: IsNot(Of Program)(Program, Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<Program>(Program, Program, IEqualityComparer<Program>)
+  nameWithType: AssertEx.IsNot<Program>(Program, Program, IEqualityComparer<Program>)
+  fullName: Xunit.AssertEx.IsNot<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program, System.Collections.Generic.IEqualityComparer<Rudeus.Initializer.Program>)
+  nameWithType.vb: AssertEx.IsNot(Of Program)(Program, Program, IEqualityComparer(Of Program))
+  fullName.vb: Xunit.AssertEx.IsNot(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program, System.Collections.Generic.IEqualityComparer(Of Rudeus.Initializer.Program))
+  name.vb: IsNot(Of Program)(Program, Program, IEqualityComparer(Of Program))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<Program>(Program)
+  nameWithType: AssertEx.IsNull<Program>(Program)
+  fullName: Xunit.AssertEx.IsNull<Rudeus.Initializer.Program>(Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.IsNull(Of Program)(Program)
+  fullName.vb: Xunit.AssertEx.IsNull(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program)
+  name.vb: IsNull(Of Program)(Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(Rudeus.Initializer.Program)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(Rudeus.Initializer.Program)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Initializer.Program)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<Program>(Program, Program)
+  nameWithType: AssertEx.IsSameReferenceAs<Program>(Program, Program)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of Program)(Program, Program)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  name.vb: IsSameReferenceAs(Of Program)(Program, Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(Rudeus.Initializer.Program)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<Program>(Program, Program)
+  nameWithType: AssertEx.Is<Program>(Program, Program)
+  fullName: Xunit.AssertEx.Is<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  nameWithType.vb: AssertEx.Is(Of Program)(Program, Program)
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program)
+  name.vb: Is(Of Program)(Program, Program)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<Program>(Program, Program, IEqualityComparer<Program>)
+  nameWithType: AssertEx.Is<Program>(Program, Program, IEqualityComparer<Program>)
+  fullName: Xunit.AssertEx.Is<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, Rudeus.Initializer.Program, System.Collections.Generic.IEqualityComparer<Rudeus.Initializer.Program>)
+  nameWithType.vb: AssertEx.Is(Of Program)(Program, Program, IEqualityComparer(Of Program))
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, Rudeus.Initializer.Program, System.Collections.Generic.IEqualityComparer(Of Rudeus.Initializer.Program))
+  name.vb: Is(Of Program)(Program, Program, IEqualityComparer(Of Program))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,Rudeus.Initializer.Program,System.Collections.Generic.IEqualityComparer{Rudeus.Initializer.Program})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: )
+- uid: Rudeus.Initializer.Program.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Initializer.Program,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<Program>(Program, Expression<Func<Program, bool>>, string)
+  nameWithType: AssertEx.Is<Program>(Program, Expression<Func<Program, bool>>, string)
+  fullName: Xunit.AssertEx.Is<Rudeus.Initializer.Program>(Rudeus.Initializer.Program, System.Linq.Expressions.Expression<System.Func<Rudeus.Initializer.Program, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of Program)(Program, Expression(Of Func(Of Program, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of Rudeus.Initializer.Program)(Rudeus.Initializer.Program, System.Linq.Expressions.Expression(Of System.Func(Of Rudeus.Initializer.Program, Boolean)), String)
+  name.vb: Is(Of Program)(Program, Expression(Of Func(Of Program, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,System.Linq.Expressions.Expression{System.Func{Rudeus.Initializer.Program,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: '>'
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Rudeus.Initializer.Program,System.Linq.Expressions.Expression{System.Func{Rudeus.Initializer.Program,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: )
+  - name: (
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Rudeus.Initializer.Program
+    name: Program
+    href: Rudeus.Initializer.Program.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Rudeus.Initializer.Program._registryInitializer*
+  commentId: Overload:Rudeus.Initializer.Program._registryInitializer
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program__registryInitializer
+  name: _registryInitializer
+  nameWithType: Program._registryInitializer
+  fullName: Rudeus.Initializer.Program._registryInitializer
+- uid: Rudeus.Procedure.IProcedure
+  commentId: T:Rudeus.Procedure.IProcedure
+  parent: Rudeus.Procedure
+  href: Rudeus.Procedure.IProcedure.html
+  name: IProcedure
+  nameWithType: IProcedure
+  fullName: Rudeus.Procedure.IProcedure
+- uid: Rudeus.Procedure
+  commentId: N:Rudeus.Procedure
+  href: Rudeus.html
+  name: Rudeus.Procedure
+  nameWithType: Rudeus.Procedure
+  fullName: Rudeus.Procedure
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Procedure
+    name: Procedure
+    href: Rudeus.Procedure.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Procedure
+    name: Procedure
+    href: Rudeus.Procedure.html
+- uid: Rudeus.Initializer.Program._taskInitializer*
+  commentId: Overload:Rudeus.Initializer.Program._taskInitializer
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program__taskInitializer
+  name: _taskInitializer
+  nameWithType: Program._taskInitializer
+  fullName: Rudeus.Initializer.Program._taskInitializer
+- uid: Rudeus.Initializer.Program._certificateInstaller*
+  commentId: Overload:Rudeus.Initializer.Program._certificateInstaller
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program__certificateInstaller
+  name: _certificateInstaller
+  nameWithType: Program._certificateInstaller
+  fullName: Rudeus.Initializer.Program._certificateInstaller
+- uid: Rudeus.Initializer.Program._serverRegister*
+  commentId: Overload:Rudeus.Initializer.Program._serverRegister
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program__serverRegister
+  name: _serverRegister
+  nameWithType: Program._serverRegister
+  fullName: Rudeus.Initializer.Program._serverRegister
+- uid: Rudeus.Initializer.Program.CheckLogMessage*
+  commentId: Overload:Rudeus.Initializer.Program.CheckLogMessage
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_CheckLogMessage
+  name: CheckLogMessage
+  nameWithType: Program.CheckLogMessage
+  fullName: Rudeus.Initializer.Program.CheckLogMessage
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Rudeus.Initializer.Program.Main*
+  commentId: Overload:Rudeus.Initializer.Program.Main
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_Main_System_String___
+  name: Main
+  nameWithType: Program.Main
+  fullName: Rudeus.Initializer.Program.Main
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Rudeus.Initializer.Program.MainAsync*
+  commentId: Overload:Rudeus.Initializer.Program.MainAsync
+  href: Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_MainAsync_System_String___
+  name: MainAsync
+  nameWithType: Program.MainAsync
+  fullName: Rudeus.Initializer.Program.MainAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

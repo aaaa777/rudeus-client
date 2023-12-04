@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: RudeusLibTest.API
+  commentId: N:RudeusLibTest.API
+  id: RudeusLibTest.API
+  children:
+  - RudeusLibTest.API.RemoteAPITests
+  langs:
+  - csharp
+  - vb
+  name: RudeusLibTest.API
+  nameWithType: RudeusLibTest.API
+  fullName: RudeusLibTest.API
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: RudeusLibTest.API.RemoteAPITests
+  commentId: T:RudeusLibTest.API.RemoteAPITests
+  href: RudeusLibTest.API.RemoteAPITests.html
+  name: RemoteAPITests
+  nameWithType: RemoteAPITests
+  fullName: RudeusLibTest.API.RemoteAPITests

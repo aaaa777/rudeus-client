@@ -4,7 +4,6 @@ items:
   commentId: N:RudeusBgInitializerTest
   id: RudeusBgInitializerTest
   children:
-  - RudeusBgInitializerTest.ProgramTests
   - RudeusBgInitializerTest.TaskInitializerTests
   langs:
   - csharp
@@ -14,14 +13,8 @@ items:
   fullName: RudeusBgInitializerTest
   type: Namespace
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
 references:
-- uid: RudeusBgInitializerTest.ProgramTests
-  commentId: T:RudeusBgInitializerTest.ProgramTests
-  href: RudeusBgInitializerTest.ProgramTests.html
-  name: ProgramTests
-  nameWithType: ProgramTests
-  fullName: RudeusBgInitializerTest.ProgramTests
 - uid: RudeusBgInitializerTest.TaskInitializerTests
   commentId: T:RudeusBgInitializerTest.TaskInitializerTests
   href: RudeusBgInitializerTest.TaskInitializerTests.html

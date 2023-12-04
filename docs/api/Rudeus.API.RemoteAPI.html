@@ -1,0 +1,908 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RemoteAPI
+ | Rudeus Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RemoteAPI
+ | Rudeus Document ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Rudeus_API_RemoteAPI.md&amp;value=---%0Auid%3A%20Rudeus.API.RemoteAPI%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Rudeus Document">
+            Rudeus Document
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Rudeus.API.RemoteAPI">
+
+
+
+  <h1 id="Rudeus_API_RemoteAPI" data-uid="Rudeus.API.RemoteAPI" class="text-break">
+    Class RemoteAPI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Rudeus.html">Rudeus</a>.<a class="xref" href="Rudeus.API.html">API</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>SharedLib.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RemoteAPI</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RemoteAPI</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_">AssertEx.AsDynamic&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_">AssertEx.IsNotNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_">AssertEx.IsNotSameReferenceAs&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_">AssertEx.IsNot&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.IsNot&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_">AssertEx.IsNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_">AssertEx.IsSameReferenceAs&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_">AssertEx.Is&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.Is&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_">AssertEx.Is&lt;T&gt;(T, Expression&lt;Func&lt;T, bool&gt;&gt;, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_">AssertEx.IsInstanceOf&lt;TExpected&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_">AssertEx.IsNotInstanceOf&lt;TWrong&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsNotStructuralEqual(object, object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsStructuralEqual(object, object, string)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiEndpointWithCert" data-uid="Rudeus.API.RemoteAPI.ApiEndpointWithCert">
+  ApiEndpointWithCert
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ApiEndpointWithCert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiEndpointWithoutCert" data-uid="Rudeus.API.RemoteAPI.ApiEndpointWithoutCert">
+  ApiEndpointWithoutCert
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ApiEndpointWithoutCert</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rudeus_API_RemoteAPI_AppCallbackUri" data-uid="Rudeus.API.RemoteAPI.AppCallbackUri">
+  AppCallbackUri
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AppCallbackUri</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Rudeus_API_RemoteAPI_SamlLoginUrl" data-uid="Rudeus.API.RemoteAPI.SamlLoginUrl">
+  SamlLoginUrl
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string SamlLoginUrl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiCheckStatusPath_" data-uid="Rudeus.API.RemoteAPI.ApiCheckStatusPath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiCheckStatusPath" data-uid="Rudeus.API.RemoteAPI.ApiCheckStatusPath">
+  ApiCheckStatusPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiCheckStatusPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiLoginPath_" data-uid="Rudeus.API.RemoteAPI.ApiLoginPath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiLoginPath" data-uid="Rudeus.API.RemoteAPI.ApiLoginPath">
+  ApiLoginPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiLoginPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiRegisterPath_" data-uid="Rudeus.API.RemoteAPI.ApiRegisterPath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiRegisterPath" data-uid="Rudeus.API.RemoteAPI.ApiRegisterPath">
+  ApiRegisterPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiRegisterPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiSendInstalledAppsPath_" data-uid="Rudeus.API.RemoteAPI.ApiSendInstalledAppsPath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiSendInstalledAppsPath" data-uid="Rudeus.API.RemoteAPI.ApiSendInstalledAppsPath">
+  ApiSendInstalledAppsPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiSendInstalledAppsPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiUpdateMetadataPath_" data-uid="Rudeus.API.RemoteAPI.ApiUpdateMetadataPath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiUpdateMetadataPath" data-uid="Rudeus.API.RemoteAPI.ApiUpdateMetadataPath">
+  ApiUpdateMetadataPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiUpdateMetadataPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ApiUpdatePath_" data-uid="Rudeus.API.RemoteAPI.ApiUpdatePath*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ApiUpdatePath" data-uid="Rudeus.API.RemoteAPI.ApiUpdatePath">
+  ApiUpdatePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApiUpdatePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_RequestClient_" data-uid="Rudeus.API.RemoteAPI.RequestClient*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_RequestClient" data-uid="Rudeus.API.RemoteAPI.RequestClient">
+  RequestClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRequestClient RequestClient { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.IRequestClient.html">IRequestClient</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Rudeus_API_RemoteAPI_BuildHttpRequestMessage_" data-uid="Rudeus.API.RemoteAPI.BuildHttpRequestMessage*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_BuildHttpRequestMessage_System_String_System_String_System_String_System_Net_Http_HttpMethod_" data-uid="Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String,System.String,System.String,System.Net.Http.HttpMethod)">
+  BuildHttpRequestMessage(string?, string, string, HttpMethod)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HttpRequestMessage BuildHttpRequestMessage(string? accessToken, string requestPath, string payload, HttpMethod method)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>requestPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>payload</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_GetUpdateMetadata_" data-uid="Rudeus.API.RemoteAPI.GetUpdateMetadata*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_GetUpdateMetadata_System_String_" data-uid="Rudeus.API.RemoteAPI.GetUpdateMetadata(System.String)">
+  GetUpdateMetadata(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UpdateMetadataResponse GetUpdateMetadata(string accessToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.Response.UpdateMetadataResponse.html">UpdateMetadataResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_IsAccessTokenAvailable_" data-uid="Rudeus.API.RemoteAPI.IsAccessTokenAvailable*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_IsAccessTokenAvailable_System_String_" data-uid="Rudeus.API.RemoteAPI.IsAccessTokenAvailable(System.String)">
+  IsAccessTokenAvailable(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAccessTokenAvailable(string accessToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_IsRemoteReachable_" data-uid="Rudeus.API.RemoteAPI.IsRemoteReachable*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_IsRemoteReachable" data-uid="Rudeus.API.RemoteAPI.IsRemoteReachable">
+  IsRemoteReachable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRemoteReachable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_LoginDevice_" data-uid="Rudeus.API.RemoteAPI.LoginDevice*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_LoginDevice_System_String_System_String_" data-uid="Rudeus.API.RemoteAPI.LoginDevice(System.String,System.String)">
+  LoginDevice(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LoginResponse LoginDevice(string accessToken, string userId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>userId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.Response.LoginResponse.html">LoginResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_ReceiveStudentIdAsync_" data-uid="Rudeus.API.RemoteAPI.ReceiveStudentIdAsync*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_ReceiveStudentIdAsync" data-uid="Rudeus.API.RemoteAPI.ReceiveStudentIdAsync">
+  ReceiveStudentIdAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>ログインして紐づけを行ったUserIdを取得
+localhostを使うのでWindowsのみ対応している</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;string&gt; ReceiveStudentIdAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_RegisterDevice_" data-uid="Rudeus.API.RemoteAPI.RegisterDevice*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_RegisterDevice_System_String_System_String_" data-uid="Rudeus.API.RemoteAPI.RegisterDevice(System.String,System.String)">
+  RegisterDevice(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>デバイスを登録する
+accesstokenを取得する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RegisterResponse RegisterDevice(string deviceId, string hostname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>deviceId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hostname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.Response.RegisterResponse.html">RegisterResponse</a></dt>
+    <dd><p>RegisterResponse</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_SendInstalledApps_" data-uid="Rudeus.API.RemoteAPI.SendInstalledApps*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_SendInstalledApps_System_String_System_Collections_Generic_List_Rudeus_Model_ApplicationData__" data-uid="Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})">
+  SendInstalledApps(string, List&lt;ApplicationData&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BaseResponse SendInstalledApps(string accessToken, List&lt;ApplicationData&gt; apps)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>apps</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Rudeus.Model.ApplicationData.html">ApplicationData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.Response.BaseResponse.html">BaseResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Rudeus_API_RemoteAPI_UpdateDevice_" data-uid="Rudeus.API.RemoteAPI.UpdateDevice*"></a>
+
+  <h3 id="Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_" data-uid="Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String)">
+  UpdateDevice(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>デバイスIDとアクセストークンを利用してデバイス情報を更新する</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UpdateResponse UpdateDevice(string accessToken, string? hostname = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>accessToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>hostname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Rudeus.API.Response.UpdateResponse.html">UpdateResponse</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/API/RemoteAPI.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

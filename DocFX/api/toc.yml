@@ -3,6 +3,8 @@ items:
 - uid: Rudeus
   name: Rudeus
   items:
+  - uid: Rudeus.Constants
+    name: Constants
   - uid: Rudeus.IUtils
     name: IUtils
   - uid: Rudeus.Utils
@@ -10,13 +12,97 @@ items:
 - uid: Rudeus.API
   name: Rudeus.API
   items:
+  - uid: Rudeus.API.Exceptions
+    name: Exceptions
+  - uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
+    name: Exceptions.AccessTokenUnavailableException
+  - uid: Rudeus.API.Exceptions.ServerUnavailableException
+    name: Exceptions.ServerUnavailableException
+  - uid: Rudeus.API.Exceptions.UnexpectedResponseException
+    name: Exceptions.UnexpectedResponseException
+  - uid: Rudeus.API.FakeRequestClient
+    name: FakeRequestClient
   - uid: Rudeus.API.IRequestClient
     name: IRequestClient
+  - uid: Rudeus.API.RemoteAPI
+    name: RemoteAPI
   - uid: Rudeus.API.RequestClient
     name: RequestClient
+- uid: Rudeus.API.Response
+  name: Rudeus.API.Response
+  items:
+  - uid: Rudeus.API.Response.BaseResponse
+    name: BaseResponse
+  - uid: Rudeus.API.Response.LoginResponse
+    name: LoginResponse
+  - uid: Rudeus.API.Response.LoginResponseData
+    name: LoginResponseData
+  - uid: Rudeus.API.Response.PushResponseData
+    name: PushResponseData
+  - uid: Rudeus.API.Response.RegisterResponse
+    name: RegisterResponse
+  - uid: Rudeus.API.Response.RegisterResponseData
+    name: RegisterResponseData
+  - uid: Rudeus.API.Response.UpdateMetadataResponse
+    name: UpdateMetadataResponse
+  - uid: Rudeus.API.Response.UpdateMetadataResponseData
+    name: UpdateMetadataResponseData
+  - uid: Rudeus.API.Response.UpdateResponse
+    name: UpdateResponse
+  - uid: Rudeus.API.Response.UpdateResponseData
+    name: UpdateResponseData
+- uid: Rudeus.Application
+  name: Rudeus.Application
+  items:
+  - uid: Rudeus.Application.TaskTrayForm
+    name: TaskTrayForm
+- uid: Rudeus.Command
+  name: Rudeus.Command
+  items:
+  - uid: Rudeus.Command.IWorker
+    name: IWorker
+  - uid: Rudeus.Command.Worker
+    name: Worker
+- uid: Rudeus.Initializer
+  name: Rudeus.Initializer
+  items:
+  - uid: Rudeus.Initializer.Program
+    name: Program
+- uid: Rudeus.Initializer.Test
+  name: Rudeus.Initializer.Test
+  items:
+  - uid: Rudeus.Initializer.Test.ProgramTests
+    name: ProgramTests
+- uid: Rudeus.Launcher
+  name: Rudeus.Launcher
+  items:
+  - uid: Rudeus.Launcher.Launcher
+    name: Launcher
+  - uid: Rudeus.Launcher.Program
+    name: Program
+  - uid: Rudeus.Launcher.Updater
+    name: Updater
+- uid: Rudeus.Launcher.Procedure
+  name: Rudeus.Launcher.Procedure
+  items:
+  - uid: Rudeus.Launcher.Procedure.ILauncher
+    name: ILauncher
+- uid: Rudeus.Launcher.Test
+  name: Rudeus.Launcher.Test
+  items:
+  - uid: Rudeus.Launcher.Test.LauncherTests
+    name: LauncherTests
+  - uid: Rudeus.Launcher.Test.ProgramTests
+    name: ProgramTests
+  - uid: Rudeus.Launcher.Test.UpdaterTests
+    name: UpdaterTests
 - uid: Rudeus.Model
   name: Rudeus.Model
   items:
+  - uid: Rudeus.Model.ApplicationData
+    name: ApplicationData
+  - uid: Rudeus.Model.FakeLocalCertificate
+    name: FakeLocalCertificate
   - uid: Rudeus.Model.FakeSettings
     name: FakeSettings
   - uid: Rudeus.Model.ILocalCertificate
@@ -25,6 +111,8 @@ items:
     name: ILocalMachine
   - uid: Rudeus.Model.ISettings
     name: ISettings
+  - uid: Rudeus.Model.InstalledApplications
+    name: InstalledApplications
   - uid: Rudeus.Model.LocalMachine
     name: LocalMachine
   - uid: Rudeus.Model.Settings
@@ -32,81 +120,51 @@ items:
 - uid: Rudeus.Procedure
   name: Rudeus.Procedure
   items:
+  - uid: Rudeus.Procedure.AccessTokenValidator
+    name: AccessTokenValidator
   - uid: Rudeus.Procedure.CertificateInstaller
     name: CertificateInstaller
   - uid: Rudeus.Procedure.FakeProcedure
     name: FakeProcedure
   - uid: Rudeus.Procedure.IFakeProcedure
     name: IFakeProcedure
-  - uid: Rudeus.Procedure.ILauncher
-    name: ILauncher
   - uid: Rudeus.Procedure.IProcedure
     name: IProcedure
-- uid: RudeusBg
-  name: RudeusBg
-  items:
-  - uid: RudeusBg.IWorker
-    name: IWorker
-  - uid: RudeusBg.Worker
-    name: Worker
-- uid: RudeusBgForm
-  name: RudeusBgForm
-  items:
-  - uid: RudeusBgForm.TaskTrayForm
-    name: TaskTrayForm
-- uid: RudeusBgFormTest
-  name: RudeusBgFormTest
-  items:
-  - uid: RudeusBgFormTest.UnitTest1
-    name: UnitTest1
-- uid: RudeusBgInitializer
-  name: RudeusBgInitializer
-  items:
-  - uid: RudeusBgInitializer.Program
-    name: Program
+  - uid: Rudeus.Procedure.RegistryInitializer
+    name: RegistryInitializer
+  - uid: Rudeus.Procedure.ScheduledRegularExecuter
+    name: ScheduledRegularExecuter
+  - uid: Rudeus.Procedure.ServerRegister
+    name: ServerRegister
+  - uid: Rudeus.Procedure.UserLoginExecuter
+    name: UserLoginExecuter
 - uid: RudeusBgInitializerTest
   name: RudeusBgInitializerTest
   items:
-  - uid: RudeusBgInitializerTest.ProgramTests
-    name: ProgramTests
   - uid: RudeusBgInitializerTest.TaskInitializerTests
     name: TaskInitializerTests
-- uid: RudeusBgTest
-  name: RudeusBgTest
+- uid: RudeusLibTest
+  name: RudeusLibTest
   items:
-  - uid: RudeusBgTest.UnitTest1
-    name: UnitTest1
-- uid: RudeusLauncherTest
-  name: RudeusLauncherTest
-  items:
-  - uid: RudeusLauncherTest.LauncherTests
-    name: LauncherTests
-  - uid: RudeusLauncherTest.ProgramTests
-    name: ProgramTests
-  - uid: RudeusLauncherTest.UpdaterTests
-    name: UpdaterTests
-- uid: RudeusSharedLibTest
-  name: RudeusSharedLibTest
-  items:
-  - uid: RudeusSharedLibTest.ConstantsTests
+  - uid: RudeusLibTest.ConstantsTests
     name: ConstantsTests
-  - uid: RudeusSharedLibTest.UnitTestSample
+  - uid: RudeusLibTest.UnitTestSample
     name: UnitTestSample
-  - uid: RudeusSharedLibTest.UtilsTests
+  - uid: RudeusLibTest.UtilsTests
     name: UtilsTests
-- uid: RudeusSharedLibTest.API
-  name: RudeusSharedLibTest.API
+- uid: RudeusLibTest.API
+  name: RudeusLibTest.API
   items:
-  - uid: RudeusSharedLibTest.API.RemoteAPITests
+  - uid: RudeusLibTest.API.RemoteAPITests
     name: RemoteAPITests
-- uid: RudeusSharedLibTest.Procedure
-  name: RudeusSharedLibTest.Procedure
+- uid: RudeusLibTest.Procedure
+  name: RudeusLibTest.Procedure
   items:
-  - uid: RudeusSharedLibTest.Procedure.CertificateInstallerTests
+  - uid: RudeusLibTest.Procedure.CertificateInstallerTests
     name: CertificateInstallerTests
-  - uid: RudeusSharedLibTest.Procedure.FakeProcedureTests
+  - uid: RudeusLibTest.Procedure.FakeProcedureTests
     name: FakeProcedureTests
-  - uid: RudeusSharedLibTest.Procedure.RegistryInitializerTests
+  - uid: RudeusLibTest.Procedure.RegistryInitializerTests
     name: RegistryInitializerTests
 - uid: Xunit
   name: Xunit

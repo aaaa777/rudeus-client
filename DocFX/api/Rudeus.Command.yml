@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Command
+  commentId: N:Rudeus.Command
+  id: Rudeus.Command
+  children:
+  - Rudeus.Command.IWorker
+  - Rudeus.Command.Worker
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Command
+  nameWithType: Rudeus.Command
+  fullName: Rudeus.Command
+  type: Namespace
+  assemblies:
+  - Command
+references:
+- uid: Rudeus.Command.IWorker
+  commentId: T:Rudeus.Command.IWorker
+  parent: Rudeus.Command
+  href: Rudeus.Command.IWorker.html
+  name: IWorker
+  nameWithType: IWorker
+  fullName: Rudeus.Command.IWorker
+- uid: Rudeus.Command.Worker
+  commentId: T:Rudeus.Command.Worker
+  href: Rudeus.Command.Worker.html
+  name: Worker
+  nameWithType: Worker
+  fullName: Rudeus.Command.Worker
+- uid: Rudeus.Command
+  commentId: N:Rudeus.Command
+  href: Rudeus.html
+  name: Rudeus.Command
+  nameWithType: Rudeus.Command
+  fullName: Rudeus.Command
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Command
+    name: Command
+    href: Rudeus.Command.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Command
+    name: Command
+    href: Rudeus.Command.html

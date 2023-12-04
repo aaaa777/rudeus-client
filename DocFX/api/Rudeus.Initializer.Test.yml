@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Rudeus.Initializer.Test
+  commentId: N:Rudeus.Initializer.Test
+  id: Rudeus.Initializer.Test
+  children:
+  - Rudeus.Initializer.Test.ProgramTests
+  langs:
+  - csharp
+  - vb
+  name: Rudeus.Initializer.Test
+  nameWithType: Rudeus.Initializer.Test
+  fullName: Rudeus.Initializer.Test
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Rudeus.Initializer.Test.ProgramTests
+  commentId: T:Rudeus.Initializer.Test.ProgramTests
+  href: Rudeus.Initializer.Test.ProgramTests.html
+  name: ProgramTests
+  nameWithType: ProgramTests
+  fullName: Rudeus.Initializer.Test.ProgramTests

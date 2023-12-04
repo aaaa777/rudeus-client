@@ -24,14 +24,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Utils
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 16
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ユーティリティクラス
   example: []
@@ -52,46 +52,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Rudeus.Utils.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Utils.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Utils.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Utils.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Utils.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Utils.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Utils.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils)
   - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils)
   - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.IsNot``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.IsNull``1
-  - Rudeus.Utils.Xunit.AssertEx.IsNull``1
   - Rudeus.Utils.Xunit.AssertEx.IsNull``1
   - Rudeus.Utils.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils)
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils)
   - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils)
   - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(Rudeus.Utils,System.Collections.Generic.IEqualityComparer{Rudeus.Utils})
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Utils,System.Boolean}},System.String)
-  - Rudeus.Utils.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Utils,System.Boolean}},System.String)
   - Rudeus.Utils.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Utils,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Utils.WebPortalUrl
   commentId: F:Rudeus.Utils.WebPortalUrl
@@ -106,14 +78,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: WebPortalUrl
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 18
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   syntax:
     content: public static readonly string WebPortalUrl
@@ -133,14 +105,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Polite3Url
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 19
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   syntax:
     content: public static readonly string Polite3Url
@@ -160,14 +132,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: KyoumuUrl
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 20
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   syntax:
     content: public static readonly string KyoumuUrl
@@ -187,14 +159,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LM
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 23
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   syntax:
     content: public static ILocalMachine LM { get; set; }
@@ -216,14 +188,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ConcatStudentNumberFromMail
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 31
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: s9999999@s.do-johodai.ac.jp -&gt; 9999999
   example: []
@@ -260,14 +232,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStudentMailAddress
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 49
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: s9999999@s.do-johodai.ac.jp -&gt; true
   example: []
@@ -300,14 +272,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RegisterDeviceAndSetData
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 70
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: >-
     廃止予定
@@ -333,14 +305,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CopyDirectory
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 98
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ディレクトリを再帰的にコピーする
   example: []
@@ -375,14 +347,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CompareVersionString
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 132
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: ドット区切り数字列を比較する
   example: []
@@ -421,14 +393,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Utils.cs
+      path: SharedLib/Utils.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ParseArgs
-    path: ../RudeusSharedLib/Utils.cs
+    path: ../SharedLib/Utils.cs
     startLine: 158
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus
   summary: key=value形式の引数をパースする
   example: []
@@ -2159,6 +2131,7 @@ references:
     href: Rudeus.Model.html
 - uid: System.Exception
   commentId: T:System.Exception
+  parent: System
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.exception
   name: Exception

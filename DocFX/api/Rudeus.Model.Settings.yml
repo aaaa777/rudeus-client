@@ -92,14 +92,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Settings
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 13
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   summary: レジストリに設定を保持するモデル
   example: []
@@ -120,46 +120,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Rudeus.Model.Settings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.Settings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.Settings.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.Settings.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Model.Settings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings)
   - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings)
   - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNot``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNull``1
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.Settings.Xunit.AssertEx.IsNull``1
   - Rudeus.Model.Settings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings)
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings)
   - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings)
   - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(Rudeus.Model.Settings,System.Collections.Generic.IEqualityComparer{Rudeus.Model.Settings})
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.Settings,System.Boolean}},System.String)
-  - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.Settings,System.Boolean}},System.String)
   - Rudeus.Model.Settings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Model.Settings,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Model.Settings.#ctor
   commentId: M:Rudeus.Model.Settings.#ctor
@@ -174,14 +146,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 32
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public Settings()
@@ -203,14 +175,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 37
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public Settings(string registryKey)
@@ -235,14 +207,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdateRegistryKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 42
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void UpdateRegistryKey(string? registryKey = null)
@@ -267,14 +239,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InitedUsername
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 103
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string InitedUsername { get; }
@@ -296,14 +268,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InitedLabelId
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 112
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string InitedLabelId { get; }
@@ -325,14 +297,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FirstHostnameKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 123
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string FirstHostnameKey
@@ -352,14 +324,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FirstHostname
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 124
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string FirstHostname { get; set; }
@@ -381,14 +353,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FirstHostnameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 130
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -413,14 +385,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: HostnameKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 137
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string HostnameKey
@@ -440,14 +412,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Hostname
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 138
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string Hostname { get; set; }
@@ -469,14 +441,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: HostnameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 144
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -501,14 +473,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: DeviceIdKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 151
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string DeviceIdKey
@@ -528,14 +500,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: DeviceId
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 152
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string DeviceId { get; set; }
@@ -557,14 +529,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: DeviceIdP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 158
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -589,14 +561,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UsernameKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 165
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string UsernameKey
@@ -616,14 +588,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Username
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 166
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string Username { get; set; }
@@ -645,14 +617,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UsernameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 172
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -677,14 +649,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 179
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string AccessTokenKey
@@ -704,14 +676,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessToken
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 180
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string AccessToken { get; set; }
@@ -733,14 +705,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 186
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -765,14 +737,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LabelIdKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 202
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LabelIdKey
@@ -792,14 +764,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LabelId
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 203
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LabelId { get; set; }
@@ -821,14 +793,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LabelIdP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 209
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -853,14 +825,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdateChannelKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 216
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string UpdateChannelKey
@@ -880,14 +852,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdatingChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 218
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string UpdatingChannel { get; set; }
@@ -909,14 +881,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdatingChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 224
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -941,14 +913,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsBetaChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 238
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsBetaChannel()
@@ -969,14 +941,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsTestChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 239
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsTestChannel()
@@ -997,14 +969,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsDevelopChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 247
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsDevelopChannel()
@@ -1025,14 +997,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStableChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 248
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsStableChannel()
@@ -1053,14 +1025,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetBetaChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 250
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetBetaChannel()
@@ -1079,14 +1051,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetTestChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 251
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetTestChannel()
@@ -1105,14 +1077,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetDevelopChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 257
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetDevelopChannel()
@@ -1131,14 +1103,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetStableChannel
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 258
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetStableChannel()
@@ -1157,14 +1129,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsBetaChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 260
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1188,14 +1160,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsTestChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 261
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1219,14 +1191,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsDevelopChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 269
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1250,14 +1222,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStableChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 270
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1281,14 +1253,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetBetaChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 272
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1310,14 +1282,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetTestChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 273
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1339,14 +1311,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetDevelopChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 279
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1368,14 +1340,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetStableChannelP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 280
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1397,14 +1369,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionStatusKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 287
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestVersionStatusKey
@@ -1424,14 +1396,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionStatus
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 289
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestVersionStatus { get; set; }
@@ -1453,14 +1425,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionStatusP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 295
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1485,14 +1457,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusOk
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 301
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsLatestVersionStatusOk()
@@ -1513,14 +1485,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusDownloaded
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 302
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsLatestVersionStatusDownloaded()
@@ -1541,14 +1513,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusUnlaunchable
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 303
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static bool IsLatestVersionStatusUnlaunchable()
@@ -1569,14 +1541,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusOk
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 305
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetLatestVersionStatusOk()
@@ -1595,14 +1567,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusDownloaded
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 306
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetLatestVersionStatusDownloaded()
@@ -1621,14 +1593,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusUnlaunchable
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 307
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static void SetLatestVersionStatusUnlaunchable()
@@ -1647,14 +1619,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusOkP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 309
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1678,14 +1650,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusDownloadedP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 310
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1709,14 +1681,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusUnlaunchableP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 311
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1740,14 +1712,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusOkP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 313
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1769,14 +1741,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusDownloadedP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 314
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1798,14 +1770,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusUnlaunchableP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 315
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1827,14 +1799,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionDirPath
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 321
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LastVersionDirPath { get; set; }
@@ -1856,14 +1828,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionDirPathP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 342
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1888,14 +1860,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionDirPath
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 365
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestVersionDirPath { get; set; }
@@ -1917,14 +1889,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionDirPathP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 385
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1949,14 +1921,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExeName
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 408
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LastVersionExeName { get; set; }
@@ -1978,14 +1950,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExeNameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 414
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2010,14 +1982,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExeName
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 422
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestVersionExeName { get; set; }
@@ -2039,14 +2011,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExeNameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 428
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2071,14 +2043,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastDirName
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 436
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LastDirName { get; set; }
@@ -2100,14 +2072,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastDirNameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 442
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2132,14 +2104,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestDirName
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 450
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestDirName { get; set; }
@@ -2161,14 +2133,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestDirNameP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 456
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2193,14 +2165,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExePath
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 463
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LastVersionExePath { get; }
@@ -2222,14 +2194,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExePath
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 464
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string LatestVersionExePath { get; }
@@ -2251,14 +2223,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExePathP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 465
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2283,14 +2255,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExePathP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 466
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2315,14 +2287,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CurrentVersionKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 470
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string CurrentVersionKey
@@ -2342,14 +2314,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CurrentVersion
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 472
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public static string CurrentVersion { get; set; }
@@ -2371,14 +2343,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CurrentVersionP
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 478
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -2403,14 +2375,14 @@ items:
   type: Field
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: NetworkIFListKey
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 484
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public string NetworkIFListKey
@@ -2430,14 +2402,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Model/Settings.cs
+      path: SharedLib/Model/Settings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: NetworkIFList
-    path: ../RudeusSharedLib/Model/Settings.cs
+    path: ../SharedLib/Model/Settings.cs
     startLine: 485
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Model
   syntax:
     content: public string NetworkIFList { get; set; }

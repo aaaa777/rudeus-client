@@ -17,14 +17,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusSharedLib/Procedure/CertificateInstaller.cs
+      path: SharedLib/Procedure/CertificateInstaller.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CertificateInstaller
-    path: ../RudeusSharedLib/Procedure/CertificateInstaller.cs
+    path: ../SharedLib/Procedure/CertificateInstaller.cs
     startLine: 13
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   summary: ローカルマシンに証明書をインストールする手続き
   example: []
@@ -45,46 +45,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.AsDynamic``1
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotNull``1
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotNull``1
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNotSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller)
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller)
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNot``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNull``1
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsNull``1
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.IsSameReferenceAs``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller)
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller)
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(Rudeus.Procedure.CertificateInstaller,System.Collections.Generic.IEqualityComparer{Rudeus.Procedure.CertificateInstaller})
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.CertificateInstaller,System.Boolean}},System.String)
-  - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.CertificateInstaller,System.Boolean}},System.String)
   - Rudeus.Procedure.CertificateInstaller.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Rudeus.Procedure.CertificateInstaller,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 - uid: Rudeus.Procedure.CertificateInstaller._localCertificate
   commentId: P:Rudeus.Procedure.CertificateInstaller._localCertificate
@@ -99,14 +71,14 @@ items:
   type: Property
   source:
     remote:
-      path: RudeusSharedLib/Procedure/CertificateInstaller.cs
+      path: SharedLib/Procedure/CertificateInstaller.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _localCertificate
-    path: ../RudeusSharedLib/Procedure/CertificateInstaller.cs
+    path: ../SharedLib/Procedure/CertificateInstaller.cs
     startLine: 15
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: public ILocalCertificate _localCertificate { get; set; }
@@ -128,14 +100,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: RudeusSharedLib/Procedure/CertificateInstaller.cs
+      path: SharedLib/Procedure/CertificateInstaller.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../RudeusSharedLib/Procedure/CertificateInstaller.cs
+    path: ../SharedLib/Procedure/CertificateInstaller.cs
     startLine: 17
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   syntax:
     content: public CertificateInstaller(ILocalCertificate? lc = null)
@@ -160,14 +132,14 @@ items:
   type: Method
   source:
     remote:
-      path: RudeusSharedLib/Procedure/CertificateInstaller.cs
+      path: SharedLib/Procedure/CertificateInstaller.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
-    path: ../RudeusSharedLib/Procedure/CertificateInstaller.cs
+    path: ../SharedLib/Procedure/CertificateInstaller.cs
     startLine: 21
   assemblies:
-  - RudeusBg
+  - SharedLib
   namespace: Rudeus.Procedure
   summary: 処理を実行する
   example: []

@@ -14,14 +14,14 @@ items:
   type: Class
   source:
     remote:
-      path: RudeusBgInitializerTest/TaskInitializerTests.cs
+      path: Test/Initializer/TaskInitializerTests.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TaskInitializerTests
-    path: ../RudeusBgInitializerTest/TaskInitializerTests.cs
+    path: ../Test/Initializer/TaskInitializerTests.cs
     startLine: 8
   assemblies:
-  - RudeusBgInitializerTest
+  - Test
   namespace: RudeusBgInitializerTest
   syntax:
     content: public class TaskInitializerTests
@@ -38,46 +38,18 @@ items:
   - System.Object.ToString
   extensionMethods:
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.AsDynamic``1
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.AsDynamic``1
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.AsDynamic``1
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotNull``1
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotNull``1
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotNull``1
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNotSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests)
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests)
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNot``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNull``1
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNull``1
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsNull``1
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.IsSameReferenceAs``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests)
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests)
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(RudeusBgInitializerTest.TaskInitializerTests,System.Collections.Generic.IEqualityComparer{RudeusBgInitializerTest.TaskInitializerTests})
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{RudeusBgInitializerTest.TaskInitializerTests,System.Boolean}},System.String)
-  - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{RudeusBgInitializerTest.TaskInitializerTests,System.Boolean}},System.String)
   - RudeusBgInitializerTest.TaskInitializerTests.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{RudeusBgInitializerTest.TaskInitializerTests,System.Boolean}},System.String)
   - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
-  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
 references:
 - uid: RudeusBgInitializerTest
