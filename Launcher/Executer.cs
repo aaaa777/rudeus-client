@@ -13,7 +13,7 @@ namespace Rudeus.Launcher.Procedure
     /// <summary>
     /// アプリの起動を行う手続き
     /// </summary>
-    public class Launcher : ILauncher
+    public class Executer : IExecuter
     {
         //public static int Run(string registryKey, string Args="")
         public ISettings AppSettings { get; set; }
@@ -24,7 +24,7 @@ namespace Rudeus.Launcher.Procedure
         public Func<string, string, int> StartProcess { get; set; }
 
 
-        public Launcher(ISettings aps, string args = "", Func<string, string, int>? startProcess = null)
+        public Executer(ISettings aps, string args = "", Func<string, string, int>? startProcess = null)
         {
             AppSettings = aps;
             this.Args = args;
@@ -39,7 +39,7 @@ namespace Rudeus.Launcher.Procedure
             string lastExePath = AppSettings.LastVersionExePathP;
             bool skipLatest = AppSettings.IsLatestVersionStatusUnlaunchableP();
 #if (DEBUG)
-        Console.WriteLine("[Launcher] Debug build is running");
+        Console.WriteLine("[Executer] Debug build is running");
 #endif
             // レジストリを切り替え
             //Settings.UpdateRegistryKey(registryKey);

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Launcher;
+using Rudeus.Launcher.Procedure;
 
 namespace Rudeus.Launcher.Test
 {
@@ -28,7 +29,7 @@ namespace Rudeus.Launcher.Test
         {
             StartProcessCount = 0;
             ISettings appSetting = new FakeSettings();
-            var launcher = new Launcher(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
+            var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
             await launcher.Run();
 
@@ -42,7 +43,7 @@ namespace Rudeus.Launcher.Test
             StartProcessCount = 0;
             ISettings appSetting = new FakeSettings();
             appSetting.SetLatestVersionStatusUnlaunchableP();
-            var launcher = new Launcher(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
+            var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
             await launcher.Run();
 
@@ -55,7 +56,7 @@ namespace Rudeus.Launcher.Test
         {
             StartProcessCount = 0;
             ISettings appSetting = new FakeSettings();
-            var launcher = new Launcher(aps: appSetting, args: "", startProcess: FakeStartProcessFailure);
+            var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessFailure);
 
             await launcher.Run();
             //var exception = await Record.ExceptionAsync(launcher.Run);

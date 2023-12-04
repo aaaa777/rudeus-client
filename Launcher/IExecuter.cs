@@ -8,7 +8,7 @@ namespace Rudeus.Launcher.Procedure
     /// <summary>
     /// LauncherはExitCodeを返すべき手続きだったので作成
     /// </summary>
-    public interface ILauncher : IProcedure
+    public interface IExecuter : IProcedure
     {
         int ExitCode { get; set; }
     }

@@ -15,7 +15,7 @@ namespace Rudeus.Launcher
         public static string _argsStr { get; set; }
 
         public static IProcedure _updater { get; set; }
-        public static ILauncher _launcher { get; set; }
+        public static IExecuter _launcher { get; set; }
 
         // 実質的なコンストラクタ
         public static void Main(string[] args)
@@ -40,7 +40,7 @@ namespace Rudeus.Launcher
             }
 
             _updater = new Updater();
-            _launcher = new Launcher(_appSettings, _argsStr);
+            _launcher = new Executer(_appSettings, _argsStr);
 
             MainAsync().GetAwaiter().GetResult();
         }
