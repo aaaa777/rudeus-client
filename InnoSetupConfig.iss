@@ -94,7 +94,7 @@ Root: HKLM; Subkey: "Software\Test App\Setup"; ValueType: string; ValueName: "La
 ;Name: "{group}/LaunchTT"; Filename: "{autopf}/HIU/BackGroundService.exe"
 
 [Run]
-Filename: {tmp}\RudeusBgInitializer.exe;
+Filename: {tmp}\Initializer.exe;
 
 [Languages]
 Name: en; MessagesFile: "compiler:Default.isl"
