@@ -13,12 +13,14 @@ namespace Rudeus.Procedure.Test
         [Fact]
         public async void TestRun()
         {
+            // Arrange
             var cfs = FakeSettings.Create();
             var ins = FakeSettings.Create();
             var bgs = FakeSettings.Create();
             var bfs = FakeSettings.Create();
             //var fakeLocalMachine = FakeLocalMachine.Create();
 
+            // Act
             var re = new RegistryInitializer(
                 cfs: cfs,
                 ins: ins,
@@ -26,9 +28,8 @@ namespace Rudeus.Procedure.Test
                 bfs: bfs
             );
             
+            // Assert
             await re.Run();
-
-
         }
     }
 }

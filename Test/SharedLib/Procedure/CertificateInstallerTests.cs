@@ -13,13 +13,16 @@ namespace Rudeus.Procedure.Test
         [Fact]
         public async void TestRun()
         {
+            // Arrange
             var lc = FakeLocalCertificate.Create();
             CertificateInstaller ci = new CertificateInstaller(
                 lc: lc
             );
 
+            // Act
             await ci.Run();
 
+            // Assert
             //Assert.True(lc.InstallCertificateIntoRootCalled);
         }
     }

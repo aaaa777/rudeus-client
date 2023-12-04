@@ -12,11 +12,14 @@ namespace Rudeus.Procedure.Test
         [Fact]
         public async Task TestRun()
         {
+            // Arrange
             var fp = new FakeProcedure();
             
+            // Act
             await fp.Run();
             await fp.Run();
 
+            // Assert
             Assert.Equal(2, fp.RunCount);
         }
     }
