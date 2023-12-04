@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RudeusLibTest.Procedure
+namespace Rudeus.Procedure.Test
 {
     public class RegistryInitializerTests
     {

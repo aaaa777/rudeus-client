@@ -32,7 +32,7 @@
 
   <ItemGroup>
     <Folder Include="Properties\" />
-    <Folder Include="RudeusLib\Model\" />
+    <Folder Include="SharedLib\Model\" />
   </ItemGroup>
 
   <ItemGroup>
