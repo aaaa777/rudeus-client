@@ -3,27 +3,29 @@
 namespace Rudeus.Model
 {
     /// <summary>
-    /// 設定をレジストリに保管するモデル
-    /// レジストリを指定して異なる保存先を指定することもできる
+    /// 主要な設定をレジストリに保管するモデル
     /// </summary>
-    public interface ISettings
+    public interface IRootSettings
     {
         //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
 
         //static abstract void Set(string key, string value, bool isDefaultKey, RegistryKey regKey);
 
-        string CurrentVersionP { get; set; }
-        string LastDirNameP { get; set; }
-        string LastVersionDirPathP { get; set; }
-        string LastVersionExeNameP { get; set; }
-        string LastVersionExePathP { get; }
-        string LatestDirNameP { get; set; }
-        string LatestVersionDirPathP { get; set; }
-        string LatestVersionExeNameP { get; set; }
-        string LatestVersionExePathP { get; }
-        string LatestVersionStatusP { get; set; }
-        string UpdatingChannelP { get; set; }
+        string AccessTokenP { get; set; }
+        string DeviceIdP { get; set; }
+        string FirstHostnameP { get; set; }
+        string HostnameP { get; set; }
+        string UsernameP { get; set; }
 
+        string LabelIdP { get; set; }
+        string CurrentVersionP { get; set; }
+        string SpecP { get; set; }
+        string CpuNameP { get; set; }
+        string MemoryP { get; set; }
+        string CDriveP { get; set; }
+        string OSP { get; set; }
+        string OSVersionP { get; set; }
+        string WithSecureP { get; set; }
 
         bool IsBetaChannelP();
         bool IsDevelopChannelP();
