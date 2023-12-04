@@ -17,7 +17,7 @@ namespace Rudeus.Test
         [Fact(DisplayName = "IsStudentMailAddress(): s1234567@s.do-johodai.ac.jp -> True")]
         public void TestIsStudentMailAddress1()
         {
-            Utils.IsStudentMailAddress("s1234567@s.do-johodai.ac.jp").Is(true);
+            Utils.IsStudentMailAddress("s1234567@s.do-johodai.ac.jp").IsTrue();
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Rudeus.Test
         [Fact(DisplayName = "IsStudentMailAddress(): samplename@s.do-johodai.ac.jp -> False")]
         public void TestIsStudentMailAddress2()
         {
-            Utils.IsStudentMailAddress("samplename@s.do-johodai.ac.jp").Is(false);
+            Utils.IsStudentMailAddress("samplename@s.do-johodai.ac.jp").IsFalse();
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Rudeus.Test
         [Fact(DisplayName = "IsStudentMailAddress(): s1234567@www.example.com -> False")]
         public void TestIsStudentMailAddress3()
         {
-            Utils.IsStudentMailAddress("s1234567@www.example.com").Is(false);
+            Utils.IsStudentMailAddress("s1234567@www.example.com").IsFalse();
         }
 
 
