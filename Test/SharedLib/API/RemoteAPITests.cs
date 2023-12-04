@@ -1,11 +1,10 @@
-﻿using Rudeus.API;
-using Rudeus.Model;
+﻿using Rudeus.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Rudeus.API.Exceptions;
+using SharedLib.Exceptions;
 
 namespace Rudeus.API.Test
 {

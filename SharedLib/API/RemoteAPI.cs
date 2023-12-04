@@ -17,12 +17,12 @@ using System.Runtime.ConstrainedExecution;
 using System.Collections.Specialized;
 using System.Diagnostics.CodeAnalysis;
 using Windows.Networking;
-using static Rudeus.API.Exceptions;
+using SharedLib.Exceptions;
 //using Newtonsoft.Json;
 
 namespace Rudeus.API
 {
- 
+
     /// <summary>
     /// 管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない
     /// </summary>

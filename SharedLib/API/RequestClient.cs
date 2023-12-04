@@ -2,7 +2,7 @@
 
 using Rudeus.API.Request;
 using System.Net;
-using static Rudeus.API.Exceptions;
+using SharedLib.Exceptions;
 
 namespace Rudeus.API
 {

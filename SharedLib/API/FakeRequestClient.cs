@@ -1,13 +1,12 @@
 ﻿using Microsoft.VisualBasic;
 using Rudeus;
-using Rudeus.API;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Constants = Rudeus.Constants;
-using static Rudeus.API.Exceptions;
+using SharedLib.Exceptions;
 
 namespace Rudeus.API
 {
