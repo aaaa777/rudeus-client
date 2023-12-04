@@ -21,7 +21,7 @@ namespace Rudeus.API.Request
             request_data = new();
         }
     }
-    internal class EmptyRequestData
+    public class EmptyRequestData
     {
         public EmptyRequestData() { }
     }

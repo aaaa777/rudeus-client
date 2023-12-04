@@ -21,7 +21,7 @@ namespace Rudeus.API.Request
             request_data = new RegisterRequestData(deviceId, hostname, manageId);
         }
     }
-    internal class RegisterRequestData
+    public class RegisterRequestData
     {
 
         [JsonPropertyName(nameof(device_id))]

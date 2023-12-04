@@ -17,7 +17,7 @@ namespace Rudeus.API.Request
         [JsonPropertyName(nameof(request_data))]
         public BaseRequestData? request_data { get; set; }
     }
-    internal class BaseRequestData
+    public class BaseRequestData
     {
     }
     

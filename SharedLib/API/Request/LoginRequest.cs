@@ -21,7 +21,7 @@ namespace Rudeus.API.Request
             request_data = new LoginRequestData(username);
         }
     }
-    internal class LoginRequestData
+    public class LoginRequestData
     {
         [JsonPropertyName(nameof(user_id))]
         public string user_id { get; set; }

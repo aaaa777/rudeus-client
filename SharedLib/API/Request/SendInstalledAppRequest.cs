@@ -29,7 +29,7 @@ namespace Rudeus.API.Request
             request_data = new(apps);
         }
     }
-    internal class SendInstalledAppsRequestData
+    public class SendInstalledAppsRequestData
     {
         [JsonPropertyName(nameof(apps))]
         public List<SendInstalledAppsAppData> apps { get; set; } = new();
@@ -51,7 +51,7 @@ namespace Rudeus.API.Request
         }
     }
 
-    internal class SendInstalledAppsAppData
+    public class SendInstalledAppsAppData
     {
         [JsonPropertyName(nameof(name))]
         public string name { get; set; }

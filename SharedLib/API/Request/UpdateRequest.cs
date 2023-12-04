@@ -25,7 +25,7 @@ namespace Rudeus.API.Request
             request_data = new(hostname);
         }
     }
-    internal class UpdateRequestData
+    public class UpdateRequestData
     {
         [JsonPropertyName(nameof(hostname))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
