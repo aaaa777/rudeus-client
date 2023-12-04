@@ -29,5 +29,6 @@
 	
   <ItemGroup>
     <ProjectReference Include="..\RudeusLib\RudeusLib.csproj" />
+    <ProjectReference Include="..\SharedLib\SharedLib.csproj" />
   </ItemGroup>
 </Project>
