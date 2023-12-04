@@ -16,14 +16,14 @@ items:
   type: Interface
   source:
     remote:
-      path: SharedLib/Procedure/IFakeProcedure.cs
+      path: Test/SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IFakeProcedure
-    path: ../SharedLib/Procedure/IFakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/IFakeProcedure.cs
     startLine: 2
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   syntax:
     content: 'public interface IFakeProcedure : IProcedure'
@@ -56,14 +56,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Procedure/IFakeProcedure.cs
+      path: Test/SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RunCount
-    path: ../SharedLib/Procedure/IFakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/IFakeProcedure.cs
     startLine: 4
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   syntax:
     content: int RunCount { get; }
@@ -85,14 +85,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Procedure/IFakeProcedure.cs
+      path: Test/SharedLib/Procedure/IFakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
-    path: ../SharedLib/Procedure/IFakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/IFakeProcedure.cs
     startLine: 6
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   syntax:
     content: Task Run()

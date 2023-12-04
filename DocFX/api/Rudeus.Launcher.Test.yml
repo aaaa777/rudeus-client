@@ -4,7 +4,7 @@ items:
   commentId: N:Rudeus.Launcher.Test
   id: Rudeus.Launcher.Test
   children:
-  - Rudeus.Launcher.Test.LauncherTests
+  - Rudeus.Launcher.Test.ExecuterTests
   - Rudeus.Launcher.Test.ProgramTests
   - Rudeus.Launcher.Test.UpdaterTests
   langs:
@@ -17,12 +17,12 @@ items:
   assemblies:
   - Test
 references:
-- uid: Rudeus.Launcher.Test.LauncherTests
-  commentId: T:Rudeus.Launcher.Test.LauncherTests
-  href: Rudeus.Launcher.Test.LauncherTests.html
-  name: LauncherTests
-  nameWithType: LauncherTests
-  fullName: Rudeus.Launcher.Test.LauncherTests
+- uid: Rudeus.Launcher.Test.ExecuterTests
+  commentId: T:Rudeus.Launcher.Test.ExecuterTests
+  href: Rudeus.Launcher.Test.ExecuterTests.html
+  name: ExecuterTests
+  nameWithType: ExecuterTests
+  fullName: Rudeus.Launcher.Test.ExecuterTests
 - uid: Rudeus.Launcher.Test.ProgramTests
   commentId: T:Rudeus.Launcher.Test.ProgramTests
   href: Rudeus.Launcher.Test.ProgramTests.html

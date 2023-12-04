@@ -13,87 +13,6 @@ references:
   commentId: N:Rudeus.API
   fullName: Rudeus.API
   nameWithType: Rudeus.API
-- uid: Rudeus.API.Exceptions
-  name: Exceptions
-  href: api/Rudeus.API.Exceptions.html
-  commentId: T:Rudeus.API.Exceptions
-  fullName: Rudeus.API.Exceptions
-  nameWithType: Exceptions
-- uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
-  name: Exceptions.AccessTokenUnavailableException
-  href: api/Rudeus.API.Exceptions.AccessTokenUnavailableException.html
-  commentId: T:Rudeus.API.Exceptions.AccessTokenUnavailableException
-  fullName: Rudeus.API.Exceptions.AccessTokenUnavailableException
-  nameWithType: Exceptions.AccessTokenUnavailableException
-- uid: Rudeus.API.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
-  name: AccessTokenUnavailableException(string)
-  href: api/Rudeus.API.Exceptions.AccessTokenUnavailableException.html#Rudeus_API_Exceptions_AccessTokenUnavailableException__ctor_System_String_
-  commentId: M:Rudeus.API.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException(string)
-  fullName.vb: Rudeus.API.Exceptions.AccessTokenUnavailableException.New(String)
-  nameWithType: Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException(string)
-  nameWithType.vb: Exceptions.AccessTokenUnavailableException.New(String)
-- uid: Rudeus.API.Exceptions.AccessTokenUnavailableException.#ctor*
-  name: AccessTokenUnavailableException
-  href: api/Rudeus.API.Exceptions.AccessTokenUnavailableException.html#Rudeus_API_Exceptions_AccessTokenUnavailableException__ctor_
-  commentId: Overload:Rudeus.API.Exceptions.AccessTokenUnavailableException.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Rudeus.API.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException
-  fullName.vb: Rudeus.API.Exceptions.AccessTokenUnavailableException.New
-  nameWithType: Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException
-  nameWithType.vb: Exceptions.AccessTokenUnavailableException.New
-- uid: Rudeus.API.Exceptions.ServerUnavailableException
-  name: Exceptions.ServerUnavailableException
-  href: api/Rudeus.API.Exceptions.ServerUnavailableException.html
-  commentId: T:Rudeus.API.Exceptions.ServerUnavailableException
-  fullName: Rudeus.API.Exceptions.ServerUnavailableException
-  nameWithType: Exceptions.ServerUnavailableException
-- uid: Rudeus.API.Exceptions.ServerUnavailableException.#ctor(System.String)
-  name: ServerUnavailableException(string)
-  href: api/Rudeus.API.Exceptions.ServerUnavailableException.html#Rudeus_API_Exceptions_ServerUnavailableException__ctor_System_String_
-  commentId: M:Rudeus.API.Exceptions.ServerUnavailableException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Exceptions.ServerUnavailableException.ServerUnavailableException(string)
-  fullName.vb: Rudeus.API.Exceptions.ServerUnavailableException.New(String)
-  nameWithType: Exceptions.ServerUnavailableException.ServerUnavailableException(string)
-  nameWithType.vb: Exceptions.ServerUnavailableException.New(String)
-- uid: Rudeus.API.Exceptions.ServerUnavailableException.#ctor*
-  name: ServerUnavailableException
-  href: api/Rudeus.API.Exceptions.ServerUnavailableException.html#Rudeus_API_Exceptions_ServerUnavailableException__ctor_
-  commentId: Overload:Rudeus.API.Exceptions.ServerUnavailableException.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Rudeus.API.Exceptions.ServerUnavailableException.ServerUnavailableException
-  fullName.vb: Rudeus.API.Exceptions.ServerUnavailableException.New
-  nameWithType: Exceptions.ServerUnavailableException.ServerUnavailableException
-  nameWithType.vb: Exceptions.ServerUnavailableException.New
-- uid: Rudeus.API.Exceptions.UnexpectedResponseException
-  name: Exceptions.UnexpectedResponseException
-  href: api/Rudeus.API.Exceptions.UnexpectedResponseException.html
-  commentId: T:Rudeus.API.Exceptions.UnexpectedResponseException
-  fullName: Rudeus.API.Exceptions.UnexpectedResponseException
-  nameWithType: Exceptions.UnexpectedResponseException
-- uid: Rudeus.API.Exceptions.UnexpectedResponseException.#ctor(System.String)
-  name: UnexpectedResponseException(string)
-  href: api/Rudeus.API.Exceptions.UnexpectedResponseException.html#Rudeus_API_Exceptions_UnexpectedResponseException__ctor_System_String_
-  commentId: M:Rudeus.API.Exceptions.UnexpectedResponseException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Exceptions.UnexpectedResponseException.UnexpectedResponseException(string)
-  fullName.vb: Rudeus.API.Exceptions.UnexpectedResponseException.New(String)
-  nameWithType: Exceptions.UnexpectedResponseException.UnexpectedResponseException(string)
-  nameWithType.vb: Exceptions.UnexpectedResponseException.New(String)
-- uid: Rudeus.API.Exceptions.UnexpectedResponseException.#ctor*
-  name: UnexpectedResponseException
-  href: api/Rudeus.API.Exceptions.UnexpectedResponseException.html#Rudeus_API_Exceptions_UnexpectedResponseException__ctor_
-  commentId: Overload:Rudeus.API.Exceptions.UnexpectedResponseException.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Rudeus.API.Exceptions.UnexpectedResponseException.UnexpectedResponseException
-  fullName.vb: Rudeus.API.Exceptions.UnexpectedResponseException.New
-  nameWithType: Exceptions.UnexpectedResponseException.UnexpectedResponseException
-  nameWithType.vb: Exceptions.UnexpectedResponseException.New
 - uid: Rudeus.API.FakeRequestClient
   name: FakeRequestClient
   href: api/Rudeus.API.FakeRequestClient.html
@@ -2300,115 +2219,115 @@ references:
   commentId: N:Rudeus.Launcher.Procedure
   fullName: Rudeus.Launcher.Procedure
   nameWithType: Rudeus.Launcher.Procedure
-- uid: Rudeus.Launcher.Procedure.ILauncher
-  name: ILauncher
-  href: api/Rudeus.Launcher.Procedure.ILauncher.html
-  commentId: T:Rudeus.Launcher.Procedure.ILauncher
-  fullName: Rudeus.Launcher.Procedure.ILauncher
-  nameWithType: ILauncher
-- uid: Rudeus.Launcher.Procedure.ILauncher.ExitCode
-  name: ExitCode
-  href: api/Rudeus.Launcher.Procedure.ILauncher.html#Rudeus_Launcher_Procedure_ILauncher_ExitCode
-  commentId: P:Rudeus.Launcher.Procedure.ILauncher.ExitCode
-  fullName: Rudeus.Launcher.Procedure.ILauncher.ExitCode
-  nameWithType: ILauncher.ExitCode
-- uid: Rudeus.Launcher.Procedure.ILauncher.ExitCode*
-  name: ExitCode
-  href: api/Rudeus.Launcher.Procedure.ILauncher.html#Rudeus_Launcher_Procedure_ILauncher_ExitCode_
-  commentId: Overload:Rudeus.Launcher.Procedure.ILauncher.ExitCode
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.ILauncher.ExitCode
-  nameWithType: ILauncher.ExitCode
-- uid: Rudeus.Launcher.Procedure.Launcher
-  name: Launcher
-  href: api/Rudeus.Launcher.Procedure.Launcher.html
-  commentId: T:Rudeus.Launcher.Procedure.Launcher
-  fullName: Rudeus.Launcher.Procedure.Launcher
-  nameWithType: Launcher
-- uid: Rudeus.Launcher.Procedure.Launcher.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
-  name: Launcher(ISettings, string, Func<string, string, int>?)
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher__ctor_Rudeus_Model_ISettings_System_String_System_Func_System_String_System_String_System_Int32__
-  commentId: M:Rudeus.Launcher.Procedure.Launcher.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
+- uid: Rudeus.Launcher.Procedure.Executer
+  name: Executer
+  href: api/Rudeus.Launcher.Procedure.Executer.html
+  commentId: T:Rudeus.Launcher.Procedure.Executer
+  fullName: Rudeus.Launcher.Procedure.Executer
+  nameWithType: Executer
+- uid: Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
+  name: Executer(ISettings, string, Func<string, string, int>?)
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_Rudeus_Model_ISettings_System_String_System_Func_System_String_System_String_System_Int32__
+  commentId: M:Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
   name.vb: New(ISettings, String, Func(Of String, String, Integer))
-  fullName: Rudeus.Launcher.Procedure.Launcher.Launcher(Rudeus.Model.ISettings, string, System.Func<string, string, int>?)
-  fullName.vb: Rudeus.Launcher.Procedure.Launcher.New(Rudeus.Model.ISettings, String, System.Func(Of String, String, Integer))
-  nameWithType: Launcher.Launcher(ISettings, string, Func<string, string, int>?)
-  nameWithType.vb: Launcher.New(ISettings, String, Func(Of String, String, Integer))
-- uid: Rudeus.Launcher.Procedure.Launcher.#ctor*
-  name: Launcher
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher__ctor_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.#ctor
+  fullName: Rudeus.Launcher.Procedure.Executer.Executer(Rudeus.Model.ISettings, string, System.Func<string, string, int>?)
+  fullName.vb: Rudeus.Launcher.Procedure.Executer.New(Rudeus.Model.ISettings, String, System.Func(Of String, String, Integer))
+  nameWithType: Executer.Executer(ISettings, string, Func<string, string, int>?)
+  nameWithType.vb: Executer.New(ISettings, String, Func(Of String, String, Integer))
+- uid: Rudeus.Launcher.Procedure.Executer.#ctor*
+  name: Executer
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Rudeus.Launcher.Procedure.Launcher.Launcher
-  fullName.vb: Rudeus.Launcher.Procedure.Launcher.New
-  nameWithType: Launcher.Launcher
-  nameWithType.vb: Launcher.New
-- uid: Rudeus.Launcher.Procedure.Launcher.AppSettings
+  fullName: Rudeus.Launcher.Procedure.Executer.Executer
+  fullName.vb: Rudeus.Launcher.Procedure.Executer.New
+  nameWithType: Executer.Executer
+  nameWithType.vb: Executer.New
+- uid: Rudeus.Launcher.Procedure.Executer.AppSettings
   name: AppSettings
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_AppSettings
-  commentId: P:Rudeus.Launcher.Procedure.Launcher.AppSettings
-  fullName: Rudeus.Launcher.Procedure.Launcher.AppSettings
-  nameWithType: Launcher.AppSettings
-- uid: Rudeus.Launcher.Procedure.Launcher.AppSettings*
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_AppSettings
+  commentId: P:Rudeus.Launcher.Procedure.Executer.AppSettings
+  fullName: Rudeus.Launcher.Procedure.Executer.AppSettings
+  nameWithType: Executer.AppSettings
+- uid: Rudeus.Launcher.Procedure.Executer.AppSettings*
   name: AppSettings
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_AppSettings_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.AppSettings
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_AppSettings_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.AppSettings
   isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.Launcher.AppSettings
-  nameWithType: Launcher.AppSettings
-- uid: Rudeus.Launcher.Procedure.Launcher.Args
+  fullName: Rudeus.Launcher.Procedure.Executer.AppSettings
+  nameWithType: Executer.AppSettings
+- uid: Rudeus.Launcher.Procedure.Executer.Args
   name: Args
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_Args
-  commentId: P:Rudeus.Launcher.Procedure.Launcher.Args
-  fullName: Rudeus.Launcher.Procedure.Launcher.Args
-  nameWithType: Launcher.Args
-- uid: Rudeus.Launcher.Procedure.Launcher.Args*
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_Args
+  commentId: P:Rudeus.Launcher.Procedure.Executer.Args
+  fullName: Rudeus.Launcher.Procedure.Executer.Args
+  nameWithType: Executer.Args
+- uid: Rudeus.Launcher.Procedure.Executer.Args*
   name: Args
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_Args_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.Args
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_Args_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.Args
   isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.Launcher.Args
-  nameWithType: Launcher.Args
-- uid: Rudeus.Launcher.Procedure.Launcher.ExitCode
+  fullName: Rudeus.Launcher.Procedure.Executer.Args
+  nameWithType: Executer.Args
+- uid: Rudeus.Launcher.Procedure.Executer.ExitCode
   name: ExitCode
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_ExitCode
-  commentId: P:Rudeus.Launcher.Procedure.Launcher.ExitCode
-  fullName: Rudeus.Launcher.Procedure.Launcher.ExitCode
-  nameWithType: Launcher.ExitCode
-- uid: Rudeus.Launcher.Procedure.Launcher.ExitCode*
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_ExitCode
+  commentId: P:Rudeus.Launcher.Procedure.Executer.ExitCode
+  fullName: Rudeus.Launcher.Procedure.Executer.ExitCode
+  nameWithType: Executer.ExitCode
+- uid: Rudeus.Launcher.Procedure.Executer.ExitCode*
   name: ExitCode
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_ExitCode_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.ExitCode
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_ExitCode_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.ExitCode
   isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.Launcher.ExitCode
-  nameWithType: Launcher.ExitCode
-- uid: Rudeus.Launcher.Procedure.Launcher.Run
+  fullName: Rudeus.Launcher.Procedure.Executer.ExitCode
+  nameWithType: Executer.ExitCode
+- uid: Rudeus.Launcher.Procedure.Executer.Run
   name: Run()
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_Run
-  commentId: M:Rudeus.Launcher.Procedure.Launcher.Run
-  fullName: Rudeus.Launcher.Procedure.Launcher.Run()
-  nameWithType: Launcher.Run()
-- uid: Rudeus.Launcher.Procedure.Launcher.Run*
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_Run
+  commentId: M:Rudeus.Launcher.Procedure.Executer.Run
+  fullName: Rudeus.Launcher.Procedure.Executer.Run()
+  nameWithType: Executer.Run()
+- uid: Rudeus.Launcher.Procedure.Executer.Run*
   name: Run
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_Run_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.Run
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_Run_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.Run
   isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.Launcher.Run
-  nameWithType: Launcher.Run
-- uid: Rudeus.Launcher.Procedure.Launcher.StartProcess
+  fullName: Rudeus.Launcher.Procedure.Executer.Run
+  nameWithType: Executer.Run
+- uid: Rudeus.Launcher.Procedure.Executer.StartProcess
   name: StartProcess
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_StartProcess
-  commentId: P:Rudeus.Launcher.Procedure.Launcher.StartProcess
-  fullName: Rudeus.Launcher.Procedure.Launcher.StartProcess
-  nameWithType: Launcher.StartProcess
-- uid: Rudeus.Launcher.Procedure.Launcher.StartProcess*
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_StartProcess
+  commentId: P:Rudeus.Launcher.Procedure.Executer.StartProcess
+  fullName: Rudeus.Launcher.Procedure.Executer.StartProcess
+  nameWithType: Executer.StartProcess
+- uid: Rudeus.Launcher.Procedure.Executer.StartProcess*
   name: StartProcess
-  href: api/Rudeus.Launcher.Procedure.Launcher.html#Rudeus_Launcher_Procedure_Launcher_StartProcess_
-  commentId: Overload:Rudeus.Launcher.Procedure.Launcher.StartProcess
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_StartProcess_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.StartProcess
   isSpec: "True"
-  fullName: Rudeus.Launcher.Procedure.Launcher.StartProcess
-  nameWithType: Launcher.StartProcess
+  fullName: Rudeus.Launcher.Procedure.Executer.StartProcess
+  nameWithType: Executer.StartProcess
+- uid: Rudeus.Launcher.Procedure.IExecuter
+  name: IExecuter
+  href: api/Rudeus.Launcher.Procedure.IExecuter.html
+  commentId: T:Rudeus.Launcher.Procedure.IExecuter
+  fullName: Rudeus.Launcher.Procedure.IExecuter
+  nameWithType: IExecuter
+- uid: Rudeus.Launcher.Procedure.IExecuter.ExitCode
+  name: ExitCode
+  href: api/Rudeus.Launcher.Procedure.IExecuter.html#Rudeus_Launcher_Procedure_IExecuter_ExitCode
+  commentId: P:Rudeus.Launcher.Procedure.IExecuter.ExitCode
+  fullName: Rudeus.Launcher.Procedure.IExecuter.ExitCode
+  nameWithType: IExecuter.ExitCode
+- uid: Rudeus.Launcher.Procedure.IExecuter.ExitCode*
+  name: ExitCode
+  href: api/Rudeus.Launcher.Procedure.IExecuter.html#Rudeus_Launcher_Procedure_IExecuter_ExitCode_
+  commentId: Overload:Rudeus.Launcher.Procedure.IExecuter.ExitCode
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.IExecuter.ExitCode
+  nameWithType: IExecuter.ExitCode
 - uid: Rudeus.Launcher.Program
   name: Program
   href: api/Rudeus.Launcher.Program.html
@@ -2502,51 +2421,51 @@ references:
   commentId: N:Rudeus.Launcher.Test
   fullName: Rudeus.Launcher.Test
   nameWithType: Rudeus.Launcher.Test
-- uid: Rudeus.Launcher.Test.LauncherTests
-  name: LauncherTests
-  href: api/Rudeus.Launcher.Test.LauncherTests.html
-  commentId: T:Rudeus.Launcher.Test.LauncherTests
-  fullName: Rudeus.Launcher.Test.LauncherTests
-  nameWithType: LauncherTests
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun
+- uid: Rudeus.Launcher.Test.ExecuterTests
+  name: ExecuterTests
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html
+  commentId: T:Rudeus.Launcher.Test.ExecuterTests
+  fullName: Rudeus.Launcher.Test.ExecuterTests
+  nameWithType: ExecuterTests
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun
   name: TestRun()
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun
-  commentId: M:Rudeus.Launcher.Test.LauncherTests.TestRun
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun()
-  nameWithType: LauncherTests.TestRun()
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun*
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun
+  commentId: M:Rudeus.Launcher.Test.ExecuterTests.TestRun
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun()
+  nameWithType: ExecuterTests.TestRun()
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun*
   name: TestRun
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun_
-  commentId: Overload:Rudeus.Launcher.Test.LauncherTests.TestRun
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun_
+  commentId: Overload:Rudeus.Launcher.Test.ExecuterTests.TestRun
   isSpec: "True"
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun
-  nameWithType: LauncherTests.TestRun
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun2
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun
+  nameWithType: ExecuterTests.TestRun
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun2
   name: TestRun2()
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun2
-  commentId: M:Rudeus.Launcher.Test.LauncherTests.TestRun2
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun2()
-  nameWithType: LauncherTests.TestRun2()
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun2*
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun2
+  commentId: M:Rudeus.Launcher.Test.ExecuterTests.TestRun2
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun2()
+  nameWithType: ExecuterTests.TestRun2()
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun2*
   name: TestRun2
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun2_
-  commentId: Overload:Rudeus.Launcher.Test.LauncherTests.TestRun2
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun2_
+  commentId: Overload:Rudeus.Launcher.Test.ExecuterTests.TestRun2
   isSpec: "True"
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun2
-  nameWithType: LauncherTests.TestRun2
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun3
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun2
+  nameWithType: ExecuterTests.TestRun2
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun3
   name: TestRun3()
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun3
-  commentId: M:Rudeus.Launcher.Test.LauncherTests.TestRun3
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun3()
-  nameWithType: LauncherTests.TestRun3()
-- uid: Rudeus.Launcher.Test.LauncherTests.TestRun3*
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun3
+  commentId: M:Rudeus.Launcher.Test.ExecuterTests.TestRun3
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun3()
+  nameWithType: ExecuterTests.TestRun3()
+- uid: Rudeus.Launcher.Test.ExecuterTests.TestRun3*
   name: TestRun3
-  href: api/Rudeus.Launcher.Test.LauncherTests.html#Rudeus_Launcher_Test_LauncherTests_TestRun3_
-  commentId: Overload:Rudeus.Launcher.Test.LauncherTests.TestRun3
+  href: api/Rudeus.Launcher.Test.ExecuterTests.html#Rudeus_Launcher_Test_ExecuterTests_TestRun3_
+  commentId: Overload:Rudeus.Launcher.Test.ExecuterTests.TestRun3
   isSpec: "True"
-  fullName: Rudeus.Launcher.Test.LauncherTests.TestRun3
-  nameWithType: LauncherTests.TestRun3
+  fullName: Rudeus.Launcher.Test.ExecuterTests.TestRun3
+  nameWithType: ExecuterTests.TestRun3
 - uid: Rudeus.Launcher.Test.ProgramTests
   name: ProgramTests
   href: api/Rudeus.Launcher.Test.ProgramTests.html
@@ -5443,6 +5362,32 @@ references:
   isSpec: "True"
   fullName: Rudeus.Test.UtilsTests.TestCompareVersionString
   nameWithType: UtilsTests.TestCompareVersionString
+- uid: Rudeus.Test.UtilsTests.TestCompareVersionString1
+  name: TestCompareVersionString1()
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestCompareVersionString1
+  commentId: M:Rudeus.Test.UtilsTests.TestCompareVersionString1
+  fullName: Rudeus.Test.UtilsTests.TestCompareVersionString1()
+  nameWithType: UtilsTests.TestCompareVersionString1()
+- uid: Rudeus.Test.UtilsTests.TestCompareVersionString1*
+  name: TestCompareVersionString1
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestCompareVersionString1_
+  commentId: Overload:Rudeus.Test.UtilsTests.TestCompareVersionString1
+  isSpec: "True"
+  fullName: Rudeus.Test.UtilsTests.TestCompareVersionString1
+  nameWithType: UtilsTests.TestCompareVersionString1
+- uid: Rudeus.Test.UtilsTests.TestCompareVersionString2
+  name: TestCompareVersionString2()
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestCompareVersionString2
+  commentId: M:Rudeus.Test.UtilsTests.TestCompareVersionString2
+  fullName: Rudeus.Test.UtilsTests.TestCompareVersionString2()
+  nameWithType: UtilsTests.TestCompareVersionString2()
+- uid: Rudeus.Test.UtilsTests.TestCompareVersionString2*
+  name: TestCompareVersionString2
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestCompareVersionString2_
+  commentId: Overload:Rudeus.Test.UtilsTests.TestCompareVersionString2
+  isSpec: "True"
+  fullName: Rudeus.Test.UtilsTests.TestCompareVersionString2
+  nameWithType: UtilsTests.TestCompareVersionString2
 - uid: Rudeus.Test.UtilsTests.TestConcatStudentNumberFromMail
   name: TestConcatStudentNumberFromMail()
   href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestConcatStudentNumberFromMail
@@ -5456,19 +5401,45 @@ references:
   isSpec: "True"
   fullName: Rudeus.Test.UtilsTests.TestConcatStudentNumberFromMail
   nameWithType: UtilsTests.TestConcatStudentNumberFromMail
-- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress
-  name: TestIsStudentMailAddress()
-  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress
-  commentId: M:Rudeus.Test.UtilsTests.TestIsStudentMailAddress
-  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress()
-  nameWithType: UtilsTests.TestIsStudentMailAddress()
-- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress*
-  name: TestIsStudentMailAddress
-  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress_
-  commentId: Overload:Rudeus.Test.UtilsTests.TestIsStudentMailAddress
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress1
+  name: TestIsStudentMailAddress1()
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress1
+  commentId: M:Rudeus.Test.UtilsTests.TestIsStudentMailAddress1
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress1()
+  nameWithType: UtilsTests.TestIsStudentMailAddress1()
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress1*
+  name: TestIsStudentMailAddress1
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress1_
+  commentId: Overload:Rudeus.Test.UtilsTests.TestIsStudentMailAddress1
   isSpec: "True"
-  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress
-  nameWithType: UtilsTests.TestIsStudentMailAddress
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress1
+  nameWithType: UtilsTests.TestIsStudentMailAddress1
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress2
+  name: TestIsStudentMailAddress2()
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress2
+  commentId: M:Rudeus.Test.UtilsTests.TestIsStudentMailAddress2
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress2()
+  nameWithType: UtilsTests.TestIsStudentMailAddress2()
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress2*
+  name: TestIsStudentMailAddress2
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress2_
+  commentId: Overload:Rudeus.Test.UtilsTests.TestIsStudentMailAddress2
+  isSpec: "True"
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress2
+  nameWithType: UtilsTests.TestIsStudentMailAddress2
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress3
+  name: TestIsStudentMailAddress3()
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress3
+  commentId: M:Rudeus.Test.UtilsTests.TestIsStudentMailAddress3
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress3()
+  nameWithType: UtilsTests.TestIsStudentMailAddress3()
+- uid: Rudeus.Test.UtilsTests.TestIsStudentMailAddress3*
+  name: TestIsStudentMailAddress3
+  href: api/Rudeus.Test.UtilsTests.html#Rudeus_Test_UtilsTests_TestIsStudentMailAddress3_
+  commentId: Overload:Rudeus.Test.UtilsTests.TestIsStudentMailAddress3
+  isSpec: "True"
+  fullName: Rudeus.Test.UtilsTests.TestIsStudentMailAddress3
+  nameWithType: UtilsTests.TestIsStudentMailAddress3
 - uid: Rudeus.Utils
   name: Utils
   href: api/Rudeus.Utils.html
@@ -5599,6 +5570,87 @@ references:
   commentId: F:Rudeus.Utils.WebPortalUrl
   fullName: Rudeus.Utils.WebPortalUrl
   nameWithType: Utils.WebPortalUrl
+- uid: SharedLib.Exceptions
+  name: SharedLib.Exceptions
+  href: api/SharedLib.Exceptions.html
+  commentId: N:SharedLib.Exceptions
+  fullName: SharedLib.Exceptions
+  nameWithType: SharedLib.Exceptions
+- uid: SharedLib.Exceptions.AccessTokenUnavailableException
+  name: AccessTokenUnavailableException
+  href: api/SharedLib.Exceptions.AccessTokenUnavailableException.html
+  commentId: T:SharedLib.Exceptions.AccessTokenUnavailableException
+  fullName: SharedLib.Exceptions.AccessTokenUnavailableException
+  nameWithType: AccessTokenUnavailableException
+- uid: SharedLib.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
+  name: AccessTokenUnavailableException(string)
+  href: api/SharedLib.Exceptions.AccessTokenUnavailableException.html#SharedLib_Exceptions_AccessTokenUnavailableException__ctor_System_String_
+  commentId: M:SharedLib.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException(string)
+  fullName.vb: SharedLib.Exceptions.AccessTokenUnavailableException.New(String)
+  nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException(string)
+  nameWithType.vb: AccessTokenUnavailableException.New(String)
+- uid: SharedLib.Exceptions.AccessTokenUnavailableException.#ctor*
+  name: AccessTokenUnavailableException
+  href: api/SharedLib.Exceptions.AccessTokenUnavailableException.html#SharedLib_Exceptions_AccessTokenUnavailableException__ctor_
+  commentId: Overload:SharedLib.Exceptions.AccessTokenUnavailableException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException
+  fullName.vb: SharedLib.Exceptions.AccessTokenUnavailableException.New
+  nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException
+  nameWithType.vb: AccessTokenUnavailableException.New
+- uid: SharedLib.Exceptions.ServerUnavailableException
+  name: ServerUnavailableException
+  href: api/SharedLib.Exceptions.ServerUnavailableException.html
+  commentId: T:SharedLib.Exceptions.ServerUnavailableException
+  fullName: SharedLib.Exceptions.ServerUnavailableException
+  nameWithType: ServerUnavailableException
+- uid: SharedLib.Exceptions.ServerUnavailableException.#ctor(System.String)
+  name: ServerUnavailableException(string)
+  href: api/SharedLib.Exceptions.ServerUnavailableException.html#SharedLib_Exceptions_ServerUnavailableException__ctor_System_String_
+  commentId: M:SharedLib.Exceptions.ServerUnavailableException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException(string)
+  fullName.vb: SharedLib.Exceptions.ServerUnavailableException.New(String)
+  nameWithType: ServerUnavailableException.ServerUnavailableException(string)
+  nameWithType.vb: ServerUnavailableException.New(String)
+- uid: SharedLib.Exceptions.ServerUnavailableException.#ctor*
+  name: ServerUnavailableException
+  href: api/SharedLib.Exceptions.ServerUnavailableException.html#SharedLib_Exceptions_ServerUnavailableException__ctor_
+  commentId: Overload:SharedLib.Exceptions.ServerUnavailableException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException
+  fullName.vb: SharedLib.Exceptions.ServerUnavailableException.New
+  nameWithType: ServerUnavailableException.ServerUnavailableException
+  nameWithType.vb: ServerUnavailableException.New
+- uid: SharedLib.Exceptions.UnexpectedResponseException
+  name: UnexpectedResponseException
+  href: api/SharedLib.Exceptions.UnexpectedResponseException.html
+  commentId: T:SharedLib.Exceptions.UnexpectedResponseException
+  fullName: SharedLib.Exceptions.UnexpectedResponseException
+  nameWithType: UnexpectedResponseException
+- uid: SharedLib.Exceptions.UnexpectedResponseException.#ctor(System.String)
+  name: UnexpectedResponseException(string)
+  href: api/SharedLib.Exceptions.UnexpectedResponseException.html#SharedLib_Exceptions_UnexpectedResponseException__ctor_System_String_
+  commentId: M:SharedLib.Exceptions.UnexpectedResponseException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException(string)
+  fullName.vb: SharedLib.Exceptions.UnexpectedResponseException.New(String)
+  nameWithType: UnexpectedResponseException.UnexpectedResponseException(string)
+  nameWithType.vb: UnexpectedResponseException.New(String)
+- uid: SharedLib.Exceptions.UnexpectedResponseException.#ctor*
+  name: UnexpectedResponseException
+  href: api/SharedLib.Exceptions.UnexpectedResponseException.html#SharedLib_Exceptions_UnexpectedResponseException__ctor_
+  commentId: Overload:SharedLib.Exceptions.UnexpectedResponseException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException
+  fullName.vb: SharedLib.Exceptions.UnexpectedResponseException.New
+  nameWithType: UnexpectedResponseException.UnexpectedResponseException
+  nameWithType.vb: UnexpectedResponseException.New
 - uid: Xunit
   name: Xunit
   href: api/Xunit.html

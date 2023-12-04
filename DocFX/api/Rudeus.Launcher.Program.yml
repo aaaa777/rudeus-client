@@ -167,11 +167,11 @@ items:
   - Launcher
   namespace: Rudeus.Launcher
   syntax:
-    content: public static ILauncher _launcher { get; set; }
+    content: public static IExecuter _launcher { get; set; }
     parameters: []
     return:
-      type: Rudeus.Launcher.Procedure.ILauncher
-    content.vb: Public Shared Property _launcher As ILauncher
+      type: Rudeus.Launcher.Procedure.IExecuter
+    content.vb: Public Shared Property _launcher As IExecuter
   overload: Rudeus.Launcher.Program._launcher*
 - uid: Rudeus.Launcher.Program.Main(System.String[])
   commentId: M:Rudeus.Launcher.Program.Main(System.String[])
@@ -1998,13 +1998,13 @@ references:
   name: _launcher
   nameWithType: Program._launcher
   fullName: Rudeus.Launcher.Program._launcher
-- uid: Rudeus.Launcher.Procedure.ILauncher
-  commentId: T:Rudeus.Launcher.Procedure.ILauncher
+- uid: Rudeus.Launcher.Procedure.IExecuter
+  commentId: T:Rudeus.Launcher.Procedure.IExecuter
   parent: Rudeus.Launcher.Procedure
-  href: Rudeus.Launcher.Procedure.ILauncher.html
-  name: ILauncher
-  nameWithType: ILauncher
-  fullName: Rudeus.Launcher.Procedure.ILauncher
+  href: Rudeus.Launcher.Procedure.IExecuter.html
+  name: IExecuter
+  nameWithType: IExecuter
+  fullName: Rudeus.Launcher.Procedure.IExecuter
 - uid: Rudeus.Launcher.Procedure
   commentId: N:Rudeus.Launcher.Procedure
   href: Rudeus.html

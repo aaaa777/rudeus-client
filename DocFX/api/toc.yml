@@ -12,14 +12,6 @@ items:
 - uid: Rudeus.API
   name: Rudeus.API
   items:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-  - uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
-    name: Exceptions.AccessTokenUnavailableException
-  - uid: Rudeus.API.Exceptions.ServerUnavailableException
-    name: Exceptions.ServerUnavailableException
-  - uid: Rudeus.API.Exceptions.UnexpectedResponseException
-    name: Exceptions.UnexpectedResponseException
   - uid: Rudeus.API.FakeRequestClient
     name: FakeRequestClient
   - uid: Rudeus.API.IRequestClient
@@ -126,15 +118,15 @@ items:
 - uid: Rudeus.Launcher.Procedure
   name: Rudeus.Launcher.Procedure
   items:
-  - uid: Rudeus.Launcher.Procedure.ILauncher
-    name: ILauncher
-  - uid: Rudeus.Launcher.Procedure.Launcher
-    name: Launcher
+  - uid: Rudeus.Launcher.Procedure.Executer
+    name: Executer
+  - uid: Rudeus.Launcher.Procedure.IExecuter
+    name: IExecuter
 - uid: Rudeus.Launcher.Test
   name: Rudeus.Launcher.Test
   items:
-  - uid: Rudeus.Launcher.Test.LauncherTests
-    name: LauncherTests
+  - uid: Rudeus.Launcher.Test.ExecuterTests
+    name: ExecuterTests
   - uid: Rudeus.Launcher.Test.ProgramTests
     name: ProgramTests
   - uid: Rudeus.Launcher.Test.UpdaterTests
@@ -199,6 +191,15 @@ items:
     name: UnitTestSample
   - uid: Rudeus.Test.UtilsTests
     name: UtilsTests
+- uid: SharedLib.Exceptions
+  name: SharedLib.Exceptions
+  items:
+  - uid: SharedLib.Exceptions.AccessTokenUnavailableException
+    name: AccessTokenUnavailableException
+  - uid: SharedLib.Exceptions.ServerUnavailableException
+    name: ServerUnavailableException
+  - uid: SharedLib.Exceptions.UnexpectedResponseException
+    name: UnexpectedResponseException
 - uid: Xunit
   name: Xunit
   items:

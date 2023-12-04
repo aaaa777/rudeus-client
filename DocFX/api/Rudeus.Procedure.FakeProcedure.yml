@@ -17,14 +17,14 @@ items:
   type: Class
   source:
     remote:
-      path: SharedLib/Procedure/FakeProcedure.cs
+      path: Test/SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FakeProcedure
-    path: ../SharedLib/Procedure/FakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/FakeProcedure.cs
     startLine: 12
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   summary: IProcedureのFake実装
   example: []
@@ -72,14 +72,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Procedure/FakeProcedure.cs
+      path: Test/SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RunCount
-    path: ../SharedLib/Procedure/FakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/FakeProcedure.cs
     startLine: 18
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   summary: Runメソッドが呼ばれた回数
   example: []
@@ -105,14 +105,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SharedLib/Procedure/FakeProcedure.cs
+      path: Test/SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../SharedLib/Procedure/FakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/FakeProcedure.cs
     startLine: 21
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   syntax:
     content: public FakeProcedure()
@@ -134,14 +134,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Procedure/FakeProcedure.cs
+      path: Test/SharedLib/Procedure/FakeProcedure.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
-    path: ../SharedLib/Procedure/FakeProcedure.cs
+    path: ../Test/SharedLib/Procedure/FakeProcedure.cs
     startLine: 24
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Procedure
   example: []
   syntax:

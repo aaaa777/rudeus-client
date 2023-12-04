@@ -21,14 +21,14 @@ items:
   type: Class
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FakeLocalCertificate
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 13
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   summary: ローカルマシンの証明書を操作するモデルのFake実装
   example: []
@@ -75,14 +75,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _fakeLocalCertificate
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 15
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   syntax:
     content: public static ILocalCertificate _fakeLocalCertificate
@@ -102,14 +102,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetInstance
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 21
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   summary: 単一のインスタンスを取得する
   example: []
@@ -135,14 +135,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Create
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 27
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   summary: 新しいインスタンスを生成する
   example: []
@@ -166,14 +166,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetCertificate
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 31
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -203,14 +203,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InstallCertificateIntoRoot
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 36
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -238,14 +238,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InstallPkcs12IntoMy
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 38
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -275,14 +275,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeLocalCertificate.cs
+      path: Test/SharedLib/Model/FakeLocalCertificate.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UninstallCertificateFromString
-    path: ../SharedLib/Model/FakeLocalCertificate.cs
+    path: ../Test/SharedLib/Model/FakeLocalCertificate.cs
     startLine: 40
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1985,20 +1985,17 @@ references:
 - uid: Rudeus.Model.ILocalCertificate.GetInstance
   commentId: M:Rudeus.Model.ILocalCertificate.GetInstance
   parent: Rudeus.Model.ILocalCertificate
-  href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetInstance
   name: GetInstance()
   nameWithType: ILocalCertificate.GetInstance()
   fullName: Rudeus.Model.ILocalCertificate.GetInstance()
   spec.csharp:
   - uid: Rudeus.Model.ILocalCertificate.GetInstance
     name: GetInstance
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetInstance
   - name: (
   - name: )
   spec.vb:
   - uid: Rudeus.Model.ILocalCertificate.GetInstance
     name: GetInstance
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetInstance
   - name: (
   - name: )
 - uid: Rudeus.Model.FakeLocalCertificate.Create*
@@ -2017,7 +2014,7 @@ references:
   commentId: M:Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
   parent: Rudeus.Model.ILocalCertificate
   isExternal: true
-  href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetCertificate_System_String_
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: GetCertificate(string)
   nameWithType: ILocalCertificate.GetCertificate(string)
   fullName: Rudeus.Model.ILocalCertificate.GetCertificate(string)
@@ -2027,7 +2024,6 @@ references:
   spec.csharp:
   - uid: Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
     name: GetCertificate
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetCertificate_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2037,7 +2033,6 @@ references:
   spec.vb:
   - uid: Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
     name: GetCertificate
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetCertificate_System_String_
   - name: (
   - uid: System.String
     name: String
@@ -2120,7 +2115,7 @@ references:
   commentId: M:Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
   parent: Rudeus.Model.ILocalCertificate
   isExternal: true
-  href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallCertificateIntoRoot_System_String_
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: InstallCertificateIntoRoot(string)
   nameWithType: ILocalCertificate.InstallCertificateIntoRoot(string)
   fullName: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(string)
@@ -2130,7 +2125,6 @@ references:
   spec.csharp:
   - uid: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
     name: InstallCertificateIntoRoot
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallCertificateIntoRoot_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2140,7 +2134,6 @@ references:
   spec.vb:
   - uid: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
     name: InstallCertificateIntoRoot
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallCertificateIntoRoot_System_String_
   - name: (
   - uid: System.String
     name: String
@@ -2157,7 +2150,7 @@ references:
   commentId: M:Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
   parent: Rudeus.Model.ILocalCertificate
   isExternal: true
-  href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallPkcs12IntoMy_System_String_System_String_
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: InstallPkcs12IntoMy(string, string)
   nameWithType: ILocalCertificate.InstallPkcs12IntoMy(string, string)
   fullName: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(string, string)
@@ -2167,7 +2160,6 @@ references:
   spec.csharp:
   - uid: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
     name: InstallPkcs12IntoMy
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallPkcs12IntoMy_System_String_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2183,7 +2175,6 @@ references:
   spec.vb:
   - uid: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
     name: InstallPkcs12IntoMy
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallPkcs12IntoMy_System_String_System_String_
   - name: (
   - uid: System.String
     name: String
@@ -2206,7 +2197,7 @@ references:
   commentId: M:Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
   parent: Rudeus.Model.ILocalCertificate
   isExternal: true
-  href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_UninstallCertificateFromString_System_String_
+  href: https://learn.microsoft.com/dotnet/api/system.string
   name: UninstallCertificateFromString(string)
   nameWithType: ILocalCertificate.UninstallCertificateFromString(string)
   fullName: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(string)
@@ -2216,7 +2207,6 @@ references:
   spec.csharp:
   - uid: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
     name: UninstallCertificateFromString
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_UninstallCertificateFromString_System_String_
   - name: (
   - uid: System.String
     name: string
@@ -2226,7 +2216,6 @@ references:
   spec.vb:
   - uid: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
     name: UninstallCertificateFromString
-    href: Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_UninstallCertificateFromString_System_String_
   - name: (
   - uid: System.String
     name: String

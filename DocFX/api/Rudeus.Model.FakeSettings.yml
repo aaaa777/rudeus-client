@@ -47,14 +47,14 @@ items:
   type: Class
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FakeSettings
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 12
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   summary: レジストリの設定を保持するモデルのFake実装
   example: []
@@ -101,14 +101,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetInstance
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 18
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   syntax:
     content: public static ISettings GetInstance()
@@ -129,14 +129,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Create
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 20
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   syntax:
     content: public static ISettings Create()
@@ -157,14 +157,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LabelIdP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 46
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -189,14 +189,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: CurrentVersionP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 47
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -221,14 +221,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastDirNameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 48
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -253,14 +253,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionDirPathP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 49
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -285,14 +285,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExeNameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 50
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -317,14 +317,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LastVersionExePathP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 52
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -349,14 +349,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestDirNameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 54
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -381,14 +381,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionDirPathP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 55
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -413,14 +413,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExeNameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 56
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -445,14 +445,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionExePathP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 58
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -477,14 +477,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LatestVersionStatusP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 60
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -509,14 +509,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdatingChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 61
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -541,14 +541,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 63
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -573,14 +573,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: DeviceIdP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 64
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -605,14 +605,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FirstHostnameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 65
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -637,14 +637,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: HostnameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 66
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -669,14 +669,14 @@ items:
   type: Property
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UsernameP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 67
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -701,14 +701,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsBetaChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 69
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -732,14 +732,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsDevelopChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 74
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -763,14 +763,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusDownloadedP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 79
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -794,14 +794,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusOkP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 84
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -825,14 +825,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsLatestVersionStatusUnlaunchableP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 89
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -856,14 +856,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsStableChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 94
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -887,14 +887,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsTestChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 99
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -918,14 +918,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetBetaChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 104
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -947,14 +947,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetDevelopChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 109
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -976,14 +976,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusDownloadedP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 114
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1005,14 +1005,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusOkP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 119
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1034,14 +1034,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetLatestVersionStatusUnlaunchableP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 124
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1063,14 +1063,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetStableChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 129
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:
@@ -1092,14 +1092,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/Model/FakeSettings.cs
+      path: Test/SharedLib/Model/FakeSettings.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SetTestChannelP
-    path: ../SharedLib/Model/FakeSettings.cs
+    path: ../Test/SharedLib/Model/FakeSettings.cs
     startLine: 134
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.Model
   example: []
   syntax:

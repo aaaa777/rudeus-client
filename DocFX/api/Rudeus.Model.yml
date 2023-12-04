@@ -23,18 +23,6 @@ items:
   assemblies:
   - SharedLib
 references:
-- uid: Rudeus.Model.FakeLocalCertificate
-  commentId: T:Rudeus.Model.FakeLocalCertificate
-  href: Rudeus.Model.FakeLocalCertificate.html
-  name: FakeLocalCertificate
-  nameWithType: FakeLocalCertificate
-  fullName: Rudeus.Model.FakeLocalCertificate
-- uid: Rudeus.Model.FakeSettings
-  commentId: T:Rudeus.Model.FakeSettings
-  href: Rudeus.Model.FakeSettings.html
-  name: FakeSettings
-  nameWithType: FakeSettings
-  fullName: Rudeus.Model.FakeSettings
 - uid: Rudeus.Model.ILocalCertificate
   commentId: T:Rudeus.Model.ILocalCertificate
   parent: Rudeus.Model
@@ -81,6 +69,18 @@ references:
   name: Settings
   nameWithType: Settings
   fullName: Rudeus.Model.Settings
+- uid: Rudeus.Model.FakeLocalCertificate
+  commentId: T:Rudeus.Model.FakeLocalCertificate
+  href: Rudeus.Model.FakeLocalCertificate.html
+  name: FakeLocalCertificate
+  nameWithType: FakeLocalCertificate
+  fullName: Rudeus.Model.FakeLocalCertificate
+- uid: Rudeus.Model.FakeSettings
+  commentId: T:Rudeus.Model.FakeSettings
+  href: Rudeus.Model.FakeSettings.html
+  name: FakeSettings
+  nameWithType: FakeSettings
+  fullName: Rudeus.Model.FakeSettings
 - uid: Rudeus.Model
   commentId: N:Rudeus.Model
   href: Rudeus.html

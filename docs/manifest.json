@@ -12,46 +12,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.API.Exceptions.AccessTokenUnavailableException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.API.Exceptions.AccessTokenUnavailableException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.API.Exceptions.ServerUnavailableException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.API.Exceptions.ServerUnavailableException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.API.Exceptions.UnexpectedResponseException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.API.Exceptions.UnexpectedResponseException.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.API.Exceptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.API.Exceptions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.FakeRequestClient.yml",
       "output": {
         ".html": {
@@ -522,20 +482,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.yml",
+      "source_relative_path": "api/Rudeus.Launcher.Procedure.Executer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.ILauncher.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.Executer.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Procedure.Launcher.yml",
+      "source_relative_path": "api/Rudeus.Launcher.Procedure.IExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.Launcher.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.IExecuter.html"
         }
       },
       "version": ""
@@ -562,10 +522,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Test.LauncherTests.yml",
+      "source_relative_path": "api/Rudeus.Launcher.Test.ExecuterTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Test.LauncherTests.html"
+          "relative_path": "api/Rudeus.Launcher.Test.ExecuterTests.html"
         }
       },
       "version": ""
@@ -916,6 +876,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.AccessTokenUnavailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.AccessTokenUnavailableException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.UnexpectedResponseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.UnexpectedResponseException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.html"
         }
       },
       "version": ""

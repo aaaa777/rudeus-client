@@ -4,8 +4,8 @@ items:
   commentId: N:Rudeus.Launcher.Procedure
   id: Rudeus.Launcher.Procedure
   children:
-  - Rudeus.Launcher.Procedure.ILauncher
-  - Rudeus.Launcher.Procedure.Launcher
+  - Rudeus.Launcher.Procedure.Executer
+  - Rudeus.Launcher.Procedure.IExecuter
   langs:
   - csharp
   - vb
@@ -16,19 +16,19 @@ items:
   assemblies:
   - Launcher
 references:
-- uid: Rudeus.Launcher.Procedure.ILauncher
-  commentId: T:Rudeus.Launcher.Procedure.ILauncher
+- uid: Rudeus.Launcher.Procedure.Executer
+  commentId: T:Rudeus.Launcher.Procedure.Executer
+  href: Rudeus.Launcher.Procedure.Executer.html
+  name: Executer
+  nameWithType: Executer
+  fullName: Rudeus.Launcher.Procedure.Executer
+- uid: Rudeus.Launcher.Procedure.IExecuter
+  commentId: T:Rudeus.Launcher.Procedure.IExecuter
   parent: Rudeus.Launcher.Procedure
-  href: Rudeus.Launcher.Procedure.ILauncher.html
-  name: ILauncher
-  nameWithType: ILauncher
-  fullName: Rudeus.Launcher.Procedure.ILauncher
-- uid: Rudeus.Launcher.Procedure.Launcher
-  commentId: T:Rudeus.Launcher.Procedure.Launcher
-  href: Rudeus.Launcher.Procedure.Launcher.html
-  name: Launcher
-  nameWithType: Launcher
-  fullName: Rudeus.Launcher.Procedure.Launcher
+  href: Rudeus.Launcher.Procedure.IExecuter.html
+  name: IExecuter
+  nameWithType: IExecuter
+  fullName: Rudeus.Launcher.Procedure.IExecuter
 - uid: Rudeus.Launcher.Procedure
   commentId: N:Rudeus.Launcher.Procedure
   href: Rudeus.html

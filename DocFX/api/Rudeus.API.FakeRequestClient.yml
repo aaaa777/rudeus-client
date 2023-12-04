@@ -24,14 +24,14 @@ items:
   type: Class
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: FakeRequestClient
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 13
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 12
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: 'public class FakeRequestClient : IRequestClient'
@@ -76,14 +76,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RaiseUnreachableException
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 15
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 14
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public bool RaiseUnreachableException
@@ -103,14 +103,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RaiseUnauthorizedException
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 16
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 15
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public bool RaiseUnauthorizedException
@@ -130,14 +130,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RaiseUnexceptResponseException
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 17
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 16
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public bool RaiseUnexceptResponseException
@@ -157,14 +157,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 19
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 18
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public FakeRequestClient()
@@ -186,14 +186,14 @@ items:
   type: Constructor
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 26
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 25
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public FakeRequestClient(bool raiseUnreachableException, bool raiseUnauthorizedException, bool raiseUnexceptResponseException)
@@ -222,14 +222,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Request
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 32
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 31
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   example: []
   syntax:
@@ -256,14 +256,14 @@ items:
   type: Method
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RequestString
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 37
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 36
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   example: []
   syntax:
@@ -290,14 +290,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: OKResponseString
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 101
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 100
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public string OKResponseString
@@ -317,14 +317,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RegisterDeviceResponseString
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 102
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 101
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public string RegisterDeviceResponseString
@@ -344,14 +344,14 @@ items:
   type: Field
   source:
     remote:
-      path: SharedLib/API/FakeRequestClient.cs
+      path: Test/SharedLib/API/FakeRequestClient.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
     id: OKWithPushDataResponseString
-    path: ../SharedLib/API/FakeRequestClient.cs
-    startLine: 103
+    path: ../Test/SharedLib/API/FakeRequestClient.cs
+    startLine: 102
   assemblies:
-  - SharedLib
+  - Test
   namespace: Rudeus.API
   syntax:
     content: public string OKWithPushDataResponseString

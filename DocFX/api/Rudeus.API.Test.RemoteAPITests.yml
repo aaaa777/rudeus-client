@@ -25,7 +25,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RemoteAPITests
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 11
+    startLine: 10
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -75,7 +75,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestRegisterDevice
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -111,7 +111,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestLoginDevice
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -147,7 +147,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestUpdateDevice
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 38
+    startLine: 43
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestSendInstalledApps
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 51
+    startLine: 59
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -219,7 +219,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestBuildHttpRequestMessage
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 65
+    startLine: 76
   assemblies:
   - Test
   namespace: Rudeus.API.Test
@@ -255,7 +255,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: TestRegisterDeviceException
     path: ../Test/SharedLib/API/RemoteAPITests.cs
-    startLine: 81
+    startLine: 95
   assemblies:
   - Test
   namespace: Rudeus.API.Test

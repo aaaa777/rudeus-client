@@ -35,19 +35,6 @@ references:
   name: CertificateInstaller
   nameWithType: CertificateInstaller
   fullName: Rudeus.Procedure.CertificateInstaller
-- uid: Rudeus.Procedure.FakeProcedure
-  commentId: T:Rudeus.Procedure.FakeProcedure
-  href: Rudeus.Procedure.FakeProcedure.html
-  name: FakeProcedure
-  nameWithType: FakeProcedure
-  fullName: Rudeus.Procedure.FakeProcedure
-- uid: Rudeus.Procedure.IFakeProcedure
-  commentId: T:Rudeus.Procedure.IFakeProcedure
-  parent: Rudeus.Procedure
-  href: Rudeus.Procedure.IFakeProcedure.html
-  name: IFakeProcedure
-  nameWithType: IFakeProcedure
-  fullName: Rudeus.Procedure.IFakeProcedure
 - uid: Rudeus.Procedure.IProcedure
   commentId: T:Rudeus.Procedure.IProcedure
   parent: Rudeus.Procedure
@@ -79,6 +66,19 @@ references:
   name: UserLoginExecuter
   nameWithType: UserLoginExecuter
   fullName: Rudeus.Procedure.UserLoginExecuter
+- uid: Rudeus.Procedure.FakeProcedure
+  commentId: T:Rudeus.Procedure.FakeProcedure
+  href: Rudeus.Procedure.FakeProcedure.html
+  name: FakeProcedure
+  nameWithType: FakeProcedure
+  fullName: Rudeus.Procedure.FakeProcedure
+- uid: Rudeus.Procedure.IFakeProcedure
+  commentId: T:Rudeus.Procedure.IFakeProcedure
+  parent: Rudeus.Procedure
+  href: Rudeus.Procedure.IFakeProcedure.html
+  name: IFakeProcedure
+  nameWithType: IFakeProcedure
+  fullName: Rudeus.Procedure.IFakeProcedure
 - uid: Rudeus.Procedure
   commentId: N:Rudeus.Procedure
   href: Rudeus.html

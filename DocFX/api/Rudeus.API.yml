@@ -4,10 +4,6 @@ items:
   commentId: N:Rudeus.API
   id: Rudeus.API
   children:
-  - Rudeus.API.Exceptions
-  - Rudeus.API.Exceptions.AccessTokenUnavailableException
-  - Rudeus.API.Exceptions.ServerUnavailableException
-  - Rudeus.API.Exceptions.UnexpectedResponseException
   - Rudeus.API.FakeRequestClient
   - Rudeus.API.IRequestClient
   - Rudeus.API.RemoteAPI
@@ -22,84 +18,6 @@ items:
   assemblies:
   - SharedLib
 references:
-- uid: Rudeus.API.Exceptions
-  commentId: T:Rudeus.API.Exceptions
-  href: Rudeus.API.Exceptions.html
-  name: Exceptions
-  nameWithType: Exceptions
-  fullName: Rudeus.API.Exceptions
-- uid: Rudeus.API.Exceptions.ServerUnavailableException
-  commentId: T:Rudeus.API.Exceptions.ServerUnavailableException
-  href: Rudeus.API.Exceptions.html
-  name: Exceptions.ServerUnavailableException
-  nameWithType: Exceptions.ServerUnavailableException
-  fullName: Rudeus.API.Exceptions.ServerUnavailableException
-  spec.csharp:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.ServerUnavailableException
-    name: ServerUnavailableException
-    href: Rudeus.API.Exceptions.ServerUnavailableException.html
-  spec.vb:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.ServerUnavailableException
-    name: ServerUnavailableException
-    href: Rudeus.API.Exceptions.ServerUnavailableException.html
-- uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
-  commentId: T:Rudeus.API.Exceptions.AccessTokenUnavailableException
-  href: Rudeus.API.Exceptions.html
-  name: Exceptions.AccessTokenUnavailableException
-  nameWithType: Exceptions.AccessTokenUnavailableException
-  fullName: Rudeus.API.Exceptions.AccessTokenUnavailableException
-  spec.csharp:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
-    name: AccessTokenUnavailableException
-    href: Rudeus.API.Exceptions.AccessTokenUnavailableException.html
-  spec.vb:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.AccessTokenUnavailableException
-    name: AccessTokenUnavailableException
-    href: Rudeus.API.Exceptions.AccessTokenUnavailableException.html
-- uid: Rudeus.API.Exceptions.UnexpectedResponseException
-  commentId: T:Rudeus.API.Exceptions.UnexpectedResponseException
-  href: Rudeus.API.Exceptions.html
-  name: Exceptions.UnexpectedResponseException
-  nameWithType: Exceptions.UnexpectedResponseException
-  fullName: Rudeus.API.Exceptions.UnexpectedResponseException
-  spec.csharp:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.UnexpectedResponseException
-    name: UnexpectedResponseException
-    href: Rudeus.API.Exceptions.UnexpectedResponseException.html
-  spec.vb:
-  - uid: Rudeus.API.Exceptions
-    name: Exceptions
-    href: Rudeus.API.Exceptions.html
-  - name: .
-  - uid: Rudeus.API.Exceptions.UnexpectedResponseException
-    name: UnexpectedResponseException
-    href: Rudeus.API.Exceptions.UnexpectedResponseException.html
-- uid: Rudeus.API.FakeRequestClient
-  commentId: T:Rudeus.API.FakeRequestClient
-  href: Rudeus.API.FakeRequestClient.html
-  name: FakeRequestClient
-  nameWithType: FakeRequestClient
-  fullName: Rudeus.API.FakeRequestClient
 - uid: Rudeus.API.IRequestClient
   commentId: T:Rudeus.API.IRequestClient
   parent: Rudeus.API
@@ -119,6 +37,12 @@ references:
   name: RequestClient
   nameWithType: RequestClient
   fullName: Rudeus.API.RequestClient
+- uid: Rudeus.API.FakeRequestClient
+  commentId: T:Rudeus.API.FakeRequestClient
+  href: Rudeus.API.FakeRequestClient.html
+  name: FakeRequestClient
+  nameWithType: FakeRequestClient
+  fullName: Rudeus.API.FakeRequestClient
 - uid: Rudeus.API
   commentId: N:Rudeus.API
   href: Rudeus.html
