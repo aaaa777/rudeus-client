@@ -23,19 +23,19 @@ namespace Rudeus.Command
 
         public static Settings settings { get; set; } = new Settings();
 
-        public Worker(ILogger<Worker> logger, IProcedure? at = null, IProcedure? sr = null, IProcedure? ul = null)
+        public Worker(ILogger<Worker> logger, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
         {
             _logger = logger;
-            _args = Program.commandArgs ?? new string[] { };
-            AccessTokenValidator = at ?? new AccessTokenValidator(settings);
-            ScheduledRelularExecuter = sr ?? new ScheduledRegularExecuter();
-            UserLoginExecuter = ul ?? new UserLoginExecuter();
+            _args = Program.commandArgs ?? Array.Empty<string>();
+            AccessTokenValidator = accessTokenValidator ?? new AccessTokenValidator(settings);
+            ScheduledRelularExecuter = scheduledRegularExecuter ?? new ScheduledRegularExecuter();
+            UserLoginExecuter = userLoginExecuter ?? new UserLoginExecuter();
         }
     
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation($"Worker running at: {Settings.DeviceId}");
+            _logger.LogInformation($"Worker running accessTokenValidator: {Settings.DeviceId}");
 
             var argsDict = Utils.ParseArgs(_args);
 
