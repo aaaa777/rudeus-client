@@ -21,21 +21,26 @@ namespace Rudeus.Command
         public IProcedure ScheduledRelularExecuter { get; set; }
         public IProcedure UserLoginExecuter { get; set; }
 
-        public static Settings settings { get; set; } = new Settings();
+        public ISettings Settings { get; set; }
 
-        public Worker(ILogger<Worker> logger, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
+        public Worker(ILogger<Worker>? logger = null, string[]? args = null, ISettings? settings = null, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
         {
-            _logger = logger;
-            _args = Program.commandArgs ?? Array.Empty<string>();
+            //_logger = logger;
+            _args = args ?? Program.commandArgs ?? Array.Empty<string>();
+            this.Settings = settings ?? new Settings();
             AccessTokenValidator = accessTokenValidator ?? new AccessTokenValidator(settings);
             ScheduledRelularExecuter = scheduledRegularExecuter ?? new ScheduledRegularExecuter();
             UserLoginExecuter = userLoginExecuter ?? new UserLoginExecuter();
         }
-    
+
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation($"Worker running accessTokenValidator: {Settings.DeviceId}");
+            await RunAsync();
+        }
+        public async Task RunAsync()
+        { 
+            //Console.WriteLine($"Worker running accessTokenValidator: {this.Settings.DeviceIdP}");
 
             var argsDict = Utils.ParseArgs(_args);
 
@@ -43,7 +48,7 @@ namespace Rudeus.Command
 
             if (!RemoteAPI.IsRemoteReachable())
             {
-                _logger.LogInformation("server is not reachable");
+                Console.WriteLine("server is not reachable");
                 Environment.Exit(0);
             }
 
@@ -71,7 +76,7 @@ namespace Rudeus.Command
                 var apps = await InstalledApplications.LoadAsync();
                 try
                 {
-                    RemoteAPI.SendInstalledApps(Settings.AccessToken, apps);
+                    RemoteAPI.SendInstalledApps(Settings.AccessTokenP, apps);
                 }
                 catch (Exception ex) 
                 {
@@ -82,7 +87,7 @@ namespace Rudeus.Command
 
 
 #if (!RELEASE)
-            await Task.Delay(5000, stoppingToken);
+            await Task.Delay(5000);
 #endif
             Environment.Exit(0);
         }
