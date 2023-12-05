@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Test.Model;
 
-namespace Test.SharedLib.Model
+namespace Test.SharedLib.Model.Settings
 {
     public class AppSettingsTest
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test.Model
+namespace Test.SharedLib.Model.Settings
 {
     /// <summary>
     /// レジストリの設定を保持するモデルのFake実装
@@ -111,22 +111,22 @@ namespace Test.Model
 
         public void SetBetaChannelP()
         {
-            
+
         }
 
         public void SetDevelopChannelP()
         {
-            
+
         }
 
         public void SetLatestVersionStatusDownloadedP()
         {
-            
+
         }
 
         public void SetLatestVersionStatusOkP()
         {
-            
+
         }
 
         public void SetLatestVersionStatusUnlaunchableP()
@@ -136,12 +136,12 @@ namespace Test.Model
 
         public void SetStableChannelP()
         {
-            
+
         }
 
         public void SetTestChannelP()
         {
-            
+
         }
     }
 }
