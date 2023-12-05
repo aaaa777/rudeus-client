@@ -117,7 +117,7 @@ namespace Rudeus.Model
             get { return Get(LabelIdKey, ""); }
         }
 
-
+        public static string UpdateChannelKey = "UpdateChannel";
         public string UpdatingChannelP
         {
             set { Set(UpdateChannelKey, value); }
@@ -196,6 +196,13 @@ namespace Rudeus.Model
             set { Set(NetworkIFListKey, value); }
             get { return Get(NetworkIFListKey, ""); }
         }
+        
+        public string SpecKey = "NetworkIFList";
+        public string aa
+        {
+            set { Set(SpecKey, value); }
+            get { return Get(SpecKey, ""); }
+        }
 
         public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string CpuNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -204,6 +211,7 @@ namespace Rudeus.Model
         public string OSP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public object OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string WithSecureP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IRootSettings.OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         // for debugging
 
         //public static string 

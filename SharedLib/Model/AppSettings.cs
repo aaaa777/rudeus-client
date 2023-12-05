@@ -11,7 +11,7 @@ namespace Rudeus.Model
     /// <summary>
     /// レジストリに設定を保持するモデル
     /// </summary>
-    public class Settings : ISettings
+    public class AppSettings : IAppSettings
     {
         // レジストリ：アプリのデフォルトのキー
         private static string DefaultRegistryKey = Constants.DefaultRegistryKey;
@@ -30,12 +30,12 @@ namespace Rudeus.Model
             return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
         }
 
-        public Settings()
+        public AppSettings()
         {
             _regKey = CreateRegKey($"{RegistryDir}\\{DefaultRegistryKey}");
         }
 
-        public Settings(string registryKey)
+        public AppSettings(string registryKey)
         {
             _regKey = CreateRegKey($"{RegistryDir}\\{registryKey}");
         }

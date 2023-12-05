@@ -26,19 +26,14 @@ namespace Rudeus.Model
         string OSP { get; set; }
         string OSVersionP { get; set; }
         string WithSecureP { get; set; }
+        string UpdatingChannelP { get; set; }
 
         bool IsBetaChannelP();
         bool IsDevelopChannelP();
-        bool IsLatestVersionStatusDownloadedP();
-        bool IsLatestVersionStatusOkP();
-        bool IsLatestVersionStatusUnlaunchableP();
         bool IsStableChannelP();
         bool IsTestChannelP();
         void SetBetaChannelP();
         void SetDevelopChannelP();
-        void SetLatestVersionStatusDownloadedP();
-        void SetLatestVersionStatusOkP();
-        void SetLatestVersionStatusUnlaunchableP();
         void SetStableChannelP();
         void SetTestChannelP();
     }

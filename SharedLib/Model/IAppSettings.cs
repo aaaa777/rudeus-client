@@ -6,7 +6,7 @@ namespace Rudeus.Model
     /// 設定をレジストリに保管するモデル
     /// レジストリを指定して異なる保存先を指定することもできる
     /// </summary>
-    public interface ISettings
+    public interface IAppSettings
     {
         //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
 
@@ -16,15 +16,21 @@ namespace Rudeus.Model
         string LastDirNameP { get; set; }
         string LastVersionDirPathP { get; set; }
         string LastVersionExeNameP { get; set; }
-        string LastVersionExePathP { get; }
+        string LastVersionExePathP { get; set; }
         string LatestDirNameP { get; set; }
         string LatestVersionDirPathP { get; set; }
         string LatestVersionExeNameP { get; set; }
-        string LatestVersionExePathP { get; }
+        string LatestVersionExePathP { get; set; }
         string LatestVersionStatusP { get; set; }
         string UpdatingChannelP { get; set; }
 
-
+        bool IsLatestVersionStatusDownloadedP();
+        bool IsLatestVersionStatusOkP();
+        bool IsLatestVersionStatusUnlaunchableP();
+        void SetLatestVersionStatusDownloadedP();
+        void SetLatestVersionStatusOkP();
+        void SetLatestVersionStatusUnlaunchableP();
+        /*
         bool IsBetaChannelP();
         bool IsDevelopChannelP();
         bool IsLatestVersionStatusDownloadedP();
@@ -39,5 +45,6 @@ namespace Rudeus.Model
         void SetLatestVersionStatusUnlaunchableP();
         void SetStableChannelP();
         void SetTestChannelP();
+        */
     }
 }
