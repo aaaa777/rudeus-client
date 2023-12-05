@@ -8,6 +8,7 @@ using Microsoft.Toolkit.Uwp.Notifications;
 using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics;
 using Windows.System.Inventory;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Command
 {

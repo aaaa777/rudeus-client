@@ -1,5 +1,6 @@
 using Rudeus.API;
 using Rudeus.Model;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Procedure
 {

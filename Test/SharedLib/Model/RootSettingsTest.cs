@@ -1,4 +1,5 @@
-﻿using SharedLib.Model.Settings;
+﻿using Rudeus.Model;
+using SharedLib.Model.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +9,14 @@ using Test.Model;
 
 namespace Test.SharedLib.Model
 {
-    public class FakeSettingsTest
+    public class RootSettingsTest
     {
         [Fact]
         public void CurrentVersionPTest()
         {
             // Arrange
             var testString = "1.2.3";
-            IAppSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.CurrentVersionP = testString;
@@ -25,138 +26,11 @@ namespace Test.SharedLib.Model
         }
 
         [Fact]
-        public void LastDirNamePTest()
-        {
-            // Arrange
-            var testString = "last";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LastDirNameP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LastDirNameP);
-        }
-
-
-        [Fact]
-        public void LastVersionDirPathPTest()
-        {
-            // Arrange
-            var testString = "C:\\Program Files\\Test";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LastVersionDirPathP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LastVersionDirPathP);
-        }
-
-        [Fact]
-        public void LastVersionExeNamePTest()
-        {
-            // Arrange
-            var testString = "Test.exe";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LastVersionExeNameP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LastVersionExeNameP);
-        }
-
-        [Fact]
-        public void LastVersionExePathPTest()
-        {
-            // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LastVersionExePathP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LastVersionExePathP);
-        }
-
-        [Fact]
-        public void LatestDirNamePTest()
-        {
-            // Arrange
-            var testString = "latest";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LatestDirNameP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LatestDirNameP);
-        }
-
-        [Fact]
-        public void LatestVersionDirPathPTest()
-        {
-            // Arrange
-            var testString = "C:\\Program Files\\Test";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LatestVersionDirPathP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LatestVersionDirPathP);
-        }
-
-        [Fact]
-        public void LatestVersionExeNamePTest()
-        {
-            // Arrange
-            var testString = "Test.exe";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LatestVersionExeNameP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LatestVersionExeNameP);
-        }
-
-        [Fact]
-        public void LatestVersionExePathPTest()
-        {
-            // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LatestVersionExePathP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LatestVersionExePathP);
-        }
-
-        [Fact]
-        public void LatestVersionStatusPTest()
-        {
-            // Arrange
-            var testString = "ok";
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.LatestVersionStatusP = testString;
-
-            // Assert
-            Assert.Equal(testString, rs.LatestVersionStatusP);
-        }
-
-        [Fact]
         public void UpdatingChannelPTest()
         {
             // Arrange
             var testString = "stable";
-            IAppSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.UpdatingChannelP = testString;
@@ -170,7 +44,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_access_token";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.AccessTokenP = testString;
@@ -184,7 +58,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_device_id";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.DeviceIdP = testString;
@@ -198,7 +72,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_hostname";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.FirstHostnameP = testString;
@@ -212,7 +86,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_hostname";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.HostnameP = testString;
@@ -226,7 +100,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_username";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.UsernameP = testString;
@@ -240,7 +114,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_label_id";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.LabelIdP = testString;
@@ -254,7 +128,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_label_name";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.SpecP = testString;
@@ -268,7 +142,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_cpu_name";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.CpuNameP = testString;
@@ -282,7 +156,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_memory";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.MemoryP = testString;
@@ -296,7 +170,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_c_drive";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.CDriveP = testString;
@@ -310,7 +184,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_os";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.OSP = testString;
@@ -324,7 +198,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_os_version";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.OSVersionP = testString;
@@ -338,7 +212,7 @@ namespace Test.SharedLib.Model
         {
             // Arrange
             var testString = "test_withsecure";
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.WithSecureP = testString;
@@ -351,7 +225,7 @@ namespace Test.SharedLib.Model
         public void IsBetaChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
             rs.UpdatingChannelP = "beta";
 
             // Act
@@ -368,7 +242,7 @@ namespace Test.SharedLib.Model
         public void IsStableChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
             rs.UpdatingChannelP = "stable";
 
             // Act
@@ -385,7 +259,7 @@ namespace Test.SharedLib.Model
         public void IsDevelopChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
             rs.UpdatingChannelP = "develop";
 
             // Act
@@ -402,7 +276,7 @@ namespace Test.SharedLib.Model
         public void IsTestChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
             rs.UpdatingChannelP = "test";
 
             // Act
@@ -419,7 +293,7 @@ namespace Test.SharedLib.Model
         public void SetBetaChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.SetBetaChannelP();
@@ -435,7 +309,7 @@ namespace Test.SharedLib.Model
         public void SetStableChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.SetStableChannelP();
@@ -451,7 +325,7 @@ namespace Test.SharedLib.Model
         public void SetDevelopChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.SetDevelopChannelP();
@@ -467,7 +341,7 @@ namespace Test.SharedLib.Model
         public void SetTestChannelPTest()
         {
             // Arrange
-            IRootSettings rs = new FakeSettings();
+            IRootSettings rs = new RootSettings();
 
             // Act
             rs.SetTestChannelP();
@@ -478,52 +352,5 @@ namespace Test.SharedLib.Model
             Assert.False(rs.IsDevelopChannelP());
             Assert.True(rs.IsTestChannelP());
         }
-
-
-        [Fact]
-        public void SetLatestVersionStatusOkPTest()
-        {
-            // Arrange
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.SetLatestVersionStatusOkP();
-
-            // Assert
-            Assert.True(rs.IsLatestVersionStatusOkP());
-            Assert.False(rs.IsLatestVersionStatusDownloadedP());
-            Assert.False(rs.IsLatestVersionStatusUnlaunchableP());
-        }
-
-        [Fact]
-        public void SetLatestVersionStatusDownloadedPTest()
-        {
-            // Arrange
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.SetLatestVersionStatusDownloadedP();
-
-            // Assert
-            Assert.False(rs.IsLatestVersionStatusOkP());
-            Assert.True(rs.IsLatestVersionStatusDownloadedP());
-            Assert.False(rs.IsLatestVersionStatusUnlaunchableP());
-        }
-
-        [Fact]
-        public void SetLatestVersionStatusUnlaunchablePTest()
-        {
-            // Arrange
-            IAppSettings rs = new FakeSettings();
-
-            // Act
-            rs.SetLatestVersionStatusUnlaunchableP();
-
-            // Assert
-            Assert.False(rs.IsLatestVersionStatusOkP());
-            Assert.False(rs.IsLatestVersionStatusDownloadedP());
-            Assert.True(rs.IsLatestVersionStatusUnlaunchableP());
-        }
-
     }
 }

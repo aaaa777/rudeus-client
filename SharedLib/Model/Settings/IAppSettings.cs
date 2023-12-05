@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
 
-namespace Rudeus.Model
+namespace SharedLib.Model.Settings
 {
     /// <summary>
     /// 設定をレジストリに保管するモデル

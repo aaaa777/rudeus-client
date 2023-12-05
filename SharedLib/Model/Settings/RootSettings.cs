@@ -5,8 +5,9 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Win32;
+using Rudeus;
 
-namespace Rudeus.Model
+namespace SharedLib.Model.Settings
 {
     /// <summary>
     /// レジストリに設定を保持するモデル
@@ -37,7 +38,7 @@ namespace Rudeus.Model
             {
                 var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
                 return (string)value;
-                
+
             }
             catch
             {
@@ -57,7 +58,7 @@ namespace Rudeus.Model
         // 最初に登録されたHostname
         public static string FirstHostnameKey = "FirstHostname";
 
-        public string FirstHostnameP 
+        public string FirstHostnameP
         {
             set { Set(FirstHostnameKey, value); }
             get { return Get(FirstHostnameKey, ""); }
@@ -161,7 +162,7 @@ namespace Rudeus.Model
 
         public string LatestVersionStatusP
         {
-            set { Set(LatestVersionStatusKey, value ); }
+            set { Set(LatestVersionStatusKey, value); }
             get { return Get(LatestVersionStatusKey, ""); }
         }
 
@@ -181,7 +182,7 @@ namespace Rudeus.Model
         public void SetLatestVersionStatusDownloadedP() { LatestVersionStatus = "downloaded"; }
         public void SetLatestVersionStatusUnlaunchableP() { LatestVersionStatus = "unlaunchable"; }
 
-        
+
         // lastに存在するバージョンについて
         public static string CurrentVersionKey = "CurrentVersion";
         public string CurrentVersionP
@@ -196,7 +197,7 @@ namespace Rudeus.Model
             set { Set(NetworkIFListKey, value); }
             get { return Get(NetworkIFListKey, ""); }
         }
-        
+
         public string SpecKey = "NetworkIFList";
         public string aa
         {

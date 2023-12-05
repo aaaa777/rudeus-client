@@ -2,8 +2,8 @@ using System.Reflection;
 using System.Windows.Forms;
 using Rudeus.API;
 using Rudeus.API.Response;
-using Rudeus.Model;
 using Rudeus;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Application
 {

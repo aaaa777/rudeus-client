@@ -6,6 +6,7 @@ using Rudeus;
 using Rudeus.Model;
 using Rudeus.Procedure;
 using Rudeus.Launcher.Procedure;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Launcher
 {

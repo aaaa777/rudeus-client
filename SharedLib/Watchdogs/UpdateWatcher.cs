@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Rudeus.Model;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Watchdogs
 {

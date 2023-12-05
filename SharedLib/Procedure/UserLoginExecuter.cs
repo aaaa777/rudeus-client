@@ -1,10 +1,10 @@
 ﻿using Rudeus.API.Response;
 using Rudeus.API;
-using Rudeus.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Diagnostics;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Procedure
 {

@@ -5,8 +5,9 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Win32;
+using Rudeus;
 
-namespace Rudeus.Model
+namespace SharedLib.Model.Settings
 {
     /// <summary>
     /// レジストリに設定を保持するモデル
@@ -103,7 +104,7 @@ namespace Rudeus.Model
         // Inno Setup UserData
         public static string InitedUsername
         {
-            get 
+            get
             {
                 return (string)(CreateRegKey(Constants.InnoSetupUserDataKey).GetValue("Username") ?? new Exception("Setup Username missing"));
             }
@@ -128,7 +129,7 @@ namespace Rudeus.Model
             get { return Get(FirstHostnameKey); }
         }
 
-        public string FirstHostnameP 
+        public string FirstHostnameP
         {
             set { Set(FirstHostnameKey, value, false, _regKey); }
             get { return Get(FirstHostnameKey, "", false, _regKey); }
@@ -322,7 +323,8 @@ namespace Rudeus.Model
         public static string LastVersionDirPath
         {
             set { Set(LastVersionDirPathKey, value, false); }
-            get {
+            get
+            {
 #if (DEVELOPMENT)
                 string dir;
                 if (RegistryKey == "Bg")
@@ -335,15 +337,16 @@ namespace Rudeus.Model
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LastVersionDirPathKey, "", false); 
-#endif            
+                return Get(LastVersionDirPathKey, "", false);
+#endif
             }
         }
 
         public string LastVersionDirPathP
         {
             set { Set(LastVersionDirPathKey, value, false, _regKey); }
-            get {
+            get
+            {
 #if (DEVELOPMENT)
                 string dir;
                 if (_regKey.Name == CreateRegKey($"{RegistryDir}\\Bg").Name)
@@ -356,8 +359,8 @@ namespace Rudeus.Model
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LastVersionDirPathKey, "", false, _regKey); 
-#endif      
+                return Get(LastVersionDirPathKey, "", false, _regKey);
+#endif
             }
         }
 
@@ -366,7 +369,8 @@ namespace Rudeus.Model
         public static string LatestVersionDirPath
         {
             set { Set(LatestVersionDirPathKey, value, false); }
-            get {
+            get
+            {
 #if (DEVELOPMENT)
                 string dir;
                 if (RegistryKey == "Bg")
@@ -379,14 +383,15 @@ namespace Rudeus.Model
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LatestVersionDirPathKey, "", false); 
+                return Get(LatestVersionDirPathKey, "", false);
 #endif
             }
         }
         public string LatestVersionDirPathP
         {
             set { Set(LatestVersionDirPathKey, value, false, _regKey); }
-            get {
+            get
+            {
 #if (DEVELOPMENT)
                 string dir;
                 if (_regKey.Name == CreateRegKey($"{RegistryDir}\\Bg").Name)
@@ -399,7 +404,7 @@ namespace Rudeus.Model
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LatestVersionDirPathKey, "", false, _regKey); 
+                return Get(LatestVersionDirPathKey, "", false, _regKey);
 #endif
             }
         }

@@ -1,6 +1,6 @@
 ﻿using Rudeus.Command;
-using Rudeus.Model;
 using Rudeus.Procedure;
+using SharedLib.Model.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;

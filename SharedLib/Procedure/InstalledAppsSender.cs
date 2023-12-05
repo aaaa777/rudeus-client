@@ -1,5 +1,6 @@
 ﻿using Rudeus.API;
 using Rudeus.Model;
+using SharedLib.Model.Settings;
 using System;
 using System.Collections.Generic;
 using System.Text;

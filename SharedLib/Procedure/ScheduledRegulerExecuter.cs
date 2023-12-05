@@ -4,6 +4,7 @@ using Rudeus.API.Response;
 using Rudeus.Model;
 using Rudeus.Model.Operations;
 using Rudeus.Watchdogs;
+using SharedLib.Model.Settings;
 
 namespace Rudeus.Procedure
 {

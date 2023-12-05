@@ -8,6 +8,7 @@ using Rudeus.Model;
 using Rudeus.API;
 using Rudeus.API.Request;
 using Rudeus.API.Response;
+using SharedLib.Model.Settings;
 
 namespace Rudeus
 {
