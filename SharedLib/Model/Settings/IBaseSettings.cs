@@ -9,10 +9,10 @@ namespace SharedLib.Model.Settings
     public interface IBaseSettings
     {
         string Get(string key, string defaultString);
-        string Set(string key, string value);
+        bool Set(string key, string value);
 
         // DI用のメソッドラッパー
         Func<string, string, string> GetFunc { get; set; }
-        Func<string, string, string> SetFunc { get; set; }
+        Func<string, string, bool> SetFunc { get; set; }
     }
 }

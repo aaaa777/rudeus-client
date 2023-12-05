@@ -16,11 +16,11 @@ namespace SharedLib.Model.Settings
         string LastDirNameP { get; set; }
         string LastVersionDirPathP { get; set; }
         string LastVersionExeNameP { get; set; }
-        string LastVersionExePathP { get; set; }
+        string LastVersionExePathP { get; }
         string LatestDirNameP { get; set; }
         string LatestVersionDirPathP { get; set; }
         string LatestVersionExeNameP { get; set; }
-        string LatestVersionExePathP { get; set; }
+        string LatestVersionExePathP { get; }
         string LatestVersionStatusP { get; set; }
         string UpdatingChannelP { get; set; }
 

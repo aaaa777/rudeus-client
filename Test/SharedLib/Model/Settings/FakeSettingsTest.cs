@@ -71,14 +71,16 @@ namespace Test.SharedLib.Model.Settings
         public void LastVersionExePathPTest()
         {
             // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
+            var testString = "C:\\Program Files\\Test";
+            var testString2 = "Test.exe";
             IAppSettings rs = new FakeSettings();
 
             // Act
-            rs.LastVersionExePathP = testString;
+            rs.LastVersionDirPathP = testString;
+            rs.LastVersionExeNameP = testString2;
 
             // Assert
-            Assert.Equal(testString, rs.LastVersionExePathP);
+            Assert.Equal($"{testString}\\{testString2}", rs.LastVersionExePathP);
         }
 
         [Fact]
@@ -127,14 +129,16 @@ namespace Test.SharedLib.Model.Settings
         public void LatestVersionExePathPTest()
         {
             // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
+            var testString = "C:\\Program Files\\Test";
+            var testString2 = "Test.exe";
             IAppSettings rs = new FakeSettings();
 
             // Act
-            rs.LatestVersionExePathP = testString;
+            rs.LastVersionDirPathP = testString;
+            rs.LastVersionExeNameP = testString2;
 
             // Assert
-            Assert.Equal(testString, rs.LatestVersionExePathP);
+            Assert.Equal($"{testString}\\{testString2}", rs.LastVersionExePathP);
         }
 
         [Fact]

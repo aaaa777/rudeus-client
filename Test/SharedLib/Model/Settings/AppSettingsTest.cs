@@ -15,8 +15,9 @@ namespace Test.SharedLib.Model.Settings
         public void CurrentVersionPTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "1.2.3";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.CurrentVersionP = testString;
@@ -29,8 +30,9 @@ namespace Test.SharedLib.Model.Settings
         public void LastDirNamePTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "last";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LastDirNameP = testString;
@@ -44,8 +46,9 @@ namespace Test.SharedLib.Model.Settings
         public void LastVersionDirPathPTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "C:\\Program Files\\Test";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LastVersionDirPathP = testString;
@@ -58,8 +61,9 @@ namespace Test.SharedLib.Model.Settings
         public void LastVersionExeNamePTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "Test.exe";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LastVersionExeNameP = testString;
@@ -72,22 +76,26 @@ namespace Test.SharedLib.Model.Settings
         public void LastVersionExePathPTest()
         {
             // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
-            IAppSettings rs = new AppSettings();
+            var fs = new FakeSettings();
+            var testString = "C:\\Program Files\\Test";
+            var testString2 = "Test.exe";
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
-            rs.LastVersionExePathP = testString;
+            rs.LastVersionDirPathP = testString;
+            rs.LastVersionExeNameP = testString2;
 
             // Assert
-            Assert.Equal(testString, rs.LastVersionExePathP);
+            Assert.Equal($"{testString}\\{testString2}", rs.LastVersionExePathP);
         }
 
         [Fact]
         public void LatestDirNamePTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "latest";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LatestDirNameP = testString;
@@ -100,8 +108,9 @@ namespace Test.SharedLib.Model.Settings
         public void LatestVersionDirPathPTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "C:\\Program Files\\Test";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LatestVersionDirPathP = testString;
@@ -114,8 +123,9 @@ namespace Test.SharedLib.Model.Settings
         public void LatestVersionExeNamePTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "Test.exe";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LatestVersionExeNameP = testString;
@@ -128,22 +138,26 @@ namespace Test.SharedLib.Model.Settings
         public void LatestVersionExePathPTest()
         {
             // Arrange
-            var testString = "C:\\Program Files\\Test\\Test.exe";
-            IAppSettings rs = new AppSettings();
+            var fs = new FakeSettings();
+            var testString = "C:\\Program Files\\Test";
+            var testString2 = "Test.exe";
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
-            rs.LatestVersionExePathP = testString;
+            rs.LastVersionDirPathP = testString;
+            rs.LastVersionExeNameP = testString2;
 
             // Assert
-            Assert.Equal(testString, rs.LatestVersionExePathP);
+            Assert.Equal($"{testString}\\{testString2}", rs.LastVersionExePathP);
         }
 
         [Fact]
         public void LatestVersionStatusPTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "ok";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.LatestVersionStatusP = testString;
@@ -156,8 +170,9 @@ namespace Test.SharedLib.Model.Settings
         public void UpdatingChannelPTest()
         {
             // Arrange
+            var fs = new FakeSettings();
             var testString = "stable";
-            IAppSettings rs = new AppSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.UpdatingChannelP = testString;
@@ -170,7 +185,8 @@ namespace Test.SharedLib.Model.Settings
         public void SetLatestVersionStatusOkPTest()
         {
             // Arrange
-            IAppSettings rs = new AppSettings();
+            var fs = new FakeSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.SetLatestVersionStatusOkP();
@@ -185,7 +201,8 @@ namespace Test.SharedLib.Model.Settings
         public void SetLatestVersionStatusDownloadedPTest()
         {
             // Arrange
-            IAppSettings rs = new AppSettings();
+            var fs = new FakeSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.SetLatestVersionStatusDownloadedP();
@@ -200,7 +217,8 @@ namespace Test.SharedLib.Model.Settings
         public void SetLatestVersionStatusUnlaunchablePTest()
         {
             // Arrange
-            IAppSettings rs = new AppSettings();
+            var fs = new FakeSettings();
+            IAppSettings rs = new AppSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
 
             // Act
             rs.SetLatestVersionStatusUnlaunchableP();

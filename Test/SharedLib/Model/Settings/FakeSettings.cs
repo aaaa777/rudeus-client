@@ -13,9 +13,9 @@ namespace Test.SharedLib.Model.Settings
     public class FakeSettings : IAppSettings, IRootSettings
     {
         public Func<string, string, string> GetFunc { get; set; }
-        public Func<string, string, string> SetFunc { get; set; }
+        public Func<string, string, bool> SetFunc { get; set; }
 
-        public FakeSettings(Func<string, string, string>? getFunc = null, Func<string, string, string>? setFunc = null) 
+        public FakeSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null) 
         {
             GetFunc = getFunc ?? Get;
             SetFunc = setFunc ?? Set;
@@ -23,7 +23,7 @@ namespace Test.SharedLib.Model.Settings
 
         // TODO: ダミーのレジストリを作成する
 
-        private Dictionary<string, string> _data = new();
+        private Dictionary<string, string> _data = new() { };
         private static IAppSettings _fakeSettings = new FakeSettings();
         public static IAppSettings GetInstance() { return _fakeSettings; }
 
@@ -41,7 +41,7 @@ namespace Test.SharedLib.Model.Settings
             }
         }
 
-        public string Set(string key, string value)
+        public bool Set(string key, string value)
         {
             if (_data.ContainsKey(key))
             {
@@ -51,7 +51,7 @@ namespace Test.SharedLib.Model.Settings
             {
                 _data.Add(key, value);
             }
-            return value;
+            return true;
         }
 
         public string LabelIdP { get => GetFunc("LI", ""); set => SetFunc("LI", value); }
@@ -60,13 +60,13 @@ namespace Test.SharedLib.Model.Settings
         public string LastVersionDirPathP { get => GetFunc("LVD", ""); set => SetFunc("LVD", value); }
         public string LastVersionExeNameP { get => GetFunc("LVEN", ""); set => SetFunc("LVEN", value); }
 
-        public string LastVersionExePathP { get => GetFunc("LVEP", ""); set => SetFunc("LVEP", value); }
+        public string LastVersionExePathP { get => $"{GetFunc("LVD", "")}\\{GetFunc("LVEN", "")}"; }
 
         public string LatestDirNameP { get => GetFunc("LTD", ""); set => SetFunc("LTD", value); }
-        public string LatestVersionDirPathP { get => GetFunc("LTVDP", ""); set => SetFunc("LTVPD", value); }
+        public string LatestVersionDirPathP { get => GetFunc("LTVDP", ""); set => SetFunc("LTVDP", value); }
         public string LatestVersionExeNameP { get => GetFunc("LTVEN", ""); set => SetFunc("LTVEN", value); }
 
-        public string LatestVersionExePathP { get => GetFunc("LTVEP", ""); set => SetFunc("LTTVEP", value); }
+        public string LatestVersionExePathP { get => $"{GetFunc("LTVDP", "")}\\{GetFunc("LTVEN", "")}"; }
 
         public string LatestVersionStatusP { get => GetFunc("LTVS", ""); set => SetFunc("LTVS", value); }
         public string UpdatingChannelP { get => GetFunc("UC", ""); set => SetFunc("UC", value); }
@@ -86,22 +86,22 @@ namespace Test.SharedLib.Model.Settings
 
         public bool IsBetaChannelP()
         {
-            return false;
+            return UpdatingChannelP == "beta";
         }
 
         public bool IsDevelopChannelP()
         {
-            return false;
+            return UpdatingChannelP == "develop";
         }
 
         public bool IsLatestVersionStatusDownloadedP()
         {
-            return false;
+            return LatestVersionStatusP == "downloaded";
         }
 
         public bool IsLatestVersionStatusOkP()
         {
-            return false;
+            return LatestVersionStatusP == "ok";
         }
 
         public bool IsLatestVersionStatusUnlaunchableP()
@@ -111,32 +111,32 @@ namespace Test.SharedLib.Model.Settings
 
         public bool IsStableChannelP()
         {
-            return false;
+            return !(IsBetaChannelP() || IsDevelopChannelP() || IsTestChannelP());
         }
 
         public bool IsTestChannelP()
         {
-            return false;
+            return UpdatingChannelP == "test";
         }
 
         public void SetBetaChannelP()
         {
-
+            UpdatingChannelP = "beta";
         }
 
         public void SetDevelopChannelP()
         {
-
+            UpdatingChannelP = "develop";
         }
 
         public void SetLatestVersionStatusDownloadedP()
         {
-
+            LatestVersionStatusP = "downloaded";
         }
 
         public void SetLatestVersionStatusOkP()
         {
-
+            LatestVersionStatusP = "ok";
         }
 
         public void SetLatestVersionStatusUnlaunchableP()
@@ -146,12 +146,12 @@ namespace Test.SharedLib.Model.Settings
 
         public void SetStableChannelP()
         {
-
+            UpdatingChannelP = "stable";
         }
 
         public void SetTestChannelP()
         {
-
+            UpdatingChannelP = "test";
         }
     }
 }
