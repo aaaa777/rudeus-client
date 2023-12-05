@@ -5,20 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rudeus.Model
+namespace Test.Model
 {
     /// <summary>
     /// レジストリの設定を保持するモデルのFake実装
     /// </summary>
-    public class FakeSettings : ISettings
+    public class FakeSettings : IAppSettings, IRootSettings
     {
         // TODO: ダミーのレジストリを作成する
 
         private Dictionary<string, string> _data = new();
-        private static ISettings _fakeSettings = new FakeSettings();
-        public static ISettings GetInstance() { return _fakeSettings; }
+        private static IAppSettings _fakeSettings = new FakeSettings();
+        public static IAppSettings GetInstance() { return _fakeSettings; }
 
-        public static ISettings Create() { return new FakeSettings(); }
+        public static IAppSettings Create() { return new FakeSettings(); }
 
         private string Get(string key)
         {
@@ -66,6 +66,13 @@ namespace Rudeus.Model
         public string FirstHostnameP { get => Get("FH"); set => Set("FH", value); }
         public string HostnameP { get => Get("H"); set => Set("H", value); }
         public string UsernameP { get => Get("U"); set => Set("U", value); }
+        public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CpuNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string MemoryP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CDriveP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string OSP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string WithSecureP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public bool IsBetaChannelP()
         {
