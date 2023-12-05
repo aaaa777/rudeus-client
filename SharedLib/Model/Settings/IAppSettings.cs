@@ -6,11 +6,11 @@ namespace SharedLib.Model.Settings
     /// 設定をレジストリに保管するモデル
     /// レジストリを指定して異なる保存先を指定することもできる
     /// </summary>
-    public interface IAppSettings
+    public interface IAppSettings : IBaseSettings
     {
-        //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
+        //static abstract string GetStatic(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
 
-        //static abstract void Set(string key, string value, bool isDefaultKey, RegistryKey regKey);
+        //static abstract void SetStatic(string key, string value, bool isDefaultKey, RegistryKey regKey);
 
         string CurrentVersionP { get; set; }
         string LastDirNameP { get; set; }

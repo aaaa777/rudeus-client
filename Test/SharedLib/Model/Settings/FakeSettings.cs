@@ -12,6 +12,15 @@ namespace Test.SharedLib.Model.Settings
     /// </summary>
     public class FakeSettings : IAppSettings, IRootSettings
     {
+        public Func<string, string, string> GetFunc { get; set; }
+        public Func<string, string, string> SetFunc { get; set; }
+
+        public FakeSettings(Func<string, string, string>? getFunc = null, Func<string, string, string>? setFunc = null) 
+        {
+            GetFunc = getFunc ?? Get;
+            SetFunc = setFunc ?? Set;
+        }
+
         // TODO: ダミーのレジストリを作成する
 
         private Dictionary<string, string> _data = new();
@@ -20,7 +29,7 @@ namespace Test.SharedLib.Model.Settings
 
         public static IAppSettings Create() { return new FakeSettings(); }
 
-        private string Get(string key)
+        public string Get(string key, string defaultString = "")
         {
             if (_data.ContainsKey(key))
             {
@@ -32,7 +41,7 @@ namespace Test.SharedLib.Model.Settings
             }
         }
 
-        private void Set(string key, string value)
+        public string Set(string key, string value)
         {
             if (_data.ContainsKey(key))
             {
@@ -42,30 +51,31 @@ namespace Test.SharedLib.Model.Settings
             {
                 _data.Add(key, value);
             }
+            return value;
         }
 
-        public string LabelIdP { get => Get("LI"); set => Set("LI", value); }
-        public string CurrentVersionP { get => Get("CV"); set => Set("CV", value); }
-        public string LastDirNameP { get => Get("LD"); set => Set("LD", value); }
-        public string LastVersionDirPathP { get => Get("LVD"); set => Set("LVD", value); }
-        public string LastVersionExeNameP { get => Get("LVEN"); set => Set("LVEN", value); }
+        public string LabelIdP { get => GetFunc("LI", ""); set => SetFunc("LI", value); }
+        public string CurrentVersionP { get => GetFunc("CV", ""); set => SetFunc("CV", value); }
+        public string LastDirNameP { get => GetFunc("LD", ""); set => SetFunc("LD", value); }
+        public string LastVersionDirPathP { get => GetFunc("LVD", ""); set => SetFunc("LVD", value); }
+        public string LastVersionExeNameP { get => GetFunc("LVEN", ""); set => SetFunc("LVEN", value); }
 
-        public string LastVersionExePathP { get => Get("LVEP"); set => Set("LVEP", value); }
+        public string LastVersionExePathP { get => GetFunc("LVEP", ""); set => SetFunc("LVEP", value); }
 
-        public string LatestDirNameP { get => Get("LTD"); set => Set("LTD", value); }
-        public string LatestVersionDirPathP { get => Get("LTVDP"); set => Set("LTVPD", value); }
-        public string LatestVersionExeNameP { get => Get("LTVEN"); set => Set("LTVEN", value); }
+        public string LatestDirNameP { get => GetFunc("LTD", ""); set => SetFunc("LTD", value); }
+        public string LatestVersionDirPathP { get => GetFunc("LTVDP", ""); set => SetFunc("LTVPD", value); }
+        public string LatestVersionExeNameP { get => GetFunc("LTVEN", ""); set => SetFunc("LTVEN", value); }
 
-        public string LatestVersionExePathP { get => Get("LTVEP"); set => Set("LTTVEP", value); }
+        public string LatestVersionExePathP { get => GetFunc("LTVEP", ""); set => SetFunc("LTTVEP", value); }
 
-        public string LatestVersionStatusP { get => Get("LTVS"); set => Set("LTVS", value); }
-        public string UpdatingChannelP { get => Get("UC"); set => Set("UC", value); }
+        public string LatestVersionStatusP { get => GetFunc("LTVS", ""); set => SetFunc("LTVS", value); }
+        public string UpdatingChannelP { get => GetFunc("UC", ""); set => SetFunc("UC", value); }
 
-        public string AccessTokenP { get => Get("AT"); set => Set("AT", value); }
-        public string DeviceIdP { get => Get("DI"); set => Set("DI", value); }
-        public string FirstHostnameP { get => Get("FH"); set => Set("FH", value); }
-        public string HostnameP { get => Get("H"); set => Set("H", value); }
-        public string UsernameP { get => Get("U"); set => Set("U", value); }
+        public string AccessTokenP { get => GetFunc("AT", ""); set => SetFunc("AT", value); }
+        public string DeviceIdP { get => GetFunc("DI", ""); set => SetFunc("DI", value); }
+        public string FirstHostnameP { get => GetFunc("FH", ""); set => SetFunc("FH", value); }
+        public string HostnameP { get => GetFunc("H", ""); set => SetFunc("H", value); }
+        public string UsernameP { get => GetFunc("U", ""); set => SetFunc("U", value); }
         public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string CpuNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string MemoryP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

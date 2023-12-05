@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Test.Model;
+using Test.SharedLib.Model.Settings;
 
 namespace Test.Procedure
 {

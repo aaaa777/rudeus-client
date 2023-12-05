@@ -7,6 +7,7 @@ using Rudeus.Launcher;
 using Rudeus.Launcher.Procedure;
 using Test.Model;
 using SharedLib.Model.Settings;
+using Test.SharedLib.Model.Settings;
 
 namespace Test.Launcher
 {

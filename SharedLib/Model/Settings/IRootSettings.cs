@@ -5,11 +5,11 @@ namespace SharedLib.Model.Settings
     /// <summary>
     /// 主要な設定をレジストリに保管するモデル
     /// </summary>
-    public interface IRootSettings
+    public interface IRootSettings : IBaseSettings
     {
-        //static abstract string Get(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
+        //static abstract string GetStatic(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
 
-        //static abstract void Set(string key, string value, bool isDefaultKey, RegistryKey regKey);
+        //static abstract void SetStatic(string key, string value, bool isDefaultKey, RegistryKey regKey);
 
         string AccessTokenP { get; set; }
         string DeviceIdP { get; set; }

@@ -99,7 +99,7 @@ namespace Rudeus
         /// <inheritdoc/>
         public static void CopyDirectory(string sourceDir, string destinationDir, bool recursive)
         {
-            // Get information about the source directory
+            // GetStatic information about the source directory
             var dir = new DirectoryInfo(sourceDir);
 
             // Check if the source directory exists
@@ -112,7 +112,7 @@ namespace Rudeus
             // Create the destination directory
             Directory.CreateDirectory(destinationDir);
 
-            // Get the files in the source directory and copy to the destination directory
+            // GetStatic the files in the source directory and copy to the destination directory
             foreach (FileInfo file in dir.GetFiles())
             {
                 string targetFilePath = Path.Combine(destinationDir, file.Name);

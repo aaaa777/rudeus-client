@@ -20,19 +20,23 @@ namespace SharedLib.Model.Settings
 
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
+        public Func<string, string, string> GetFunc { get; set; }
+        public Func<string, string, string> SetFunc { get; set; }
 
         private static RegistryKey CreateRegKey(string keyName)
         {
             return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
         }
 
-        public RootSettings()
+        public RootSettings(Func<string, string, string>? getFunc = null, Func<string, string, string>? setFunc = null)
         {
             RegKey = CreateRegKey($"{RegistryDir}\\{RegistryKey}");
+            GetFunc = getFunc ?? Get;
+            SetFunc = setFunc ?? Set;
         }
 
 
-        private static string Get(string key, string defaultValue = "")
+        private static string GetStatic(string key, string defaultValue = "")
         {
             try
             {
@@ -46,11 +50,30 @@ namespace SharedLib.Model.Settings
             }
         }
 
-        private static void Set(string key, string value)
+        private static void SetStatic(string key, string value)
         {
 
             RegKey?.SetValue(key, value);
 
+        }
+
+        public string Get(string key, string defaultValue = "")
+        {
+            try
+            {
+                var value = RegKey.GetValue(key) ?? new Exception("getting val from registry failed");
+                return (string)value;
+            }
+            catch
+            {
+                return defaultValue;
+            }
+        }
+
+        public string Set(string key, string value)
+        {
+            RegKey?.SetValue(key, value);
+            return value;
         }
 
         // ここからデフォルトのレジストリキーでのみ保存可能
@@ -61,7 +84,7 @@ namespace SharedLib.Model.Settings
         public string FirstHostnameP
         {
             set { Set(FirstHostnameKey, value); }
-            get { return Get(FirstHostnameKey, ""); }
+            get { return GetStatic(FirstHostnameKey, ""); }
         }
 
         // 最後に起動したときのHostname
@@ -70,7 +93,7 @@ namespace SharedLib.Model.Settings
         public string HostnameP
         {
             set { Set(HostnameKey, value); }
-            get { return Get(HostnameKey, ""); }
+            get { return GetStatic(HostnameKey, ""); }
         }
 
         // 一意のデバイスID
@@ -79,7 +102,7 @@ namespace SharedLib.Model.Settings
         public string DeviceIdP
         {
             set { Set(DeviceIdKey, value); }
-            get { return Get(DeviceIdKey, ""); }
+            get { return GetStatic(DeviceIdKey, ""); }
         }
 
         // ログインユーザ(7桁の学籍番号)
@@ -88,7 +111,7 @@ namespace SharedLib.Model.Settings
         public string UsernameP
         {
             set { Set(UsernameKey, value); }
-            get { return Get(UsernameKey, ""); }
+            get { return GetStatic(UsernameKey, ""); }
         }
 
         // リクエスト時のアクセストークン
@@ -97,7 +120,7 @@ namespace SharedLib.Model.Settings
         public string AccessTokenP
         {
             set { Set(AccessTokenKey, value); }
-            get { return Get(AccessTokenKey, ""); }
+            get { return GetStatic(AccessTokenKey, ""); }
         }
 
         // 最終チェックのWindowsバージョン
@@ -115,14 +138,14 @@ namespace SharedLib.Model.Settings
         public string LabelIdP
         {
             set { Set(LabelIdKey, value); }
-            get { return Get(LabelIdKey, ""); }
+            get { return GetStatic(LabelIdKey, ""); }
         }
 
         public static string UpdateChannelKey = "UpdateChannel";
         public string UpdatingChannelP
         {
             set { Set(UpdateChannelKey, value); }
-            get { return Get(UpdateChannelKey, ""); }
+            get { return GetStatic(UpdateChannelKey, ""); }
         }
 
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
@@ -156,14 +179,14 @@ namespace SharedLib.Model.Settings
 
         public static string LatestVersionStatus
         {
-            set { Set(LatestVersionStatusKey, value); }
-            get { return Get(LatestVersionStatusKey, ""); }
+            set { SetStatic(LatestVersionStatusKey, value); }
+            get { return GetStatic(LatestVersionStatusKey, ""); }
         }
 
         public string LatestVersionStatusP
         {
             set { Set(LatestVersionStatusKey, value); }
-            get { return Get(LatestVersionStatusKey, ""); }
+            get { return GetStatic(LatestVersionStatusKey, ""); }
         }
 
         public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
@@ -188,21 +211,21 @@ namespace SharedLib.Model.Settings
         public string CurrentVersionP
         {
             set { Set(CurrentVersionKey, value); }
-            get { return Get(CurrentVersionKey, ""); }
+            get { return GetStatic(CurrentVersionKey, ""); }
         }
 
         public string NetworkIFListKey = "NetworkIFList";
         public string NetworkIFList
         {
             set { Set(NetworkIFListKey, value); }
-            get { return Get(NetworkIFListKey, ""); }
+            get { return GetStatic(NetworkIFListKey, ""); }
         }
 
         public string SpecKey = "NetworkIFList";
         public string aa
         {
             set { Set(SpecKey, value); }
-            get { return Get(SpecKey, ""); }
+            get { return GetStatic(SpecKey, ""); }
         }
 
         public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

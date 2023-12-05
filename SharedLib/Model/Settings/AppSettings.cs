@@ -20,6 +20,10 @@ namespace SharedLib.Model.Settings
         // レジストリ：アプリのルート
         private static string RegistryDir = Constants.RegistryDir;
         private static string RegistryKey = DefaultRegistryKey;
+
+        public Func<string, string, string> GetFunc { get; set; }
+        public Func<string, string, string> SetFunc { get; set; }
+
         private static string RegistryPath { get { return $"{RegistryDir}\\{RegistryKey}"; } }
 
         private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
@@ -56,8 +60,26 @@ namespace SharedLib.Model.Settings
             RegKey = CreateRegKey(RegistryPath);
         }
 
+        public string Get(string key, string defaultValue = "")
+        {
+            try
+            {
+                var value = _regKey.GetValue(key) ?? new Exception("getting val from registry failed");
+                return (string)value;
+            }
+            catch
+            {
+                return defaultValue;
+            }
+        }
 
-        private static string Get(string key, string defaultValue = "", bool isDefaultKey = true, RegistryKey? regKey = null)
+        public string Set(string key, string value)
+        {
+            _regKey.SetValue(key, value);
+            return value;
+        }
+
+        private static string GetStatic(string key, string defaultValue = "", bool isDefaultKey = true, RegistryKey? regKey = null)
         {
             if (isDefaultKey)
             {
@@ -84,7 +106,7 @@ namespace SharedLib.Model.Settings
             }
         }
 
-        private static void Set(string key, string value, bool isDefault = true, RegistryKey? regKey = null)
+        private static void SetStatic(string key, string value, bool isDefault = true, RegistryKey? regKey = null)
         {
             if (isDefault)
             {
@@ -123,72 +145,62 @@ namespace SharedLib.Model.Settings
 
         // 最初に登録されたHostname
         public static string FirstHostnameKey = "FirstHostname";
-        public static string FirstHostname
-        {
-            set { Set(FirstHostnameKey, value); }
-            get { return Get(FirstHostnameKey); }
-        }
 
         public string FirstHostnameP
         {
-            set { Set(FirstHostnameKey, value, false, _regKey); }
-            get { return Get(FirstHostnameKey, "", false, _regKey); }
+            set { Set(FirstHostnameKey, value); }
+            get { return Get(FirstHostnameKey, ""); }
         }
 
         // 最後に起動したときのHostname
         public static string HostnameKey = "DeviceHostname";
-        public static string Hostname
-        {
-            set { Set(HostnameKey, value); }
-            get { return Get(HostnameKey); }
-        }
 
         public string HostnameP
         {
-            set { Set(HostnameKey, value, false, _regKey); }
-            get { return Get(HostnameKey, "", false, _regKey); }
+            set { Set(HostnameKey, value); }
+            get { return Get(HostnameKey, ""); }
         }
 
         // 一意のデバイスID
         public static string DeviceIdKey = "DeviceId";
         public static string DeviceId
         {
-            set { Set(DeviceIdKey, value); }
-            get { return Get(DeviceIdKey); }
+            set { SetStatic(DeviceIdKey, value); }
+            get { return GetStatic(DeviceIdKey); }
         }
 
         public string DeviceIdP
         {
-            set { Set(DeviceIdKey, value, false, _regKey); }
-            get { return Get(DeviceIdKey, "", false, _regKey); }
+            set { Set(DeviceIdKey, value); }
+            get { return Get(DeviceIdKey, ""); }
         }
 
         // ログインユーザ(7桁の学籍番号)
         public static string UsernameKey = "DeviceUsername";
         public static string Username
         {
-            set { Set(UsernameKey, value); }
-            get { return Get(UsernameKey); }
+            set { SetStatic(UsernameKey, value); }
+            get { return GetStatic(UsernameKey); }
         }
 
         public string UsernameP
         {
-            set { Set(UsernameKey, value, false, _regKey); }
-            get { return Get(UsernameKey, "", false, _regKey); }
+            set { Set(UsernameKey, value); }
+            get { return Get(UsernameKey, ""); }
         }
 
         // リクエスト時のアクセストークン
         public static string AccessTokenKey = "AccessToken";
         public static string AccessToken
         {
-            set { Set(AccessTokenKey, value); }
-            get { return Get(AccessTokenKey); }
+            set { SetStatic(AccessTokenKey, value); }
+            get { return GetStatic(AccessTokenKey); }
         }
 
         public string AccessTokenP
         {
-            set { Set(AccessTokenKey, value, false, _regKey); }
-            get { return Get(AccessTokenKey, "", false, _regKey); }
+            set { Set(AccessTokenKey, value); }
+            get { return Get(AccessTokenKey, ""); }
         }
 
         // 最終チェックのWindowsバージョン
@@ -204,14 +216,14 @@ namespace SharedLib.Model.Settings
         public static string LabelIdKey = "LabeledId";
         public static string LabelId
         {
-            set { Set(LabelIdKey, value); }
-            get { return Get(LabelIdKey); }
+            set { SetStatic(LabelIdKey, value); }
+            get { return GetStatic(LabelIdKey); }
         }
 
         public string LabelIdP
         {
-            set { Set(LabelIdKey, value, false, _regKey); }
-            get { return Get(LabelIdKey, "", false, _regKey); }
+            set { Set(LabelIdKey, value); }
+            get { return Get(LabelIdKey, ""); }
         }
 
         // アップデートのチャンネルを指定
@@ -219,14 +231,14 @@ namespace SharedLib.Model.Settings
 
         public static string UpdatingChannel
         {
-            set { Set(UpdateChannelKey, value, false); }
-            get { return Get(UpdateChannelKey, "", false); }
+            set { SetStatic(UpdateChannelKey, value, false); }
+            get { return GetStatic(UpdateChannelKey, "", false); }
         }
 
         public string UpdatingChannelP
         {
-            set { Set(UpdateChannelKey, value, false, _regKey); }
-            get { return Get(UpdateChannelKey, "", false, _regKey); }
+            set { Set(UpdateChannelKey, value); }
+            get { return Get(UpdateChannelKey, ""); }
         }
 
 
@@ -246,8 +258,6 @@ namespace SharedLib.Model.Settings
             return false;
 #endif
         }
-        public static bool IsDevelopChannel() { return UpdatingChannel == "develop"; }
-        public static bool IsStableChannel() { return !(IsTestChannel() || IsDevelopChannel() || IsBetaChannel()); }
 
         public static void SetBetaChannel() { UpdatingChannel = "beta"; }
         public static void SetTestChannel()
@@ -256,8 +266,6 @@ namespace SharedLib.Model.Settings
             UpdatingChannel = "test";
 #endif
         }
-        public static void SetDevelopChannel() { UpdatingChannel = "develop"; }
-        public static void SetStableChannel() { UpdatingChannel = "stable"; }
 
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
         public bool IsTestChannelP()
@@ -290,14 +298,14 @@ namespace SharedLib.Model.Settings
 
         public static string LatestVersionStatus
         {
-            set { Set(LatestVersionStatusKey, value, false); }
-            get { return Get(LatestVersionStatusKey, "", false); }
+            set { SetStatic(LatestVersionStatusKey, value, false); }
+            get { return GetStatic(LatestVersionStatusKey, "", false); }
         }
 
         public string LatestVersionStatusP
         {
-            set { Set(LatestVersionStatusKey, value, false, _regKey); }
-            get { return Get(LatestVersionStatusKey, "", false, _regKey); }
+            set { Set(LatestVersionStatusKey, value); }
+            get { return Get(LatestVersionStatusKey, ""); }
         }
 
         public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
@@ -322,7 +330,7 @@ namespace SharedLib.Model.Settings
 
         public static string LastVersionDirPath
         {
-            set { Set(LastVersionDirPathKey, value, false); }
+            set { SetStatic(LastVersionDirPathKey, value, false); }
             get
             {
 #if (DEVELOPMENT)
@@ -337,14 +345,14 @@ namespace SharedLib.Model.Settings
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LastVersionDirPathKey, "", false);
+                return GetStatic(LastVersionDirPathKey, "", false);
 #endif
             }
         }
 
         public string LastVersionDirPathP
         {
-            set { Set(LastVersionDirPathKey, value, false, _regKey); }
+            set { SetStatic(LastVersionDirPathKey, value, false, _regKey); }
             get
             {
 #if (DEVELOPMENT)
@@ -359,7 +367,7 @@ namespace SharedLib.Model.Settings
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LastVersionDirPathKey, "", false, _regKey);
+                return GetStatic(LastVersionDirPathKey, "", false, _regKey);
 #endif
             }
         }
@@ -368,7 +376,7 @@ namespace SharedLib.Model.Settings
 
         public static string LatestVersionDirPath
         {
-            set { Set(LatestVersionDirPathKey, value, false); }
+            set { SetStatic(LatestVersionDirPathKey, value, false); }
             get
             {
 #if (DEVELOPMENT)
@@ -383,13 +391,13 @@ namespace SharedLib.Model.Settings
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LatestVersionDirPathKey, "", false);
+                return GetStatic(LatestVersionDirPathKey, "", false);
 #endif
             }
         }
         public string LatestVersionDirPathP
         {
-            set { Set(LatestVersionDirPathKey, value, false, _regKey); }
+            set { SetStatic(LatestVersionDirPathKey, value, false, _regKey); }
             get
             {
 #if (DEVELOPMENT)
@@ -404,7 +412,7 @@ namespace SharedLib.Model.Settings
                 }
                 return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
 #else
-                return Get(LatestVersionDirPathKey, "", false, _regKey);
+                return GetStatic(LatestVersionDirPathKey, "", false, _regKey);
 #endif
             }
         }
@@ -413,56 +421,56 @@ namespace SharedLib.Model.Settings
 
         public static string LastVersionExeName
         {
-            set { Set(LastVersionExeNameKey, value, false); }
-            get { return Get(LastVersionExeNameKey, "", false); }
+            set { SetStatic(LastVersionExeNameKey, value, false); }
+            get { return GetStatic(LastVersionExeNameKey, "", false); }
         }
 
         public string LastVersionExeNameP
         {
-            set { Set(LastVersionExeNameKey, value, false, _regKey); }
-            get { return Get(LastVersionExeNameKey, "", false, _regKey); }
+            set { SetStatic(LastVersionExeNameKey, value, false, _regKey); }
+            get { return GetStatic(LastVersionExeNameKey, "", false, _regKey); }
         }
 
         private static string LatestVersionExeNameKey = "LatestVersionExeName";
 
         public static string LatestVersionExeName
         {
-            set { Set(LatestVersionExeNameKey, value, false); }
-            get { return Get(LatestVersionExeNameKey, "", false); }
+            set { SetStatic(LatestVersionExeNameKey, value, false); }
+            get { return GetStatic(LatestVersionExeNameKey, "", false); }
         }
 
         public string LatestVersionExeNameP
         {
-            set { Set(LatestVersionExeNameKey, value, false, _regKey); }
-            get { return Get(LatestVersionExeNameKey, "", false, _regKey); }
+            set { SetStatic(LatestVersionExeNameKey, value, false, _regKey); }
+            get { return GetStatic(LatestVersionExeNameKey, "", false, _regKey); }
         }
 
         private static string LastDirNameKey = "LastDirname";
 
         public static string LastDirName
         {
-            set { Set(LastDirNameKey, value, false); }
-            get { return Get(LastDirNameKey, "", false); }
+            set { SetStatic(LastDirNameKey, value, false); }
+            get { return GetStatic(LastDirNameKey, "", false); }
         }
 
         public string LastDirNameP
         {
-            set { Set(LastDirNameKey, value, false, _regKey); }
-            get { return Get(LastDirNameKey, "", false, _regKey); }
+            set { SetStatic(LastDirNameKey, value, false, _regKey); }
+            get { return GetStatic(LastDirNameKey, "", false, _regKey); }
         }
 
         private static string LatestDirNameKey = "LatestDirname";
 
         public static string LatestDirName
         {
-            set { Set(LatestDirNameKey, value, false); }
-            get { return Get(LatestDirNameKey, "", false); }
+            set { SetStatic(LatestDirNameKey, value, false); }
+            get { return GetStatic(LatestDirNameKey, "", false); }
         }
 
         public string LatestDirNameP
         {
-            set { Set(LatestDirNameKey, value, false, _regKey); }
-            get { return Get(LatestDirNameKey, "", false, _regKey); }
+            set { SetStatic(LatestDirNameKey, value, false, _regKey); }
+            get { return GetStatic(LatestDirNameKey, "", false, _regKey); }
         }
 
         // exeを実行できる絶対パス
@@ -477,21 +485,21 @@ namespace SharedLib.Model.Settings
 
         public static string CurrentVersion
         {
-            set { Set(CurrentVersionKey, value, false); }
-            get { return Get(CurrentVersionKey, "", false); }
+            set { SetStatic(CurrentVersionKey, value, false); }
+            get { return GetStatic(CurrentVersionKey, "", false); }
         }
 
         public string CurrentVersionP
         {
-            set { Set(CurrentVersionKey, value, false, _regKey); }
-            get { return Get(CurrentVersionKey, "", false, _regKey); }
+            set { SetStatic(CurrentVersionKey, value, false, _regKey); }
+            get { return GetStatic(CurrentVersionKey, "", false, _regKey); }
         }
 
         public string NetworkIFListKey = "NetworkIFList";
         public string NetworkIFList
         {
-            set { Set(NetworkIFListKey, value, false, _regKey); }
-            get { return Get(NetworkIFListKey, "", false, _regKey); }
+            set { SetStatic(NetworkIFListKey, value, false, _regKey); }
+            get { return GetStatic(NetworkIFListKey, "", false, _regKey); }
         }
 
         string IAppSettings.LastVersionExePathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
