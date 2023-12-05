@@ -1,7 +1,7 @@
 
 using Rudeus.Initializer;
 using Rudeus.Procedure;
-using Test.Procedure;
+using Test.SharedLib.Procedure;
 
 namespace Test.Initializer
 {

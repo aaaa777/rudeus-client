@@ -9,7 +9,7 @@ using Constants = Rudeus.Constants;
 using SharedLib.Exceptions;
 using Rudeus.API;
 
-namespace Test.API
+namespace Test.SharedLib.API
 {
     public class FakeRequestClient : IRequestClient
     {

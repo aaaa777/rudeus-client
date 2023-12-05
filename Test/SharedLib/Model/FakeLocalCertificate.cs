@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test.Model
+namespace Test.SharedLib.Model
 {
     /// <summary>
     /// ローカルマシンの証明書を操作するモデルのFake実装

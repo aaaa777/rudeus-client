@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Launcher;
 using Rudeus.Launcher.Procedure;
-using Test.Model;
+using Test.SharedLib.Model;
 using SharedLib.Model.Settings;
 using Test.SharedLib.Model.Settings;
 

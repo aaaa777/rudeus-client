@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using SharedLib.Exceptions;
 using Rudeus.API;
 
-namespace Test.API
+namespace Test.SharedLib.API
 {
     public class RemoteAPITests
     {

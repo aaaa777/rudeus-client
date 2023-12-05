@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Test.Model;
-using Test.Procedure;
+using Test.SharedLib.Model;
+using Test.SharedLib.Procedure;
 using Test.SharedLib.Model.Settings;
 
 namespace Test.Command

@@ -1,6 +1,6 @@
 ﻿using Rudeus.Procedure;
 
-namespace Test.Procedure
+namespace Test.SharedLib.Procedure
 {
     public interface IFakeProcedure : IProcedure
     {

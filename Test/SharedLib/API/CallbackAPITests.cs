@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test.API
+namespace Test.SharedLib.API
 {
     internal class CallbackAPITests
     {

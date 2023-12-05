@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Procedure;
-using Test.Model;
+using Test.SharedLib.Model;
 
-namespace Test.Procedure
+namespace Test.SharedLib.Procedure
 {
     public class CertificateInstallerTests
     {
