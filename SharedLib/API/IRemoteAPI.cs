@@ -21,6 +21,15 @@ namespace Rudeus.API
 
         public abstract static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplications> apps);
 
+        // 移行予定メソッド
+        /*
+        public RegisterResponse RegisterDevice(RegisterRequest request);
+        public UpdateResponse UpdateDevice(string accessToken, UpdateRequest request);
+        public LoginResponse LoginDevice(string accessToken, LoginRequest request);
+        public BaseResponse SendInstalledApps(string accessToken, SendInstalledAppsRequest request);
+        public UpdateMetadataResponse GetUpdateMetadata(string accessToken);
+        */
+
         public abstract static Task<string> ReceiveStudentIdAsync();
 
         public abstract static UpdateMetadataResponse GetUpdateMetadata(string accessToken);

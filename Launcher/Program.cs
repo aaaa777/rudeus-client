@@ -11,7 +11,7 @@ namespace Rudeus.Launcher
 {
     public class Program
     {
-        public static ISettings _appSettings { get; set; }
+        public static IAppSettings _appSettings { get; set; }
         public static string _argsStr { get; set; }
 
         public static IProcedure _updater { get; set; }
@@ -31,7 +31,7 @@ namespace Rudeus.Launcher
             }
 
             string registryKey = args[0];
-            _appSettings = new Settings(registryKey);
+            _appSettings = new AppSettings(registryKey);
 
             _argsStr = "";
             if (args.Length > 1)

@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SharedLib.Exceptions;
+using Rudeus.API;
 
-namespace Rudeus.API.Test
+namespace Test.API
 {
     public class RemoteAPITests
     {

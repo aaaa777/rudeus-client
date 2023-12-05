@@ -24,6 +24,11 @@ namespace Rudeus.API.Request
         {
             request_data = new(hostname);
         }
+
+        public UpdateRequest(UpdateRequestData data)
+        {
+            request_data = data;
+        }
     }
     public class UpdateRequestData
     {
@@ -34,6 +39,34 @@ namespace Rudeus.API.Request
         [JsonPropertyName(nameof(spec))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? spec { get; set; }
+
+        [JsonPropertyName(nameof(cpu_name))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? cpu_name { get; set; }
+
+        [JsonPropertyName(nameof(memory))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? memory { get; set; }
+
+        [JsonPropertyName(nameof(c_drive))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? c_drive { get; set; }
+
+        [JsonPropertyName(nameof(os))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? os { get; set; }
+
+        [JsonPropertyName(nameof(os_version))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? os_version { get; set; }
+
+        [JsonPropertyName(nameof(withsecure))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? withsecure { get; set; }
+
+        [JsonPropertyName(nameof(label_id))]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+        public string? label_id { get; set; }
 
         public UpdateRequestData() { }
 

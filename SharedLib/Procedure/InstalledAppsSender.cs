@@ -17,7 +17,7 @@ namespace Rudeus.Procedure
         /// <returns></returns>
         public async Task Run()
         {
-            string accessToken = Settings.AccessToken;
+            string accessToken = AppSettings.AccessToken;
             // インストール済みアプリ送信
             // TODO: WatchDogs
             try

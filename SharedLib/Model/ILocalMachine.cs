@@ -17,5 +17,12 @@
         public string GetWinVersion();
 
         public string GetSpec();
+        string GetCpuName();
+        string GetMemory();
+        string GetCDrive();
+        string GetOS();
+        string GetOSVersion();
+        string GetWithSecure();
+        string GetLabelId();
     }
 }

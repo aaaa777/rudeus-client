@@ -488,6 +488,9 @@ namespace Rudeus.Model
             set { Set(NetworkIFListKey, value, false, _regKey); }
             get { return Get(NetworkIFListKey, "", false, _regKey); }
         }
+
+        string IAppSettings.LastVersionExePathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        string IAppSettings.LatestVersionExePathP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         // for debugging
 
         //public static string 

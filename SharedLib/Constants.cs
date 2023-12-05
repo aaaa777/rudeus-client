@@ -60,7 +60,7 @@ namespace Rudeus
 
 
         //////////////////////
-        //// API Settings ////
+        //// API RootSettings ////
         //////////////////////
 
 #if(DEBUG)

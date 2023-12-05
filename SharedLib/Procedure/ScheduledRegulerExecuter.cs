@@ -1,7 +1,9 @@
 using Rudeus.API;
+using Rudeus.API.Request;
 using Rudeus.API.Response;
 using Rudeus.Model;
 using Rudeus.Model.Operations;
+using Rudeus.Watchdogs;
 
 namespace Rudeus.Procedure
 {
@@ -11,6 +13,18 @@ namespace Rudeus.Procedure
     /// </summary>
     public class ScheduledRegularExecuter : IProcedure
     {
+        public UpdateWatcher Watcher { get; set; }
+
+        public IRootSettings RootSettings { get; set; }
+        public IProcedure LocalMachineInfoUpdater { get; set; }
+
+        public ScheduledRegularExecuter(UpdateWatcher? watcher = null, IRootSettings? settings = null, IProcedure localMachineInfoUpdater = null)
+        {
+            RootSettings = settings ?? new RootSettings();
+            Watcher = watcher ?? new UpdateWatcher();
+            LocalMachineInfoUpdater = localMachineInfoUpdater ?? new LocalMachineInfoUpdater();
+        }
+
         /// <inheritdoc/>
         public async Task Run()
         {
@@ -51,9 +65,9 @@ namespace Rudeus.Procedure
         }
 
         // UpdateDeviceÇé¿çs
-        private static async Task<UpdateResponse> SendRegularReport()
+        private async Task<UpdateResponse> SendRegularReport()
         {
-            string accessToken = Settings.AccessToken;
+            string accessToken = RootSettings.AccessTokenP;
 
             // set randomized hostname
             Random r1 = new Random();
@@ -61,10 +75,12 @@ namespace Rudeus.Procedure
             string secondNumber = r1.Next(100, 1000).ToString();
             string hostname = $"P{firstNumber}-{secondNumber}";
 
+            UpdateRequest request = Watcher.BuildUpdateRequestWithChanges();
+            request.request_data.hostname = hostname;
             UpdateResponse response;
             try
             {
-                response = RemoteAPI.UpdateDevice(accessToken, hostname);
+                response = RemoteAPI.UpdateDevice(accessToken, request);
                 Console.WriteLine($"req: changing hostname into `{hostname}` => res: {response.status}");
             }
             catch
@@ -72,8 +88,8 @@ namespace Rudeus.Procedure
                 Console.WriteLine("server connection failed");
                 throw;
             }
-
-            Settings.Hostname = hostname;
+            LocalMachineInfoUpdater.Run();
+            RootSettings.HostnameP = hostname;
 
             return response;
         }

@@ -1,4 +1,6 @@
-﻿namespace Rudeus.Procedure
+﻿using Rudeus.Procedure;
+
+namespace Test.Procedure
 {
     public interface IFakeProcedure : IProcedure
     {

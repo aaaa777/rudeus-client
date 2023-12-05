@@ -16,12 +16,12 @@ namespace Rudeus.Procedure
     public class ServerRegister : IProcedure
     {
         public ILocalMachine _localMachine { get; set; }
-        public ISettings _settings { get; set; }
+        public IRootSettings _settings { get; set; }
 
-        public ServerRegister(ILocalMachine? lm = null, ISettings? cs = null)
+        public ServerRegister(ILocalMachine? lm = null, IRootSettings? cs = null)
         {
             _localMachine = lm ?? LocalMachine.GetInstance();
-            _settings = cs ?? new Settings();
+            _settings = cs ?? new RootSettings();
         }
 
         /// <inheritdoc/>

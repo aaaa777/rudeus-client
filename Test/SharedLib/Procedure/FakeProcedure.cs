@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rudeus.Procedure
+namespace Test.Procedure
 {
     /// <summary>
     /// IProcedureのFake実装

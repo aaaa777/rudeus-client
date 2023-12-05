@@ -19,7 +19,7 @@ namespace Rudeus.Procedure
         /// <inheritdoc/>
         public async Task Run()
         {
-            string userIdOld = Settings.Username;
+            string userIdOld = AppSettings.Username;
             Console.WriteLine("old user id:" + userIdOld);
             if (userIdOld == "")
             {
@@ -39,8 +39,8 @@ namespace Rudeus.Procedure
                 string userId = await userIdTask;
 
                 // 管理サーバに送信
-                LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
-                Settings.Username = userId;
+                LoginResponse res = RemoteAPI.LoginDevice(AppSettings.AccessToken, userId);
+                AppSettings.Username = userId;
             }
             catch
             {

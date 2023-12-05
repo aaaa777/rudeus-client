@@ -13,9 +13,9 @@ namespace Rudeus.Application
         {
             InitializeComponent();
             taskTrayIcon.MouseClick += notifyIcon1_Click;
-            if (Settings.Username != "")
+            if (AppSettings.Username != "")
             {
-                ToolStripMenuItemLoginStatus.Text = $"s{Settings.Username}としてログイン中";
+                ToolStripMenuItemLoginStatus.Text = $"s{AppSettings.Username}としてログイン中";
             }
         }
 
@@ -53,7 +53,7 @@ namespace Rudeus.Application
         /// <param name="e"></param>
         private async void testMessageToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            string userIdOld = Settings.Username;
+            string userIdOld = AppSettings.Username;
             try
             {
                 // 学生IDを取得するためlocalhostでコールバックを待機
@@ -64,8 +64,8 @@ namespace Rudeus.Application
                 string userId = await userIdTask;
 
                 // 管理サーバに送信
-                LoginResponse res = RemoteAPI.LoginDevice(Settings.AccessToken, userId);
-                Settings.Username = userId;
+                LoginResponse res = RemoteAPI.LoginDevice(AppSettings.AccessToken, userId);
+                AppSettings.Username = userId;
 
                 ToolStripMenuItemLoginStatus.Text = $"s{userId}としてログイン中";
             }
@@ -110,7 +110,7 @@ namespace Rudeus.Application
         private void LogoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // ログアウト処理
-            Settings.Username = string.Empty;
+            AppSettings.Username = string.Empty;
             ToolStripMenuItemLoginStatus.Text = "ログインしていません";
         }
     }

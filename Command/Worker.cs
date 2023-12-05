@@ -21,13 +21,13 @@ namespace Rudeus.Command
         public IProcedure ScheduledRelularExecuter { get; set; }
         public IProcedure UserLoginExecuter { get; set; }
 
-        public ISettings Settings { get; set; }
+        public IRootSettings RootSettings { get; set; }
 
-        public Worker(ILogger<Worker>? logger = null, string[]? args = null, ISettings? settings = null, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
+        public Worker(ILogger<Worker>? logger = null, string[]? args = null, IRootSettings? settings = null, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
         {
             //_logger = logger;
             _args = args ?? Program.commandArgs ?? Array.Empty<string>();
-            this.Settings = settings ?? new Settings();
+            this.RootSettings = settings ?? new RootSettings();
             AccessTokenValidator = accessTokenValidator ?? new AccessTokenValidator(settings);
             ScheduledRelularExecuter = scheduledRegularExecuter ?? new ScheduledRegularExecuter();
             UserLoginExecuter = userLoginExecuter ?? new UserLoginExecuter();
@@ -40,7 +40,7 @@ namespace Rudeus.Command
         }
         public async Task RunAsync()
         { 
-            //Console.WriteLine($"Worker running accessTokenValidator: {this.Settings.DeviceIdP}");
+            //Console.WriteLine($"Worker running accessTokenValidator: {this.RootSettings.DeviceIdP}");
 
             var argsDict = Utils.ParseArgs(_args);
 
@@ -76,7 +76,7 @@ namespace Rudeus.Command
                 var apps = await InstalledApplications.LoadAsync();
                 try
                 {
-                    RemoteAPI.SendInstalledApps(Settings.AccessTokenP, apps);
+                    RemoteAPI.SendInstalledApps(RootSettings.AccessTokenP, apps);
                 }
                 catch (Exception ex) 
                 {

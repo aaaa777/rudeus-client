@@ -74,17 +74,17 @@ namespace Rudeus
             string deviceId = LM.GetDeviceId();
 
             // デフォルトのレジストリにセット
-            Settings.UpdateRegistryKey();
-            Settings.Hostname = hostname;
-            Settings.FirstHostname = hostname;
-            Settings.DeviceId = deviceId;
+            IRootSettings Settings = new RootSettings();
+            Settings.HostnameP = hostname;
+            Settings.FirstHostnameP = hostname;
+            Settings.DeviceIdP = deviceId;
 
             // 発行
             try
             {
                 RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
 
-                Settings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
+                AppSettings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
                 Console.WriteLine($"registered device: `{hostname}`: {response.status}");
                 return;
             }
@@ -160,6 +160,11 @@ namespace Rudeus
         {
             var argsDict = args.Select(arg => arg.Split('=')).Where(s => s.Length == 2).ToDictionary(v => v[0], v => v[1]);
             return argsDict;
+        }
+
+        public static bool IsArgsAllNullOrAllObject(List<object> args)
+        {
+            throw new NotImplementedException();
         }
     }
 }

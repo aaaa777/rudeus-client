@@ -1,12 +1,15 @@
-﻿using Rudeus.Model;
+﻿using Rudeus.Command;
+using Rudeus.Model;
 using Rudeus.Procedure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Test.Model;
+using Test.Procedure;
 
-namespace Rudeus.Command.Test
+namespace Test.Command
 {
     public class WorkerTest
     {
@@ -14,7 +17,7 @@ namespace Rudeus.Command.Test
         public async void TestRunAsync1()
         {
             // Arrange
-            ISettings settings = new FakeSettings();
+            IRootSettings settings = new FakeSettings();
             IFakeProcedure accessTokenValidator = new FakeProcedure();
             IFakeProcedure scheduledRegularExecuter = new FakeProcedure();
             IFakeProcedure userLoginExecuter = new FakeProcedure();
@@ -35,13 +38,13 @@ namespace Rudeus.Command.Test
         public async void TestRunAsync2()
         {
             // Arrange
-            ISettings settings = new FakeSettings();
+            IRootSettings settings = new FakeSettings();
             IFakeProcedure accessTokenValidator = new FakeProcedure();
             IFakeProcedure scheduledRegularExecuter = new FakeProcedure();
             IFakeProcedure userLoginExecuter = new FakeProcedure();
             string[] args = new string[] { "mode=login" };
 
-            Worker worker = new Worker(logger: null, args: args, settings: settings, accessTokenValidator: accessTokenValidator, scheduledRegularExecuter: scheduledRegularExecuter, userLoginExecuter: userLoginExecuter);
+            var worker = new Worker(logger: null, args: args, settings: settings, accessTokenValidator: accessTokenValidator, scheduledRegularExecuter: scheduledRegularExecuter, userLoginExecuter: userLoginExecuter);
 
             // Act
             await worker.RunAsync();

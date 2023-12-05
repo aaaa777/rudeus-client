@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rudeus.Initializer.Test
+namespace Test.Initializer
 {
     public class TaskInitializerTests
     {

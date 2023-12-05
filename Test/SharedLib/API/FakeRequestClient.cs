@@ -7,8 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Constants = Rudeus.Constants;
 using SharedLib.Exceptions;
+using Rudeus.API;
 
-namespace Rudeus.API
+namespace Test.API
 {
     public class FakeRequestClient : IRequestClient
     {

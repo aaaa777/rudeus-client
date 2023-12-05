@@ -9,11 +9,11 @@ namespace Rudeus.Procedure
     public class AccessTokenValidator : IProcedure
     {
 
-        public ISettings _settings { get; set; }
+        public IRootSettings _settings { get; set; }
 
-        public AccessTokenValidator(ISettings? cs = null)
+        public AccessTokenValidator(IRootSettings? cs = null)
         {
-            _settings = cs ?? new Settings();
+            _settings = cs ?? new RootSettings();
         }
 
         /// <inheritdoc/>

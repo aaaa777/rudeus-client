@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Test.Model;
 
-namespace Rudeus.Procedure.Test
+namespace Test.Procedure
 {
     public class RegistryInitializerTests
     {
@@ -14,10 +15,10 @@ namespace Rudeus.Procedure.Test
         public async void TestRun()
         {
             // Arrange
-            var cfs = FakeSettings.Create();
-            var ins = FakeSettings.Create();
-            var bgs = FakeSettings.Create();
-            var bfs = FakeSettings.Create();
+            var cfs = new FakeSettings();
+            var ins = new FakeSettings();
+            var bgs = new FakeSettings();
+            var bfs = new FakeSettings();
             //var fakeLocalMachine = FakeLocalMachine.Create();
 
             // Act

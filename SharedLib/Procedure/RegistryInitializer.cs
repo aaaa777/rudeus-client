@@ -18,39 +18,39 @@ namespace Rudeus.Procedure
         private readonly static string RudeusBgFormRegKey = Constants.RudeusBgFormRegKey;
         private readonly static string InnoSetupUserDataRegKey = Constants.InnoSetupUserDataKey;
 
-        public ISettings ConfSettings { get; set; }
-        public  ISettings InnoSettings { get; set; }
-        public ISettings BgSettings { get; set; }
-        public ISettings BfSettings { get; set; }
+        public IRootSettings ConfSettings { get; set; }
+        public  IAppSettings InnoSettings { get; set; }
+        public IAppSettings BgSettings { get; set; }
+        public IAppSettings BfSettings { get; set; }
 
-        public RegistryInitializer(ISettings? cfs = null, ISettings? ins = null, ISettings? bgs = null, ISettings? bfs = null)
+        public RegistryInitializer(IRootSettings? cfs = null, IAppSettings? ins = null, IAppSettings? bgs = null, IAppSettings? bfs = null)
         {
-            ConfSettings = cfs ?? new Settings();
-            InnoSettings = ins ?? new Settings(InnoSetupUserDataRegKey);
-            BgSettings = bgs ?? new Settings(RudeusBgRegKey);
-            BfSettings = bfs ?? new Settings(RudeusBgFormRegKey);
+            ConfSettings = cfs ?? new RootSettings();
+            InnoSettings = ins ?? new AppSettings(InnoSetupUserDataRegKey);
+            BgSettings = bgs ?? new AppSettings(RudeusBgRegKey);
+            BfSettings = bfs ?? new AppSettings(RudeusBgFormRegKey);
         }
 
         /// <inheritdoc/>
         public async Task Run()
         {
-            //Settings confSettings = new Settings();
-            //Settings innoSettings = new Settings(InnoSetupUserDataRegKey);
+            //RootSettings confSettings = new RootSettings();
+            //RootSettings innoSettings = new RootSettings(InnoSetupUserDataRegKey);
             // ログイン前ユーザーIDを記録
             // TODO: ユーザーの認証状態を確認する
 
             // ラベルのIDをInnoから読みだして記録
-            ConfSettings.LabelIdP = InnoSettings.LabelIdP;
+            //ConfSettings.LabelIdP = InnoSettings.LabelIdP;
 
             // RudeusBgのLaunch設定
         
-            //Settings.UpdateRegistryKey(RudeusBgRegKey);
-            //Settings bgSettings = new(RudeusBgRegKey);
+            //RootSettings.UpdateRegistryKey(RudeusBgRegKey);
+            //RootSettings bgSettings = new(RudeusBgRegKey);
 
 #if (DEVELOPMENT)
-            BgSettings.SetDevelopChannelP();
+            ConfSettings.SetDevelopChannelP();
 #else
-            BgSettings.SetStableChannelP();
+            ConfSettings.SetStableChannelP();
 #endif
 
 
@@ -68,12 +68,12 @@ namespace Rudeus.Procedure
 
             // RudeusBgFormのLaunch設定
         
-            //Settings.UpdateRegistryKey(RudeusBgFormRegKey);
-            //Settings BfSettings = new(RudeusBgFormRegKey);
+            //RootSettings.UpdateRegistryKey(RudeusBgFormRegKey);
+            //RootSettings BfSettings = new(RudeusBgFormRegKey);
 #if (DEVELOPMENT)
-            BfSettings.SetDevelopChannelP();
+            ConfSettings.SetDevelopChannelP();
 #else
-            BfSettings.SetStableChannelP();
+            ConfSettings.SetStableChannelP();
 #endif
 
 
@@ -88,9 +88,7 @@ namespace Rudeus.Procedure
             BfSettings.CurrentVersionP = "0.0.0.0";
             BfSettings.SetLatestVersionStatusDownloadedP();
 
-
-
-            Console.WriteLine("[Installer] Registry: Settings loaded for launcher");
+            Console.WriteLine("[Installer] Registry: RootSettings loaded for launcher");
         }
     }
 

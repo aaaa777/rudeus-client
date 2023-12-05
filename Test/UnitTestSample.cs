@@ -1,4 +1,4 @@
-namespace Rudeus.Test
+namespace Test
 {
     public class UnitTestSample
     {

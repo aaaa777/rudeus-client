@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Launcher;
 
-namespace Rudeus.Launcher.Test
+namespace Test.Launcher
 {
     public class UpdaterTests
     {

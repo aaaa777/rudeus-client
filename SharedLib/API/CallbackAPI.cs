@@ -83,7 +83,7 @@ namespace Rudeus.API
                 HttpListenerContext context = await listener.GetContextAsync();
 
                 data.RequestText = new StreamReader(context.Request.InputStream, Encoding.UTF8).ReadToEnd();
-                var url = context.Request.Url ?? throw new Exception("request url doesnt exist");
+                var url = context.Request.Url ?? throw new Exception("Request url doesnt exist");
                 data.Query = System.Web.HttpUtility.ParseQueryString(url.Query);
                 string userId = data.Query.Get("user_id") ?? throw new Exception("user_id not found");
 

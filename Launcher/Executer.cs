@@ -16,7 +16,7 @@ namespace Rudeus.Launcher.Procedure
     public class Executer : IExecuter
     {
         //public static int Run(string registryKey, string Args="")
-        public ISettings AppSettings { get; set; }
+        public IAppSettings AppSettings { get; set; }
         public string Args { get; set; }
 
         public int ExitCode { get; set; }
@@ -24,7 +24,7 @@ namespace Rudeus.Launcher.Procedure
         public Func<string, string, int> StartProcess { get; set; }
 
 
-        public Executer(ISettings aps, string args = "", Func<string, string, int>? startProcess = null)
+        public Executer(IAppSettings aps, string args = "", Func<string, string, int>? startProcess = null)
         {
             AppSettings = aps;
             this.Args = args;
@@ -42,11 +42,11 @@ namespace Rudeus.Launcher.Procedure
         Console.WriteLine("[Executer] Debug build is running");
 #endif
             // レジストリを切り替え
-            //Settings.UpdateRegistryKey(registryKey);
-            //Settings settings = new(registryKey);
+            //RootSettings.UpdateRegistryKey(registryKey);
+            //RootSettings settings = new(registryKey);
 
-            //string latestExePath = Settings.LatestVersionExePath;
-            //string lastExePath = Settings.LastVersionExePath;
+            //string latestExePath = RootSettings.LatestVersionExePath;
+            //string lastExePath = RootSettings.LastVersionExePath;
 
             // 起動可能かダウンロード後未起動の状態のみでlatestを実行
             //ExitCode = -1;
@@ -75,7 +75,7 @@ namespace Rudeus.Launcher.Procedure
                 // ToDo: 終了が遅かった時はフォールバックしない？
 
                 // レジストリにLatestが異常終了することを記録
-                Settings.SetLatestVersionStatusUnlaunchable();
+                Model.AppSettings.SetLatestVersionStatusUnlaunchable();
 
                 // lastを実行、フォールバックは無し
                 ExitCode = StartProcess(lastExePath, Args);
@@ -87,7 +87,7 @@ namespace Rudeus.Launcher.Procedure
                 Console.WriteLine("Latest version status is ok");
 
                 // Latestの実行に成功したことを記録
-                Settings.SetLatestVersionStatusOk();
+                Model.AppSettings.SetLatestVersionStatusOk();
             }
 
             return;

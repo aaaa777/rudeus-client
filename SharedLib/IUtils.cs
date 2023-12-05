@@ -46,5 +46,10 @@
         /// <param name="args"></param>
         /// <returns></returns>
         public abstract static Dictionary<string, string> ParseArgs(string[] args);
+
+        /// <summary>
+        /// DI用の引数が中途半端に指定されているかどうかを判定する
+        /// </summary>
+        public abstract static bool IsArgsAllNullOrAllObject(List<object> args);
     }
 }

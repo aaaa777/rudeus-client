@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Rudeus.Launcher;
 using Rudeus.Launcher.Procedure;
+using Test.Model;
 
-namespace Rudeus.Launcher.Test
+namespace Test.Launcher
 {
     public class ExecuterTests
     {
@@ -28,7 +29,7 @@ namespace Rudeus.Launcher.Test
         public async Task TestRun()
         {
             StartProcessCount = 0;
-            ISettings appSetting = new FakeSettings();
+            IAppSettings appSetting = new FakeSettings();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
             await launcher.Run();
@@ -41,7 +42,7 @@ namespace Rudeus.Launcher.Test
         public async Task TestRun2()
         {
             StartProcessCount = 0;
-            ISettings appSetting = new FakeSettings();
+            IAppSettings appSetting = new FakeSettings();
             appSetting.SetLatestVersionStatusUnlaunchableP();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
@@ -55,7 +56,7 @@ namespace Rudeus.Launcher.Test
         public async Task TestRun3()
         {
             StartProcessCount = 0;
-            ISettings appSetting = new FakeSettings();
+            IAppSettings appSetting = new FakeSettings();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessFailure);
 
             await launcher.Run();

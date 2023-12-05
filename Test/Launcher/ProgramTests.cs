@@ -1,6 +1,6 @@
 using Rudeus.Launcher;
 
-namespace Rudeus.Launcher.Test
+namespace Test.Launcher
 {
     public class ProgramTests
     {

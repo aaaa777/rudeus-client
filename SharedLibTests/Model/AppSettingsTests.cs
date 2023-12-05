@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test.API
+namespace SharedLibTests.Model
 {
-    internal class CallbackAPITests
+    internal class AppSettingsTests
     {
     }
 }

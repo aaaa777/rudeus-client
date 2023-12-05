@@ -1,8 +1,9 @@
 
 using Rudeus.Initializer;
 using Rudeus.Procedure;
+using Test.Procedure;
 
-namespace Rudeus.Initializer.Test
+namespace Test.Initializer
 {
     public class ProgramTests
     {

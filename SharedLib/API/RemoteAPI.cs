@@ -31,73 +31,11 @@ namespace Rudeus.API
     {
 
         // クライアント証明書を取得
-        private static X509Certificate2? ApiCertificate { get { return LocalCertificate.GetInstance().GetCertificate("manager.nomiss.net"); } }
+        //private static X509Certificate2? ApiCertificate { get { return LocalCertificate.GetInstance().GetCertificate("manager.nomiss.net"); } }
 
-        /// <summary>
-        /// Todo: クライアント証明書を追加する
-        /// https://stackoverflow.com/questions/40014047/add-client-certificate-to-net-core-httpclient
-        /// </summary>
-        private static HttpClientHandler CliCertHandler
-        {
-            get
-            {
-                return new()
-                {
-                    ClientCertificateOptions = ClientCertificateOption.Manual,
-                    SslProtocols = SslProtocols.Tls12,
-                    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-                };
-            }
-        }
-
-
-        private static HttpClient? _cliCertApiClient;
-
-        // GetCliCertApiClientの方が良かったかも
-        private static HttpClient CliCertApiClient
-        {
-            get
-            {
-                // 証明書ストアからクライアント証明書を取得
-                HttpClientHandler hch = CliCertHandler;
-                var cert = ApiCertificate ?? throw new Exception("certificate not found");
-
-                // クライアント証明書をリクエストクライアントに追加
-                hch.ClientCertificates.Add(cert);
-
-                _cliCertApiClient = new(hch)
-                {
-                    BaseAddress = new Uri(ApiEndpointWithCert),
-                };
-
-                
-                return _cliCertApiClient;
-            }
-        }
-
-        private static HttpClient _apiClient = new();
-        private static HttpClient NoCertApiClient
-        {
-            get
-            {
-                if (_apiClient.ToString() != ApiEndpointWithoutCert)
-                {
-                    _apiClient = new()
-                    {
-                        BaseAddress = new Uri(ApiEndpointWithoutCert),
-                    };
-
-                }
-                return _apiClient;
-            }
-        }
         public static IRequestClient RequestClient { get; set; } = new RequestClient(Constants.ApiEndpointWithoutCert);
 
         public static readonly string SamlLoginUrl = Constants.SamlLoginUrl;
-        
-        public static readonly string ApiEndpointWithCert = Constants.ApiEndpointWithCert;
-        public static readonly string ApiEndpointWithoutCert = Constants.ApiEndpointWithoutCert;
-
 
         public static string ApiCheckStatusPath { get; } = Constants.ApiCheckStatusPath;
         public static string ApiRegisterPath { get; } = Constants.ApiRegisterPath;
@@ -125,35 +63,10 @@ namespace Rudeus.API
         // HTTP汎用送信メソッド
         private static string Request(string? accessToken, string requestPath, string payload, HttpMethod method)
         {
+            // リクエスト送信
             HttpRequestMessage request = BuildHttpRequestMessage(accessToken, requestPath, payload, method);
 
-            // リクエスト送信
-            HttpResponseMessage response;
-
-            // Todo: 証明書付きAPIエンドポイントと無しの区別を付けてメソッドを分離
-            //try
-            //{
-            //    response = RequestEndpoints(request);
-            //}
-            //catch (TimeoutException ex)
-            //{
-            //    Console.WriteLine($"Error: {ex.Message}");
-            //    throw new ServerUnavailableException(ex.Message);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine($"Error: {ex.Message}");
-            //    throw new UnexpectedResponseException(ex.Message);
-            //}
-
-            //response = RequestClient.Request(request);
-            
-
-            // ToDo: サーバサイドエラーの例外処理
-            //if (response.StatusCode != HttpStatusCode.OK)
-            //{
-            //    throw new Exception($"Request failed: {response.StatusCode}");
-            //}
+            //HttpResponseMessage response;
 
             // レスポンスボディを取得
             //string responseString = response.Content.ReadAsStringAsync().Result;
@@ -175,7 +88,7 @@ namespace Rudeus.API
 
             // ヘッダー付与
             request.Headers.Add("Accept", "application/json");
-            //request.Headers.Add("Content-Type", "application/json");
+            //Request.Headers.Add("Content-Type", "application/json");
 
             // トークンが存在する場合はヘッダーに付与
             if (accessToken != null && accessToken != "")
@@ -188,51 +101,6 @@ namespace Rudeus.API
             
 
             return request;
-        }
-
-        // HttpRequestをConstants.forceClientCertAuthに応じて送信する
-        private static HttpResponseMessage RequestEndpoints(HttpRequestMessage request)
-        {
-            HttpResponseMessage? response = null;
-
-            // クライアント認証を強制する設定の場合
-            if (!Constants.disableClientCertAuth) 
-            {
-                try
-                {
-                    // 証明書付きAPIエンドポイントにリクエスト
-                    response = CliCertApiClient.SendAsync(request).Result;
-                }
-                catch 
-                {
-                    response = null;
-                }
-            }
-
-            if(response == null)
-            {
-                try
-                {
-                    // 証明書無しAPIエンドポイントにフォールバック
-                    response = NoCertApiClient.SendAsync(request).Result;
-                }
-                catch
-                {
-                    throw;
-                }
-            }
-
-            if(response == null)
-            {
-                throw new Exception("Unknown exception");
-            }
-
-            if(response.StatusCode != HttpStatusCode.OK)
-            {
-                throw new Exception($"Request failed: {response.StatusCode}");
-            }
-
-            return response;
         }
 
 
@@ -272,9 +140,39 @@ namespace Rudeus.API
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>
         /// 
-        public static UpdateResponse UpdateDevice(string accessToken, string? hostname=null)
+        public static UpdateResponse UpdateDevice(
+            string accessToken,
+            string? hostname = null,
+            string? spec = null,
+            string? cpu_name = null,
+            string? memory = null,
+            string? c_drive = null,
+            string? os = null,
+            string? os_version = null,
+            string? withsecure = null,
+            string? label_id = null
+        )
         {
-            UpdateRequest req = new(hostname);
+            UpdateRequestData data = new()
+            {
+                hostname = hostname,
+                spec = spec,
+                cpu_name = cpu_name,
+                memory = memory,
+                c_drive = c_drive,
+                os = os,
+                os_version = os_version,
+                withsecure = withsecure,
+                label_id = label_id
+            };
+
+            UpdateRequest req = new(data);
+            return UpdateDevice(accessToken, req);
+        }
+
+        public static UpdateResponse UpdateDevice(string accessToken, UpdateRequest req) 
+        { 
+            
             var payload = JsonSerializer.Serialize(req, UpdateRequestContext.Default.UpdateRequest);
 
 #if(DEVELOPMENT)
@@ -300,12 +198,6 @@ namespace Rudeus.API
         }
 
 
-/* プロジェクト 'RudeusBgForm' からのマージされていない変更
-前:
-        public static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplication> apps)
-後:
-        public static BaseResponse SendInstalledApps(string accessToken, List<Model.ApplicationData> apps)
-*/
         public static BaseResponse SendInstalledApps(string accessToken, List<ApplicationData> apps)
         {
             SendInstalledAppsRequest req = new(apps);
@@ -455,7 +347,7 @@ namespace Rudeus.API
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            string requestUser = data.Query?.Get("user_id") ?? throw new UnexpectedResponseException("invaild request received");
+            string requestUser = data.Query?.Get("user_id") ?? throw new UnexpectedResponseException("invaild Request received");
 
 
             return requestUser;

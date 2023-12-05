@@ -10,9 +10,14 @@ namespace Rudeus.Model
     /// </summary>
     public class LocalMachine : ILocalMachine
     {
+        private static ILocalMachine? _instance = null;
         public static ILocalMachine GetInstance()
         {
-            return new LocalMachine();
+            if (_instance == null)
+            {
+                _instance = new LocalMachine();
+            }
+            return _instance;
         }
 
         private LocalMachine()
@@ -79,6 +84,41 @@ namespace Rudeus.Model
         public string GetSpec()
         {
             return "Intel Xeon E5 2250;128GB";
+        }
+
+        public string GetCpuName()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetMemory()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetCDrive()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetOS()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetOSVersion()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetWithSecure()
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetLabelId()
+        {
+            throw new NotImplementedException();
         }
     }
 }
