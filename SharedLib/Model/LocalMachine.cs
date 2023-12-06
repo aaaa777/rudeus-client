@@ -83,42 +83,42 @@ namespace Rudeus.Model
 
         public string GetSpec()
         {
-            return "Intel Xeon E5 2250;128GB";
+            return "Intel Xeon E5 2250;16GB";
         }
 
         public string GetCpuName()
         {
-            throw new NotImplementedException();
+            return "Intel Xeon E5";
         }
 
         public string GetMemory()
         {
-            throw new NotImplementedException();
+            return "16GB";
         }
 
         public string GetCDrive()
         {
-            throw new NotImplementedException();
+            return "256GB";
         }
 
         public string GetOS()
         {
-            throw new NotImplementedException();
+            return "windows 10";
         }
 
         public string GetOSVersion()
         {
-            throw new NotImplementedException();
+            return "10.23456.234";
         }
 
-        public string GetWithSecure()
+        public bool GetWithSecure()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public string GetLabelId()
         {
-            throw new NotImplementedException();
+            return "P12-345";
         }
     }
 }
