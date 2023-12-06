@@ -11,7 +11,7 @@ using Rudeus;
 using Rudeus.Procedure;
 using SharedLib.Model.Settings;
 
-namespace Rudeus.Launcher
+namespace Rudeus.Launcher.Procedure
 {
     /// <summary>
     /// 起動アプリのアップデートを行う手続き
