@@ -127,7 +127,8 @@ jobs:
   test:
     runs-on: windows-latest
     needs: build
-
+    env:
+      Solution_Name: Rudeus.sln   
     strategy:
       matrix:
         configuration: [Debug, Release]
@@ -261,11 +262,6 @@ jobs:
         configuration: [Release]
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
