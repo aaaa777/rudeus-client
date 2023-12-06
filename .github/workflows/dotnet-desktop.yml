@@ -124,6 +124,11 @@ jobs:
     - name: Build the application
       run: dotnet build --no-restore -c ${{ matrix.configuration }}
 
+  test:
+    runs-on: windows-latest
+    needs: build
+
+    steps:
     # Execute all unit tests in the solution
     - name: Execute unit tests
       run: dotnet test --no-build --verbosity normal -c ${{ matrix.configuration }}
@@ -168,6 +173,10 @@ jobs:
     #    asset_name: RudeusLauncher.zip
     #    asset_content_type: application/zip
 
+  installer:
+    runs-on: windows-latest  
+    needs: test
+    steps:
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx
       run: |
@@ -236,3 +245,18 @@ jobs:
         asset_name: HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
         max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+
+  pages:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
