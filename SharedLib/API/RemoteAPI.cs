@@ -149,7 +149,7 @@ namespace Rudeus.API
             int? c_drive = null,
             string? os = null,
             string? os_version = null,
-            string? withsecure = null,
+            bool? withsecure = null,
             string? label_id = null
         )
         {

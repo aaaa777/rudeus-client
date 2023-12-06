@@ -62,7 +62,7 @@ namespace Rudeus.API.Request
 
         [JsonPropertyName(nameof(withsecure))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public string? withsecure { get; set; }
+        public bool? withsecure { get; set; }
 
         [JsonPropertyName(nameof(label_id))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

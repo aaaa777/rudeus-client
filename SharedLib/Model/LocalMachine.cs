@@ -78,22 +78,54 @@ namespace Rudeus.Model
 
         public string GetWinVersion()
         {
-            return "12345.6789";
+            OperatingSystem os = Environment.OSVersion;
+            // TODO: 10と11の判別はビルド番号からするしかないらしい
+            // https://ja.wikipedia.org/wiki/Microsoft_Windows_10%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E5%B1%A5%E6%AD%B4
+            if (os.Version.Major == 10 && os.Version.Minor == 0)
+            {
+                if (os.Version.Build >= 22000)
+                {
+                    return "11";
+                }
+                return "10";
+            }
+
+            return "unknown";
         }
 
         public string GetSpec()
         {
-            return "Intel Xeon E5 2250;16GB";
+            return "Dummy: Intel Xeon E5 2250;16GB";
         }
 
         public string GetCpuName()
         {
-            return "Intel Xeon E5";
+            ManagementObjectSearcher mos = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
+            foreach (ManagementObject mo in mos.Get())
+            {
+                Console.WriteLine(mo["Name"]);
+                // TODO: 30文字以上にリクエスト変更要求
+                return (mo["Name"].ToString() ?? "null set").Substring(0, 30);
+            }
+            return "unknown";
         }
 
         public string GetMemory()
         {
-            return "16";
+            int nVal;
+            ManagementClass mc = new ManagementClass("Win32_OperatingSystem");
+            ManagementObjectCollection moc = mc.GetInstances();
+
+            foreach (System.Management.ManagementObject mo in moc)
+            {
+                // メモリー情報
+                // 合計物理メモリー
+                Console.WriteLine("TotalVisibleMemorySize = " + mo["TotalVisibleMemorySize"]);
+                // 1024 * 1024で割ると誤差で16GBが15GBになるので、1000 * 1000で割る
+                nVal = Convert.ToInt32(mo["TotalVisibleMemorySize"]) / (1_000_000);    // 単位 KB -> MB
+                return nVal.ToString();
+            }
+            return "0";
         }
 
         public string GetCDrive()
@@ -101,14 +133,16 @@ namespace Rudeus.Model
             return "256";
         }
 
+        // https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
         public string GetOS()
         {
-            return "windows 10";
+            return $"Windows {GetWinVersion()}";
         }
 
         public string GetOSVersion()
         {
-            return "10.23456.234";
+            System.OperatingSystem os = System.Environment.OSVersion;
+            return os.Version.ToString();
         }
 
         public string GetWithSecure()

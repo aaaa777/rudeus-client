@@ -78,7 +78,7 @@ namespace Rudeus.Watchdogs
             // withsecure
             if(LM.GetWithSecure() != Settings.WithSecureP)
             {
-                request.request_data.withsecure = LM.GetWithSecure();
+                request.request_data.withsecure = LM.GetWithSecure() != "";
             }
 
             // label_id
