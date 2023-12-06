@@ -25,11 +25,17 @@ namespace Rudeus.Procedure
             Console.WriteLine("[Installer] Cert: Certificate installation is skipped because this is Debug build.");
             Console.WriteLine("[Installer] Cert: There is 2ways to install Certificate, execute Release build or install manually.");
 #else
-            string capath = $"{Directory.GetCurrentDirectory()}\\..\\..\\..\\..\\..\\certs\\ca.crt";
-            string p12path = $"{Directory.GetCurrentDirectory()}\\..\\..\\..\\..\\..\\certs\\stu2.p12";
-        
-            _localCertificate.InstallCertificateIntoRoot(capath);
-            _localCertificate.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
+            string capath = $"ca.crt";
+            string p12path = $"stu2.p12"; 
+            try
+            {
+                _localCertificate.InstallCertificateIntoRoot(capath);
+                _localCertificate.InstallPkcs12IntoMy(p12path, "exampleexampleexample");
+            }
+            catch
+            {
+                Console.WriteLine("[Installer] Certificate installration failed, but its ok if running in Visual Studio.");
+            }
 
             Console.WriteLine("[Installer] Cert: Certificate is installed successfully");
 #endif
