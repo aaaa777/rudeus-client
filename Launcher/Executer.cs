@@ -33,7 +33,7 @@ namespace Rudeus.Launcher.Procedure
         }
 
         /// <inheritdoc/>
-        public async Task Run()
+        public async Task RunExe()
         {
             string latestExePath = AppSettings.LatestVersionExePathP;
             string lastExePath = AppSettings.LastVersionExePathP;
@@ -114,6 +114,11 @@ namespace Rudeus.Launcher.Procedure
                 // launch failed
                 return -1;
             }
+        }
+
+        public Task Run()
+        {
+            throw new NotImplementedException();
         }
     }
 }

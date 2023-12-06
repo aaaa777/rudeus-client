@@ -50,8 +50,6 @@ namespace Rudeus.Launcher
         {
             int exitCode = -1;
 
-
-
             do
             {
                 // ToDo: 重複実行中にプロセスキルをする
@@ -61,7 +59,7 @@ namespace Rudeus.Launcher
                 Console.WriteLine("Update process done");
 
                 // アプリ起動
-                await _launcher.Run();
+                await _launcher.RunExe();
                 exitCode = _launcher.ExitCode;
                 Console.WriteLine("ApplicationData stopped");
             }

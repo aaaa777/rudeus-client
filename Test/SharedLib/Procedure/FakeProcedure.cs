@@ -12,17 +12,16 @@ namespace Test.SharedLib.Procedure
     /// </summary>
     public class FakeProcedure : IFakeProcedure
     {
-        private int _runCount = 0;
         /// <summary>
         /// Runメソッドが呼ばれた回数
         /// </summary>
-        public int RunCount { get { return _runCount; } }
+        public int RunCount { get; set; }
 
         // TODO: 自分自身を返すメソッドはインターフェースで定義できない問題の対応
         public FakeProcedure() { }
 
         /// <inheritdoc/>
-        public async Task Run() { _runCount++; }
+        public async Task Run() { RunCount++; }
 
     }
 }

@@ -11,5 +11,6 @@ namespace Rudeus.Launcher.Procedure
     public interface IExecuter : IProcedure
     {
         int ExitCode { get; set; }
+        Task RunExe();
     }
 }

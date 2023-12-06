@@ -33,7 +33,7 @@ namespace Test.Launcher
             IAppSettings appSetting = new FakeSettings();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
-            await launcher.Run();
+            await launcher.RunExe();
 
             Assert.Equal(0, launcher.ExitCode);
             Assert.Equal(1, StartProcessCount);
@@ -47,7 +47,7 @@ namespace Test.Launcher
             appSetting.SetLatestVersionStatusUnlaunchableP();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessSuccess);
 
-            await launcher.Run();
+            await launcher.RunExe();
 
             Assert.Equal(0, launcher.ExitCode);
             Assert.Equal(1, StartProcessCount);
@@ -60,7 +60,7 @@ namespace Test.Launcher
             IAppSettings appSetting = new FakeSettings();
             var launcher = new Executer(aps: appSetting, args: "", startProcess: FakeStartProcessFailure);
 
-            await launcher.Run();
+            await launcher.RunExe();
             //var exception = await Record.ExceptionAsync(launcher.Run);
 
             Assert.Equal(-1, launcher.ExitCode);
