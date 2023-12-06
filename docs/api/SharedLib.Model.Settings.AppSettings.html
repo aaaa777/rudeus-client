@@ -210,56 +210,25 @@
 
   <a id="SharedLib_Model_Settings_AppSettings__ctor_" data-uid="SharedLib.Model.Settings.AppSettings.#ctor*"></a>
 
-  <h3 id="SharedLib_Model_Settings_AppSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__System_Func_System_String_Microsoft_Win32_RegistryKey__" data-uid="SharedLib.Model.Settings.AppSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})">
-  AppSettings(Func&lt;string, string, string&gt;?, Func&lt;string, string, bool&gt;?, Func&lt;string, RegistryKey&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SharedLib_Model_Settings_AppSettings__ctor_System_String_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__" data-uid="SharedLib.Model.Settings.AppSettings.#ctor(System.String,System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})">
+  AppSettings(string, Func&lt;string, string, string&gt;?, Func&lt;string, string, bool&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppSettings(Func&lt;string, string, string&gt;? getFunc = null, Func&lt;string, string, bool&gt;? setFunc = null, Func&lt;string, RegistryKey&gt;? createRegFunc = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>getFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>setFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>createRegFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.win32.registrykey">RegistryKey</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings__ctor_" data-uid="SharedLib.Model.Settings.AppSettings.#ctor*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings__ctor_System_String_" data-uid="SharedLib.Model.Settings.AppSettings.#ctor(System.String)">
-  AppSettings(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L45"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppSettings(string registryKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppSettings(string registryKey, Func&lt;string, string, string&gt;? getFunc = null, Func&lt;string, string, bool&gt;? setFunc = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>registryKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>getFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>setFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -281,7 +250,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_AccessTokenKey" data-uid="SharedLib.Model.Settings.AppSettings.AccessTokenKey">
   AccessTokenKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -311,7 +280,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_CurrentVersionKey" data-uid="SharedLib.Model.Settings.AppSettings.CurrentVersionKey">
   CurrentVersionKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -341,7 +310,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_DeviceIdKey" data-uid="SharedLib.Model.Settings.AppSettings.DeviceIdKey">
   DeviceIdKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -371,7 +340,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_FirstHostnameKey" data-uid="SharedLib.Model.Settings.AppSettings.FirstHostnameKey">
   FirstHostnameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -401,7 +370,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_HostnameKey" data-uid="SharedLib.Model.Settings.AppSettings.HostnameKey">
   HostnameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -429,39 +398,9 @@
 
 
 
-  <h3 id="SharedLib_Model_Settings_AppSettings_LabelIdKey" data-uid="SharedLib.Model.Settings.AppSettings.LabelIdKey">
-  LabelIdKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L218"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LabelIdKey</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionStatusKey" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionStatusKey">
   LatestVersionStatusKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L175"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -491,7 +430,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_NetworkIFListKey" data-uid="SharedLib.Model.Settings.AppSettings.NetworkIFListKey">
   NetworkIFListKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -521,7 +460,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_UpdateChannelKey" data-uid="SharedLib.Model.Settings.AppSettings.UpdateChannelKey">
   UpdateChannelKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -551,7 +490,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_UsernameKey" data-uid="SharedLib.Model.Settings.AppSettings.UsernameKey">
   UsernameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -582,42 +521,11 @@
 </h2>
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_AccessToken_" data-uid="SharedLib.Model.Settings.AppSettings.AccessToken*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_AccessToken" data-uid="SharedLib.Model.Settings.AppSettings.AccessToken">
-  AccessToken
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L196"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string AccessToken { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_AccessTokenP_" data-uid="SharedLib.Model.Settings.AppSettings.AccessTokenP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_AccessTokenP" data-uid="SharedLib.Model.Settings.AppSettings.AccessTokenP">
   AccessTokenP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L115"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -644,42 +552,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_CurrentVersion_" data-uid="SharedLib.Model.Settings.AppSettings.CurrentVersion*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_CurrentVersion" data-uid="SharedLib.Model.Settings.AppSettings.CurrentVersion">
-  CurrentVersion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L494"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string CurrentVersion { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_CurrentVersionP_" data-uid="SharedLib.Model.Settings.AppSettings.CurrentVersionP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_CurrentVersionP" data-uid="SharedLib.Model.Settings.AppSettings.CurrentVersionP">
   CurrentVersionP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L289"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -706,42 +583,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_DeviceId_" data-uid="SharedLib.Model.Settings.AppSettings.DeviceId*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_DeviceId" data-uid="SharedLib.Model.Settings.AppSettings.DeviceId">
-  DeviceId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L168"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string DeviceId { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_DeviceIdP_" data-uid="SharedLib.Model.Settings.AppSettings.DeviceIdP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_DeviceIdP" data-uid="SharedLib.Model.Settings.AppSettings.DeviceIdP">
   DeviceIdP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -772,7 +618,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_FirstHostnameP" data-uid="SharedLib.Model.Settings.AppSettings.FirstHostnameP">
   FirstHostnameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -834,7 +680,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_HostnameP" data-uid="SharedLib.Model.Settings.AppSettings.HostnameP">
   HostnameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -861,166 +707,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_InitedLabelId_" data-uid="SharedLib.Model.Settings.AppSettings.InitedLabelId*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_InitedLabelId" data-uid="SharedLib.Model.Settings.AppSettings.InitedLabelId">
-  InitedLabelId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L138"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string InitedLabelId { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings_InitedUsername_" data-uid="SharedLib.Model.Settings.AppSettings.InitedUsername*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_InitedUsername" data-uid="SharedLib.Model.Settings.AppSettings.InitedUsername">
-  InitedUsername
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L129"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string InitedUsername { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings_LabelId_" data-uid="SharedLib.Model.Settings.AppSettings.LabelId*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LabelId" data-uid="SharedLib.Model.Settings.AppSettings.LabelId">
-  LabelId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L219"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LabelId { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings_LabelIdP_" data-uid="SharedLib.Model.Settings.AppSettings.LabelIdP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LabelIdP" data-uid="SharedLib.Model.Settings.AppSettings.LabelIdP">
-  LabelIdP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L225"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LabelIdP { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings_LastDirName_" data-uid="SharedLib.Model.Settings.AppSettings.LastDirName*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LastDirName" data-uid="SharedLib.Model.Settings.AppSettings.LastDirName">
-  LastDirName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L452"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LastDirName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LastDirNameP_" data-uid="SharedLib.Model.Settings.AppSettings.LastDirNameP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LastDirNameP" data-uid="SharedLib.Model.Settings.AppSettings.LastDirNameP">
   LastDirNameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L261"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1047,42 +738,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LastVersionDirPath_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionDirPath*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionDirPath" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionDirPath">
-  LastVersionDirPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L333"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LastVersionDirPath { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LastVersionDirPathP_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionDirPathP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionDirPathP" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionDirPathP">
   LastVersionDirPathP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1109,42 +769,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LastVersionExeName_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExeName*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionExeName" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExeName">
-  LastVersionExeName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L424"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LastVersionExeName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LastVersionExeNameP_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExeNameP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionExeNameP" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExeNameP">
   LastVersionExeNameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L245"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1171,42 +800,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LastVersionExePath_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExePath*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionExePath" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExePath">
-  LastVersionExePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L479"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LastVersionExePath { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LastVersionExePathP_" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExePathP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LastVersionExePathP" data-uid="SharedLib.Model.Settings.AppSettings.LastVersionExePathP">
   LastVersionExePathP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1233,42 +831,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LatestDirName_" data-uid="SharedLib.Model.Settings.AppSettings.LatestDirName*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LatestDirName" data-uid="SharedLib.Model.Settings.AppSettings.LatestDirName">
-  LatestDirName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L466"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestDirName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LatestDirNameP_" data-uid="SharedLib.Model.Settings.AppSettings.LatestDirNameP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestDirNameP" data-uid="SharedLib.Model.Settings.AppSettings.LatestDirNameP">
   LatestDirNameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L269"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1295,42 +862,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LatestVersionDirPath_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionDirPath*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionDirPath" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionDirPath">
-  LatestVersionDirPath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L379"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionDirPath { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LatestVersionDirPathP_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionDirPathP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionDirPathP" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionDirPathP">
   LatestVersionDirPathP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1357,42 +893,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LatestVersionExeName_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExeName*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionExeName" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExeName">
-  LatestVersionExeName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L438"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionExeName { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LatestVersionExeNameP_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExeNameP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionExeNameP" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExeNameP">
   LatestVersionExeNameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L253"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1419,42 +924,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LatestVersionExePath_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExePath*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionExePath" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExePath">
-  LatestVersionExePath
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L480"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionExePath { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LatestVersionExePathP_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExePathP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionExePathP" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionExePathP">
   LatestVersionExePathP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L280"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1481,42 +955,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_LatestVersionStatus_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionStatus*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionStatus" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionStatus">
-  LatestVersionStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L301"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionStatus { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_LatestVersionStatusP_" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionStatusP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_LatestVersionStatusP" data-uid="SharedLib.Model.Settings.AppSettings.LatestVersionStatusP">
   LatestVersionStatusP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1547,7 +990,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_NetworkIFList" data-uid="SharedLib.Model.Settings.AppSettings.NetworkIFList">
   NetworkIFList
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L507"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L296"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1605,42 +1048,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_UpdatingChannel_" data-uid="SharedLib.Model.Settings.AppSettings.UpdatingChannel*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_UpdatingChannel" data-uid="SharedLib.Model.Settings.AppSettings.UpdatingChannel">
-  UpdatingChannel
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L234"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string UpdatingChannel { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_UpdatingChannelP_" data-uid="SharedLib.Model.Settings.AppSettings.UpdatingChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_UpdatingChannelP" data-uid="SharedLib.Model.Settings.AppSettings.UpdatingChannelP">
   UpdatingChannelP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1667,42 +1079,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_Username_" data-uid="SharedLib.Model.Settings.AppSettings.Username*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_Username" data-uid="SharedLib.Model.Settings.AppSettings.Username">
-  Username
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L182"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Username { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_UsernameP_" data-uid="SharedLib.Model.Settings.AppSettings.UsernameP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_UsernameP" data-uid="SharedLib.Model.Settings.AppSettings.UsernameP">
   UsernameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1733,11 +1114,37 @@
 </h2>
 
 
+  <a id="SharedLib_Model_Settings_AppSettings_DeleteAll_" data-uid="SharedLib.Model.Settings.AppSettings.DeleteAll*"></a>
+
+  <h3 id="SharedLib_Model_Settings_AppSettings_DeleteAll" data-uid="SharedLib.Model.Settings.AppSettings.DeleteAll">
+  DeleteAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="SharedLib_Model_Settings_AppSettings_Get_" data-uid="SharedLib.Model.Settings.AppSettings.Get*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_Get_System_String_System_String_" data-uid="SharedLib.Model.Settings.AppSettings.Get(System.String,System.String)">
   Get(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1771,42 +1178,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_IsBetaChannel_" data-uid="SharedLib.Model.Settings.AppSettings.IsBetaChannel*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_IsBetaChannel" data-uid="SharedLib.Model.Settings.AppSettings.IsBetaChannel">
-  IsBetaChannel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L254"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsBetaChannel()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_IsBetaChannelP_" data-uid="SharedLib.Model.Settings.AppSettings.IsBetaChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsBetaChannelP" data-uid="SharedLib.Model.Settings.AppSettings.IsBetaChannelP">
   IsBetaChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1837,7 +1213,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsDevelopChannelP" data-uid="SharedLib.Model.Settings.AppSettings.IsDevelopChannelP">
   IsDevelopChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1864,42 +1240,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloaded_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloaded" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded">
-  IsLatestVersionStatusDownloaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L314"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusDownloaded()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloadedP_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloadedP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloadedP" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloadedP">
   IsLatestVersionStatusDownloadedP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1926,42 +1271,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOk_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOk" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk">
-  IsLatestVersionStatusOk()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L313"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusOk()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOkP_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOkP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOkP" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOkP">
   IsLatestVersionStatusOkP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1988,42 +1302,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchable_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchable" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable">
-  IsLatestVersionStatusUnlaunchable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L315"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusUnlaunchable()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchableP_" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchableP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchableP" data-uid="SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchableP">
   IsLatestVersionStatusUnlaunchableP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2054,7 +1337,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsStableChannelP" data-uid="SharedLib.Model.Settings.AppSettings.IsStableChannelP">
   IsStableChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L158"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2081,42 +1364,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_IsTestChannel_" data-uid="SharedLib.Model.Settings.AppSettings.IsTestChannel*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_IsTestChannel" data-uid="SharedLib.Model.Settings.AppSettings.IsTestChannel">
-  IsTestChannel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L255"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsTestChannel()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_IsTestChannelP_" data-uid="SharedLib.Model.Settings.AppSettings.IsTestChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_IsTestChannelP" data-uid="SharedLib.Model.Settings.AppSettings.IsTestChannelP">
   IsTestChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2147,7 +1399,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_Set_System_String_System_String_" data-uid="SharedLib.Model.Settings.AppSettings.Set(System.String,System.String)">
   Set(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2181,37 +1433,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_SetBetaChannel_" data-uid="SharedLib.Model.Settings.AppSettings.SetBetaChannel*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_SetBetaChannel" data-uid="SharedLib.Model.Settings.AppSettings.SetBetaChannel">
-  SetBetaChannel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L264"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetBetaChannel()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_SetBetaChannelP_" data-uid="SharedLib.Model.Settings.AppSettings.SetBetaChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetBetaChannelP" data-uid="SharedLib.Model.Settings.AppSettings.SetBetaChannelP">
   SetBetaChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2237,7 +1463,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetDevelopChannelP" data-uid="SharedLib.Model.Settings.AppSettings.SetDevelopChannelP">
   SetDevelopChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2259,37 +1485,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloaded_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloaded" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded">
-  SetLatestVersionStatusDownloaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L318"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusDownloaded()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloadedP_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloadedP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloadedP" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloadedP">
   SetLatestVersionStatusDownloadedP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2311,37 +1511,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOk_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOk" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk">
-  SetLatestVersionStatusOk()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L317"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusOk()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOkP_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOkP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOkP" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOkP">
   SetLatestVersionStatusOkP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2363,37 +1537,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchable_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchable" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable">
-  SetLatestVersionStatusUnlaunchable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L319"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusUnlaunchable()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchableP_" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchableP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchableP" data-uid="SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchableP">
   SetLatestVersionStatusUnlaunchableP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L190"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2419,7 +1567,7 @@
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetStableChannelP" data-uid="SharedLib.Model.Settings.AppSettings.SetStableChannelP">
   SetStableChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2441,37 +1589,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_AppSettings_SetTestChannel_" data-uid="SharedLib.Model.Settings.AppSettings.SetTestChannel*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_SetTestChannel" data-uid="SharedLib.Model.Settings.AppSettings.SetTestChannel">
-  SetTestChannel()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L265"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetTestChannel()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_AppSettings_SetTestChannelP_" data-uid="SharedLib.Model.Settings.AppSettings.SetTestChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_AppSettings_SetTestChannelP" data-uid="SharedLib.Model.Settings.AppSettings.SetTestChannelP">
   SetTestChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -2481,37 +1603,6 @@
     <pre><code class="lang-csharp hljs">public void SetTestChannelP()</code></pre>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_AppSettings_UpdateRegistryKey_" data-uid="SharedLib.Model.Settings.AppSettings.UpdateRegistryKey*"></a>
-
-  <h3 id="SharedLib_Model_Settings_AppSettings_UpdateRegistryKey_System_String_" data-uid="SharedLib.Model.Settings.AppSettings.UpdateRegistryKey(System.String)">
-  UpdateRegistryKey(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/AppSettings.cs/#L50"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UpdateRegistryKey(string? registryKey = null)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>registryKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

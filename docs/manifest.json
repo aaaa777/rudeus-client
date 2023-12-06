@@ -152,6 +152,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateMacRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateMacRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.Request.UpdateRequest.yml",
       "output": {
         ".html": {
@@ -442,6 +462,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Launcher.Procedure.Updater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Launcher.Procedure.Updater.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Launcher.Procedure.yml",
       "output": {
         ".html": {
@@ -586,6 +616,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Procedure.RegistryInitializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.RegistryRemover.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.RegistryRemover.html"
         }
       },
       "version": ""
@@ -832,6 +872,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Test.Launcher.FakeExecuter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Test.Launcher.FakeExecuter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Test.Launcher.ProgramTests.yml",
       "output": {
         ".html": {
@@ -906,6 +956,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Model.FakeLocalCertificate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.html"
         }
       },
       "version": ""
@@ -1006,6 +1066,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Procedure.IFakeProcedure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html"
         }
       },
       "version": ""

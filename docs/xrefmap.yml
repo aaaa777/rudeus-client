@@ -103,6 +103,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RemoteAPI.ApiSendInstalledAppsPath
   nameWithType: RemoteAPI.ApiSendInstalledAppsPath
+- uid: Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
+  name: ApiUpdateMacAddressPath
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateMacAddressPath
+  commentId: P:Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
+  fullName: Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
+  nameWithType: RemoteAPI.ApiUpdateMacAddressPath
+- uid: Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath*
+  name: ApiUpdateMacAddressPath
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateMacAddressPath_
+  commentId: Overload:Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
+  isSpec: "True"
+  fullName: Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
+  nameWithType: RemoteAPI.ApiUpdateMacAddressPath
 - uid: Rudeus.API.RemoteAPI.ApiUpdateMetadataPath
   name: ApiUpdateMetadataPath
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateMetadataPath
@@ -285,15 +298,15 @@ references:
   fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, Rudeus.API.Request.UpdateRequest)
   nameWithType: RemoteAPI.UpdateDevice(string, UpdateRequest)
   nameWithType.vb: RemoteAPI.UpdateDevice(String, UpdateRequest)
-- uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name: UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
-  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
-  name.vb: UpdateDevice(String, String, String, String, String, String, String, String, String, String)
-  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
-  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, String, String, String, String, String, String, String, String, String)
-  nameWithType: RemoteAPI.UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
-  nameWithType.vb: RemoteAPI.UpdateDevice(String, String, String, String, String, String, String, String, String, String)
+- uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.String)
+  name: UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_Boolean__System_String_
+  commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.String)
+  name.vb: UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
+  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
+  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
+  nameWithType: RemoteAPI.UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
+  nameWithType.vb: RemoteAPI.UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
 - uid: Rudeus.API.RemoteAPI.UpdateDevice*
   name: UpdateDevice
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_
@@ -301,6 +314,22 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RemoteAPI.UpdateDevice
   nameWithType: RemoteAPI.UpdateDevice
+- uid: Rudeus.API.RemoteAPI.UpdateMacAddress(System.String,Rudeus.API.Request.UpdateMacRequest)
+  name: UpdateMacAddress(string, UpdateMacRequest)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateMacAddress_System_String_Rudeus_API_Request_UpdateMacRequest_
+  commentId: M:Rudeus.API.RemoteAPI.UpdateMacAddress(System.String,Rudeus.API.Request.UpdateMacRequest)
+  name.vb: UpdateMacAddress(String, UpdateMacRequest)
+  fullName: Rudeus.API.RemoteAPI.UpdateMacAddress(string, Rudeus.API.Request.UpdateMacRequest)
+  fullName.vb: Rudeus.API.RemoteAPI.UpdateMacAddress(String, Rudeus.API.Request.UpdateMacRequest)
+  nameWithType: RemoteAPI.UpdateMacAddress(string, UpdateMacRequest)
+  nameWithType.vb: RemoteAPI.UpdateMacAddress(String, UpdateMacRequest)
+- uid: Rudeus.API.RemoteAPI.UpdateMacAddress*
+  name: UpdateMacAddress
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateMacAddress_
+  commentId: Overload:Rudeus.API.RemoteAPI.UpdateMacAddress
+  isSpec: "True"
+  fullName: Rudeus.API.RemoteAPI.UpdateMacAddress
+  nameWithType: RemoteAPI.UpdateMacAddress
 - uid: Rudeus.API.Request
   name: Rudeus.API.Request
   href: api/Rudeus.API.Request.html
@@ -797,6 +826,89 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Request.SendInstalledAppsRequestData.apps
   nameWithType: SendInstalledAppsRequestData.apps
+- uid: Rudeus.API.Request.UpdateMacRequest
+  name: UpdateMacRequest
+  href: api/Rudeus.API.Request.UpdateMacRequest.html
+  commentId: T:Rudeus.API.Request.UpdateMacRequest
+  fullName: Rudeus.API.Request.UpdateMacRequest
+  nameWithType: UpdateMacRequest
+- uid: Rudeus.API.Request.UpdateMacRequest.#ctor
+  name: UpdateMacRequest()
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest__ctor
+  commentId: M:Rudeus.API.Request.UpdateMacRequest.#ctor
+  name.vb: New()
+  fullName: Rudeus.API.Request.UpdateMacRequest.UpdateMacRequest()
+  fullName.vb: Rudeus.API.Request.UpdateMacRequest.New()
+  nameWithType: UpdateMacRequest.UpdateMacRequest()
+  nameWithType.vb: UpdateMacRequest.New()
+- uid: Rudeus.API.Request.UpdateMacRequest.#ctor*
+  name: UpdateMacRequest
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest__ctor_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequest.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Rudeus.API.Request.UpdateMacRequest.UpdateMacRequest
+  fullName.vb: Rudeus.API.Request.UpdateMacRequest.New
+  nameWithType: UpdateMacRequest.UpdateMacRequest
+  nameWithType.vb: UpdateMacRequest.New
+- uid: Rudeus.API.Request.UpdateMacRequest.request_data
+  name: request_data
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest_request_data
+  commentId: P:Rudeus.API.Request.UpdateMacRequest.request_data
+  fullName: Rudeus.API.Request.UpdateMacRequest.request_data
+  nameWithType: UpdateMacRequest.request_data
+- uid: Rudeus.API.Request.UpdateMacRequest.request_data*
+  name: request_data
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest_request_data_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequest.request_data
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacRequest.request_data
+  nameWithType: UpdateMacRequest.request_data
+- uid: Rudeus.API.Request.UpdateMacRequest.type
+  name: type
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest_type
+  commentId: P:Rudeus.API.Request.UpdateMacRequest.type
+  fullName: Rudeus.API.Request.UpdateMacRequest.type
+  nameWithType: UpdateMacRequest.type
+- uid: Rudeus.API.Request.UpdateMacRequest.type*
+  name: type
+  href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest_type_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequest.type
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacRequest.type
+  nameWithType: UpdateMacRequest.type
+- uid: Rudeus.API.Request.UpdateMacRequestData
+  name: UpdateMacRequestData
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html
+  commentId: T:Rudeus.API.Request.UpdateMacRequestData
+  fullName: Rudeus.API.Request.UpdateMacRequestData
+  nameWithType: UpdateMacRequestData
+- uid: Rudeus.API.Request.UpdateMacRequestData.interface_name
+  name: interface_name
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interface_name
+  commentId: P:Rudeus.API.Request.UpdateMacRequestData.interface_name
+  fullName: Rudeus.API.Request.UpdateMacRequestData.interface_name
+  nameWithType: UpdateMacRequestData.interface_name
+- uid: Rudeus.API.Request.UpdateMacRequestData.interface_name*
+  name: interface_name
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interface_name_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.interface_name
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacRequestData.interface_name
+  nameWithType: UpdateMacRequestData.interface_name
+- uid: Rudeus.API.Request.UpdateMacRequestData.mac_address
+  name: mac_address
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_mac_address
+  commentId: P:Rudeus.API.Request.UpdateMacRequestData.mac_address
+  fullName: Rudeus.API.Request.UpdateMacRequestData.mac_address
+  nameWithType: UpdateMacRequestData.mac_address
+- uid: Rudeus.API.Request.UpdateMacRequestData.mac_address*
+  name: mac_address
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_mac_address_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.mac_address
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacRequestData.mac_address
+  nameWithType: UpdateMacRequestData.mac_address
 - uid: Rudeus.API.Request.UpdateRequest
   name: UpdateRequest
   href: api/Rudeus.API.Request.UpdateRequest.html
@@ -1503,6 +1615,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Application.TaskTrayForm.Dispose
   nameWithType: TaskTrayForm.Dispose
+- uid: Rudeus.Application.TaskTrayForm.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm_RootSettings
+  commentId: P:Rudeus.Application.TaskTrayForm.RootSettings
+  fullName: Rudeus.Application.TaskTrayForm.RootSettings
+  nameWithType: TaskTrayForm.RootSettings
+- uid: Rudeus.Application.TaskTrayForm.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm_RootSettings_
+  commentId: Overload:Rudeus.Application.TaskTrayForm.RootSettings
+  isSpec: "True"
+  fullName: Rudeus.Application.TaskTrayForm.RootSettings
+  nameWithType: TaskTrayForm.RootSettings
 - uid: Rudeus.Command
   name: Rudeus.Command
   href: api/Rudeus.Command.html
@@ -1699,6 +1824,12 @@ references:
   commentId: F:Rudeus.Constants.ApiSendInstalledAppsPath
   fullName: Rudeus.Constants.ApiSendInstalledAppsPath
   nameWithType: Constants.ApiSendInstalledAppsPath
+- uid: Rudeus.Constants.ApiUpdateMacAddressPath
+  name: ApiUpdateMacAddressPath
+  href: api/Rudeus.Constants.html#Rudeus_Constants_ApiUpdateMacAddressPath
+  commentId: F:Rudeus.Constants.ApiUpdateMacAddressPath
+  fullName: Rudeus.Constants.ApiUpdateMacAddressPath
+  nameWithType: Constants.ApiUpdateMacAddressPath
 - uid: Rudeus.Constants.ApiUpdateMetadataPath
   name: ApiUpdateMetadataPath
   href: api/Rudeus.Constants.html#Rudeus_Constants_ApiUpdateMetadataPath
@@ -2205,6 +2336,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Launcher.Procedure.Executer.Run
   nameWithType: Executer.Run
+- uid: Rudeus.Launcher.Procedure.Executer.RunExe
+  name: RunExe()
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_RunExe
+  commentId: M:Rudeus.Launcher.Procedure.Executer.RunExe
+  fullName: Rudeus.Launcher.Procedure.Executer.RunExe()
+  nameWithType: Executer.RunExe()
+- uid: Rudeus.Launcher.Procedure.Executer.RunExe*
+  name: RunExe
+  href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_RunExe_
+  commentId: Overload:Rudeus.Launcher.Procedure.Executer.RunExe
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.Executer.RunExe
+  nameWithType: Executer.RunExe
 - uid: Rudeus.Launcher.Procedure.Executer.StartProcess
   name: StartProcess
   href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_StartProcess
@@ -2237,12 +2381,173 @@ references:
   isSpec: "True"
   fullName: Rudeus.Launcher.Procedure.IExecuter.ExitCode
   nameWithType: IExecuter.ExitCode
+- uid: Rudeus.Launcher.Procedure.IExecuter.RunExe
+  name: RunExe()
+  href: api/Rudeus.Launcher.Procedure.IExecuter.html#Rudeus_Launcher_Procedure_IExecuter_RunExe
+  commentId: M:Rudeus.Launcher.Procedure.IExecuter.RunExe
+  fullName: Rudeus.Launcher.Procedure.IExecuter.RunExe()
+  nameWithType: IExecuter.RunExe()
+- uid: Rudeus.Launcher.Procedure.IExecuter.RunExe*
+  name: RunExe
+  href: api/Rudeus.Launcher.Procedure.IExecuter.html#Rudeus_Launcher_Procedure_IExecuter_RunExe_
+  commentId: Overload:Rudeus.Launcher.Procedure.IExecuter.RunExe
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.IExecuter.RunExe
+  nameWithType: IExecuter.RunExe
+- uid: Rudeus.Launcher.Procedure.Updater
+  name: Updater
+  href: api/Rudeus.Launcher.Procedure.Updater.html
+  commentId: T:Rudeus.Launcher.Procedure.Updater
+  fullName: Rudeus.Launcher.Procedure.Updater
+  nameWithType: Updater
+- uid: Rudeus.Launcher.Procedure.Updater.#ctor(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IRootSettings)
+  name: Updater(IAppSettings, IRootSettings)
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater__ctor_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IRootSettings_
+  commentId: M:Rudeus.Launcher.Procedure.Updater.#ctor(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IRootSettings)
+  name.vb: New(IAppSettings, IRootSettings)
+  fullName: Rudeus.Launcher.Procedure.Updater.Updater(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IRootSettings)
+  fullName.vb: Rudeus.Launcher.Procedure.Updater.New(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IRootSettings)
+  nameWithType: Updater.Updater(IAppSettings, IRootSettings)
+  nameWithType.vb: Updater.New(IAppSettings, IRootSettings)
+- uid: Rudeus.Launcher.Procedure.Updater.#ctor*
+  name: Updater
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater__ctor_
+  commentId: Overload:Rudeus.Launcher.Procedure.Updater.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Rudeus.Launcher.Procedure.Updater.Updater
+  fullName.vb: Rudeus.Launcher.Procedure.Updater.New
+  nameWithType: Updater.Updater
+  nameWithType.vb: Updater.New
+- uid: Rudeus.Launcher.Procedure.Updater.AppSettings
+  name: AppSettings
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_AppSettings
+  commentId: P:Rudeus.Launcher.Procedure.Updater.AppSettings
+  fullName: Rudeus.Launcher.Procedure.Updater.AppSettings
+  nameWithType: Updater.AppSettings
+- uid: Rudeus.Launcher.Procedure.Updater.AppSettings*
+  name: AppSettings
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_AppSettings_
+  commentId: Overload:Rudeus.Launcher.Procedure.Updater.AppSettings
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.Updater.AppSettings
+  nameWithType: Updater.AppSettings
+- uid: Rudeus.Launcher.Procedure.Updater.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_RootSettings
+  commentId: P:Rudeus.Launcher.Procedure.Updater.RootSettings
+  fullName: Rudeus.Launcher.Procedure.Updater.RootSettings
+  nameWithType: Updater.RootSettings
+- uid: Rudeus.Launcher.Procedure.Updater.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_RootSettings_
+  commentId: Overload:Rudeus.Launcher.Procedure.Updater.RootSettings
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.Updater.RootSettings
+  nameWithType: Updater.RootSettings
+- uid: Rudeus.Launcher.Procedure.Updater.Run
+  name: Run()
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_Run
+  commentId: M:Rudeus.Launcher.Procedure.Updater.Run
+  fullName: Rudeus.Launcher.Procedure.Updater.Run()
+  nameWithType: Updater.Run()
+- uid: Rudeus.Launcher.Procedure.Updater.Run*
+  name: Run
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_Run_
+  commentId: Overload:Rudeus.Launcher.Procedure.Updater.Run
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.Updater.Run
+  nameWithType: Updater.Run
+- uid: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(System.String,System.String)
+  name: ShouldUpdate(string, string)
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_ShouldUpdate_System_String_System_String_
+  commentId: M:Rudeus.Launcher.Procedure.Updater.ShouldUpdate(System.String,System.String)
+  name.vb: ShouldUpdate(String, String)
+  fullName: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(string, string)
+  fullName.vb: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(String, String)
+  nameWithType: Updater.ShouldUpdate(string, string)
+  nameWithType.vb: Updater.ShouldUpdate(String, String)
+- uid: Rudeus.Launcher.Procedure.Updater.ShouldUpdate*
+  name: ShouldUpdate
+  href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_ShouldUpdate_
+  commentId: Overload:Rudeus.Launcher.Procedure.Updater.ShouldUpdate
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Procedure.Updater.ShouldUpdate
+  nameWithType: Updater.ShouldUpdate
 - uid: Rudeus.Launcher.Program
   name: Program
   href: api/Rudeus.Launcher.Program.html
   commentId: T:Rudeus.Launcher.Program
   fullName: Rudeus.Launcher.Program
   nameWithType: Program
+- uid: Rudeus.Launcher.Program.AppSettings
+  name: AppSettings
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_AppSettings
+  commentId: P:Rudeus.Launcher.Program.AppSettings
+  fullName: Rudeus.Launcher.Program.AppSettings
+  nameWithType: Program.AppSettings
+- uid: Rudeus.Launcher.Program.AppSettings*
+  name: AppSettings
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_AppSettings_
+  commentId: Overload:Rudeus.Launcher.Program.AppSettings
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.AppSettings
+  nameWithType: Program.AppSettings
+- uid: Rudeus.Launcher.Program.ArgsStr
+  name: ArgsStr
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_ArgsStr
+  commentId: P:Rudeus.Launcher.Program.ArgsStr
+  fullName: Rudeus.Launcher.Program.ArgsStr
+  nameWithType: Program.ArgsStr
+- uid: Rudeus.Launcher.Program.ArgsStr*
+  name: ArgsStr
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_ArgsStr_
+  commentId: Overload:Rudeus.Launcher.Program.ArgsStr
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.ArgsStr
+  nameWithType: Program.ArgsStr
+- uid: Rudeus.Launcher.Program.Executer
+  name: Executer
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Executer
+  commentId: P:Rudeus.Launcher.Program.Executer
+  fullName: Rudeus.Launcher.Program.Executer
+  nameWithType: Program.Executer
+- uid: Rudeus.Launcher.Program.Executer*
+  name: Executer
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Executer_
+  commentId: Overload:Rudeus.Launcher.Program.Executer
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.Executer
+  nameWithType: Program.Executer
+- uid: Rudeus.Launcher.Program.ExitFunc
+  name: ExitFunc
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_ExitFunc
+  commentId: P:Rudeus.Launcher.Program.ExitFunc
+  fullName: Rudeus.Launcher.Program.ExitFunc
+  nameWithType: Program.ExitFunc
+- uid: Rudeus.Launcher.Program.ExitFunc*
+  name: ExitFunc
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_ExitFunc_
+  commentId: Overload:Rudeus.Launcher.Program.ExitFunc
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.ExitFunc
+  nameWithType: Program.ExitFunc
+- uid: Rudeus.Launcher.Program.JoinArgs(System.String[])
+  name: JoinArgs(string[])
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_JoinArgs_System_String___
+  commentId: M:Rudeus.Launcher.Program.JoinArgs(System.String[])
+  name.vb: JoinArgs(String())
+  fullName: Rudeus.Launcher.Program.JoinArgs(string[])
+  fullName.vb: Rudeus.Launcher.Program.JoinArgs(String())
+  nameWithType: Program.JoinArgs(string[])
+  nameWithType.vb: Program.JoinArgs(String())
+- uid: Rudeus.Launcher.Program.JoinArgs*
+  name: JoinArgs
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_JoinArgs_
+  commentId: Overload:Rudeus.Launcher.Program.JoinArgs
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.JoinArgs
+  nameWithType: Program.JoinArgs
 - uid: Rudeus.Launcher.Program.Main(System.String[])
   name: Main(string[])
   href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Main_System_String___
@@ -2272,58 +2577,32 @@ references:
   isSpec: "True"
   fullName: Rudeus.Launcher.Program.MainAsync
   nameWithType: Program.MainAsync
-- uid: Rudeus.Launcher.Program._appSettings
-  name: _appSettings
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__appSettings
-  commentId: P:Rudeus.Launcher.Program._appSettings
-  fullName: Rudeus.Launcher.Program._appSettings
-  nameWithType: Program._appSettings
-- uid: Rudeus.Launcher.Program._appSettings*
-  name: _appSettings
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__appSettings_
-  commentId: Overload:Rudeus.Launcher.Program._appSettings
+- uid: Rudeus.Launcher.Program.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_RootSettings
+  commentId: P:Rudeus.Launcher.Program.RootSettings
+  fullName: Rudeus.Launcher.Program.RootSettings
+  nameWithType: Program.RootSettings
+- uid: Rudeus.Launcher.Program.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_RootSettings_
+  commentId: Overload:Rudeus.Launcher.Program.RootSettings
   isSpec: "True"
-  fullName: Rudeus.Launcher.Program._appSettings
-  nameWithType: Program._appSettings
-- uid: Rudeus.Launcher.Program._argsStr
-  name: _argsStr
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__argsStr
-  commentId: P:Rudeus.Launcher.Program._argsStr
-  fullName: Rudeus.Launcher.Program._argsStr
-  nameWithType: Program._argsStr
-- uid: Rudeus.Launcher.Program._argsStr*
-  name: _argsStr
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__argsStr_
-  commentId: Overload:Rudeus.Launcher.Program._argsStr
+  fullName: Rudeus.Launcher.Program.RootSettings
+  nameWithType: Program.RootSettings
+- uid: Rudeus.Launcher.Program.Updater
+  name: Updater
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Updater
+  commentId: P:Rudeus.Launcher.Program.Updater
+  fullName: Rudeus.Launcher.Program.Updater
+  nameWithType: Program.Updater
+- uid: Rudeus.Launcher.Program.Updater*
+  name: Updater
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Updater_
+  commentId: Overload:Rudeus.Launcher.Program.Updater
   isSpec: "True"
-  fullName: Rudeus.Launcher.Program._argsStr
-  nameWithType: Program._argsStr
-- uid: Rudeus.Launcher.Program._launcher
-  name: _launcher
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__launcher
-  commentId: P:Rudeus.Launcher.Program._launcher
-  fullName: Rudeus.Launcher.Program._launcher
-  nameWithType: Program._launcher
-- uid: Rudeus.Launcher.Program._launcher*
-  name: _launcher
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__launcher_
-  commentId: Overload:Rudeus.Launcher.Program._launcher
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Program._launcher
-  nameWithType: Program._launcher
-- uid: Rudeus.Launcher.Program._updater
-  name: _updater
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__updater
-  commentId: P:Rudeus.Launcher.Program._updater
-  fullName: Rudeus.Launcher.Program._updater
-  nameWithType: Program._updater
-- uid: Rudeus.Launcher.Program._updater*
-  name: _updater
-  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__updater_
-  commentId: Overload:Rudeus.Launcher.Program._updater
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Program._updater
-  nameWithType: Program._updater
+  fullName: Rudeus.Launcher.Program.Updater
+  nameWithType: Program.Updater
 - uid: Rudeus.Launcher.Updater
   name: Updater
   href: api/Rudeus.Launcher.Updater.html
@@ -3229,6 +3508,96 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.RegistryInitializer.Run
   nameWithType: RegistryInitializer.Run
+- uid: Rudeus.Procedure.RegistryRemover
+  name: RegistryRemover
+  href: api/Rudeus.Procedure.RegistryRemover.html
+  commentId: T:Rudeus.Procedure.RegistryRemover
+  fullName: Rudeus.Procedure.RegistryRemover
+  nameWithType: RegistryRemover
+- uid: Rudeus.Procedure.RegistryRemover.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+  name: RegistryRemover(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover__ctor_SharedLib_Model_Settings_IRootSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_
+  commentId: M:Rudeus.Procedure.RegistryRemover.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+  name.vb: New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
+  fullName: Rudeus.Procedure.RegistryRemover.RegistryRemover(SharedLib.Model.Settings.IRootSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?)
+  fullName.vb: Rudeus.Procedure.RegistryRemover.New(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType: RegistryRemover.RegistryRemover(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  nameWithType.vb: RegistryRemover.New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
+- uid: Rudeus.Procedure.RegistryRemover.#ctor*
+  name: RegistryRemover
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover__ctor_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Rudeus.Procedure.RegistryRemover.RegistryRemover
+  fullName.vb: Rudeus.Procedure.RegistryRemover.New
+  nameWithType: RegistryRemover.RegistryRemover
+  nameWithType.vb: RegistryRemover.New
+- uid: Rudeus.Procedure.RegistryRemover.BfSettings
+  name: BfSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_BfSettings
+  commentId: P:Rudeus.Procedure.RegistryRemover.BfSettings
+  fullName: Rudeus.Procedure.RegistryRemover.BfSettings
+  nameWithType: RegistryRemover.BfSettings
+- uid: Rudeus.Procedure.RegistryRemover.BfSettings*
+  name: BfSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_BfSettings_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.BfSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.RegistryRemover.BfSettings
+  nameWithType: RegistryRemover.BfSettings
+- uid: Rudeus.Procedure.RegistryRemover.BgSettings
+  name: BgSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_BgSettings
+  commentId: P:Rudeus.Procedure.RegistryRemover.BgSettings
+  fullName: Rudeus.Procedure.RegistryRemover.BgSettings
+  nameWithType: RegistryRemover.BgSettings
+- uid: Rudeus.Procedure.RegistryRemover.BgSettings*
+  name: BgSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_BgSettings_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.BgSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.RegistryRemover.BgSettings
+  nameWithType: RegistryRemover.BgSettings
+- uid: Rudeus.Procedure.RegistryRemover.ConfSettings
+  name: ConfSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_ConfSettings
+  commentId: P:Rudeus.Procedure.RegistryRemover.ConfSettings
+  fullName: Rudeus.Procedure.RegistryRemover.ConfSettings
+  nameWithType: RegistryRemover.ConfSettings
+- uid: Rudeus.Procedure.RegistryRemover.ConfSettings*
+  name: ConfSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_ConfSettings_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.ConfSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.RegistryRemover.ConfSettings
+  nameWithType: RegistryRemover.ConfSettings
+- uid: Rudeus.Procedure.RegistryRemover.InnoSettings
+  name: InnoSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_InnoSettings
+  commentId: P:Rudeus.Procedure.RegistryRemover.InnoSettings
+  fullName: Rudeus.Procedure.RegistryRemover.InnoSettings
+  nameWithType: RegistryRemover.InnoSettings
+- uid: Rudeus.Procedure.RegistryRemover.InnoSettings*
+  name: InnoSettings
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_InnoSettings_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.InnoSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.RegistryRemover.InnoSettings
+  nameWithType: RegistryRemover.InnoSettings
+- uid: Rudeus.Procedure.RegistryRemover.Run
+  name: Run()
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_Run
+  commentId: M:Rudeus.Procedure.RegistryRemover.Run
+  fullName: Rudeus.Procedure.RegistryRemover.Run()
+  nameWithType: RegistryRemover.Run()
+- uid: Rudeus.Procedure.RegistryRemover.Run*
+  name: Run
+  href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_Run_
+  commentId: Overload:Rudeus.Procedure.RegistryRemover.Run
+  isSpec: "True"
+  fullName: Rudeus.Procedure.RegistryRemover.Run
+  nameWithType: RegistryRemover.Run
 - uid: Rudeus.Procedure.ScheduledRegularExecuter
   name: ScheduledRegularExecuter
   href: api/Rudeus.Procedure.ScheduledRegularExecuter.html
@@ -3389,6 +3758,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.UserLoginExecuter.OpenBrowser
   nameWithType: UserLoginExecuter.OpenBrowser
+- uid: Rudeus.Procedure.UserLoginExecuter.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Procedure.UserLoginExecuter.html#Rudeus_Procedure_UserLoginExecuter_RootSettings
+  commentId: P:Rudeus.Procedure.UserLoginExecuter.RootSettings
+  fullName: Rudeus.Procedure.UserLoginExecuter.RootSettings
+  nameWithType: UserLoginExecuter.RootSettings
+- uid: Rudeus.Procedure.UserLoginExecuter.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Procedure.UserLoginExecuter.html#Rudeus_Procedure_UserLoginExecuter_RootSettings_
+  commentId: Overload:Rudeus.Procedure.UserLoginExecuter.RootSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.UserLoginExecuter.RootSettings
+  nameWithType: UserLoginExecuter.RootSettings
 - uid: Rudeus.Procedure.UserLoginExecuter.Run
   name: Run()
   href: api/Rudeus.Procedure.UserLoginExecuter.html#Rudeus_Procedure_UserLoginExecuter_Run
@@ -3542,6 +3924,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Utils.RegisterDeviceAndSetData
   nameWithType: Utils.RegisterDeviceAndSetData
+- uid: Rudeus.Utils.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Utils.html#Rudeus_Utils_RootSettings
+  commentId: P:Rudeus.Utils.RootSettings
+  fullName: Rudeus.Utils.RootSettings
+  nameWithType: Utils.RootSettings
+- uid: Rudeus.Utils.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Utils.html#Rudeus_Utils_RootSettings_
+  commentId: Overload:Rudeus.Utils.RootSettings
+  isSpec: "True"
+  fullName: Rudeus.Utils.RootSettings
+  nameWithType: Utils.RootSettings
 - uid: Rudeus.Utils.WebPortalUrl
   name: WebPortalUrl
   href: api/Rudeus.Utils.html#Rudeus_Utils_WebPortalUrl
@@ -3579,32 +3974,32 @@ references:
   fullName.vb: Rudeus.Watchdogs.UpdateWatcher.New
   nameWithType: UpdateWatcher.UpdateWatcher
   nameWithType.vb: UpdateWatcher.New
-- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges
-  name: BuildUpdateRequestWithChanges()
-  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequestWithChanges
-  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges
-  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges()
-  nameWithType: UpdateWatcher.BuildUpdateRequestWithChanges()
-- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges*
-  name: BuildUpdateRequestWithChanges
-  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequestWithChanges_
-  commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
+  name: BuildUpdateMacRequest()
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateMacRequest
+  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest()
+  nameWithType: UpdateWatcher.BuildUpdateMacRequest()
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest*
+  name: BuildUpdateMacRequest
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateMacRequest_
+  commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
   isSpec: "True"
-  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequestWithChanges
-  nameWithType: UpdateWatcher.BuildUpdateRequestWithChanges
-- uid: Rudeus.Watchdogs.UpdateWatcher.IsChanged
-  name: IsChanged()
-  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_IsChanged
-  commentId: M:Rudeus.Watchdogs.UpdateWatcher.IsChanged
-  fullName: Rudeus.Watchdogs.UpdateWatcher.IsChanged()
-  nameWithType: UpdateWatcher.IsChanged()
-- uid: Rudeus.Watchdogs.UpdateWatcher.IsChanged*
-  name: IsChanged
-  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_IsChanged_
-  commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.IsChanged
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
+  nameWithType: UpdateWatcher.BuildUpdateMacRequest
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
+  name: BuildUpdateRequest()
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequest
+  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest()
+  nameWithType: UpdateWatcher.BuildUpdateRequest()
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest*
+  name: BuildUpdateRequest
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequest_
+  commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
   isSpec: "True"
-  fullName: Rudeus.Watchdogs.UpdateWatcher.IsChanged
-  nameWithType: UpdateWatcher.IsChanged
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
+  nameWithType: UpdateWatcher.BuildUpdateRequest
 - uid: Rudeus.Watchdogs.UpdateWatcher.LM
   name: LM
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_LM
@@ -3724,24 +4119,15 @@ references:
   commentId: T:SharedLib.Model.Settings.AppSettings
   fullName: SharedLib.Model.Settings.AppSettings
   nameWithType: AppSettings
-- uid: SharedLib.Model.Settings.AppSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})
-  name: AppSettings(Func<string, string, string>?, Func<string, string, bool>?, Func<string, RegistryKey>?)
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__System_Func_System_String_Microsoft_Win32_RegistryKey__
-  commentId: M:SharedLib.Model.Settings.AppSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})
-  name.vb: New(Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, RegistryKey))
-  fullName: SharedLib.Model.Settings.AppSettings.AppSettings(System.Func<string, string, string>?, System.Func<string, string, bool>?, System.Func<string, Microsoft.Win32.RegistryKey>?)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.New(System.Func(Of String, String, String), System.Func(Of String, String, Boolean), System.Func(Of String, Microsoft.Win32.RegistryKey))
-  nameWithType: AppSettings.AppSettings(Func<string, string, string>?, Func<string, string, bool>?, Func<string, RegistryKey>?)
-  nameWithType.vb: AppSettings.New(Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, RegistryKey))
-- uid: SharedLib.Model.Settings.AppSettings.#ctor(System.String)
-  name: AppSettings(string)
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_System_String_
-  commentId: M:SharedLib.Model.Settings.AppSettings.#ctor(System.String)
-  name.vb: New(String)
-  fullName: SharedLib.Model.Settings.AppSettings.AppSettings(string)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.New(String)
-  nameWithType: AppSettings.AppSettings(string)
-  nameWithType.vb: AppSettings.New(String)
+- uid: SharedLib.Model.Settings.AppSettings.#ctor(System.String,System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
+  name: AppSettings(string, Func<string, string, string>?, Func<string, string, bool>?)
+  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_System_String_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__
+  commentId: M:SharedLib.Model.Settings.AppSettings.#ctor(System.String,System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
+  name.vb: New(String, Func(Of String, String, String), Func(Of String, String, Boolean))
+  fullName: SharedLib.Model.Settings.AppSettings.AppSettings(string, System.Func<string, string, string>?, System.Func<string, string, bool>?)
+  fullName.vb: SharedLib.Model.Settings.AppSettings.New(String, System.Func(Of String, String, String), System.Func(Of String, String, Boolean))
+  nameWithType: AppSettings.AppSettings(string, Func<string, string, string>?, Func<string, string, bool>?)
+  nameWithType.vb: AppSettings.New(String, Func(Of String, String, String), Func(Of String, String, Boolean))
 - uid: SharedLib.Model.Settings.AppSettings.#ctor*
   name: AppSettings
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_
@@ -3752,19 +4138,6 @@ references:
   fullName.vb: SharedLib.Model.Settings.AppSettings.New
   nameWithType: AppSettings.AppSettings
   nameWithType.vb: AppSettings.New
-- uid: SharedLib.Model.Settings.AppSettings.AccessToken
-  name: AccessToken
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_AccessToken
-  commentId: P:SharedLib.Model.Settings.AppSettings.AccessToken
-  fullName: SharedLib.Model.Settings.AppSettings.AccessToken
-  nameWithType: AppSettings.AccessToken
-- uid: SharedLib.Model.Settings.AppSettings.AccessToken*
-  name: AccessToken
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_AccessToken_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.AccessToken
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.AccessToken
-  nameWithType: AppSettings.AccessToken
 - uid: SharedLib.Model.Settings.AppSettings.AccessTokenKey
   name: AccessTokenKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_AccessTokenKey
@@ -3784,19 +4157,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.AccessTokenP
   nameWithType: AppSettings.AccessTokenP
-- uid: SharedLib.Model.Settings.AppSettings.CurrentVersion
-  name: CurrentVersion
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_CurrentVersion
-  commentId: P:SharedLib.Model.Settings.AppSettings.CurrentVersion
-  fullName: SharedLib.Model.Settings.AppSettings.CurrentVersion
-  nameWithType: AppSettings.CurrentVersion
-- uid: SharedLib.Model.Settings.AppSettings.CurrentVersion*
-  name: CurrentVersion
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_CurrentVersion_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.CurrentVersion
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.CurrentVersion
-  nameWithType: AppSettings.CurrentVersion
 - uid: SharedLib.Model.Settings.AppSettings.CurrentVersionKey
   name: CurrentVersionKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_CurrentVersionKey
@@ -3816,19 +4176,19 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.CurrentVersionP
   nameWithType: AppSettings.CurrentVersionP
-- uid: SharedLib.Model.Settings.AppSettings.DeviceId
-  name: DeviceId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_DeviceId
-  commentId: P:SharedLib.Model.Settings.AppSettings.DeviceId
-  fullName: SharedLib.Model.Settings.AppSettings.DeviceId
-  nameWithType: AppSettings.DeviceId
-- uid: SharedLib.Model.Settings.AppSettings.DeviceId*
-  name: DeviceId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_DeviceId_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.DeviceId
+- uid: SharedLib.Model.Settings.AppSettings.DeleteAll
+  name: DeleteAll()
+  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_DeleteAll
+  commentId: M:SharedLib.Model.Settings.AppSettings.DeleteAll
+  fullName: SharedLib.Model.Settings.AppSettings.DeleteAll()
+  nameWithType: AppSettings.DeleteAll()
+- uid: SharedLib.Model.Settings.AppSettings.DeleteAll*
+  name: DeleteAll
+  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_DeleteAll_
+  commentId: Overload:SharedLib.Model.Settings.AppSettings.DeleteAll
   isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.DeviceId
-  nameWithType: AppSettings.DeviceId
+  fullName: SharedLib.Model.Settings.AppSettings.DeleteAll
+  nameWithType: AppSettings.DeleteAll
 - uid: SharedLib.Model.Settings.AppSettings.DeviceIdKey
   name: DeviceIdKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_DeviceIdKey
@@ -3915,45 +4275,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.HostnameP
   nameWithType: AppSettings.HostnameP
-- uid: SharedLib.Model.Settings.AppSettings.InitedLabelId
-  name: InitedLabelId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_InitedLabelId
-  commentId: P:SharedLib.Model.Settings.AppSettings.InitedLabelId
-  fullName: SharedLib.Model.Settings.AppSettings.InitedLabelId
-  nameWithType: AppSettings.InitedLabelId
-- uid: SharedLib.Model.Settings.AppSettings.InitedLabelId*
-  name: InitedLabelId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_InitedLabelId_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.InitedLabelId
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.InitedLabelId
-  nameWithType: AppSettings.InitedLabelId
-- uid: SharedLib.Model.Settings.AppSettings.InitedUsername
-  name: InitedUsername
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_InitedUsername
-  commentId: P:SharedLib.Model.Settings.AppSettings.InitedUsername
-  fullName: SharedLib.Model.Settings.AppSettings.InitedUsername
-  nameWithType: AppSettings.InitedUsername
-- uid: SharedLib.Model.Settings.AppSettings.InitedUsername*
-  name: InitedUsername
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_InitedUsername_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.InitedUsername
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.InitedUsername
-  nameWithType: AppSettings.InitedUsername
-- uid: SharedLib.Model.Settings.AppSettings.IsBetaChannel
-  name: IsBetaChannel()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsBetaChannel
-  commentId: M:SharedLib.Model.Settings.AppSettings.IsBetaChannel
-  fullName: SharedLib.Model.Settings.AppSettings.IsBetaChannel()
-  nameWithType: AppSettings.IsBetaChannel()
-- uid: SharedLib.Model.Settings.AppSettings.IsBetaChannel*
-  name: IsBetaChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsBetaChannel_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.IsBetaChannel
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.IsBetaChannel
-  nameWithType: AppSettings.IsBetaChannel
 - uid: SharedLib.Model.Settings.AppSettings.IsBetaChannelP
   name: IsBetaChannelP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsBetaChannelP
@@ -3980,19 +4301,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.IsDevelopChannelP
   nameWithType: AppSettings.IsDevelopChannelP
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded
-  name: IsLatestVersionStatusDownloaded()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloaded
-  commentId: M:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded()
-  nameWithType: AppSettings.IsLatestVersionStatusDownloaded()
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded*
-  name: IsLatestVersionStatusDownloaded
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloaded_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloaded
-  nameWithType: AppSettings.IsLatestVersionStatusDownloaded
 - uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloadedP
   name: IsLatestVersionStatusDownloadedP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusDownloadedP
@@ -4006,19 +4314,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusDownloadedP
   nameWithType: AppSettings.IsLatestVersionStatusDownloadedP
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk
-  name: IsLatestVersionStatusOk()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOk
-  commentId: M:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk()
-  nameWithType: AppSettings.IsLatestVersionStatusOk()
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk*
-  name: IsLatestVersionStatusOk
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOk_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk
-  nameWithType: AppSettings.IsLatestVersionStatusOk
 - uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOkP
   name: IsLatestVersionStatusOkP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusOkP
@@ -4032,19 +4327,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOkP
   nameWithType: AppSettings.IsLatestVersionStatusOkP
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable
-  name: IsLatestVersionStatusUnlaunchable()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchable
-  commentId: M:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable()
-  nameWithType: AppSettings.IsLatestVersionStatusUnlaunchable()
-- uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable*
-  name: IsLatestVersionStatusUnlaunchable
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchable_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchable
-  nameWithType: AppSettings.IsLatestVersionStatusUnlaunchable
 - uid: SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusUnlaunchableP
   name: IsLatestVersionStatusUnlaunchableP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsLatestVersionStatusUnlaunchableP
@@ -4071,19 +4353,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.IsStableChannelP
   nameWithType: AppSettings.IsStableChannelP
-- uid: SharedLib.Model.Settings.AppSettings.IsTestChannel
-  name: IsTestChannel()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsTestChannel
-  commentId: M:SharedLib.Model.Settings.AppSettings.IsTestChannel
-  fullName: SharedLib.Model.Settings.AppSettings.IsTestChannel()
-  nameWithType: AppSettings.IsTestChannel()
-- uid: SharedLib.Model.Settings.AppSettings.IsTestChannel*
-  name: IsTestChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsTestChannel_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.IsTestChannel
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.IsTestChannel
-  nameWithType: AppSettings.IsTestChannel
 - uid: SharedLib.Model.Settings.AppSettings.IsTestChannelP
   name: IsTestChannelP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_IsTestChannelP
@@ -4097,51 +4366,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.IsTestChannelP
   nameWithType: AppSettings.IsTestChannelP
-- uid: SharedLib.Model.Settings.AppSettings.LabelId
-  name: LabelId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LabelId
-  commentId: P:SharedLib.Model.Settings.AppSettings.LabelId
-  fullName: SharedLib.Model.Settings.AppSettings.LabelId
-  nameWithType: AppSettings.LabelId
-- uid: SharedLib.Model.Settings.AppSettings.LabelId*
-  name: LabelId
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LabelId_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LabelId
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LabelId
-  nameWithType: AppSettings.LabelId
-- uid: SharedLib.Model.Settings.AppSettings.LabelIdKey
-  name: LabelIdKey
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LabelIdKey
-  commentId: F:SharedLib.Model.Settings.AppSettings.LabelIdKey
-  fullName: SharedLib.Model.Settings.AppSettings.LabelIdKey
-  nameWithType: AppSettings.LabelIdKey
-- uid: SharedLib.Model.Settings.AppSettings.LabelIdP
-  name: LabelIdP
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LabelIdP
-  commentId: P:SharedLib.Model.Settings.AppSettings.LabelIdP
-  fullName: SharedLib.Model.Settings.AppSettings.LabelIdP
-  nameWithType: AppSettings.LabelIdP
-- uid: SharedLib.Model.Settings.AppSettings.LabelIdP*
-  name: LabelIdP
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LabelIdP_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LabelIdP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LabelIdP
-  nameWithType: AppSettings.LabelIdP
-- uid: SharedLib.Model.Settings.AppSettings.LastDirName
-  name: LastDirName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastDirName
-  commentId: P:SharedLib.Model.Settings.AppSettings.LastDirName
-  fullName: SharedLib.Model.Settings.AppSettings.LastDirName
-  nameWithType: AppSettings.LastDirName
-- uid: SharedLib.Model.Settings.AppSettings.LastDirName*
-  name: LastDirName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastDirName_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LastDirName
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LastDirName
-  nameWithType: AppSettings.LastDirName
 - uid: SharedLib.Model.Settings.AppSettings.LastDirNameP
   name: LastDirNameP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastDirNameP
@@ -4155,19 +4379,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LastDirNameP
   nameWithType: AppSettings.LastDirNameP
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionDirPath
-  name: LastVersionDirPath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionDirPath
-  commentId: P:SharedLib.Model.Settings.AppSettings.LastVersionDirPath
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionDirPath
-  nameWithType: AppSettings.LastVersionDirPath
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionDirPath*
-  name: LastVersionDirPath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionDirPath_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LastVersionDirPath
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionDirPath
-  nameWithType: AppSettings.LastVersionDirPath
 - uid: SharedLib.Model.Settings.AppSettings.LastVersionDirPathP
   name: LastVersionDirPathP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionDirPathP
@@ -4181,19 +4392,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LastVersionDirPathP
   nameWithType: AppSettings.LastVersionDirPathP
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionExeName
-  name: LastVersionExeName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExeName
-  commentId: P:SharedLib.Model.Settings.AppSettings.LastVersionExeName
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionExeName
-  nameWithType: AppSettings.LastVersionExeName
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionExeName*
-  name: LastVersionExeName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExeName_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LastVersionExeName
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionExeName
-  nameWithType: AppSettings.LastVersionExeName
 - uid: SharedLib.Model.Settings.AppSettings.LastVersionExeNameP
   name: LastVersionExeNameP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExeNameP
@@ -4207,19 +4405,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LastVersionExeNameP
   nameWithType: AppSettings.LastVersionExeNameP
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionExePath
-  name: LastVersionExePath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExePath
-  commentId: P:SharedLib.Model.Settings.AppSettings.LastVersionExePath
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionExePath
-  nameWithType: AppSettings.LastVersionExePath
-- uid: SharedLib.Model.Settings.AppSettings.LastVersionExePath*
-  name: LastVersionExePath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExePath_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LastVersionExePath
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LastVersionExePath
-  nameWithType: AppSettings.LastVersionExePath
 - uid: SharedLib.Model.Settings.AppSettings.LastVersionExePathP
   name: LastVersionExePathP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LastVersionExePathP
@@ -4233,19 +4418,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LastVersionExePathP
   nameWithType: AppSettings.LastVersionExePathP
-- uid: SharedLib.Model.Settings.AppSettings.LatestDirName
-  name: LatestDirName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestDirName
-  commentId: P:SharedLib.Model.Settings.AppSettings.LatestDirName
-  fullName: SharedLib.Model.Settings.AppSettings.LatestDirName
-  nameWithType: AppSettings.LatestDirName
-- uid: SharedLib.Model.Settings.AppSettings.LatestDirName*
-  name: LatestDirName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestDirName_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LatestDirName
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LatestDirName
-  nameWithType: AppSettings.LatestDirName
 - uid: SharedLib.Model.Settings.AppSettings.LatestDirNameP
   name: LatestDirNameP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestDirNameP
@@ -4259,19 +4431,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LatestDirNameP
   nameWithType: AppSettings.LatestDirNameP
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionDirPath
-  name: LatestVersionDirPath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionDirPath
-  commentId: P:SharedLib.Model.Settings.AppSettings.LatestVersionDirPath
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionDirPath
-  nameWithType: AppSettings.LatestVersionDirPath
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionDirPath*
-  name: LatestVersionDirPath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionDirPath_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LatestVersionDirPath
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionDirPath
-  nameWithType: AppSettings.LatestVersionDirPath
 - uid: SharedLib.Model.Settings.AppSettings.LatestVersionDirPathP
   name: LatestVersionDirPathP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionDirPathP
@@ -4285,19 +4444,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LatestVersionDirPathP
   nameWithType: AppSettings.LatestVersionDirPathP
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionExeName
-  name: LatestVersionExeName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExeName
-  commentId: P:SharedLib.Model.Settings.AppSettings.LatestVersionExeName
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExeName
-  nameWithType: AppSettings.LatestVersionExeName
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionExeName*
-  name: LatestVersionExeName
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExeName_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LatestVersionExeName
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExeName
-  nameWithType: AppSettings.LatestVersionExeName
 - uid: SharedLib.Model.Settings.AppSettings.LatestVersionExeNameP
   name: LatestVersionExeNameP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExeNameP
@@ -4311,19 +4457,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExeNameP
   nameWithType: AppSettings.LatestVersionExeNameP
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionExePath
-  name: LatestVersionExePath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExePath
-  commentId: P:SharedLib.Model.Settings.AppSettings.LatestVersionExePath
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExePath
-  nameWithType: AppSettings.LatestVersionExePath
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionExePath*
-  name: LatestVersionExePath
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExePath_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LatestVersionExePath
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExePath
-  nameWithType: AppSettings.LatestVersionExePath
 - uid: SharedLib.Model.Settings.AppSettings.LatestVersionExePathP
   name: LatestVersionExePathP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionExePathP
@@ -4337,19 +4470,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.LatestVersionExePathP
   nameWithType: AppSettings.LatestVersionExePathP
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionStatus
-  name: LatestVersionStatus
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionStatus
-  commentId: P:SharedLib.Model.Settings.AppSettings.LatestVersionStatus
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionStatus
-  nameWithType: AppSettings.LatestVersionStatus
-- uid: SharedLib.Model.Settings.AppSettings.LatestVersionStatus*
-  name: LatestVersionStatus
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionStatus_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.LatestVersionStatus
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.LatestVersionStatus
-  nameWithType: AppSettings.LatestVersionStatus
 - uid: SharedLib.Model.Settings.AppSettings.LatestVersionStatusKey
   name: LatestVersionStatusKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_LatestVersionStatusKey
@@ -4404,19 +4524,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.Set
   nameWithType: AppSettings.Set
-- uid: SharedLib.Model.Settings.AppSettings.SetBetaChannel
-  name: SetBetaChannel()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetBetaChannel
-  commentId: M:SharedLib.Model.Settings.AppSettings.SetBetaChannel
-  fullName: SharedLib.Model.Settings.AppSettings.SetBetaChannel()
-  nameWithType: AppSettings.SetBetaChannel()
-- uid: SharedLib.Model.Settings.AppSettings.SetBetaChannel*
-  name: SetBetaChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetBetaChannel_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.SetBetaChannel
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.SetBetaChannel
-  nameWithType: AppSettings.SetBetaChannel
 - uid: SharedLib.Model.Settings.AppSettings.SetBetaChannelP
   name: SetBetaChannelP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetBetaChannelP
@@ -4456,19 +4563,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.SetFunc
   nameWithType: AppSettings.SetFunc
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded
-  name: SetLatestVersionStatusDownloaded()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloaded
-  commentId: M:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded()
-  nameWithType: AppSettings.SetLatestVersionStatusDownloaded()
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded*
-  name: SetLatestVersionStatusDownloaded
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloaded_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded
-  nameWithType: AppSettings.SetLatestVersionStatusDownloaded
 - uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloadedP
   name: SetLatestVersionStatusDownloadedP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusDownloadedP
@@ -4482,19 +4576,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloadedP
   nameWithType: AppSettings.SetLatestVersionStatusDownloadedP
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk
-  name: SetLatestVersionStatusOk()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOk
-  commentId: M:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk()
-  nameWithType: AppSettings.SetLatestVersionStatusOk()
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk*
-  name: SetLatestVersionStatusOk
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOk_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk
-  nameWithType: AppSettings.SetLatestVersionStatusOk
 - uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOkP
   name: SetLatestVersionStatusOkP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusOkP
@@ -4508,19 +4589,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOkP
   nameWithType: AppSettings.SetLatestVersionStatusOkP
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable
-  name: SetLatestVersionStatusUnlaunchable()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchable
-  commentId: M:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable()
-  nameWithType: AppSettings.SetLatestVersionStatusUnlaunchable()
-- uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable*
-  name: SetLatestVersionStatusUnlaunchable
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchable_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable
-  nameWithType: AppSettings.SetLatestVersionStatusUnlaunchable
 - uid: SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchableP
   name: SetLatestVersionStatusUnlaunchableP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetLatestVersionStatusUnlaunchableP
@@ -4547,19 +4615,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.SetStableChannelP
   nameWithType: AppSettings.SetStableChannelP
-- uid: SharedLib.Model.Settings.AppSettings.SetTestChannel
-  name: SetTestChannel()
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetTestChannel
-  commentId: M:SharedLib.Model.Settings.AppSettings.SetTestChannel
-  fullName: SharedLib.Model.Settings.AppSettings.SetTestChannel()
-  nameWithType: AppSettings.SetTestChannel()
-- uid: SharedLib.Model.Settings.AppSettings.SetTestChannel*
-  name: SetTestChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetTestChannel_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.SetTestChannel
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.SetTestChannel
-  nameWithType: AppSettings.SetTestChannel
 - uid: SharedLib.Model.Settings.AppSettings.SetTestChannelP
   name: SetTestChannelP()
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_SetTestChannelP
@@ -4579,35 +4634,6 @@ references:
   commentId: F:SharedLib.Model.Settings.AppSettings.UpdateChannelKey
   fullName: SharedLib.Model.Settings.AppSettings.UpdateChannelKey
   nameWithType: AppSettings.UpdateChannelKey
-- uid: SharedLib.Model.Settings.AppSettings.UpdateRegistryKey(System.String)
-  name: UpdateRegistryKey(string?)
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UpdateRegistryKey_System_String_
-  commentId: M:SharedLib.Model.Settings.AppSettings.UpdateRegistryKey(System.String)
-  name.vb: UpdateRegistryKey(String)
-  fullName: SharedLib.Model.Settings.AppSettings.UpdateRegistryKey(string?)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.UpdateRegistryKey(String)
-  nameWithType: AppSettings.UpdateRegistryKey(string?)
-  nameWithType.vb: AppSettings.UpdateRegistryKey(String)
-- uid: SharedLib.Model.Settings.AppSettings.UpdateRegistryKey*
-  name: UpdateRegistryKey
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UpdateRegistryKey_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.UpdateRegistryKey
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.UpdateRegistryKey
-  nameWithType: AppSettings.UpdateRegistryKey
-- uid: SharedLib.Model.Settings.AppSettings.UpdatingChannel
-  name: UpdatingChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UpdatingChannel
-  commentId: P:SharedLib.Model.Settings.AppSettings.UpdatingChannel
-  fullName: SharedLib.Model.Settings.AppSettings.UpdatingChannel
-  nameWithType: AppSettings.UpdatingChannel
-- uid: SharedLib.Model.Settings.AppSettings.UpdatingChannel*
-  name: UpdatingChannel
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UpdatingChannel_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.UpdatingChannel
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.UpdatingChannel
-  nameWithType: AppSettings.UpdatingChannel
 - uid: SharedLib.Model.Settings.AppSettings.UpdatingChannelP
   name: UpdatingChannelP
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UpdatingChannelP
@@ -4621,19 +4647,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.AppSettings.UpdatingChannelP
   nameWithType: AppSettings.UpdatingChannelP
-- uid: SharedLib.Model.Settings.AppSettings.Username
-  name: Username
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Username
-  commentId: P:SharedLib.Model.Settings.AppSettings.Username
-  fullName: SharedLib.Model.Settings.AppSettings.Username
-  nameWithType: AppSettings.Username
-- uid: SharedLib.Model.Settings.AppSettings.Username*
-  name: Username
-  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Username_
-  commentId: Overload:SharedLib.Model.Settings.AppSettings.Username
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.AppSettings.Username
-  nameWithType: AppSettings.Username
 - uid: SharedLib.Model.Settings.AppSettings.UsernameKey
   name: UsernameKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_UsernameKey
@@ -4886,6 +4899,19 @@ references:
   commentId: T:SharedLib.Model.Settings.IBaseSettings
   fullName: SharedLib.Model.Settings.IBaseSettings
   nameWithType: IBaseSettings
+- uid: SharedLib.Model.Settings.IBaseSettings.DeleteAll
+  name: DeleteAll()
+  href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_DeleteAll
+  commentId: M:SharedLib.Model.Settings.IBaseSettings.DeleteAll
+  fullName: SharedLib.Model.Settings.IBaseSettings.DeleteAll()
+  nameWithType: IBaseSettings.DeleteAll()
+- uid: SharedLib.Model.Settings.IBaseSettings.DeleteAll*
+  name: DeleteAll
+  href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_DeleteAll_
+  commentId: Overload:SharedLib.Model.Settings.IBaseSettings.DeleteAll
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.IBaseSettings.DeleteAll
+  nameWithType: IBaseSettings.DeleteAll
 - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
   name: Get(string, string)
   href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
@@ -5255,15 +5281,15 @@ references:
   commentId: T:SharedLib.Model.Settings.RootSettings
   fullName: SharedLib.Model.Settings.RootSettings
   nameWithType: RootSettings
-- uid: SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})
-  name: RootSettings(Func<string, string, string>?, Func<string, string, bool>?, Func<string, RegistryKey>?)
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__System_Func_System_String_Microsoft_Win32_RegistryKey__
-  commentId: M:SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})
-  name.vb: New(Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, RegistryKey))
-  fullName: SharedLib.Model.Settings.RootSettings.RootSettings(System.Func<string, string, string>?, System.Func<string, string, bool>?, System.Func<string, Microsoft.Win32.RegistryKey>?)
-  fullName.vb: SharedLib.Model.Settings.RootSettings.New(System.Func(Of String, String, String), System.Func(Of String, String, Boolean), System.Func(Of String, Microsoft.Win32.RegistryKey))
-  nameWithType: RootSettings.RootSettings(Func<string, string, string>?, Func<string, string, bool>?, Func<string, RegistryKey>?)
-  nameWithType.vb: RootSettings.New(Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, RegistryKey))
+- uid: SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
+  name: RootSettings(Func<string, string, string>?, Func<string, string, bool>?)
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__
+  commentId: M:SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
+  name.vb: New(Func(Of String, String, String), Func(Of String, String, Boolean))
+  fullName: SharedLib.Model.Settings.RootSettings.RootSettings(System.Func<string, string, string>?, System.Func<string, string, bool>?)
+  fullName.vb: SharedLib.Model.Settings.RootSettings.New(System.Func(Of String, String, String), System.Func(Of String, String, Boolean))
+  nameWithType: RootSettings.RootSettings(Func<string, string, string>?, Func<string, string, bool>?)
+  nameWithType.vb: RootSettings.New(Func(Of String, String, String), Func(Of String, String, Boolean))
 - uid: SharedLib.Model.Settings.RootSettings.#ctor*
   name: RootSettings
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings__ctor_
@@ -5293,6 +5319,12 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.AccessTokenP
   nameWithType: RootSettings.AccessTokenP
+- uid: SharedLib.Model.Settings.RootSettings.CDriveKey
+  name: CDriveKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_CDriveKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.CDriveKey
+  fullName: SharedLib.Model.Settings.RootSettings.CDriveKey
+  nameWithType: RootSettings.CDriveKey
 - uid: SharedLib.Model.Settings.RootSettings.CDriveP
   name: CDriveP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_CDriveP
@@ -5306,6 +5338,12 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.CDriveP
   nameWithType: RootSettings.CDriveP
+- uid: SharedLib.Model.Settings.RootSettings.CpuNameKey
+  name: CpuNameKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_CpuNameKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.CpuNameKey
+  fullName: SharedLib.Model.Settings.RootSettings.CpuNameKey
+  nameWithType: RootSettings.CpuNameKey
 - uid: SharedLib.Model.Settings.RootSettings.CpuNameP
   name: CpuNameP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_CpuNameP
@@ -5338,6 +5376,19 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.CurrentVersionP
   nameWithType: RootSettings.CurrentVersionP
+- uid: SharedLib.Model.Settings.RootSettings.DeleteAll
+  name: DeleteAll()
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_DeleteAll
+  commentId: M:SharedLib.Model.Settings.RootSettings.DeleteAll
+  fullName: SharedLib.Model.Settings.RootSettings.DeleteAll()
+  nameWithType: RootSettings.DeleteAll()
+- uid: SharedLib.Model.Settings.RootSettings.DeleteAll*
+  name: DeleteAll
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_DeleteAll_
+  commentId: Overload:SharedLib.Model.Settings.RootSettings.DeleteAll
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.RootSettings.DeleteAll
+  nameWithType: RootSettings.DeleteAll
 - uid: SharedLib.Model.Settings.RootSettings.DeviceIdKey
   name: DeviceIdKey
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_DeviceIdKey
@@ -5450,84 +5501,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.IsDevelopChannelP
   nameWithType: RootSettings.IsDevelopChannelP
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded
-  name: IsLatestVersionStatusDownloaded()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloaded
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded()
-  nameWithType: RootSettings.IsLatestVersionStatusDownloaded()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded*
-  name: IsLatestVersionStatusDownloaded
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloaded_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded
-  nameWithType: RootSettings.IsLatestVersionStatusDownloaded
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP
-  name: IsLatestVersionStatusDownloadedP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloadedP
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP()
-  nameWithType: RootSettings.IsLatestVersionStatusDownloadedP()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP*
-  name: IsLatestVersionStatusDownloadedP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloadedP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP
-  nameWithType: RootSettings.IsLatestVersionStatusDownloadedP
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk
-  name: IsLatestVersionStatusOk()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOk
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk()
-  nameWithType: RootSettings.IsLatestVersionStatusOk()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk*
-  name: IsLatestVersionStatusOk
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOk_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk
-  nameWithType: RootSettings.IsLatestVersionStatusOk
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP
-  name: IsLatestVersionStatusOkP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOkP
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP()
-  nameWithType: RootSettings.IsLatestVersionStatusOkP()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP*
-  name: IsLatestVersionStatusOkP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOkP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP
-  nameWithType: RootSettings.IsLatestVersionStatusOkP
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable
-  name: IsLatestVersionStatusUnlaunchable()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchable
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable()
-  nameWithType: RootSettings.IsLatestVersionStatusUnlaunchable()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable*
-  name: IsLatestVersionStatusUnlaunchable
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchable_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable
-  nameWithType: RootSettings.IsLatestVersionStatusUnlaunchable
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP
-  name: IsLatestVersionStatusUnlaunchableP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchableP
-  commentId: M:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP()
-  nameWithType: RootSettings.IsLatestVersionStatusUnlaunchableP()
-- uid: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP*
-  name: IsLatestVersionStatusUnlaunchableP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchableP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP
-  nameWithType: RootSettings.IsLatestVersionStatusUnlaunchableP
 - uid: SharedLib.Model.Settings.RootSettings.IsStableChannelP
   name: IsStableChannelP()
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsStableChannelP
@@ -5573,38 +5546,12 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.LabelIdP
   nameWithType: RootSettings.LabelIdP
-- uid: SharedLib.Model.Settings.RootSettings.LatestVersionStatus
-  name: LatestVersionStatus
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_LatestVersionStatus
-  commentId: P:SharedLib.Model.Settings.RootSettings.LatestVersionStatus
-  fullName: SharedLib.Model.Settings.RootSettings.LatestVersionStatus
-  nameWithType: RootSettings.LatestVersionStatus
-- uid: SharedLib.Model.Settings.RootSettings.LatestVersionStatus*
-  name: LatestVersionStatus
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_LatestVersionStatus_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.LatestVersionStatus
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.LatestVersionStatus
-  nameWithType: RootSettings.LatestVersionStatus
-- uid: SharedLib.Model.Settings.RootSettings.LatestVersionStatusKey
-  name: LatestVersionStatusKey
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_LatestVersionStatusKey
-  commentId: F:SharedLib.Model.Settings.RootSettings.LatestVersionStatusKey
-  fullName: SharedLib.Model.Settings.RootSettings.LatestVersionStatusKey
-  nameWithType: RootSettings.LatestVersionStatusKey
-- uid: SharedLib.Model.Settings.RootSettings.LatestVersionStatusP
-  name: LatestVersionStatusP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_LatestVersionStatusP
-  commentId: P:SharedLib.Model.Settings.RootSettings.LatestVersionStatusP
-  fullName: SharedLib.Model.Settings.RootSettings.LatestVersionStatusP
-  nameWithType: RootSettings.LatestVersionStatusP
-- uid: SharedLib.Model.Settings.RootSettings.LatestVersionStatusP*
-  name: LatestVersionStatusP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_LatestVersionStatusP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.LatestVersionStatusP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.LatestVersionStatusP
-  nameWithType: RootSettings.LatestVersionStatusP
+- uid: SharedLib.Model.Settings.RootSettings.MemoryKey
+  name: MemoryKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_MemoryKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.MemoryKey
+  fullName: SharedLib.Model.Settings.RootSettings.MemoryKey
+  nameWithType: RootSettings.MemoryKey
 - uid: SharedLib.Model.Settings.RootSettings.MemoryP
   name: MemoryP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_MemoryP
@@ -5618,25 +5565,31 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.MemoryP
   nameWithType: RootSettings.MemoryP
-- uid: SharedLib.Model.Settings.RootSettings.NetworkIFList
-  name: NetworkIFList
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_NetworkIFList
-  commentId: P:SharedLib.Model.Settings.RootSettings.NetworkIFList
-  fullName: SharedLib.Model.Settings.RootSettings.NetworkIFList
-  nameWithType: RootSettings.NetworkIFList
-- uid: SharedLib.Model.Settings.RootSettings.NetworkIFList*
-  name: NetworkIFList
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_NetworkIFList_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.NetworkIFList
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.NetworkIFList
-  nameWithType: RootSettings.NetworkIFList
 - uid: SharedLib.Model.Settings.RootSettings.NetworkIFListKey
   name: NetworkIFListKey
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_NetworkIFListKey
   commentId: F:SharedLib.Model.Settings.RootSettings.NetworkIFListKey
   fullName: SharedLib.Model.Settings.RootSettings.NetworkIFListKey
   nameWithType: RootSettings.NetworkIFListKey
+- uid: SharedLib.Model.Settings.RootSettings.NetworkIFListP
+  name: NetworkIFListP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_NetworkIFListP
+  commentId: P:SharedLib.Model.Settings.RootSettings.NetworkIFListP
+  fullName: SharedLib.Model.Settings.RootSettings.NetworkIFListP
+  nameWithType: RootSettings.NetworkIFListP
+- uid: SharedLib.Model.Settings.RootSettings.NetworkIFListP*
+  name: NetworkIFListP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_NetworkIFListP_
+  commentId: Overload:SharedLib.Model.Settings.RootSettings.NetworkIFListP
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.RootSettings.NetworkIFListP
+  nameWithType: RootSettings.NetworkIFListP
+- uid: SharedLib.Model.Settings.RootSettings.OSKey
+  name: OSKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_OSKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.OSKey
+  fullName: SharedLib.Model.Settings.RootSettings.OSKey
+  nameWithType: RootSettings.OSKey
 - uid: SharedLib.Model.Settings.RootSettings.OSP
   name: OSP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_OSP
@@ -5650,6 +5603,12 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.OSP
   nameWithType: RootSettings.OSP
+- uid: SharedLib.Model.Settings.RootSettings.OSVersionKey
+  name: OSVersionKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_OSVersionKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.OSVersionKey
+  fullName: SharedLib.Model.Settings.RootSettings.OSVersionKey
+  nameWithType: RootSettings.OSVersionKey
 - uid: SharedLib.Model.Settings.RootSettings.OSVersionP
   name: OSVersionP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_OSVersionP
@@ -5718,84 +5677,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.SetFunc
   nameWithType: RootSettings.SetFunc
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded
-  name: SetLatestVersionStatusDownloaded()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloaded
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded()
-  nameWithType: RootSettings.SetLatestVersionStatusDownloaded()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded*
-  name: SetLatestVersionStatusDownloaded
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloaded_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded
-  nameWithType: RootSettings.SetLatestVersionStatusDownloaded
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP
-  name: SetLatestVersionStatusDownloadedP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloadedP
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP()
-  nameWithType: RootSettings.SetLatestVersionStatusDownloadedP()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP*
-  name: SetLatestVersionStatusDownloadedP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloadedP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP
-  nameWithType: RootSettings.SetLatestVersionStatusDownloadedP
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk
-  name: SetLatestVersionStatusOk()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOk
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk()
-  nameWithType: RootSettings.SetLatestVersionStatusOk()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk*
-  name: SetLatestVersionStatusOk
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOk_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk
-  nameWithType: RootSettings.SetLatestVersionStatusOk
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP
-  name: SetLatestVersionStatusOkP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOkP
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP()
-  nameWithType: RootSettings.SetLatestVersionStatusOkP()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP*
-  name: SetLatestVersionStatusOkP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOkP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP
-  nameWithType: RootSettings.SetLatestVersionStatusOkP
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable
-  name: SetLatestVersionStatusUnlaunchable()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchable
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable()
-  nameWithType: RootSettings.SetLatestVersionStatusUnlaunchable()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable*
-  name: SetLatestVersionStatusUnlaunchable
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchable_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable
-  nameWithType: RootSettings.SetLatestVersionStatusUnlaunchable
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP
-  name: SetLatestVersionStatusUnlaunchableP()
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchableP
-  commentId: M:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP()
-  nameWithType: RootSettings.SetLatestVersionStatusUnlaunchableP()
-- uid: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP*
-  name: SetLatestVersionStatusUnlaunchableP
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchableP_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP
-  nameWithType: RootSettings.SetLatestVersionStatusUnlaunchableP
 - uid: SharedLib.Model.Settings.RootSettings.SetStableChannelP
   name: SetStableChannelP()
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_SetStableChannelP
@@ -5879,6 +5760,12 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.UsernameP
   nameWithType: RootSettings.UsernameP
+- uid: SharedLib.Model.Settings.RootSettings.WithSecureKey
+  name: WithSecureKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_WithSecureKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.WithSecureKey
+  fullName: SharedLib.Model.Settings.RootSettings.WithSecureKey
+  nameWithType: RootSettings.WithSecureKey
 - uid: SharedLib.Model.Settings.RootSettings.WithSecureP
   name: WithSecureP
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_WithSecureP
@@ -5892,19 +5779,6 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.WithSecureP
   nameWithType: RootSettings.WithSecureP
-- uid: SharedLib.Model.Settings.RootSettings.aa
-  name: aa
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_aa
-  commentId: P:SharedLib.Model.Settings.RootSettings.aa
-  fullName: SharedLib.Model.Settings.RootSettings.aa
-  nameWithType: RootSettings.aa
-- uid: SharedLib.Model.Settings.RootSettings.aa*
-  name: aa
-  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_aa_
-  commentId: Overload:SharedLib.Model.Settings.RootSettings.aa
-  isSpec: "True"
-  fullName: SharedLib.Model.Settings.RootSettings.aa
-  nameWithType: RootSettings.aa
 - uid: Test
   name: Test
   href: api/Test.html
@@ -6031,25 +5905,109 @@ references:
   isSpec: "True"
   fullName: Test.Launcher.ExecuterTests.TestRun3
   nameWithType: ExecuterTests.TestRun3
+- uid: Test.Launcher.FakeExecuter
+  name: FakeExecuter
+  href: api/Test.Launcher.FakeExecuter.html
+  commentId: T:Test.Launcher.FakeExecuter
+  fullName: Test.Launcher.FakeExecuter
+  nameWithType: FakeExecuter
+- uid: Test.Launcher.FakeExecuter.ExitCode
+  name: ExitCode
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_ExitCode
+  commentId: P:Test.Launcher.FakeExecuter.ExitCode
+  fullName: Test.Launcher.FakeExecuter.ExitCode
+  nameWithType: FakeExecuter.ExitCode
+- uid: Test.Launcher.FakeExecuter.ExitCode*
+  name: ExitCode
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_ExitCode_
+  commentId: Overload:Test.Launcher.FakeExecuter.ExitCode
+  isSpec: "True"
+  fullName: Test.Launcher.FakeExecuter.ExitCode
+  nameWithType: FakeExecuter.ExitCode
+- uid: Test.Launcher.FakeExecuter.ExitWithUpdateOnce
+  name: ExitWithUpdateOnce
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_ExitWithUpdateOnce
+  commentId: P:Test.Launcher.FakeExecuter.ExitWithUpdateOnce
+  fullName: Test.Launcher.FakeExecuter.ExitWithUpdateOnce
+  nameWithType: FakeExecuter.ExitWithUpdateOnce
+- uid: Test.Launcher.FakeExecuter.ExitWithUpdateOnce*
+  name: ExitWithUpdateOnce
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_ExitWithUpdateOnce_
+  commentId: Overload:Test.Launcher.FakeExecuter.ExitWithUpdateOnce
+  isSpec: "True"
+  fullName: Test.Launcher.FakeExecuter.ExitWithUpdateOnce
+  nameWithType: FakeExecuter.ExitWithUpdateOnce
+- uid: Test.Launcher.FakeExecuter.RunExe
+  name: RunExe()
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_RunExe
+  commentId: M:Test.Launcher.FakeExecuter.RunExe
+  fullName: Test.Launcher.FakeExecuter.RunExe()
+  nameWithType: FakeExecuter.RunExe()
+- uid: Test.Launcher.FakeExecuter.RunExe*
+  name: RunExe
+  href: api/Test.Launcher.FakeExecuter.html#Test_Launcher_FakeExecuter_RunExe_
+  commentId: Overload:Test.Launcher.FakeExecuter.RunExe
+  isSpec: "True"
+  fullName: Test.Launcher.FakeExecuter.RunExe
+  nameWithType: FakeExecuter.RunExe
 - uid: Test.Launcher.ProgramTests
   name: ProgramTests
   href: api/Test.Launcher.ProgramTests.html
   commentId: T:Test.Launcher.ProgramTests
   fullName: Test.Launcher.ProgramTests
   nameWithType: ProgramTests
-- uid: Test.Launcher.ProgramTests.Test1
-  name: Test1()
-  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_Test1
-  commentId: M:Test.Launcher.ProgramTests.Test1
-  fullName: Test.Launcher.ProgramTests.Test1()
-  nameWithType: ProgramTests.Test1()
-- uid: Test.Launcher.ProgramTests.Test1*
-  name: Test1
-  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_Test1_
-  commentId: Overload:Test.Launcher.ProgramTests.Test1
+- uid: Test.Launcher.ProgramTests.TestJoinArgs1
+  name: TestJoinArgs1()
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestJoinArgs1
+  commentId: M:Test.Launcher.ProgramTests.TestJoinArgs1
+  fullName: Test.Launcher.ProgramTests.TestJoinArgs1()
+  nameWithType: ProgramTests.TestJoinArgs1()
+- uid: Test.Launcher.ProgramTests.TestJoinArgs1*
+  name: TestJoinArgs1
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestJoinArgs1_
+  commentId: Overload:Test.Launcher.ProgramTests.TestJoinArgs1
   isSpec: "True"
-  fullName: Test.Launcher.ProgramTests.Test1
-  nameWithType: ProgramTests.Test1
+  fullName: Test.Launcher.ProgramTests.TestJoinArgs1
+  nameWithType: ProgramTests.TestJoinArgs1
+- uid: Test.Launcher.ProgramTests.TestJoinArgs2
+  name: TestJoinArgs2()
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestJoinArgs2
+  commentId: M:Test.Launcher.ProgramTests.TestJoinArgs2
+  fullName: Test.Launcher.ProgramTests.TestJoinArgs2()
+  nameWithType: ProgramTests.TestJoinArgs2()
+- uid: Test.Launcher.ProgramTests.TestJoinArgs2*
+  name: TestJoinArgs2
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestJoinArgs2_
+  commentId: Overload:Test.Launcher.ProgramTests.TestJoinArgs2
+  isSpec: "True"
+  fullName: Test.Launcher.ProgramTests.TestJoinArgs2
+  nameWithType: ProgramTests.TestJoinArgs2
+- uid: Test.Launcher.ProgramTests.TestMain1
+  name: TestMain1()
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestMain1
+  commentId: M:Test.Launcher.ProgramTests.TestMain1
+  fullName: Test.Launcher.ProgramTests.TestMain1()
+  nameWithType: ProgramTests.TestMain1()
+- uid: Test.Launcher.ProgramTests.TestMain1*
+  name: TestMain1
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestMain1_
+  commentId: Overload:Test.Launcher.ProgramTests.TestMain1
+  isSpec: "True"
+  fullName: Test.Launcher.ProgramTests.TestMain1
+  nameWithType: ProgramTests.TestMain1
+- uid: Test.Launcher.ProgramTests.TestMain2
+  name: TestMain2()
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestMain2
+  commentId: M:Test.Launcher.ProgramTests.TestMain2
+  fullName: Test.Launcher.ProgramTests.TestMain2()
+  nameWithType: ProgramTests.TestMain2()
+- uid: Test.Launcher.ProgramTests.TestMain2*
+  name: TestMain2
+  href: api/Test.Launcher.ProgramTests.html#Test_Launcher_ProgramTests_TestMain2_
+  commentId: Overload:Test.Launcher.ProgramTests.TestMain2
+  isSpec: "True"
+  fullName: Test.Launcher.ProgramTests.TestMain2
+  nameWithType: ProgramTests.TestMain2
 - uid: Test.Launcher.UpdaterTests
   name: UpdaterTests
   href: api/Test.Launcher.UpdaterTests.html
@@ -6362,6 +6320,213 @@ references:
   commentId: F:Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
   fullName: Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
   nameWithType: FakeLocalCertificate._fakeLocalCertificate
+- uid: Test.SharedLib.Model.FakeLocalMachine
+  name: FakeLocalMachine
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html
+  commentId: T:Test.SharedLib.Model.FakeLocalMachine
+  fullName: Test.SharedLib.Model.FakeLocalMachine
+  nameWithType: FakeLocalMachine
+- uid: Test.SharedLib.Model.FakeLocalMachine.#ctor
+  name: FakeLocalMachine()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine__ctor
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.#ctor
+  name.vb: New()
+  fullName: Test.SharedLib.Model.FakeLocalMachine.FakeLocalMachine()
+  fullName.vb: Test.SharedLib.Model.FakeLocalMachine.New()
+  nameWithType: FakeLocalMachine.FakeLocalMachine()
+  nameWithType.vb: FakeLocalMachine.New()
+- uid: Test.SharedLib.Model.FakeLocalMachine.#ctor*
+  name: FakeLocalMachine
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine__ctor_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Test.SharedLib.Model.FakeLocalMachine.FakeLocalMachine
+  fullName.vb: Test.SharedLib.Model.FakeLocalMachine.New
+  nameWithType: FakeLocalMachine.FakeLocalMachine
+  nameWithType.vb: FakeLocalMachine.New
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetCDrive
+  name: GetCDrive()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetCDrive
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetCDrive
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetCDrive()
+  nameWithType: FakeLocalMachine.GetCDrive()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetCDrive*
+  name: GetCDrive
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetCDrive_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetCDrive
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetCDrive
+  nameWithType: FakeLocalMachine.GetCDrive
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetCpuName
+  name: GetCpuName()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetCpuName
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetCpuName
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetCpuName()
+  nameWithType: FakeLocalMachine.GetCpuName()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetCpuName*
+  name: GetCpuName
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetCpuName_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetCpuName
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetCpuName
+  nameWithType: FakeLocalMachine.GetCpuName
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetDeviceId
+  name: GetDeviceId()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetDeviceId
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetDeviceId
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetDeviceId()
+  nameWithType: FakeLocalMachine.GetDeviceId()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetDeviceId*
+  name: GetDeviceId
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetDeviceId_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetDeviceId
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetDeviceId
+  nameWithType: FakeLocalMachine.GetDeviceId
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetHostname
+  name: GetHostname()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetHostname
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetHostname
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetHostname()
+  nameWithType: FakeLocalMachine.GetHostname()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetHostname*
+  name: GetHostname
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetHostname_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetHostname
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetHostname
+  nameWithType: FakeLocalMachine.GetHostname
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetInstance
+  name: GetInstance()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetInstance
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetInstance
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetInstance()
+  nameWithType: FakeLocalMachine.GetInstance()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetInstance*
+  name: GetInstance
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetInstance_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetInstance
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetInstance
+  nameWithType: FakeLocalMachine.GetInstance
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetLabelId
+  name: GetLabelId()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetLabelId
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetLabelId
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetLabelId()
+  nameWithType: FakeLocalMachine.GetLabelId()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetLabelId*
+  name: GetLabelId
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetLabelId_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetLabelId
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetLabelId
+  nameWithType: FakeLocalMachine.GetLabelId
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetMemory
+  name: GetMemory()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetMemory
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetMemory
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetMemory()
+  nameWithType: FakeLocalMachine.GetMemory()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetMemory*
+  name: GetMemory
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetMemory_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetMemory
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetMemory
+  nameWithType: FakeLocalMachine.GetMemory
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetOS
+  name: GetOS()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetOS
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetOS
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetOS()
+  nameWithType: FakeLocalMachine.GetOS()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetOS*
+  name: GetOS
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetOS_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetOS
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetOS
+  nameWithType: FakeLocalMachine.GetOS
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetOSVersion
+  name: GetOSVersion()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetOSVersion
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetOSVersion
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetOSVersion()
+  nameWithType: FakeLocalMachine.GetOSVersion()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetOSVersion*
+  name: GetOSVersion
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetOSVersion_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetOSVersion
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetOSVersion
+  nameWithType: FakeLocalMachine.GetOSVersion
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo
+  name: GetPhysicalRamInfo()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetPhysicalRamInfo
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo()
+  nameWithType: FakeLocalMachine.GetPhysicalRamInfo()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo*
+  name: GetPhysicalRamInfo
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetPhysicalRamInfo_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo
+  nameWithType: FakeLocalMachine.GetPhysicalRamInfo
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetSpec
+  name: GetSpec()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetSpec
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetSpec
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetSpec()
+  nameWithType: FakeLocalMachine.GetSpec()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetSpec*
+  name: GetSpec
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetSpec_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetSpec
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetSpec
+  nameWithType: FakeLocalMachine.GetSpec
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList
+  name: GetStorageDeviceIdList()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetStorageDeviceIdList
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList()
+  nameWithType: FakeLocalMachine.GetStorageDeviceIdList()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList*
+  name: GetStorageDeviceIdList
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetStorageDeviceIdList_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetStorageDeviceIdList
+  nameWithType: FakeLocalMachine.GetStorageDeviceIdList
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetWinVersion
+  name: GetWinVersion()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetWinVersion
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetWinVersion
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetWinVersion()
+  nameWithType: FakeLocalMachine.GetWinVersion()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetWinVersion*
+  name: GetWinVersion
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetWinVersion_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetWinVersion
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetWinVersion
+  nameWithType: FakeLocalMachine.GetWinVersion
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetWithSecure
+  name: GetWithSecure()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetWithSecure
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetWithSecure
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetWithSecure()
+  nameWithType: FakeLocalMachine.GetWithSecure()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetWithSecure*
+  name: GetWithSecure
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetWithSecure_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetWithSecure
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetWithSecure
+  nameWithType: FakeLocalMachine.GetWithSecure
 - uid: Test.SharedLib.Model.Settings
   name: Test.SharedLib.Model.Settings
   href: api/Test.SharedLib.Model.Settings.html
@@ -6646,6 +6811,19 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.Settings.FakeSettings.CurrentVersionP
   nameWithType: FakeSettings.CurrentVersionP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.DeleteAll
+  name: DeleteAll()
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_DeleteAll
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettings.DeleteAll
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.DeleteAll()
+  nameWithType: FakeSettings.DeleteAll()
+- uid: Test.SharedLib.Model.Settings.FakeSettings.DeleteAll*
+  name: DeleteAll
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_DeleteAll_
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettings.DeleteAll
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.DeleteAll
+  nameWithType: FakeSettings.DeleteAll
 - uid: Test.SharedLib.Model.Settings.FakeSettings.DeviceIdP
   name: DeviceIdP
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_DeviceIdP
@@ -8065,6 +8243,25 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Procedure.IFakeProcedure.RunCount
   nameWithType: IFakeProcedure.RunCount
+- uid: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests
+  name: LocalMachineInfoUpdaterTests
+  href: api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html
+  commentId: T:Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests
+  fullName: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests
+  nameWithType: LocalMachineInfoUpdaterTests
+- uid: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun
+  name: TestRun()
+  href: api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html#Test_SharedLib_Procedure_LocalMachineInfoUpdaterTests_TestRun
+  commentId: M:Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun
+  fullName: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun()
+  nameWithType: LocalMachineInfoUpdaterTests.TestRun()
+- uid: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun*
+  name: TestRun
+  href: api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html#Test_SharedLib_Procedure_LocalMachineInfoUpdaterTests_TestRun_
+  commentId: Overload:Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun
+  isSpec: "True"
+  fullName: Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.TestRun
+  nameWithType: LocalMachineInfoUpdaterTests.TestRun
 - uid: Test.SharedLib.Procedure.RegistryInitializerTests
   name: RegistryInitializerTests
   href: api/Test.SharedLib.Procedure.RegistryInitializerTests.html

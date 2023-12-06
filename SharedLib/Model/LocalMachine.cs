@@ -156,7 +156,10 @@ namespace Rudeus.Model
 
         public string GetLabelId()
         {
-            return "P12-345";
+            Random r1 = new Random();
+            string firstNumber = r1.Next(10, 100).ToString();
+            string secondNumber = r1.Next(100, 1000).ToString();
+            return $"P{firstNumber}-{secondNumber}";
         }
     }
 }

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IFakeProcedure
+      <title>Class FakeExecuter
  | Rudeus Document </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IFakeProcedure
+      <meta name="title" content="Class FakeExecuter
  | Rudeus Document ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Procedure_IFakeProcedure.md&amp;value=---%0Auid%3A%20Test.SharedLib.Procedure.IFakeProcedure%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_Launcher_FakeExecuter.md&amp;value=---%0Auid%3A%20Test.Launcher.FakeExecuter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,17 +85,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Test.SharedLib.Procedure.IFakeProcedure">
+        <article data-uid="Test.Launcher.FakeExecuter">
 
 
 
-  <h1 id="Test_SharedLib_Procedure_IFakeProcedure" data-uid="Test.SharedLib.Procedure.IFakeProcedure" class="text-break">
-    Interface IFakeProcedure
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Procedure/IFakeProcedure.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Test_Launcher_FakeExecuter" data-uid="Test.Launcher.FakeExecuter" class="text-break">
+    Class FakeExecuter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/Launcher/FakeExecuter.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Test.html">Test</a>.<a class="xref" href="Test.SharedLib.html">SharedLib</a>.<a class="xref" href="Test.SharedLib.Procedure.html">Procedure</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Test.html">Test</a>.<a class="xref" href="Test.Launcher.html">Launcher</a></dd></dl>
   <dl><dt>Assembly</dt><dd>Test.dll</dd></dl>
   </div>
 
@@ -103,15 +103,62 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IFakeProcedure : IProcedure</code></pre>
+    <pre><code class="lang-csharp hljs">public class FakeExecuter : FakeProcedure, IFakeProcedure, IExecuter, IProcedure</code></pre>
   </div>
 
 
 
 
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Test.SharedLib.Procedure.FakeProcedure.html">FakeProcedure</a></div>
+      <div><span class="xref">FakeExecuter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Test.SharedLib.Procedure.IFakeProcedure.html">IFakeProcedure</a></div>
+      <div><a class="xref" href="Rudeus.Launcher.Procedure.IExecuter.html">IExecuter</a></div>
+      <div><a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></div>
+    </dd>
+  </dl>
 
 
-
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Test.SharedLib.Procedure.FakeProcedure.html#Test_SharedLib_Procedure_FakeProcedure_RunCount">FakeProcedure.RunCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Test.SharedLib.Procedure.FakeProcedure.html#Test_SharedLib_Procedure_FakeProcedure_Run">FakeProcedure.Run()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
 
   <dl class="typelist extensionMethods">
     <dt>Extension Methods</dt>
@@ -168,18 +215,18 @@
 </h2>
 
 
-  <a id="Test_SharedLib_Procedure_IFakeProcedure_RunCount_" data-uid="Test.SharedLib.Procedure.IFakeProcedure.RunCount*"></a>
+  <a id="Test_Launcher_FakeExecuter_ExitCode_" data-uid="Test.Launcher.FakeExecuter.ExitCode*"></a>
 
-  <h3 id="Test_SharedLib_Procedure_IFakeProcedure_RunCount" data-uid="Test.SharedLib.Procedure.IFakeProcedure.RunCount">
-  RunCount
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Procedure/IFakeProcedure.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Test_Launcher_FakeExecuter_ExitCode" data-uid="Test.Launcher.FakeExecuter.ExitCode">
+  ExitCode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/Launcher/FakeExecuter.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">int RunCount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int ExitCode { get; set; }</code></pre>
   </div>
 
 
@@ -199,22 +246,53 @@
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
+  <a id="Test_Launcher_FakeExecuter_ExitWithUpdateOnce_" data-uid="Test.Launcher.FakeExecuter.ExitWithUpdateOnce*"></a>
 
-
-  <a id="Test_SharedLib_Procedure_IFakeProcedure_Run_" data-uid="Test.SharedLib.Procedure.IFakeProcedure.Run*"></a>
-
-  <h3 id="Test_SharedLib_Procedure_IFakeProcedure_Run" data-uid="Test.SharedLib.Procedure.IFakeProcedure.Run">
-  Run()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Procedure/IFakeProcedure.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Test_Launcher_FakeExecuter_ExitWithUpdateOnce" data-uid="Test.Launcher.FakeExecuter.ExitWithUpdateOnce">
+  ExitWithUpdateOnce
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/Launcher/FakeExecuter.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task Run()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool ExitWithUpdateOnce { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Test_Launcher_FakeExecuter_RunExe_" data-uid="Test.Launcher.FakeExecuter.RunExe*"></a>
+
+  <h3 id="Test_Launcher_FakeExecuter_RunExe" data-uid="Test.Launcher.FakeExecuter.RunExe">
+  RunExe()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/Launcher/FakeExecuter.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunExe()</code></pre>
   </div>
 
 
@@ -238,7 +316,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Procedure/IFakeProcedure.cs/#L5" class="edit-link">Edit this page</a>
+          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/Launcher/FakeExecuter.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -12,7 +12,7 @@ namespace Rudeus.API.Request
     public class SendInstalledAppsRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
-        public string type { get; set; } = "send_installed_app_request";
+        public string type { get; set; } = "application_update";
 
         [JsonPropertyName(nameof(request_data))]
         public SendInstalledAppsRequestData request_data { get; set; }

@@ -210,16 +210,16 @@
 
   <a id="SharedLib_Model_Settings_RootSettings__ctor_" data-uid="SharedLib.Model.Settings.RootSettings.#ctor*"></a>
 
-  <h3 id="SharedLib_Model_Settings_RootSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__System_Func_System_String_Microsoft_Win32_RegistryKey__" data-uid="SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,Microsoft.Win32.RegistryKey})">
-  RootSettings(Func&lt;string, string, string&gt;?, Func&lt;string, string, bool&gt;?, Func&lt;string, RegistryKey&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SharedLib_Model_Settings_RootSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__" data-uid="SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})">
+  RootSettings(Func&lt;string, string, string&gt;?, Func&lt;string, string, bool&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RootSettings(Func&lt;string, string, string&gt;? getFunc = null, Func&lt;string, string, bool&gt;? setFunc = null, Func&lt;string, RegistryKey&gt;? createRegFunc = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public RootSettings(Func&lt;string, string, string&gt;? getFunc = null, Func&lt;string, string, bool&gt;? setFunc = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -227,8 +227,6 @@
     <dt><code>getFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
     <dt><code>setFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>createRegFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.win32.registrykey">RegistryKey</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -250,7 +248,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_AccessTokenKey" data-uid="SharedLib.Model.Settings.RootSettings.AccessTokenKey">
   AccessTokenKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -278,9 +276,69 @@
 
 
 
+  <h3 id="SharedLib_Model_Settings_RootSettings_CDriveKey" data-uid="SharedLib.Model.Settings.RootSettings.CDriveKey">
+  CDriveKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CDriveKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SharedLib_Model_Settings_RootSettings_CpuNameKey" data-uid="SharedLib.Model.Settings.RootSettings.CpuNameKey">
+  CpuNameKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CpuNameKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="SharedLib_Model_Settings_RootSettings_CurrentVersionKey" data-uid="SharedLib.Model.Settings.RootSettings.CurrentVersionKey">
   CurrentVersionKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L159"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -310,7 +368,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_DeviceIdKey" data-uid="SharedLib.Model.Settings.RootSettings.DeviceIdKey">
   DeviceIdKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -340,7 +398,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_FirstHostnameKey" data-uid="SharedLib.Model.Settings.RootSettings.FirstHostnameKey">
   FirstHostnameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -370,7 +428,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_HostnameKey" data-uid="SharedLib.Model.Settings.RootSettings.HostnameKey">
   HostnameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -400,7 +458,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_LabelIdKey" data-uid="SharedLib.Model.Settings.RootSettings.LabelIdKey">
   LabelIdKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -428,16 +486,16 @@
 
 
 
-  <h3 id="SharedLib_Model_Settings_RootSettings_LatestVersionStatusKey" data-uid="SharedLib.Model.Settings.RootSettings.LatestVersionStatusKey">
-  LatestVersionStatusKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SharedLib_Model_Settings_RootSettings_MemoryKey" data-uid="SharedLib.Model.Settings.RootSettings.MemoryKey">
+  MemoryKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L187"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionStatusKey</code></pre>
+    <pre><code class="lang-csharp hljs">public string MemoryKey</code></pre>
   </div>
 
 
@@ -460,7 +518,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_NetworkIFListKey" data-uid="SharedLib.Model.Settings.RootSettings.NetworkIFListKey">
   NetworkIFListKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L166"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -488,9 +546,69 @@
 
 
 
+  <h3 id="SharedLib_Model_Settings_RootSettings_OSKey" data-uid="SharedLib.Model.Settings.RootSettings.OSKey">
+  OSKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OSKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SharedLib_Model_Settings_RootSettings_OSVersionKey" data-uid="SharedLib.Model.Settings.RootSettings.OSVersionKey">
+  OSVersionKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OSVersionKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="SharedLib_Model_Settings_RootSettings_SpecKey" data-uid="SharedLib.Model.Settings.RootSettings.SpecKey">
   SpecKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -520,7 +638,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_UpdateChannelKey" data-uid="SharedLib.Model.Settings.RootSettings.UpdateChannelKey">
   UpdateChannelKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -550,7 +668,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_UsernameKey" data-uid="SharedLib.Model.Settings.RootSettings.UsernameKey">
   UsernameKey
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -558,6 +676,36 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string UsernameKey</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="SharedLib_Model_Settings_RootSettings_WithSecureKey" data-uid="SharedLib.Model.Settings.RootSettings.WithSecureKey">
+  WithSecureKey
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string WithSecureKey</code></pre>
   </div>
 
 
@@ -585,7 +733,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_AccessTokenP" data-uid="SharedLib.Model.Settings.RootSettings.AccessTokenP">
   AccessTokenP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -616,7 +764,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_CDriveP" data-uid="SharedLib.Model.Settings.RootSettings.CDriveP">
   CDriveP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -647,7 +795,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_CpuNameP" data-uid="SharedLib.Model.Settings.RootSettings.CpuNameP">
   CpuNameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -678,7 +826,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_CurrentVersionP" data-uid="SharedLib.Model.Settings.RootSettings.CurrentVersionP">
   CurrentVersionP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -709,7 +857,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_DeviceIdP" data-uid="SharedLib.Model.Settings.RootSettings.DeviceIdP">
   DeviceIdP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -740,7 +888,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_FirstHostnameP" data-uid="SharedLib.Model.Settings.RootSettings.FirstHostnameP">
   FirstHostnameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -802,7 +950,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_HostnameP" data-uid="SharedLib.Model.Settings.RootSettings.HostnameP">
   HostnameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -833,7 +981,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_LabelIdP" data-uid="SharedLib.Model.Settings.RootSettings.LabelIdP">
   LabelIdP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -860,73 +1008,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_RootSettings_LatestVersionStatus_" data-uid="SharedLib.Model.Settings.RootSettings.LatestVersionStatus*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_LatestVersionStatus" data-uid="SharedLib.Model.Settings.RootSettings.LatestVersionStatus">
-  LatestVersionStatus
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L180"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string LatestVersionStatus { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_LatestVersionStatusP_" data-uid="SharedLib.Model.Settings.RootSettings.LatestVersionStatusP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_LatestVersionStatusP" data-uid="SharedLib.Model.Settings.RootSettings.LatestVersionStatusP">
-  LatestVersionStatusP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L186"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string LatestVersionStatusP { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_RootSettings_MemoryP_" data-uid="SharedLib.Model.Settings.RootSettings.MemoryP*"></a>
 
   <h3 id="SharedLib_Model_Settings_RootSettings_MemoryP" data-uid="SharedLib.Model.Settings.RootSettings.MemoryP">
   MemoryP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -953,18 +1039,18 @@
 
 
 
-  <a id="SharedLib_Model_Settings_RootSettings_NetworkIFList_" data-uid="SharedLib.Model.Settings.RootSettings.NetworkIFList*"></a>
+  <a id="SharedLib_Model_Settings_RootSettings_NetworkIFListP_" data-uid="SharedLib.Model.Settings.RootSettings.NetworkIFListP*"></a>
 
-  <h3 id="SharedLib_Model_Settings_RootSettings_NetworkIFList" data-uid="SharedLib.Model.Settings.RootSettings.NetworkIFList">
-  NetworkIFList
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <h3 id="SharedLib_Model_Settings_RootSettings_NetworkIFListP" data-uid="SharedLib.Model.Settings.RootSettings.NetworkIFListP">
+  NetworkIFListP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string NetworkIFList { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string NetworkIFListP { get; set; }</code></pre>
   </div>
 
 
@@ -988,7 +1074,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_OSP" data-uid="SharedLib.Model.Settings.RootSettings.OSP">
   OSP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1019,14 +1105,14 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_OSVersionP" data-uid="SharedLib.Model.Settings.RootSettings.OSVersionP">
   OSVersionP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object OSVersionP { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string OSVersionP { get; set; }</code></pre>
   </div>
 
 
@@ -1035,7 +1121,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -1081,7 +1167,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_SpecP" data-uid="SharedLib.Model.Settings.RootSettings.SpecP">
   SpecP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1112,7 +1198,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_UpdatingChannelP" data-uid="SharedLib.Model.Settings.RootSettings.UpdatingChannelP">
   UpdatingChannelP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1143,7 +1229,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_UsernameP" data-uid="SharedLib.Model.Settings.RootSettings.UsernameP">
   UsernameP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1174,7 +1260,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_WithSecureP" data-uid="SharedLib.Model.Settings.RootSettings.WithSecureP">
   WithSecureP
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1201,46 +1287,41 @@
 
 
 
-  <a id="SharedLib_Model_Settings_RootSettings_aa_" data-uid="SharedLib.Model.Settings.RootSettings.aa*"></a>
+  <h2 class="section" id="methods">Methods
+</h2>
 
-  <h3 id="SharedLib_Model_Settings_RootSettings_aa" data-uid="SharedLib.Model.Settings.RootSettings.aa">
-  aa
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L225"><i class="bi bi-code-slash"></i></a>
+
+  <a id="SharedLib_Model_Settings_RootSettings_DeleteAll_" data-uid="SharedLib.Model.Settings.RootSettings.DeleteAll*"></a>
+
+  <h3 id="SharedLib_Model_Settings_RootSettings_DeleteAll" data-uid="SharedLib.Model.Settings.RootSettings.DeleteAll">
+  DeleteAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string aa { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void DeleteAll()</code></pre>
   </div>
 
 
 
 
 
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
 
 
 
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
 
 
   <a id="SharedLib_Model_Settings_RootSettings_Get_" data-uid="SharedLib.Model.Settings.RootSettings.Get*"></a>
 
   <h3 id="SharedLib_Model_Settings_RootSettings_Get_System_String_System_String_" data-uid="SharedLib.Model.Settings.RootSettings.Get(System.String,System.String)">
   Get(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L50"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1278,7 +1359,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_IsBetaChannelP" data-uid="SharedLib.Model.Settings.RootSettings.IsBetaChannelP">
   IsBetaChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1309,7 +1390,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_IsDevelopChannelP" data-uid="SharedLib.Model.Settings.RootSettings.IsDevelopChannelP">
   IsDevelopChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1336,197 +1417,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloaded_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloaded" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloaded">
-  IsLatestVersionStatusDownloaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L193"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusDownloaded()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloadedP_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusDownloadedP" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusDownloadedP">
-  IsLatestVersionStatusDownloadedP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L201"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsLatestVersionStatusDownloadedP()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOk_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOk" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOk">
-  IsLatestVersionStatusOk()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L192"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusOk()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOkP_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusOkP" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusOkP">
-  IsLatestVersionStatusOkP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L200"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsLatestVersionStatusOkP()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchable_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchable" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchable">
-  IsLatestVersionStatusUnlaunchable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L194"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsLatestVersionStatusUnlaunchable()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchableP_" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_IsLatestVersionStatusUnlaunchableP" data-uid="SharedLib.Model.Settings.RootSettings.IsLatestVersionStatusUnlaunchableP">
-  IsLatestVersionStatusUnlaunchableP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L202"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsLatestVersionStatusUnlaunchableP()</code></pre>
-  </div>
-
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_RootSettings_IsStableChannelP_" data-uid="SharedLib.Model.Settings.RootSettings.IsStableChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_RootSettings_IsStableChannelP" data-uid="SharedLib.Model.Settings.RootSettings.IsStableChannelP">
   IsStableChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1557,7 +1452,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_IsTestChannelP" data-uid="SharedLib.Model.Settings.RootSettings.IsTestChannelP">
   IsTestChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1588,7 +1483,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_Set_System_String_System_String_" data-uid="SharedLib.Model.Settings.RootSettings.Set(System.String,System.String)">
   Set(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1626,7 +1521,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_SetBetaChannelP" data-uid="SharedLib.Model.Settings.RootSettings.SetBetaChannelP">
   SetBetaChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1652,7 +1547,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_SetDevelopChannelP" data-uid="SharedLib.Model.Settings.RootSettings.SetDevelopChannelP">
   SetDevelopChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1674,167 +1569,11 @@
 
 
 
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloaded_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloaded" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloaded">
-  SetLatestVersionStatusDownloaded()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L197"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusDownloaded()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloadedP_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusDownloadedP" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusDownloadedP">
-  SetLatestVersionStatusDownloadedP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L205"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusDownloadedP()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOk_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOk" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOk">
-  SetLatestVersionStatusOk()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L196"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusOk()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOkP_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusOkP" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusOkP">
-  SetLatestVersionStatusOkP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L204"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusOkP()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchable_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchable" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchable">
-  SetLatestVersionStatusUnlaunchable()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L198"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetLatestVersionStatusUnlaunchable()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchableP_" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP*"></a>
-
-  <h3 id="SharedLib_Model_Settings_RootSettings_SetLatestVersionStatusUnlaunchableP" data-uid="SharedLib.Model.Settings.RootSettings.SetLatestVersionStatusUnlaunchableP">
-  SetLatestVersionStatusUnlaunchableP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L206"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusUnlaunchableP()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <a id="SharedLib_Model_Settings_RootSettings_SetStableChannelP_" data-uid="SharedLib.Model.Settings.RootSettings.SetStableChannelP*"></a>
 
   <h3 id="SharedLib_Model_Settings_RootSettings_SetStableChannelP" data-uid="SharedLib.Model.Settings.RootSettings.SetStableChannelP">
   SetStableChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -1860,7 +1599,7 @@
 
   <h3 id="SharedLib_Model_Settings_RootSettings_SetTestChannelP" data-uid="SharedLib.Model.Settings.RootSettings.SetTestChannelP">
   SetTestChannelP()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/SharedLib/Model/Settings/RootSettings.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
