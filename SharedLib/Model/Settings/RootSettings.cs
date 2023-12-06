@@ -28,11 +28,24 @@ namespace SharedLib.Model.Settings
             return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
         }
 
-        public RootSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null, Func<string, RegistryKey>? createRegFunc = null)
+        public void DeleteAll()
+        {
+            if(RegKey != null)
+            {
+                Registry.LocalMachine.DeleteSubKeyTree($"{RegistryDir}\\{RegistryKey}");
+            }
+        }
+
+        public RootSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null)
         {
             GetFunc = getFunc ?? Get;
             SetFunc = setFunc ?? Set;
-            RegKey = createRegFunc != null ? createRegFunc($"{RegistryDir}\\{RegistryKey}") : CreateRegKey($"{RegistryDir}\\{RegistryKey}");
+
+            // DI用メソッドが指定されていない場合はレジストリオブジェクトを作成(通常動作)
+            if(getFunc == null || setFunc == null)
+            {
+                RegKey = CreateRegKey($"{RegistryDir}\\{RegistryKey}");
+            }
         }
 
 

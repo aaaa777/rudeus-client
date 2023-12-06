@@ -14,6 +14,8 @@ namespace SharedLib.Model.Settings
         string Get(string key, string defaultString);
         bool Set(string key, string value);
 
+        void DeleteAll();
+
         // DI用のメソッドラッパー
         Func<string, string, string> GetFunc { get; set; }
         Func<string, string, bool> SetFunc { get; set; }

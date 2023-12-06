@@ -15,6 +15,11 @@ namespace Test.SharedLib.Model.Settings
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
 
+        public void DeleteAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public FakeSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null) 
         {
             GetFunc = getFunc ?? Get;

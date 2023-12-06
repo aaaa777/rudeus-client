@@ -18,7 +18,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "1.2.3";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.CurrentVersionP = testString;
@@ -33,7 +33,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "stable";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.UpdatingChannelP = testString;
@@ -48,7 +48,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_access_token";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.AccessTokenP = testString;
@@ -63,7 +63,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_device_id";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.DeviceIdP = testString;
@@ -78,7 +78,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_hostname";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.FirstHostnameP = testString;
@@ -93,7 +93,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_hostname";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.HostnameP = testString;
@@ -108,7 +108,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_username";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.UsernameP = testString;
@@ -123,7 +123,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_label_id";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.LabelIdP = testString;
@@ -138,7 +138,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_label_name";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.SpecP = testString;
@@ -153,7 +153,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_cpu_name";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.CpuNameP = testString;
@@ -168,7 +168,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_memory";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.MemoryP = testString;
@@ -183,7 +183,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_c_drive";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.CDriveP = testString;
@@ -198,7 +198,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_os";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.OSP = testString;
@@ -213,7 +213,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_os_version";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.OSVersionP = testString;
@@ -228,7 +228,7 @@ namespace Test.SharedLib.Model.Settings
             // Arrange
             var fs = new FakeSettings();
             var testString = "test_withsecure";
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.WithSecureP = testString;
@@ -242,7 +242,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
             rs.UpdatingChannelP = "beta";
 
             // Act
@@ -260,7 +260,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
             rs.UpdatingChannelP = "stable";
 
             // Act
@@ -278,7 +278,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
             rs.UpdatingChannelP = "<randomtext>";
 
             // Act
@@ -296,7 +296,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
             rs.UpdatingChannelP = "develop";
 
             // Act
@@ -314,7 +314,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
             rs.UpdatingChannelP = "test";
 
             // Act
@@ -332,7 +332,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.SetBetaChannelP();
@@ -349,7 +349,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.SetStableChannelP();
@@ -366,7 +366,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.SetDevelopChannelP();
@@ -383,7 +383,7 @@ namespace Test.SharedLib.Model.Settings
         {
             // Arrange
             var fs = new FakeSettings();
-            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set, createRegFunc: (key) => null);
+            IRootSettings rs = new RootSettings(getFunc: fs.Get, setFunc: fs.Set);
 
             // Act
             rs.SetTestChannelP();

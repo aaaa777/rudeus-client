@@ -19,14 +19,10 @@ namespace SharedLib.Model.Settings
 
         // レジストリ：アプリのルート
         private static string RegistryDir = Constants.RegistryDir;
-        private static string RegistryKey = DefaultRegistryKey;
+        private static string RegistryKey;
 
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
-
-        private static string RegistryPath { get { return $"{RegistryDir}\\{RegistryKey}"; } }
-
-        private static RegistryKey? RegKey = Registry.CurrentUser.CreateSubKey(RegistryKey);
 
         private RegistryKey? _regKey;
 
@@ -35,34 +31,19 @@ namespace SharedLib.Model.Settings
             return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
         }
 
-        // DI用コンストラクタ
-        public AppSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null, Func<string, RegistryKey>? createRegFunc = null)
+        public void DeleteAll()
         {
+            Registry.LocalMachine.DeleteSubKeyTree($"{RegistryKey}");
+        }
+
+        // DI用コンストラクタ
+        public AppSettings(string registryKey, Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null)
+        {
+            RegistryKey = registryKey;
             GetFunc = getFunc ?? Get;
             SetFunc = setFunc ?? Set;
-            _regKey = createRegFunc != null ? createRegFunc($"{RegistryDir}\\{DefaultRegistryKey}") : CreateRegKey($"{RegistryDir}\\{DefaultRegistryKey}");
-        }
 
-        public AppSettings(string registryKey)
-        {
-            _regKey = CreateRegKey($"{RegistryDir}\\{registryKey}");
-            GetFunc = Get;
-            SetFunc = Set;
-        }
-
-        public static void UpdateRegistryKey(string? registryKey = null)
-        {
-            if (registryKey != null)
-            {
-                RegistryKey = registryKey;
-            }
-            else
-            {
-                // nullの場合デフォルト値にリセット
-                RegistryKey = DefaultRegistryKey;
-            }
-
-            RegKey = CreateRegKey(RegistryPath);
+            _regKey = RegistryKey == null ? null : CreateRegKey($"{RegistryDir}\\{RegistryKey}");
         }
 
         public string Get(string key, string defaultValue = "")
@@ -82,50 +63,6 @@ namespace SharedLib.Model.Settings
         {
             _regKey.SetValue(key, value);
             return true;
-        }
-
-        private static string GetStatic(string key, string defaultValue = "", bool isDefaultKey = true, RegistryKey? regKey = null)
-        {
-            if (isDefaultKey)
-            {
-                UpdateRegistryKey();
-            }
-
-            try
-            {
-                if (regKey != null)
-                {
-                    var value = regKey.GetValue(key) ?? new Exception("getting val from registry failed");
-                    return (string)value;
-                }
-                else
-                {
-                    var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
-                    return (string)value;
-                }
-
-            }
-            catch
-            {
-                return defaultValue;
-            }
-        }
-
-        private static void SetStatic(string key, string value, bool isDefault = true, RegistryKey? regKey = null)
-        {
-            if (isDefault)
-            {
-                UpdateRegistryKey();
-            }
-
-            if (regKey != null)
-            {
-                regKey.SetValue(key, value);
-            }
-            else
-            {
-                RegKey?.SetValue(key, value);
-            }
         }
 
 
@@ -232,12 +169,6 @@ namespace SharedLib.Model.Settings
         // last     最後に実行できた正常なバージョン
         public static string LatestVersionStatusKey = "LatestVersionStatus";
 
-        public static string LatestVersionStatus
-        {
-            set { SetStatic(LatestVersionStatusKey, value, false); }
-            get { return GetStatic(LatestVersionStatusKey, "", false); }
-        }
-
         public string LatestVersionStatusP
         {
             set { SetFunc(LatestVersionStatusKey, value); }
@@ -245,13 +176,13 @@ namespace SharedLib.Model.Settings
         }
 
 
-        public bool IsLatestVersionStatusOkP() { return LatestVersionStatus == "ok"; }
-        public bool IsLatestVersionStatusDownloadedP() { return LatestVersionStatus == "downloaded"; }
-        public bool IsLatestVersionStatusUnlaunchableP() { return LatestVersionStatus == "unlaunchable"; }
+        public bool IsLatestVersionStatusOkP() { return LatestVersionStatusP == "ok"; }
+        public bool IsLatestVersionStatusDownloadedP() { return LatestVersionStatusP == "downloaded"; }
+        public bool IsLatestVersionStatusUnlaunchableP() { return LatestVersionStatusP == "unlaunchable"; }
 
-        public void SetLatestVersionStatusOkP() { LatestVersionStatus = "ok"; }
-        public void SetLatestVersionStatusDownloadedP() { LatestVersionStatus = "downloaded"; }
-        public void SetLatestVersionStatusUnlaunchableP() { LatestVersionStatus = "unlaunchable"; }
+        public void SetLatestVersionStatusOkP() { LatestVersionStatusP = "ok"; }
+        public void SetLatestVersionStatusDownloadedP() { LatestVersionStatusP = "downloaded"; }
+        public void SetLatestVersionStatusUnlaunchableP() { LatestVersionStatusP = "unlaunchable"; }
 
         // アップデート対象にするディレクトリ等の設定
 
