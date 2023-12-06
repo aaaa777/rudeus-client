@@ -20,5 +20,8 @@ jobs:
     - name: Download cloc
       run: wget https://github.com/AlDanial/cloc/releases/download/v1.98/cloc-1.98.pl
 
+    - name: Add execute permission
+      run: chmod +x cloc-1.98.pl
+
     - name: Run cloc
       run: ./cloc-1.98.pl .
