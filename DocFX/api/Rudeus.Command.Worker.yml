@@ -5,12 +5,13 @@ items:
   id: Worker
   parent: Rudeus.Command
   children:
-  - Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
+  - Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
   - Rudeus.Command.Worker.AccessTokenValidator
   - Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
+  - Rudeus.Command.Worker.RootSettings
+  - Rudeus.Command.Worker.RunAsync
   - Rudeus.Command.Worker.ScheduledRelularExecuter
   - Rudeus.Command.Worker.UserLoginExecuter
-  - Rudeus.Command.Worker.settings
   langs:
   - csharp
   - vb
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Worker
     path: ../Command/Worker.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Command
   namespace: Rudeus.Command
@@ -84,7 +85,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenValidator
     path: ../Command/Worker.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Command
   namespace: Rudeus.Command
@@ -116,7 +117,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ScheduledRelularExecuter
     path: ../Command/Worker.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Command
   namespace: Rudeus.Command
@@ -148,7 +149,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UserLoginExecuter
     path: ../Command/Worker.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - Command
   namespace: Rudeus.Command
@@ -162,45 +163,45 @@ items:
   overload: Rudeus.Command.Worker.UserLoginExecuter*
   implements:
   - Rudeus.Command.IWorker.UserLoginExecuter
-- uid: Rudeus.Command.Worker.settings
-  commentId: P:Rudeus.Command.Worker.settings
-  id: settings
+- uid: Rudeus.Command.Worker.RootSettings
+  commentId: P:Rudeus.Command.Worker.RootSettings
+  id: RootSettings
   parent: Rudeus.Command.Worker
   langs:
   - csharp
   - vb
-  name: settings
-  nameWithType: Worker.settings
-  fullName: Rudeus.Command.Worker.settings
+  name: RootSettings
+  nameWithType: Worker.RootSettings
+  fullName: Rudeus.Command.Worker.RootSettings
   type: Property
   source:
     remote:
       path: Command/Worker.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
-    id: settings
+    id: RootSettings
     path: ../Command/Worker.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - Command
   namespace: Rudeus.Command
   syntax:
-    content: public static Settings settings { get; set; }
+    content: public IRootSettings RootSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.Settings
-    content.vb: Public Shared Property settings As Settings
-  overload: Rudeus.Command.Worker.settings*
-- uid: Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
-  commentId: M:Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
-  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)'
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Property RootSettings As IRootSettings
+  overload: Rudeus.Command.Worker.RootSettings*
+- uid: Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
+  commentId: M:Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)'
   parent: Rudeus.Command.Worker
   langs:
   - csharp
   - vb
-  name: Worker(ILogger<Worker>, IProcedure?, IProcedure?, IProcedure?)
-  nameWithType: Worker.Worker(ILogger<Worker>, IProcedure?, IProcedure?, IProcedure?)
-  fullName: Rudeus.Command.Worker.Worker(Microsoft.Extensions.Logging.ILogger<Rudeus.Command.Worker>, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?)
+  name: Worker(ILogger<Worker>?, string[]?, IRootSettings?, IProcedure?, IProcedure?, IProcedure?)
+  nameWithType: Worker.Worker(ILogger<Worker>?, string[]?, IRootSettings?, IProcedure?, IProcedure?, IProcedure?)
+  fullName: Rudeus.Command.Worker.Worker(Microsoft.Extensions.Logging.ILogger<Rudeus.Command.Worker>?, string[]?, SharedLib.Model.Settings.IRootSettings?, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?)
   type: Constructor
   source:
     remote:
@@ -209,26 +210,30 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../Command/Worker.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Command
   namespace: Rudeus.Command
   syntax:
-    content: public Worker(ILogger<Worker> logger, IProcedure? at = null, IProcedure? sr = null, IProcedure? ul = null)
+    content: public Worker(ILogger<Worker>? logger = null, string[]? args = null, IRootSettings? settings = null, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)
     parameters:
     - id: logger
       type: Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker}
-    - id: at
+    - id: args
+      type: System.String[]
+    - id: settings
+      type: SharedLib.Model.Settings.IRootSettings
+    - id: accessTokenValidator
       type: Rudeus.Procedure.IProcedure
-    - id: sr
+    - id: scheduledRegularExecuter
       type: Rudeus.Procedure.IProcedure
-    - id: ul
+    - id: userLoginExecuter
       type: Rudeus.Procedure.IProcedure
-    content.vb: Public Sub New(logger As ILogger(Of Worker), at As IProcedure = Nothing, sr As IProcedure = Nothing, ul As IProcedure = Nothing)
+    content.vb: Public Sub New(logger As ILogger(Of Worker) = Nothing, args As String() = Nothing, settings As IRootSettings = Nothing, accessTokenValidator As IProcedure = Nothing, scheduledRegularExecuter As IProcedure = Nothing, userLoginExecuter As IProcedure = Nothing)
   overload: Rudeus.Command.Worker.#ctor*
-  nameWithType.vb: Worker.New(ILogger(Of Worker), IProcedure, IProcedure, IProcedure)
-  fullName.vb: Rudeus.Command.Worker.New(Microsoft.Extensions.Logging.ILogger(Of Rudeus.Command.Worker), Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure)
-  name.vb: New(ILogger(Of Worker), IProcedure, IProcedure, IProcedure)
+  nameWithType.vb: Worker.New(ILogger(Of Worker), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
+  fullName.vb: Rudeus.Command.Worker.New(Microsoft.Extensions.Logging.ILogger(Of Rudeus.Command.Worker), String(), SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure)
+  name.vb: New(ILogger(Of Worker), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
 - uid: Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
   commentId: M:Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
   id: ExecuteAsync(System.Threading.CancellationToken)
@@ -247,7 +252,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ExecuteAsync
     path: ../Command/Worker.cs
-    startLine: 35
+    startLine: 37
   assemblies:
   - Command
   namespace: Rudeus.Command
@@ -269,6 +274,34 @@ items:
     content.vb: Protected Overrides Function ExecuteAsync(stoppingToken As CancellationToken) As Task
   overridden: Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)
   overload: Rudeus.Command.Worker.ExecuteAsync*
+- uid: Rudeus.Command.Worker.RunAsync
+  commentId: M:Rudeus.Command.Worker.RunAsync
+  id: RunAsync
+  parent: Rudeus.Command.Worker
+  langs:
+  - csharp
+  - vb
+  name: RunAsync()
+  nameWithType: Worker.RunAsync()
+  fullName: Rudeus.Command.Worker.RunAsync()
+  type: Method
+  source:
+    remote:
+      path: Command/Worker.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: RunAsync
+    path: ../Command/Worker.cs
+    startLine: 41
+  assemblies:
+  - Command
+  namespace: Rudeus.Command
+  syntax:
+    content: public Task RunAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RunAsync() As Task
+  overload: Rudeus.Command.Worker.RunAsync*
 references:
 - uid: Rudeus.Command
   commentId: N:Rudeus.Command
@@ -2167,44 +2200,52 @@ references:
   name: UserLoginExecuter
   nameWithType: IWorker.UserLoginExecuter
   fullName: Rudeus.Command.IWorker.UserLoginExecuter
-- uid: Rudeus.Command.Worker.settings*
-  commentId: Overload:Rudeus.Command.Worker.settings
-  href: Rudeus.Command.Worker.html#Rudeus_Command_Worker_settings
-  name: settings
-  nameWithType: Worker.settings
-  fullName: Rudeus.Command.Worker.settings
-- uid: Rudeus.Model.Settings
-  commentId: T:Rudeus.Model.Settings
-  parent: Rudeus.Model
-  href: Rudeus.Model.Settings.html
-  name: Settings
-  nameWithType: Settings
-  fullName: Rudeus.Model.Settings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: Rudeus.Command.Worker.RootSettings*
+  commentId: Overload:Rudeus.Command.Worker.RootSettings
+  href: Rudeus.Command.Worker.html#Rudeus_Command_Worker_RootSettings
+  name: RootSettings
+  nameWithType: Worker.RootSettings
+  fullName: Rudeus.Command.Worker.RootSettings
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Command.Worker.#ctor*
   commentId: Overload:Rudeus.Command.Worker.#ctor
-  href: Rudeus.Command.Worker.html#Rudeus_Command_Worker__ctor_Microsoft_Extensions_Logging_ILogger_Rudeus_Command_Worker__Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_
+  href: Rudeus.Command.Worker.html#Rudeus_Command_Worker__ctor_Microsoft_Extensions_Logging_ILogger_Rudeus_Command_Worker__System_String___SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_
   name: Worker
   nameWithType: Worker.Worker
   fullName: Rudeus.Command.Worker.Worker
@@ -2243,6 +2284,29 @@ references:
   - uid: Rudeus.Command.Worker
     name: Worker
     href: Rudeus.Command.Worker.html
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
   - name: )
 - uid: Microsoft.Extensions.Logging.ILogger`1
   commentId: T:Microsoft.Extensions.Logging.ILogger`1
@@ -2454,3 +2518,9 @@ references:
     name: Threading
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Rudeus.Command.Worker.RunAsync*
+  commentId: Overload:Rudeus.Command.Worker.RunAsync
+  href: Rudeus.Command.Worker.html#Rudeus_Command_Worker_RunAsync
+  name: RunAsync
+  nameWithType: Worker.RunAsync
+  fullName: Rudeus.Command.Worker.RunAsync

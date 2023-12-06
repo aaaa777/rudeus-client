@@ -5,7 +5,7 @@ items:
   id: AccessTokenValidator
   parent: Rudeus.Procedure
   children:
-  - Rudeus.Procedure.AccessTokenValidator.#ctor(Rudeus.Model.ISettings)
+  - Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
   - Rudeus.Procedure.AccessTokenValidator.IsFirstRun
   - Rudeus.Procedure.AccessTokenValidator.Run
   - Rudeus.Procedure.AccessTokenValidator._settings
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AccessTokenValidator
     path: ../SharedLib/Procedure/AccessTokenValidator.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -77,27 +77,27 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _settings
     path: ../SharedLib/Procedure/AccessTokenValidator.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings _settings { get; set; }
+    content: public IRootSettings _settings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property _settings As ISettings
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Property _settings As IRootSettings
   overload: Rudeus.Procedure.AccessTokenValidator._settings*
-- uid: Rudeus.Procedure.AccessTokenValidator.#ctor(Rudeus.Model.ISettings)
-  commentId: M:Rudeus.Procedure.AccessTokenValidator.#ctor(Rudeus.Model.ISettings)
-  id: '#ctor(Rudeus.Model.ISettings)'
+- uid: Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
+  id: '#ctor(SharedLib.Model.Settings.IRootSettings)'
   parent: Rudeus.Procedure.AccessTokenValidator
   langs:
   - csharp
   - vb
-  name: AccessTokenValidator(ISettings?)
-  nameWithType: AccessTokenValidator.AccessTokenValidator(ISettings?)
-  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(Rudeus.Model.ISettings?)
+  name: AccessTokenValidator(IRootSettings?)
+  nameWithType: AccessTokenValidator.AccessTokenValidator(IRootSettings?)
+  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(SharedLib.Model.Settings.IRootSettings?)
   type: Constructor
   source:
     remote:
@@ -106,20 +106,20 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../SharedLib/Procedure/AccessTokenValidator.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public AccessTokenValidator(ISettings? cs = null)
+    content: public AccessTokenValidator(IRootSettings? cs = null)
     parameters:
     - id: cs
-      type: Rudeus.Model.ISettings
-    content.vb: Public Sub New(cs As ISettings = Nothing)
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Sub New(cs As IRootSettings = Nothing)
   overload: Rudeus.Procedure.AccessTokenValidator.#ctor*
-  nameWithType.vb: AccessTokenValidator.New(ISettings)
-  fullName.vb: Rudeus.Procedure.AccessTokenValidator.New(Rudeus.Model.ISettings)
-  name.vb: New(ISettings)
+  nameWithType.vb: AccessTokenValidator.New(IRootSettings)
+  fullName.vb: Rudeus.Procedure.AccessTokenValidator.New(SharedLib.Model.Settings.IRootSettings)
+  name.vb: New(IRootSettings)
 - uid: Rudeus.Procedure.AccessTokenValidator.Run
   commentId: M:Rudeus.Procedure.AccessTokenValidator.Run
   id: Run
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
     path: ../SharedLib/Procedure/AccessTokenValidator.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -170,7 +170,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsFirstRun
     path: ../SharedLib/Procedure/AccessTokenValidator.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -1865,38 +1865,46 @@ references:
   name: _settings
   nameWithType: AccessTokenValidator._settings
   fullName: Rudeus.Procedure.AccessTokenValidator._settings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Procedure.AccessTokenValidator.#ctor*
   commentId: Overload:Rudeus.Procedure.AccessTokenValidator.#ctor
-  href: Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_Rudeus_Model_ISettings_
+  href: Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_SharedLib_Model_Settings_IRootSettings_
   name: AccessTokenValidator
   nameWithType: AccessTokenValidator.AccessTokenValidator
   fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator

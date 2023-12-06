@@ -5,10 +5,10 @@ items:
   id: Updater
   parent: Rudeus.Launcher
   children:
-  - Rudeus.Launcher.Updater.#ctor(Rudeus.Model.ISettings)
+  - Rudeus.Launcher.Updater.#ctor(SharedLib.Model.Settings.IAppSettings)
+  - Rudeus.Launcher.Updater.AppSettings
   - Rudeus.Launcher.Updater.Run
   - Rudeus.Launcher.Updater.ShouldUpdate(System.String,System.String)
-  - Rudeus.Launcher.Updater._settings
   langs:
   - csharp
   - vb
@@ -59,45 +59,45 @@ items:
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
-- uid: Rudeus.Launcher.Updater._settings
-  commentId: P:Rudeus.Launcher.Updater._settings
-  id: _settings
+- uid: Rudeus.Launcher.Updater.AppSettings
+  commentId: P:Rudeus.Launcher.Updater.AppSettings
+  id: AppSettings
   parent: Rudeus.Launcher.Updater
   langs:
   - csharp
   - vb
-  name: _settings
-  nameWithType: Updater._settings
-  fullName: Rudeus.Launcher.Updater._settings
+  name: AppSettings
+  nameWithType: Updater.AppSettings
+  fullName: Rudeus.Launcher.Updater.AppSettings
   type: Property
   source:
     remote:
       path: Launcher/Updater.cs
       branch: master
       repo: https://github.com/aaaa777/rudeus-client.git
-    id: _settings
+    id: AppSettings
     path: ../Launcher/Updater.cs
     startLine: 21
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
   syntax:
-    content: public ISettings _settings { get; set; }
+    content: public IAppSettings AppSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property _settings As ISettings
-  overload: Rudeus.Launcher.Updater._settings*
-- uid: Rudeus.Launcher.Updater.#ctor(Rudeus.Model.ISettings)
-  commentId: M:Rudeus.Launcher.Updater.#ctor(Rudeus.Model.ISettings)
-  id: '#ctor(Rudeus.Model.ISettings)'
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Property AppSettings As IAppSettings
+  overload: Rudeus.Launcher.Updater.AppSettings*
+- uid: Rudeus.Launcher.Updater.#ctor(SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Rudeus.Launcher.Updater.#ctor(SharedLib.Model.Settings.IAppSettings)
+  id: '#ctor(SharedLib.Model.Settings.IAppSettings)'
   parent: Rudeus.Launcher.Updater
   langs:
   - csharp
   - vb
-  name: Updater(ISettings?)
-  nameWithType: Updater.Updater(ISettings?)
-  fullName: Rudeus.Launcher.Updater.Updater(Rudeus.Model.ISettings?)
+  name: Updater(IAppSettings?)
+  nameWithType: Updater.Updater(IAppSettings?)
+  fullName: Rudeus.Launcher.Updater.Updater(SharedLib.Model.Settings.IAppSettings?)
   type: Constructor
   source:
     remote:
@@ -111,15 +111,15 @@ items:
   - Launcher
   namespace: Rudeus.Launcher
   syntax:
-    content: public Updater(ISettings? aps = null)
+    content: public Updater(IAppSettings? aps = null)
     parameters:
     - id: aps
-      type: Rudeus.Model.ISettings
-    content.vb: Public Sub New(aps As ISettings = Nothing)
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Sub New(aps As IAppSettings = Nothing)
   overload: Rudeus.Launcher.Updater.#ctor*
-  nameWithType.vb: Updater.New(ISettings)
-  fullName.vb: Rudeus.Launcher.Updater.New(Rudeus.Model.ISettings)
-  name.vb: New(ISettings)
+  nameWithType.vb: Updater.New(IAppSettings)
+  fullName.vb: Rudeus.Launcher.Updater.New(SharedLib.Model.Settings.IAppSettings)
+  name.vb: New(IAppSettings)
 - uid: Rudeus.Launcher.Updater.Run
   commentId: M:Rudeus.Launcher.Updater.Run
   id: Run
@@ -1889,44 +1889,52 @@ references:
   name: Xunit
   nameWithType: Xunit
   fullName: Xunit
-- uid: Rudeus.Launcher.Updater._settings*
-  commentId: Overload:Rudeus.Launcher.Updater._settings
-  href: Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater__settings
-  name: _settings
-  nameWithType: Updater._settings
-  fullName: Rudeus.Launcher.Updater._settings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: Rudeus.Launcher.Updater.AppSettings*
+  commentId: Overload:Rudeus.Launcher.Updater.AppSettings
+  href: Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_AppSettings
+  name: AppSettings
+  nameWithType: Updater.AppSettings
+  fullName: Rudeus.Launcher.Updater.AppSettings
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IAppSettings.html
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Launcher.Updater.#ctor*
   commentId: Overload:Rudeus.Launcher.Updater.#ctor
-  href: Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater__ctor_Rudeus_Model_ISettings_
+  href: Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater__ctor_SharedLib_Model_Settings_IAppSettings_
   name: Updater
   nameWithType: Updater.Updater
   fullName: Rudeus.Launcher.Updater.Updater

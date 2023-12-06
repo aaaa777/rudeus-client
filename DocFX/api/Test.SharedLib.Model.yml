@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.SharedLib.Model
+  commentId: N:Test.SharedLib.Model
+  id: Test.SharedLib.Model
+  children:
+  - Test.SharedLib.Model.FakeLocalCertificate
+  langs:
+  - csharp
+  - vb
+  name: Test.SharedLib.Model
+  nameWithType: Test.SharedLib.Model
+  fullName: Test.SharedLib.Model
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Test.SharedLib.Model.FakeLocalCertificate
+  commentId: T:Test.SharedLib.Model.FakeLocalCertificate
+  href: Test.SharedLib.Model.FakeLocalCertificate.html
+  name: FakeLocalCertificate
+  nameWithType: FakeLocalCertificate
+  fullName: Test.SharedLib.Model.FakeLocalCertificate

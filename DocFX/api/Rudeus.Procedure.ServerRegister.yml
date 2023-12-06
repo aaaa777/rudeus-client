@@ -5,7 +5,7 @@ items:
   id: ServerRegister
   parent: Rudeus.Procedure
   children:
-  - Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,Rudeus.Model.ISettings)
+  - Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
   - Rudeus.Procedure.ServerRegister.Run
   - Rudeus.Procedure.ServerRegister._localMachine
   - Rudeus.Procedure.ServerRegister._settings
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ServerRegister
     path: ../SharedLib/Procedure/ServerRegister.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -77,7 +77,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _localMachine
     path: ../SharedLib/Procedure/ServerRegister.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -106,27 +106,27 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _settings
     path: ../SharedLib/Procedure/ServerRegister.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings _settings { get; set; }
+    content: public IRootSettings _settings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property _settings As ISettings
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Property _settings As IRootSettings
   overload: Rudeus.Procedure.ServerRegister._settings*
-- uid: Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,Rudeus.Model.ISettings)
-  commentId: M:Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,Rudeus.Model.ISettings)
-  id: '#ctor(Rudeus.Model.ILocalMachine,Rudeus.Model.ISettings)'
+- uid: Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
+  id: '#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)'
   parent: Rudeus.Procedure.ServerRegister
   langs:
   - csharp
   - vb
-  name: ServerRegister(ILocalMachine?, ISettings?)
-  nameWithType: ServerRegister.ServerRegister(ILocalMachine?, ISettings?)
-  fullName: Rudeus.Procedure.ServerRegister.ServerRegister(Rudeus.Model.ILocalMachine?, Rudeus.Model.ISettings?)
+  name: ServerRegister(ILocalMachine?, IRootSettings?)
+  nameWithType: ServerRegister.ServerRegister(ILocalMachine?, IRootSettings?)
+  fullName: Rudeus.Procedure.ServerRegister.ServerRegister(Rudeus.Model.ILocalMachine?, SharedLib.Model.Settings.IRootSettings?)
   type: Constructor
   source:
     remote:
@@ -135,22 +135,22 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../SharedLib/Procedure/ServerRegister.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ServerRegister(ILocalMachine? lm = null, ISettings? cs = null)
+    content: public ServerRegister(ILocalMachine? lm = null, IRootSettings? cs = null)
     parameters:
     - id: lm
       type: Rudeus.Model.ILocalMachine
     - id: cs
-      type: Rudeus.Model.ISettings
-    content.vb: Public Sub New(lm As ILocalMachine = Nothing, cs As ISettings = Nothing)
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Sub New(lm As ILocalMachine = Nothing, cs As IRootSettings = Nothing)
   overload: Rudeus.Procedure.ServerRegister.#ctor*
-  nameWithType.vb: ServerRegister.New(ILocalMachine, ISettings)
-  fullName.vb: Rudeus.Procedure.ServerRegister.New(Rudeus.Model.ILocalMachine, Rudeus.Model.ISettings)
-  name.vb: New(ILocalMachine, ISettings)
+  nameWithType.vb: ServerRegister.New(ILocalMachine, IRootSettings)
+  fullName.vb: Rudeus.Procedure.ServerRegister.New(Rudeus.Model.ILocalMachine, SharedLib.Model.Settings.IRootSettings)
+  name.vb: New(ILocalMachine, IRootSettings)
 - uid: Rudeus.Procedure.ServerRegister.Run
   commentId: M:Rudeus.Procedure.ServerRegister.Run
   id: Run
@@ -169,7 +169,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
     path: ../SharedLib/Procedure/ServerRegister.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -1903,16 +1903,46 @@ references:
   name: _settings
   nameWithType: ServerRegister._settings
   fullName: Rudeus.Procedure.ServerRegister._settings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  spec.csharp:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Procedure.ServerRegister.#ctor*
   commentId: Overload:Rudeus.Procedure.ServerRegister.#ctor
-  href: Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister__ctor_Rudeus_Model_ILocalMachine_Rudeus_Model_ISettings_
+  href: Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister__ctor_Rudeus_Model_ILocalMachine_SharedLib_Model_Settings_IRootSettings_
   name: ServerRegister
   nameWithType: ServerRegister.ServerRegister
   fullName: Rudeus.Procedure.ServerRegister.ServerRegister

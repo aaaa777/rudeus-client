@@ -6,8 +6,6 @@ items:
   parent: Rudeus.API
   children:
   - Rudeus.API.RemoteAPI.ApiCheckStatusPath
-  - Rudeus.API.RemoteAPI.ApiEndpointWithCert
-  - Rudeus.API.RemoteAPI.ApiEndpointWithoutCert
   - Rudeus.API.RemoteAPI.ApiLoginPath
   - Rudeus.API.RemoteAPI.ApiRegisterPath
   - Rudeus.API.RemoteAPI.ApiSendInstalledAppsPath
@@ -24,7 +22,8 @@ items:
   - Rudeus.API.RemoteAPI.RequestClient
   - Rudeus.API.RemoteAPI.SamlLoginUrl
   - Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
-  - Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String)
+  - Rudeus.API.RemoteAPI.UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
+  - Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   langs:
   - csharp
   - vb
@@ -39,11 +38,14 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RemoteAPI
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - SharedLib
   namespace: Rudeus.API
-  summary: 管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない
+  summary: >-
+    管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない。
+
+    TODO: インスタンス化してスタブ利用可にする
   example: []
   syntax:
     content: public class RemoteAPI
@@ -91,7 +93,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RequestClient
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 92
+    startLine: 35
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -120,7 +122,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SamlLoginUrl
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 94
+    startLine: 37
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -129,60 +131,6 @@ items:
     return:
       type: System.String
     content.vb: Public Shared ReadOnly SamlLoginUrl As String
-- uid: Rudeus.API.RemoteAPI.ApiEndpointWithCert
-  commentId: F:Rudeus.API.RemoteAPI.ApiEndpointWithCert
-  id: ApiEndpointWithCert
-  parent: Rudeus.API.RemoteAPI
-  langs:
-  - csharp
-  - vb
-  name: ApiEndpointWithCert
-  nameWithType: RemoteAPI.ApiEndpointWithCert
-  fullName: Rudeus.API.RemoteAPI.ApiEndpointWithCert
-  type: Field
-  source:
-    remote:
-      path: SharedLib/API/RemoteAPI.cs
-      branch: master
-      repo: https://github.com/aaaa777/rudeus-client.git
-    id: ApiEndpointWithCert
-    path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 96
-  assemblies:
-  - SharedLib
-  namespace: Rudeus.API
-  syntax:
-    content: public static readonly string ApiEndpointWithCert
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly ApiEndpointWithCert As String
-- uid: Rudeus.API.RemoteAPI.ApiEndpointWithoutCert
-  commentId: F:Rudeus.API.RemoteAPI.ApiEndpointWithoutCert
-  id: ApiEndpointWithoutCert
-  parent: Rudeus.API.RemoteAPI
-  langs:
-  - csharp
-  - vb
-  name: ApiEndpointWithoutCert
-  nameWithType: RemoteAPI.ApiEndpointWithoutCert
-  fullName: Rudeus.API.RemoteAPI.ApiEndpointWithoutCert
-  type: Field
-  source:
-    remote:
-      path: SharedLib/API/RemoteAPI.cs
-      branch: master
-      repo: https://github.com/aaaa777/rudeus-client.git
-    id: ApiEndpointWithoutCert
-    path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 97
-  assemblies:
-  - SharedLib
-  namespace: Rudeus.API
-  syntax:
-    content: public static readonly string ApiEndpointWithoutCert
-    return:
-      type: System.String
-    content.vb: Public Shared ReadOnly ApiEndpointWithoutCert As String
 - uid: Rudeus.API.RemoteAPI.ApiCheckStatusPath
   commentId: P:Rudeus.API.RemoteAPI.ApiCheckStatusPath
   id: ApiCheckStatusPath
@@ -201,7 +149,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiCheckStatusPath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 100
+    startLine: 39
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -230,7 +178,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiRegisterPath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 101
+    startLine: 40
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -259,7 +207,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiUpdatePath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 102
+    startLine: 41
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -288,7 +236,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiLoginPath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 103
+    startLine: 42
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -317,7 +265,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiUpdateMetadataPath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 104
+    startLine: 43
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -346,7 +294,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ApiSendInstalledAppsPath
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 105
+    startLine: 44
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -375,7 +323,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: AppCallbackUri
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 108
+    startLine: 47
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -402,7 +350,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: BuildHttpRequestMessage
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 166
+    startLine: 80
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -442,7 +390,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RegisterDevice
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 242
+    startLine: 111
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -466,16 +414,16 @@ items:
   nameWithType.vb: RemoteAPI.RegisterDevice(String, String)
   fullName.vb: Rudeus.API.RemoteAPI.RegisterDevice(String, String)
   name.vb: RegisterDevice(String, String)
-- uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String)
-  commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String)
-  id: UpdateDevice(System.String,System.String)
+- uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
+  id: UpdateDevice(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)
   parent: Rudeus.API.RemoteAPI
   langs:
   - csharp
   - vb
-  name: UpdateDevice(string, string?)
-  nameWithType: RemoteAPI.UpdateDevice(string, string?)
-  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, string?)
+  name: UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
+  nameWithType: RemoteAPI.UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
+  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, string?, string?, string?, string?, string?, string?, string?, string?, string?)
   type: Method
   source:
     remote:
@@ -484,26 +432,78 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdateDevice
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 273
+    startLine: 142
   assemblies:
   - SharedLib
   namespace: Rudeus.API
   summary: デバイスIDとアクセストークンを利用してデバイス情報を更新する
   example: []
   syntax:
-    content: public static UpdateResponse UpdateDevice(string accessToken, string? hostname = null)
+    content: public static UpdateResponse UpdateDevice(string accessToken, string? hostname = null, string? spec = null, string? cpu_name = null, string? memory = null, string? c_drive = null, string? os = null, string? os_version = null, string? withsecure = null, string? label_id = null)
     parameters:
     - id: accessToken
       type: System.String
     - id: hostname
       type: System.String
+    - id: spec
+      type: System.String
+    - id: cpu_name
+      type: System.String
+    - id: memory
+      type: System.String
+    - id: c_drive
+      type: System.String
+    - id: os
+      type: System.String
+    - id: os_version
+      type: System.String
+    - id: withsecure
+      type: System.String
+    - id: label_id
+      type: System.String
     return:
       type: Rudeus.API.Response.UpdateResponse
-    content.vb: Public Shared Function UpdateDevice(accessToken As String, hostname As String = Nothing) As UpdateResponse
+    content.vb: Public Shared Function UpdateDevice(accessToken As String, hostname As String = Nothing, spec As String = Nothing, cpu_name As String = Nothing, memory As String = Nothing, c_drive As String = Nothing, os As String = Nothing, os_version As String = Nothing, withsecure As String = Nothing, label_id As String = Nothing) As UpdateResponse
   overload: Rudeus.API.RemoteAPI.UpdateDevice*
-  nameWithType.vb: RemoteAPI.UpdateDevice(String, String)
-  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, String)
-  name.vb: UpdateDevice(String, String)
+  nameWithType.vb: RemoteAPI.UpdateDevice(String, String, String, String, String, String, String, String, String, String)
+  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, String, String, String, String, String, String, String, String, String)
+  name.vb: UpdateDevice(String, String, String, String, String, String, String, String, String, String)
+- uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
+  commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
+  id: UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
+  parent: Rudeus.API.RemoteAPI
+  langs:
+  - csharp
+  - vb
+  name: UpdateDevice(string, UpdateRequest)
+  nameWithType: RemoteAPI.UpdateDevice(string, UpdateRequest)
+  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, Rudeus.API.Request.UpdateRequest)
+  type: Method
+  source:
+    remote:
+      path: SharedLib/API/RemoteAPI.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UpdateDevice
+    path: ../SharedLib/API/RemoteAPI.cs
+    startLine: 172
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API
+  syntax:
+    content: public static UpdateResponse UpdateDevice(string accessToken, UpdateRequest req)
+    parameters:
+    - id: accessToken
+      type: System.String
+    - id: req
+      type: Rudeus.API.Request.UpdateRequest
+    return:
+      type: Rudeus.API.Response.UpdateResponse
+    content.vb: Public Shared Function UpdateDevice(accessToken As String, req As UpdateRequest) As UpdateResponse
+  overload: Rudeus.API.RemoteAPI.UpdateDevice*
+  nameWithType.vb: RemoteAPI.UpdateDevice(String, UpdateRequest)
+  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, Rudeus.API.Request.UpdateRequest)
+  name.vb: UpdateDevice(String, UpdateRequest)
 - uid: Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
   commentId: M:Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
   id: SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
@@ -522,7 +522,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: SendInstalledApps
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 307
+    startLine: 200
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -558,7 +558,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ReceiveStudentIdAsync
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 339
+    startLine: 232
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -591,7 +591,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: LoginDevice
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 365
+    startLine: 258
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -627,7 +627,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: GetUpdateMetadata
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 393
+    startLine: 286
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -661,7 +661,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsAccessTokenAvailable
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 419
+    startLine: 312
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -695,7 +695,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: IsRemoteReachable
     path: ../SharedLib/API/RemoteAPI.cs
-    startLine: 433
+    startLine: 326
   assemblies:
   - SharedLib
   namespace: Rudeus.API
@@ -2541,7 +2541,7 @@ references:
     href: Rudeus.API.Response.html
 - uid: Rudeus.API.RemoteAPI.UpdateDevice*
   commentId: Overload:Rudeus.API.RemoteAPI.UpdateDevice
-  href: Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_
+  href: Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_String_
   name: UpdateDevice
   nameWithType: RemoteAPI.UpdateDevice
   fullName: Rudeus.API.RemoteAPI.UpdateDevice
@@ -2552,6 +2552,43 @@ references:
   name: UpdateResponse
   nameWithType: UpdateResponse
   fullName: Rudeus.API.Response.UpdateResponse
+- uid: Rudeus.API.Request.UpdateRequest
+  commentId: T:Rudeus.API.Request.UpdateRequest
+  parent: Rudeus.API.Request
+  href: Rudeus.API.Request.UpdateRequest.html
+  name: UpdateRequest
+  nameWithType: UpdateRequest
+  fullName: Rudeus.API.Request.UpdateRequest
+- uid: Rudeus.API.Request
+  commentId: N:Rudeus.API.Request
+  href: Rudeus.html
+  name: Rudeus.API.Request
+  nameWithType: Rudeus.API.Request
+  fullName: Rudeus.API.Request
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.API
+    name: API
+    href: Rudeus.API.html
+  - name: .
+  - uid: Rudeus.API.Request
+    name: Request
+    href: Rudeus.API.Request.html
 - uid: Rudeus.API.RemoteAPI.SendInstalledApps*
   commentId: Overload:Rudeus.API.RemoteAPI.SendInstalledApps
   href: Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_SendInstalledApps_System_String_System_Collections_Generic_List_Rudeus_Model_ApplicationData__

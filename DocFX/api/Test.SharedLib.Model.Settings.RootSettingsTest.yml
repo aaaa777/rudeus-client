@@ -1,0 +1,2773 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest
+  commentId: T:Test.SharedLib.Model.Settings.RootSettingsTest
+  id: RootSettingsTest
+  parent: Test.SharedLib.Model.Settings
+  children:
+  - Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2
+  - Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest
+  - Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest
+  langs:
+  - csharp
+  - vb
+  name: RootSettingsTest
+  nameWithType: RootSettingsTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest
+  type: Class
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: RootSettingsTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 11
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: public class RootSettingsTest
+    content.vb: Public Class RootSettingsTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.AsDynamic``1
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNotNull``1
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNull``1
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.RootSettingsTest,System.Boolean}},System.String)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  - Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest
+  id: CurrentVersionPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CurrentVersionPTest()
+  nameWithType: RootSettingsTest.CurrentVersionPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CurrentVersionPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 13
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CurrentVersionPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CurrentVersionPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest
+  id: UpdatingChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatingChannelPTest()
+  nameWithType: RootSettingsTest.UpdatingChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UpdatingChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 28
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void UpdatingChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub UpdatingChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest
+  id: AccessTokenPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenPTest()
+  nameWithType: RootSettingsTest.AccessTokenPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: AccessTokenPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 43
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AccessTokenPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AccessTokenPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest
+  id: DeviceIdPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: DeviceIdPTest()
+  nameWithType: RootSettingsTest.DeviceIdPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: DeviceIdPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 58
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void DeviceIdPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub DeviceIdPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest
+  id: FirstHostnamePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: FirstHostnamePTest()
+  nameWithType: RootSettingsTest.FirstHostnamePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: FirstHostnamePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 73
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FirstHostnamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FirstHostnamePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest
+  id: HostnamePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: HostnamePTest()
+  nameWithType: RootSettingsTest.HostnamePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: HostnamePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 88
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void HostnamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub HostnamePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest
+  id: UsernamePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: UsernamePTest()
+  nameWithType: RootSettingsTest.UsernamePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UsernamePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 103
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void UsernamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub UsernamePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest
+  id: LabelIdPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LabelIdPTest()
+  nameWithType: RootSettingsTest.LabelIdPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LabelIdPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 118
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LabelIdPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LabelIdPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest
+  id: SpecPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SpecPTest()
+  nameWithType: RootSettingsTest.SpecPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SpecPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 133
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SpecPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SpecPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest
+  id: CpuNamePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CpuNamePTest()
+  nameWithType: RootSettingsTest.CpuNamePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CpuNamePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 148
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CpuNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CpuNamePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest
+  id: MemoryPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: MemoryPTest()
+  nameWithType: RootSettingsTest.MemoryPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: MemoryPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 163
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MemoryPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MemoryPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest
+  id: CDrivePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CDrivePTest()
+  nameWithType: RootSettingsTest.CDrivePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CDrivePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 178
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CDrivePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CDrivePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest
+  id: OSPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: OSPTest()
+  nameWithType: RootSettingsTest.OSPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 193
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OSPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OSPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest
+  id: OSVersionPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: OSVersionPTest()
+  nameWithType: RootSettingsTest.OSVersionPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSVersionPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 208
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OSVersionPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OSVersionPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest
+  id: WithSecurePTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: WithSecurePTest()
+  nameWithType: RootSettingsTest.WithSecurePTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: WithSecurePTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 223
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WithSecurePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WithSecurePTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest
+  id: IsBetaChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsBetaChannelPTest()
+  nameWithType: RootSettingsTest.IsBetaChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsBetaChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 238
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsBetaChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsBetaChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest
+  id: IsStableChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsStableChannelPTest()
+  nameWithType: RootSettingsTest.IsStableChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsStableChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 256
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsStableChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsStableChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2
+  id: IsStableChannelPTest2
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsStableChannelPTest2()
+  nameWithType: RootSettingsTest.IsStableChannelPTest2()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsStableChannelPTest2
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 274
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsStableChannelPTest2()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsStableChannelPTest2()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest
+  id: IsDevelopChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopChannelPTest()
+  nameWithType: RootSettingsTest.IsDevelopChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsDevelopChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 292
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsDevelopChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsDevelopChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest
+  id: IsTestChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsTestChannelPTest()
+  nameWithType: RootSettingsTest.IsTestChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsTestChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 310
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsTestChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsTestChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest
+  id: SetBetaChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetBetaChannelPTest()
+  nameWithType: RootSettingsTest.SetBetaChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetBetaChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 328
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetBetaChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetBetaChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest
+  id: SetStableChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetStableChannelPTest()
+  nameWithType: RootSettingsTest.SetStableChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetStableChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 345
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetStableChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetStableChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest
+  id: SetDevelopChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetDevelopChannelPTest()
+  nameWithType: RootSettingsTest.SetDevelopChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetDevelopChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 362
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetDevelopChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetDevelopChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest
+  id: SetTestChannelPTest
+  parent: Test.SharedLib.Model.Settings.RootSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetTestChannelPTest()
+  nameWithType: RootSettingsTest.SetTestChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/RootSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetTestChannelPTest
+    path: ../Test/SharedLib/Model/Settings/RootSettingsTest.cs
+    startLine: 379
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetTestChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetTestChannelPTest()
+  overload: Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Test.SharedLib.Model.Settings
+  commentId: N:Test.SharedLib.Model.Settings
+  href: Test.html
+  name: Test.SharedLib.Model.Settings
+  nameWithType: Test.SharedLib.Model.Settings
+  fullName: Test.SharedLib.Model.Settings
+  spec.csharp:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Model
+    name: Model
+    href: Test.SharedLib.Model.html
+  - name: .
+  - uid: Test.SharedLib.Model.Settings
+    name: Settings
+    href: Test.SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Model
+    name: Model
+    href: Test.SharedLib.Model.html
+  - name: .
+  - uid: Test.SharedLib.Model.Settings
+    name: Settings
+    href: Test.SharedLib.Model.Settings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<RootSettingsTest>(RootSettingsTest)
+  nameWithType: AssertEx.AsDynamic<RootSettingsTest>(RootSettingsTest)
+  fullName: Xunit.AssertEx.AsDynamic<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.AsDynamic(Of RootSettingsTest)(RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: AsDynamic(Of RootSettingsTest)(RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<RootSettingsTest>(RootSettingsTest)
+  nameWithType: AssertEx.IsNotNull<RootSettingsTest>(RootSettingsTest)
+  fullName: Xunit.AssertEx.IsNotNull<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.IsNotNull(Of RootSettingsTest)(RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: IsNotNull(Of RootSettingsTest)(RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  nameWithType: AssertEx.IsNotSameReferenceAs<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: IsNotSameReferenceAs(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  nameWithType: AssertEx.IsNot<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  fullName: Xunit.AssertEx.IsNot<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.IsNot(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNot(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: IsNot(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<RootSettingsTest>(RootSettingsTest, RootSettingsTest, IEqualityComparer<RootSettingsTest>)
+  nameWithType: AssertEx.IsNot<RootSettingsTest>(RootSettingsTest, RootSettingsTest, IEqualityComparer<RootSettingsTest>)
+  fullName: Xunit.AssertEx.IsNot<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest, System.Collections.Generic.IEqualityComparer<Test.SharedLib.Model.Settings.RootSettingsTest>)
+  nameWithType.vb: AssertEx.IsNot(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest, IEqualityComparer(Of RootSettingsTest))
+  fullName.vb: Xunit.AssertEx.IsNot(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest, System.Collections.Generic.IEqualityComparer(Of Test.SharedLib.Model.Settings.RootSettingsTest))
+  name.vb: IsNot(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest, IEqualityComparer(Of RootSettingsTest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<RootSettingsTest>(RootSettingsTest)
+  nameWithType: AssertEx.IsNull<RootSettingsTest>(RootSettingsTest)
+  fullName: Xunit.AssertEx.IsNull<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.IsNull(Of RootSettingsTest)(RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNull(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: IsNull(Of RootSettingsTest)(RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  nameWithType: AssertEx.IsSameReferenceAs<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: IsSameReferenceAs(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.RootSettingsTest,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<RootSettingsTest>(RootSettingsTest, Expression<Func<RootSettingsTest, bool>>, string)
+  nameWithType: AssertEx.Is<RootSettingsTest>(RootSettingsTest, Expression<Func<RootSettingsTest, bool>>, string)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, System.Linq.Expressions.Expression<System.Func<Test.SharedLib.Model.Settings.RootSettingsTest, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of RootSettingsTest)(RootSettingsTest, Expression(Of Func(Of RootSettingsTest, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, System.Linq.Expressions.Expression(Of System.Func(Of Test.SharedLib.Model.Settings.RootSettingsTest, Boolean)), String)
+  name.vb: Is(Of RootSettingsTest)(RootSettingsTest, Expression(Of Func(Of RootSettingsTest, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.RootSettingsTest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.RootSettingsTest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  nameWithType: AssertEx.Is<RootSettingsTest>(RootSettingsTest, RootSettingsTest)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  nameWithType.vb: AssertEx.Is(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest)
+  name.vb: Is(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<RootSettingsTest>(RootSettingsTest, RootSettingsTest, IEqualityComparer<RootSettingsTest>)
+  nameWithType: AssertEx.Is<RootSettingsTest>(RootSettingsTest, RootSettingsTest, IEqualityComparer<RootSettingsTest>)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.RootSettingsTest>(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest, System.Collections.Generic.IEqualityComparer<Test.SharedLib.Model.Settings.RootSettingsTest>)
+  nameWithType.vb: AssertEx.Is(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest, IEqualityComparer(Of RootSettingsTest))
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.RootSettingsTest)(Test.SharedLib.Model.Settings.RootSettingsTest, Test.SharedLib.Model.Settings.RootSettingsTest, System.Collections.Generic.IEqualityComparer(Of Test.SharedLib.Model.Settings.RootSettingsTest))
+  name.vb: Is(Of RootSettingsTest)(RootSettingsTest, RootSettingsTest, IEqualityComparer(Of RootSettingsTest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.RootSettingsTest,Test.SharedLib.Model.Settings.RootSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.RootSettingsTest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+    href: Test.SharedLib.Model.Settings.RootSettingsTest.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_CurrentVersionPTest
+  name: CurrentVersionPTest
+  nameWithType: RootSettingsTest.CurrentVersionPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CurrentVersionPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_UpdatingChannelPTest
+  name: UpdatingChannelPTest
+  nameWithType: RootSettingsTest.UpdatingChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.UpdatingChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_AccessTokenPTest
+  name: AccessTokenPTest
+  nameWithType: RootSettingsTest.AccessTokenPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.AccessTokenPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_DeviceIdPTest
+  name: DeviceIdPTest
+  nameWithType: RootSettingsTest.DeviceIdPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.DeviceIdPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_FirstHostnamePTest
+  name: FirstHostnamePTest
+  nameWithType: RootSettingsTest.FirstHostnamePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.FirstHostnamePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_HostnamePTest
+  name: HostnamePTest
+  nameWithType: RootSettingsTest.HostnamePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.HostnamePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_UsernamePTest
+  name: UsernamePTest
+  nameWithType: RootSettingsTest.UsernamePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.UsernamePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_LabelIdPTest
+  name: LabelIdPTest
+  nameWithType: RootSettingsTest.LabelIdPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.LabelIdPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_SpecPTest
+  name: SpecPTest
+  nameWithType: RootSettingsTest.SpecPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SpecPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_CpuNamePTest
+  name: CpuNamePTest
+  nameWithType: RootSettingsTest.CpuNamePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CpuNamePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_MemoryPTest
+  name: MemoryPTest
+  nameWithType: RootSettingsTest.MemoryPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.MemoryPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_CDrivePTest
+  name: CDrivePTest
+  nameWithType: RootSettingsTest.CDrivePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.CDrivePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_OSPTest
+  name: OSPTest
+  nameWithType: RootSettingsTest.OSPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.OSPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_OSVersionPTest
+  name: OSVersionPTest
+  nameWithType: RootSettingsTest.OSVersionPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.OSVersionPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_WithSecurePTest
+  name: WithSecurePTest
+  nameWithType: RootSettingsTest.WithSecurePTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.WithSecurePTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_IsBetaChannelPTest
+  name: IsBetaChannelPTest
+  nameWithType: RootSettingsTest.IsBetaChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsBetaChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_IsStableChannelPTest
+  name: IsStableChannelPTest
+  nameWithType: RootSettingsTest.IsStableChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_IsStableChannelPTest2
+  name: IsStableChannelPTest2
+  nameWithType: RootSettingsTest.IsStableChannelPTest2
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsStableChannelPTest2
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_IsDevelopChannelPTest
+  name: IsDevelopChannelPTest
+  nameWithType: RootSettingsTest.IsDevelopChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsDevelopChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_IsTestChannelPTest
+  name: IsTestChannelPTest
+  nameWithType: RootSettingsTest.IsTestChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.IsTestChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_SetBetaChannelPTest
+  name: SetBetaChannelPTest
+  nameWithType: RootSettingsTest.SetBetaChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetBetaChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_SetStableChannelPTest
+  name: SetStableChannelPTest
+  nameWithType: RootSettingsTest.SetStableChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetStableChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_SetDevelopChannelPTest
+  name: SetDevelopChannelPTest
+  nameWithType: RootSettingsTest.SetDevelopChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetDevelopChannelPTest
+- uid: Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest
+  href: Test.SharedLib.Model.Settings.RootSettingsTest.html#Test_SharedLib_Model_Settings_RootSettingsTest_SetTestChannelPTest
+  name: SetTestChannelPTest
+  nameWithType: RootSettingsTest.SetTestChannelPTest
+  fullName: Test.SharedLib.Model.Settings.RootSettingsTest.SetTestChannelPTest

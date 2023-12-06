@@ -7,8 +7,15 @@ items:
   children:
   - Rudeus.API.Request.UpdateRequestData.#ctor
   - Rudeus.API.Request.UpdateRequestData.#ctor(System.String)
+  - Rudeus.API.Request.UpdateRequestData.c_drive
+  - Rudeus.API.Request.UpdateRequestData.cpu_name
   - Rudeus.API.Request.UpdateRequestData.hostname
+  - Rudeus.API.Request.UpdateRequestData.label_id
+  - Rudeus.API.Request.UpdateRequestData.memory
+  - Rudeus.API.Request.UpdateRequestData.os
+  - Rudeus.API.Request.UpdateRequestData.os_version
   - Rudeus.API.Request.UpdateRequestData.spec
+  - Rudeus.API.Request.UpdateRequestData.withsecure
   langs:
   - csharp
   - vb
@@ -23,7 +30,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: UpdateRequestData
     path: ../SharedLib/API/Request/UpdateRequest.cs
-    startLine: 27
+    startLine: 32
   assemblies:
   - SharedLib
   namespace: Rudeus.API.Request
@@ -73,7 +80,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: hostname
     path: ../SharedLib/API/Request/UpdateRequest.cs
-    startLine: 29
+    startLine: 34
   assemblies:
   - SharedLib
   namespace: Rudeus.API.Request
@@ -125,7 +132,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: spec
     path: ../SharedLib/API/Request/UpdateRequest.cs
-    startLine: 33
+    startLine: 38
   assemblies:
   - SharedLib
   namespace: Rudeus.API.Request
@@ -159,6 +166,370 @@ items:
     - name: Condition
       type: System.Text.Json.Serialization.JsonIgnoreCondition
       value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.cpu_name
+  commentId: P:Rudeus.API.Request.UpdateRequestData.cpu_name
+  id: cpu_name
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: cpu_name
+  nameWithType: UpdateRequestData.cpu_name
+  fullName: Rudeus.API.Request.UpdateRequestData.cpu_name
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: cpu_name
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 42
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("cpu_name")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? cpu_name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("cpu_name")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property cpu_name As String
+  overload: Rudeus.API.Request.UpdateRequestData.cpu_name*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: cpu_name
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.memory
+  commentId: P:Rudeus.API.Request.UpdateRequestData.memory
+  id: memory
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: memory
+  nameWithType: UpdateRequestData.memory
+  fullName: Rudeus.API.Request.UpdateRequestData.memory
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: memory
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 46
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("memory")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? memory { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("memory")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property memory As String
+  overload: Rudeus.API.Request.UpdateRequestData.memory*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: memory
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.c_drive
+  commentId: P:Rudeus.API.Request.UpdateRequestData.c_drive
+  id: c_drive
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: c_drive
+  nameWithType: UpdateRequestData.c_drive
+  fullName: Rudeus.API.Request.UpdateRequestData.c_drive
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: c_drive
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 50
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("c_drive")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? c_drive { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("c_drive")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property c_drive As String
+  overload: Rudeus.API.Request.UpdateRequestData.c_drive*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: c_drive
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.os
+  commentId: P:Rudeus.API.Request.UpdateRequestData.os
+  id: os
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: os
+  nameWithType: UpdateRequestData.os
+  fullName: Rudeus.API.Request.UpdateRequestData.os
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: os
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 54
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("os")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? os { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("os")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property os As String
+  overload: Rudeus.API.Request.UpdateRequestData.os*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: os
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.os_version
+  commentId: P:Rudeus.API.Request.UpdateRequestData.os_version
+  id: os_version
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: os_version
+  nameWithType: UpdateRequestData.os_version
+  fullName: Rudeus.API.Request.UpdateRequestData.os_version
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: os_version
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 58
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("os_version")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? os_version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("os_version")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property os_version As String
+  overload: Rudeus.API.Request.UpdateRequestData.os_version*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: os_version
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.withsecure
+  commentId: P:Rudeus.API.Request.UpdateRequestData.withsecure
+  id: withsecure
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: withsecure
+  nameWithType: UpdateRequestData.withsecure
+  fullName: Rudeus.API.Request.UpdateRequestData.withsecure
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: withsecure
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 62
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("withsecure")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? withsecure { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("withsecure")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property withsecure As String
+  overload: Rudeus.API.Request.UpdateRequestData.withsecure*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: withsecure
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
+- uid: Rudeus.API.Request.UpdateRequestData.label_id
+  commentId: P:Rudeus.API.Request.UpdateRequestData.label_id
+  id: label_id
+  parent: Rudeus.API.Request.UpdateRequestData
+  langs:
+  - csharp
+  - vb
+  name: label_id
+  nameWithType: UpdateRequestData.label_id
+  fullName: Rudeus.API.Request.UpdateRequestData.label_id
+  type: Property
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: label_id
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 66
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: >-
+      [JsonPropertyName("label_id")]
+
+      [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+
+      public string? label_id { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("label_id")>
+
+      <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
+
+      Public Property label_id As String
+  overload: Rudeus.API.Request.UpdateRequestData.label_id*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: label_id
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Condition
+      type: System.Text.Json.Serialization.JsonIgnoreCondition
+      value: 3
 - uid: Rudeus.API.Request.UpdateRequestData.#ctor
   commentId: M:Rudeus.API.Request.UpdateRequestData.#ctor
   id: '#ctor'
@@ -177,7 +548,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../SharedLib/API/Request/UpdateRequest.cs
-    startLine: 37
+    startLine: 70
   assemblies:
   - SharedLib
   namespace: Rudeus.API.Request
@@ -206,7 +577,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../SharedLib/API/Request/UpdateRequest.cs
-    startLine: 39
+    startLine: 72
   assemblies:
   - SharedLib
   namespace: Rudeus.API.Request
@@ -1923,6 +2294,48 @@ references:
   name: spec
   nameWithType: UpdateRequestData.spec
   fullName: Rudeus.API.Request.UpdateRequestData.spec
+- uid: Rudeus.API.Request.UpdateRequestData.cpu_name*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.cpu_name
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_cpu_name
+  name: cpu_name
+  nameWithType: UpdateRequestData.cpu_name
+  fullName: Rudeus.API.Request.UpdateRequestData.cpu_name
+- uid: Rudeus.API.Request.UpdateRequestData.memory*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.memory
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_memory
+  name: memory
+  nameWithType: UpdateRequestData.memory
+  fullName: Rudeus.API.Request.UpdateRequestData.memory
+- uid: Rudeus.API.Request.UpdateRequestData.c_drive*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.c_drive
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_c_drive
+  name: c_drive
+  nameWithType: UpdateRequestData.c_drive
+  fullName: Rudeus.API.Request.UpdateRequestData.c_drive
+- uid: Rudeus.API.Request.UpdateRequestData.os*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.os
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_os
+  name: os
+  nameWithType: UpdateRequestData.os
+  fullName: Rudeus.API.Request.UpdateRequestData.os
+- uid: Rudeus.API.Request.UpdateRequestData.os_version*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.os_version
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_os_version
+  name: os_version
+  nameWithType: UpdateRequestData.os_version
+  fullName: Rudeus.API.Request.UpdateRequestData.os_version
+- uid: Rudeus.API.Request.UpdateRequestData.withsecure*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.withsecure
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_withsecure
+  name: withsecure
+  nameWithType: UpdateRequestData.withsecure
+  fullName: Rudeus.API.Request.UpdateRequestData.withsecure
+- uid: Rudeus.API.Request.UpdateRequestData.label_id*
+  commentId: Overload:Rudeus.API.Request.UpdateRequestData.label_id
+  href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_label_id
+  name: label_id
+  nameWithType: UpdateRequestData.label_id
+  fullName: Rudeus.API.Request.UpdateRequestData.label_id
 - uid: Rudeus.API.Request.UpdateRequestData.#ctor*
   commentId: Overload:Rudeus.API.Request.UpdateRequestData.#ctor
   href: Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData__ctor

@@ -25,7 +25,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Program
     path: ../Launcher/Program.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -75,16 +75,16 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _appSettings
     path: ../Launcher/Program.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
   syntax:
-    content: public static ISettings _appSettings { get; set; }
+    content: public static IAppSettings _appSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Shared Property _appSettings As ISettings
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Shared Property _appSettings As IAppSettings
   overload: Rudeus.Launcher.Program._appSettings*
 - uid: Rudeus.Launcher.Program._argsStr
   commentId: P:Rudeus.Launcher.Program._argsStr
@@ -104,7 +104,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _argsStr
     path: ../Launcher/Program.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _updater
     path: ../Launcher/Program.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -162,7 +162,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: _launcher
     path: ../Launcher/Program.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -191,7 +191,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Main
     path: ../Launcher/Program.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -223,7 +223,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: MainAsync
     path: ../Launcher/Program.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - Launcher
   namespace: Rudeus.Launcher
@@ -1911,35 +1911,43 @@ references:
   name: _appSettings
   nameWithType: Program._appSettings
   fullName: Rudeus.Launcher.Program._appSettings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IAppSettings.html
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Launcher.Program._argsStr*
   commentId: Overload:Rudeus.Launcher.Program._argsStr
   href: Rudeus.Launcher.Program.html#Rudeus_Launcher_Program__argsStr

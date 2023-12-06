@@ -5,7 +5,7 @@ items:
   id: RegistryInitializer
   parent: Rudeus.Procedure
   children:
-  - Rudeus.Procedure.RegistryInitializer.#ctor(Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings)
+  - Rudeus.Procedure.RegistryInitializer.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
   - Rudeus.Procedure.RegistryInitializer.BfSettings
   - Rudeus.Procedure.RegistryInitializer.BgSettings
   - Rudeus.Procedure.RegistryInitializer.ConfSettings
@@ -25,7 +25,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: RegistryInitializer
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -79,16 +79,16 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ConfSettings
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings ConfSettings { get; set; }
+    content: public IRootSettings ConfSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property ConfSettings As ISettings
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Property ConfSettings As IRootSettings
   overload: Rudeus.Procedure.RegistryInitializer.ConfSettings*
 - uid: Rudeus.Procedure.RegistryInitializer.InnoSettings
   commentId: P:Rudeus.Procedure.RegistryInitializer.InnoSettings
@@ -108,16 +108,16 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: InnoSettings
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 21
+    startLine: 22
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings InnoSettings { get; set; }
+    content: public IAppSettings InnoSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property InnoSettings As ISettings
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Property InnoSettings As IAppSettings
   overload: Rudeus.Procedure.RegistryInitializer.InnoSettings*
 - uid: Rudeus.Procedure.RegistryInitializer.BgSettings
   commentId: P:Rudeus.Procedure.RegistryInitializer.BgSettings
@@ -137,16 +137,16 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: BgSettings
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings BgSettings { get; set; }
+    content: public IAppSettings BgSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property BgSettings As ISettings
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Property BgSettings As IAppSettings
   overload: Rudeus.Procedure.RegistryInitializer.BgSettings*
 - uid: Rudeus.Procedure.RegistryInitializer.BfSettings
   commentId: P:Rudeus.Procedure.RegistryInitializer.BfSettings
@@ -166,27 +166,27 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: BfSettings
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public ISettings BfSettings { get; set; }
+    content: public IAppSettings BfSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property BfSettings As ISettings
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Property BfSettings As IAppSettings
   overload: Rudeus.Procedure.RegistryInitializer.BfSettings*
-- uid: Rudeus.Procedure.RegistryInitializer.#ctor(Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings)
-  commentId: M:Rudeus.Procedure.RegistryInitializer.#ctor(Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings)
-  id: '#ctor(Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings,Rudeus.Model.ISettings)'
+- uid: Rudeus.Procedure.RegistryInitializer.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Rudeus.Procedure.RegistryInitializer.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+  id: '#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)'
   parent: Rudeus.Procedure.RegistryInitializer
   langs:
   - csharp
   - vb
-  name: RegistryInitializer(ISettings?, ISettings?, ISettings?, ISettings?)
-  nameWithType: RegistryInitializer.RegistryInitializer(ISettings?, ISettings?, ISettings?, ISettings?)
-  fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer(Rudeus.Model.ISettings?, Rudeus.Model.ISettings?, Rudeus.Model.ISettings?, Rudeus.Model.ISettings?)
+  name: RegistryInitializer(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  nameWithType: RegistryInitializer.RegistryInitializer(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer(SharedLib.Model.Settings.IRootSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?)
   type: Constructor
   source:
     remote:
@@ -195,26 +195,26 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: .ctor
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
   syntax:
-    content: public RegistryInitializer(ISettings? cfs = null, ISettings? ins = null, ISettings? bgs = null, ISettings? bfs = null)
+    content: public RegistryInitializer(IRootSettings? cfs = null, IAppSettings? ins = null, IAppSettings? bgs = null, IAppSettings? bfs = null)
     parameters:
     - id: cfs
-      type: Rudeus.Model.ISettings
+      type: SharedLib.Model.Settings.IRootSettings
     - id: ins
-      type: Rudeus.Model.ISettings
+      type: SharedLib.Model.Settings.IAppSettings
     - id: bgs
-      type: Rudeus.Model.ISettings
+      type: SharedLib.Model.Settings.IAppSettings
     - id: bfs
-      type: Rudeus.Model.ISettings
-    content.vb: Public Sub New(cfs As ISettings = Nothing, ins As ISettings = Nothing, bgs As ISettings = Nothing, bfs As ISettings = Nothing)
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Sub New(cfs As IRootSettings = Nothing, ins As IAppSettings = Nothing, bgs As IAppSettings = Nothing, bfs As IAppSettings = Nothing)
   overload: Rudeus.Procedure.RegistryInitializer.#ctor*
-  nameWithType.vb: RegistryInitializer.New(ISettings, ISettings, ISettings, ISettings)
-  fullName.vb: Rudeus.Procedure.RegistryInitializer.New(Rudeus.Model.ISettings, Rudeus.Model.ISettings, Rudeus.Model.ISettings, Rudeus.Model.ISettings)
-  name.vb: New(ISettings, ISettings, ISettings, ISettings)
+  nameWithType.vb: RegistryInitializer.New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
+  fullName.vb: Rudeus.Procedure.RegistryInitializer.New(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  name.vb: New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
 - uid: Rudeus.Procedure.RegistryInitializer.Run
   commentId: M:Rudeus.Procedure.RegistryInitializer.Run
   id: Run
@@ -233,7 +233,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
     path: ../SharedLib/Procedure/RegistryInitializer.cs
-    startLine: 34
+    startLine: 35
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -1932,41 +1932,56 @@ references:
   name: ConfSettings
   nameWithType: RegistryInitializer.ConfSettings
   fullName: Rudeus.Procedure.RegistryInitializer.ConfSettings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Procedure.RegistryInitializer.InnoSettings*
   commentId: Overload:Rudeus.Procedure.RegistryInitializer.InnoSettings
   href: Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer_InnoSettings
   name: InnoSettings
   nameWithType: RegistryInitializer.InnoSettings
   fullName: Rudeus.Procedure.RegistryInitializer.InnoSettings
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IAppSettings.html
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
 - uid: Rudeus.Procedure.RegistryInitializer.BgSettings*
   commentId: Overload:Rudeus.Procedure.RegistryInitializer.BgSettings
   href: Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer_BgSettings
@@ -1981,7 +1996,7 @@ references:
   fullName: Rudeus.Procedure.RegistryInitializer.BfSettings
 - uid: Rudeus.Procedure.RegistryInitializer.#ctor*
   commentId: Overload:Rudeus.Procedure.RegistryInitializer.#ctor
-  href: Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer__ctor_Rudeus_Model_ISettings_Rudeus_Model_ISettings_Rudeus_Model_ISettings_Rudeus_Model_ISettings_
+  href: Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer__ctor_SharedLib_Model_Settings_IRootSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_
   name: RegistryInitializer
   nameWithType: RegistryInitializer.RegistryInitializer
   fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer

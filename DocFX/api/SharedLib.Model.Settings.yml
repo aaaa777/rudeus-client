@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  id: SharedLib.Model.Settings
+  children:
+  - SharedLib.Model.Settings.AppSettings
+  - SharedLib.Model.Settings.IAppSettings
+  - SharedLib.Model.Settings.IBaseSettings
+  - SharedLib.Model.Settings.IRootSettings
+  - SharedLib.Model.Settings.RootSettings
+  langs:
+  - csharp
+  - vb
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  type: Namespace
+  assemblies:
+  - SharedLib
+references:
+- uid: SharedLib.Model.Settings.AppSettings
+  commentId: T:SharedLib.Model.Settings.AppSettings
+  href: SharedLib.Model.Settings.AppSettings.html
+  name: AppSettings
+  nameWithType: AppSettings
+  fullName: SharedLib.Model.Settings.AppSettings
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IAppSettings.html
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
+- uid: SharedLib.Model.Settings.IBaseSettings
+  commentId: T:SharedLib.Model.Settings.IBaseSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IBaseSettings.html
+  name: IBaseSettings
+  nameWithType: IBaseSettings
+  fullName: SharedLib.Model.Settings.IBaseSettings
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings.RootSettings
+  commentId: T:SharedLib.Model.Settings.RootSettings
+  href: SharedLib.Model.Settings.RootSettings.html
+  name: RootSettings
+  nameWithType: RootSettings
+  fullName: SharedLib.Model.Settings.RootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  spec.csharp:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html

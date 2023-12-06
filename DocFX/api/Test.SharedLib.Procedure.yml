@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.SharedLib.Procedure
+  commentId: N:Test.SharedLib.Procedure
+  id: Test.SharedLib.Procedure
+  children:
+  - Test.SharedLib.Procedure.CertificateInstallerTests
+  - Test.SharedLib.Procedure.FakeProcedure
+  - Test.SharedLib.Procedure.FakeProcedureTests
+  - Test.SharedLib.Procedure.IFakeProcedure
+  - Test.SharedLib.Procedure.RegistryInitializerTests
+  langs:
+  - csharp
+  - vb
+  name: Test.SharedLib.Procedure
+  nameWithType: Test.SharedLib.Procedure
+  fullName: Test.SharedLib.Procedure
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Test.SharedLib.Procedure.CertificateInstallerTests
+  commentId: T:Test.SharedLib.Procedure.CertificateInstallerTests
+  href: Test.SharedLib.Procedure.CertificateInstallerTests.html
+  name: CertificateInstallerTests
+  nameWithType: CertificateInstallerTests
+  fullName: Test.SharedLib.Procedure.CertificateInstallerTests
+- uid: Test.SharedLib.Procedure.FakeProcedure
+  commentId: T:Test.SharedLib.Procedure.FakeProcedure
+  href: Test.SharedLib.Procedure.FakeProcedure.html
+  name: FakeProcedure
+  nameWithType: FakeProcedure
+  fullName: Test.SharedLib.Procedure.FakeProcedure
+- uid: Test.SharedLib.Procedure.FakeProcedureTests
+  commentId: T:Test.SharedLib.Procedure.FakeProcedureTests
+  href: Test.SharedLib.Procedure.FakeProcedureTests.html
+  name: FakeProcedureTests
+  nameWithType: FakeProcedureTests
+  fullName: Test.SharedLib.Procedure.FakeProcedureTests
+- uid: Test.SharedLib.Procedure.IFakeProcedure
+  commentId: T:Test.SharedLib.Procedure.IFakeProcedure
+  parent: Test.SharedLib.Procedure
+  href: Test.SharedLib.Procedure.IFakeProcedure.html
+  name: IFakeProcedure
+  nameWithType: IFakeProcedure
+  fullName: Test.SharedLib.Procedure.IFakeProcedure
+- uid: Test.SharedLib.Procedure.RegistryInitializerTests
+  commentId: T:Test.SharedLib.Procedure.RegistryInitializerTests
+  href: Test.SharedLib.Procedure.RegistryInitializerTests.html
+  name: RegistryInitializerTests
+  nameWithType: RegistryInitializerTests
+  fullName: Test.SharedLib.Procedure.RegistryInitializerTests
+- uid: Test.SharedLib.Procedure
+  commentId: N:Test.SharedLib.Procedure
+  href: Test.html
+  name: Test.SharedLib.Procedure
+  nameWithType: Test.SharedLib.Procedure
+  fullName: Test.SharedLib.Procedure
+  spec.csharp:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Procedure
+    name: Procedure
+    href: Test.SharedLib.Procedure.html
+  spec.vb:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Procedure
+    name: Procedure
+    href: Test.SharedLib.Procedure.html

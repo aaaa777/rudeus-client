@@ -5,7 +5,11 @@ items:
   id: ScheduledRegularExecuter
   parent: Rudeus.Procedure
   children:
+  - Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
+  - Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  - Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
   - Rudeus.Procedure.ScheduledRegularExecuter.Run
+  - Rudeus.Procedure.ScheduledRegularExecuter.Watcher
   langs:
   - csharp
   - vb
@@ -20,7 +24,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: ScheduledRegularExecuter
     path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -59,6 +63,129 @@ items:
   - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
   - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
   - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  id: Watcher
+  parent: Rudeus.Procedure.ScheduledRegularExecuter
+  langs:
+  - csharp
+  - vb
+  name: Watcher
+  nameWithType: ScheduledRegularExecuter.Watcher
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Procedure/ScheduledRegulerExecuter.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: Watcher
+    path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
+    startLine: 16
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Procedure
+  syntax:
+    content: public UpdateWatcher Watcher { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Watchdogs.UpdateWatcher
+    content.vb: Public Property Watcher As UpdateWatcher
+  overload: Rudeus.Procedure.ScheduledRegularExecuter.Watcher*
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  id: RootSettings
+  parent: Rudeus.Procedure.ScheduledRegularExecuter
+  langs:
+  - csharp
+  - vb
+  name: RootSettings
+  nameWithType: ScheduledRegularExecuter.RootSettings
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Procedure/ScheduledRegulerExecuter.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: RootSettings
+    path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
+    startLine: 18
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Procedure
+  syntax:
+    content: public IRootSettings RootSettings { get; set; }
+    parameters: []
+    return:
+      type: SharedLib.Model.Settings.IRootSettings
+    content.vb: Public Property RootSettings As IRootSettings
+  overload: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings*
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  id: LocalMachineInfoUpdater
+  parent: Rudeus.Procedure.ScheduledRegularExecuter
+  langs:
+  - csharp
+  - vb
+  name: LocalMachineInfoUpdater
+  nameWithType: ScheduledRegularExecuter.LocalMachineInfoUpdater
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Procedure/ScheduledRegulerExecuter.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LocalMachineInfoUpdater
+    path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
+    startLine: 19
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Procedure
+  syntax:
+    content: public IProcedure LocalMachineInfoUpdater { get; set; }
+    parameters: []
+    return:
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Property LocalMachineInfoUpdater As IProcedure
+  overload: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater*
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
+  commentId: M:Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
+  id: '#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)'
+  parent: Rudeus.Procedure.ScheduledRegularExecuter
+  langs:
+  - csharp
+  - vb
+  name: ScheduledRegularExecuter(UpdateWatcher?, IRootSettings?, IProcedure)
+  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter(UpdateWatcher?, IRootSettings?, IProcedure)
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter(Rudeus.Watchdogs.UpdateWatcher?, SharedLib.Model.Settings.IRootSettings?, Rudeus.Procedure.IProcedure)
+  type: Constructor
+  source:
+    remote:
+      path: SharedLib/Procedure/ScheduledRegulerExecuter.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: .ctor
+    path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
+    startLine: 21
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Procedure
+  syntax:
+    content: public ScheduledRegularExecuter(UpdateWatcher? watcher = null, IRootSettings? settings = null, IProcedure localMachineInfoUpdater = null)
+    parameters:
+    - id: watcher
+      type: Rudeus.Watchdogs.UpdateWatcher
+    - id: settings
+      type: SharedLib.Model.Settings.IRootSettings
+    - id: localMachineInfoUpdater
+      type: Rudeus.Procedure.IProcedure
+    content.vb: Public Sub New(watcher As UpdateWatcher = Nothing, settings As IRootSettings = Nothing, localMachineInfoUpdater As IProcedure = Nothing)
+  overload: Rudeus.Procedure.ScheduledRegularExecuter.#ctor*
+  nameWithType.vb: ScheduledRegularExecuter.New(UpdateWatcher, IRootSettings, IProcedure)
+  fullName.vb: Rudeus.Procedure.ScheduledRegularExecuter.New(Rudeus.Watchdogs.UpdateWatcher, SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure)
+  name.vb: New(UpdateWatcher, IRootSettings, IProcedure)
 - uid: Rudeus.Procedure.ScheduledRegularExecuter.Run
   commentId: M:Rudeus.Procedure.ScheduledRegularExecuter.Run
   id: Run
@@ -77,7 +204,7 @@ items:
       repo: https://github.com/aaaa777/rudeus-client.git
     id: Run
     path: ../SharedLib/Procedure/ScheduledRegulerExecuter.cs
-    startLine: 14
+    startLine: 29
   assemblies:
   - SharedLib
   namespace: Rudeus.Procedure
@@ -1770,6 +1897,99 @@ references:
   name: Xunit
   nameWithType: Xunit
   fullName: Xunit
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.Watcher*
+  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  href: Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Watcher
+  name: Watcher
+  nameWithType: ScheduledRegularExecuter.Watcher
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+- uid: Rudeus.Watchdogs.UpdateWatcher
+  commentId: T:Rudeus.Watchdogs.UpdateWatcher
+  parent: Rudeus.Watchdogs
+  href: Rudeus.Watchdogs.UpdateWatcher.html
+  name: UpdateWatcher
+  nameWithType: UpdateWatcher
+  fullName: Rudeus.Watchdogs.UpdateWatcher
+- uid: Rudeus.Watchdogs
+  commentId: N:Rudeus.Watchdogs
+  href: Rudeus.html
+  name: Rudeus.Watchdogs
+  nameWithType: Rudeus.Watchdogs
+  fullName: Rudeus.Watchdogs
+  spec.csharp:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Watchdogs
+    name: Watchdogs
+    href: Rudeus.Watchdogs.html
+  spec.vb:
+  - uid: Rudeus
+    name: Rudeus
+    href: Rudeus.html
+  - name: .
+  - uid: Rudeus.Watchdogs
+    name: Watchdogs
+    href: Rudeus.Watchdogs.html
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings*
+  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  href: Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_RootSettings
+  name: RootSettings
+  nameWithType: ScheduledRegularExecuter.RootSettings
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IRootSettings.html
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  spec.csharp:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater*
+  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  href: Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_LocalMachineInfoUpdater
+  name: LocalMachineInfoUpdater
+  nameWithType: ScheduledRegularExecuter.LocalMachineInfoUpdater
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+- uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor*
+  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.#ctor
+  href: Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter__ctor_Rudeus_Watchdogs_UpdateWatcher_SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_
+  name: ScheduledRegularExecuter
+  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter
+  nameWithType.vb: ScheduledRegularExecuter.New
+  fullName.vb: Rudeus.Procedure.ScheduledRegularExecuter.New
+  name.vb: New
 - uid: Rudeus.Procedure.ScheduledRegularExecuter.Run*
   commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.Run
   href: Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Run

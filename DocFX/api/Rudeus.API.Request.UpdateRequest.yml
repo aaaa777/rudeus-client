@@ -6,6 +6,7 @@ items:
   parent: Rudeus.API.Request
   children:
   - Rudeus.API.Request.UpdateRequest.#ctor
+  - Rudeus.API.Request.UpdateRequest.#ctor(Rudeus.API.Request.UpdateRequestData)
   - Rudeus.API.Request.UpdateRequest.#ctor(System.String)
   - Rudeus.API.Request.UpdateRequest.request_data
   - Rudeus.API.Request.UpdateRequest.type
@@ -203,6 +204,38 @@ items:
   nameWithType.vb: UpdateRequest.New(String)
   fullName.vb: Rudeus.API.Request.UpdateRequest.New(String)
   name.vb: New(String)
+- uid: Rudeus.API.Request.UpdateRequest.#ctor(Rudeus.API.Request.UpdateRequestData)
+  commentId: M:Rudeus.API.Request.UpdateRequest.#ctor(Rudeus.API.Request.UpdateRequestData)
+  id: '#ctor(Rudeus.API.Request.UpdateRequestData)'
+  parent: Rudeus.API.Request.UpdateRequest
+  langs:
+  - csharp
+  - vb
+  name: UpdateRequest(UpdateRequestData)
+  nameWithType: UpdateRequest.UpdateRequest(UpdateRequestData)
+  fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest(Rudeus.API.Request.UpdateRequestData)
+  type: Constructor
+  source:
+    remote:
+      path: SharedLib/API/Request/UpdateRequest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: .ctor
+    path: ../SharedLib/API/Request/UpdateRequest.cs
+    startLine: 27
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.API.Request
+  syntax:
+    content: public UpdateRequest(UpdateRequestData data)
+    parameters:
+    - id: data
+      type: Rudeus.API.Request.UpdateRequestData
+    content.vb: Public Sub New(data As UpdateRequestData)
+  overload: Rudeus.API.Request.UpdateRequest.#ctor*
+  nameWithType.vb: UpdateRequest.New(UpdateRequestData)
+  fullName.vb: Rudeus.API.Request.UpdateRequest.New(Rudeus.API.Request.UpdateRequestData)
+  name.vb: New(UpdateRequestData)
 references:
 - uid: Rudeus.API.Request
   commentId: N:Rudeus.API.Request

@@ -12,8 +12,6 @@ items:
 - uid: Rudeus.API
   name: Rudeus.API
   items:
-  - uid: Rudeus.API.FakeRequestClient
-    name: FakeRequestClient
   - uid: Rudeus.API.IRequestClient
     name: IRequestClient
   - uid: Rudeus.API.RemoteAPI
@@ -74,11 +72,6 @@ items:
     name: UpdateResponse
   - uid: Rudeus.API.Response.UpdateResponseData
     name: UpdateResponseData
-- uid: Rudeus.API.Test
-  name: Rudeus.API.Test
-  items:
-  - uid: Rudeus.API.Test.RemoteAPITests
-    name: RemoteAPITests
 - uid: Rudeus.Application
   name: Rudeus.Application
   items:
@@ -101,13 +94,6 @@ items:
   items:
   - uid: Rudeus.Initializer.Procedure.TaskInitializer
     name: TaskInitializer
-- uid: Rudeus.Initializer.Test
-  name: Rudeus.Initializer.Test
-  items:
-  - uid: Rudeus.Initializer.Test.ProgramTests
-    name: ProgramTests
-  - uid: Rudeus.Initializer.Test.TaskInitializerTests
-    name: TaskInitializerTests
 - uid: Rudeus.Launcher
   name: Rudeus.Launcher
   items:
@@ -122,36 +108,19 @@ items:
     name: Executer
   - uid: Rudeus.Launcher.Procedure.IExecuter
     name: IExecuter
-- uid: Rudeus.Launcher.Test
-  name: Rudeus.Launcher.Test
-  items:
-  - uid: Rudeus.Launcher.Test.ExecuterTests
-    name: ExecuterTests
-  - uid: Rudeus.Launcher.Test.ProgramTests
-    name: ProgramTests
-  - uid: Rudeus.Launcher.Test.UpdaterTests
-    name: UpdaterTests
 - uid: Rudeus.Model
   name: Rudeus.Model
   items:
   - uid: Rudeus.Model.ApplicationData
     name: ApplicationData
-  - uid: Rudeus.Model.FakeLocalCertificate
-    name: FakeLocalCertificate
-  - uid: Rudeus.Model.FakeSettings
-    name: FakeSettings
   - uid: Rudeus.Model.ILocalCertificate
     name: ILocalCertificate
   - uid: Rudeus.Model.ILocalMachine
     name: ILocalMachine
-  - uid: Rudeus.Model.ISettings
-    name: ISettings
   - uid: Rudeus.Model.InstalledApplications
     name: InstalledApplications
   - uid: Rudeus.Model.LocalMachine
     name: LocalMachine
-  - uid: Rudeus.Model.Settings
-    name: Settings
 - uid: Rudeus.Procedure
   name: Rudeus.Procedure
   items:
@@ -159,12 +128,10 @@ items:
     name: AccessTokenValidator
   - uid: Rudeus.Procedure.CertificateInstaller
     name: CertificateInstaller
-  - uid: Rudeus.Procedure.FakeProcedure
-    name: FakeProcedure
-  - uid: Rudeus.Procedure.IFakeProcedure
-    name: IFakeProcedure
   - uid: Rudeus.Procedure.IProcedure
     name: IProcedure
+  - uid: Rudeus.Procedure.LocalMachineInfoUpdater
+    name: LocalMachineInfoUpdater
   - uid: Rudeus.Procedure.RegistryInitializer
     name: RegistryInitializer
   - uid: Rudeus.Procedure.ScheduledRegularExecuter
@@ -173,24 +140,11 @@ items:
     name: ServerRegister
   - uid: Rudeus.Procedure.UserLoginExecuter
     name: UserLoginExecuter
-- uid: Rudeus.Procedure.Test
-  name: Rudeus.Procedure.Test
+- uid: Rudeus.Watchdogs
+  name: Rudeus.Watchdogs
   items:
-  - uid: Rudeus.Procedure.Test.CertificateInstallerTests
-    name: CertificateInstallerTests
-  - uid: Rudeus.Procedure.Test.FakeProcedureTests
-    name: FakeProcedureTests
-  - uid: Rudeus.Procedure.Test.RegistryInitializerTests
-    name: RegistryInitializerTests
-- uid: Rudeus.Test
-  name: Rudeus.Test
-  items:
-  - uid: Rudeus.Test.ConstantsTests
-    name: ConstantsTests
-  - uid: Rudeus.Test.UnitTestSample
-    name: UnitTestSample
-  - uid: Rudeus.Test.UtilsTests
-    name: UtilsTests
+  - uid: Rudeus.Watchdogs.UpdateWatcher
+    name: UpdateWatcher
 - uid: SharedLib.Exceptions
   name: SharedLib.Exceptions
   items:
@@ -200,6 +154,88 @@ items:
     name: ServerUnavailableException
   - uid: SharedLib.Exceptions.UnexpectedResponseException
     name: UnexpectedResponseException
+- uid: SharedLib.Model.Settings
+  name: SharedLib.Model.Settings
+  items:
+  - uid: SharedLib.Model.Settings.AppSettings
+    name: AppSettings
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+  - uid: SharedLib.Model.Settings.IBaseSettings
+    name: IBaseSettings
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+  - uid: SharedLib.Model.Settings.RootSettings
+    name: RootSettings
+- uid: Test
+  name: Test
+  items:
+  - uid: Test.UnitTestSample
+    name: UnitTestSample
+- uid: Test.Command
+  name: Test.Command
+  items:
+  - uid: Test.Command.WorkerTest
+    name: WorkerTest
+- uid: Test.Initializer
+  name: Test.Initializer
+  items:
+  - uid: Test.Initializer.ProgramTests
+    name: ProgramTests
+  - uid: Test.Initializer.TaskInitializerTests
+    name: TaskInitializerTests
+- uid: Test.Launcher
+  name: Test.Launcher
+  items:
+  - uid: Test.Launcher.ExecuterTests
+    name: ExecuterTests
+  - uid: Test.Launcher.ProgramTests
+    name: ProgramTests
+  - uid: Test.Launcher.UpdaterTests
+    name: UpdaterTests
+- uid: Test.SharedLib
+  name: Test.SharedLib
+  items:
+  - uid: Test.SharedLib.ConstantsTests
+    name: ConstantsTests
+  - uid: Test.SharedLib.UtilsTests
+    name: UtilsTests
+- uid: Test.SharedLib.API
+  name: Test.SharedLib.API
+  items:
+  - uid: Test.SharedLib.API.FakeRequestClient
+    name: FakeRequestClient
+  - uid: Test.SharedLib.API.RemoteAPITests
+    name: RemoteAPITests
+- uid: Test.SharedLib.Model
+  name: Test.SharedLib.Model
+  items:
+  - uid: Test.SharedLib.Model.FakeLocalCertificate
+    name: FakeLocalCertificate
+- uid: Test.SharedLib.Model.Settings
+  name: Test.SharedLib.Model.Settings
+  items:
+  - uid: Test.SharedLib.Model.Settings.AppSettingsTest
+    name: AppSettingsTest
+  - uid: Test.SharedLib.Model.Settings.FakeSettings
+    name: FakeSettings
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+  - uid: Test.SharedLib.Model.Settings.RootSettingsTest
+    name: RootSettingsTest
+- uid: Test.SharedLib.Procedure
+  name: Test.SharedLib.Procedure
+  items:
+  - uid: Test.SharedLib.Procedure.CertificateInstallerTests
+    name: CertificateInstallerTests
+  - uid: Test.SharedLib.Procedure.FakeProcedure
+    name: FakeProcedure
+  - uid: Test.SharedLib.Procedure.FakeProcedureTests
+    name: FakeProcedureTests
+  - uid: Test.SharedLib.Procedure.IFakeProcedure
+    name: IFakeProcedure
+  - uid: Test.SharedLib.Procedure.RegistryInitializerTests
+    name: RegistryInitializerTests
 - uid: Xunit
   name: Xunit
   items:

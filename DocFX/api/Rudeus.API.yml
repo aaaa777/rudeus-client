@@ -4,7 +4,6 @@ items:
   commentId: N:Rudeus.API
   id: Rudeus.API
   children:
-  - Rudeus.API.FakeRequestClient
   - Rudeus.API.IRequestClient
   - Rudeus.API.RemoteAPI
   - Rudeus.API.RequestClient
@@ -37,12 +36,6 @@ references:
   name: RequestClient
   nameWithType: RequestClient
   fullName: Rudeus.API.RequestClient
-- uid: Rudeus.API.FakeRequestClient
-  commentId: T:Rudeus.API.FakeRequestClient
-  href: Rudeus.API.FakeRequestClient.html
-  name: FakeRequestClient
-  nameWithType: FakeRequestClient
-  fullName: Rudeus.API.FakeRequestClient
 - uid: Rudeus.API
   commentId: N:Rudeus.API
   href: Rudeus.html

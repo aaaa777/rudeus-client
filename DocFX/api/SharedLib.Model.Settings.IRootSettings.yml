@@ -1,0 +1,2441 @@
+### YamlMime:ManagedReference
+items:
+- uid: SharedLib.Model.Settings.IRootSettings
+  commentId: T:SharedLib.Model.Settings.IRootSettings
+  id: IRootSettings
+  parent: SharedLib.Model.Settings
+  children:
+  - SharedLib.Model.Settings.IRootSettings.AccessTokenP
+  - SharedLib.Model.Settings.IRootSettings.CDriveP
+  - SharedLib.Model.Settings.IRootSettings.CpuNameP
+  - SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+  - SharedLib.Model.Settings.IRootSettings.DeviceIdP
+  - SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+  - SharedLib.Model.Settings.IRootSettings.HostnameP
+  - SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
+  - SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP
+  - SharedLib.Model.Settings.IRootSettings.IsStableChannelP
+  - SharedLib.Model.Settings.IRootSettings.IsTestChannelP
+  - SharedLib.Model.Settings.IRootSettings.LabelIdP
+  - SharedLib.Model.Settings.IRootSettings.MemoryP
+  - SharedLib.Model.Settings.IRootSettings.OSP
+  - SharedLib.Model.Settings.IRootSettings.OSVersionP
+  - SharedLib.Model.Settings.IRootSettings.SetBetaChannelP
+  - SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP
+  - SharedLib.Model.Settings.IRootSettings.SetStableChannelP
+  - SharedLib.Model.Settings.IRootSettings.SetTestChannelP
+  - SharedLib.Model.Settings.IRootSettings.SpecP
+  - SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+  - SharedLib.Model.Settings.IRootSettings.UsernameP
+  - SharedLib.Model.Settings.IRootSettings.WithSecureP
+  langs:
+  - csharp
+  - vb
+  name: IRootSettings
+  nameWithType: IRootSettings
+  fullName: SharedLib.Model.Settings.IRootSettings
+  type: Interface
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IRootSettings
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 7
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  summary: 主要な設定をレジストリに保管するモデル
+  example: []
+  syntax:
+    content: 'public interface IRootSettings : IBaseSettings'
+    content.vb: Public Interface IRootSettings Inherits IBaseSettings
+  inheritedMembers:
+  - SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  - SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  - SharedLib.Model.Settings.IBaseSettings.GetFunc
+  - SharedLib.Model.Settings.IBaseSettings.SetFunc
+  extensionMethods:
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.AsDynamic``1
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNotNull``1
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings)
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings)
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNull``1
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings)
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings)
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+  - SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IRootSettings,System.Boolean}},System.String)
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: SharedLib.Model.Settings.IRootSettings.AccessTokenP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.AccessTokenP
+  id: AccessTokenP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenP
+  nameWithType: IRootSettings.AccessTokenP
+  fullName: SharedLib.Model.Settings.IRootSettings.AccessTokenP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: AccessTokenP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 13
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string AccessTokenP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property AccessTokenP As String
+  overload: SharedLib.Model.Settings.IRootSettings.AccessTokenP*
+- uid: SharedLib.Model.Settings.IRootSettings.DeviceIdP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.DeviceIdP
+  id: DeviceIdP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: DeviceIdP
+  nameWithType: IRootSettings.DeviceIdP
+  fullName: SharedLib.Model.Settings.IRootSettings.DeviceIdP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: DeviceIdP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 14
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string DeviceIdP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property DeviceIdP As String
+  overload: SharedLib.Model.Settings.IRootSettings.DeviceIdP*
+- uid: SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+  id: FirstHostnameP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: FirstHostnameP
+  nameWithType: IRootSettings.FirstHostnameP
+  fullName: SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: FirstHostnameP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 15
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string FirstHostnameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FirstHostnameP As String
+  overload: SharedLib.Model.Settings.IRootSettings.FirstHostnameP*
+- uid: SharedLib.Model.Settings.IRootSettings.HostnameP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.HostnameP
+  id: HostnameP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: HostnameP
+  nameWithType: IRootSettings.HostnameP
+  fullName: SharedLib.Model.Settings.IRootSettings.HostnameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: HostnameP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 16
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string HostnameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property HostnameP As String
+  overload: SharedLib.Model.Settings.IRootSettings.HostnameP*
+- uid: SharedLib.Model.Settings.IRootSettings.UsernameP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.UsernameP
+  id: UsernameP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: UsernameP
+  nameWithType: IRootSettings.UsernameP
+  fullName: SharedLib.Model.Settings.IRootSettings.UsernameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UsernameP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 17
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string UsernameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UsernameP As String
+  overload: SharedLib.Model.Settings.IRootSettings.UsernameP*
+- uid: SharedLib.Model.Settings.IRootSettings.LabelIdP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.LabelIdP
+  id: LabelIdP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: LabelIdP
+  nameWithType: IRootSettings.LabelIdP
+  fullName: SharedLib.Model.Settings.IRootSettings.LabelIdP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LabelIdP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 19
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LabelIdP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LabelIdP As String
+  overload: SharedLib.Model.Settings.IRootSettings.LabelIdP*
+- uid: SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+  id: CurrentVersionP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: CurrentVersionP
+  nameWithType: IRootSettings.CurrentVersionP
+  fullName: SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CurrentVersionP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 20
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string CurrentVersionP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CurrentVersionP As String
+  overload: SharedLib.Model.Settings.IRootSettings.CurrentVersionP*
+- uid: SharedLib.Model.Settings.IRootSettings.SpecP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.SpecP
+  id: SpecP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: SpecP
+  nameWithType: IRootSettings.SpecP
+  fullName: SharedLib.Model.Settings.IRootSettings.SpecP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SpecP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 21
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string SpecP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SpecP As String
+  overload: SharedLib.Model.Settings.IRootSettings.SpecP*
+- uid: SharedLib.Model.Settings.IRootSettings.CpuNameP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.CpuNameP
+  id: CpuNameP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: CpuNameP
+  nameWithType: IRootSettings.CpuNameP
+  fullName: SharedLib.Model.Settings.IRootSettings.CpuNameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CpuNameP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 22
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string CpuNameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CpuNameP As String
+  overload: SharedLib.Model.Settings.IRootSettings.CpuNameP*
+- uid: SharedLib.Model.Settings.IRootSettings.MemoryP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.MemoryP
+  id: MemoryP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: MemoryP
+  nameWithType: IRootSettings.MemoryP
+  fullName: SharedLib.Model.Settings.IRootSettings.MemoryP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: MemoryP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 23
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string MemoryP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property MemoryP As String
+  overload: SharedLib.Model.Settings.IRootSettings.MemoryP*
+- uid: SharedLib.Model.Settings.IRootSettings.CDriveP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.CDriveP
+  id: CDriveP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: CDriveP
+  nameWithType: IRootSettings.CDriveP
+  fullName: SharedLib.Model.Settings.IRootSettings.CDriveP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CDriveP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 24
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string CDriveP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CDriveP As String
+  overload: SharedLib.Model.Settings.IRootSettings.CDriveP*
+- uid: SharedLib.Model.Settings.IRootSettings.OSP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.OSP
+  id: OSP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: OSP
+  nameWithType: IRootSettings.OSP
+  fullName: SharedLib.Model.Settings.IRootSettings.OSP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 25
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string OSP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OSP As String
+  overload: SharedLib.Model.Settings.IRootSettings.OSP*
+- uid: SharedLib.Model.Settings.IRootSettings.OSVersionP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.OSVersionP
+  id: OSVersionP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: OSVersionP
+  nameWithType: IRootSettings.OSVersionP
+  fullName: SharedLib.Model.Settings.IRootSettings.OSVersionP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSVersionP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 26
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string OSVersionP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OSVersionP As String
+  overload: SharedLib.Model.Settings.IRootSettings.OSVersionP*
+- uid: SharedLib.Model.Settings.IRootSettings.WithSecureP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.WithSecureP
+  id: WithSecureP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: WithSecureP
+  nameWithType: IRootSettings.WithSecureP
+  fullName: SharedLib.Model.Settings.IRootSettings.WithSecureP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: WithSecureP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 27
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string WithSecureP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property WithSecureP As String
+  overload: SharedLib.Model.Settings.IRootSettings.WithSecureP*
+- uid: SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+  id: UpdatingChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: UpdatingChannelP
+  nameWithType: IRootSettings.UpdatingChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UpdatingChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 28
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string UpdatingChannelP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UpdatingChannelP As String
+  overload: SharedLib.Model.Settings.IRootSettings.UpdatingChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
+  id: IsBetaChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: IsBetaChannelP()
+  nameWithType: IRootSettings.IsBetaChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsBetaChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 30
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsBetaChannelP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsBetaChannelP() As Boolean
+  overload: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP
+  id: IsDevelopChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopChannelP()
+  nameWithType: IRootSettings.IsDevelopChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsDevelopChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 31
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsDevelopChannelP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsDevelopChannelP() As Boolean
+  overload: SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.IsStableChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.IsStableChannelP
+  id: IsStableChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: IsStableChannelP()
+  nameWithType: IRootSettings.IsStableChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.IsStableChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsStableChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 32
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsStableChannelP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsStableChannelP() As Boolean
+  overload: SharedLib.Model.Settings.IRootSettings.IsStableChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.IsTestChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.IsTestChannelP
+  id: IsTestChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: IsTestChannelP()
+  nameWithType: IRootSettings.IsTestChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.IsTestChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsTestChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 33
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsTestChannelP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsTestChannelP() As Boolean
+  overload: SharedLib.Model.Settings.IRootSettings.IsTestChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.SetBetaChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.SetBetaChannelP
+  id: SetBetaChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: SetBetaChannelP()
+  nameWithType: IRootSettings.SetBetaChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.SetBetaChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetBetaChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 34
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetBetaChannelP()
+    content.vb: Sub SetBetaChannelP()
+  overload: SharedLib.Model.Settings.IRootSettings.SetBetaChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP
+  id: SetDevelopChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: SetDevelopChannelP()
+  nameWithType: IRootSettings.SetDevelopChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetDevelopChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 35
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetDevelopChannelP()
+    content.vb: Sub SetDevelopChannelP()
+  overload: SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.SetStableChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.SetStableChannelP
+  id: SetStableChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: SetStableChannelP()
+  nameWithType: IRootSettings.SetStableChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.SetStableChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetStableChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 36
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetStableChannelP()
+    content.vb: Sub SetStableChannelP()
+  overload: SharedLib.Model.Settings.IRootSettings.SetStableChannelP*
+- uid: SharedLib.Model.Settings.IRootSettings.SetTestChannelP
+  commentId: M:SharedLib.Model.Settings.IRootSettings.SetTestChannelP
+  id: SetTestChannelP
+  parent: SharedLib.Model.Settings.IRootSettings
+  langs:
+  - csharp
+  - vb
+  name: SetTestChannelP()
+  nameWithType: IRootSettings.SetTestChannelP()
+  fullName: SharedLib.Model.Settings.IRootSettings.SetTestChannelP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IRootSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetTestChannelP
+    path: ../SharedLib/Model/Settings/IRootSettings.cs
+    startLine: 37
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetTestChannelP()
+    content.vb: Sub SetTestChannelP()
+  overload: SharedLib.Model.Settings.IRootSettings.SetTestChannelP*
+references:
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  spec.csharp:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+- uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  commentId: M:SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  parent: SharedLib.Model.Settings.IBaseSettings
+  isExternal: true
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  name: Get(string, string)
+  nameWithType: IBaseSettings.Get(string, string)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Get(string, string)
+  nameWithType.vb: IBaseSettings.Get(String, String)
+  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Get(String, String)
+  name.vb: Get(String, String)
+  spec.csharp:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+    name: Get
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+    name: Get
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  commentId: M:SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  parent: SharedLib.Model.Settings.IBaseSettings
+  isExternal: true
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  name: Set(string, string)
+  nameWithType: IBaseSettings.Set(string, string)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Set(string, string)
+  nameWithType.vb: IBaseSettings.Set(String, String)
+  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Set(String, String)
+  name.vb: Set(String, String)
+  spec.csharp:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+    name: Set
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+    name: Set
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings.GetFunc
+  commentId: P:SharedLib.Model.Settings.IBaseSettings.GetFunc
+  parent: SharedLib.Model.Settings.IBaseSettings
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_GetFunc
+  name: GetFunc
+  nameWithType: IBaseSettings.GetFunc
+  fullName: SharedLib.Model.Settings.IBaseSettings.GetFunc
+- uid: SharedLib.Model.Settings.IBaseSettings.SetFunc
+  commentId: P:SharedLib.Model.Settings.IBaseSettings.SetFunc
+  parent: SharedLib.Model.Settings.IBaseSettings
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_SetFunc
+  name: SetFunc
+  nameWithType: IBaseSettings.SetFunc
+  fullName: SharedLib.Model.Settings.IBaseSettings.SetFunc
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<IRootSettings>(IRootSettings)
+  nameWithType: AssertEx.AsDynamic<IRootSettings>(IRootSettings)
+  fullName: Xunit.AssertEx.AsDynamic<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.AsDynamic(Of IRootSettings)(IRootSettings)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings)
+  name.vb: AsDynamic(Of IRootSettings)(IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(SharedLib.Model.Settings.IRootSettings)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(SharedLib.Model.Settings.IRootSettings)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<IRootSettings>(IRootSettings)
+  nameWithType: AssertEx.IsNotNull<IRootSettings>(IRootSettings)
+  fullName: Xunit.AssertEx.IsNotNull<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.IsNotNull(Of IRootSettings)(IRootSettings)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings)
+  name.vb: IsNotNull(Of IRootSettings)(IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(SharedLib.Model.Settings.IRootSettings)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(SharedLib.Model.Settings.IRootSettings)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<IRootSettings>(IRootSettings, IRootSettings)
+  nameWithType: AssertEx.IsNotSameReferenceAs<IRootSettings>(IRootSettings, IRootSettings)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of IRootSettings)(IRootSettings, IRootSettings)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  name.vb: IsNotSameReferenceAs(Of IRootSettings)(IRootSettings, IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<IRootSettings>(IRootSettings, IRootSettings)
+  nameWithType: AssertEx.IsNot<IRootSettings>(IRootSettings, IRootSettings)
+  fullName: Xunit.AssertEx.IsNot<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.IsNot(Of IRootSettings)(IRootSettings, IRootSettings)
+  fullName.vb: Xunit.AssertEx.IsNot(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  name.vb: IsNot(Of IRootSettings)(IRootSettings, IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<IRootSettings>(IRootSettings, IRootSettings, IEqualityComparer<IRootSettings>)
+  nameWithType: AssertEx.IsNot<IRootSettings>(IRootSettings, IRootSettings, IEqualityComparer<IRootSettings>)
+  fullName: Xunit.AssertEx.IsNot<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings, System.Collections.Generic.IEqualityComparer<SharedLib.Model.Settings.IRootSettings>)
+  nameWithType.vb: AssertEx.IsNot(Of IRootSettings)(IRootSettings, IRootSettings, IEqualityComparer(Of IRootSettings))
+  fullName.vb: Xunit.AssertEx.IsNot(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings, System.Collections.Generic.IEqualityComparer(Of SharedLib.Model.Settings.IRootSettings))
+  name.vb: IsNot(Of IRootSettings)(IRootSettings, IRootSettings, IEqualityComparer(Of IRootSettings))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<IRootSettings>(IRootSettings)
+  nameWithType: AssertEx.IsNull<IRootSettings>(IRootSettings)
+  fullName: Xunit.AssertEx.IsNull<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.IsNull(Of IRootSettings)(IRootSettings)
+  fullName.vb: Xunit.AssertEx.IsNull(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings)
+  name.vb: IsNull(Of IRootSettings)(IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(SharedLib.Model.Settings.IRootSettings)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(SharedLib.Model.Settings.IRootSettings)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<IRootSettings>(IRootSettings, IRootSettings)
+  nameWithType: AssertEx.IsSameReferenceAs<IRootSettings>(IRootSettings, IRootSettings)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of IRootSettings)(IRootSettings, IRootSettings)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  name.vb: IsSameReferenceAs(Of IRootSettings)(IRootSettings, IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<IRootSettings>(IRootSettings, IRootSettings)
+  nameWithType: AssertEx.Is<IRootSettings>(IRootSettings, IRootSettings)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  nameWithType.vb: AssertEx.Is(Of IRootSettings)(IRootSettings, IRootSettings)
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings)
+  name.vb: Is(Of IRootSettings)(IRootSettings, IRootSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<IRootSettings>(IRootSettings, IRootSettings, IEqualityComparer<IRootSettings>)
+  nameWithType: AssertEx.Is<IRootSettings>(IRootSettings, IRootSettings, IEqualityComparer<IRootSettings>)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings, System.Collections.Generic.IEqualityComparer<SharedLib.Model.Settings.IRootSettings>)
+  nameWithType.vb: AssertEx.Is(Of IRootSettings)(IRootSettings, IRootSettings, IEqualityComparer(Of IRootSettings))
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IRootSettings, System.Collections.Generic.IEqualityComparer(Of SharedLib.Model.Settings.IRootSettings))
+  name.vb: Is(Of IRootSettings)(IRootSettings, IRootSettings, IEqualityComparer(Of IRootSettings))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IRootSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IRootSettings})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: )
+- uid: SharedLib.Model.Settings.IRootSettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IRootSettings,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<IRootSettings>(IRootSettings, Expression<Func<IRootSettings, bool>>, string)
+  nameWithType: AssertEx.Is<IRootSettings>(IRootSettings, Expression<Func<IRootSettings, bool>>, string)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IRootSettings>(SharedLib.Model.Settings.IRootSettings, System.Linq.Expressions.Expression<System.Func<SharedLib.Model.Settings.IRootSettings, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of IRootSettings)(IRootSettings, Expression(Of Func(Of IRootSettings, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IRootSettings)(SharedLib.Model.Settings.IRootSettings, System.Linq.Expressions.Expression(Of System.Func(Of SharedLib.Model.Settings.IRootSettings, Boolean)), String)
+  name.vb: Is(Of IRootSettings)(IRootSettings, Expression(Of Func(Of IRootSettings, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IRootSettings,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IRootSettings,System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IRootSettings,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IRootSettings
+    name: IRootSettings
+    href: SharedLib.Model.Settings.IRootSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings
+  commentId: T:SharedLib.Model.Settings.IBaseSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IBaseSettings.html
+  name: IBaseSettings
+  nameWithType: IBaseSettings
+  fullName: SharedLib.Model.Settings.IBaseSettings
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: SharedLib.Model.Settings.IRootSettings.AccessTokenP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.AccessTokenP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_AccessTokenP
+  name: AccessTokenP
+  nameWithType: IRootSettings.AccessTokenP
+  fullName: SharedLib.Model.Settings.IRootSettings.AccessTokenP
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SharedLib.Model.Settings.IRootSettings.DeviceIdP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.DeviceIdP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_DeviceIdP
+  name: DeviceIdP
+  nameWithType: IRootSettings.DeviceIdP
+  fullName: SharedLib.Model.Settings.IRootSettings.DeviceIdP
+- uid: SharedLib.Model.Settings.IRootSettings.FirstHostnameP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_FirstHostnameP
+  name: FirstHostnameP
+  nameWithType: IRootSettings.FirstHostnameP
+  fullName: SharedLib.Model.Settings.IRootSettings.FirstHostnameP
+- uid: SharedLib.Model.Settings.IRootSettings.HostnameP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.HostnameP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_HostnameP
+  name: HostnameP
+  nameWithType: IRootSettings.HostnameP
+  fullName: SharedLib.Model.Settings.IRootSettings.HostnameP
+- uid: SharedLib.Model.Settings.IRootSettings.UsernameP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.UsernameP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_UsernameP
+  name: UsernameP
+  nameWithType: IRootSettings.UsernameP
+  fullName: SharedLib.Model.Settings.IRootSettings.UsernameP
+- uid: SharedLib.Model.Settings.IRootSettings.LabelIdP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.LabelIdP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_LabelIdP
+  name: LabelIdP
+  nameWithType: IRootSettings.LabelIdP
+  fullName: SharedLib.Model.Settings.IRootSettings.LabelIdP
+- uid: SharedLib.Model.Settings.IRootSettings.CurrentVersionP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_CurrentVersionP
+  name: CurrentVersionP
+  nameWithType: IRootSettings.CurrentVersionP
+  fullName: SharedLib.Model.Settings.IRootSettings.CurrentVersionP
+- uid: SharedLib.Model.Settings.IRootSettings.SpecP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.SpecP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_SpecP
+  name: SpecP
+  nameWithType: IRootSettings.SpecP
+  fullName: SharedLib.Model.Settings.IRootSettings.SpecP
+- uid: SharedLib.Model.Settings.IRootSettings.CpuNameP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.CpuNameP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_CpuNameP
+  name: CpuNameP
+  nameWithType: IRootSettings.CpuNameP
+  fullName: SharedLib.Model.Settings.IRootSettings.CpuNameP
+- uid: SharedLib.Model.Settings.IRootSettings.MemoryP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.MemoryP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_MemoryP
+  name: MemoryP
+  nameWithType: IRootSettings.MemoryP
+  fullName: SharedLib.Model.Settings.IRootSettings.MemoryP
+- uid: SharedLib.Model.Settings.IRootSettings.CDriveP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.CDriveP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_CDriveP
+  name: CDriveP
+  nameWithType: IRootSettings.CDriveP
+  fullName: SharedLib.Model.Settings.IRootSettings.CDriveP
+- uid: SharedLib.Model.Settings.IRootSettings.OSP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.OSP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_OSP
+  name: OSP
+  nameWithType: IRootSettings.OSP
+  fullName: SharedLib.Model.Settings.IRootSettings.OSP
+- uid: SharedLib.Model.Settings.IRootSettings.OSVersionP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.OSVersionP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_OSVersionP
+  name: OSVersionP
+  nameWithType: IRootSettings.OSVersionP
+  fullName: SharedLib.Model.Settings.IRootSettings.OSVersionP
+- uid: SharedLib.Model.Settings.IRootSettings.WithSecureP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.WithSecureP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_WithSecureP
+  name: WithSecureP
+  nameWithType: IRootSettings.WithSecureP
+  fullName: SharedLib.Model.Settings.IRootSettings.WithSecureP
+- uid: SharedLib.Model.Settings.IRootSettings.UpdatingChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_UpdatingChannelP
+  name: UpdatingChannelP
+  nameWithType: IRootSettings.UpdatingChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.UpdatingChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_IsBetaChannelP
+  name: IsBetaChannelP
+  nameWithType: IRootSettings.IsBetaChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_IsDevelopChannelP
+  name: IsDevelopChannelP
+  nameWithType: IRootSettings.IsDevelopChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.IsDevelopChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.IsStableChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.IsStableChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_IsStableChannelP
+  name: IsStableChannelP
+  nameWithType: IRootSettings.IsStableChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.IsStableChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.IsTestChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.IsTestChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_IsTestChannelP
+  name: IsTestChannelP
+  nameWithType: IRootSettings.IsTestChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.IsTestChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.SetBetaChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.SetBetaChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_SetBetaChannelP
+  name: SetBetaChannelP
+  nameWithType: IRootSettings.SetBetaChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.SetBetaChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_SetDevelopChannelP
+  name: SetDevelopChannelP
+  nameWithType: IRootSettings.SetDevelopChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.SetDevelopChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.SetStableChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.SetStableChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_SetStableChannelP
+  name: SetStableChannelP
+  nameWithType: IRootSettings.SetStableChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.SetStableChannelP
+- uid: SharedLib.Model.Settings.IRootSettings.SetTestChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.SetTestChannelP
+  href: SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_SetTestChannelP
+  name: SetTestChannelP
+  nameWithType: IRootSettings.SetTestChannelP
+  fullName: SharedLib.Model.Settings.IRootSettings.SetTestChannelP

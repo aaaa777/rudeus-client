@@ -210,8 +210,8 @@
 
   <a id="Rudeus_Launcher_Procedure_Executer__ctor_" data-uid="Rudeus.Launcher.Procedure.Executer.#ctor*"></a>
 
-  <h3 id="Rudeus_Launcher_Procedure_Executer__ctor_Rudeus_Model_ISettings_System_String_System_Func_System_String_System_String_System_Int32__" data-uid="Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})">
-  Executer(ISettings, string, Func&lt;string, string, int&gt;?)
+  <h3 id="Rudeus_Launcher_Procedure_Executer__ctor_SharedLib_Model_Settings_IAppSettings_System_String_System_Func_System_String_System_String_System_Int32__" data-uid="Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})">
+  Executer(IAppSettings, string, Func&lt;string, string, int&gt;?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Launcher/Executer.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -219,12 +219,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Executer(ISettings aps, string args = &quot;&quot;, Func&lt;string, string, int&gt;? startProcess = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Executer(IAppSettings aps, string args = &quot;&quot;, Func&lt;string, string, int&gt;? startProcess = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aps</code> <a class="xref" href="Rudeus.Model.ISettings.html">ISettings</a></dt>
+    <dt><code>aps</code> <a class="xref" href="SharedLib.Model.Settings.IAppSettings.html">IAppSettings</a></dt>
     <dd></dd>
     <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -258,7 +258,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ISettings AppSettings { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IAppSettings AppSettings { get; set; }</code></pre>
   </div>
 
 
@@ -267,7 +267,7 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Rudeus.Model.ISettings.html">ISettings</a></dt>
+    <dt><a class="xref" href="SharedLib.Model.Settings.IAppSettings.html">IAppSettings</a></dt>
     <dd></dd>
   </dl>
 

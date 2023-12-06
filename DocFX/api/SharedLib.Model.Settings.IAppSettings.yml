@@ -1,0 +1,2232 @@
+### YamlMime:ManagedReference
+items:
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  id: IAppSettings
+  parent: SharedLib.Model.Settings
+  children:
+  - SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+  - SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP
+  - SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP
+  - SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP
+  - SharedLib.Model.Settings.IAppSettings.LastDirNameP
+  - SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+  - SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+  - SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+  - SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+  - SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+  - SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+  - SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+  - SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+  - SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
+  - SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP
+  - SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP
+  - SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+  langs:
+  - csharp
+  - vb
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
+  type: Interface
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IAppSettings
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 8
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  summary: >-
+    設定をレジストリに保管するモデル
+
+    レジストリを指定して異なる保存先を指定することもできる
+  example: []
+  syntax:
+    content: 'public interface IAppSettings : IBaseSettings'
+    content.vb: Public Interface IAppSettings Inherits IBaseSettings
+  inheritedMembers:
+  - SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  - SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  - SharedLib.Model.Settings.IBaseSettings.GetFunc
+  - SharedLib.Model.Settings.IBaseSettings.SetFunc
+  extensionMethods:
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.AsDynamic``1
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNotNull``1
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings)
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings)
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNull``1
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings)
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings)
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+  - SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IAppSettings,System.Boolean}},System.String)
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+- uid: SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+  id: CurrentVersionP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: CurrentVersionP
+  nameWithType: IAppSettings.CurrentVersionP
+  fullName: SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CurrentVersionP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 14
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string CurrentVersionP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CurrentVersionP As String
+  overload: SharedLib.Model.Settings.IAppSettings.CurrentVersionP*
+- uid: SharedLib.Model.Settings.IAppSettings.LastDirNameP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LastDirNameP
+  id: LastDirNameP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LastDirNameP
+  nameWithType: IAppSettings.LastDirNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastDirNameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastDirNameP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 15
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LastDirNameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastDirNameP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LastDirNameP*
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+  id: LastVersionDirPathP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LastVersionDirPathP
+  nameWithType: IAppSettings.LastVersionDirPathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionDirPathP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 16
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LastVersionDirPathP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastVersionDirPathP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP*
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+  id: LastVersionExeNameP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LastVersionExeNameP
+  nameWithType: IAppSettings.LastVersionExeNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionExeNameP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 17
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LastVersionExeNameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastVersionExeNameP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP*
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+  id: LastVersionExePathP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LastVersionExePathP
+  nameWithType: IAppSettings.LastVersionExePathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionExePathP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 18
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LastVersionExePathP { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property LastVersionExePathP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LastVersionExePathP*
+- uid: SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+  id: LatestDirNameP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LatestDirNameP
+  nameWithType: IAppSettings.LatestDirNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestDirNameP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 19
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LatestDirNameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LatestDirNameP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LatestDirNameP*
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+  id: LatestVersionDirPathP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionDirPathP
+  nameWithType: IAppSettings.LatestVersionDirPathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionDirPathP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 20
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LatestVersionDirPathP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LatestVersionDirPathP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP*
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+  id: LatestVersionExeNameP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionExeNameP
+  nameWithType: IAppSettings.LatestVersionExeNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionExeNameP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 21
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LatestVersionExeNameP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LatestVersionExeNameP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP*
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+  id: LatestVersionExePathP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionExePathP
+  nameWithType: IAppSettings.LatestVersionExePathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionExePathP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 22
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LatestVersionExePathP { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property LatestVersionExePathP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP*
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+  id: LatestVersionStatusP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionStatusP
+  nameWithType: IAppSettings.LatestVersionStatusP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionStatusP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 23
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string LatestVersionStatusP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LatestVersionStatusP As String
+  overload: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP*
+- uid: SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+  commentId: P:SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+  id: UpdatingChannelP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: UpdatingChannelP
+  nameWithType: IAppSettings.UpdatingChannelP
+  fullName: SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+  type: Property
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UpdatingChannelP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 24
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: string UpdatingChannelP { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property UpdatingChannelP As String
+  overload: SharedLib.Model.Settings.IAppSettings.UpdatingChannelP*
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP
+  id: IsLatestVersionStatusDownloadedP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: IsLatestVersionStatusDownloadedP()
+  nameWithType: IAppSettings.IsLatestVersionStatusDownloadedP()
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsLatestVersionStatusDownloadedP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 26
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsLatestVersionStatusDownloadedP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsLatestVersionStatusDownloadedP() As Boolean
+  overload: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP*
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP
+  id: IsLatestVersionStatusOkP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: IsLatestVersionStatusOkP()
+  nameWithType: IAppSettings.IsLatestVersionStatusOkP()
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsLatestVersionStatusOkP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 27
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsLatestVersionStatusOkP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsLatestVersionStatusOkP() As Boolean
+  overload: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP*
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP
+  id: IsLatestVersionStatusUnlaunchableP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: IsLatestVersionStatusUnlaunchableP()
+  nameWithType: IAppSettings.IsLatestVersionStatusUnlaunchableP()
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsLatestVersionStatusUnlaunchableP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 28
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: bool IsLatestVersionStatusUnlaunchableP()
+    return:
+      type: System.Boolean
+    content.vb: Function IsLatestVersionStatusUnlaunchableP() As Boolean
+  overload: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP*
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
+  id: SetLatestVersionStatusDownloadedP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusDownloadedP()
+  nameWithType: IAppSettings.SetLatestVersionStatusDownloadedP()
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusDownloadedP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 29
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetLatestVersionStatusDownloadedP()
+    content.vb: Sub SetLatestVersionStatusDownloadedP()
+  overload: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP*
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP
+  id: SetLatestVersionStatusOkP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusOkP()
+  nameWithType: IAppSettings.SetLatestVersionStatusOkP()
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusOkP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 30
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetLatestVersionStatusOkP()
+    content.vb: Sub SetLatestVersionStatusOkP()
+  overload: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP*
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP
+  commentId: M:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP
+  id: SetLatestVersionStatusUnlaunchableP
+  parent: SharedLib.Model.Settings.IAppSettings
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusUnlaunchableP()
+  nameWithType: IAppSettings.SetLatestVersionStatusUnlaunchableP()
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/Settings/IAppSettings.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusUnlaunchableP
+    path: ../SharedLib/Model/Settings/IAppSettings.cs
+    startLine: 31
+  assemblies:
+  - SharedLib
+  namespace: SharedLib.Model.Settings
+  syntax:
+    content: void SetLatestVersionStatusUnlaunchableP()
+    content.vb: Sub SetLatestVersionStatusUnlaunchableP()
+  overload: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP*
+references:
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
+  spec.csharp:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
+  - name: .
+  - uid: SharedLib.Model
+    name: Model
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
+- uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  commentId: M:SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+  parent: SharedLib.Model.Settings.IBaseSettings
+  isExternal: true
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  name: Get(string, string)
+  nameWithType: IBaseSettings.Get(string, string)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Get(string, string)
+  nameWithType.vb: IBaseSettings.Get(String, String)
+  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Get(String, String)
+  name.vb: Get(String, String)
+  spec.csharp:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+    name: Get
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
+    name: Get
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  commentId: M:SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+  parent: SharedLib.Model.Settings.IBaseSettings
+  isExternal: true
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  name: Set(string, string)
+  nameWithType: IBaseSettings.Set(string, string)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Set(string, string)
+  nameWithType.vb: IBaseSettings.Set(String, String)
+  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Set(String, String)
+  name.vb: Set(String, String)
+  spec.csharp:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+    name: Set
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
+    name: Set
+    href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings.GetFunc
+  commentId: P:SharedLib.Model.Settings.IBaseSettings.GetFunc
+  parent: SharedLib.Model.Settings.IBaseSettings
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_GetFunc
+  name: GetFunc
+  nameWithType: IBaseSettings.GetFunc
+  fullName: SharedLib.Model.Settings.IBaseSettings.GetFunc
+- uid: SharedLib.Model.Settings.IBaseSettings.SetFunc
+  commentId: P:SharedLib.Model.Settings.IBaseSettings.SetFunc
+  parent: SharedLib.Model.Settings.IBaseSettings
+  href: SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_SetFunc
+  name: SetFunc
+  nameWithType: IBaseSettings.SetFunc
+  fullName: SharedLib.Model.Settings.IBaseSettings.SetFunc
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<IAppSettings>(IAppSettings)
+  nameWithType: AssertEx.AsDynamic<IAppSettings>(IAppSettings)
+  fullName: Xunit.AssertEx.AsDynamic<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.AsDynamic(Of IAppSettings)(IAppSettings)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings)
+  name.vb: AsDynamic(Of IAppSettings)(IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(SharedLib.Model.Settings.IAppSettings)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(SharedLib.Model.Settings.IAppSettings)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<IAppSettings>(IAppSettings)
+  nameWithType: AssertEx.IsNotNull<IAppSettings>(IAppSettings)
+  fullName: Xunit.AssertEx.IsNotNull<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.IsNotNull(Of IAppSettings)(IAppSettings)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings)
+  name.vb: IsNotNull(Of IAppSettings)(IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(SharedLib.Model.Settings.IAppSettings)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(SharedLib.Model.Settings.IAppSettings)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<IAppSettings>(IAppSettings, IAppSettings)
+  nameWithType: AssertEx.IsNotSameReferenceAs<IAppSettings>(IAppSettings, IAppSettings)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of IAppSettings)(IAppSettings, IAppSettings)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  name.vb: IsNotSameReferenceAs(Of IAppSettings)(IAppSettings, IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<IAppSettings>(IAppSettings, IAppSettings)
+  nameWithType: AssertEx.IsNot<IAppSettings>(IAppSettings, IAppSettings)
+  fullName: Xunit.AssertEx.IsNot<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.IsNot(Of IAppSettings)(IAppSettings, IAppSettings)
+  fullName.vb: Xunit.AssertEx.IsNot(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  name.vb: IsNot(Of IAppSettings)(IAppSettings, IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<IAppSettings>(IAppSettings, IAppSettings, IEqualityComparer<IAppSettings>)
+  nameWithType: AssertEx.IsNot<IAppSettings>(IAppSettings, IAppSettings, IEqualityComparer<IAppSettings>)
+  fullName: Xunit.AssertEx.IsNot<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, System.Collections.Generic.IEqualityComparer<SharedLib.Model.Settings.IAppSettings>)
+  nameWithType.vb: AssertEx.IsNot(Of IAppSettings)(IAppSettings, IAppSettings, IEqualityComparer(Of IAppSettings))
+  fullName.vb: Xunit.AssertEx.IsNot(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, System.Collections.Generic.IEqualityComparer(Of SharedLib.Model.Settings.IAppSettings))
+  name.vb: IsNot(Of IAppSettings)(IAppSettings, IAppSettings, IEqualityComparer(Of IAppSettings))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<IAppSettings>(IAppSettings)
+  nameWithType: AssertEx.IsNull<IAppSettings>(IAppSettings)
+  fullName: Xunit.AssertEx.IsNull<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.IsNull(Of IAppSettings)(IAppSettings)
+  fullName.vb: Xunit.AssertEx.IsNull(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings)
+  name.vb: IsNull(Of IAppSettings)(IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(SharedLib.Model.Settings.IAppSettings)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(SharedLib.Model.Settings.IAppSettings)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<IAppSettings>(IAppSettings, IAppSettings)
+  nameWithType: AssertEx.IsSameReferenceAs<IAppSettings>(IAppSettings, IAppSettings)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of IAppSettings)(IAppSettings, IAppSettings)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  name.vb: IsSameReferenceAs(Of IAppSettings)(IAppSettings, IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<IAppSettings>(IAppSettings, IAppSettings)
+  nameWithType: AssertEx.Is<IAppSettings>(IAppSettings, IAppSettings)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType.vb: AssertEx.Is(Of IAppSettings)(IAppSettings, IAppSettings)
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  name.vb: Is(Of IAppSettings)(IAppSettings, IAppSettings)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<IAppSettings>(IAppSettings, IAppSettings, IEqualityComparer<IAppSettings>)
+  nameWithType: AssertEx.Is<IAppSettings>(IAppSettings, IAppSettings, IEqualityComparer<IAppSettings>)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, System.Collections.Generic.IEqualityComparer<SharedLib.Model.Settings.IAppSettings>)
+  nameWithType.vb: AssertEx.Is(Of IAppSettings)(IAppSettings, IAppSettings, IEqualityComparer(Of IAppSettings))
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, System.Collections.Generic.IEqualityComparer(Of SharedLib.Model.Settings.IAppSettings))
+  name.vb: Is(Of IAppSettings)(IAppSettings, IAppSettings, IEqualityComparer(Of IAppSettings))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,System.Collections.Generic.IEqualityComparer{SharedLib.Model.Settings.IAppSettings})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: )
+- uid: SharedLib.Model.Settings.IAppSettings.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IAppSettings,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<IAppSettings>(IAppSettings, Expression<Func<IAppSettings, bool>>, string)
+  nameWithType: AssertEx.Is<IAppSettings>(IAppSettings, Expression<Func<IAppSettings, bool>>, string)
+  fullName: Xunit.AssertEx.Is<SharedLib.Model.Settings.IAppSettings>(SharedLib.Model.Settings.IAppSettings, System.Linq.Expressions.Expression<System.Func<SharedLib.Model.Settings.IAppSettings, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of IAppSettings)(IAppSettings, Expression(Of Func(Of IAppSettings, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of SharedLib.Model.Settings.IAppSettings)(SharedLib.Model.Settings.IAppSettings, System.Linq.Expressions.Expression(Of System.Func(Of SharedLib.Model.Settings.IAppSettings, Boolean)), String)
+  name.vb: Is(Of IAppSettings)(IAppSettings, Expression(Of Func(Of IAppSettings, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IAppSettings,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: '>'
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(SharedLib.Model.Settings.IAppSettings,System.Linq.Expressions.Expression{System.Func{SharedLib.Model.Settings.IAppSettings,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: )
+  - name: (
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SharedLib.Model.Settings.IAppSettings
+    name: IAppSettings
+    href: SharedLib.Model.Settings.IAppSettings.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SharedLib.Model.Settings.IBaseSettings
+  commentId: T:SharedLib.Model.Settings.IBaseSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IBaseSettings.html
+  name: IBaseSettings
+  nameWithType: IBaseSettings
+  fullName: SharedLib.Model.Settings.IBaseSettings
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: SharedLib.Model.Settings.IAppSettings.CurrentVersionP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_CurrentVersionP
+  name: CurrentVersionP
+  nameWithType: IAppSettings.CurrentVersionP
+  fullName: SharedLib.Model.Settings.IAppSettings.CurrentVersionP
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SharedLib.Model.Settings.IAppSettings.LastDirNameP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LastDirNameP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LastDirNameP
+  name: LastDirNameP
+  nameWithType: IAppSettings.LastDirNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastDirNameP
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LastVersionDirPathP
+  name: LastVersionDirPathP
+  nameWithType: IAppSettings.LastVersionDirPathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionDirPathP
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LastVersionExeNameP
+  name: LastVersionExeNameP
+  nameWithType: IAppSettings.LastVersionExeNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionExeNameP
+- uid: SharedLib.Model.Settings.IAppSettings.LastVersionExePathP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LastVersionExePathP
+  name: LastVersionExePathP
+  nameWithType: IAppSettings.LastVersionExePathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LastVersionExePathP
+- uid: SharedLib.Model.Settings.IAppSettings.LatestDirNameP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LatestDirNameP
+  name: LatestDirNameP
+  nameWithType: IAppSettings.LatestDirNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestDirNameP
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LatestVersionDirPathP
+  name: LatestVersionDirPathP
+  nameWithType: IAppSettings.LatestVersionDirPathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionDirPathP
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LatestVersionExeNameP
+  name: LatestVersionExeNameP
+  nameWithType: IAppSettings.LatestVersionExeNameP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionExeNameP
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LatestVersionExePathP
+  name: LatestVersionExePathP
+  nameWithType: IAppSettings.LatestVersionExePathP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionExePathP
+- uid: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_LatestVersionStatusP
+  name: LatestVersionStatusP
+  nameWithType: IAppSettings.LatestVersionStatusP
+  fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
+- uid: SharedLib.Model.Settings.IAppSettings.UpdatingChannelP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_UpdatingChannelP
+  name: UpdatingChannelP
+  nameWithType: IAppSettings.UpdatingChannelP
+  fullName: SharedLib.Model.Settings.IAppSettings.UpdatingChannelP
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_IsLatestVersionStatusDownloadedP
+  name: IsLatestVersionStatusDownloadedP
+  nameWithType: IAppSettings.IsLatestVersionStatusDownloadedP
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusDownloadedP
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_IsLatestVersionStatusOkP
+  name: IsLatestVersionStatusOkP
+  nameWithType: IAppSettings.IsLatestVersionStatusOkP
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusOkP
+- uid: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_IsLatestVersionStatusUnlaunchableP
+  name: IsLatestVersionStatusUnlaunchableP
+  nameWithType: IAppSettings.IsLatestVersionStatusUnlaunchableP
+  fullName: SharedLib.Model.Settings.IAppSettings.IsLatestVersionStatusUnlaunchableP
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_SetLatestVersionStatusDownloadedP
+  name: SetLatestVersionStatusDownloadedP
+  nameWithType: IAppSettings.SetLatestVersionStatusDownloadedP
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_SetLatestVersionStatusOkP
+  name: SetLatestVersionStatusOkP
+  nameWithType: IAppSettings.SetLatestVersionStatusOkP
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusOkP
+- uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP*
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP
+  href: SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_SetLatestVersionStatusUnlaunchableP
+  name: SetLatestVersionStatusUnlaunchableP
+  nameWithType: IAppSettings.SetLatestVersionStatusUnlaunchableP
+  fullName: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusUnlaunchableP

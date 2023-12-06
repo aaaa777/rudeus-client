@@ -91,7 +91,7 @@
 
   <h1 id="Rudeus_Command_Worker" data-uid="Rudeus.Command.Worker" class="text-break">
     Class Worker
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -223,27 +223,31 @@
 
   <a id="Rudeus_Command_Worker__ctor_" data-uid="Rudeus.Command.Worker.#ctor*"></a>
 
-  <h3 id="Rudeus_Command_Worker__ctor_Microsoft_Extensions_Logging_ILogger_Rudeus_Command_Worker__Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_" data-uid="Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)">
-  Worker(ILogger&lt;Worker&gt;, IProcedure?, IProcedure?, IProcedure?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Rudeus_Command_Worker__ctor_Microsoft_Extensions_Logging_ILogger_Rudeus_Command_Worker__System_String___SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_" data-uid="Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)">
+  Worker(ILogger&lt;Worker&gt;?, string[]?, IRootSettings?, IProcedure?, IProcedure?, IProcedure?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Worker(ILogger&lt;Worker&gt; logger, IProcedure? at = null, IProcedure? sr = null, IProcedure? ul = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Worker(ILogger&lt;Worker&gt;? logger = null, string[]? args = null, IRootSettings? settings = null, IProcedure? accessTokenValidator = null, IProcedure? scheduledRegularExecuter = null, IProcedure? userLoginExecuter = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Rudeus.Command.Worker.html">Worker</a>&gt;</dt>
     <dd></dd>
-    <dt><code>at</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd></dd>
-    <dt><code>sr</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
+    <dt><code>settings</code> <a class="xref" href="SharedLib.Model.Settings.IRootSettings.html">IRootSettings</a></dt>
     <dd></dd>
-    <dt><code>ul</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
+    <dt><code>accessTokenValidator</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
+    <dd></dd>
+    <dt><code>scheduledRegularExecuter</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
+    <dd></dd>
+    <dt><code>userLoginExecuter</code> <a class="xref" href="Rudeus.Procedure.IProcedure.html">IProcedure</a></dt>
     <dd></dd>
   </dl>
 
@@ -266,7 +270,7 @@
 
   <h3 id="Rudeus_Command_Worker_AccessTokenValidator" data-uid="Rudeus.Command.Worker.AccessTokenValidator">
   AccessTokenValidator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -293,11 +297,42 @@
 
 
 
+  <a id="Rudeus_Command_Worker_RootSettings_" data-uid="Rudeus.Command.Worker.RootSettings*"></a>
+
+  <h3 id="Rudeus_Command_Worker_RootSettings" data-uid="Rudeus.Command.Worker.RootSettings">
+  RootSettings
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRootSettings RootSettings { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SharedLib.Model.Settings.IRootSettings.html">IRootSettings</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="Rudeus_Command_Worker_ScheduledRelularExecuter_" data-uid="Rudeus.Command.Worker.ScheduledRelularExecuter*"></a>
 
   <h3 id="Rudeus_Command_Worker_ScheduledRelularExecuter" data-uid="Rudeus.Command.Worker.ScheduledRelularExecuter">
   ScheduledRelularExecuter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -328,7 +363,7 @@
 
   <h3 id="Rudeus_Command_Worker_UserLoginExecuter" data-uid="Rudeus.Command.Worker.UserLoginExecuter">
   UserLoginExecuter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -355,37 +390,6 @@
 
 
 
-  <a id="Rudeus_Command_Worker_settings_" data-uid="Rudeus.Command.Worker.settings*"></a>
-
-  <h3 id="Rudeus_Command_Worker_settings" data-uid="Rudeus.Command.Worker.settings">
-  settings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L24"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Settings settings { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Rudeus.Model.Settings.html">Settings</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -394,7 +398,7 @@
 
   <h3 id="Rudeus_Command_Worker_ExecuteAsync_System_Threading_CancellationToken_" data-uid="Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)">
   ExecuteAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This method is called when the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a> starts. The implementation should return a task that represents
@@ -433,11 +437,42 @@ the lifetime of the long running operation(s) being performed.</p>
 
 
 
+  <a id="Rudeus_Command_Worker_RunAsync_" data-uid="Rudeus.Command.Worker.RunAsync*"></a>
+
+  <h3 id="Rudeus_Command_Worker_RunAsync" data-uid="Rudeus.Command.Worker.RunAsync">
+  RunAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RunAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Command/Worker.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

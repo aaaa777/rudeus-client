@@ -1,0 +1,3246 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+  commentId: T:Test.SharedLib.Model.Settings.FakeSettingsTest
+  id: FakeSettingsTest
+  parent: Test.SharedLib.Model.Settings
+  children:
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest
+  langs:
+  - csharp
+  - vb
+  name: FakeSettingsTest
+  nameWithType: FakeSettingsTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest
+  type: Class
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: FakeSettingsTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 10
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: public class FakeSettingsTest
+    content.vb: Public Class FakeSettingsTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Xunit.AssertEx.IsInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  - System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  - System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.AsDynamic``1
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNotNull``1
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNull``1
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.FakeSettingsTest,System.Boolean}},System.String)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  - Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest
+  id: CurrentVersionPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CurrentVersionPTest()
+  nameWithType: FakeSettingsTest.CurrentVersionPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CurrentVersionPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 12
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CurrentVersionPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CurrentVersionPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest
+  id: LastDirNamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LastDirNamePTest()
+  nameWithType: FakeSettingsTest.LastDirNamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastDirNamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 26
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LastDirNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LastDirNamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest
+  id: LastVersionDirPathPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LastVersionDirPathPTest()
+  nameWithType: FakeSettingsTest.LastVersionDirPathPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionDirPathPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 41
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LastVersionDirPathPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LastVersionDirPathPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest
+  id: LastVersionExeNamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LastVersionExeNamePTest()
+  nameWithType: FakeSettingsTest.LastVersionExeNamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionExeNamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 55
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LastVersionExeNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LastVersionExeNamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest
+  id: LastVersionExePathPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LastVersionExePathPTest()
+  nameWithType: FakeSettingsTest.LastVersionExePathPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LastVersionExePathPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 69
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LastVersionExePathPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LastVersionExePathPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest
+  id: LatestDirNamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LatestDirNamePTest()
+  nameWithType: FakeSettingsTest.LatestDirNamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestDirNamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 85
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LatestDirNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LatestDirNamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest
+  id: LatestVersionDirPathPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionDirPathPTest()
+  nameWithType: FakeSettingsTest.LatestVersionDirPathPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionDirPathPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 99
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LatestVersionDirPathPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LatestVersionDirPathPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest
+  id: LatestVersionExeNamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionExeNamePTest()
+  nameWithType: FakeSettingsTest.LatestVersionExeNamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionExeNamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 113
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LatestVersionExeNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LatestVersionExeNamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest
+  id: LatestVersionExePathPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionExePathPTest()
+  nameWithType: FakeSettingsTest.LatestVersionExePathPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionExePathPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 127
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LatestVersionExePathPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LatestVersionExePathPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest
+  id: LatestVersionStatusPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LatestVersionStatusPTest()
+  nameWithType: FakeSettingsTest.LatestVersionStatusPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LatestVersionStatusPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 143
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LatestVersionStatusPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LatestVersionStatusPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest
+  id: UpdatingChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: UpdatingChannelPTest()
+  nameWithType: FakeSettingsTest.UpdatingChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UpdatingChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 157
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void UpdatingChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub UpdatingChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest
+  id: AccessTokenPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenPTest()
+  nameWithType: FakeSettingsTest.AccessTokenPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: AccessTokenPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 171
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void AccessTokenPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub AccessTokenPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest
+  id: DeviceIdPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: DeviceIdPTest()
+  nameWithType: FakeSettingsTest.DeviceIdPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: DeviceIdPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 185
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void DeviceIdPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub DeviceIdPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest
+  id: FirstHostnamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: FirstHostnamePTest()
+  nameWithType: FakeSettingsTest.FirstHostnamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: FirstHostnamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 199
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void FirstHostnamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub FirstHostnamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest
+  id: HostnamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: HostnamePTest()
+  nameWithType: FakeSettingsTest.HostnamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: HostnamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 213
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void HostnamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub HostnamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest
+  id: UsernamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: UsernamePTest()
+  nameWithType: FakeSettingsTest.UsernamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: UsernamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 227
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void UsernamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub UsernamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest
+  id: LabelIdPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: LabelIdPTest()
+  nameWithType: FakeSettingsTest.LabelIdPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: LabelIdPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 241
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void LabelIdPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub LabelIdPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest
+  id: SpecPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SpecPTest()
+  nameWithType: FakeSettingsTest.SpecPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SpecPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 255
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SpecPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SpecPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest
+  id: CpuNamePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CpuNamePTest()
+  nameWithType: FakeSettingsTest.CpuNamePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CpuNamePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 269
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CpuNamePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CpuNamePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest
+  id: MemoryPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: MemoryPTest()
+  nameWithType: FakeSettingsTest.MemoryPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: MemoryPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 283
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void MemoryPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub MemoryPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest
+  id: CDrivePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: CDrivePTest()
+  nameWithType: FakeSettingsTest.CDrivePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: CDrivePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 297
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void CDrivePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub CDrivePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest
+  id: OSPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: OSPTest()
+  nameWithType: FakeSettingsTest.OSPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 311
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OSPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OSPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest
+  id: OSVersionPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: OSVersionPTest()
+  nameWithType: FakeSettingsTest.OSVersionPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: OSVersionPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 325
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void OSVersionPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub OSVersionPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest
+  id: WithSecurePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: WithSecurePTest()
+  nameWithType: FakeSettingsTest.WithSecurePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: WithSecurePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 339
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void WithSecurePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub WithSecurePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest
+  id: IsBetaChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsBetaChannelPTest()
+  nameWithType: FakeSettingsTest.IsBetaChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsBetaChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 353
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsBetaChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsBetaChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest
+  id: IsStableChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsStableChannelPTest()
+  nameWithType: FakeSettingsTest.IsStableChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsStableChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 370
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsStableChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsStableChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest
+  id: IsDevelopChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopChannelPTest()
+  nameWithType: FakeSettingsTest.IsDevelopChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsDevelopChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 387
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsDevelopChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsDevelopChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest
+  id: IsTestChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: IsTestChannelPTest()
+  nameWithType: FakeSettingsTest.IsTestChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsTestChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 404
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void IsTestChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub IsTestChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest
+  id: SetBetaChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetBetaChannelPTest()
+  nameWithType: FakeSettingsTest.SetBetaChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetBetaChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 421
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetBetaChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetBetaChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest
+  id: SetStableChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetStableChannelPTest()
+  nameWithType: FakeSettingsTest.SetStableChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetStableChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 437
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetStableChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetStableChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest
+  id: SetDevelopChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetDevelopChannelPTest()
+  nameWithType: FakeSettingsTest.SetDevelopChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetDevelopChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 453
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetDevelopChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetDevelopChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest
+  id: SetTestChannelPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetTestChannelPTest()
+  nameWithType: FakeSettingsTest.SetTestChannelPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetTestChannelPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 469
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetTestChannelPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetTestChannelPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest
+  id: SetLatestVersionStatusOkPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusOkPTest()
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusOkPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusOkPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 486
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetLatestVersionStatusOkPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetLatestVersionStatusOkPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+  id: SetLatestVersionStatusDownloadedPTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusDownloadedPTest()
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusDownloadedPTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusDownloadedPTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 501
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetLatestVersionStatusDownloadedPTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetLatestVersionStatusDownloadedPTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest
+  commentId: M:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest
+  id: SetLatestVersionStatusUnlaunchablePTest
+  parent: Test.SharedLib.Model.Settings.FakeSettingsTest
+  langs:
+  - csharp
+  - vb
+  name: SetLatestVersionStatusUnlaunchablePTest()
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest()
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest()
+  type: Method
+  source:
+    remote:
+      path: Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: SetLatestVersionStatusUnlaunchablePTest
+    path: ../Test/SharedLib/Model/Settings/FakeSettingsTest.cs
+    startLine: 516
+  assemblies:
+  - Test
+  namespace: Test.SharedLib.Model.Settings
+  syntax:
+    content: >-
+      [Fact]
+
+      public void SetLatestVersionStatusUnlaunchablePTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub SetLatestVersionStatusUnlaunchablePTest()
+  overload: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Test.SharedLib.Model.Settings
+  commentId: N:Test.SharedLib.Model.Settings
+  href: Test.html
+  name: Test.SharedLib.Model.Settings
+  nameWithType: Test.SharedLib.Model.Settings
+  fullName: Test.SharedLib.Model.Settings
+  spec.csharp:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Model
+    name: Model
+    href: Test.SharedLib.Model.html
+  - name: .
+  - uid: Test.SharedLib.Model.Settings
+    name: Settings
+    href: Test.SharedLib.Model.Settings.html
+  spec.vb:
+  - uid: Test
+    name: Test
+    href: Test.html
+  - name: .
+  - uid: Test.SharedLib
+    name: SharedLib
+    href: Test.SharedLib.html
+  - name: .
+  - uid: Test.SharedLib.Model
+    name: Model
+    href: Test.SharedLib.Model.html
+  - name: .
+  - uid: Test.SharedLib.Model.Settings
+    name: Settings
+    href: Test.SharedLib.Model.Settings.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotInstanceOf``1
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Xunit.AssertEx.IsStructuralEqual(System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.AsDynamic``1
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<FakeSettingsTest>(FakeSettingsTest)
+  nameWithType: AssertEx.AsDynamic<FakeSettingsTest>(FakeSettingsTest)
+  fullName: Xunit.AssertEx.AsDynamic<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.AsDynamic(Of FakeSettingsTest)(FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: AsDynamic(Of FakeSettingsTest)(FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNotNull``1
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<FakeSettingsTest>(FakeSettingsTest)
+  nameWithType: AssertEx.IsNotNull<FakeSettingsTest>(FakeSettingsTest)
+  fullName: Xunit.AssertEx.IsNotNull<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.IsNotNull(Of FakeSettingsTest)(FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: IsNotNull(Of FakeSettingsTest)(FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  nameWithType: AssertEx.IsNotSameReferenceAs<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: IsNotSameReferenceAs(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  nameWithType: AssertEx.IsNot<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  fullName: Xunit.AssertEx.IsNot<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.IsNot(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNot(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: IsNot(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest, IEqualityComparer<FakeSettingsTest>)
+  nameWithType: AssertEx.IsNot<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest, IEqualityComparer<FakeSettingsTest>)
+  fullName: Xunit.AssertEx.IsNot<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest, System.Collections.Generic.IEqualityComparer<Test.SharedLib.Model.Settings.FakeSettingsTest>)
+  nameWithType.vb: AssertEx.IsNot(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest, IEqualityComparer(Of FakeSettingsTest))
+  fullName.vb: Xunit.AssertEx.IsNot(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest, System.Collections.Generic.IEqualityComparer(Of Test.SharedLib.Model.Settings.FakeSettingsTest))
+  name.vb: IsNot(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest, IEqualityComparer(Of FakeSettingsTest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsNull``1
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<FakeSettingsTest>(FakeSettingsTest)
+  nameWithType: AssertEx.IsNull<FakeSettingsTest>(FakeSettingsTest)
+  fullName: Xunit.AssertEx.IsNull<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.IsNull(Of FakeSettingsTest)(FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsNull(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: IsNull(Of FakeSettingsTest)(FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  nameWithType: AssertEx.IsSameReferenceAs<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: IsSameReferenceAs(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.FakeSettingsTest,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<FakeSettingsTest>(FakeSettingsTest, Expression<Func<FakeSettingsTest, bool>>, string)
+  nameWithType: AssertEx.Is<FakeSettingsTest>(FakeSettingsTest, Expression<Func<FakeSettingsTest, bool>>, string)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, System.Linq.Expressions.Expression<System.Func<Test.SharedLib.Model.Settings.FakeSettingsTest, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of FakeSettingsTest)(FakeSettingsTest, Expression(Of Func(Of FakeSettingsTest, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, System.Linq.Expressions.Expression(Of System.Func(Of Test.SharedLib.Model.Settings.FakeSettingsTest, Boolean)), String)
+  name.vb: Is(Of FakeSettingsTest)(FakeSettingsTest, Expression(Of Func(Of FakeSettingsTest, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.FakeSettingsTest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Linq.Expressions.Expression{System.Func{Test.SharedLib.Model.Settings.FakeSettingsTest,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  nameWithType: AssertEx.Is<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  nameWithType.vb: AssertEx.Is(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest)
+  name.vb: Is(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  parent: Xunit.AssertEx
+  definition: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest, IEqualityComparer<FakeSettingsTest>)
+  nameWithType: AssertEx.Is<FakeSettingsTest>(FakeSettingsTest, FakeSettingsTest, IEqualityComparer<FakeSettingsTest>)
+  fullName: Xunit.AssertEx.Is<Test.SharedLib.Model.Settings.FakeSettingsTest>(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest, System.Collections.Generic.IEqualityComparer<Test.SharedLib.Model.Settings.FakeSettingsTest>)
+  nameWithType.vb: AssertEx.Is(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest, IEqualityComparer(Of FakeSettingsTest))
+  fullName.vb: Xunit.AssertEx.Is(Of Test.SharedLib.Model.Settings.FakeSettingsTest)(Test.SharedLib.Model.Settings.FakeSettingsTest, Test.SharedLib.Model.Settings.FakeSettingsTest, System.Collections.Generic.IEqualityComparer(Of Test.SharedLib.Model.Settings.FakeSettingsTest))
+  name.vb: Is(Of FakeSettingsTest)(FakeSettingsTest, FakeSettingsTest, IEqualityComparer(Of FakeSettingsTest))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(Test.SharedLib.Model.Settings.FakeSettingsTest,Test.SharedLib.Model.Settings.FakeSettingsTest,System.Collections.Generic.IEqualityComparer{Test.SharedLib.Model.Settings.FakeSettingsTest})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: (
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Test.SharedLib.Model.Settings.FakeSettingsTest
+    name: FakeSettingsTest
+    href: Test.SharedLib.Model.Settings.FakeSettingsTest.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  name: IsInstanceOf<TExpected>(object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
+  nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
+  name.vb: IsInstanceOf(Of TExpected)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: <
+  - name: TExpected
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
+    name: IsInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExpected
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx
+  commentId: T:Xunit.AssertEx
+  parent: Xunit
+  href: Xunit.AssertEx.html
+  name: AssertEx
+  nameWithType: AssertEx
+  fullName: Xunit.AssertEx
+- uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  name: IsNotInstanceOf<TWrong>(object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
+  nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
+  name.vb: IsNotInstanceOf(Of TWrong)(Object)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: <
+  - name: TWrong
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
+    name: IsNotInstanceOf
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TWrong
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  name: IsNotStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
+  name.vb: IsNotStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
+    name: IsNotStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  name: IsStructuralEqual(object, object, string)
+  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
+  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
+  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
+  name.vb: IsStructuralEqual(Object, Object, String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
+    name: IsStructuralEqual
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.AsDynamic``1(``0)
+  commentId: M:Xunit.AssertEx.AsDynamic``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  name: AsDynamic<T>(T)
+  nameWithType: AssertEx.AsDynamic<T>(T)
+  fullName: Xunit.AssertEx.AsDynamic<T>(T)
+  nameWithType.vb: AssertEx.AsDynamic(Of T)(T)
+  fullName.vb: Xunit.AssertEx.AsDynamic(Of T)(T)
+  name.vb: AsDynamic(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.AsDynamic``1(``0)
+    name: AsDynamic
+    href: Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNotNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  name: IsNotNull<T>(T)
+  nameWithType: AssertEx.IsNotNull<T>(T)
+  fullName: Xunit.AssertEx.IsNotNull<T>(T)
+  nameWithType.vb: AssertEx.IsNotNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNotNull(Of T)(T)
+  name.vb: IsNotNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotNull``1(``0)
+    name: IsNotNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  name: IsNotSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsNotSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNotSameReferenceAs(Of T)(T, T)
+  name.vb: IsNotSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNotSameReferenceAs``1(``0,``0)
+    name: IsNotSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  name: IsNot<T>(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  name.vb: IsNot(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0)
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: IsNot
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit.AssertEx.IsNull``1(``0)
+  commentId: M:Xunit.AssertEx.IsNull``1(``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  name: IsNull<T>(T)
+  nameWithType: AssertEx.IsNull<T>(T)
+  fullName: Xunit.AssertEx.IsNull<T>(T)
+  nameWithType.vb: AssertEx.IsNull(Of T)(T)
+  fullName.vb: Xunit.AssertEx.IsNull(Of T)(T)
+  name.vb: IsNull(Of T)(T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsNull``1(``0)
+    name: IsNull
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  commentId: M:Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  name: IsSameReferenceAs<T>(T, T)
+  nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
+  fullName: Xunit.AssertEx.IsSameReferenceAs<T>(T, T)
+  nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.IsSameReferenceAs(Of T)(T, T)
+  name.vb: IsSameReferenceAs(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.IsSameReferenceAs``1(``0,``0)
+    name: IsSameReferenceAs
+    href: Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  name: Is<T>(T, Expression<Func<T, bool>>, string)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  name: Is<T>(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  name.vb: Is(Of T)(T, T)
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0)
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  isExternal: true
+  href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  spec.csharp:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+    name: Is
+    href: Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Xunit
+  commentId: N:Xunit
+  href: Xunit.html
+  name: Xunit
+  nameWithType: Xunit
+  fullName: Xunit
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest
+  name: CurrentVersionPTest
+  nameWithType: FakeSettingsTest.CurrentVersionPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest
+  name: LastDirNamePTest
+  nameWithType: FakeSettingsTest.LastDirNamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest
+  name: LastVersionDirPathPTest
+  nameWithType: FakeSettingsTest.LastVersionDirPathPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest
+  name: LastVersionExeNamePTest
+  nameWithType: FakeSettingsTest.LastVersionExeNamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest
+  name: LastVersionExePathPTest
+  nameWithType: FakeSettingsTest.LastVersionExePathPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest
+  name: LatestDirNamePTest
+  nameWithType: FakeSettingsTest.LatestDirNamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest
+  name: LatestVersionDirPathPTest
+  nameWithType: FakeSettingsTest.LatestVersionDirPathPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest
+  name: LatestVersionExeNamePTest
+  nameWithType: FakeSettingsTest.LatestVersionExeNamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest
+  name: LatestVersionExePathPTest
+  nameWithType: FakeSettingsTest.LatestVersionExePathPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest
+  name: LatestVersionStatusPTest
+  nameWithType: FakeSettingsTest.LatestVersionStatusPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest
+  name: UpdatingChannelPTest
+  nameWithType: FakeSettingsTest.UpdatingChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest
+  name: AccessTokenPTest
+  nameWithType: FakeSettingsTest.AccessTokenPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest
+  name: DeviceIdPTest
+  nameWithType: FakeSettingsTest.DeviceIdPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest
+  name: FirstHostnamePTest
+  nameWithType: FakeSettingsTest.FirstHostnamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest
+  name: HostnamePTest
+  nameWithType: FakeSettingsTest.HostnamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest
+  name: UsernamePTest
+  nameWithType: FakeSettingsTest.UsernamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest
+  name: LabelIdPTest
+  nameWithType: FakeSettingsTest.LabelIdPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest
+  name: SpecPTest
+  nameWithType: FakeSettingsTest.SpecPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest
+  name: CpuNamePTest
+  nameWithType: FakeSettingsTest.CpuNamePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest
+  name: MemoryPTest
+  nameWithType: FakeSettingsTest.MemoryPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest
+  name: CDrivePTest
+  nameWithType: FakeSettingsTest.CDrivePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest
+  name: OSPTest
+  nameWithType: FakeSettingsTest.OSPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest
+  name: OSVersionPTest
+  nameWithType: FakeSettingsTest.OSVersionPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest
+  name: WithSecurePTest
+  nameWithType: FakeSettingsTest.WithSecurePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest
+  name: IsBetaChannelPTest
+  nameWithType: FakeSettingsTest.IsBetaChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest
+  name: IsStableChannelPTest
+  nameWithType: FakeSettingsTest.IsStableChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest
+  name: IsDevelopChannelPTest
+  nameWithType: FakeSettingsTest.IsDevelopChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest
+  name: IsTestChannelPTest
+  nameWithType: FakeSettingsTest.IsTestChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest
+  name: SetBetaChannelPTest
+  nameWithType: FakeSettingsTest.SetBetaChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest
+  name: SetStableChannelPTest
+  nameWithType: FakeSettingsTest.SetStableChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest
+  name: SetDevelopChannelPTest
+  nameWithType: FakeSettingsTest.SetDevelopChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest
+  name: SetTestChannelPTest
+  nameWithType: FakeSettingsTest.SetTestChannelPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest
+  name: SetLatestVersionStatusOkPTest
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusOkPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest
+  name: SetLatestVersionStatusDownloadedPTest
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest
+- uid: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest*
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest
+  href: Test.SharedLib.Model.Settings.FakeSettingsTest.html#Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest
+  name: SetLatestVersionStatusUnlaunchablePTest
+  nameWithType: FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest
+  fullName: Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest

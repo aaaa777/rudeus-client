@@ -6,9 +6,8 @@ items:
   children:
   - Rudeus.Procedure.AccessTokenValidator
   - Rudeus.Procedure.CertificateInstaller
-  - Rudeus.Procedure.FakeProcedure
-  - Rudeus.Procedure.IFakeProcedure
   - Rudeus.Procedure.IProcedure
+  - Rudeus.Procedure.LocalMachineInfoUpdater
   - Rudeus.Procedure.RegistryInitializer
   - Rudeus.Procedure.ScheduledRegularExecuter
   - Rudeus.Procedure.ServerRegister
@@ -42,6 +41,12 @@ references:
   name: IProcedure
   nameWithType: IProcedure
   fullName: Rudeus.Procedure.IProcedure
+- uid: Rudeus.Procedure.LocalMachineInfoUpdater
+  commentId: T:Rudeus.Procedure.LocalMachineInfoUpdater
+  href: Rudeus.Procedure.LocalMachineInfoUpdater.html
+  name: LocalMachineInfoUpdater
+  nameWithType: LocalMachineInfoUpdater
+  fullName: Rudeus.Procedure.LocalMachineInfoUpdater
 - uid: Rudeus.Procedure.RegistryInitializer
   commentId: T:Rudeus.Procedure.RegistryInitializer
   href: Rudeus.Procedure.RegistryInitializer.html
@@ -66,19 +71,6 @@ references:
   name: UserLoginExecuter
   nameWithType: UserLoginExecuter
   fullName: Rudeus.Procedure.UserLoginExecuter
-- uid: Rudeus.Procedure.FakeProcedure
-  commentId: T:Rudeus.Procedure.FakeProcedure
-  href: Rudeus.Procedure.FakeProcedure.html
-  name: FakeProcedure
-  nameWithType: FakeProcedure
-  fullName: Rudeus.Procedure.FakeProcedure
-- uid: Rudeus.Procedure.IFakeProcedure
-  commentId: T:Rudeus.Procedure.IFakeProcedure
-  parent: Rudeus.Procedure
-  href: Rudeus.Procedure.IFakeProcedure.html
-  name: IFakeProcedure
-  nameWithType: IFakeProcedure
-  fullName: Rudeus.Procedure.IFakeProcedure
 - uid: Rudeus.Procedure
   commentId: N:Rudeus.Procedure
   href: Rudeus.html

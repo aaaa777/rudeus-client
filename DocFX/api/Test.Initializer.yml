@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.Initializer
+  commentId: N:Test.Initializer
+  id: Test.Initializer
+  children:
+  - Test.Initializer.ProgramTests
+  - Test.Initializer.TaskInitializerTests
+  langs:
+  - csharp
+  - vb
+  name: Test.Initializer
+  nameWithType: Test.Initializer
+  fullName: Test.Initializer
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Test.Initializer.ProgramTests
+  commentId: T:Test.Initializer.ProgramTests
+  href: Test.Initializer.ProgramTests.html
+  name: ProgramTests
+  nameWithType: ProgramTests
+  fullName: Test.Initializer.ProgramTests
+- uid: Test.Initializer.TaskInitializerTests
+  commentId: T:Test.Initializer.TaskInitializerTests
+  href: Test.Initializer.TaskInitializerTests.html
+  name: TaskInitializerTests
+  nameWithType: TaskInitializerTests
+  fullName: Test.Initializer.TaskInitializerTests

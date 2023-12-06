@@ -5,13 +5,20 @@ items:
   id: ILocalMachine
   parent: Rudeus.Model
   children:
+  - Rudeus.Model.ILocalMachine.GetCDrive
+  - Rudeus.Model.ILocalMachine.GetCpuName
   - Rudeus.Model.ILocalMachine.GetDeviceId
   - Rudeus.Model.ILocalMachine.GetHostname
   - Rudeus.Model.ILocalMachine.GetInstance
+  - Rudeus.Model.ILocalMachine.GetLabelId
+  - Rudeus.Model.ILocalMachine.GetMemory
+  - Rudeus.Model.ILocalMachine.GetOS
+  - Rudeus.Model.ILocalMachine.GetOSVersion
   - Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
   - Rudeus.Model.ILocalMachine.GetSpec
   - Rudeus.Model.ILocalMachine.GetStorageDeviceIdList
   - Rudeus.Model.ILocalMachine.GetWinVersion
+  - Rudeus.Model.ILocalMachine.GetWithSecure
   langs:
   - csharp
   - vb
@@ -236,6 +243,202 @@ items:
       type: System.String
     content.vb: Function GetSpec() As String
   overload: Rudeus.Model.ILocalMachine.GetSpec*
+- uid: Rudeus.Model.ILocalMachine.GetCpuName
+  commentId: M:Rudeus.Model.ILocalMachine.GetCpuName
+  id: GetCpuName
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetCpuName()
+  nameWithType: ILocalMachine.GetCpuName()
+  fullName: Rudeus.Model.ILocalMachine.GetCpuName()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetCpuName
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 19
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetCpuName()
+    return:
+      type: System.String
+    content.vb: Function GetCpuName() As String
+  overload: Rudeus.Model.ILocalMachine.GetCpuName*
+- uid: Rudeus.Model.ILocalMachine.GetMemory
+  commentId: M:Rudeus.Model.ILocalMachine.GetMemory
+  id: GetMemory
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetMemory()
+  nameWithType: ILocalMachine.GetMemory()
+  fullName: Rudeus.Model.ILocalMachine.GetMemory()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetMemory
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 20
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetMemory()
+    return:
+      type: System.String
+    content.vb: Function GetMemory() As String
+  overload: Rudeus.Model.ILocalMachine.GetMemory*
+- uid: Rudeus.Model.ILocalMachine.GetCDrive
+  commentId: M:Rudeus.Model.ILocalMachine.GetCDrive
+  id: GetCDrive
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetCDrive()
+  nameWithType: ILocalMachine.GetCDrive()
+  fullName: Rudeus.Model.ILocalMachine.GetCDrive()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetCDrive
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 21
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetCDrive()
+    return:
+      type: System.String
+    content.vb: Function GetCDrive() As String
+  overload: Rudeus.Model.ILocalMachine.GetCDrive*
+- uid: Rudeus.Model.ILocalMachine.GetOS
+  commentId: M:Rudeus.Model.ILocalMachine.GetOS
+  id: GetOS
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetOS()
+  nameWithType: ILocalMachine.GetOS()
+  fullName: Rudeus.Model.ILocalMachine.GetOS()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetOS
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 22
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetOS()
+    return:
+      type: System.String
+    content.vb: Function GetOS() As String
+  overload: Rudeus.Model.ILocalMachine.GetOS*
+- uid: Rudeus.Model.ILocalMachine.GetOSVersion
+  commentId: M:Rudeus.Model.ILocalMachine.GetOSVersion
+  id: GetOSVersion
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetOSVersion()
+  nameWithType: ILocalMachine.GetOSVersion()
+  fullName: Rudeus.Model.ILocalMachine.GetOSVersion()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetOSVersion
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 23
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetOSVersion()
+    return:
+      type: System.String
+    content.vb: Function GetOSVersion() As String
+  overload: Rudeus.Model.ILocalMachine.GetOSVersion*
+- uid: Rudeus.Model.ILocalMachine.GetWithSecure
+  commentId: M:Rudeus.Model.ILocalMachine.GetWithSecure
+  id: GetWithSecure
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetWithSecure()
+  nameWithType: ILocalMachine.GetWithSecure()
+  fullName: Rudeus.Model.ILocalMachine.GetWithSecure()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetWithSecure
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 24
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetWithSecure()
+    return:
+      type: System.String
+    content.vb: Function GetWithSecure() As String
+  overload: Rudeus.Model.ILocalMachine.GetWithSecure*
+- uid: Rudeus.Model.ILocalMachine.GetLabelId
+  commentId: M:Rudeus.Model.ILocalMachine.GetLabelId
+  id: GetLabelId
+  parent: Rudeus.Model.ILocalMachine
+  langs:
+  - csharp
+  - vb
+  name: GetLabelId()
+  nameWithType: ILocalMachine.GetLabelId()
+  fullName: Rudeus.Model.ILocalMachine.GetLabelId()
+  type: Method
+  source:
+    remote:
+      path: SharedLib/Model/ILocalMachine.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: GetLabelId
+    path: ../SharedLib/Model/ILocalMachine.cs
+    startLine: 25
+  assemblies:
+  - SharedLib
+  namespace: Rudeus.Model
+  syntax:
+    content: string GetLabelId()
+    return:
+      type: System.String
+    content.vb: Function GetLabelId() As String
+  overload: Rudeus.Model.ILocalMachine.GetLabelId*
 references:
 - uid: Rudeus.Model
   commentId: N:Rudeus.Model
@@ -811,3 +1014,45 @@ references:
   name: GetSpec
   nameWithType: ILocalMachine.GetSpec
   fullName: Rudeus.Model.ILocalMachine.GetSpec
+- uid: Rudeus.Model.ILocalMachine.GetCpuName*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetCpuName
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetCpuName
+  name: GetCpuName
+  nameWithType: ILocalMachine.GetCpuName
+  fullName: Rudeus.Model.ILocalMachine.GetCpuName
+- uid: Rudeus.Model.ILocalMachine.GetMemory*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetMemory
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetMemory
+  name: GetMemory
+  nameWithType: ILocalMachine.GetMemory
+  fullName: Rudeus.Model.ILocalMachine.GetMemory
+- uid: Rudeus.Model.ILocalMachine.GetCDrive*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetCDrive
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetCDrive
+  name: GetCDrive
+  nameWithType: ILocalMachine.GetCDrive
+  fullName: Rudeus.Model.ILocalMachine.GetCDrive
+- uid: Rudeus.Model.ILocalMachine.GetOS*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetOS
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetOS
+  name: GetOS
+  nameWithType: ILocalMachine.GetOS
+  fullName: Rudeus.Model.ILocalMachine.GetOS
+- uid: Rudeus.Model.ILocalMachine.GetOSVersion*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetOSVersion
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetOSVersion
+  name: GetOSVersion
+  nameWithType: ILocalMachine.GetOSVersion
+  fullName: Rudeus.Model.ILocalMachine.GetOSVersion
+- uid: Rudeus.Model.ILocalMachine.GetWithSecure*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetWithSecure
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetWithSecure
+  name: GetWithSecure
+  nameWithType: ILocalMachine.GetWithSecure
+  fullName: Rudeus.Model.ILocalMachine.GetWithSecure
+- uid: Rudeus.Model.ILocalMachine.GetLabelId*
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetLabelId
+  href: Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetLabelId
+  name: GetLabelId
+  nameWithType: ILocalMachine.GetLabelId
+  fullName: Rudeus.Model.ILocalMachine.GetLabelId

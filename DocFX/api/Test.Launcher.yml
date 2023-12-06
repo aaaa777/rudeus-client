@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: Test.Launcher
+  commentId: N:Test.Launcher
+  id: Test.Launcher
+  children:
+  - Test.Launcher.ExecuterTests
+  - Test.Launcher.ProgramTests
+  - Test.Launcher.UpdaterTests
+  langs:
+  - csharp
+  - vb
+  name: Test.Launcher
+  nameWithType: Test.Launcher
+  fullName: Test.Launcher
+  type: Namespace
+  assemblies:
+  - Test
+references:
+- uid: Test.Launcher.ExecuterTests
+  commentId: T:Test.Launcher.ExecuterTests
+  href: Test.Launcher.ExecuterTests.html
+  name: ExecuterTests
+  nameWithType: ExecuterTests
+  fullName: Test.Launcher.ExecuterTests
+- uid: Test.Launcher.ProgramTests
+  commentId: T:Test.Launcher.ProgramTests
+  href: Test.Launcher.ProgramTests.html
+  name: ProgramTests
+  nameWithType: ProgramTests
+  fullName: Test.Launcher.ProgramTests
+- uid: Test.Launcher.UpdaterTests
+  commentId: T:Test.Launcher.UpdaterTests
+  href: Test.Launcher.UpdaterTests.html
+  name: UpdaterTests
+  nameWithType: UpdaterTests
+  fullName: Test.Launcher.UpdaterTests

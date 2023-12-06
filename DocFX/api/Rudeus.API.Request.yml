@@ -108,6 +108,7 @@ references:
   fullName: Rudeus.API.Request.SendInstalledAppsAppData
 - uid: Rudeus.API.Request.UpdateRequest
   commentId: T:Rudeus.API.Request.UpdateRequest
+  parent: Rudeus.API.Request
   href: Rudeus.API.Request.UpdateRequest.html
   name: UpdateRequest
   nameWithType: UpdateRequest

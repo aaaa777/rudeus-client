@@ -8,6 +8,7 @@ items:
   - Rudeus.IUtils.CompareVersionString(System.String,System.String,System.Int32)
   - Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
   - Rudeus.IUtils.CopyDirectory(System.String,System.String,System.Boolean)
+  - Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
   - Rudeus.IUtils.IsStudentMailAddress(System.String)
   - Rudeus.IUtils.ParseArgs(System.String[])
   - Rudeus.IUtils.RegisterDeviceAndSetData
@@ -269,6 +270,42 @@ items:
   nameWithType.vb: IUtils.ParseArgs(String())
   fullName.vb: Rudeus.IUtils.ParseArgs(String())
   name.vb: ParseArgs(String())
+- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
+  commentId: M:Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
+  id: IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
+  parent: Rudeus.IUtils
+  langs:
+  - csharp
+  - vb
+  name: IsArgsAllNullOrAllObject(List<object>)
+  nameWithType: IUtils.IsArgsAllNullOrAllObject(List<object>)
+  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List<object>)
+  type: Method
+  source:
+    remote:
+      path: SharedLib/IUtils.cs
+      branch: master
+      repo: https://github.com/aaaa777/rudeus-client.git
+    id: IsArgsAllNullOrAllObject
+    path: ../SharedLib/IUtils.cs
+    startLine: 52
+  assemblies:
+  - SharedLib
+  namespace: Rudeus
+  summary: DI用の引数が中途半端に指定されているかどうかを判定する
+  example: []
+  syntax:
+    content: public static abstract bool IsArgsAllNullOrAllObject(List<object> args)
+    parameters:
+    - id: args
+      type: System.Collections.Generic.List{System.Object}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared MustInherit Function IsArgsAllNullOrAllObject(args As List(Of Object)) As Boolean
+  overload: Rudeus.IUtils.IsArgsAllNullOrAllObject*
+  nameWithType.vb: IUtils.IsArgsAllNullOrAllObject(List(Of Object))
+  fullName.vb: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List(Of Object))
+  name.vb: IsArgsAllNullOrAllObject(List(Of Object))
 references:
 - uid: Rudeus
   commentId: N:Rudeus
@@ -878,3 +915,72 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject*
+  commentId: Overload:Rudeus.IUtils.IsArgsAllNullOrAllObject
+  href: Rudeus.IUtils.html#Rudeus_IUtils_IsArgsAllNullOrAllObject_System_Collections_Generic_List_System_Object__
+  name: IsArgsAllNullOrAllObject
+  nameWithType: IUtils.IsArgsAllNullOrAllObject
+  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

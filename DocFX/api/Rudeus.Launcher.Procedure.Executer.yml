@@ -5,7 +5,7 @@ items:
   id: Executer
   parent: Rudeus.Launcher.Procedure
   children:
-  - Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
+  - Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})
   - Rudeus.Launcher.Procedure.Executer.AppSettings
   - Rudeus.Launcher.Procedure.Executer.Args
   - Rudeus.Launcher.Procedure.Executer.ExitCode
@@ -85,11 +85,11 @@ items:
   - Launcher
   namespace: Rudeus.Launcher.Procedure
   syntax:
-    content: public ISettings AppSettings { get; set; }
+    content: public IAppSettings AppSettings { get; set; }
     parameters: []
     return:
-      type: Rudeus.Model.ISettings
-    content.vb: Public Property AppSettings As ISettings
+      type: SharedLib.Model.Settings.IAppSettings
+    content.vb: Public Property AppSettings As IAppSettings
   overload: Rudeus.Launcher.Procedure.Executer.AppSettings*
 - uid: Rudeus.Launcher.Procedure.Executer.Args
   commentId: P:Rudeus.Launcher.Procedure.Executer.Args
@@ -181,16 +181,16 @@ items:
       type: System.Func{System.String,System.String,System.Int32}
     content.vb: Public Property StartProcess As Func(Of String, String, Integer)
   overload: Rudeus.Launcher.Procedure.Executer.StartProcess*
-- uid: Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
-  commentId: M:Rudeus.Launcher.Procedure.Executer.#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})
-  id: '#ctor(Rudeus.Model.ISettings,System.String,System.Func{System.String,System.String,System.Int32})'
+- uid: Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})
+  commentId: M:Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})
+  id: '#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})'
   parent: Rudeus.Launcher.Procedure.Executer
   langs:
   - csharp
   - vb
-  name: Executer(ISettings, string, Func<string, string, int>?)
-  nameWithType: Executer.Executer(ISettings, string, Func<string, string, int>?)
-  fullName: Rudeus.Launcher.Procedure.Executer.Executer(Rudeus.Model.ISettings, string, System.Func<string, string, int>?)
+  name: Executer(IAppSettings, string, Func<string, string, int>?)
+  nameWithType: Executer.Executer(IAppSettings, string, Func<string, string, int>?)
+  fullName: Rudeus.Launcher.Procedure.Executer.Executer(SharedLib.Model.Settings.IAppSettings, string, System.Func<string, string, int>?)
   type: Constructor
   source:
     remote:
@@ -204,19 +204,19 @@ items:
   - Launcher
   namespace: Rudeus.Launcher.Procedure
   syntax:
-    content: public Executer(ISettings aps, string args = "", Func<string, string, int>? startProcess = null)
+    content: public Executer(IAppSettings aps, string args = "", Func<string, string, int>? startProcess = null)
     parameters:
     - id: aps
-      type: Rudeus.Model.ISettings
+      type: SharedLib.Model.Settings.IAppSettings
     - id: args
       type: System.String
     - id: startProcess
       type: System.Func{System.String,System.String,System.Int32}
-    content.vb: Public Sub New(aps As ISettings, args As String = "", startProcess As Func(Of String, String, Integer) = Nothing)
+    content.vb: Public Sub New(aps As IAppSettings, args As String = "", startProcess As Func(Of String, String, Integer) = Nothing)
   overload: Rudeus.Launcher.Procedure.Executer.#ctor*
-  nameWithType.vb: Executer.New(ISettings, String, Func(Of String, String, Integer))
-  fullName.vb: Rudeus.Launcher.Procedure.Executer.New(Rudeus.Model.ISettings, String, System.Func(Of String, String, Integer))
-  name.vb: New(ISettings, String, Func(Of String, String, Integer))
+  nameWithType.vb: Executer.New(IAppSettings, String, Func(Of String, String, Integer))
+  fullName.vb: Rudeus.Launcher.Procedure.Executer.New(SharedLib.Model.Settings.IAppSettings, String, System.Func(Of String, String, Integer))
+  name.vb: New(IAppSettings, String, Func(Of String, String, Integer))
 - uid: Rudeus.Launcher.Procedure.Executer.Run
   commentId: M:Rudeus.Launcher.Procedure.Executer.Run
   id: Run
@@ -1971,35 +1971,43 @@ references:
   name: AppSettings
   nameWithType: Executer.AppSettings
   fullName: Rudeus.Launcher.Procedure.Executer.AppSettings
-- uid: Rudeus.Model.ISettings
-  commentId: T:Rudeus.Model.ISettings
-  parent: Rudeus.Model
-  href: Rudeus.Model.ISettings.html
-  name: ISettings
-  nameWithType: ISettings
-  fullName: Rudeus.Model.ISettings
-- uid: Rudeus.Model
-  commentId: N:Rudeus.Model
-  href: Rudeus.html
-  name: Rudeus.Model
-  nameWithType: Rudeus.Model
-  fullName: Rudeus.Model
+- uid: SharedLib.Model.Settings.IAppSettings
+  commentId: T:SharedLib.Model.Settings.IAppSettings
+  parent: SharedLib.Model.Settings
+  href: SharedLib.Model.Settings.IAppSettings.html
+  name: IAppSettings
+  nameWithType: IAppSettings
+  fullName: SharedLib.Model.Settings.IAppSettings
+- uid: SharedLib.Model.Settings
+  commentId: N:SharedLib.Model.Settings
+  href: SharedLib.html
+  name: SharedLib.Model.Settings
+  nameWithType: SharedLib.Model.Settings
+  fullName: SharedLib.Model.Settings
   spec.csharp:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
   spec.vb:
-  - uid: Rudeus
-    name: Rudeus
-    href: Rudeus.html
+  - uid: SharedLib
+    name: SharedLib
+    href: SharedLib.html
   - name: .
-  - uid: Rudeus.Model
+  - uid: SharedLib.Model
     name: Model
-    href: Rudeus.Model.html
+    href: SharedLib.Model.html
+  - name: .
+  - uid: SharedLib.Model.Settings
+    name: Settings
+    href: SharedLib.Model.Settings.html
 - uid: Rudeus.Launcher.Procedure.Executer.Args*
   commentId: Overload:Rudeus.Launcher.Procedure.Executer.Args
   href: Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_Args
@@ -2148,7 +2156,7 @@ references:
   - name: )
 - uid: Rudeus.Launcher.Procedure.Executer.#ctor*
   commentId: Overload:Rudeus.Launcher.Procedure.Executer.#ctor
-  href: Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_Rudeus_Model_ISettings_System_String_System_Func_System_String_System_String_System_Int32__
+  href: Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_SharedLib_Model_Settings_IAppSettings_System_String_System_Func_System_String_System_String_System_Int32__
   name: Executer
   nameWithType: Executer.Executer
   fullName: Rudeus.Launcher.Procedure.Executer.Executer
