@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLib", "SharedLib\SharedLib.csproj", "{656B1061-72A0-4617-924A-770E40600AEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocFX", "DocFX\DocFX.csproj", "{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -170,6 +172,24 @@ Global
 		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x64.Build.0 = Release|Any CPU
 		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x86.ActiveCfg = Release|Any CPU
 		{656B1061-72A0-4617-924A-770E40600AEB}.Release|x86.Build.0 = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|x64.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|x64.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|x64.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|x86.ActiveCfg = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Development|x86.Build.0 = Debug|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|x64.Build.0 = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
