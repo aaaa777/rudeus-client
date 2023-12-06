@@ -130,11 +130,7 @@ namespace SharedLib.Model.Settings
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
         public bool IsTestChannelP()
         {
-#if (DEBUG)
             return UpdatingChannelP == "test";
-#else
-            return false;
-#endif
         }
         public bool IsDevelopChannelP() { return UpdatingChannelP == "develop"; }
         public bool IsStableChannelP() { return !(IsTestChannelP() || IsDevelopChannelP() || IsBetaChannelP()); }
@@ -142,9 +138,7 @@ namespace SharedLib.Model.Settings
         public void SetBetaChannelP() { UpdatingChannelP = "beta"; }
         public void SetTestChannelP()
         {
-#if(DEBUG)
             UpdatingChannelP = "test";
-#endif
         }
         public void SetDevelopChannelP() { UpdatingChannelP = "develop"; }
         public void SetStableChannelP() { UpdatingChannelP = "stable"; }
