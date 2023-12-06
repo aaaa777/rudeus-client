@@ -100,32 +100,36 @@ namespace Rudeus.Model
 
         public string GetCpuName()
         {
+            string cpuName = "unknown";
             ManagementObjectSearcher mos = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
             foreach (ManagementObject mo in mos.Get())
             {
                 Console.WriteLine(mo["Name"]);
                 // TODO: 30文字以上にリクエスト変更要求
-                return (mo["Name"].ToString() ?? "null set").Substring(0, 30);
+                cpuName = (mo["Name"].ToString() ?? "null set").Substring(0, 30);
+                mo.Dispose();
             }
-            return "unknown";
+            mos.Dispose();
+            return cpuName;
         }
 
         public string GetMemory()
         {
-            int nVal;
+            int nVal = 0;
             ManagementClass mc = new ManagementClass("Win32_OperatingSystem");
             ManagementObjectCollection moc = mc.GetInstances();
 
-            foreach (System.Management.ManagementObject mo in moc)
+            foreach (ManagementObject mo in moc)
             {
                 // メモリー情報
                 // 合計物理メモリー
                 Console.WriteLine("TotalVisibleMemorySize = " + mo["TotalVisibleMemorySize"]);
                 // 1024 * 1024で割ると誤差で16GBが15GBになるので、1000 * 1000で割る
                 nVal = Convert.ToInt32(mo["TotalVisibleMemorySize"]) / (1_000_000);    // 単位 KB -> MB
-                return nVal.ToString();
+                mo.Dispose();
             }
-            return "0";
+            moc.Dispose();
+            return nVal.ToString();
         }
 
         public string GetCDrive()
