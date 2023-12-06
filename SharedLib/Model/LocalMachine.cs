@@ -111,9 +111,9 @@ namespace Rudeus.Model
             return "10.23456.234";
         }
 
-        public bool GetWithSecure()
+        public string GetWithSecure()
         {
-            return true;
+            return "";
         }
 
         public string GetLabelId()

@@ -22,7 +22,7 @@
         string GetCDrive();
         string GetOS();
         string GetOSVersion();
-        bool GetWithSecure();
+        string GetWithSecure();
         string GetLabelId();
     }
 }
