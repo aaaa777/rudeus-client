@@ -15,10 +15,10 @@ namespace SharedLib.Model.Settings
     public class RootSettings : IRootSettings
     {
         // レジストリ：アプリのルート
-        private static string RegistryDir = Constants.RegistryDir;
-        private static string RegistryKey = Constants.DefaultRegistryKey;
+        private string RegistryDir = Constants.RegistryDir;
+        private string RegistryKey = Constants.DefaultRegistryKey;
 
-        private static RegistryKey? RegKey;
+        private RegistryKey? RegKey;
 
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
@@ -30,10 +30,8 @@ namespace SharedLib.Model.Settings
 
         public void DeleteAll()
         {
-            if(RegKey != null)
-            {
-                Registry.LocalMachine.DeleteSubKeyTree($"{RegistryDir}\\{RegistryKey}");
-            }
+            Registry.LocalMachine.DeleteSubKeyTree($"{RegistryDir}\\{RegistryKey}");
+            RegKey = CreateRegKey($"{RegistryDir}\\{RegistryKey}");
         }
 
         public RootSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null)

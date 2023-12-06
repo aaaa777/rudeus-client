@@ -18,13 +18,13 @@ namespace SharedLib.Model.Settings
         private static string DefaultRegistryKey = Constants.DefaultRegistryKey;
 
         // レジストリ：アプリのルート
-        private static string RegistryDir = Constants.RegistryDir;
-        private static string RegistryKey;
+        private string RegistryDir = Constants.RegistryDir;
+        private string RegistryKey;
 
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
 
-        private RegistryKey? _regKey;
+        private RegistryKey? RegKey;
 
         private static RegistryKey CreateRegKey(string keyName)
         {
@@ -33,7 +33,8 @@ namespace SharedLib.Model.Settings
 
         public void DeleteAll()
         {
-            Registry.LocalMachine.DeleteSubKeyTree($"{RegistryKey}");
+            Registry.LocalMachine.DeleteSubKeyTree($"{RegistryDir}\\{RegistryKey}");
+            RegKey = CreateRegKey($"{RegistryDir}\\{RegistryKey}");
         }
 
         // DI用コンストラクタ
@@ -43,14 +44,18 @@ namespace SharedLib.Model.Settings
             GetFunc = getFunc ?? Get;
             SetFunc = setFunc ?? Set;
 
-            _regKey = RegistryKey == null ? null : CreateRegKey($"{RegistryDir}\\{RegistryKey}");
+            // DI用メソッドが指定されていない場合はレジストリオブジェクトを作成(通常動作)
+            if (getFunc == null || setFunc == null)
+            {
+                RegKey = CreateRegKey($"{RegistryDir}\\{RegistryKey}");
+            }
         }
 
         public string Get(string key, string defaultValue = "")
         {
             try
             {
-                var value = _regKey.GetValue(key) ?? new Exception("getting val from registry failed");
+                var value = RegKey.GetValue(key) ?? new Exception("getting val from registry failed");
                 return (string)value;
             }
             catch
@@ -61,7 +66,7 @@ namespace SharedLib.Model.Settings
 
         public bool Set(string key, string value)
         {
-            _regKey.SetValue(key, value);
+            RegKey.SetValue(key, value);
             return true;
         }
 
