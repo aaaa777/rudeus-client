@@ -1394,6 +1394,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/about-REST-API.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/about-REST-API.html",
+          "hash": "rBjy+8divBHgz8P25knhIYjyBKmnq09yZb5gRKKRpwE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/getting-started.md",
       "output": {
         ".html": {
@@ -1422,7 +1434,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/toc.html",
-          "hash": "9XAWFIglQANS5iqvMCZYhs45Hnu8F5WZgoy4I/Y0E7g="
+          "hash": "PU9U9WZ3JMO4UaimIyqvimEmdICgjtCU38u8wwmTUlQ="
         }
       },
       "is_incremental": false,
@@ -1467,7 +1479,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
