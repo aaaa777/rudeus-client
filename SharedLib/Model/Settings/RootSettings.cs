@@ -215,27 +215,61 @@ namespace SharedLib.Model.Settings
         }
 
         public string NetworkIFListKey = "NetworkIFList";
-        public string NetworkIFList
+        public string NetworkIFListP
         {
-            set { Set(NetworkIFListKey, value); }
-            get { return Get(NetworkIFListKey, ""); }
+            set { SetFunc(NetworkIFListKey, value); }
+            get { return GetFunc(NetworkIFListKey, ""); }
         }
 
-        public string SpecKey = "NetworkIFList";
-        public string aa
+        public string SpecKey = "Spec";
+        public string SpecP
         {
-            set { Set(SpecKey, value); }
-            get { return Get(SpecKey, ""); }
+            set { SetFunc(SpecKey, value); }
+            get { return GetFunc(SpecKey, ""); }
         }
 
-        public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CpuNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string MemoryP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CDriveP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string OSP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public object OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string WithSecureP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IRootSettings.OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string CpuNameKey = "CpuName";
+        public string CpuNameP
+        {
+            set { SetFunc(CpuNameKey, value); }
+            get { return GetFunc(CpuNameKey, ""); }
+        }
+
+        public string MemoryKey = "Memory";
+        public string MemoryP
+        {
+            set { SetFunc(MemoryKey, value); }
+            get { return GetFunc(MemoryKey, ""); }
+        }
+        
+        public string CDriveKey = "CDrive";
+        public string CDriveP
+        {
+            set { SetFunc(CDriveKey, value); }
+            get { return GetFunc(CDriveKey, ""); }
+        }
+
+        public string OSKey = "OS";
+        public string OSP
+        {
+            set { SetFunc(OSKey, value); }
+            get { return GetFunc(OSKey, ""); }
+        }
+
+        public string OSVersionKey = "OSVersion";
+        public string OSVersionP
+        {
+            set { SetFunc(OSVersionKey, value); }
+            get { return GetFunc(OSVersionKey, ""); }
+        }
+
+        public string WithSecureKey = "WithSecure";
+        public string WithSecureP
+        {
+            set { SetFunc(WithSecureKey, value); }
+            get { return GetFunc(WithSecureKey, ""); }
+        }
+        
         // for debugging
 
         //public static string 

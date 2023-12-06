@@ -503,7 +503,7 @@ namespace SharedLib.Model.Settings
             get { return GetFunc(CurrentVersionKey, ""); }
         }
 
-        public string NetworkIFListKey = "NetworkIFList";
+        public string NetworkIFListKey = "NetworkIFListP";
         public string NetworkIFList
         {
             set { SetFunc(NetworkIFListKey, value); }

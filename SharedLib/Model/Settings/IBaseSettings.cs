@@ -8,6 +8,9 @@ namespace SharedLib.Model.Settings
 {
     public interface IBaseSettings
     {
+        //static abstract string GetStatic(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
+        //static abstract void SetStatic(string key, string value, bool isDefaultKey, RegistryKey regKey);
+
         string Get(string key, string defaultString);
         bool Set(string key, string value);
 

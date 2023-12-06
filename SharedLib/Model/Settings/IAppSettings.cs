@@ -8,10 +8,6 @@ namespace SharedLib.Model.Settings
     /// </summary>
     public interface IAppSettings : IBaseSettings
     {
-        //static abstract string GetStatic(string key, string defaultValue, bool isDefaultKey, RegistryKey regKey);
-
-        //static abstract void SetStatic(string key, string value, bool isDefaultKey, RegistryKey regKey);
-
         string CurrentVersionP { get; set; }
         string LastDirNameP { get; set; }
         string LastVersionDirPathP { get; set; }

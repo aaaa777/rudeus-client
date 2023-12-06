@@ -76,13 +76,13 @@ namespace Test.SharedLib.Model.Settings
         public string FirstHostnameP { get => GetFunc("FH", ""); set => SetFunc("FH", value); }
         public string HostnameP { get => GetFunc("H", ""); set => SetFunc("H", value); }
         public string UsernameP { get => GetFunc("U", ""); set => SetFunc("U", value); }
-        public string SpecP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CpuNameP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string MemoryP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CDriveP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string OSP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string OSVersionP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string WithSecureP { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string SpecP { get => GetFunc("S", ""); set => SetFunc("S", value); }
+        public string CpuNameP { get => GetFunc("CN", ""); set => SetFunc("CN", value); }
+        public string MemoryP { get => GetFunc("M", ""); set => SetFunc("M", value); }
+        public string CDriveP { get => GetFunc("CD", ""); set => SetFunc("CD", value); }
+        public string OSP { get => GetFunc("OS", ""); set => SetFunc("OS", value); }
+        public string OSVersionP { get => GetFunc("OSV", ""); set => SetFunc("OSV", value); }
+        public string WithSecureP { get => GetFunc("WS", ""); set => SetFunc("WS", value); }
 
         public bool IsBetaChannelP()
         {
