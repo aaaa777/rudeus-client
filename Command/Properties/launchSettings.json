@@ -1,32 +1,32 @@
 {
   "profiles": {
-    "RudeusBg": {
+    "mode default": {
       "commandName": "Project",
-      "environmentVariables": {
-        "DOTNET_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true
-    },
-    "login": {
-      "commandName": "Project",
-      "commandLineArgs": "mode=login",
+      "commandLineArgs": "mode=default",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
     },
-    "test": {
+    "mode test": {
       "commandName": "Project",
       "commandLineArgs": "mode=test",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
     },
-    "default": {
+    "mode login": {
       "commandName": "Project",
-      "commandLineArgs": "mode=default",
+      "commandLineArgs": "mode=login",
       "environmentVariables": {
         "DOTNET_ENVIRONMENT": "Development"
       }
+    },
+    "without args": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
     }
   }
 }

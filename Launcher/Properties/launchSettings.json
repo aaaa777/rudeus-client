@@ -1,17 +1,17 @@
 {
   "profiles": {
-    "RudeusLauncher": {
+    "without args": {
       "commandName": "Project"
     },
-    "Launch Bg": {
+    "Launch Command": {
       "commandName": "Project",
       "commandLineArgs": "Bg"
     },
-    "Launch Tray": {
+    "Launch Application": {
       "commandName": "Project",
       "commandLineArgs": "Task"
     },
-    "Launch Bg login": {
+    "Launch Command mode: login": {
       "commandName": "Project",
       "commandLineArgs": "Bg mode=login"
     }
