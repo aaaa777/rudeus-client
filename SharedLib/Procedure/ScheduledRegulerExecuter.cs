@@ -31,6 +31,7 @@ namespace Rudeus.Procedure
         {
             // UpdateDeviceÇÃé¿çs
             UpdateResponse res = await SendRegularReport();
+            await LocalMachineInfoUpdater.Run();
 
             HandlePushDataFromResponse(res);
         }
@@ -89,7 +90,7 @@ namespace Rudeus.Procedure
                 Console.WriteLine("server connection failed");
                 throw;
             }
-            LocalMachineInfoUpdater.Run();
+            await LocalMachineInfoUpdater.Run();
             RootSettings.HostnameP = hostname;
 
             return response;

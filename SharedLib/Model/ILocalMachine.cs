@@ -8,6 +8,12 @@
         public abstract static ILocalMachine GetInstance();
 
         public string GetPhysicalRamInfo();
+
+        /// <summary>
+        /// 物理ディスクドライブのIDリストを取得
+        /// 現時点で利用していない
+        /// </summary>
+        /// <returns></returns>
         public List<string> GetStorageDeviceIdList();
 
         public string GetDeviceId();

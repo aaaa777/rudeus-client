@@ -29,11 +29,6 @@ namespace Rudeus.Watchdogs
             Settings = settings ?? new RootSettings();
         }
 
-        public bool IsChanged()
-        {
-            return true;
-        }
-
         public UpdateRequest BuildUpdateRequestWithChanges()
         {
             var request = new UpdateRequest();
