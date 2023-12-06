@@ -11,6 +11,9 @@ namespace SharedLib.Model.Settings
 
         //static abstract void SetStatic(string key, string value, bool isDefaultKey, RegistryKey regKey);
 
+        //string InitedUsername { get; set; }
+        //string InitedLabelId { get; set; }
+
         string AccessTokenP { get; set; }
         string DeviceIdP { get; set; }
         string FirstHostnameP { get; set; }

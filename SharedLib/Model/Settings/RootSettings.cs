@@ -36,27 +36,6 @@ namespace SharedLib.Model.Settings
         }
 
 
-        private static string GetStatic(string key, string defaultValue = "")
-        {
-            try
-            {
-                var value = RegKey?.GetValue(key) ?? new Exception("getting val from registry failed");
-                return (string)value;
-
-            }
-            catch
-            {
-                return defaultValue;
-            }
-        }
-
-        private static void SetStatic(string key, string value)
-        {
-
-            RegKey?.SetValue(key, value);
-
-        }
-
         public string Get(string key, string defaultValue = "")
         {
             try
@@ -169,41 +148,6 @@ namespace SharedLib.Model.Settings
         }
         public void SetDevelopChannelP() { UpdatingChannelP = "develop"; }
         public void SetStableChannelP() { UpdatingChannelP = "stable"; }
-
-
-        // ダウンロード失敗やバージョンにバグがあった場合のフォールバック設定
-
-        // latest   ダウンロードした最新バージョン
-        // last     最後に実行できた正常なバージョン
-        public static string LatestVersionStatusKey = "LatestVersionStatus";
-
-        public static string LatestVersionStatus
-        {
-            set { SetStatic(LatestVersionStatusKey, value); }
-            get { return GetStatic(LatestVersionStatusKey, ""); }
-        }
-
-        public string LatestVersionStatusP
-        {
-            set { SetFunc(LatestVersionStatusKey, value); }
-            get { return GetFunc(LatestVersionStatusKey, ""); }
-        }
-
-        public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
-        public static bool IsLatestVersionStatusDownloaded() { return LatestVersionStatus == "downloaded"; }
-        public static bool IsLatestVersionStatusUnlaunchable() { return LatestVersionStatus == "unlaunchable"; }
-
-        public static void SetLatestVersionStatusOk() { LatestVersionStatus = "ok"; }
-        public static void SetLatestVersionStatusDownloaded() { LatestVersionStatus = "downloaded"; }
-        public static void SetLatestVersionStatusUnlaunchable() { LatestVersionStatus = "unlaunchable"; }
-
-        public bool IsLatestVersionStatusOkP() { return LatestVersionStatus == "ok"; }
-        public bool IsLatestVersionStatusDownloadedP() { return LatestVersionStatus == "downloaded"; }
-        public bool IsLatestVersionStatusUnlaunchableP() { return LatestVersionStatus == "unlaunchable"; }
-
-        public void SetLatestVersionStatusOkP() { LatestVersionStatus = "ok"; }
-        public void SetLatestVersionStatusDownloadedP() { LatestVersionStatus = "downloaded"; }
-        public void SetLatestVersionStatusUnlaunchableP() { LatestVersionStatus = "unlaunchable"; }
 
 
         // lastに存在するバージョンについて

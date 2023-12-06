@@ -35,6 +35,7 @@ namespace SharedLib.Model.Settings
             return Registry.LocalMachine.CreateSubKey(keyName);// ?? new Exception("key creation failed");
         }
 
+        // DI用コンストラクタ
         public AppSettings(Func<string, string, string>? getFunc = null, Func<string, string, bool>? setFunc = null, Func<string, RegistryKey>? createRegFunc = null)
         {
             GetFunc = getFunc ?? Get;
@@ -45,6 +46,8 @@ namespace SharedLib.Model.Settings
         public AppSettings(string registryKey)
         {
             _regKey = CreateRegKey($"{RegistryDir}\\{registryKey}");
+            GetFunc = Get;
+            SetFunc = Set;
         }
 
         public static void UpdateRegistryKey(string? registryKey = null)
@@ -125,23 +128,6 @@ namespace SharedLib.Model.Settings
             }
         }
 
-        // Inno Setup UserData
-        public static string InitedUsername
-        {
-            get
-            {
-                return (string)(CreateRegKey(Constants.InnoSetupUserDataKey).GetValue("Username") ?? new Exception("Setup Username missing"));
-            }
-        }
-
-        // Pxx-xxx
-        public static string InitedLabelId
-        {
-            get
-            {
-                return (string)(CreateRegKey(Constants.InnoSetupUserDataKey).GetValue("LabelId") ?? new Exception("Setup LabelId missing"));
-            }
-        }
 
         // ここからデフォルトのレジストリキーでのみ保存可能
 
