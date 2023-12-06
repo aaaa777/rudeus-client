@@ -1,173 +1,244 @@
 ﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
 <html>
+  
   <head>
     <meta charset="utf-8">
-      <title>Class UtilsTests
- | Rudeus Document </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UtilsTests
- | Rudeus Document ">
-      
-      <link rel="icon" href="../favicon.ico">
-      <link rel="stylesheet" href="../public/docfx.min.css">
-      <link rel="stylesheet" href="../public/main.css">
-      <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
-      
-      <meta name="docfx:rel" content="../">
-      
-      
-      <meta name="docfx:docurl" content="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
-      <meta name="loc:inThisArticle" content="In this article">
-      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
-      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
-      <meta name="loc:tocFilter" content="Filter by title">
-      <meta name="loc:nextArticle" content="Next">
-      <meta name="loc:prevArticle" content="Previous">
-      <meta name="loc:themeLight" content="Light">
-      <meta name="loc:themeDark" content="Dark">
-      <meta name="loc:themeAuto" content="Auto">
-      <meta name="loc:changeTheme" content="Change theme">
-      <meta name="loc:copy" content="Copy">
-      <meta name="loc:downloadPdf" content="Download PDF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UtilsTests
+   | Rudeus Document </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UtilsTests
+   | Rudeus Document ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
-
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
-    <header class="bg-body border-bottom">
-      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
-        <div class="container-xxl flex-nowrap">
-          <a class="navbar-brand" href="../index.html">
-            <img id="logo" class="svg" src="../logo.svg" alt="Rudeus Document">
-            Rudeus Document
-          </a>
-          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="bi bi-three-dots"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navpanel">
-            <div id="navbar">
-              <form class="search" role="search" id="search">
-                <i class="bi bi-search"></i>
-                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Rudeus">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
               </form>
             </div>
           </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
         </div>
-      </nav>
-    </header>
-
-    <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
-
-      <div class="content">
-        <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
-
-          <nav id="breadcrumb"></nav>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
         </div>
-
-        <article data-uid="Test.SharedLib.UtilsTests">
-
-
-
-  <h1 id="Test_SharedLib_UtilsTests" data-uid="Test.SharedLib.UtilsTests" class="text-break">
-    Class UtilsTests
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L11"><i class="bi bi-code-slash"></i></a>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Test.SharedLib.UtilsTests">
+  
+  
+  <h1 id="Test_SharedLib_UtilsTests" data-uid="Test.SharedLib.UtilsTests" class="text-break">Class UtilsTests
   </h1>
-
-  <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Test.html">Test</a>.<a class="xref" href="Test.SharedLib.html">SharedLib</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>Test.dll</dd></dl>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UtilsTests</span></div>
   </div>
-
-  <div class="markdown summary"></div>
-  <div class="markdown conceptual"></div>
-
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Test.SharedLib.html">Test.SharedLib</a></h6>
+  <h6><strong>Assembly</strong>: Test.dll</h6>
+  <h5 id="Test_SharedLib_UtilsTests_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class UtilsTests</code></pre>
   </div>
-
-
-
-
-  <dl class="typelist inheritance">
-    <dt>Inheritance</dt>
-    <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">UtilsTests</span></div>
-    </dd>
-  </dl>
-
-
-
-  <dl class="typelist derived">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
-    </div>
-  </dd></dl>
-
-  <dl class="typelist extensionMethods">
-    <dt>Extension Methods</dt>
-    <dd>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestCompareVersionString.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestCompareVersionString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L66">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestCompareVersionString" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString">TestCompareVersionString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestCompareVersionString()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestCompareVersionString1.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestCompareVersionString1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L51">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString1_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString1*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestCompareVersionString1" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString1">TestCompareVersionString1()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestCompareVersionString1()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestCompareVersionString2.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestCompareVersionString2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L58">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString2_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString2*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestCompareVersionString2" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString2">TestCompareVersionString2()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestCompareVersionString2()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestConcatStudentNumberFromMail.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestConcatStudentNumberFromMail%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L43">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestConcatStudentNumberFromMail_" data-uid="Test.SharedLib.UtilsTests.TestConcatStudentNumberFromMail*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestConcatStudentNumberFromMail" data-uid="Test.SharedLib.UtilsTests.TestConcatStudentNumberFromMail">TestConcatStudentNumberFromMail()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestConcatStudentNumberFromMail()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestIsStudentMailAddress1.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestIsStudentMailAddress1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L17">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress1_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress1*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress1" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress1">TestIsStudentMailAddress1()</h4>
+  <div class="markdown level1 summary"><p>学生のメール -&gt; true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestIsStudentMailAddress1()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestIsStudentMailAddress2.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestIsStudentMailAddress2%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L26">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress2_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress2*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress2" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress2">TestIsStudentMailAddress2()</h4>
+  <div class="markdown level1 summary"><p>教員のメール -&gt; false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestIsStudentMailAddress2()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests_TestIsStudentMailAddress3.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests.TestIsStudentMailAddress3%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L35">View Source</a>
+  </span>
+  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress3_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress3*"></a>
+  <h4 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress3" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress3">TestIsStudentMailAddress3()</h4>
+  <div class="markdown level1 summary"><p>外部のメール -&gt; false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TestIsStudentMailAddress3()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_">AssertEx.IsInstanceOf&lt;TExpected&gt;(object)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_">AssertEx.Is&lt;T&gt;(T, T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_">AssertEx.IsNotInstanceOf&lt;TWrong&gt;(object)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_">AssertEx.Is&lt;T&gt;(T, Expression&lt;Func&lt;T, Boolean&gt;&gt;, String)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsNotStructuralEqual(object, object, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsStructuralEqual(object, object, string)</a>
-  </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_">AssertEx.AsDynamic&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_">AssertEx.IsNotNull&lt;T&gt;(T)</a>
-  </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_">AssertEx.IsNotSameReferenceAs&lt;T&gt;(T, T)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.Is&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
   </div>
   <div>
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_">AssertEx.IsNot&lt;T&gt;(T, T)</a>
@@ -179,242 +250,69 @@
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_">AssertEx.IsNull&lt;T&gt;(T)</a>
   </div>
   <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_">AssertEx.IsNotNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_">AssertEx.IsSameReferenceAs&lt;T&gt;(T, T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_">AssertEx.Is&lt;T&gt;(T, Expression&lt;Func&lt;T, bool&gt;&gt;, string)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_">AssertEx.IsNotSameReferenceAs&lt;T&gt;(T, T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_">AssertEx.Is&lt;T&gt;(T, T)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_">AssertEx.IsInstanceOf&lt;TExpected&gt;(Object)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.Is&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_">AssertEx.IsNotInstanceOf&lt;TWrong&gt;(Object)</a>
   </div>
-  </dd></dl>
-
-
-
-
-
-  <h2 class="section" id="methods">Methods
-</h2>
-
-
-  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestCompareVersionString" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString">
-  TestCompareVersionString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L66"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;CompareVersionString(): \&quot;1.0.0\&quot;, \&quot;2.1.0\&quot; -&gt; -1&quot;)]
-public void TestCompareVersionString()</code></pre>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsStructuralEqual(Object, Object, String)</a>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString1_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString1*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestCompareVersionString1" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString1">
-  TestCompareVersionString1()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L51"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;CompareVersionString(): \&quot;1.0.0\&quot;, \&quot;1.0.0\&quot; -&gt; 0&quot;)]
-public void TestCompareVersionString1()</code></pre>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsNotStructuralEqual(Object, Object, String)</a>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestCompareVersionString2_" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString2*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestCompareVersionString2" data-uid="Test.SharedLib.UtilsTests.TestCompareVersionString2">
-  TestCompareVersionString2()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L58"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;CompareVersionString(): \&quot;1.0.0\&quot;, \&quot;0.32.0\&quot; -&gt; 1&quot;)]
-public void TestCompareVersionString2()</code></pre>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_">AssertEx.AsDynamic&lt;T&gt;(T)</a>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestConcatStudentNumberFromMail_" data-uid="Test.SharedLib.UtilsTests.TestConcatStudentNumberFromMail*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestConcatStudentNumberFromMail" data-uid="Test.SharedLib.UtilsTests.TestConcatStudentNumberFromMail">
-  TestConcatStudentNumberFromMail()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L43"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;ConcatStudentNumberFromMail(): \&quot;s1234567@s.do-johodai.ac.jp\&quot; -&gt; \&quot;1234567\&quot;&quot;)]
-public void TestConcatStudentNumberFromMail()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress1_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress1*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress1" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress1">
-  TestIsStudentMailAddress1()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L17"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>学生のメール -&gt; true</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;IsStudentMailAddress(): s1234567@s.do-johodai.ac.jp -&gt; True&quot;)]
-public void TestIsStudentMailAddress1()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress2_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress2*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress2" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress2">
-  TestIsStudentMailAddress2()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L26"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>教員のメール -&gt; false</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;IsStudentMailAddress(): samplename@s.do-johodai.ac.jp -&gt; False&quot;)]
-public void TestIsStudentMailAddress2()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress3_" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress3*"></a>
-
-  <h3 id="Test_SharedLib_UtilsTests_TestIsStudentMailAddress3" data-uid="Test.SharedLib.UtilsTests.TestIsStudentMailAddress3">
-  TestIsStudentMailAddress3()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L35"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>外部のメール -&gt; false</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Fact(DisplayName = &quot;IsStudentMailAddress(): s1234567@www.example.com -&gt; False&quot;)]
-public void TestIsStudentMailAddress3()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </article>
-
-        <div class="contribution d-print-none">
-          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L11" class="edit-link">Edit this page</a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_UtilsTests.md&amp;value=---%0Auid%3A%20Test.SharedLib.UtilsTests%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/UtilsTests.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
         </div>
-
-
       </div>
-
-      <div class="affix">
-        <nav id="affix"></nav>
-      </div>
-    </main>
-
-    <div class="container-xxl search-results" id="search-results"></div>
-
-    <footer class="border-top text-secondary">
-      <div class="container-xxl">
-        <div class="flex-fill">
-          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

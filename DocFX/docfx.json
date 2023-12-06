@@ -5,7 +5,12 @@
         {
           "src": "..",
           "files": [
-            "*/*.csproj"
+            "Application/Application.csproj",
+            "Command/Command.csproj",
+            "Initializer/Initializer.csproj",
+            "Launcher/Launcher.csproj",
+            "SharedLib/SharedLib.csproj",
+            "Test/Test.csproj"
           ]
         }
       ],
@@ -30,13 +35,13 @@
         ]
       }
     ],
-    "output": "../docs",
+    "dest": "../docs",
     "template": [
       "default",
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "Rudeus Document",
+      "_appName": "Rudeus",
       "_appTitle": "Rudeus Document",
       "_enableSearch": true,
       "pdf": true

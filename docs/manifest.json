@@ -1,4 +1,5 @@
 {
+  "homepages": [],
   "source_base_path": "C:/Users/a774n/source/repos/Rudeus/DocFX",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -8,16 +9,19 @@
         "resource": {
           "relative_path": "index.json"
         }
-      }
+      },
+      "is_incremental": false
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.IRequestClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.IRequestClient.html"
+          "relative_path": "api/Rudeus.API.IRequestClient.html",
+          "hash": "z3mJ/Y3PwO6tQQzu/TPv43EMzmk4cJk1XHDFOTObbqE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -25,9 +29,11 @@
       "source_relative_path": "api/Rudeus.API.RemoteAPI.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.RemoteAPI.html"
+          "relative_path": "api/Rudeus.API.RemoteAPI.html",
+          "hash": "0nQC/rco2Pak7/7CQ9MAvERg9AabgJsvhC99871ja0A="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -35,9 +41,11 @@
       "source_relative_path": "api/Rudeus.API.Request.BaseRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.BaseRequest.html"
+          "relative_path": "api/Rudeus.API.Request.BaseRequest.html",
+          "hash": "9U8sRAft+uaL/PVQRqQFeEF0Eykq7o+gD2JyCikyXv8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,9 +53,11 @@
       "source_relative_path": "api/Rudeus.API.Request.BaseRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.BaseRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.BaseRequestData.html",
+          "hash": "/ro/ayMwPZgic3+t6H/3gtGiU38E8WkZav69vidlxTg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,9 +65,11 @@
       "source_relative_path": "api/Rudeus.API.Request.EmptyRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.EmptyRequest.html"
+          "relative_path": "api/Rudeus.API.Request.EmptyRequest.html",
+          "hash": "N5jtvld92zwcAIn33T/ZvMFCNK8HbLNWQrrfaCzbndE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -65,9 +77,11 @@
       "source_relative_path": "api/Rudeus.API.Request.EmptyRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.EmptyRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.EmptyRequestData.html",
+          "hash": "TDXTzNOzYSCq3Ax3s5MMY1u3ZuMo5fvv2iNDeAapKjA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -75,9 +89,11 @@
       "source_relative_path": "api/Rudeus.API.Request.IRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.IRequest.html"
+          "relative_path": "api/Rudeus.API.Request.IRequest.html",
+          "hash": "K63TGGDAuR9/l1OjzFzrgKLMA+O77tCtHHuRSltDHuM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -85,9 +101,11 @@
       "source_relative_path": "api/Rudeus.API.Request.LoginRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.LoginRequest.html"
+          "relative_path": "api/Rudeus.API.Request.LoginRequest.html",
+          "hash": "z6lJ49jiaAFpw3XzEtmOwV0CysmFbI3OSIzVSX4Yc8M="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -95,9 +113,11 @@
       "source_relative_path": "api/Rudeus.API.Request.LoginRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.LoginRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.LoginRequestData.html",
+          "hash": "LcIKzriIMty44jN/UO41JOzFbSib+hD/EoTqYNBrMic="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,9 +125,11 @@
       "source_relative_path": "api/Rudeus.API.Request.RegisterRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.RegisterRequest.html"
+          "relative_path": "api/Rudeus.API.Request.RegisterRequest.html",
+          "hash": "ApNC7D7B7aMUNpWjd8fajCtvMGYEC8mqIazfLx5Egb0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,9 +137,11 @@
       "source_relative_path": "api/Rudeus.API.Request.RegisterRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.RegisterRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.RegisterRequestData.html",
+          "hash": "hKEP6JMDSgu/r0qfkVXBpdzMaFld6MqxUXARdehMorw="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -125,9 +149,11 @@
       "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsAppData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsAppData.html"
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsAppData.html",
+          "hash": "xxoEnGE4b10ITiHy69bJ/XP35NjpY5QF7X6DNR6qqsA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -135,9 +161,11 @@
       "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequest.html"
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequest.html",
+          "hash": "BB1OTuIuDYH6mFuRpv/0EoUWbyydKj4oYJh3+ukZa0A="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -145,9 +173,11 @@
       "source_relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.SendInstalledAppsRequestData.html",
+          "hash": "9/Ej7K/2mnz6tEP1AyOVau0gGHzZv+MSMXZ4NMKGhvg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -155,9 +185,11 @@
       "source_relative_path": "api/Rudeus.API.Request.UpdateMacRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.UpdateMacRequest.html"
+          "relative_path": "api/Rudeus.API.Request.UpdateMacRequest.html",
+          "hash": "UmStncaagQK1A9KMCoWm6N5HoxGKQzOvYS9QjtMw1yU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,9 +197,11 @@
       "source_relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.html",
+          "hash": "75Oc+MV6NVTutPXuOfHFpLwS6qTUDBNv1+5bKxDZ/HA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -175,9 +209,11 @@
       "source_relative_path": "api/Rudeus.API.Request.UpdateRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.UpdateRequest.html"
+          "relative_path": "api/Rudeus.API.Request.UpdateRequest.html",
+          "hash": "O933EjMwqlqyt04WrBJEebizpwnyK1S20qW2yDTFoNs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -185,9 +221,11 @@
       "source_relative_path": "api/Rudeus.API.Request.UpdateRequestData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.UpdateRequestData.html"
+          "relative_path": "api/Rudeus.API.Request.UpdateRequestData.html",
+          "hash": "iDlo9kIjCLiwRb8JfQmmboill7Y6+SBz1hWDPhTxhvI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -195,9 +233,11 @@
       "source_relative_path": "api/Rudeus.API.Request.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Request.html"
+          "relative_path": "api/Rudeus.API.Request.html",
+          "hash": "griFU27nN+gs1eoxXxxA1m16bsBVnI5pzYEsUawDrIs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -205,9 +245,11 @@
       "source_relative_path": "api/Rudeus.API.RequestClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.RequestClient.html"
+          "relative_path": "api/Rudeus.API.RequestClient.html",
+          "hash": "7CNXT114+IGBGkWOlpwcRGFsH/C4ZFWmyyBqW9GUU0c="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -215,9 +257,11 @@
       "source_relative_path": "api/Rudeus.API.Response.BaseResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.BaseResponse.html"
+          "relative_path": "api/Rudeus.API.Response.BaseResponse.html",
+          "hash": "KA0l29+XMYGrTBDkCcpR1kzj38o8pgiPbKRnkZLyR+w="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,9 +269,11 @@
       "source_relative_path": "api/Rudeus.API.Response.LoginResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.LoginResponse.html"
+          "relative_path": "api/Rudeus.API.Response.LoginResponse.html",
+          "hash": "gGC2BGM22exJ70fMnUcjuWd2BCBPGiQ9nla/rPlOgcI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,9 +281,11 @@
       "source_relative_path": "api/Rudeus.API.Response.LoginResponseData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.LoginResponseData.html"
+          "relative_path": "api/Rudeus.API.Response.LoginResponseData.html",
+          "hash": "KL538Uw8YJFOdSSxcA4kXJVKl/kyFaLZ7N4xyN0ra/U="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -245,9 +293,11 @@
       "source_relative_path": "api/Rudeus.API.Response.PushResponseData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.PushResponseData.html"
+          "relative_path": "api/Rudeus.API.Response.PushResponseData.html",
+          "hash": "JD3+Q5HbUyBKMnxnms3OinGI/YI6MmkQqpTT2LBZ3Mw="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -255,9 +305,11 @@
       "source_relative_path": "api/Rudeus.API.Response.RegisterResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.RegisterResponse.html"
+          "relative_path": "api/Rudeus.API.Response.RegisterResponse.html",
+          "hash": "twAL7as6UXPZLXrrvjhRU1rJFQ8/rEYcCdaNDErOPc8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -265,9 +317,11 @@
       "source_relative_path": "api/Rudeus.API.Response.RegisterResponseData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.RegisterResponseData.html"
+          "relative_path": "api/Rudeus.API.Response.RegisterResponseData.html",
+          "hash": "7VOrOeNZGbAOSEqP8oe6W0d6M/Pz46tdfyXgfFud1DQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -275,9 +329,11 @@
       "source_relative_path": "api/Rudeus.API.Response.UpdateMetadataResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponse.html"
+          "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponse.html",
+          "hash": "b/HZc288ThQz+q8iMOi2E4vQr4BQHm7Aqeyr1NWDc5Q="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -285,9 +341,11 @@
       "source_relative_path": "api/Rudeus.API.Response.UpdateMetadataResponseData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponseData.html"
+          "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponseData.html",
+          "hash": "UDeYKlffT3VpD54XHD7JN8/qK/GVv9bObtGjddLyeBc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -295,9 +353,11 @@
       "source_relative_path": "api/Rudeus.API.Response.UpdateResponse.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.UpdateResponse.html"
+          "relative_path": "api/Rudeus.API.Response.UpdateResponse.html",
+          "hash": "v5Wgf1lhj5IxyeQyNpF1M27JAD0SRoYe1MtL+n4w9Ls="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -305,9 +365,11 @@
       "source_relative_path": "api/Rudeus.API.Response.UpdateResponseData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.UpdateResponseData.html"
+          "relative_path": "api/Rudeus.API.Response.UpdateResponseData.html",
+          "hash": "VgZvW3X32vxxWiQWBILDGJpKf5QwX4bdzPtNWdKdfLU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -315,9 +377,11 @@
       "source_relative_path": "api/Rudeus.API.Response.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.Response.html"
+          "relative_path": "api/Rudeus.API.Response.html",
+          "hash": "5YqboKiKecb7ipaIV8UsfUfKyxwHn70KYQm0X6CW4ek="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -325,9 +389,11 @@
       "source_relative_path": "api/Rudeus.API.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.API.html"
+          "relative_path": "api/Rudeus.API.html",
+          "hash": "TGm7r6MS4SMBjLl7XlPravo4t8xSao0QMggHjpqwop0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -335,9 +401,11 @@
       "source_relative_path": "api/Rudeus.Application.TaskTrayForm.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Application.TaskTrayForm.html"
+          "relative_path": "api/Rudeus.Application.TaskTrayForm.html",
+          "hash": "G6zFdJy2TWRsQiO9JMsB3oBHogb7lQRfQHSJ1lIOOWc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -345,9 +413,11 @@
       "source_relative_path": "api/Rudeus.Application.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Application.html"
+          "relative_path": "api/Rudeus.Application.html",
+          "hash": "vhiCqzlnu7CKXOGjuKIPFd1Gv3PdrA3Y7DU/iR7YnHc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -355,9 +425,11 @@
       "source_relative_path": "api/Rudeus.Command.IWorker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Command.IWorker.html"
+          "relative_path": "api/Rudeus.Command.IWorker.html",
+          "hash": "kHqEj3ValGSawUcI1Y3WX2Im6yIQppryYqQMO0Bsf+M="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -365,9 +437,11 @@
       "source_relative_path": "api/Rudeus.Command.Worker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Command.Worker.html"
+          "relative_path": "api/Rudeus.Command.Worker.html",
+          "hash": "1T6tnUzvnJHxBN/wscRC+knbj3laDMDGgMBaLSqPF9Q="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -375,9 +449,11 @@
       "source_relative_path": "api/Rudeus.Command.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Command.html"
+          "relative_path": "api/Rudeus.Command.html",
+          "hash": "gRdJ8qSpCcD7n6kdxTKt80v4JizoYtlXZzT4BRJzzBs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -385,9 +461,11 @@
       "source_relative_path": "api/Rudeus.Constants.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Constants.html"
+          "relative_path": "api/Rudeus.Constants.html",
+          "hash": "qoIwHgcizrVwRACmgc4dnOD/7tfzL/eB3ToGsOq4iIY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -395,9 +473,11 @@
       "source_relative_path": "api/Rudeus.IUtils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.IUtils.html"
+          "relative_path": "api/Rudeus.IUtils.html",
+          "hash": "v7fsfe2cLPfGyl230vc9xdcQGlY00TbERI0CwQANz+g="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -405,9 +485,11 @@
       "source_relative_path": "api/Rudeus.Initializer.Procedure.TaskInitializer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Initializer.Procedure.TaskInitializer.html"
+          "relative_path": "api/Rudeus.Initializer.Procedure.TaskInitializer.html",
+          "hash": "8x4TmesdCyLAwaFbKv3R48p1Npj8UDiL6SohQO4imMM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -415,9 +497,11 @@
       "source_relative_path": "api/Rudeus.Initializer.Procedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Initializer.Procedure.html"
+          "relative_path": "api/Rudeus.Initializer.Procedure.html",
+          "hash": "rjElC0v4f9HMCC9W/vSPkl7rNKS8fxFuuMnCevd/2Jk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -425,9 +509,11 @@
       "source_relative_path": "api/Rudeus.Initializer.Program.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Initializer.Program.html"
+          "relative_path": "api/Rudeus.Initializer.Program.html",
+          "hash": "cIUPyKAZ+E9lODtRyM6CDNJPYLtm5PrSfdfqiRnAlaY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -435,9 +521,11 @@
       "source_relative_path": "api/Rudeus.Initializer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Initializer.html"
+          "relative_path": "api/Rudeus.Initializer.html",
+          "hash": "1z7zqyS4cY5esFHIycJfrvFv43epSpxF8hTYP/CZ1fs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -445,9 +533,11 @@
       "source_relative_path": "api/Rudeus.Launcher.Procedure.Executer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.Executer.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.Executer.html",
+          "hash": "aaw4NRt5U3SDM+QxtlBVIBTWU/MvtJ4YvuzDXxLNpJw="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -455,9 +545,11 @@
       "source_relative_path": "api/Rudeus.Launcher.Procedure.IExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.IExecuter.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.IExecuter.html",
+          "hash": "9arl0RFXU2aEMV7XiMDmu2M64I+gxhp/XzFi0IFGDIQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -465,9 +557,11 @@
       "source_relative_path": "api/Rudeus.Launcher.Procedure.Updater.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.Updater.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.Updater.html",
+          "hash": "F8HX1LlUXhuKMRtFSkfLY4RQLa+u2ULF6ITVgSlEAhI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -475,9 +569,11 @@
       "source_relative_path": "api/Rudeus.Launcher.Procedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Procedure.html"
+          "relative_path": "api/Rudeus.Launcher.Procedure.html",
+          "hash": "LaUiknZ9vbUlok5adnZTK5tzPzJ8X7xdS5OxhFP3KBo="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -485,19 +581,11 @@
       "source_relative_path": "api/Rudeus.Launcher.Program.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.Program.html"
+          "relative_path": "api/Rudeus.Launcher.Program.html",
+          "hash": "t3oljQbJyDgGklJYol8iSd2acgMcm4RuJD9L1k0ZnfA="
         }
       },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Launcher.Updater.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.Launcher.Updater.html"
-        }
-      },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -505,9 +593,11 @@
       "source_relative_path": "api/Rudeus.Launcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Launcher.html"
+          "relative_path": "api/Rudeus.Launcher.html",
+          "hash": "zO22dmlDi34HJP8FdSNxZO7JlayW0gnAiumFIm/cAYk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -515,9 +605,11 @@
       "source_relative_path": "api/Rudeus.Model.ApplicationData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.ApplicationData.html"
+          "relative_path": "api/Rudeus.Model.ApplicationData.html",
+          "hash": "Dpv/9+agyvD28PBLfjYuxRrUaip6tIaLxHZw+IdLHbE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -525,9 +617,11 @@
       "source_relative_path": "api/Rudeus.Model.ILocalCertificate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.ILocalCertificate.html"
+          "relative_path": "api/Rudeus.Model.ILocalCertificate.html",
+          "hash": "rCI/lrfBYZ+1mslKR3UP/htm9PLFbeadhUPbdBKH+OU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -535,9 +629,11 @@
       "source_relative_path": "api/Rudeus.Model.ILocalMachine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.ILocalMachine.html"
+          "relative_path": "api/Rudeus.Model.ILocalMachine.html",
+          "hash": "uvWJn/XlfC9qEzSvOWnlCaf5V20v2/qIAjlw2jt/TWA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -545,9 +641,11 @@
       "source_relative_path": "api/Rudeus.Model.InstalledApplications.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.InstalledApplications.html"
+          "relative_path": "api/Rudeus.Model.InstalledApplications.html",
+          "hash": "MNVQA6+T0VlxsNmQiutJRpmZPuPl4Cha+uwm9lyEHXs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -555,9 +653,11 @@
       "source_relative_path": "api/Rudeus.Model.LocalMachine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.LocalMachine.html"
+          "relative_path": "api/Rudeus.Model.LocalMachine.html",
+          "hash": "dFPfJyaha0TRL6iuV6DxzZkiYRhc0iLW3OKgvommDBM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -565,9 +665,11 @@
       "source_relative_path": "api/Rudeus.Model.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Model.html"
+          "relative_path": "api/Rudeus.Model.html",
+          "hash": "vpusWy0wfh+wJtBZvsTuxT4i1f8lydavuCIVdyi5vOQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -575,9 +677,11 @@
       "source_relative_path": "api/Rudeus.Procedure.AccessTokenValidator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.AccessTokenValidator.html"
+          "relative_path": "api/Rudeus.Procedure.AccessTokenValidator.html",
+          "hash": "vJcA9cqJ5omKitoAa1+2QQsV984lk6w25ksqQ2JVX4o="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -585,9 +689,11 @@
       "source_relative_path": "api/Rudeus.Procedure.CertificateInstaller.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.CertificateInstaller.html"
+          "relative_path": "api/Rudeus.Procedure.CertificateInstaller.html",
+          "hash": "PBZIC467QpMG1uF2ym5wvc4zEzLtk21H1SaCy45/JqQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -595,9 +701,11 @@
       "source_relative_path": "api/Rudeus.Procedure.IProcedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.IProcedure.html"
+          "relative_path": "api/Rudeus.Procedure.IProcedure.html",
+          "hash": "PQllZM0/sDHzd36qh88cbypoSSjBff3lNm7wZ98Ri1w="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -605,9 +713,11 @@
       "source_relative_path": "api/Rudeus.Procedure.LocalMachineInfoUpdater.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.LocalMachineInfoUpdater.html"
+          "relative_path": "api/Rudeus.Procedure.LocalMachineInfoUpdater.html",
+          "hash": "w5hRDVPg51XM3nUejphZnBmBFu1D7AXzd4VqStRCbMY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -615,9 +725,11 @@
       "source_relative_path": "api/Rudeus.Procedure.RegistryInitializer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.RegistryInitializer.html"
+          "relative_path": "api/Rudeus.Procedure.RegistryInitializer.html",
+          "hash": "Mdac4vpE0RUrLsaDoZ8Ws39m8ZyJxafPGN4i52mHbCQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -625,9 +737,11 @@
       "source_relative_path": "api/Rudeus.Procedure.RegistryRemover.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.RegistryRemover.html"
+          "relative_path": "api/Rudeus.Procedure.RegistryRemover.html",
+          "hash": "3kjoYI5jsiscgzPMOLSj8rOq+QwkG1W8rQUI2sEEhmg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -635,9 +749,11 @@
       "source_relative_path": "api/Rudeus.Procedure.ScheduledRegularExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.ScheduledRegularExecuter.html"
+          "relative_path": "api/Rudeus.Procedure.ScheduledRegularExecuter.html",
+          "hash": "vO5k1zrAEABEzkUo5FyW9XqMPvZGgCbnhBbiduCyEd0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -645,9 +761,11 @@
       "source_relative_path": "api/Rudeus.Procedure.ServerRegister.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.ServerRegister.html"
+          "relative_path": "api/Rudeus.Procedure.ServerRegister.html",
+          "hash": "rfEMC9yQumHbyoj+FnIUHSq+zA3ECF96dF++L9Cb/zs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -655,9 +773,11 @@
       "source_relative_path": "api/Rudeus.Procedure.UserLoginExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.UserLoginExecuter.html"
+          "relative_path": "api/Rudeus.Procedure.UserLoginExecuter.html",
+          "hash": "Il9c/C+rK+1cPciBuMWBN29nApkAmzzoKTxVJ/nYPH8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -665,9 +785,11 @@
       "source_relative_path": "api/Rudeus.Procedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.html"
+          "relative_path": "api/Rudeus.Procedure.html",
+          "hash": "yJNLY8izYnL/kDyZKSsh/STGklLhSvhStTz/tcmcrQg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -675,9 +797,11 @@
       "source_relative_path": "api/Rudeus.Utils.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Utils.html"
+          "relative_path": "api/Rudeus.Utils.html",
+          "hash": "Qsglo/5d+wT6sBsT7JK9SdK91rQFsRZ3ZgtFiJU8b34="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -685,9 +809,11 @@
       "source_relative_path": "api/Rudeus.Watchdogs.UpdateWatcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Watchdogs.UpdateWatcher.html"
+          "relative_path": "api/Rudeus.Watchdogs.UpdateWatcher.html",
+          "hash": "PVkBYR28MtOWjtdwwk7ffx1yUFC8QrpifoGQYryxj4E="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -695,9 +821,11 @@
       "source_relative_path": "api/Rudeus.Watchdogs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Watchdogs.html"
+          "relative_path": "api/Rudeus.Watchdogs.html",
+          "hash": "obab/gvz9TRY+PsqHT0LW1caU18GYIkfUmfBp9fPGgI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -705,9 +833,11 @@
       "source_relative_path": "api/Rudeus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.html"
+          "relative_path": "api/Rudeus.html",
+          "hash": "GfKLngP7BSQtJIO77sVNHZBJKLK5lUkOeFyykHSIVxY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -715,9 +845,11 @@
       "source_relative_path": "api/SharedLib.Exceptions.AccessTokenUnavailableException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Exceptions.AccessTokenUnavailableException.html"
+          "relative_path": "api/SharedLib.Exceptions.AccessTokenUnavailableException.html",
+          "hash": "Za1JSerVRepwur9LJsRwCBJryz/Rj1WAvUebo9xq6C0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -725,9 +857,11 @@
       "source_relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.html"
+          "relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.html",
+          "hash": "TcT+9B8xxjwttoJf4SqxBAFSL25pQdTPpIYvbkY7EVk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -735,9 +869,11 @@
       "source_relative_path": "api/SharedLib.Exceptions.UnexpectedResponseException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Exceptions.UnexpectedResponseException.html"
+          "relative_path": "api/SharedLib.Exceptions.UnexpectedResponseException.html",
+          "hash": "+xZ7i0J+7LFTWjXusUBO38u9nYPtS/s4CZ08Meg0qjk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -745,9 +881,11 @@
       "source_relative_path": "api/SharedLib.Exceptions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Exceptions.html"
+          "relative_path": "api/SharedLib.Exceptions.html",
+          "hash": "CR+AWi/ASr12oAq/0lKIvalSV0HQBmMRYtzur2KSLKk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -755,9 +893,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.AppSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.AppSettings.html"
+          "relative_path": "api/SharedLib.Model.Settings.AppSettings.html",
+          "hash": "ya4mNpMOpNF86Xw2dYHJv9+olfTUAOYJXp/ohKs7Qn8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -765,9 +905,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.IAppSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.IAppSettings.html"
+          "relative_path": "api/SharedLib.Model.Settings.IAppSettings.html",
+          "hash": "pgnaXumWEW9yn0/2qB0DK6LnNNrgbx/VPctXIJo7Bq0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -775,9 +917,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.IBaseSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.IBaseSettings.html"
+          "relative_path": "api/SharedLib.Model.Settings.IBaseSettings.html",
+          "hash": "ds5zEXuLH8Izc7jNkNEH4+PyfCsFZtBoWxRTWsSi3m8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -785,9 +929,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.IRootSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.IRootSettings.html"
+          "relative_path": "api/SharedLib.Model.Settings.IRootSettings.html",
+          "hash": "bYtE5fqTA81/KnSoXXWobAnizIzgW8dOI3V0GafK/0k="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -795,9 +941,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.RootSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.RootSettings.html"
+          "relative_path": "api/SharedLib.Model.Settings.RootSettings.html",
+          "hash": "fYGkPzZ0Sca7cgYmLfVcHwppFcVOa8EZpNLlh8WxakA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -805,9 +953,11 @@
       "source_relative_path": "api/SharedLib.Model.Settings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SharedLib.Model.Settings.html"
+          "relative_path": "api/SharedLib.Model.Settings.html",
+          "hash": "cRVMov3bYzrwkObt3GHAAb0A/cd1GBxIjw96k7LIanc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -815,9 +965,11 @@
       "source_relative_path": "api/Test.Command.WorkerTest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Command.WorkerTest.html"
+          "relative_path": "api/Test.Command.WorkerTest.html",
+          "hash": "RjhICSZLN60AfPSd8kllBYAVoHI1/lH0wXA8PiySVn4="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -825,9 +977,11 @@
       "source_relative_path": "api/Test.Command.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Command.html"
+          "relative_path": "api/Test.Command.html",
+          "hash": "OSWPVIEz/lnS88rl3utspgDr82Tpivn2aJbZMXhw1cE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -835,9 +989,11 @@
       "source_relative_path": "api/Test.Initializer.ProgramTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Initializer.ProgramTests.html"
+          "relative_path": "api/Test.Initializer.ProgramTests.html",
+          "hash": "tQZN+3gepSNpS7ob2ZfMqn/aIxkVO+RPIoW7cweFE64="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -845,9 +1001,11 @@
       "source_relative_path": "api/Test.Initializer.TaskInitializerTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Initializer.TaskInitializerTests.html"
+          "relative_path": "api/Test.Initializer.TaskInitializerTests.html",
+          "hash": "1n0Q9muKg23IKsWFXpqosyFvtd78oBIvjGuidG1CkSM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -855,9 +1013,11 @@
       "source_relative_path": "api/Test.Initializer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Initializer.html"
+          "relative_path": "api/Test.Initializer.html",
+          "hash": "9rGcKThM9NaKEoHCW6thRemv+p1VGZzrEGmpm/G/wBA="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -865,9 +1025,11 @@
       "source_relative_path": "api/Test.Launcher.ExecuterTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Launcher.ExecuterTests.html"
+          "relative_path": "api/Test.Launcher.ExecuterTests.html",
+          "hash": "KQL1L/4iiQPi42YYpauUePaAt7nyhWHd5q8x44DPnio="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -875,9 +1037,11 @@
       "source_relative_path": "api/Test.Launcher.FakeExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Launcher.FakeExecuter.html"
+          "relative_path": "api/Test.Launcher.FakeExecuter.html",
+          "hash": "5nXvgcstsuuVVXr+mAPpd6LL4XByd3MJOAjEMr916QY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -885,9 +1049,11 @@
       "source_relative_path": "api/Test.Launcher.ProgramTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Launcher.ProgramTests.html"
+          "relative_path": "api/Test.Launcher.ProgramTests.html",
+          "hash": "04kyGZt7aZrmF717UrlkiGR9QqZmSfImS7Y0/WgkkC0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -895,9 +1061,11 @@
       "source_relative_path": "api/Test.Launcher.UpdaterTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Launcher.UpdaterTests.html"
+          "relative_path": "api/Test.Launcher.UpdaterTests.html",
+          "hash": "jxVM5PCP6b1UYOdfwMyNR9tRtHM9a/x7KOWMJBtLAe0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -905,9 +1073,11 @@
       "source_relative_path": "api/Test.Launcher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.Launcher.html"
+          "relative_path": "api/Test.Launcher.html",
+          "hash": "10c9X3y6lpsx2Yh6KCbGWffrrj2BCHXlLdBnfnnkyTc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -915,9 +1085,11 @@
       "source_relative_path": "api/Test.SharedLib.API.FakeRequestClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.API.FakeRequestClient.html"
+          "relative_path": "api/Test.SharedLib.API.FakeRequestClient.html",
+          "hash": "ej2Ee5YoFjvIEbfW7LFuc+VNNm7eFLYr6w8cJXFNVsE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -925,9 +1097,11 @@
       "source_relative_path": "api/Test.SharedLib.API.RemoteAPITests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.API.RemoteAPITests.html"
+          "relative_path": "api/Test.SharedLib.API.RemoteAPITests.html",
+          "hash": "loEnH4tZff5itGQ1izKTYv7sF6vtrd6W1ameSQvEz4k="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -935,9 +1109,11 @@
       "source_relative_path": "api/Test.SharedLib.API.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.API.html"
+          "relative_path": "api/Test.SharedLib.API.html",
+          "hash": "b4xvKXhVv/j5qm0lARYltnRMIV2lJhF6iDZO0EmKUuY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -945,9 +1121,11 @@
       "source_relative_path": "api/Test.SharedLib.ConstantsTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.ConstantsTests.html"
+          "relative_path": "api/Test.SharedLib.ConstantsTests.html",
+          "hash": "i5BN81n4SjkNoRvyhQQRtqkxImWG6c4pEKD1hyKrblw="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -955,9 +1133,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.FakeLocalCertificate.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.FakeLocalCertificate.html"
+          "relative_path": "api/Test.SharedLib.Model.FakeLocalCertificate.html",
+          "hash": "BTI53Tt4Cx7ETAhza3Hi1JWYg5e4jeN4V1Tax75xsnM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -965,9 +1145,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.html"
+          "relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.html",
+          "hash": "+ArZ4JuQ0icWUQRZ7aluCSfPVLML8jSS7/3JIh/gnfY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -975,9 +1157,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.Settings.AppSettingsTest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.Settings.AppSettingsTest.html"
+          "relative_path": "api/Test.SharedLib.Model.Settings.AppSettingsTest.html",
+          "hash": "Z5BMevdeAbrulnZxbPaWWZjwNWmF1MLt70IsDWK0kz8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -985,9 +1169,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.Settings.FakeSettings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettings.html"
+          "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettings.html",
+          "hash": "OugacTnZpNBCBYlvYKdsSUBdDkLQi7659P/GuQNiNQ8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -995,9 +1181,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.Settings.FakeSettingsTest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettingsTest.html"
+          "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettingsTest.html",
+          "hash": "uTEYItpgEexhL7NgscW1GvKoBi1bG4M7pXkHGqABf1A="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1005,9 +1193,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.Settings.RootSettingsTest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.Settings.RootSettingsTest.html"
+          "relative_path": "api/Test.SharedLib.Model.Settings.RootSettingsTest.html",
+          "hash": "K68zWTGQ0aFRV5sJepxFLTwB2iPAbs/HQCOOgMjKCZQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1015,9 +1205,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.Settings.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.Settings.html"
+          "relative_path": "api/Test.SharedLib.Model.Settings.html",
+          "hash": "mEqesv+kkO4MnlDYbq/xRZCPqm4SFcugZlvHBTl5KZM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1025,9 +1217,11 @@
       "source_relative_path": "api/Test.SharedLib.Model.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Model.html"
+          "relative_path": "api/Test.SharedLib.Model.html",
+          "hash": "DI3rgLKURyVbvW0/MfVEHz0G4ZG+mEFONX/rRa/pxmE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1035,9 +1229,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.CertificateInstallerTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.CertificateInstallerTests.html"
+          "relative_path": "api/Test.SharedLib.Procedure.CertificateInstallerTests.html",
+          "hash": "S2ExG37GvcdvdaXr2tJpUbeNAbHS9wzqn1wVHugO77w="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1045,9 +1241,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.FakeProcedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.FakeProcedure.html"
+          "relative_path": "api/Test.SharedLib.Procedure.FakeProcedure.html",
+          "hash": "mRfuygR233RPEdHEX1Izw+mN5t58BQQ8XZtjFXgRJOo="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1055,9 +1253,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.FakeProcedureTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.FakeProcedureTests.html"
+          "relative_path": "api/Test.SharedLib.Procedure.FakeProcedureTests.html",
+          "hash": "m4cq48IeoxMlf7iTKfj+t56S9XVQ19T4CCHyGSfJGmo="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1065,9 +1265,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.IFakeProcedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.IFakeProcedure.html"
+          "relative_path": "api/Test.SharedLib.Procedure.IFakeProcedure.html",
+          "hash": "i8Rl3LCVrArDHwvNvZafrKoGhIPQJ3OIK2Mqoxtv844="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1075,9 +1277,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html"
+          "relative_path": "api/Test.SharedLib.Procedure.LocalMachineInfoUpdaterTests.html",
+          "hash": "BJccY8s7XwHB1qy2qQNXXPrHeTCsIPMevRE9klR4gmI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1085,9 +1289,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.RegistryInitializerTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.RegistryInitializerTests.html"
+          "relative_path": "api/Test.SharedLib.Procedure.RegistryInitializerTests.html",
+          "hash": "Wnw195czvI0Bg+/BawjyKHhyp7oHiU4juFcXoEz82TM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1095,9 +1301,11 @@
       "source_relative_path": "api/Test.SharedLib.Procedure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.Procedure.html"
+          "relative_path": "api/Test.SharedLib.Procedure.html",
+          "hash": "Aod38r60275WUNEw8vW9JeYXqPqjvwywXjIHfJU+vUs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1105,9 +1313,11 @@
       "source_relative_path": "api/Test.SharedLib.UtilsTests.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.UtilsTests.html"
+          "relative_path": "api/Test.SharedLib.UtilsTests.html",
+          "hash": "dnIwPTG/0CMfU6nfZeRCyU/UEbP1lDsk85hwfsjC8no="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1115,9 +1325,11 @@
       "source_relative_path": "api/Test.SharedLib.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.SharedLib.html"
+          "relative_path": "api/Test.SharedLib.html",
+          "hash": "mCSQ6zkl6o1loQB9S6aJu/ljRWP5b9J5RWURzKp3ooM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1125,9 +1337,11 @@
       "source_relative_path": "api/Test.UnitTestSample.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.UnitTestSample.html"
+          "relative_path": "api/Test.UnitTestSample.html",
+          "hash": "rvvlKqDi7BEw5odDQPOkxeh31UquA2WiRDtQ5U7xQiY="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1135,9 +1349,11 @@
       "source_relative_path": "api/Test.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Test.html"
+          "relative_path": "api/Test.html",
+          "hash": "Qw9gUkawOTP0lFtMkCS5NBoNllFeoAaXVPYu6sQBC4I="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1145,9 +1361,11 @@
       "source_relative_path": "api/Xunit.AssertEx.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Xunit.AssertEx.html"
+          "relative_path": "api/Xunit.AssertEx.html",
+          "hash": "B4PEcNSmQN1jXpd7B+BQuZukn+JshOR6IbkcbMFx6uk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1155,9 +1373,11 @@
       "source_relative_path": "api/Xunit.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Xunit.html"
+          "relative_path": "api/Xunit.html",
+          "hash": "9A5+mPa/DeacamoEQOIFO+u7CWnVBegz7Le6F75FlDc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1165,12 +1385,11 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html"
-        },
-        ".json": {
-          "relative_path": "api/toc.json"
+          "relative_path": "api/toc.html",
+          "hash": "zn4gwqA/+zh+PzObxYJDmKnb4hiA1f3jt1gIjl19trU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1178,9 +1397,11 @@
       "source_relative_path": "doc/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "doc/getting-started.html"
+          "relative_path": "doc/getting-started.html",
+          "hash": "6NwEj4y8xFwX2uLoUk8abGIjE0DMQRQPeFy+t1cOfLc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1188,9 +1409,11 @@
       "source_relative_path": "doc/introduction.md",
       "output": {
         ".html": {
-          "relative_path": "doc/introduction.html"
+          "relative_path": "doc/introduction.html",
+          "hash": "6S7qYzzAF+6nCFRZWvH5f+TmgLYafmpRaBLdelc5ZOE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1198,12 +1421,11 @@
       "source_relative_path": "doc/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "doc/toc.html"
-        },
-        ".json": {
-          "relative_path": "doc/toc.json"
+          "relative_path": "doc/toc.html",
+          "hash": "9XAWFIglQANS5iqvMCZYhs45Hnu8F5WZgoy4I/Y0E7g="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1211,9 +1433,11 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html"
+          "relative_path": "index.html",
+          "hash": "4ETaRTYLYS39ztULzbtAinRVSZJAbH6fFUb627yaVOI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -1221,15 +1445,58 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html"
-        },
-        ".json": {
-          "relative_path": "toc.json"
+          "relative_path": "toc.html",
+          "hash": "kpBawTP1EhFh/1htIiMQlyIO0lgIFtgnlwKF92Y+QP0="
         }
       },
+      "is_incremental": false,
       "version": ""
     }
   ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 114,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

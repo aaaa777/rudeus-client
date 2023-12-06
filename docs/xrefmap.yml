@@ -19,11 +19,11 @@ references:
   commentId: T:Rudeus.API.IRequestClient
   fullName: Rudeus.API.IRequestClient
   nameWithType: IRequestClient
-- uid: Rudeus.API.IRequestClient.Request(System.Net.Http.HttpRequestMessage)
+- uid: Rudeus.API.IRequestClient.Request(HttpRequestMessage)
   name: Request(HttpRequestMessage)
-  href: api/Rudeus.API.IRequestClient.html#Rudeus_API_IRequestClient_Request_System_Net_Http_HttpRequestMessage_
-  commentId: M:Rudeus.API.IRequestClient.Request(System.Net.Http.HttpRequestMessage)
-  fullName: Rudeus.API.IRequestClient.Request(System.Net.Http.HttpRequestMessage)
+  href: api/Rudeus.API.IRequestClient.html#Rudeus_API_IRequestClient_Request_HttpRequestMessage_
+  commentId: M:Rudeus.API.IRequestClient.Request(HttpRequestMessage)
+  fullName: Rudeus.API.IRequestClient.Request(HttpRequestMessage)
   nameWithType: IRequestClient.Request(HttpRequestMessage)
 - uid: Rudeus.API.IRequestClient.Request*
   name: Request
@@ -32,11 +32,11 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.IRequestClient.Request
   nameWithType: IRequestClient.Request
-- uid: Rudeus.API.IRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+- uid: Rudeus.API.IRequestClient.RequestString(HttpRequestMessage)
   name: RequestString(HttpRequestMessage)
-  href: api/Rudeus.API.IRequestClient.html#Rudeus_API_IRequestClient_RequestString_System_Net_Http_HttpRequestMessage_
-  commentId: M:Rudeus.API.IRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
-  fullName: Rudeus.API.IRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+  href: api/Rudeus.API.IRequestClient.html#Rudeus_API_IRequestClient_RequestString_HttpRequestMessage_
+  commentId: M:Rudeus.API.IRequestClient.RequestString(HttpRequestMessage)
+  fullName: Rudeus.API.IRequestClient.RequestString(HttpRequestMessage)
   nameWithType: IRequestClient.RequestString(HttpRequestMessage)
 - uid: Rudeus.API.IRequestClient.RequestString*
   name: RequestString
@@ -148,15 +148,12 @@ references:
   commentId: F:Rudeus.API.RemoteAPI.AppCallbackUri
   fullName: Rudeus.API.RemoteAPI.AppCallbackUri
   nameWithType: RemoteAPI.AppCallbackUri
-- uid: Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String,System.String,System.String,System.Net.Http.HttpMethod)
-  name: BuildHttpRequestMessage(string?, string, string, HttpMethod)
-  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_BuildHttpRequestMessage_System_String_System_String_System_String_System_Net_Http_HttpMethod_
-  commentId: M:Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String,System.String,System.String,System.Net.Http.HttpMethod)
-  name.vb: BuildHttpRequestMessage(String, String, String, HttpMethod)
-  fullName: Rudeus.API.RemoteAPI.BuildHttpRequestMessage(string?, string, string, System.Net.Http.HttpMethod)
-  fullName.vb: Rudeus.API.RemoteAPI.BuildHttpRequestMessage(String, String, String, System.Net.Http.HttpMethod)
-  nameWithType: RemoteAPI.BuildHttpRequestMessage(string?, string, string, HttpMethod)
-  nameWithType.vb: RemoteAPI.BuildHttpRequestMessage(String, String, String, HttpMethod)
+- uid: Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String,System.String,System.String,HttpMethod)
+  name: BuildHttpRequestMessage(String, String, String, HttpMethod)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_BuildHttpRequestMessage_System_String_System_String_System_String_HttpMethod_
+  commentId: M:Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String,System.String,System.String,HttpMethod)
+  fullName: Rudeus.API.RemoteAPI.BuildHttpRequestMessage(System.String, System.String, System.String, HttpMethod)
+  nameWithType: RemoteAPI.BuildHttpRequestMessage(String, String, String, HttpMethod)
 - uid: Rudeus.API.RemoteAPI.BuildHttpRequestMessage*
   name: BuildHttpRequestMessage
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_BuildHttpRequestMessage_
@@ -165,14 +162,11 @@ references:
   fullName: Rudeus.API.RemoteAPI.BuildHttpRequestMessage
   nameWithType: RemoteAPI.BuildHttpRequestMessage
 - uid: Rudeus.API.RemoteAPI.GetUpdateMetadata(System.String)
-  name: GetUpdateMetadata(string)
+  name: GetUpdateMetadata(String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_GetUpdateMetadata_System_String_
   commentId: M:Rudeus.API.RemoteAPI.GetUpdateMetadata(System.String)
-  name.vb: GetUpdateMetadata(String)
-  fullName: Rudeus.API.RemoteAPI.GetUpdateMetadata(string)
-  fullName.vb: Rudeus.API.RemoteAPI.GetUpdateMetadata(String)
-  nameWithType: RemoteAPI.GetUpdateMetadata(string)
-  nameWithType.vb: RemoteAPI.GetUpdateMetadata(String)
+  fullName: Rudeus.API.RemoteAPI.GetUpdateMetadata(System.String)
+  nameWithType: RemoteAPI.GetUpdateMetadata(String)
 - uid: Rudeus.API.RemoteAPI.GetUpdateMetadata*
   name: GetUpdateMetadata
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_GetUpdateMetadata_
@@ -181,14 +175,11 @@ references:
   fullName: Rudeus.API.RemoteAPI.GetUpdateMetadata
   nameWithType: RemoteAPI.GetUpdateMetadata
 - uid: Rudeus.API.RemoteAPI.IsAccessTokenAvailable(System.String)
-  name: IsAccessTokenAvailable(string)
+  name: IsAccessTokenAvailable(String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_IsAccessTokenAvailable_System_String_
   commentId: M:Rudeus.API.RemoteAPI.IsAccessTokenAvailable(System.String)
-  name.vb: IsAccessTokenAvailable(String)
-  fullName: Rudeus.API.RemoteAPI.IsAccessTokenAvailable(string)
-  fullName.vb: Rudeus.API.RemoteAPI.IsAccessTokenAvailable(String)
-  nameWithType: RemoteAPI.IsAccessTokenAvailable(string)
-  nameWithType.vb: RemoteAPI.IsAccessTokenAvailable(String)
+  fullName: Rudeus.API.RemoteAPI.IsAccessTokenAvailable(System.String)
+  nameWithType: RemoteAPI.IsAccessTokenAvailable(String)
 - uid: Rudeus.API.RemoteAPI.IsAccessTokenAvailable*
   name: IsAccessTokenAvailable
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_IsAccessTokenAvailable_
@@ -210,14 +201,11 @@ references:
   fullName: Rudeus.API.RemoteAPI.IsRemoteReachable
   nameWithType: RemoteAPI.IsRemoteReachable
 - uid: Rudeus.API.RemoteAPI.LoginDevice(System.String,System.String)
-  name: LoginDevice(string, string)
+  name: LoginDevice(String, String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_LoginDevice_System_String_System_String_
   commentId: M:Rudeus.API.RemoteAPI.LoginDevice(System.String,System.String)
-  name.vb: LoginDevice(String, String)
-  fullName: Rudeus.API.RemoteAPI.LoginDevice(string, string)
-  fullName.vb: Rudeus.API.RemoteAPI.LoginDevice(String, String)
-  nameWithType: RemoteAPI.LoginDevice(string, string)
-  nameWithType.vb: RemoteAPI.LoginDevice(String, String)
+  fullName: Rudeus.API.RemoteAPI.LoginDevice(System.String, System.String)
+  nameWithType: RemoteAPI.LoginDevice(String, String)
 - uid: Rudeus.API.RemoteAPI.LoginDevice*
   name: LoginDevice
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_LoginDevice_
@@ -239,14 +227,11 @@ references:
   fullName: Rudeus.API.RemoteAPI.ReceiveStudentIdAsync
   nameWithType: RemoteAPI.ReceiveStudentIdAsync
 - uid: Rudeus.API.RemoteAPI.RegisterDevice(System.String,System.String)
-  name: RegisterDevice(string, string)
+  name: RegisterDevice(String, String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_RegisterDevice_System_String_System_String_
   commentId: M:Rudeus.API.RemoteAPI.RegisterDevice(System.String,System.String)
-  name.vb: RegisterDevice(String, String)
-  fullName: Rudeus.API.RemoteAPI.RegisterDevice(string, string)
-  fullName.vb: Rudeus.API.RemoteAPI.RegisterDevice(String, String)
-  nameWithType: RemoteAPI.RegisterDevice(string, string)
-  nameWithType.vb: RemoteAPI.RegisterDevice(String, String)
+  fullName: Rudeus.API.RemoteAPI.RegisterDevice(System.String, System.String)
+  nameWithType: RemoteAPI.RegisterDevice(String, String)
 - uid: Rudeus.API.RemoteAPI.RegisterDevice*
   name: RegisterDevice
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_RegisterDevice_
@@ -274,13 +259,13 @@ references:
   fullName: Rudeus.API.RemoteAPI.SamlLoginUrl
   nameWithType: RemoteAPI.SamlLoginUrl
 - uid: Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
-  name: SendInstalledApps(string, List<ApplicationData>)
+  name: SendInstalledApps(String, List<ApplicationData>)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_SendInstalledApps_System_String_System_Collections_Generic_List_Rudeus_Model_ApplicationData__
   commentId: M:Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
   name.vb: SendInstalledApps(String, List(Of ApplicationData))
-  fullName: Rudeus.API.RemoteAPI.SendInstalledApps(string, System.Collections.Generic.List<Rudeus.Model.ApplicationData>)
-  fullName.vb: Rudeus.API.RemoteAPI.SendInstalledApps(String, System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
-  nameWithType: RemoteAPI.SendInstalledApps(string, List<ApplicationData>)
+  fullName: Rudeus.API.RemoteAPI.SendInstalledApps(System.String, System.Collections.Generic.List<Rudeus.Model.ApplicationData>)
+  fullName.vb: Rudeus.API.RemoteAPI.SendInstalledApps(System.String, System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
+  nameWithType: RemoteAPI.SendInstalledApps(String, List<ApplicationData>)
   nameWithType.vb: RemoteAPI.SendInstalledApps(String, List(Of ApplicationData))
 - uid: Rudeus.API.RemoteAPI.SendInstalledApps*
   name: SendInstalledApps
@@ -290,23 +275,20 @@ references:
   fullName: Rudeus.API.RemoteAPI.SendInstalledApps
   nameWithType: RemoteAPI.SendInstalledApps
 - uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
-  name: UpdateDevice(string, UpdateRequest)
+  name: UpdateDevice(String, UpdateRequest)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_Rudeus_API_Request_UpdateRequest_
   commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,Rudeus.API.Request.UpdateRequest)
-  name.vb: UpdateDevice(String, UpdateRequest)
-  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, Rudeus.API.Request.UpdateRequest)
-  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, Rudeus.API.Request.UpdateRequest)
-  nameWithType: RemoteAPI.UpdateDevice(string, UpdateRequest)
-  nameWithType.vb: RemoteAPI.UpdateDevice(String, UpdateRequest)
+  fullName: Rudeus.API.RemoteAPI.UpdateDevice(System.String, Rudeus.API.Request.UpdateRequest)
+  nameWithType: RemoteAPI.UpdateDevice(String, UpdateRequest)
 - uid: Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.String)
-  name: UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
+  name: UpdateDevice(String, String, String, String, Nullable<Int32>, Nullable<Int32>, String, String, Nullable<Boolean>, String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Nullable_System_Boolean__System_String_
   commentId: M:Rudeus.API.RemoteAPI.UpdateDevice(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Boolean},System.String)
-  name.vb: UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
-  fullName: Rudeus.API.RemoteAPI.UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
-  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
-  nameWithType: RemoteAPI.UpdateDevice(string, string?, string?, string?, int?, int?, string?, string?, bool?, string?)
-  nameWithType.vb: RemoteAPI.UpdateDevice(String, String, String, String, Integer?, Integer?, String, String, Boolean?, String)
+  name.vb: UpdateDevice(String, String, String, String, Nullable(Of Int32), Nullable(Of Int32), String, String, Nullable(Of Boolean), String)
+  fullName: Rudeus.API.RemoteAPI.UpdateDevice(System.String, System.String, System.String, System.String, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.String, System.String, System.Nullable<System.Boolean>, System.String)
+  fullName.vb: Rudeus.API.RemoteAPI.UpdateDevice(System.String, System.String, System.String, System.String, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.String, System.String, System.Nullable(Of System.Boolean), System.String)
+  nameWithType: RemoteAPI.UpdateDevice(String, String, String, String, Nullable<Int32>, Nullable<Int32>, String, String, Nullable<Boolean>, String)
+  nameWithType.vb: RemoteAPI.UpdateDevice(String, String, String, String, Nullable(Of Int32), Nullable(Of Int32), String, String, Nullable(Of Boolean), String)
 - uid: Rudeus.API.RemoteAPI.UpdateDevice*
   name: UpdateDevice
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateDevice_
@@ -315,14 +297,11 @@ references:
   fullName: Rudeus.API.RemoteAPI.UpdateDevice
   nameWithType: RemoteAPI.UpdateDevice
 - uid: Rudeus.API.RemoteAPI.UpdateMacAddress(System.String,Rudeus.API.Request.UpdateMacRequest)
-  name: UpdateMacAddress(string, UpdateMacRequest)
+  name: UpdateMacAddress(String, UpdateMacRequest)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateMacAddress_System_String_Rudeus_API_Request_UpdateMacRequest_
   commentId: M:Rudeus.API.RemoteAPI.UpdateMacAddress(System.String,Rudeus.API.Request.UpdateMacRequest)
-  name.vb: UpdateMacAddress(String, UpdateMacRequest)
-  fullName: Rudeus.API.RemoteAPI.UpdateMacAddress(string, Rudeus.API.Request.UpdateMacRequest)
-  fullName.vb: Rudeus.API.RemoteAPI.UpdateMacAddress(String, Rudeus.API.Request.UpdateMacRequest)
-  nameWithType: RemoteAPI.UpdateMacAddress(string, UpdateMacRequest)
-  nameWithType.vb: RemoteAPI.UpdateMacAddress(String, UpdateMacRequest)
+  fullName: Rudeus.API.RemoteAPI.UpdateMacAddress(System.String, Rudeus.API.Request.UpdateMacRequest)
+  nameWithType: RemoteAPI.UpdateMacAddress(String, UpdateMacRequest)
 - uid: Rudeus.API.RemoteAPI.UpdateMacAddress*
   name: UpdateMacAddress
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateMacAddress_
@@ -384,21 +363,15 @@ references:
   name: EmptyRequest()
   href: api/Rudeus.API.Request.EmptyRequest.html#Rudeus_API_Request_EmptyRequest__ctor
   commentId: M:Rudeus.API.Request.EmptyRequest.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Request.EmptyRequest.EmptyRequest()
-  fullName.vb: Rudeus.API.Request.EmptyRequest.New()
   nameWithType: EmptyRequest.EmptyRequest()
-  nameWithType.vb: EmptyRequest.New()
 - uid: Rudeus.API.Request.EmptyRequest.#ctor*
   name: EmptyRequest
   href: api/Rudeus.API.Request.EmptyRequest.html#Rudeus_API_Request_EmptyRequest__ctor_
   commentId: Overload:Rudeus.API.Request.EmptyRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.EmptyRequest.EmptyRequest
-  fullName.vb: Rudeus.API.Request.EmptyRequest.New
   nameWithType: EmptyRequest.EmptyRequest
-  nameWithType.vb: EmptyRequest.New
 - uid: Rudeus.API.Request.EmptyRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.EmptyRequest.html#Rudeus_API_Request_EmptyRequest_request_data
@@ -435,21 +408,15 @@ references:
   name: EmptyRequestData()
   href: api/Rudeus.API.Request.EmptyRequestData.html#Rudeus_API_Request_EmptyRequestData__ctor
   commentId: M:Rudeus.API.Request.EmptyRequestData.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Request.EmptyRequestData.EmptyRequestData()
-  fullName.vb: Rudeus.API.Request.EmptyRequestData.New()
   nameWithType: EmptyRequestData.EmptyRequestData()
-  nameWithType.vb: EmptyRequestData.New()
 - uid: Rudeus.API.Request.EmptyRequestData.#ctor*
   name: EmptyRequestData
   href: api/Rudeus.API.Request.EmptyRequestData.html#Rudeus_API_Request_EmptyRequestData__ctor_
   commentId: Overload:Rudeus.API.Request.EmptyRequestData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.EmptyRequestData.EmptyRequestData
-  fullName.vb: Rudeus.API.Request.EmptyRequestData.New
   nameWithType: EmptyRequestData.EmptyRequestData
-  nameWithType.vb: EmptyRequestData.New
 - uid: Rudeus.API.Request.IRequest
   name: IRequest
   href: api/Rudeus.API.Request.IRequest.html
@@ -476,24 +443,18 @@ references:
   fullName: Rudeus.API.Request.LoginRequest
   nameWithType: LoginRequest
 - uid: Rudeus.API.Request.LoginRequest.#ctor(System.String)
-  name: LoginRequest(string)
+  name: LoginRequest(String)
   href: api/Rudeus.API.Request.LoginRequest.html#Rudeus_API_Request_LoginRequest__ctor_System_String_
   commentId: M:Rudeus.API.Request.LoginRequest.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Request.LoginRequest.LoginRequest(string)
-  fullName.vb: Rudeus.API.Request.LoginRequest.New(String)
-  nameWithType: LoginRequest.LoginRequest(string)
-  nameWithType.vb: LoginRequest.New(String)
+  fullName: Rudeus.API.Request.LoginRequest.LoginRequest(System.String)
+  nameWithType: LoginRequest.LoginRequest(String)
 - uid: Rudeus.API.Request.LoginRequest.#ctor*
   name: LoginRequest
   href: api/Rudeus.API.Request.LoginRequest.html#Rudeus_API_Request_LoginRequest__ctor_
   commentId: Overload:Rudeus.API.Request.LoginRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.LoginRequest.LoginRequest
-  fullName.vb: Rudeus.API.Request.LoginRequest.New
   nameWithType: LoginRequest.LoginRequest
-  nameWithType.vb: LoginRequest.New
 - uid: Rudeus.API.Request.LoginRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.LoginRequest.html#Rudeus_API_Request_LoginRequest_request_data
@@ -527,24 +488,18 @@ references:
   fullName: Rudeus.API.Request.LoginRequestData
   nameWithType: LoginRequestData
 - uid: Rudeus.API.Request.LoginRequestData.#ctor(System.String)
-  name: LoginRequestData(string)
+  name: LoginRequestData(String)
   href: api/Rudeus.API.Request.LoginRequestData.html#Rudeus_API_Request_LoginRequestData__ctor_System_String_
   commentId: M:Rudeus.API.Request.LoginRequestData.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Request.LoginRequestData.LoginRequestData(string)
-  fullName.vb: Rudeus.API.Request.LoginRequestData.New(String)
-  nameWithType: LoginRequestData.LoginRequestData(string)
-  nameWithType.vb: LoginRequestData.New(String)
+  fullName: Rudeus.API.Request.LoginRequestData.LoginRequestData(System.String)
+  nameWithType: LoginRequestData.LoginRequestData(String)
 - uid: Rudeus.API.Request.LoginRequestData.#ctor*
   name: LoginRequestData
   href: api/Rudeus.API.Request.LoginRequestData.html#Rudeus_API_Request_LoginRequestData__ctor_
   commentId: Overload:Rudeus.API.Request.LoginRequestData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.LoginRequestData.LoginRequestData
-  fullName.vb: Rudeus.API.Request.LoginRequestData.New
   nameWithType: LoginRequestData.LoginRequestData
-  nameWithType.vb: LoginRequestData.New
 - uid: Rudeus.API.Request.LoginRequestData.user_id
   name: user_id
   href: api/Rudeus.API.Request.LoginRequestData.html#Rudeus_API_Request_LoginRequestData_user_id
@@ -565,24 +520,18 @@ references:
   fullName: Rudeus.API.Request.RegisterRequest
   nameWithType: RegisterRequest
 - uid: Rudeus.API.Request.RegisterRequest.#ctor(System.String,System.String,System.String)
-  name: RegisterRequest(string, string, string)
+  name: RegisterRequest(String, String, String)
   href: api/Rudeus.API.Request.RegisterRequest.html#Rudeus_API_Request_RegisterRequest__ctor_System_String_System_String_System_String_
   commentId: M:Rudeus.API.Request.RegisterRequest.#ctor(System.String,System.String,System.String)
-  name.vb: New(String, String, String)
-  fullName: Rudeus.API.Request.RegisterRequest.RegisterRequest(string, string, string)
-  fullName.vb: Rudeus.API.Request.RegisterRequest.New(String, String, String)
-  nameWithType: RegisterRequest.RegisterRequest(string, string, string)
-  nameWithType.vb: RegisterRequest.New(String, String, String)
+  fullName: Rudeus.API.Request.RegisterRequest.RegisterRequest(System.String, System.String, System.String)
+  nameWithType: RegisterRequest.RegisterRequest(String, String, String)
 - uid: Rudeus.API.Request.RegisterRequest.#ctor*
   name: RegisterRequest
   href: api/Rudeus.API.Request.RegisterRequest.html#Rudeus_API_Request_RegisterRequest__ctor_
   commentId: Overload:Rudeus.API.Request.RegisterRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.RegisterRequest.RegisterRequest
-  fullName.vb: Rudeus.API.Request.RegisterRequest.New
   nameWithType: RegisterRequest.RegisterRequest
-  nameWithType.vb: RegisterRequest.New
 - uid: Rudeus.API.Request.RegisterRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.RegisterRequest.html#Rudeus_API_Request_RegisterRequest_request_data
@@ -616,24 +565,18 @@ references:
   fullName: Rudeus.API.Request.RegisterRequestData
   nameWithType: RegisterRequestData
 - uid: Rudeus.API.Request.RegisterRequestData.#ctor(System.String,System.String,System.String)
-  name: RegisterRequestData(string, string, string)
+  name: RegisterRequestData(String, String, String)
   href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData__ctor_System_String_System_String_System_String_
   commentId: M:Rudeus.API.Request.RegisterRequestData.#ctor(System.String,System.String,System.String)
-  name.vb: New(String, String, String)
-  fullName: Rudeus.API.Request.RegisterRequestData.RegisterRequestData(string, string, string)
-  fullName.vb: Rudeus.API.Request.RegisterRequestData.New(String, String, String)
-  nameWithType: RegisterRequestData.RegisterRequestData(string, string, string)
-  nameWithType.vb: RegisterRequestData.New(String, String, String)
+  fullName: Rudeus.API.Request.RegisterRequestData.RegisterRequestData(System.String, System.String, System.String)
+  nameWithType: RegisterRequestData.RegisterRequestData(String, String, String)
 - uid: Rudeus.API.Request.RegisterRequestData.#ctor*
   name: RegisterRequestData
   href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData__ctor_
   commentId: Overload:Rudeus.API.Request.RegisterRequestData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.RegisterRequestData.RegisterRequestData
-  fullName.vb: Rudeus.API.Request.RegisterRequestData.New
   nameWithType: RegisterRequestData.RegisterRequestData
-  nameWithType.vb: RegisterRequestData.New
 - uid: Rudeus.API.Request.RegisterRequestData.device_id
   name: device_id
   href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_device_id
@@ -693,24 +636,18 @@ references:
   fullName: Rudeus.API.Request.SendInstalledAppsAppData
   nameWithType: SendInstalledAppsAppData
 - uid: Rudeus.API.Request.SendInstalledAppsAppData.#ctor(System.String,System.String)
-  name: SendInstalledAppsAppData(string, string)
+  name: SendInstalledAppsAppData(String, String)
   href: api/Rudeus.API.Request.SendInstalledAppsAppData.html#Rudeus_API_Request_SendInstalledAppsAppData__ctor_System_String_System_String_
   commentId: M:Rudeus.API.Request.SendInstalledAppsAppData.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: Rudeus.API.Request.SendInstalledAppsAppData.SendInstalledAppsAppData(string, string)
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsAppData.New(String, String)
-  nameWithType: SendInstalledAppsAppData.SendInstalledAppsAppData(string, string)
-  nameWithType.vb: SendInstalledAppsAppData.New(String, String)
+  fullName: Rudeus.API.Request.SendInstalledAppsAppData.SendInstalledAppsAppData(System.String, System.String)
+  nameWithType: SendInstalledAppsAppData.SendInstalledAppsAppData(String, String)
 - uid: Rudeus.API.Request.SendInstalledAppsAppData.#ctor*
   name: SendInstalledAppsAppData
   href: api/Rudeus.API.Request.SendInstalledAppsAppData.html#Rudeus_API_Request_SendInstalledAppsAppData__ctor_
   commentId: Overload:Rudeus.API.Request.SendInstalledAppsAppData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.SendInstalledAppsAppData.SendInstalledAppsAppData
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsAppData.New
   nameWithType: SendInstalledAppsAppData.SendInstalledAppsAppData
-  nameWithType.vb: SendInstalledAppsAppData.New
 - uid: Rudeus.API.Request.SendInstalledAppsAppData.name
   name: name
   href: api/Rudeus.API.Request.SendInstalledAppsAppData.html#Rudeus_API_Request_SendInstalledAppsAppData_name
@@ -747,21 +684,18 @@ references:
   name: SendInstalledAppsRequest(List<ApplicationData>)
   href: api/Rudeus.API.Request.SendInstalledAppsRequest.html#Rudeus_API_Request_SendInstalledAppsRequest__ctor_System_Collections_Generic_List_Rudeus_Model_ApplicationData__
   commentId: M:Rudeus.API.Request.SendInstalledAppsRequest.#ctor(System.Collections.Generic.List{Rudeus.Model.ApplicationData})
-  name.vb: New(List(Of ApplicationData))
+  name.vb: SendInstalledAppsRequest(List(Of ApplicationData))
   fullName: Rudeus.API.Request.SendInstalledAppsRequest.SendInstalledAppsRequest(System.Collections.Generic.List<Rudeus.Model.ApplicationData>)
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequest.New(System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
+  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequest.SendInstalledAppsRequest(System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
   nameWithType: SendInstalledAppsRequest.SendInstalledAppsRequest(List<ApplicationData>)
-  nameWithType.vb: SendInstalledAppsRequest.New(List(Of ApplicationData))
+  nameWithType.vb: SendInstalledAppsRequest.SendInstalledAppsRequest(List(Of ApplicationData))
 - uid: Rudeus.API.Request.SendInstalledAppsRequest.#ctor*
   name: SendInstalledAppsRequest
   href: api/Rudeus.API.Request.SendInstalledAppsRequest.html#Rudeus_API_Request_SendInstalledAppsRequest__ctor_
   commentId: Overload:Rudeus.API.Request.SendInstalledAppsRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.SendInstalledAppsRequest.SendInstalledAppsRequest
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequest.New
   nameWithType: SendInstalledAppsRequest.SendInstalledAppsRequest
-  nameWithType.vb: SendInstalledAppsRequest.New
 - uid: Rudeus.API.Request.SendInstalledAppsRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.SendInstalledAppsRequest.html#Rudeus_API_Request_SendInstalledAppsRequest_request_data
@@ -798,21 +732,18 @@ references:
   name: SendInstalledAppsRequestData(List<ApplicationData>)
   href: api/Rudeus.API.Request.SendInstalledAppsRequestData.html#Rudeus_API_Request_SendInstalledAppsRequestData__ctor_System_Collections_Generic_List_Rudeus_Model_ApplicationData__
   commentId: M:Rudeus.API.Request.SendInstalledAppsRequestData.#ctor(System.Collections.Generic.List{Rudeus.Model.ApplicationData})
-  name.vb: New(List(Of ApplicationData))
+  name.vb: SendInstalledAppsRequestData(List(Of ApplicationData))
   fullName: Rudeus.API.Request.SendInstalledAppsRequestData.SendInstalledAppsRequestData(System.Collections.Generic.List<Rudeus.Model.ApplicationData>)
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequestData.New(System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
+  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequestData.SendInstalledAppsRequestData(System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
   nameWithType: SendInstalledAppsRequestData.SendInstalledAppsRequestData(List<ApplicationData>)
-  nameWithType.vb: SendInstalledAppsRequestData.New(List(Of ApplicationData))
+  nameWithType.vb: SendInstalledAppsRequestData.SendInstalledAppsRequestData(List(Of ApplicationData))
 - uid: Rudeus.API.Request.SendInstalledAppsRequestData.#ctor*
   name: SendInstalledAppsRequestData
   href: api/Rudeus.API.Request.SendInstalledAppsRequestData.html#Rudeus_API_Request_SendInstalledAppsRequestData__ctor_
   commentId: Overload:Rudeus.API.Request.SendInstalledAppsRequestData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.SendInstalledAppsRequestData.SendInstalledAppsRequestData
-  fullName.vb: Rudeus.API.Request.SendInstalledAppsRequestData.New
   nameWithType: SendInstalledAppsRequestData.SendInstalledAppsRequestData
-  nameWithType.vb: SendInstalledAppsRequestData.New
 - uid: Rudeus.API.Request.SendInstalledAppsRequestData.apps
   name: apps
   href: api/Rudeus.API.Request.SendInstalledAppsRequestData.html#Rudeus_API_Request_SendInstalledAppsRequestData_apps
@@ -836,21 +767,15 @@ references:
   name: UpdateMacRequest()
   href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest__ctor
   commentId: M:Rudeus.API.Request.UpdateMacRequest.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Request.UpdateMacRequest.UpdateMacRequest()
-  fullName.vb: Rudeus.API.Request.UpdateMacRequest.New()
   nameWithType: UpdateMacRequest.UpdateMacRequest()
-  nameWithType.vb: UpdateMacRequest.New()
 - uid: Rudeus.API.Request.UpdateMacRequest.#ctor*
   name: UpdateMacRequest
   href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest__ctor_
   commentId: Overload:Rudeus.API.Request.UpdateMacRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.UpdateMacRequest.UpdateMacRequest
-  fullName.vb: Rudeus.API.Request.UpdateMacRequest.New
   nameWithType: UpdateMacRequest.UpdateMacRequest
-  nameWithType.vb: UpdateMacRequest.New
 - uid: Rudeus.API.Request.UpdateMacRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.UpdateMacRequest.html#Rudeus_API_Request_UpdateMacRequest_request_data
@@ -919,39 +844,27 @@ references:
   name: UpdateRequest()
   href: api/Rudeus.API.Request.UpdateRequest.html#Rudeus_API_Request_UpdateRequest__ctor
   commentId: M:Rudeus.API.Request.UpdateRequest.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest()
-  fullName.vb: Rudeus.API.Request.UpdateRequest.New()
   nameWithType: UpdateRequest.UpdateRequest()
-  nameWithType.vb: UpdateRequest.New()
 - uid: Rudeus.API.Request.UpdateRequest.#ctor(Rudeus.API.Request.UpdateRequestData)
   name: UpdateRequest(UpdateRequestData)
   href: api/Rudeus.API.Request.UpdateRequest.html#Rudeus_API_Request_UpdateRequest__ctor_Rudeus_API_Request_UpdateRequestData_
   commentId: M:Rudeus.API.Request.UpdateRequest.#ctor(Rudeus.API.Request.UpdateRequestData)
-  name.vb: New(UpdateRequestData)
   fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest(Rudeus.API.Request.UpdateRequestData)
-  fullName.vb: Rudeus.API.Request.UpdateRequest.New(Rudeus.API.Request.UpdateRequestData)
   nameWithType: UpdateRequest.UpdateRequest(UpdateRequestData)
-  nameWithType.vb: UpdateRequest.New(UpdateRequestData)
 - uid: Rudeus.API.Request.UpdateRequest.#ctor(System.String)
-  name: UpdateRequest(string?)
+  name: UpdateRequest(String)
   href: api/Rudeus.API.Request.UpdateRequest.html#Rudeus_API_Request_UpdateRequest__ctor_System_String_
   commentId: M:Rudeus.API.Request.UpdateRequest.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest(string?)
-  fullName.vb: Rudeus.API.Request.UpdateRequest.New(String)
-  nameWithType: UpdateRequest.UpdateRequest(string?)
-  nameWithType.vb: UpdateRequest.New(String)
+  fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest(System.String)
+  nameWithType: UpdateRequest.UpdateRequest(String)
 - uid: Rudeus.API.Request.UpdateRequest.#ctor*
   name: UpdateRequest
   href: api/Rudeus.API.Request.UpdateRequest.html#Rudeus_API_Request_UpdateRequest__ctor_
   commentId: Overload:Rudeus.API.Request.UpdateRequest.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.UpdateRequest.UpdateRequest
-  fullName.vb: Rudeus.API.Request.UpdateRequest.New
   nameWithType: UpdateRequest.UpdateRequest
-  nameWithType.vb: UpdateRequest.New
 - uid: Rudeus.API.Request.UpdateRequest.request_data
   name: request_data
   href: api/Rudeus.API.Request.UpdateRequest.html#Rudeus_API_Request_UpdateRequest_request_data
@@ -988,30 +901,21 @@ references:
   name: UpdateRequestData()
   href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData__ctor
   commentId: M:Rudeus.API.Request.UpdateRequestData.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Request.UpdateRequestData.UpdateRequestData()
-  fullName.vb: Rudeus.API.Request.UpdateRequestData.New()
   nameWithType: UpdateRequestData.UpdateRequestData()
-  nameWithType.vb: UpdateRequestData.New()
 - uid: Rudeus.API.Request.UpdateRequestData.#ctor(System.String)
-  name: UpdateRequestData(string?)
+  name: UpdateRequestData(String)
   href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData__ctor_System_String_
   commentId: M:Rudeus.API.Request.UpdateRequestData.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.Request.UpdateRequestData.UpdateRequestData(string?)
-  fullName.vb: Rudeus.API.Request.UpdateRequestData.New(String)
-  nameWithType: UpdateRequestData.UpdateRequestData(string?)
-  nameWithType.vb: UpdateRequestData.New(String)
+  fullName: Rudeus.API.Request.UpdateRequestData.UpdateRequestData(System.String)
+  nameWithType: UpdateRequestData.UpdateRequestData(String)
 - uid: Rudeus.API.Request.UpdateRequestData.#ctor*
   name: UpdateRequestData
   href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData__ctor_
   commentId: Overload:Rudeus.API.Request.UpdateRequestData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Request.UpdateRequestData.UpdateRequestData
-  fullName.vb: Rudeus.API.Request.UpdateRequestData.New
   nameWithType: UpdateRequestData.UpdateRequestData
-  nameWithType.vb: UpdateRequestData.New
 - uid: Rudeus.API.Request.UpdateRequestData.c_drive
   name: c_drive
   href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_c_drive
@@ -1136,29 +1040,23 @@ references:
   fullName: Rudeus.API.RequestClient
   nameWithType: RequestClient
 - uid: Rudeus.API.RequestClient.#ctor(System.String)
-  name: RequestClient(string)
+  name: RequestClient(String)
   href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient__ctor_System_String_
   commentId: M:Rudeus.API.RequestClient.#ctor(System.String)
-  name.vb: New(String)
-  fullName: Rudeus.API.RequestClient.RequestClient(string)
-  fullName.vb: Rudeus.API.RequestClient.New(String)
-  nameWithType: RequestClient.RequestClient(string)
-  nameWithType.vb: RequestClient.New(String)
+  fullName: Rudeus.API.RequestClient.RequestClient(System.String)
+  nameWithType: RequestClient.RequestClient(String)
 - uid: Rudeus.API.RequestClient.#ctor*
   name: RequestClient
   href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient__ctor_
   commentId: Overload:Rudeus.API.RequestClient.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.RequestClient.RequestClient
-  fullName.vb: Rudeus.API.RequestClient.New
   nameWithType: RequestClient.RequestClient
-  nameWithType.vb: RequestClient.New
-- uid: Rudeus.API.RequestClient.Request(System.Net.Http.HttpRequestMessage)
+- uid: Rudeus.API.RequestClient.Request(HttpRequestMessage)
   name: Request(HttpRequestMessage)
-  href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient_Request_System_Net_Http_HttpRequestMessage_
-  commentId: M:Rudeus.API.RequestClient.Request(System.Net.Http.HttpRequestMessage)
-  fullName: Rudeus.API.RequestClient.Request(System.Net.Http.HttpRequestMessage)
+  href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient_Request_HttpRequestMessage_
+  commentId: M:Rudeus.API.RequestClient.Request(HttpRequestMessage)
+  fullName: Rudeus.API.RequestClient.Request(HttpRequestMessage)
   nameWithType: RequestClient.Request(HttpRequestMessage)
 - uid: Rudeus.API.RequestClient.Request*
   name: Request
@@ -1167,11 +1065,11 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RequestClient.Request
   nameWithType: RequestClient.Request
-- uid: Rudeus.API.RequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+- uid: Rudeus.API.RequestClient.RequestString(HttpRequestMessage)
   name: RequestString(HttpRequestMessage)
-  href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient_RequestString_System_Net_Http_HttpRequestMessage_
-  commentId: M:Rudeus.API.RequestClient.RequestString(System.Net.Http.HttpRequestMessage)
-  fullName: Rudeus.API.RequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+  href: api/Rudeus.API.RequestClient.html#Rudeus_API_RequestClient_RequestString_HttpRequestMessage_
+  commentId: M:Rudeus.API.RequestClient.RequestString(HttpRequestMessage)
+  fullName: Rudeus.API.RequestClient.RequestString(HttpRequestMessage)
   nameWithType: RequestClient.RequestString(HttpRequestMessage)
 - uid: Rudeus.API.RequestClient.RequestString*
   name: RequestString
@@ -1196,21 +1094,15 @@ references:
   name: BaseResponse()
   href: api/Rudeus.API.Response.BaseResponse.html#Rudeus_API_Response_BaseResponse__ctor
   commentId: M:Rudeus.API.Response.BaseResponse.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Response.BaseResponse.BaseResponse()
-  fullName.vb: Rudeus.API.Response.BaseResponse.New()
   nameWithType: BaseResponse.BaseResponse()
-  nameWithType.vb: BaseResponse.New()
 - uid: Rudeus.API.Response.BaseResponse.#ctor*
   name: BaseResponse
   href: api/Rudeus.API.Response.BaseResponse.html#Rudeus_API_Response_BaseResponse__ctor_
   commentId: Overload:Rudeus.API.Response.BaseResponse.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Response.BaseResponse.BaseResponse
-  fullName.vb: Rudeus.API.Response.BaseResponse.New
   nameWithType: BaseResponse.BaseResponse
-  nameWithType.vb: BaseResponse.New
 - uid: Rudeus.API.Response.BaseResponse.response_data
   name: response_data
   href: api/Rudeus.API.Response.BaseResponse.html#Rudeus_API_Response_BaseResponse_response_data
@@ -1394,30 +1286,21 @@ references:
   name: UpdateMetadataResponse()
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse__ctor
   commentId: M:Rudeus.API.Response.UpdateMetadataResponse.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse()
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponse.New()
   nameWithType: UpdateMetadataResponse.UpdateMetadataResponse()
-  nameWithType.vb: UpdateMetadataResponse.New()
 - uid: Rudeus.API.Response.UpdateMetadataResponse.#ctor(System.String,System.String)
-  name: UpdateMetadataResponse(string, string)
+  name: UpdateMetadataResponse(String, String)
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse__ctor_System_String_System_String_
   commentId: M:Rudeus.API.Response.UpdateMetadataResponse.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse(string, string)
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponse.New(String, String)
-  nameWithType: UpdateMetadataResponse.UpdateMetadataResponse(string, string)
-  nameWithType.vb: UpdateMetadataResponse.New(String, String)
+  fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse(System.String, System.String)
+  nameWithType: UpdateMetadataResponse.UpdateMetadataResponse(String, String)
 - uid: Rudeus.API.Response.UpdateMetadataResponse.#ctor*
   name: UpdateMetadataResponse
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse__ctor_
   commentId: Overload:Rudeus.API.Response.UpdateMetadataResponse.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponse.New
   nameWithType: UpdateMetadataResponse.UpdateMetadataResponse
-  nameWithType.vb: UpdateMetadataResponse.New
 - uid: Rudeus.API.Response.UpdateMetadataResponse.request_data
   name: request_data
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_request_data
@@ -1454,30 +1337,21 @@ references:
   name: UpdateMetadataResponseData()
   href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData__ctor
   commentId: M:Rudeus.API.Response.UpdateMetadataResponseData.#ctor
-  name.vb: New()
   fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData()
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponseData.New()
   nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData()
-  nameWithType.vb: UpdateMetadataResponseData.New()
 - uid: Rudeus.API.Response.UpdateMetadataResponseData.#ctor(System.String,System.String)
-  name: UpdateMetadataResponseData(string, string)
+  name: UpdateMetadataResponseData(String, String)
   href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData__ctor_System_String_System_String_
   commentId: M:Rudeus.API.Response.UpdateMetadataResponseData.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData(string, string)
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponseData.New(String, String)
-  nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData(string, string)
-  nameWithType.vb: UpdateMetadataResponseData.New(String, String)
+  fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData(System.String, System.String)
+  nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData(String, String)
 - uid: Rudeus.API.Response.UpdateMetadataResponseData.#ctor*
   name: UpdateMetadataResponseData
   href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData__ctor_
   commentId: Overload:Rudeus.API.Response.UpdateMetadataResponseData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData
-  fullName.vb: Rudeus.API.Response.UpdateMetadataResponseData.New
   nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData
-  nameWithType.vb: UpdateMetadataResponseData.New
 - uid: Rudeus.API.Response.UpdateMetadataResponseData.stable_version
   name: stable_version
   href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_stable_version
@@ -1584,30 +1458,21 @@ references:
   name: TaskTrayForm()
   href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm__ctor
   commentId: M:Rudeus.Application.TaskTrayForm.#ctor
-  name.vb: New()
   fullName: Rudeus.Application.TaskTrayForm.TaskTrayForm()
-  fullName.vb: Rudeus.Application.TaskTrayForm.New()
   nameWithType: TaskTrayForm.TaskTrayForm()
-  nameWithType.vb: TaskTrayForm.New()
 - uid: Rudeus.Application.TaskTrayForm.#ctor*
   name: TaskTrayForm
   href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm__ctor_
   commentId: Overload:Rudeus.Application.TaskTrayForm.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Application.TaskTrayForm.TaskTrayForm
-  fullName.vb: Rudeus.Application.TaskTrayForm.New
   nameWithType: TaskTrayForm.TaskTrayForm
-  nameWithType.vb: TaskTrayForm.New
 - uid: Rudeus.Application.TaskTrayForm.Dispose(System.Boolean)
-  name: Dispose(bool)
+  name: Dispose(Boolean)
   href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm_Dispose_System_Boolean_
   commentId: M:Rudeus.Application.TaskTrayForm.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: Rudeus.Application.TaskTrayForm.Dispose(bool)
-  fullName.vb: Rudeus.Application.TaskTrayForm.Dispose(Boolean)
-  nameWithType: TaskTrayForm.Dispose(bool)
-  nameWithType.vb: TaskTrayForm.Dispose(Boolean)
+  fullName: Rudeus.Application.TaskTrayForm.Dispose(System.Boolean)
+  nameWithType: TaskTrayForm.Dispose(Boolean)
 - uid: Rudeus.Application.TaskTrayForm.Dispose*
   name: Dispose
   href: api/Rudeus.Application.TaskTrayForm.html#Rudeus_Application_TaskTrayForm_Dispose_
@@ -1685,25 +1550,22 @@ references:
   commentId: T:Rudeus.Command.Worker
   fullName: Rudeus.Command.Worker
   nameWithType: Worker
-- uid: Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
-  name: Worker(ILogger<Worker>?, string[]?, IRootSettings?, IProcedure?, IProcedure?, IProcedure?)
-  href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker__ctor_Microsoft_Extensions_Logging_ILogger_Rudeus_Command_Worker__System_String___SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_
-  commentId: M:Rudeus.Command.Worker.#ctor(Microsoft.Extensions.Logging.ILogger{Rudeus.Command.Worker},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
-  name.vb: New(ILogger(Of Worker), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
-  fullName: Rudeus.Command.Worker.Worker(Microsoft.Extensions.Logging.ILogger<Rudeus.Command.Worker>?, string[]?, SharedLib.Model.Settings.IRootSettings?, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?, Rudeus.Procedure.IProcedure?)
-  fullName.vb: Rudeus.Command.Worker.New(Microsoft.Extensions.Logging.ILogger(Of Rudeus.Command.Worker), String(), SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure)
-  nameWithType: Worker.Worker(ILogger<Worker>?, string[]?, IRootSettings?, IProcedure?, IProcedure?, IProcedure?)
-  nameWithType.vb: Worker.New(ILogger(Of Worker), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
+- uid: Rudeus.Command.Worker.#ctor(System.Nullable{ILogger{Rudeus.Command.Worker}},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
+  name: Worker(Nullable<ILogger<Worker>>, String[], IRootSettings, IProcedure, IProcedure, IProcedure)
+  href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker__ctor_System_Nullable_ILogger_Rudeus_Command_Worker___System_String___SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_Rudeus_Procedure_IProcedure_
+  commentId: M:Rudeus.Command.Worker.#ctor(System.Nullable{ILogger{Rudeus.Command.Worker}},System.String[],SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure,Rudeus.Procedure.IProcedure)
+  name.vb: Worker(Nullable(Of ILogger(Of Worker)), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
+  fullName: Rudeus.Command.Worker.Worker(System.Nullable<ILogger<Rudeus.Command.Worker>>, System.String[], SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure)
+  fullName.vb: Rudeus.Command.Worker.Worker(System.Nullable(Of ILogger(Of Rudeus.Command.Worker)), System.String(), SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure, Rudeus.Procedure.IProcedure)
+  nameWithType: Worker.Worker(Nullable<ILogger<Worker>>, String[], IRootSettings, IProcedure, IProcedure, IProcedure)
+  nameWithType.vb: Worker.Worker(Nullable(Of ILogger(Of Worker)), String(), IRootSettings, IProcedure, IProcedure, IProcedure)
 - uid: Rudeus.Command.Worker.#ctor*
   name: Worker
   href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker__ctor_
   commentId: Overload:Rudeus.Command.Worker.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Command.Worker.Worker
-  fullName.vb: Rudeus.Command.Worker.New
   nameWithType: Worker.Worker
-  nameWithType.vb: Worker.New
 - uid: Rudeus.Command.Worker.AccessTokenValidator
   name: AccessTokenValidator
   href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker_AccessTokenValidator
@@ -1717,11 +1579,11 @@ references:
   isSpec: "True"
   fullName: Rudeus.Command.Worker.AccessTokenValidator
   nameWithType: Worker.AccessTokenValidator
-- uid: Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
+- uid: Rudeus.Command.Worker.ExecuteAsync(CancellationToken)
   name: ExecuteAsync(CancellationToken)
-  href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker_ExecuteAsync_System_Threading_CancellationToken_
-  commentId: M:Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
-  fullName: Rudeus.Command.Worker.ExecuteAsync(System.Threading.CancellationToken)
+  href: api/Rudeus.Command.Worker.html#Rudeus_Command_Worker_ExecuteAsync_CancellationToken_
+  commentId: M:Rudeus.Command.Worker.ExecuteAsync(CancellationToken)
+  fullName: Rudeus.Command.Worker.ExecuteAsync(CancellationToken)
   nameWithType: Worker.ExecuteAsync(CancellationToken)
 - uid: Rudeus.Command.Worker.ExecuteAsync*
   name: ExecuteAsync
@@ -1860,6 +1722,12 @@ references:
   commentId: F:Rudeus.Constants.DefaultRegistryKey
   fullName: Rudeus.Constants.DefaultRegistryKey
   nameWithType: Constants.DefaultRegistryKey
+- uid: Rudeus.Constants.disableClientCertAuth
+  name: disableClientCertAuth
+  href: api/Rudeus.Constants.html#Rudeus_Constants_disableClientCertAuth
+  commentId: F:Rudeus.Constants.disableClientCertAuth
+  fullName: Rudeus.Constants.disableClientCertAuth
+  nameWithType: Constants.disableClientCertAuth
 - uid: Rudeus.Constants.DummyUpdateUrl
   name: DummyUpdateUrl
   href: api/Rudeus.Constants.html#Rudeus_Constants_DummyUpdateUrl
@@ -1992,127 +1860,6 @@ references:
   commentId: F:Rudeus.Constants.WebPortalUrl
   fullName: Rudeus.Constants.WebPortalUrl
   nameWithType: Constants.WebPortalUrl
-- uid: Rudeus.Constants.disableClientCertAuth
-  name: disableClientCertAuth
-  href: api/Rudeus.Constants.html#Rudeus_Constants_disableClientCertAuth
-  commentId: F:Rudeus.Constants.disableClientCertAuth
-  fullName: Rudeus.Constants.disableClientCertAuth
-  nameWithType: Constants.disableClientCertAuth
-- uid: Rudeus.IUtils
-  name: IUtils
-  href: api/Rudeus.IUtils.html
-  commentId: T:Rudeus.IUtils
-  fullName: Rudeus.IUtils
-  nameWithType: IUtils
-- uid: Rudeus.IUtils.CompareVersionString(System.String,System.String,System.Int32)
-  name: CompareVersionString(string, string, int)
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CompareVersionString_System_String_System_String_System_Int32_
-  commentId: M:Rudeus.IUtils.CompareVersionString(System.String,System.String,System.Int32)
-  name.vb: CompareVersionString(String, String, Integer)
-  fullName: Rudeus.IUtils.CompareVersionString(string, string, int)
-  fullName.vb: Rudeus.IUtils.CompareVersionString(String, String, Integer)
-  nameWithType: IUtils.CompareVersionString(string, string, int)
-  nameWithType.vb: IUtils.CompareVersionString(String, String, Integer)
-- uid: Rudeus.IUtils.CompareVersionString*
-  name: CompareVersionString
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CompareVersionString_
-  commentId: Overload:Rudeus.IUtils.CompareVersionString
-  isSpec: "True"
-  fullName: Rudeus.IUtils.CompareVersionString
-  nameWithType: IUtils.CompareVersionString
-- uid: Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
-  name: ConcatStudentNumberFromMail(string)
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ConcatStudentNumberFromMail_System_String_
-  commentId: M:Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
-  name.vb: ConcatStudentNumberFromMail(String)
-  fullName: Rudeus.IUtils.ConcatStudentNumberFromMail(string)
-  fullName.vb: Rudeus.IUtils.ConcatStudentNumberFromMail(String)
-  nameWithType: IUtils.ConcatStudentNumberFromMail(string)
-  nameWithType.vb: IUtils.ConcatStudentNumberFromMail(String)
-- uid: Rudeus.IUtils.ConcatStudentNumberFromMail*
-  name: ConcatStudentNumberFromMail
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ConcatStudentNumberFromMail_
-  commentId: Overload:Rudeus.IUtils.ConcatStudentNumberFromMail
-  isSpec: "True"
-  fullName: Rudeus.IUtils.ConcatStudentNumberFromMail
-  nameWithType: IUtils.ConcatStudentNumberFromMail
-- uid: Rudeus.IUtils.CopyDirectory(System.String,System.String,System.Boolean)
-  name: CopyDirectory(string, string, bool)
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CopyDirectory_System_String_System_String_System_Boolean_
-  commentId: M:Rudeus.IUtils.CopyDirectory(System.String,System.String,System.Boolean)
-  name.vb: CopyDirectory(String, String, Boolean)
-  fullName: Rudeus.IUtils.CopyDirectory(string, string, bool)
-  fullName.vb: Rudeus.IUtils.CopyDirectory(String, String, Boolean)
-  nameWithType: IUtils.CopyDirectory(string, string, bool)
-  nameWithType.vb: IUtils.CopyDirectory(String, String, Boolean)
-- uid: Rudeus.IUtils.CopyDirectory*
-  name: CopyDirectory
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CopyDirectory_
-  commentId: Overload:Rudeus.IUtils.CopyDirectory
-  isSpec: "True"
-  fullName: Rudeus.IUtils.CopyDirectory
-  nameWithType: IUtils.CopyDirectory
-- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
-  name: IsArgsAllNullOrAllObject(List<object>)
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsArgsAllNullOrAllObject_System_Collections_Generic_List_System_Object__
-  commentId: M:Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
-  name.vb: IsArgsAllNullOrAllObject(List(Of Object))
-  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List<object>)
-  fullName.vb: Rudeus.IUtils.IsArgsAllNullOrAllObject(System.Collections.Generic.List(Of Object))
-  nameWithType: IUtils.IsArgsAllNullOrAllObject(List<object>)
-  nameWithType.vb: IUtils.IsArgsAllNullOrAllObject(List(Of Object))
-- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject*
-  name: IsArgsAllNullOrAllObject
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsArgsAllNullOrAllObject_
-  commentId: Overload:Rudeus.IUtils.IsArgsAllNullOrAllObject
-  isSpec: "True"
-  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject
-  nameWithType: IUtils.IsArgsAllNullOrAllObject
-- uid: Rudeus.IUtils.IsStudentMailAddress(System.String)
-  name: IsStudentMailAddress(string)
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsStudentMailAddress_System_String_
-  commentId: M:Rudeus.IUtils.IsStudentMailAddress(System.String)
-  name.vb: IsStudentMailAddress(String)
-  fullName: Rudeus.IUtils.IsStudentMailAddress(string)
-  fullName.vb: Rudeus.IUtils.IsStudentMailAddress(String)
-  nameWithType: IUtils.IsStudentMailAddress(string)
-  nameWithType.vb: IUtils.IsStudentMailAddress(String)
-- uid: Rudeus.IUtils.IsStudentMailAddress*
-  name: IsStudentMailAddress
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsStudentMailAddress_
-  commentId: Overload:Rudeus.IUtils.IsStudentMailAddress
-  isSpec: "True"
-  fullName: Rudeus.IUtils.IsStudentMailAddress
-  nameWithType: IUtils.IsStudentMailAddress
-- uid: Rudeus.IUtils.ParseArgs(System.String[])
-  name: ParseArgs(string[])
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ParseArgs_System_String___
-  commentId: M:Rudeus.IUtils.ParseArgs(System.String[])
-  name.vb: ParseArgs(String())
-  fullName: Rudeus.IUtils.ParseArgs(string[])
-  fullName.vb: Rudeus.IUtils.ParseArgs(String())
-  nameWithType: IUtils.ParseArgs(string[])
-  nameWithType.vb: IUtils.ParseArgs(String())
-- uid: Rudeus.IUtils.ParseArgs*
-  name: ParseArgs
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ParseArgs_
-  commentId: Overload:Rudeus.IUtils.ParseArgs
-  isSpec: "True"
-  fullName: Rudeus.IUtils.ParseArgs
-  nameWithType: IUtils.ParseArgs
-- uid: Rudeus.IUtils.RegisterDeviceAndSetData
-  name: RegisterDeviceAndSetData()
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_RegisterDeviceAndSetData
-  commentId: M:Rudeus.IUtils.RegisterDeviceAndSetData
-  fullName: Rudeus.IUtils.RegisterDeviceAndSetData()
-  nameWithType: IUtils.RegisterDeviceAndSetData()
-- uid: Rudeus.IUtils.RegisterDeviceAndSetData*
-  name: RegisterDeviceAndSetData
-  href: api/Rudeus.IUtils.html#Rudeus_IUtils_RegisterDeviceAndSetData_
-  commentId: Overload:Rudeus.IUtils.RegisterDeviceAndSetData
-  isSpec: "True"
-  fullName: Rudeus.IUtils.RegisterDeviceAndSetData
-  nameWithType: IUtils.RegisterDeviceAndSetData
 - uid: Rudeus.Initializer
   name: Rudeus.Initializer
   href: api/Rudeus.Initializer.html
@@ -2150,51 +1897,6 @@ references:
   commentId: T:Rudeus.Initializer.Program
   fullName: Rudeus.Initializer.Program
   nameWithType: Program
-- uid: Rudeus.Initializer.Program.CheckLogMessage
-  name: CheckLogMessage
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_CheckLogMessage
-  commentId: P:Rudeus.Initializer.Program.CheckLogMessage
-  fullName: Rudeus.Initializer.Program.CheckLogMessage
-  nameWithType: Program.CheckLogMessage
-- uid: Rudeus.Initializer.Program.CheckLogMessage*
-  name: CheckLogMessage
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_CheckLogMessage_
-  commentId: Overload:Rudeus.Initializer.Program.CheckLogMessage
-  isSpec: "True"
-  fullName: Rudeus.Initializer.Program.CheckLogMessage
-  nameWithType: Program.CheckLogMessage
-- uid: Rudeus.Initializer.Program.Main(System.String[])
-  name: Main(string[])
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_Main_System_String___
-  commentId: M:Rudeus.Initializer.Program.Main(System.String[])
-  name.vb: Main(String())
-  fullName: Rudeus.Initializer.Program.Main(string[])
-  fullName.vb: Rudeus.Initializer.Program.Main(String())
-  nameWithType: Program.Main(string[])
-  nameWithType.vb: Program.Main(String())
-- uid: Rudeus.Initializer.Program.Main*
-  name: Main
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_Main_
-  commentId: Overload:Rudeus.Initializer.Program.Main
-  isSpec: "True"
-  fullName: Rudeus.Initializer.Program.Main
-  nameWithType: Program.Main
-- uid: Rudeus.Initializer.Program.MainAsync(System.String[])
-  name: MainAsync(string[])
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_MainAsync_System_String___
-  commentId: M:Rudeus.Initializer.Program.MainAsync(System.String[])
-  name.vb: MainAsync(String())
-  fullName: Rudeus.Initializer.Program.MainAsync(string[])
-  fullName.vb: Rudeus.Initializer.Program.MainAsync(String())
-  nameWithType: Program.MainAsync(string[])
-  nameWithType.vb: Program.MainAsync(String())
-- uid: Rudeus.Initializer.Program.MainAsync*
-  name: MainAsync
-  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_MainAsync_
-  commentId: Overload:Rudeus.Initializer.Program.MainAsync
-  isSpec: "True"
-  fullName: Rudeus.Initializer.Program.MainAsync
-  nameWithType: Program.MainAsync
 - uid: Rudeus.Initializer.Program._certificateInstaller
   name: _certificateInstaller
   href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program__certificateInstaller
@@ -2247,6 +1949,154 @@ references:
   isSpec: "True"
   fullName: Rudeus.Initializer.Program._taskInitializer
   nameWithType: Program._taskInitializer
+- uid: Rudeus.Initializer.Program.CheckLogMessage
+  name: CheckLogMessage
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_CheckLogMessage
+  commentId: P:Rudeus.Initializer.Program.CheckLogMessage
+  fullName: Rudeus.Initializer.Program.CheckLogMessage
+  nameWithType: Program.CheckLogMessage
+- uid: Rudeus.Initializer.Program.CheckLogMessage*
+  name: CheckLogMessage
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_CheckLogMessage_
+  commentId: Overload:Rudeus.Initializer.Program.CheckLogMessage
+  isSpec: "True"
+  fullName: Rudeus.Initializer.Program.CheckLogMessage
+  nameWithType: Program.CheckLogMessage
+- uid: Rudeus.Initializer.Program.Main(System.String[])
+  name: Main(String[])
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_Main_System_String___
+  commentId: M:Rudeus.Initializer.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: Rudeus.Initializer.Program.Main(System.String[])
+  fullName.vb: Rudeus.Initializer.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
+  nameWithType.vb: Program.Main(String())
+- uid: Rudeus.Initializer.Program.Main*
+  name: Main
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_Main_
+  commentId: Overload:Rudeus.Initializer.Program.Main
+  isSpec: "True"
+  fullName: Rudeus.Initializer.Program.Main
+  nameWithType: Program.Main
+- uid: Rudeus.Initializer.Program.MainAsync(System.String[])
+  name: MainAsync(String[])
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_MainAsync_System_String___
+  commentId: M:Rudeus.Initializer.Program.MainAsync(System.String[])
+  name.vb: MainAsync(String())
+  fullName: Rudeus.Initializer.Program.MainAsync(System.String[])
+  fullName.vb: Rudeus.Initializer.Program.MainAsync(System.String())
+  nameWithType: Program.MainAsync(String[])
+  nameWithType.vb: Program.MainAsync(String())
+- uid: Rudeus.Initializer.Program.MainAsync*
+  name: MainAsync
+  href: api/Rudeus.Initializer.Program.html#Rudeus_Initializer_Program_MainAsync_
+  commentId: Overload:Rudeus.Initializer.Program.MainAsync
+  isSpec: "True"
+  fullName: Rudeus.Initializer.Program.MainAsync
+  nameWithType: Program.MainAsync
+- uid: Rudeus.IUtils
+  name: IUtils
+  href: api/Rudeus.IUtils.html
+  commentId: T:Rudeus.IUtils
+  fullName: Rudeus.IUtils
+  nameWithType: IUtils
+- uid: Rudeus.IUtils.CompareVersionString(System.String,System.String,System.Int32)
+  name: CompareVersionString(String, String, Int32)
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CompareVersionString_System_String_System_String_System_Int32_
+  commentId: M:Rudeus.IUtils.CompareVersionString(System.String,System.String,System.Int32)
+  fullName: Rudeus.IUtils.CompareVersionString(System.String, System.String, System.Int32)
+  nameWithType: IUtils.CompareVersionString(String, String, Int32)
+- uid: Rudeus.IUtils.CompareVersionString*
+  name: CompareVersionString
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CompareVersionString_
+  commentId: Overload:Rudeus.IUtils.CompareVersionString
+  isSpec: "True"
+  fullName: Rudeus.IUtils.CompareVersionString
+  nameWithType: IUtils.CompareVersionString
+- uid: Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
+  name: ConcatStudentNumberFromMail(String)
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ConcatStudentNumberFromMail_System_String_
+  commentId: M:Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
+  fullName: Rudeus.IUtils.ConcatStudentNumberFromMail(System.String)
+  nameWithType: IUtils.ConcatStudentNumberFromMail(String)
+- uid: Rudeus.IUtils.ConcatStudentNumberFromMail*
+  name: ConcatStudentNumberFromMail
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ConcatStudentNumberFromMail_
+  commentId: Overload:Rudeus.IUtils.ConcatStudentNumberFromMail
+  isSpec: "True"
+  fullName: Rudeus.IUtils.ConcatStudentNumberFromMail
+  nameWithType: IUtils.ConcatStudentNumberFromMail
+- uid: Rudeus.IUtils.CopyDirectory(System.String,System.String,System.Boolean)
+  name: CopyDirectory(String, String, Boolean)
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CopyDirectory_System_String_System_String_System_Boolean_
+  commentId: M:Rudeus.IUtils.CopyDirectory(System.String,System.String,System.Boolean)
+  fullName: Rudeus.IUtils.CopyDirectory(System.String, System.String, System.Boolean)
+  nameWithType: IUtils.CopyDirectory(String, String, Boolean)
+- uid: Rudeus.IUtils.CopyDirectory*
+  name: CopyDirectory
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_CopyDirectory_
+  commentId: Overload:Rudeus.IUtils.CopyDirectory
+  isSpec: "True"
+  fullName: Rudeus.IUtils.CopyDirectory
+  nameWithType: IUtils.CopyDirectory
+- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject(List{System.Object})
+  name: IsArgsAllNullOrAllObject(List<Object>)
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsArgsAllNullOrAllObject_List_System_Object__
+  commentId: M:Rudeus.IUtils.IsArgsAllNullOrAllObject(List{System.Object})
+  name.vb: IsArgsAllNullOrAllObject(List(Of Object))
+  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject(List<System.Object>)
+  fullName.vb: Rudeus.IUtils.IsArgsAllNullOrAllObject(List(Of System.Object))
+  nameWithType: IUtils.IsArgsAllNullOrAllObject(List<Object>)
+  nameWithType.vb: IUtils.IsArgsAllNullOrAllObject(List(Of Object))
+- uid: Rudeus.IUtils.IsArgsAllNullOrAllObject*
+  name: IsArgsAllNullOrAllObject
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsArgsAllNullOrAllObject_
+  commentId: Overload:Rudeus.IUtils.IsArgsAllNullOrAllObject
+  isSpec: "True"
+  fullName: Rudeus.IUtils.IsArgsAllNullOrAllObject
+  nameWithType: IUtils.IsArgsAllNullOrAllObject
+- uid: Rudeus.IUtils.IsStudentMailAddress(System.String)
+  name: IsStudentMailAddress(String)
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsStudentMailAddress_System_String_
+  commentId: M:Rudeus.IUtils.IsStudentMailAddress(System.String)
+  fullName: Rudeus.IUtils.IsStudentMailAddress(System.String)
+  nameWithType: IUtils.IsStudentMailAddress(String)
+- uid: Rudeus.IUtils.IsStudentMailAddress*
+  name: IsStudentMailAddress
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_IsStudentMailAddress_
+  commentId: Overload:Rudeus.IUtils.IsStudentMailAddress
+  isSpec: "True"
+  fullName: Rudeus.IUtils.IsStudentMailAddress
+  nameWithType: IUtils.IsStudentMailAddress
+- uid: Rudeus.IUtils.ParseArgs(System.String[])
+  name: ParseArgs(String[])
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ParseArgs_System_String___
+  commentId: M:Rudeus.IUtils.ParseArgs(System.String[])
+  name.vb: ParseArgs(String())
+  fullName: Rudeus.IUtils.ParseArgs(System.String[])
+  fullName.vb: Rudeus.IUtils.ParseArgs(System.String())
+  nameWithType: IUtils.ParseArgs(String[])
+  nameWithType.vb: IUtils.ParseArgs(String())
+- uid: Rudeus.IUtils.ParseArgs*
+  name: ParseArgs
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_ParseArgs_
+  commentId: Overload:Rudeus.IUtils.ParseArgs
+  isSpec: "True"
+  fullName: Rudeus.IUtils.ParseArgs
+  nameWithType: IUtils.ParseArgs
+- uid: Rudeus.IUtils.RegisterDeviceAndSetData
+  name: RegisterDeviceAndSetData()
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_RegisterDeviceAndSetData
+  commentId: M:Rudeus.IUtils.RegisterDeviceAndSetData
+  fullName: Rudeus.IUtils.RegisterDeviceAndSetData()
+  nameWithType: IUtils.RegisterDeviceAndSetData()
+- uid: Rudeus.IUtils.RegisterDeviceAndSetData*
+  name: RegisterDeviceAndSetData
+  href: api/Rudeus.IUtils.html#Rudeus_IUtils_RegisterDeviceAndSetData_
+  commentId: Overload:Rudeus.IUtils.RegisterDeviceAndSetData
+  isSpec: "True"
+  fullName: Rudeus.IUtils.RegisterDeviceAndSetData
+  nameWithType: IUtils.RegisterDeviceAndSetData
 - uid: Rudeus.Launcher
   name: Rudeus.Launcher
   href: api/Rudeus.Launcher.html
@@ -2266,24 +2116,21 @@ references:
   fullName: Rudeus.Launcher.Procedure.Executer
   nameWithType: Executer
 - uid: Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})
-  name: Executer(IAppSettings, string, Func<string, string, int>?)
+  name: Executer(IAppSettings, String, Func<String, String, Int32>)
   href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_SharedLib_Model_Settings_IAppSettings_System_String_System_Func_System_String_System_String_System_Int32__
   commentId: M:Rudeus.Launcher.Procedure.Executer.#ctor(SharedLib.Model.Settings.IAppSettings,System.String,System.Func{System.String,System.String,System.Int32})
-  name.vb: New(IAppSettings, String, Func(Of String, String, Integer))
-  fullName: Rudeus.Launcher.Procedure.Executer.Executer(SharedLib.Model.Settings.IAppSettings, string, System.Func<string, string, int>?)
-  fullName.vb: Rudeus.Launcher.Procedure.Executer.New(SharedLib.Model.Settings.IAppSettings, String, System.Func(Of String, String, Integer))
-  nameWithType: Executer.Executer(IAppSettings, string, Func<string, string, int>?)
-  nameWithType.vb: Executer.New(IAppSettings, String, Func(Of String, String, Integer))
+  name.vb: Executer(IAppSettings, String, Func(Of String, String, Int32))
+  fullName: Rudeus.Launcher.Procedure.Executer.Executer(SharedLib.Model.Settings.IAppSettings, System.String, System.Func<System.String, System.String, System.Int32>)
+  fullName.vb: Rudeus.Launcher.Procedure.Executer.Executer(SharedLib.Model.Settings.IAppSettings, System.String, System.Func(Of System.String, System.String, System.Int32))
+  nameWithType: Executer.Executer(IAppSettings, String, Func<String, String, Int32>)
+  nameWithType.vb: Executer.Executer(IAppSettings, String, Func(Of String, String, Int32))
 - uid: Rudeus.Launcher.Procedure.Executer.#ctor*
   name: Executer
   href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer__ctor_
   commentId: Overload:Rudeus.Launcher.Procedure.Executer.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Launcher.Procedure.Executer.Executer
-  fullName.vb: Rudeus.Launcher.Procedure.Executer.New
   nameWithType: Executer.Executer
-  nameWithType.vb: Executer.New
 - uid: Rudeus.Launcher.Procedure.Executer.AppSettings
   name: AppSettings
   href: api/Rudeus.Launcher.Procedure.Executer.html#Rudeus_Launcher_Procedure_Executer_AppSettings
@@ -2404,21 +2251,15 @@ references:
   name: Updater(IAppSettings, IRootSettings)
   href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater__ctor_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IRootSettings_
   commentId: M:Rudeus.Launcher.Procedure.Updater.#ctor(SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IRootSettings)
-  name.vb: New(IAppSettings, IRootSettings)
   fullName: Rudeus.Launcher.Procedure.Updater.Updater(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IRootSettings)
-  fullName.vb: Rudeus.Launcher.Procedure.Updater.New(SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IRootSettings)
   nameWithType: Updater.Updater(IAppSettings, IRootSettings)
-  nameWithType.vb: Updater.New(IAppSettings, IRootSettings)
 - uid: Rudeus.Launcher.Procedure.Updater.#ctor*
   name: Updater
   href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater__ctor_
   commentId: Overload:Rudeus.Launcher.Procedure.Updater.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Launcher.Procedure.Updater.Updater
-  fullName.vb: Rudeus.Launcher.Procedure.Updater.New
   nameWithType: Updater.Updater
-  nameWithType.vb: Updater.New
 - uid: Rudeus.Launcher.Procedure.Updater.AppSettings
   name: AppSettings
   href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_AppSettings
@@ -2459,14 +2300,11 @@ references:
   fullName: Rudeus.Launcher.Procedure.Updater.Run
   nameWithType: Updater.Run
 - uid: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(System.String,System.String)
-  name: ShouldUpdate(string, string)
+  name: ShouldUpdate(String, String)
   href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_ShouldUpdate_System_String_System_String_
   commentId: M:Rudeus.Launcher.Procedure.Updater.ShouldUpdate(System.String,System.String)
-  name.vb: ShouldUpdate(String, String)
-  fullName: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(string, string)
-  fullName.vb: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(String, String)
-  nameWithType: Updater.ShouldUpdate(string, string)
-  nameWithType.vb: Updater.ShouldUpdate(String, String)
+  fullName: Rudeus.Launcher.Procedure.Updater.ShouldUpdate(System.String, System.String)
+  nameWithType: Updater.ShouldUpdate(String, String)
 - uid: Rudeus.Launcher.Procedure.Updater.ShouldUpdate*
   name: ShouldUpdate
   href: api/Rudeus.Launcher.Procedure.Updater.html#Rudeus_Launcher_Procedure_Updater_ShouldUpdate_
@@ -2533,13 +2371,13 @@ references:
   fullName: Rudeus.Launcher.Program.ExitFunc
   nameWithType: Program.ExitFunc
 - uid: Rudeus.Launcher.Program.JoinArgs(System.String[])
-  name: JoinArgs(string[])
+  name: JoinArgs(String[])
   href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_JoinArgs_System_String___
   commentId: M:Rudeus.Launcher.Program.JoinArgs(System.String[])
   name.vb: JoinArgs(String())
-  fullName: Rudeus.Launcher.Program.JoinArgs(string[])
-  fullName.vb: Rudeus.Launcher.Program.JoinArgs(String())
-  nameWithType: Program.JoinArgs(string[])
+  fullName: Rudeus.Launcher.Program.JoinArgs(System.String[])
+  fullName.vb: Rudeus.Launcher.Program.JoinArgs(System.String())
+  nameWithType: Program.JoinArgs(String[])
   nameWithType.vb: Program.JoinArgs(String())
 - uid: Rudeus.Launcher.Program.JoinArgs*
   name: JoinArgs
@@ -2549,13 +2387,13 @@ references:
   fullName: Rudeus.Launcher.Program.JoinArgs
   nameWithType: Program.JoinArgs
 - uid: Rudeus.Launcher.Program.Main(System.String[])
-  name: Main(string[])
+  name: Main(String[])
   href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_Main_System_String___
   commentId: M:Rudeus.Launcher.Program.Main(System.String[])
   name.vb: Main(String())
-  fullName: Rudeus.Launcher.Program.Main(string[])
-  fullName.vb: Rudeus.Launcher.Program.Main(String())
-  nameWithType: Program.Main(string[])
+  fullName: Rudeus.Launcher.Program.Main(System.String[])
+  fullName.vb: Rudeus.Launcher.Program.Main(System.String())
+  nameWithType: Program.Main(String[])
   nameWithType.vb: Program.Main(String())
 - uid: Rudeus.Launcher.Program.Main*
   name: Main
@@ -2603,73 +2441,6 @@ references:
   isSpec: "True"
   fullName: Rudeus.Launcher.Program.Updater
   nameWithType: Program.Updater
-- uid: Rudeus.Launcher.Updater
-  name: Updater
-  href: api/Rudeus.Launcher.Updater.html
-  commentId: T:Rudeus.Launcher.Updater
-  fullName: Rudeus.Launcher.Updater
-  nameWithType: Updater
-- uid: Rudeus.Launcher.Updater.#ctor(SharedLib.Model.Settings.IAppSettings)
-  name: Updater(IAppSettings?)
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater__ctor_SharedLib_Model_Settings_IAppSettings_
-  commentId: M:Rudeus.Launcher.Updater.#ctor(SharedLib.Model.Settings.IAppSettings)
-  name.vb: New(IAppSettings)
-  fullName: Rudeus.Launcher.Updater.Updater(SharedLib.Model.Settings.IAppSettings?)
-  fullName.vb: Rudeus.Launcher.Updater.New(SharedLib.Model.Settings.IAppSettings)
-  nameWithType: Updater.Updater(IAppSettings?)
-  nameWithType.vb: Updater.New(IAppSettings)
-- uid: Rudeus.Launcher.Updater.#ctor*
-  name: Updater
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater__ctor_
-  commentId: Overload:Rudeus.Launcher.Updater.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Rudeus.Launcher.Updater.Updater
-  fullName.vb: Rudeus.Launcher.Updater.New
-  nameWithType: Updater.Updater
-  nameWithType.vb: Updater.New
-- uid: Rudeus.Launcher.Updater.AppSettings
-  name: AppSettings
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_AppSettings
-  commentId: P:Rudeus.Launcher.Updater.AppSettings
-  fullName: Rudeus.Launcher.Updater.AppSettings
-  nameWithType: Updater.AppSettings
-- uid: Rudeus.Launcher.Updater.AppSettings*
-  name: AppSettings
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_AppSettings_
-  commentId: Overload:Rudeus.Launcher.Updater.AppSettings
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Updater.AppSettings
-  nameWithType: Updater.AppSettings
-- uid: Rudeus.Launcher.Updater.Run
-  name: Run()
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_Run
-  commentId: M:Rudeus.Launcher.Updater.Run
-  fullName: Rudeus.Launcher.Updater.Run()
-  nameWithType: Updater.Run()
-- uid: Rudeus.Launcher.Updater.Run*
-  name: Run
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_Run_
-  commentId: Overload:Rudeus.Launcher.Updater.Run
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Updater.Run
-  nameWithType: Updater.Run
-- uid: Rudeus.Launcher.Updater.ShouldUpdate(System.String,System.String)
-  name: ShouldUpdate(string, string)
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_ShouldUpdate_System_String_System_String_
-  commentId: M:Rudeus.Launcher.Updater.ShouldUpdate(System.String,System.String)
-  name.vb: ShouldUpdate(String, String)
-  fullName: Rudeus.Launcher.Updater.ShouldUpdate(string, string)
-  fullName.vb: Rudeus.Launcher.Updater.ShouldUpdate(String, String)
-  nameWithType: Updater.ShouldUpdate(string, string)
-  nameWithType.vb: Updater.ShouldUpdate(String, String)
-- uid: Rudeus.Launcher.Updater.ShouldUpdate*
-  name: ShouldUpdate
-  href: api/Rudeus.Launcher.Updater.html#Rudeus_Launcher_Updater_ShouldUpdate_
-  commentId: Overload:Rudeus.Launcher.Updater.ShouldUpdate
-  isSpec: "True"
-  fullName: Rudeus.Launcher.Updater.ShouldUpdate
-  nameWithType: Updater.ShouldUpdate
 - uid: Rudeus.Model
   name: Rudeus.Model
   href: api/Rudeus.Model.html
@@ -2686,30 +2457,21 @@ references:
   name: ApplicationData()
   href: api/Rudeus.Model.ApplicationData.html#Rudeus_Model_ApplicationData__ctor
   commentId: M:Rudeus.Model.ApplicationData.#ctor
-  name.vb: New()
   fullName: Rudeus.Model.ApplicationData.ApplicationData()
-  fullName.vb: Rudeus.Model.ApplicationData.New()
   nameWithType: ApplicationData.ApplicationData()
-  nameWithType.vb: ApplicationData.New()
 - uid: Rudeus.Model.ApplicationData.#ctor(System.String,System.String)
-  name: ApplicationData(string, string)
+  name: ApplicationData(String, String)
   href: api/Rudeus.Model.ApplicationData.html#Rudeus_Model_ApplicationData__ctor_System_String_System_String_
   commentId: M:Rudeus.Model.ApplicationData.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: Rudeus.Model.ApplicationData.ApplicationData(string, string)
-  fullName.vb: Rudeus.Model.ApplicationData.New(String, String)
-  nameWithType: ApplicationData.ApplicationData(string, string)
-  nameWithType.vb: ApplicationData.New(String, String)
+  fullName: Rudeus.Model.ApplicationData.ApplicationData(System.String, System.String)
+  nameWithType: ApplicationData.ApplicationData(String, String)
 - uid: Rudeus.Model.ApplicationData.#ctor*
   name: ApplicationData
   href: api/Rudeus.Model.ApplicationData.html#Rudeus_Model_ApplicationData__ctor_
   commentId: Overload:Rudeus.Model.ApplicationData.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Model.ApplicationData.ApplicationData
-  fullName.vb: Rudeus.Model.ApplicationData.New
   nameWithType: ApplicationData.ApplicationData
-  nameWithType.vb: ApplicationData.New
 - uid: Rudeus.Model.ApplicationData.Name
   name: Name
   href: api/Rudeus.Model.ApplicationData.html#Rudeus_Model_ApplicationData_Name
@@ -2743,14 +2505,11 @@ references:
   fullName: Rudeus.Model.ILocalCertificate
   nameWithType: ILocalCertificate
 - uid: Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
-  name: GetCertificate(string)
+  name: GetCertificate(String)
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetCertificate_System_String_
   commentId: M:Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
-  name.vb: GetCertificate(String)
-  fullName: Rudeus.Model.ILocalCertificate.GetCertificate(string)
-  fullName.vb: Rudeus.Model.ILocalCertificate.GetCertificate(String)
-  nameWithType: ILocalCertificate.GetCertificate(string)
-  nameWithType.vb: ILocalCertificate.GetCertificate(String)
+  fullName: Rudeus.Model.ILocalCertificate.GetCertificate(System.String)
+  nameWithType: ILocalCertificate.GetCertificate(String)
 - uid: Rudeus.Model.ILocalCertificate.GetCertificate*
   name: GetCertificate
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_GetCertificate_
@@ -2772,14 +2531,11 @@ references:
   fullName: Rudeus.Model.ILocalCertificate.GetInstance
   nameWithType: ILocalCertificate.GetInstance
 - uid: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
-  name: InstallCertificateIntoRoot(string)
+  name: InstallCertificateIntoRoot(String)
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallCertificateIntoRoot_System_String_
   commentId: M:Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
-  name.vb: InstallCertificateIntoRoot(String)
-  fullName: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(string)
-  fullName.vb: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(String)
-  nameWithType: ILocalCertificate.InstallCertificateIntoRoot(string)
-  nameWithType.vb: ILocalCertificate.InstallCertificateIntoRoot(String)
+  fullName: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot(System.String)
+  nameWithType: ILocalCertificate.InstallCertificateIntoRoot(String)
 - uid: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot*
   name: InstallCertificateIntoRoot
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallCertificateIntoRoot_
@@ -2788,14 +2544,11 @@ references:
   fullName: Rudeus.Model.ILocalCertificate.InstallCertificateIntoRoot
   nameWithType: ILocalCertificate.InstallCertificateIntoRoot
 - uid: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
-  name: InstallPkcs12IntoMy(string, string)
+  name: InstallPkcs12IntoMy(String, String)
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallPkcs12IntoMy_System_String_System_String_
   commentId: M:Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
-  name.vb: InstallPkcs12IntoMy(String, String)
-  fullName: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(string, string)
-  fullName.vb: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(String, String)
-  nameWithType: ILocalCertificate.InstallPkcs12IntoMy(string, string)
-  nameWithType.vb: ILocalCertificate.InstallPkcs12IntoMy(String, String)
+  fullName: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy(System.String, System.String)
+  nameWithType: ILocalCertificate.InstallPkcs12IntoMy(String, String)
 - uid: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy*
   name: InstallPkcs12IntoMy
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_InstallPkcs12IntoMy_
@@ -2804,14 +2557,11 @@ references:
   fullName: Rudeus.Model.ILocalCertificate.InstallPkcs12IntoMy
   nameWithType: ILocalCertificate.InstallPkcs12IntoMy
 - uid: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
-  name: UninstallCertificateFromString(string)
+  name: UninstallCertificateFromString(String)
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_UninstallCertificateFromString_System_String_
   commentId: M:Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
-  name.vb: UninstallCertificateFromString(String)
-  fullName: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(string)
-  fullName.vb: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(String)
-  nameWithType: ILocalCertificate.UninstallCertificateFromString(string)
-  nameWithType.vb: ILocalCertificate.UninstallCertificateFromString(String)
+  fullName: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString(System.String)
+  nameWithType: ILocalCertificate.UninstallCertificateFromString(String)
 - uid: Rudeus.Model.ILocalCertificate.UninstallCertificateFromString*
   name: UninstallCertificateFromString
   href: api/Rudeus.Model.ILocalCertificate.html#Rudeus_Model_ILocalCertificate_UninstallCertificateFromString_
@@ -3227,24 +2977,31 @@ references:
   fullName: Rudeus.Procedure.AccessTokenValidator
   nameWithType: AccessTokenValidator
 - uid: Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
-  name: AccessTokenValidator(IRootSettings?)
+  name: AccessTokenValidator(IRootSettings)
   href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_SharedLib_Model_Settings_IRootSettings_
   commentId: M:Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
-  name.vb: New(IRootSettings)
-  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(SharedLib.Model.Settings.IRootSettings?)
-  fullName.vb: Rudeus.Procedure.AccessTokenValidator.New(SharedLib.Model.Settings.IRootSettings)
-  nameWithType: AccessTokenValidator.AccessTokenValidator(IRootSettings?)
-  nameWithType.vb: AccessTokenValidator.New(IRootSettings)
+  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(SharedLib.Model.Settings.IRootSettings)
+  nameWithType: AccessTokenValidator.AccessTokenValidator(IRootSettings)
 - uid: Rudeus.Procedure.AccessTokenValidator.#ctor*
   name: AccessTokenValidator
   href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_
   commentId: Overload:Rudeus.Procedure.AccessTokenValidator.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator
-  fullName.vb: Rudeus.Procedure.AccessTokenValidator.New
   nameWithType: AccessTokenValidator.AccessTokenValidator
-  nameWithType.vb: AccessTokenValidator.New
+- uid: Rudeus.Procedure.AccessTokenValidator._settings
+  name: _settings
+  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__settings
+  commentId: P:Rudeus.Procedure.AccessTokenValidator._settings
+  fullName: Rudeus.Procedure.AccessTokenValidator._settings
+  nameWithType: AccessTokenValidator._settings
+- uid: Rudeus.Procedure.AccessTokenValidator._settings*
+  name: _settings
+  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__settings_
+  commentId: Overload:Rudeus.Procedure.AccessTokenValidator._settings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.AccessTokenValidator._settings
+  nameWithType: AccessTokenValidator._settings
 - uid: Rudeus.Procedure.AccessTokenValidator.IsFirstRun
   name: IsFirstRun()
   href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator_IsFirstRun
@@ -3271,19 +3028,6 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.AccessTokenValidator.Run
   nameWithType: AccessTokenValidator.Run
-- uid: Rudeus.Procedure.AccessTokenValidator._settings
-  name: _settings
-  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__settings
-  commentId: P:Rudeus.Procedure.AccessTokenValidator._settings
-  fullName: Rudeus.Procedure.AccessTokenValidator._settings
-  nameWithType: AccessTokenValidator._settings
-- uid: Rudeus.Procedure.AccessTokenValidator._settings*
-  name: _settings
-  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__settings_
-  commentId: Overload:Rudeus.Procedure.AccessTokenValidator._settings
-  isSpec: "True"
-  fullName: Rudeus.Procedure.AccessTokenValidator._settings
-  nameWithType: AccessTokenValidator._settings
 - uid: Rudeus.Procedure.CertificateInstaller
   name: CertificateInstaller
   href: api/Rudeus.Procedure.CertificateInstaller.html
@@ -3291,37 +3035,18 @@ references:
   fullName: Rudeus.Procedure.CertificateInstaller
   nameWithType: CertificateInstaller
 - uid: Rudeus.Procedure.CertificateInstaller.#ctor(Rudeus.Model.ILocalCertificate)
-  name: CertificateInstaller(ILocalCertificate?)
+  name: CertificateInstaller(ILocalCertificate)
   href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller__ctor_Rudeus_Model_ILocalCertificate_
   commentId: M:Rudeus.Procedure.CertificateInstaller.#ctor(Rudeus.Model.ILocalCertificate)
-  name.vb: New(ILocalCertificate)
-  fullName: Rudeus.Procedure.CertificateInstaller.CertificateInstaller(Rudeus.Model.ILocalCertificate?)
-  fullName.vb: Rudeus.Procedure.CertificateInstaller.New(Rudeus.Model.ILocalCertificate)
-  nameWithType: CertificateInstaller.CertificateInstaller(ILocalCertificate?)
-  nameWithType.vb: CertificateInstaller.New(ILocalCertificate)
+  fullName: Rudeus.Procedure.CertificateInstaller.CertificateInstaller(Rudeus.Model.ILocalCertificate)
+  nameWithType: CertificateInstaller.CertificateInstaller(ILocalCertificate)
 - uid: Rudeus.Procedure.CertificateInstaller.#ctor*
   name: CertificateInstaller
   href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller__ctor_
   commentId: Overload:Rudeus.Procedure.CertificateInstaller.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.CertificateInstaller.CertificateInstaller
-  fullName.vb: Rudeus.Procedure.CertificateInstaller.New
   nameWithType: CertificateInstaller.CertificateInstaller
-  nameWithType.vb: CertificateInstaller.New
-- uid: Rudeus.Procedure.CertificateInstaller.Run
-  name: Run()
-  href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller_Run
-  commentId: M:Rudeus.Procedure.CertificateInstaller.Run
-  fullName: Rudeus.Procedure.CertificateInstaller.Run()
-  nameWithType: CertificateInstaller.Run()
-- uid: Rudeus.Procedure.CertificateInstaller.Run*
-  name: Run
-  href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller_Run_
-  commentId: Overload:Rudeus.Procedure.CertificateInstaller.Run
-  isSpec: "True"
-  fullName: Rudeus.Procedure.CertificateInstaller.Run
-  nameWithType: CertificateInstaller.Run
 - uid: Rudeus.Procedure.CertificateInstaller._localCertificate
   name: _localCertificate
   href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller__localCertificate
@@ -3335,6 +3060,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.CertificateInstaller._localCertificate
   nameWithType: CertificateInstaller._localCertificate
+- uid: Rudeus.Procedure.CertificateInstaller.Run
+  name: Run()
+  href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller_Run
+  commentId: M:Rudeus.Procedure.CertificateInstaller.Run
+  fullName: Rudeus.Procedure.CertificateInstaller.Run()
+  nameWithType: CertificateInstaller.Run()
+- uid: Rudeus.Procedure.CertificateInstaller.Run*
+  name: Run
+  href: api/Rudeus.Procedure.CertificateInstaller.html#Rudeus_Procedure_CertificateInstaller_Run_
+  commentId: Overload:Rudeus.Procedure.CertificateInstaller.Run
+  isSpec: "True"
+  fullName: Rudeus.Procedure.CertificateInstaller.Run
+  nameWithType: CertificateInstaller.Run
 - uid: Rudeus.Procedure.IProcedure
   name: IProcedure
   href: api/Rudeus.Procedure.IProcedure.html
@@ -3361,24 +3099,18 @@ references:
   fullName: Rudeus.Procedure.LocalMachineInfoUpdater
   nameWithType: LocalMachineInfoUpdater
 - uid: Rudeus.Procedure.LocalMachineInfoUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
-  name: LocalMachineInfoUpdater(IRootSettings?, ILocalMachine?)
+  name: LocalMachineInfoUpdater(IRootSettings, ILocalMachine)
   href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater__ctor_SharedLib_Model_Settings_IRootSettings_Rudeus_Model_ILocalMachine_
   commentId: M:Rudeus.Procedure.LocalMachineInfoUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
-  name.vb: New(IRootSettings, ILocalMachine)
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachineInfoUpdater(SharedLib.Model.Settings.IRootSettings?, Rudeus.Model.ILocalMachine?)
-  fullName.vb: Rudeus.Procedure.LocalMachineInfoUpdater.New(SharedLib.Model.Settings.IRootSettings, Rudeus.Model.ILocalMachine)
-  nameWithType: LocalMachineInfoUpdater.LocalMachineInfoUpdater(IRootSettings?, ILocalMachine?)
-  nameWithType.vb: LocalMachineInfoUpdater.New(IRootSettings, ILocalMachine)
+  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachineInfoUpdater(SharedLib.Model.Settings.IRootSettings, Rudeus.Model.ILocalMachine)
+  nameWithType: LocalMachineInfoUpdater.LocalMachineInfoUpdater(IRootSettings, ILocalMachine)
 - uid: Rudeus.Procedure.LocalMachineInfoUpdater.#ctor*
   name: LocalMachineInfoUpdater
   href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater__ctor_
   commentId: Overload:Rudeus.Procedure.LocalMachineInfoUpdater.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachineInfoUpdater
-  fullName.vb: Rudeus.Procedure.LocalMachineInfoUpdater.New
   nameWithType: LocalMachineInfoUpdater.LocalMachineInfoUpdater
-  nameWithType.vb: LocalMachineInfoUpdater.New
 - uid: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
   name: LocalMachine
   href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_LocalMachine
@@ -3425,24 +3157,18 @@ references:
   fullName: Rudeus.Procedure.RegistryInitializer
   nameWithType: RegistryInitializer
 - uid: Rudeus.Procedure.RegistryInitializer.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
-  name: RegistryInitializer(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  name: RegistryInitializer(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
   href: api/Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer__ctor_SharedLib_Model_Settings_IRootSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_
   commentId: M:Rudeus.Procedure.RegistryInitializer.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
-  name.vb: New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
-  fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer(SharedLib.Model.Settings.IRootSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?)
-  fullName.vb: Rudeus.Procedure.RegistryInitializer.New(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
-  nameWithType: RegistryInitializer.RegistryInitializer(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
-  nameWithType.vb: RegistryInitializer.New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
+  fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType: RegistryInitializer.RegistryInitializer(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
 - uid: Rudeus.Procedure.RegistryInitializer.#ctor*
   name: RegistryInitializer
   href: api/Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer__ctor_
   commentId: Overload:Rudeus.Procedure.RegistryInitializer.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.RegistryInitializer.RegistryInitializer
-  fullName.vb: Rudeus.Procedure.RegistryInitializer.New
   nameWithType: RegistryInitializer.RegistryInitializer
-  nameWithType.vb: RegistryInitializer.New
 - uid: Rudeus.Procedure.RegistryInitializer.BfSettings
   name: BfSettings
   href: api/Rudeus.Procedure.RegistryInitializer.html#Rudeus_Procedure_RegistryInitializer_BfSettings
@@ -3515,24 +3241,18 @@ references:
   fullName: Rudeus.Procedure.RegistryRemover
   nameWithType: RegistryRemover
 - uid: Rudeus.Procedure.RegistryRemover.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
-  name: RegistryRemover(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
+  name: RegistryRemover(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
   href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover__ctor_SharedLib_Model_Settings_IRootSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_SharedLib_Model_Settings_IAppSettings_
   commentId: M:Rudeus.Procedure.RegistryRemover.#ctor(SharedLib.Model.Settings.IRootSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings,SharedLib.Model.Settings.IAppSettings)
-  name.vb: New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
-  fullName: Rudeus.Procedure.RegistryRemover.RegistryRemover(SharedLib.Model.Settings.IRootSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?, SharedLib.Model.Settings.IAppSettings?)
-  fullName.vb: Rudeus.Procedure.RegistryRemover.New(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
-  nameWithType: RegistryRemover.RegistryRemover(IRootSettings?, IAppSettings?, IAppSettings?, IAppSettings?)
-  nameWithType.vb: RegistryRemover.New(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
+  fullName: Rudeus.Procedure.RegistryRemover.RegistryRemover(SharedLib.Model.Settings.IRootSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings, SharedLib.Model.Settings.IAppSettings)
+  nameWithType: RegistryRemover.RegistryRemover(IRootSettings, IAppSettings, IAppSettings, IAppSettings)
 - uid: Rudeus.Procedure.RegistryRemover.#ctor*
   name: RegistryRemover
   href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover__ctor_
   commentId: Overload:Rudeus.Procedure.RegistryRemover.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.RegistryRemover.RegistryRemover
-  fullName.vb: Rudeus.Procedure.RegistryRemover.New
   nameWithType: RegistryRemover.RegistryRemover
-  nameWithType.vb: RegistryRemover.New
 - uid: Rudeus.Procedure.RegistryRemover.BfSettings
   name: BfSettings
   href: api/Rudeus.Procedure.RegistryRemover.html#Rudeus_Procedure_RegistryRemover_BfSettings
@@ -3605,24 +3325,18 @@ references:
   fullName: Rudeus.Procedure.ScheduledRegularExecuter
   nameWithType: ScheduledRegularExecuter
 - uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
-  name: ScheduledRegularExecuter(UpdateWatcher?, IRootSettings?, IProcedure)
+  name: ScheduledRegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
   href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter__ctor_Rudeus_Watchdogs_UpdateWatcher_SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_
   commentId: M:Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
-  name.vb: New(UpdateWatcher, IRootSettings, IProcedure)
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter(Rudeus.Watchdogs.UpdateWatcher?, SharedLib.Model.Settings.IRootSettings?, Rudeus.Procedure.IProcedure)
-  fullName.vb: Rudeus.Procedure.ScheduledRegularExecuter.New(Rudeus.Watchdogs.UpdateWatcher, SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure)
-  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter(UpdateWatcher?, IRootSettings?, IProcedure)
-  nameWithType.vb: ScheduledRegularExecuter.New(UpdateWatcher, IRootSettings, IProcedure)
+  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter(Rudeus.Watchdogs.UpdateWatcher, SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure)
+  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
 - uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor*
   name: ScheduledRegularExecuter
   href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter__ctor_
   commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter
-  fullName.vb: Rudeus.Procedure.ScheduledRegularExecuter.New
   nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter
-  nameWithType.vb: ScheduledRegularExecuter.New
 - uid: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
   name: LocalMachineInfoUpdater
   href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_LocalMachineInfoUpdater
@@ -3682,37 +3396,18 @@ references:
   fullName: Rudeus.Procedure.ServerRegister
   nameWithType: ServerRegister
 - uid: Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
-  name: ServerRegister(ILocalMachine?, IRootSettings?)
+  name: ServerRegister(ILocalMachine, IRootSettings)
   href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister__ctor_Rudeus_Model_ILocalMachine_SharedLib_Model_Settings_IRootSettings_
   commentId: M:Rudeus.Procedure.ServerRegister.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
-  name.vb: New(ILocalMachine, IRootSettings)
-  fullName: Rudeus.Procedure.ServerRegister.ServerRegister(Rudeus.Model.ILocalMachine?, SharedLib.Model.Settings.IRootSettings?)
-  fullName.vb: Rudeus.Procedure.ServerRegister.New(Rudeus.Model.ILocalMachine, SharedLib.Model.Settings.IRootSettings)
-  nameWithType: ServerRegister.ServerRegister(ILocalMachine?, IRootSettings?)
-  nameWithType.vb: ServerRegister.New(ILocalMachine, IRootSettings)
+  fullName: Rudeus.Procedure.ServerRegister.ServerRegister(Rudeus.Model.ILocalMachine, SharedLib.Model.Settings.IRootSettings)
+  nameWithType: ServerRegister.ServerRegister(ILocalMachine, IRootSettings)
 - uid: Rudeus.Procedure.ServerRegister.#ctor*
   name: ServerRegister
   href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister__ctor_
   commentId: Overload:Rudeus.Procedure.ServerRegister.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Procedure.ServerRegister.ServerRegister
-  fullName.vb: Rudeus.Procedure.ServerRegister.New
   nameWithType: ServerRegister.ServerRegister
-  nameWithType.vb: ServerRegister.New
-- uid: Rudeus.Procedure.ServerRegister.Run
-  name: Run()
-  href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister_Run
-  commentId: M:Rudeus.Procedure.ServerRegister.Run
-  fullName: Rudeus.Procedure.ServerRegister.Run()
-  nameWithType: ServerRegister.Run()
-- uid: Rudeus.Procedure.ServerRegister.Run*
-  name: Run
-  href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister_Run_
-  commentId: Overload:Rudeus.Procedure.ServerRegister.Run
-  isSpec: "True"
-  fullName: Rudeus.Procedure.ServerRegister.Run
-  nameWithType: ServerRegister.Run
 - uid: Rudeus.Procedure.ServerRegister._localMachine
   name: _localMachine
   href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister__localMachine
@@ -3739,6 +3434,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.ServerRegister._settings
   nameWithType: ServerRegister._settings
+- uid: Rudeus.Procedure.ServerRegister.Run
+  name: Run()
+  href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister_Run
+  commentId: M:Rudeus.Procedure.ServerRegister.Run
+  fullName: Rudeus.Procedure.ServerRegister.Run()
+  nameWithType: ServerRegister.Run()
+- uid: Rudeus.Procedure.ServerRegister.Run*
+  name: Run
+  href: api/Rudeus.Procedure.ServerRegister.html#Rudeus_Procedure_ServerRegister_Run_
+  commentId: Overload:Rudeus.Procedure.ServerRegister.Run
+  isSpec: "True"
+  fullName: Rudeus.Procedure.ServerRegister.Run
+  nameWithType: ServerRegister.Run
 - uid: Rudeus.Procedure.UserLoginExecuter
   name: UserLoginExecuter
   href: api/Rudeus.Procedure.UserLoginExecuter.html
@@ -3791,14 +3499,11 @@ references:
   fullName: Rudeus.Utils
   nameWithType: Utils
 - uid: Rudeus.Utils.CompareVersionString(System.String,System.String,System.Int32)
-  name: CompareVersionString(string, string, int)
+  name: CompareVersionString(String, String, Int32)
   href: api/Rudeus.Utils.html#Rudeus_Utils_CompareVersionString_System_String_System_String_System_Int32_
   commentId: M:Rudeus.Utils.CompareVersionString(System.String,System.String,System.Int32)
-  name.vb: CompareVersionString(String, String, Integer)
-  fullName: Rudeus.Utils.CompareVersionString(string, string, int)
-  fullName.vb: Rudeus.Utils.CompareVersionString(String, String, Integer)
-  nameWithType: Utils.CompareVersionString(string, string, int)
-  nameWithType.vb: Utils.CompareVersionString(String, String, Integer)
+  fullName: Rudeus.Utils.CompareVersionString(System.String, System.String, System.Int32)
+  nameWithType: Utils.CompareVersionString(String, String, Int32)
 - uid: Rudeus.Utils.CompareVersionString*
   name: CompareVersionString
   href: api/Rudeus.Utils.html#Rudeus_Utils_CompareVersionString_
@@ -3807,14 +3512,11 @@ references:
   fullName: Rudeus.Utils.CompareVersionString
   nameWithType: Utils.CompareVersionString
 - uid: Rudeus.Utils.ConcatStudentNumberFromMail(System.String)
-  name: ConcatStudentNumberFromMail(string)
+  name: ConcatStudentNumberFromMail(String)
   href: api/Rudeus.Utils.html#Rudeus_Utils_ConcatStudentNumberFromMail_System_String_
   commentId: M:Rudeus.Utils.ConcatStudentNumberFromMail(System.String)
-  name.vb: ConcatStudentNumberFromMail(String)
-  fullName: Rudeus.Utils.ConcatStudentNumberFromMail(string)
-  fullName.vb: Rudeus.Utils.ConcatStudentNumberFromMail(String)
-  nameWithType: Utils.ConcatStudentNumberFromMail(string)
-  nameWithType.vb: Utils.ConcatStudentNumberFromMail(String)
+  fullName: Rudeus.Utils.ConcatStudentNumberFromMail(System.String)
+  nameWithType: Utils.ConcatStudentNumberFromMail(String)
 - uid: Rudeus.Utils.ConcatStudentNumberFromMail*
   name: ConcatStudentNumberFromMail
   href: api/Rudeus.Utils.html#Rudeus_Utils_ConcatStudentNumberFromMail_
@@ -3823,14 +3525,11 @@ references:
   fullName: Rudeus.Utils.ConcatStudentNumberFromMail
   nameWithType: Utils.ConcatStudentNumberFromMail
 - uid: Rudeus.Utils.CopyDirectory(System.String,System.String,System.Boolean)
-  name: CopyDirectory(string, string, bool)
+  name: CopyDirectory(String, String, Boolean)
   href: api/Rudeus.Utils.html#Rudeus_Utils_CopyDirectory_System_String_System_String_System_Boolean_
   commentId: M:Rudeus.Utils.CopyDirectory(System.String,System.String,System.Boolean)
-  name.vb: CopyDirectory(String, String, Boolean)
-  fullName: Rudeus.Utils.CopyDirectory(string, string, bool)
-  fullName.vb: Rudeus.Utils.CopyDirectory(String, String, Boolean)
-  nameWithType: Utils.CopyDirectory(string, string, bool)
-  nameWithType.vb: Utils.CopyDirectory(String, String, Boolean)
+  fullName: Rudeus.Utils.CopyDirectory(System.String, System.String, System.Boolean)
+  nameWithType: Utils.CopyDirectory(String, String, Boolean)
 - uid: Rudeus.Utils.CopyDirectory*
   name: CopyDirectory
   href: api/Rudeus.Utils.html#Rudeus_Utils_CopyDirectory_
@@ -3839,13 +3538,13 @@ references:
   fullName: Rudeus.Utils.CopyDirectory
   nameWithType: Utils.CopyDirectory
 - uid: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
-  name: IsArgsAllNullOrAllObject(List<object>)
+  name: IsArgsAllNullOrAllObject(List<Object>)
   href: api/Rudeus.Utils.html#Rudeus_Utils_IsArgsAllNullOrAllObject_System_Collections_Generic_List_System_Object__
   commentId: M:Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
   name.vb: IsArgsAllNullOrAllObject(List(Of Object))
-  fullName: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List<object>)
-  fullName.vb: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List(Of Object))
-  nameWithType: Utils.IsArgsAllNullOrAllObject(List<object>)
+  fullName: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List<System.Object>)
+  fullName.vb: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List(Of System.Object))
+  nameWithType: Utils.IsArgsAllNullOrAllObject(List<Object>)
   nameWithType.vb: Utils.IsArgsAllNullOrAllObject(List(Of Object))
 - uid: Rudeus.Utils.IsArgsAllNullOrAllObject*
   name: IsArgsAllNullOrAllObject
@@ -3855,14 +3554,11 @@ references:
   fullName: Rudeus.Utils.IsArgsAllNullOrAllObject
   nameWithType: Utils.IsArgsAllNullOrAllObject
 - uid: Rudeus.Utils.IsStudentMailAddress(System.String)
-  name: IsStudentMailAddress(string)
+  name: IsStudentMailAddress(String)
   href: api/Rudeus.Utils.html#Rudeus_Utils_IsStudentMailAddress_System_String_
   commentId: M:Rudeus.Utils.IsStudentMailAddress(System.String)
-  name.vb: IsStudentMailAddress(String)
-  fullName: Rudeus.Utils.IsStudentMailAddress(string)
-  fullName.vb: Rudeus.Utils.IsStudentMailAddress(String)
-  nameWithType: Utils.IsStudentMailAddress(string)
-  nameWithType.vb: Utils.IsStudentMailAddress(String)
+  fullName: Rudeus.Utils.IsStudentMailAddress(System.String)
+  nameWithType: Utils.IsStudentMailAddress(String)
 - uid: Rudeus.Utils.IsStudentMailAddress*
   name: IsStudentMailAddress
   href: api/Rudeus.Utils.html#Rudeus_Utils_IsStudentMailAddress_
@@ -3890,13 +3586,13 @@ references:
   fullName: Rudeus.Utils.LM
   nameWithType: Utils.LM
 - uid: Rudeus.Utils.ParseArgs(System.String[])
-  name: ParseArgs(string[])
+  name: ParseArgs(String[])
   href: api/Rudeus.Utils.html#Rudeus_Utils_ParseArgs_System_String___
   commentId: M:Rudeus.Utils.ParseArgs(System.String[])
   name.vb: ParseArgs(String())
-  fullName: Rudeus.Utils.ParseArgs(string[])
-  fullName.vb: Rudeus.Utils.ParseArgs(String())
-  nameWithType: Utils.ParseArgs(string[])
+  fullName: Rudeus.Utils.ParseArgs(System.String[])
+  fullName.vb: Rudeus.Utils.ParseArgs(System.String())
+  nameWithType: Utils.ParseArgs(String[])
   nameWithType.vb: Utils.ParseArgs(String())
 - uid: Rudeus.Utils.ParseArgs*
   name: ParseArgs
@@ -3956,24 +3652,18 @@ references:
   fullName: Rudeus.Watchdogs.UpdateWatcher
   nameWithType: UpdateWatcher
 - uid: Rudeus.Watchdogs.UpdateWatcher.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
-  name: UpdateWatcher(ILocalMachine?, IRootSettings?)
+  name: UpdateWatcher(ILocalMachine, IRootSettings)
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher__ctor_Rudeus_Model_ILocalMachine_SharedLib_Model_Settings_IRootSettings_
   commentId: M:Rudeus.Watchdogs.UpdateWatcher.#ctor(Rudeus.Model.ILocalMachine,SharedLib.Model.Settings.IRootSettings)
-  name.vb: New(ILocalMachine, IRootSettings)
-  fullName: Rudeus.Watchdogs.UpdateWatcher.UpdateWatcher(Rudeus.Model.ILocalMachine?, SharedLib.Model.Settings.IRootSettings?)
-  fullName.vb: Rudeus.Watchdogs.UpdateWatcher.New(Rudeus.Model.ILocalMachine, SharedLib.Model.Settings.IRootSettings)
-  nameWithType: UpdateWatcher.UpdateWatcher(ILocalMachine?, IRootSettings?)
-  nameWithType.vb: UpdateWatcher.New(ILocalMachine, IRootSettings)
+  fullName: Rudeus.Watchdogs.UpdateWatcher.UpdateWatcher(Rudeus.Model.ILocalMachine, SharedLib.Model.Settings.IRootSettings)
+  nameWithType: UpdateWatcher.UpdateWatcher(ILocalMachine, IRootSettings)
 - uid: Rudeus.Watchdogs.UpdateWatcher.#ctor*
   name: UpdateWatcher
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher__ctor_
   commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Rudeus.Watchdogs.UpdateWatcher.UpdateWatcher
-  fullName.vb: Rudeus.Watchdogs.UpdateWatcher.New
   nameWithType: UpdateWatcher.UpdateWatcher
-  nameWithType.vb: UpdateWatcher.New
 - uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
   name: BuildUpdateMacRequest()
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateMacRequest
@@ -4039,24 +3729,18 @@ references:
   fullName: SharedLib.Exceptions.AccessTokenUnavailableException
   nameWithType: AccessTokenUnavailableException
 - uid: SharedLib.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
-  name: AccessTokenUnavailableException(string)
+  name: AccessTokenUnavailableException(String)
   href: api/SharedLib.Exceptions.AccessTokenUnavailableException.html#SharedLib_Exceptions_AccessTokenUnavailableException__ctor_System_String_
   commentId: M:SharedLib.Exceptions.AccessTokenUnavailableException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException(string)
-  fullName.vb: SharedLib.Exceptions.AccessTokenUnavailableException.New(String)
-  nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException(string)
-  nameWithType.vb: AccessTokenUnavailableException.New(String)
+  fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException(System.String)
+  nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException(String)
 - uid: SharedLib.Exceptions.AccessTokenUnavailableException.#ctor*
   name: AccessTokenUnavailableException
   href: api/SharedLib.Exceptions.AccessTokenUnavailableException.html#SharedLib_Exceptions_AccessTokenUnavailableException__ctor_
   commentId: Overload:SharedLib.Exceptions.AccessTokenUnavailableException.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException
-  fullName.vb: SharedLib.Exceptions.AccessTokenUnavailableException.New
   nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException
-  nameWithType.vb: AccessTokenUnavailableException.New
 - uid: SharedLib.Exceptions.ServerUnavailableException
   name: ServerUnavailableException
   href: api/SharedLib.Exceptions.ServerUnavailableException.html
@@ -4064,24 +3748,18 @@ references:
   fullName: SharedLib.Exceptions.ServerUnavailableException
   nameWithType: ServerUnavailableException
 - uid: SharedLib.Exceptions.ServerUnavailableException.#ctor(System.String)
-  name: ServerUnavailableException(string)
+  name: ServerUnavailableException(String)
   href: api/SharedLib.Exceptions.ServerUnavailableException.html#SharedLib_Exceptions_ServerUnavailableException__ctor_System_String_
   commentId: M:SharedLib.Exceptions.ServerUnavailableException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException(string)
-  fullName.vb: SharedLib.Exceptions.ServerUnavailableException.New(String)
-  nameWithType: ServerUnavailableException.ServerUnavailableException(string)
-  nameWithType.vb: ServerUnavailableException.New(String)
+  fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException(System.String)
+  nameWithType: ServerUnavailableException.ServerUnavailableException(String)
 - uid: SharedLib.Exceptions.ServerUnavailableException.#ctor*
   name: ServerUnavailableException
   href: api/SharedLib.Exceptions.ServerUnavailableException.html#SharedLib_Exceptions_ServerUnavailableException__ctor_
   commentId: Overload:SharedLib.Exceptions.ServerUnavailableException.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException
-  fullName.vb: SharedLib.Exceptions.ServerUnavailableException.New
   nameWithType: ServerUnavailableException.ServerUnavailableException
-  nameWithType.vb: ServerUnavailableException.New
 - uid: SharedLib.Exceptions.UnexpectedResponseException
   name: UnexpectedResponseException
   href: api/SharedLib.Exceptions.UnexpectedResponseException.html
@@ -4089,24 +3767,18 @@ references:
   fullName: SharedLib.Exceptions.UnexpectedResponseException
   nameWithType: UnexpectedResponseException
 - uid: SharedLib.Exceptions.UnexpectedResponseException.#ctor(System.String)
-  name: UnexpectedResponseException(string)
+  name: UnexpectedResponseException(String)
   href: api/SharedLib.Exceptions.UnexpectedResponseException.html#SharedLib_Exceptions_UnexpectedResponseException__ctor_System_String_
   commentId: M:SharedLib.Exceptions.UnexpectedResponseException.#ctor(System.String)
-  name.vb: New(String)
-  fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException(string)
-  fullName.vb: SharedLib.Exceptions.UnexpectedResponseException.New(String)
-  nameWithType: UnexpectedResponseException.UnexpectedResponseException(string)
-  nameWithType.vb: UnexpectedResponseException.New(String)
+  fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException(System.String)
+  nameWithType: UnexpectedResponseException.UnexpectedResponseException(String)
 - uid: SharedLib.Exceptions.UnexpectedResponseException.#ctor*
   name: UnexpectedResponseException
   href: api/SharedLib.Exceptions.UnexpectedResponseException.html#SharedLib_Exceptions_UnexpectedResponseException__ctor_
   commentId: Overload:SharedLib.Exceptions.UnexpectedResponseException.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException
-  fullName.vb: SharedLib.Exceptions.UnexpectedResponseException.New
   nameWithType: UnexpectedResponseException.UnexpectedResponseException
-  nameWithType.vb: UnexpectedResponseException.New
 - uid: SharedLib.Model.Settings
   name: SharedLib.Model.Settings
   href: api/SharedLib.Model.Settings.html
@@ -4120,24 +3792,21 @@ references:
   fullName: SharedLib.Model.Settings.AppSettings
   nameWithType: AppSettings
 - uid: SharedLib.Model.Settings.AppSettings.#ctor(System.String,System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name: AppSettings(string, Func<string, string, string>?, Func<string, string, bool>?)
+  name: AppSettings(String, Func<String, String, String>, Func<String, String, Boolean>)
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_System_String_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__
   commentId: M:SharedLib.Model.Settings.AppSettings.#ctor(System.String,System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name.vb: New(String, Func(Of String, String, String), Func(Of String, String, Boolean))
-  fullName: SharedLib.Model.Settings.AppSettings.AppSettings(string, System.Func<string, string, string>?, System.Func<string, string, bool>?)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.New(String, System.Func(Of String, String, String), System.Func(Of String, String, Boolean))
-  nameWithType: AppSettings.AppSettings(string, Func<string, string, string>?, Func<string, string, bool>?)
-  nameWithType.vb: AppSettings.New(String, Func(Of String, String, String), Func(Of String, String, Boolean))
+  name.vb: AppSettings(String, Func(Of String, String, String), Func(Of String, String, Boolean))
+  fullName: SharedLib.Model.Settings.AppSettings.AppSettings(System.String, System.Func<System.String, System.String, System.String>, System.Func<System.String, System.String, System.Boolean>)
+  fullName.vb: SharedLib.Model.Settings.AppSettings.AppSettings(System.String, System.Func(Of System.String, System.String, System.String), System.Func(Of System.String, System.String, System.Boolean))
+  nameWithType: AppSettings.AppSettings(String, Func<String, String, String>, Func<String, String, Boolean>)
+  nameWithType.vb: AppSettings.AppSettings(String, Func(Of String, String, String), Func(Of String, String, Boolean))
 - uid: SharedLib.Model.Settings.AppSettings.#ctor*
   name: AppSettings
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings__ctor_
   commentId: Overload:SharedLib.Model.Settings.AppSettings.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SharedLib.Model.Settings.AppSettings.AppSettings
-  fullName.vb: SharedLib.Model.Settings.AppSettings.New
   nameWithType: AppSettings.AppSettings
-  nameWithType.vb: AppSettings.New
 - uid: SharedLib.Model.Settings.AppSettings.AccessTokenKey
   name: AccessTokenKey
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_AccessTokenKey
@@ -4228,14 +3897,11 @@ references:
   fullName: SharedLib.Model.Settings.AppSettings.FirstHostnameP
   nameWithType: AppSettings.FirstHostnameP
 - uid: SharedLib.Model.Settings.AppSettings.Get(System.String,System.String)
-  name: Get(string, string)
+  name: Get(String, String)
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Get_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.AppSettings.Get(System.String,System.String)
-  name.vb: Get(String, String)
-  fullName: SharedLib.Model.Settings.AppSettings.Get(string, string)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.Get(String, String)
-  nameWithType: AppSettings.Get(string, string)
-  nameWithType.vb: AppSettings.Get(String, String)
+  fullName: SharedLib.Model.Settings.AppSettings.Get(System.String, System.String)
+  nameWithType: AppSettings.Get(String, String)
 - uid: SharedLib.Model.Settings.AppSettings.Get*
   name: Get
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Get_
@@ -4509,14 +4175,11 @@ references:
   fullName: SharedLib.Model.Settings.AppSettings.NetworkIFListKey
   nameWithType: AppSettings.NetworkIFListKey
 - uid: SharedLib.Model.Settings.AppSettings.Set(System.String,System.String)
-  name: Set(string, string)
+  name: Set(String, String)
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Set_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.AppSettings.Set(System.String,System.String)
-  name.vb: Set(String, String)
-  fullName: SharedLib.Model.Settings.AppSettings.Set(string, string)
-  fullName.vb: SharedLib.Model.Settings.AppSettings.Set(String, String)
-  nameWithType: AppSettings.Set(string, string)
-  nameWithType.vb: AppSettings.Set(String, String)
+  fullName: SharedLib.Model.Settings.AppSettings.Set(System.String, System.String)
+  nameWithType: AppSettings.Set(String, String)
 - uid: SharedLib.Model.Settings.AppSettings.Set*
   name: Set
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Set_
@@ -4913,14 +4576,11 @@ references:
   fullName: SharedLib.Model.Settings.IBaseSettings.DeleteAll
   nameWithType: IBaseSettings.DeleteAll
 - uid: SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
-  name: Get(string, string)
+  name: Get(String, String)
   href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.IBaseSettings.Get(System.String,System.String)
-  name.vb: Get(String, String)
-  fullName: SharedLib.Model.Settings.IBaseSettings.Get(string, string)
-  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Get(String, String)
-  nameWithType: IBaseSettings.Get(string, string)
-  nameWithType.vb: IBaseSettings.Get(String, String)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Get(System.String, System.String)
+  nameWithType: IBaseSettings.Get(String, String)
 - uid: SharedLib.Model.Settings.IBaseSettings.Get*
   name: Get
   href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Get_
@@ -4942,14 +4602,11 @@ references:
   fullName: SharedLib.Model.Settings.IBaseSettings.GetFunc
   nameWithType: IBaseSettings.GetFunc
 - uid: SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
-  name: Set(string, string)
+  name: Set(String, String)
   href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.IBaseSettings.Set(System.String,System.String)
-  name.vb: Set(String, String)
-  fullName: SharedLib.Model.Settings.IBaseSettings.Set(string, string)
-  fullName.vb: SharedLib.Model.Settings.IBaseSettings.Set(String, String)
-  nameWithType: IBaseSettings.Set(string, string)
-  nameWithType.vb: IBaseSettings.Set(String, String)
+  fullName: SharedLib.Model.Settings.IBaseSettings.Set(System.String, System.String)
+  nameWithType: IBaseSettings.Set(String, String)
 - uid: SharedLib.Model.Settings.IBaseSettings.Set*
   name: Set
   href: api/SharedLib.Model.Settings.IBaseSettings.html#SharedLib_Model_Settings_IBaseSettings_Set_
@@ -5282,24 +4939,21 @@ references:
   fullName: SharedLib.Model.Settings.RootSettings
   nameWithType: RootSettings
 - uid: SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name: RootSettings(Func<string, string, string>?, Func<string, string, bool>?)
+  name: RootSettings(Func<String, String, String>, Func<String, String, Boolean>)
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__
   commentId: M:SharedLib.Model.Settings.RootSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name.vb: New(Func(Of String, String, String), Func(Of String, String, Boolean))
-  fullName: SharedLib.Model.Settings.RootSettings.RootSettings(System.Func<string, string, string>?, System.Func<string, string, bool>?)
-  fullName.vb: SharedLib.Model.Settings.RootSettings.New(System.Func(Of String, String, String), System.Func(Of String, String, Boolean))
-  nameWithType: RootSettings.RootSettings(Func<string, string, string>?, Func<string, string, bool>?)
-  nameWithType.vb: RootSettings.New(Func(Of String, String, String), Func(Of String, String, Boolean))
+  name.vb: RootSettings(Func(Of String, String, String), Func(Of String, String, Boolean))
+  fullName: SharedLib.Model.Settings.RootSettings.RootSettings(System.Func<System.String, System.String, System.String>, System.Func<System.String, System.String, System.Boolean>)
+  fullName.vb: SharedLib.Model.Settings.RootSettings.RootSettings(System.Func(Of System.String, System.String, System.String), System.Func(Of System.String, System.String, System.Boolean))
+  nameWithType: RootSettings.RootSettings(Func<String, String, String>, Func<String, String, Boolean>)
+  nameWithType.vb: RootSettings.RootSettings(Func(Of String, String, String), Func(Of String, String, Boolean))
 - uid: SharedLib.Model.Settings.RootSettings.#ctor*
   name: RootSettings
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings__ctor_
   commentId: Overload:SharedLib.Model.Settings.RootSettings.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SharedLib.Model.Settings.RootSettings.RootSettings
-  fullName.vb: SharedLib.Model.Settings.RootSettings.New
   nameWithType: RootSettings.RootSettings
-  nameWithType.vb: RootSettings.New
 - uid: SharedLib.Model.Settings.RootSettings.AccessTokenKey
   name: AccessTokenKey
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_AccessTokenKey
@@ -5428,14 +5082,11 @@ references:
   fullName: SharedLib.Model.Settings.RootSettings.FirstHostnameP
   nameWithType: RootSettings.FirstHostnameP
 - uid: SharedLib.Model.Settings.RootSettings.Get(System.String,System.String)
-  name: Get(string, string)
+  name: Get(String, String)
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_Get_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.RootSettings.Get(System.String,System.String)
-  name.vb: Get(String, String)
-  fullName: SharedLib.Model.Settings.RootSettings.Get(string, string)
-  fullName.vb: SharedLib.Model.Settings.RootSettings.Get(String, String)
-  nameWithType: RootSettings.Get(string, string)
-  nameWithType.vb: RootSettings.Get(String, String)
+  fullName: SharedLib.Model.Settings.RootSettings.Get(System.String, System.String)
+  nameWithType: RootSettings.Get(String, String)
 - uid: SharedLib.Model.Settings.RootSettings.Get*
   name: Get
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_Get_
@@ -5623,14 +5274,11 @@ references:
   fullName: SharedLib.Model.Settings.RootSettings.OSVersionP
   nameWithType: RootSettings.OSVersionP
 - uid: SharedLib.Model.Settings.RootSettings.Set(System.String,System.String)
-  name: Set(string, string)
+  name: Set(String, String)
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_Set_System_String_System_String_
   commentId: M:SharedLib.Model.Settings.RootSettings.Set(System.String,System.String)
-  name.vb: Set(String, String)
-  fullName: SharedLib.Model.Settings.RootSettings.Set(string, string)
-  fullName.vb: SharedLib.Model.Settings.RootSettings.Set(String, String)
-  nameWithType: RootSettings.Set(string, string)
-  nameWithType.vb: RootSettings.Set(String, String)
+  fullName: SharedLib.Model.Settings.RootSettings.Set(System.String, System.String)
+  nameWithType: RootSettings.Set(String, String)
 - uid: SharedLib.Model.Settings.RootSettings.Set*
   name: Set
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_Set_
@@ -6036,30 +5684,21 @@ references:
   name: FakeRequestClient()
   href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient__ctor
   commentId: M:Test.SharedLib.API.FakeRequestClient.#ctor
-  name.vb: New()
   fullName: Test.SharedLib.API.FakeRequestClient.FakeRequestClient()
-  fullName.vb: Test.SharedLib.API.FakeRequestClient.New()
   nameWithType: FakeRequestClient.FakeRequestClient()
-  nameWithType.vb: FakeRequestClient.New()
 - uid: Test.SharedLib.API.FakeRequestClient.#ctor(System.Boolean,System.Boolean,System.Boolean)
-  name: FakeRequestClient(bool, bool, bool)
+  name: FakeRequestClient(Boolean, Boolean, Boolean)
   href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient__ctor_System_Boolean_System_Boolean_System_Boolean_
   commentId: M:Test.SharedLib.API.FakeRequestClient.#ctor(System.Boolean,System.Boolean,System.Boolean)
-  name.vb: New(Boolean, Boolean, Boolean)
-  fullName: Test.SharedLib.API.FakeRequestClient.FakeRequestClient(bool, bool, bool)
-  fullName.vb: Test.SharedLib.API.FakeRequestClient.New(Boolean, Boolean, Boolean)
-  nameWithType: FakeRequestClient.FakeRequestClient(bool, bool, bool)
-  nameWithType.vb: FakeRequestClient.New(Boolean, Boolean, Boolean)
+  fullName: Test.SharedLib.API.FakeRequestClient.FakeRequestClient(System.Boolean, System.Boolean, System.Boolean)
+  nameWithType: FakeRequestClient.FakeRequestClient(Boolean, Boolean, Boolean)
 - uid: Test.SharedLib.API.FakeRequestClient.#ctor*
   name: FakeRequestClient
   href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient__ctor_
   commentId: Overload:Test.SharedLib.API.FakeRequestClient.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Test.SharedLib.API.FakeRequestClient.FakeRequestClient
-  fullName.vb: Test.SharedLib.API.FakeRequestClient.New
   nameWithType: FakeRequestClient.FakeRequestClient
-  nameWithType.vb: FakeRequestClient.New
 - uid: Test.SharedLib.API.FakeRequestClient.OKResponseString
   name: OKResponseString
   href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient_OKResponseString
@@ -6096,11 +5735,11 @@ references:
   commentId: F:Test.SharedLib.API.FakeRequestClient.RegisterDeviceResponseString
   fullName: Test.SharedLib.API.FakeRequestClient.RegisterDeviceResponseString
   nameWithType: FakeRequestClient.RegisterDeviceResponseString
-- uid: Test.SharedLib.API.FakeRequestClient.Request(System.Net.Http.HttpRequestMessage)
+- uid: Test.SharedLib.API.FakeRequestClient.Request(HttpRequestMessage)
   name: Request(HttpRequestMessage)
-  href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient_Request_System_Net_Http_HttpRequestMessage_
-  commentId: M:Test.SharedLib.API.FakeRequestClient.Request(System.Net.Http.HttpRequestMessage)
-  fullName: Test.SharedLib.API.FakeRequestClient.Request(System.Net.Http.HttpRequestMessage)
+  href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient_Request_HttpRequestMessage_
+  commentId: M:Test.SharedLib.API.FakeRequestClient.Request(HttpRequestMessage)
+  fullName: Test.SharedLib.API.FakeRequestClient.Request(HttpRequestMessage)
   nameWithType: FakeRequestClient.Request(HttpRequestMessage)
 - uid: Test.SharedLib.API.FakeRequestClient.Request*
   name: Request
@@ -6109,11 +5748,11 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.API.FakeRequestClient.Request
   nameWithType: FakeRequestClient.Request
-- uid: Test.SharedLib.API.FakeRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+- uid: Test.SharedLib.API.FakeRequestClient.RequestString(HttpRequestMessage)
   name: RequestString(HttpRequestMessage)
-  href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient_RequestString_System_Net_Http_HttpRequestMessage_
-  commentId: M:Test.SharedLib.API.FakeRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
-  fullName: Test.SharedLib.API.FakeRequestClient.RequestString(System.Net.Http.HttpRequestMessage)
+  href: api/Test.SharedLib.API.FakeRequestClient.html#Test_SharedLib_API_FakeRequestClient_RequestString_HttpRequestMessage_
+  commentId: M:Test.SharedLib.API.FakeRequestClient.RequestString(HttpRequestMessage)
+  fullName: Test.SharedLib.API.FakeRequestClient.RequestString(HttpRequestMessage)
   nameWithType: FakeRequestClient.RequestString(HttpRequestMessage)
 - uid: Test.SharedLib.API.FakeRequestClient.RequestString*
   name: RequestString
@@ -6224,6 +5863,12 @@ references:
   commentId: T:Test.SharedLib.Model.FakeLocalCertificate
   fullName: Test.SharedLib.Model.FakeLocalCertificate
   nameWithType: FakeLocalCertificate
+- uid: Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
+  name: _fakeLocalCertificate
+  href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate__fakeLocalCertificate
+  commentId: F:Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
+  fullName: Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
+  nameWithType: FakeLocalCertificate._fakeLocalCertificate
 - uid: Test.SharedLib.Model.FakeLocalCertificate.Create
   name: Create()
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_Create
@@ -6238,14 +5883,11 @@ references:
   fullName: Test.SharedLib.Model.FakeLocalCertificate.Create
   nameWithType: FakeLocalCertificate.Create
 - uid: Test.SharedLib.Model.FakeLocalCertificate.GetCertificate(System.String)
-  name: GetCertificate(string)
+  name: GetCertificate(String)
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_GetCertificate_System_String_
   commentId: M:Test.SharedLib.Model.FakeLocalCertificate.GetCertificate(System.String)
-  name.vb: GetCertificate(String)
-  fullName: Test.SharedLib.Model.FakeLocalCertificate.GetCertificate(string)
-  fullName.vb: Test.SharedLib.Model.FakeLocalCertificate.GetCertificate(String)
-  nameWithType: FakeLocalCertificate.GetCertificate(string)
-  nameWithType.vb: FakeLocalCertificate.GetCertificate(String)
+  fullName: Test.SharedLib.Model.FakeLocalCertificate.GetCertificate(System.String)
+  nameWithType: FakeLocalCertificate.GetCertificate(String)
 - uid: Test.SharedLib.Model.FakeLocalCertificate.GetCertificate*
   name: GetCertificate
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_GetCertificate_
@@ -6267,14 +5909,11 @@ references:
   fullName: Test.SharedLib.Model.FakeLocalCertificate.GetInstance
   nameWithType: FakeLocalCertificate.GetInstance
 - uid: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot(System.String)
-  name: InstallCertificateIntoRoot(string)
+  name: InstallCertificateIntoRoot(String)
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_InstallCertificateIntoRoot_System_String_
   commentId: M:Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot(System.String)
-  name.vb: InstallCertificateIntoRoot(String)
-  fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot(string)
-  fullName.vb: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot(String)
-  nameWithType: FakeLocalCertificate.InstallCertificateIntoRoot(string)
-  nameWithType.vb: FakeLocalCertificate.InstallCertificateIntoRoot(String)
+  fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot(System.String)
+  nameWithType: FakeLocalCertificate.InstallCertificateIntoRoot(String)
 - uid: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot*
   name: InstallCertificateIntoRoot
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_InstallCertificateIntoRoot_
@@ -6283,14 +5922,11 @@ references:
   fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallCertificateIntoRoot
   nameWithType: FakeLocalCertificate.InstallCertificateIntoRoot
 - uid: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
-  name: InstallPkcs12IntoMy(string, string)
+  name: InstallPkcs12IntoMy(String, String)
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_InstallPkcs12IntoMy_System_String_System_String_
   commentId: M:Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy(System.String,System.String)
-  name.vb: InstallPkcs12IntoMy(String, String)
-  fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy(string, string)
-  fullName.vb: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy(String, String)
-  nameWithType: FakeLocalCertificate.InstallPkcs12IntoMy(string, string)
-  nameWithType.vb: FakeLocalCertificate.InstallPkcs12IntoMy(String, String)
+  fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy(System.String, System.String)
+  nameWithType: FakeLocalCertificate.InstallPkcs12IntoMy(String, String)
 - uid: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy*
   name: InstallPkcs12IntoMy
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_InstallPkcs12IntoMy_
@@ -6299,14 +5935,11 @@ references:
   fullName: Test.SharedLib.Model.FakeLocalCertificate.InstallPkcs12IntoMy
   nameWithType: FakeLocalCertificate.InstallPkcs12IntoMy
 - uid: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString(System.String)
-  name: UninstallCertificateFromString(string)
+  name: UninstallCertificateFromString(String)
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_UninstallCertificateFromString_System_String_
   commentId: M:Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString(System.String)
-  name.vb: UninstallCertificateFromString(String)
-  fullName: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString(string)
-  fullName.vb: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString(String)
-  nameWithType: FakeLocalCertificate.UninstallCertificateFromString(string)
-  nameWithType.vb: FakeLocalCertificate.UninstallCertificateFromString(String)
+  fullName: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString(System.String)
+  nameWithType: FakeLocalCertificate.UninstallCertificateFromString(String)
 - uid: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString*
   name: UninstallCertificateFromString
   href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate_UninstallCertificateFromString_
@@ -6314,12 +5947,6 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.FakeLocalCertificate.UninstallCertificateFromString
   nameWithType: FakeLocalCertificate.UninstallCertificateFromString
-- uid: Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
-  name: _fakeLocalCertificate
-  href: api/Test.SharedLib.Model.FakeLocalCertificate.html#Test_SharedLib_Model_FakeLocalCertificate__fakeLocalCertificate
-  commentId: F:Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
-  fullName: Test.SharedLib.Model.FakeLocalCertificate._fakeLocalCertificate
-  nameWithType: FakeLocalCertificate._fakeLocalCertificate
 - uid: Test.SharedLib.Model.FakeLocalMachine
   name: FakeLocalMachine
   href: api/Test.SharedLib.Model.FakeLocalMachine.html
@@ -6330,21 +5957,15 @@ references:
   name: FakeLocalMachine()
   href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine__ctor
   commentId: M:Test.SharedLib.Model.FakeLocalMachine.#ctor
-  name.vb: New()
   fullName: Test.SharedLib.Model.FakeLocalMachine.FakeLocalMachine()
-  fullName.vb: Test.SharedLib.Model.FakeLocalMachine.New()
   nameWithType: FakeLocalMachine.FakeLocalMachine()
-  nameWithType.vb: FakeLocalMachine.New()
 - uid: Test.SharedLib.Model.FakeLocalMachine.#ctor*
   name: FakeLocalMachine
   href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine__ctor_
   commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Test.SharedLib.Model.FakeLocalMachine.FakeLocalMachine
-  fullName.vb: Test.SharedLib.Model.FakeLocalMachine.New
   nameWithType: FakeLocalMachine.FakeLocalMachine
-  nameWithType.vb: FakeLocalMachine.New
 - uid: Test.SharedLib.Model.FakeLocalMachine.GetCDrive
   name: GetCDrive()
   href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetCDrive
@@ -6728,24 +6349,21 @@ references:
   fullName: Test.SharedLib.Model.Settings.FakeSettings
   nameWithType: FakeSettings
 - uid: Test.SharedLib.Model.Settings.FakeSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name: FakeSettings(Func<string, string, string>?, Func<string, string, bool>?)
+  name: FakeSettings(Func<String, String, String>, Func<String, String, Boolean>)
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings__ctor_System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__
   commentId: M:Test.SharedLib.Model.Settings.FakeSettings.#ctor(System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean})
-  name.vb: New(Func(Of String, String, String), Func(Of String, String, Boolean))
-  fullName: Test.SharedLib.Model.Settings.FakeSettings.FakeSettings(System.Func<string, string, string>?, System.Func<string, string, bool>?)
-  fullName.vb: Test.SharedLib.Model.Settings.FakeSettings.New(System.Func(Of String, String, String), System.Func(Of String, String, Boolean))
-  nameWithType: FakeSettings.FakeSettings(Func<string, string, string>?, Func<string, string, bool>?)
-  nameWithType.vb: FakeSettings.New(Func(Of String, String, String), Func(Of String, String, Boolean))
+  name.vb: FakeSettings(Func(Of String, String, String), Func(Of String, String, Boolean))
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.FakeSettings(System.Func<System.String, System.String, System.String>, System.Func<System.String, System.String, System.Boolean>)
+  fullName.vb: Test.SharedLib.Model.Settings.FakeSettings.FakeSettings(System.Func(Of System.String, System.String, System.String), System.Func(Of System.String, System.String, System.Boolean))
+  nameWithType: FakeSettings.FakeSettings(Func<String, String, String>, Func<String, String, Boolean>)
+  nameWithType.vb: FakeSettings.FakeSettings(Func(Of String, String, String), Func(Of String, String, Boolean))
 - uid: Test.SharedLib.Model.Settings.FakeSettings.#ctor*
   name: FakeSettings
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings__ctor_
   commentId: Overload:Test.SharedLib.Model.Settings.FakeSettings.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Test.SharedLib.Model.Settings.FakeSettings.FakeSettings
-  fullName.vb: Test.SharedLib.Model.Settings.FakeSettings.New
   nameWithType: FakeSettings.FakeSettings
-  nameWithType.vb: FakeSettings.New
 - uid: Test.SharedLib.Model.Settings.FakeSettings.AccessTokenP
   name: AccessTokenP
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_AccessTokenP
@@ -6851,14 +6469,11 @@ references:
   fullName: Test.SharedLib.Model.Settings.FakeSettings.FirstHostnameP
   nameWithType: FakeSettings.FirstHostnameP
 - uid: Test.SharedLib.Model.Settings.FakeSettings.Get(System.String,System.String)
-  name: Get(string, string)
+  name: Get(String, String)
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_Get_System_String_System_String_
   commentId: M:Test.SharedLib.Model.Settings.FakeSettings.Get(System.String,System.String)
-  name.vb: Get(String, String)
-  fullName: Test.SharedLib.Model.Settings.FakeSettings.Get(string, string)
-  fullName.vb: Test.SharedLib.Model.Settings.FakeSettings.Get(String, String)
-  nameWithType: FakeSettings.Get(string, string)
-  nameWithType.vb: FakeSettings.Get(String, String)
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.Get(System.String, System.String)
+  nameWithType: FakeSettings.Get(String, String)
 - uid: Test.SharedLib.Model.Settings.FakeSettings.Get*
   name: Get
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_Get_
@@ -7166,14 +6781,11 @@ references:
   fullName: Test.SharedLib.Model.Settings.FakeSettings.OSVersionP
   nameWithType: FakeSettings.OSVersionP
 - uid: Test.SharedLib.Model.Settings.FakeSettings.Set(System.String,System.String)
-  name: Set(string, string)
+  name: Set(String, String)
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_Set_System_String_System_String_
   commentId: M:Test.SharedLib.Model.Settings.FakeSettings.Set(System.String,System.String)
-  name.vb: Set(String, String)
-  fullName: Test.SharedLib.Model.Settings.FakeSettings.Set(string, string)
-  fullName.vb: Test.SharedLib.Model.Settings.FakeSettings.Set(String, String)
-  nameWithType: FakeSettings.Set(string, string)
-  nameWithType.vb: FakeSettings.Set(String, String)
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.Set(System.String, System.String)
+  nameWithType: FakeSettings.Set(String, String)
 - uid: Test.SharedLib.Model.Settings.FakeSettings.Set*
   name: Set
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_Set_
@@ -8151,21 +7763,15 @@ references:
   name: FakeProcedure()
   href: api/Test.SharedLib.Procedure.FakeProcedure.html#Test_SharedLib_Procedure_FakeProcedure__ctor
   commentId: M:Test.SharedLib.Procedure.FakeProcedure.#ctor
-  name.vb: New()
   fullName: Test.SharedLib.Procedure.FakeProcedure.FakeProcedure()
-  fullName.vb: Test.SharedLib.Procedure.FakeProcedure.New()
   nameWithType: FakeProcedure.FakeProcedure()
-  nameWithType.vb: FakeProcedure.New()
 - uid: Test.SharedLib.Procedure.FakeProcedure.#ctor*
   name: FakeProcedure
   href: api/Test.SharedLib.Procedure.FakeProcedure.html#Test_SharedLib_Procedure_FakeProcedure__ctor_
   commentId: Overload:Test.SharedLib.Procedure.FakeProcedure.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: Test.SharedLib.Procedure.FakeProcedure.FakeProcedure
-  fullName.vb: Test.SharedLib.Procedure.FakeProcedure.New
   nameWithType: FakeProcedure.FakeProcedure
-  nameWithType.vb: FakeProcedure.New
 - uid: Test.SharedLib.Procedure.FakeProcedure.Run
   name: Run()
   href: api/Test.SharedLib.Procedure.FakeProcedure.html#Test_SharedLib_Procedure_FakeProcedure_Run
@@ -8432,15 +8038,75 @@ references:
   isSpec: "True"
   fullName: Xunit.AssertEx.Is
   nameWithType: AssertEx.Is
+- uid: Xunit.AssertEx.Is``1(``0,``0)
+  name: Is<T>(T, T)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
+  name.vb: Is(Of T)(T, T)
+  fullName: Xunit.AssertEx.Is<T>(T, T)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
+  nameWithType: AssertEx.Is<T>(T, T)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T)
+- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  name: Is<T>(T, T, IEqualityComparer<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
+  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))
+- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  name: Is<T>(T, Expression<Func<T, Boolean>>, String)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
+  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
+  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, System.Boolean>>, System.String)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, System.Boolean)), System.String)
+  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, Boolean>>, String)
+  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
+- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},``0[])
+  name: Is<T>(IEnumerable<T>, T[])
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0____0___
+  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},``0[])
+  name.vb: Is(Of T)(IEnumerable(Of T), T())
+  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, T[])
+  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), T())
+  nameWithType: AssertEx.Is<T>(IEnumerable<T>, T[])
+  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), T())
+- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name: Is<T>(IEnumerable<T>, IEnumerable<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  name: Is<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
+  name: Is<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, Boolean>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Boolean__
+  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
+  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
+  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Func<T, T, System.Boolean>)
+  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, System.Boolean))
+  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, Boolean>)
+  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
 - uid: Xunit.AssertEx.IsFalse(System.Boolean)
-  name: IsFalse(bool)
+  name: IsFalse(Boolean)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsFalse_System_Boolean_
   commentId: M:Xunit.AssertEx.IsFalse(System.Boolean)
-  name.vb: IsFalse(Boolean)
-  fullName: Xunit.AssertEx.IsFalse(bool)
-  fullName.vb: Xunit.AssertEx.IsFalse(Boolean)
-  nameWithType: AssertEx.IsFalse(bool)
-  nameWithType.vb: AssertEx.IsFalse(Boolean)
+  fullName: Xunit.AssertEx.IsFalse(System.Boolean)
+  nameWithType: AssertEx.IsFalse(Boolean)
 - uid: Xunit.AssertEx.IsFalse*
   name: IsFalse
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsFalse_
@@ -8456,13 +8122,13 @@ references:
   fullName: Xunit.AssertEx.IsInstanceOf
   nameWithType: AssertEx.IsInstanceOf
 - uid: Xunit.AssertEx.IsInstanceOf``1(System.Object)
-  name: IsInstanceOf<TExpected>(object)
+  name: IsInstanceOf<TExpected>(Object)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_
   commentId: M:Xunit.AssertEx.IsInstanceOf``1(System.Object)
   name.vb: IsInstanceOf(Of TExpected)(Object)
-  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(object)
-  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(Object)
-  nameWithType: AssertEx.IsInstanceOf<TExpected>(object)
+  fullName: Xunit.AssertEx.IsInstanceOf<TExpected>(System.Object)
+  fullName.vb: Xunit.AssertEx.IsInstanceOf(Of TExpected)(System.Object)
+  nameWithType: AssertEx.IsInstanceOf<TExpected>(Object)
   nameWithType.vb: AssertEx.IsInstanceOf(Of TExpected)(Object)
 - uid: Xunit.AssertEx.IsNot*
   name: IsNot
@@ -8471,6 +8137,60 @@ references:
   isSpec: "True"
   fullName: Xunit.AssertEx.IsNot
   nameWithType: AssertEx.IsNot
+- uid: Xunit.AssertEx.IsNot``1(``0,``0)
+  name: IsNot<T>(T, T)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
+  name.vb: IsNot(Of T)(T, T)
+  fullName: Xunit.AssertEx.IsNot<T>(T, T)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
+  nameWithType: AssertEx.IsNot<T>(T, T)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
+- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  name: IsNot<T>(T, T, IEqualityComparer<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
+  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
+  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
+- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},``0[])
+  name: IsNot<T>(IEnumerable<T>, T[])
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0____0___
+  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},``0[])
+  name.vb: IsNot(Of T)(IEnumerable(Of T), T())
+  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, T[])
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), T())
+  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, T[])
+  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), T())
+- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
+  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T))
+- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
+  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
+  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
+  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
+- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
+  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, Boolean>)
+  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Boolean__
+  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
+  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
+  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Func<T, T, System.Boolean>)
+  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, System.Boolean))
+  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, Boolean>)
+  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
 - uid: Xunit.AssertEx.IsNotInstanceOf*
   name: IsNotInstanceOf
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf_
@@ -8479,13 +8199,13 @@ references:
   fullName: Xunit.AssertEx.IsNotInstanceOf
   nameWithType: AssertEx.IsNotInstanceOf
 - uid: Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
-  name: IsNotInstanceOf<TWrong>(object)
+  name: IsNotInstanceOf<TWrong>(Object)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_
   commentId: M:Xunit.AssertEx.IsNotInstanceOf``1(System.Object)
   name.vb: IsNotInstanceOf(Of TWrong)(Object)
-  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(object)
-  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(Object)
-  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(object)
+  fullName: Xunit.AssertEx.IsNotInstanceOf<TWrong>(System.Object)
+  fullName.vb: Xunit.AssertEx.IsNotInstanceOf(Of TWrong)(System.Object)
+  nameWithType: AssertEx.IsNotInstanceOf<TWrong>(Object)
   nameWithType.vb: AssertEx.IsNotInstanceOf(Of TWrong)(Object)
 - uid: Xunit.AssertEx.IsNotNull*
   name: IsNotNull
@@ -8520,14 +8240,11 @@ references:
   nameWithType: AssertEx.IsNotSameReferenceAs<T>(T, T)
   nameWithType.vb: AssertEx.IsNotSameReferenceAs(Of T)(T, T)
 - uid: Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
-  name: IsNotStructuralEqual(object, object, string)
+  name: IsNotStructuralEqual(Object, Object, String)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_
   commentId: M:Xunit.AssertEx.IsNotStructuralEqual(System.Object,System.Object,System.String)
-  name.vb: IsNotStructuralEqual(Object, Object, String)
-  fullName: Xunit.AssertEx.IsNotStructuralEqual(object, object, string)
-  fullName.vb: Xunit.AssertEx.IsNotStructuralEqual(Object, Object, String)
-  nameWithType: AssertEx.IsNotStructuralEqual(object, object, string)
-  nameWithType.vb: AssertEx.IsNotStructuralEqual(Object, Object, String)
+  fullName: Xunit.AssertEx.IsNotStructuralEqual(System.Object, System.Object, System.String)
+  nameWithType: AssertEx.IsNotStructuralEqual(Object, Object, String)
 - uid: Xunit.AssertEx.IsNotStructuralEqual*
   name: IsNotStructuralEqual
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_
@@ -8535,60 +8252,6 @@ references:
   isSpec: "True"
   fullName: Xunit.AssertEx.IsNotStructuralEqual
   nameWithType: AssertEx.IsNotStructuralEqual
-- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
-  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
-  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T))
-  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>)
-  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T))
-- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
-  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
-  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
-  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
-  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
-- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
-  name: IsNot<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, bool>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Boolean__
-  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
-  name.vb: IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
-  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Func<T, T, bool>)
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, Boolean))
-  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, bool>)
-  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
-- uid: Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},``0[])
-  name: IsNot<T>(IEnumerable<T>, params T[])
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1_System_Collections_Generic_IEnumerable___0____0___
-  commentId: M:Xunit.AssertEx.IsNot``1(System.Collections.Generic.IEnumerable{``0},``0[])
-  name.vb: IsNot(Of T)(IEnumerable(Of T), ParamArray T())
-  fullName: Xunit.AssertEx.IsNot<T>(System.Collections.Generic.IEnumerable<T>, params T[])
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(System.Collections.Generic.IEnumerable(Of T), ParamArray T())
-  nameWithType: AssertEx.IsNot<T>(IEnumerable<T>, params T[])
-  nameWithType.vb: AssertEx.IsNot(Of T)(IEnumerable(Of T), ParamArray T())
-- uid: Xunit.AssertEx.IsNot``1(``0,``0)
-  name: IsNot<T>(T, T)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_
-  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0)
-  name.vb: IsNot(Of T)(T, T)
-  fullName: Xunit.AssertEx.IsNot<T>(T, T)
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T)
-  nameWithType: AssertEx.IsNot<T>(T, T)
-  nameWithType.vb: AssertEx.IsNot(Of T)(T, T)
-- uid: Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
-  name: IsNot<T>(T, T, IEqualityComparer<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:Xunit.AssertEx.IsNot``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
-  name.vb: IsNot(Of T)(T, T, IEqualityComparer(Of T))
-  fullName: Xunit.AssertEx.IsNot<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: Xunit.AssertEx.IsNot(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: AssertEx.IsNot<T>(T, T, IEqualityComparer<T>)
-  nameWithType.vb: AssertEx.IsNot(Of T)(T, T, IEqualityComparer(Of T))
 - uid: Xunit.AssertEx.IsNull*
   name: IsNull
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsNull_
@@ -8622,14 +8285,11 @@ references:
   nameWithType: AssertEx.IsSameReferenceAs<T>(T, T)
   nameWithType.vb: AssertEx.IsSameReferenceAs(Of T)(T, T)
 - uid: Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
-  name: IsStructuralEqual(object, object, string)
+  name: IsStructuralEqual(Object, Object, String)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_
   commentId: M:Xunit.AssertEx.IsStructuralEqual(System.Object,System.Object,System.String)
-  name.vb: IsStructuralEqual(Object, Object, String)
-  fullName: Xunit.AssertEx.IsStructuralEqual(object, object, string)
-  fullName.vb: Xunit.AssertEx.IsStructuralEqual(Object, Object, String)
-  nameWithType: AssertEx.IsStructuralEqual(object, object, string)
-  nameWithType.vb: AssertEx.IsStructuralEqual(Object, Object, String)
+  fullName: Xunit.AssertEx.IsStructuralEqual(System.Object, System.Object, System.String)
+  nameWithType: AssertEx.IsStructuralEqual(Object, Object, String)
 - uid: Xunit.AssertEx.IsStructuralEqual*
   name: IsStructuralEqual
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_
@@ -8638,14 +8298,11 @@ references:
   fullName: Xunit.AssertEx.IsStructuralEqual
   nameWithType: AssertEx.IsStructuralEqual
 - uid: Xunit.AssertEx.IsTrue(System.Boolean)
-  name: IsTrue(bool)
+  name: IsTrue(Boolean)
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsTrue_System_Boolean_
   commentId: M:Xunit.AssertEx.IsTrue(System.Boolean)
-  name.vb: IsTrue(Boolean)
-  fullName: Xunit.AssertEx.IsTrue(bool)
-  fullName.vb: Xunit.AssertEx.IsTrue(Boolean)
-  nameWithType: AssertEx.IsTrue(bool)
-  nameWithType.vb: AssertEx.IsTrue(Boolean)
+  fullName: Xunit.AssertEx.IsTrue(System.Boolean)
+  nameWithType: AssertEx.IsTrue(Boolean)
 - uid: Xunit.AssertEx.IsTrue*
   name: IsTrue
   href: api/Xunit.AssertEx.html#Xunit_AssertEx_IsTrue_
@@ -8653,66 +8310,3 @@ references:
   isSpec: "True"
   fullName: Xunit.AssertEx.IsTrue
   nameWithType: AssertEx.IsTrue
-- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
-  name: Is<T>(IEnumerable<T>, IEnumerable<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
-  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
-  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T))
-  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>)
-  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T))
-- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
-  name: Is<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEqualityComparer{``0})
-  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
-  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>, IEqualityComparer<T>)
-  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), IEqualityComparer(Of T))
-- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
-  name: Is<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, bool>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Boolean__
-  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})
-  name.vb: Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
-  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>, System.Func<T, T, bool>)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, Boolean))
-  nameWithType: AssertEx.Is<T>(IEnumerable<T>, IEnumerable<T>, Func<T, T, bool>)
-  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), IEnumerable(Of T), Func(Of T, T, Boolean))
-- uid: Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},``0[])
-  name: Is<T>(IEnumerable<T>, params T[])
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1_System_Collections_Generic_IEnumerable___0____0___
-  commentId: M:Xunit.AssertEx.Is``1(System.Collections.Generic.IEnumerable{``0},``0[])
-  name.vb: Is(Of T)(IEnumerable(Of T), ParamArray T())
-  fullName: Xunit.AssertEx.Is<T>(System.Collections.Generic.IEnumerable<T>, params T[])
-  fullName.vb: Xunit.AssertEx.Is(Of T)(System.Collections.Generic.IEnumerable(Of T), ParamArray T())
-  nameWithType: AssertEx.Is<T>(IEnumerable<T>, params T[])
-  nameWithType.vb: AssertEx.Is(Of T)(IEnumerable(Of T), ParamArray T())
-- uid: Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
-  name: Is<T>(T, Expression<Func<T, bool>>, string)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_
-  commentId: M:Xunit.AssertEx.Is``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.String)
-  name.vb: Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
-  fullName: Xunit.AssertEx.Is<T>(T, System.Linq.Expressions.Expression<System.Func<T, bool>>, string)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(T, System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean)), String)
-  nameWithType: AssertEx.Is<T>(T, Expression<Func<T, bool>>, string)
-  nameWithType.vb: AssertEx.Is(Of T)(T, Expression(Of Func(Of T, Boolean)), String)
-- uid: Xunit.AssertEx.Is``1(``0,``0)
-  name: Is<T>(T, T)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_
-  commentId: M:Xunit.AssertEx.Is``1(``0,``0)
-  name.vb: Is(Of T)(T, T)
-  fullName: Xunit.AssertEx.Is<T>(T, T)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T)
-  nameWithType: AssertEx.Is<T>(T, T)
-  nameWithType.vb: AssertEx.Is(Of T)(T, T)
-- uid: Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
-  name: Is<T>(T, T, IEqualityComparer<T>)
-  href: api/Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__
-  commentId: M:Xunit.AssertEx.Is``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0})
-  name.vb: Is(Of T)(T, T, IEqualityComparer(Of T))
-  fullName: Xunit.AssertEx.Is<T>(T, T, System.Collections.Generic.IEqualityComparer<T>)
-  fullName.vb: Xunit.AssertEx.Is(Of T)(T, T, System.Collections.Generic.IEqualityComparer(Of T))
-  nameWithType: AssertEx.Is<T>(T, T, IEqualityComparer<T>)
-  nameWithType.vb: AssertEx.Is(Of T)(T, T, IEqualityComparer(Of T))

@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /signtool.exe
 /codesign2.p12
+/DocFX/api/*
