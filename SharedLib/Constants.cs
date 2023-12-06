@@ -106,6 +106,8 @@ namespace Rudeus
         public static readonly string ApiLoginPath = "/api/user_login";
         public static readonly string ApiUpdateMetadataPath = "/api/update_metadata";
         public static readonly string ApiSendInstalledAppsPath = "/api/application_update";
+        public static readonly string ApiUpdateMacAddressPath = "/api/device_mac_update";
+
 
         /// <summary>
         /// カスタムURIスキームで起動する場合の設定
@@ -116,7 +118,6 @@ namespace Rudeus
         /// SAMLログインのlocalhostコールバックポート
         /// </summary>
         public static readonly string CallbackPort = "11178";
-
 
 
         ///////////////////////////

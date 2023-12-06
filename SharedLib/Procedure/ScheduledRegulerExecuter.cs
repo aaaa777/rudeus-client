@@ -77,7 +77,7 @@ namespace Rudeus.Procedure
             string secondNumber = r1.Next(100, 1000).ToString();
             string hostname = $"P{firstNumber}-{secondNumber}";
 
-            UpdateRequest request = Watcher.BuildUpdateRequestWithChanges();
+            UpdateRequest request = Watcher.BuildUpdateRequest();
             request.request_data.hostname = hostname;
             UpdateResponse response;
             try

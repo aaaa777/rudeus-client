@@ -29,7 +29,23 @@ namespace Rudeus.Watchdogs
             Settings = settings ?? new RootSettings();
         }
 
-        public UpdateRequest BuildUpdateRequestWithChanges()
+        public UpdateMacRequest BuildUpdateMacRequest()
+        {
+            var request = new UpdateMacRequest();
+            /*
+            // mac_address
+            if(LM.GetMacAddress() != Settings.MacAddressP)
+            {
+                request.request_data.mac_address = LM.GetMacAddress();
+            }
+            */
+            request.request_data.mac_address = "12-34-56-78-90-AB";
+            request.request_data.interface_name = "Rudeus Virtual LAN card";
+
+            return request;
+        }
+
+        public UpdateRequest BuildUpdateRequest()
         {
             var request = new UpdateRequest();
             

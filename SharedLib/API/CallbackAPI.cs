@@ -85,7 +85,7 @@ namespace Rudeus.API
                 data.RequestText = new StreamReader(context.Request.InputStream, Encoding.UTF8).ReadToEnd();
                 var url = context.Request.Url ?? throw new Exception("Request url doesnt exist");
                 data.Query = System.Web.HttpUtility.ParseQueryString(url.Query);
-                string userId = data.Query.Get("user_id") ?? throw new Exception("user_id not found");
+                string userId = data.Query.Get("mac_address") ?? throw new Exception("mac_address not found");
 
 
                 HttpListenerResponse res;
@@ -172,7 +172,7 @@ namespace Rudeus.API
         /// <returns></returns>
         public static bool SendSamlCallback(string userId, string token)
         {
-            Uri targetUri = new($"http://localhost:{CallbackPort}/?user_id={userId}&token={token}");
+            Uri targetUri = new($"http://localhost:{CallbackPort}/?mac_address={userId}&token={token}");
             return SendCallback(targetUri);
         }
 

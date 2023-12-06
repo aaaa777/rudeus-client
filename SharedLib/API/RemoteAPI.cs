@@ -43,6 +43,7 @@ namespace Rudeus.API
         public static string ApiLoginPath { get; } = Constants.ApiLoginPath;
         public static string ApiUpdateMetadataPath { get; } = Constants.ApiUpdateMetadataPath;
         public static string ApiSendInstalledAppsPath { get; } = Constants.ApiSendInstalledAppsPath;
+        public static string ApiUpdateMacAddressPath { get; } = Constants.ApiUpdateMacAddressPath;
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -308,6 +309,29 @@ namespace Rudeus.API
         }
 
 
+        // Macアドレスの追加送信
+        public static BaseResponse UpdateMacAddress(string accessToken, UpdateMacRequest req)
+        {
+            var payload = JsonSerializer.Serialize(req, UpdateMacRequestContext.Default.UpdateMacRequest);
+            var response = PostRequest(accessToken, ApiUpdatePath, payload);
+
+            try
+            {
+                var con = BaseResponseContext.Default.BaseResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
 
         // ToDo
         public static bool IsAccessTokenAvailable(string accessToken)
@@ -347,7 +371,7 @@ namespace Rudeus.API
             // HTTPリスナを待機
             CallbackData data = await CallbackAPI.StartServer(responseText);
 
-            string requestUser = data.Query?.Get("user_id") ?? throw new UnexpectedResponseException("invaild Request received");
+            string requestUser = data.Query?.Get("mac_address") ?? throw new UnexpectedResponseException("invaild Request received");
 
 
             return requestUser;
