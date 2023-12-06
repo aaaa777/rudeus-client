@@ -14,10 +14,10 @@ namespace Rudeus.Launcher
     {
         public static IAppSettings AppSettings { get; set; }
         public static IRootSettings RootSettings { get; set; }
-        public static string _argsStr { get; set; }
+        public static string ArgsStr { get; set; }
 
-        public static IProcedure _updater { get; set; }
-        public static IExecuter _launcher { get; set; }
+        public static IProcedure Updater { get; set; }
+        public static IExecuter Executer { get; set; }
 
         public static Func<int, bool> ExitFunc { get; set; }
 
@@ -38,10 +38,10 @@ namespace Rudeus.Launcher
             AppSettings = new AppSettings(registryKey);
             RootSettings = new RootSettings();
 
-            _argsStr = JoinArgs(args);
+            ArgsStr = JoinArgs(args);
 
-            _updater = new Updater(aps: AppSettings, rts: RootSettings);
-            _launcher = new Executer(AppSettings, _argsStr);
+            Updater = new Updater(aps: AppSettings, rts: RootSettings);
+            Executer = new Executer(AppSettings, ArgsStr);
             ExitFunc = Exit;
 
             MainAsync().GetAwaiter().GetResult();
@@ -55,12 +55,12 @@ namespace Rudeus.Launcher
                 // ToDo: 重複実行中にプロセスキルをする
 
                 // アップデート確認・実行
-                await _updater.Run();
+                await Updater.Run();
                 Console.WriteLine("Update process done");
 
                 // アプリ起動
-                await _launcher.RunExe();
-                exitCode = _launcher.ExitCode;
+                await Executer.RunExe();
+                exitCode = Executer.ExitCode;
                 Console.WriteLine("ApplicationData stopped");
             }
             // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行

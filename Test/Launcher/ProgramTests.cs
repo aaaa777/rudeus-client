@@ -19,12 +19,12 @@ namespace Test.Launcher
             var fe = new FakeExecuter();
             Program.AppSettings = aps;
             Program.RootSettings = rts;
-            Program._updater = fp;
-            Program._launcher = fe;
+            Program.Updater = fp;
+            Program.Executer = fe;
             Program.ExitFunc = (exitCode) => true;
 
             string[] args = new string[] { };
-            Program._argsStr = Program.JoinArgs(args);
+            Program.ArgsStr = Program.JoinArgs(args);
 
             // Act
             await Program.MainAsync();
@@ -45,12 +45,12 @@ namespace Test.Launcher
             fe.ExitWithUpdateOnce = true;
             Program.AppSettings = aps;
             Program.RootSettings = rts;
-            Program._updater = fp;
-            Program._launcher = fe;
+            Program.Updater = fp;
+            Program.Executer = fe;
             Program.ExitFunc = (exitCode) => true;
 
             string[] args = new string[] { };
-            Program._argsStr = Program.JoinArgs(args);
+            Program.ArgsStr = Program.JoinArgs(args);
 
             // Act
             await Program.MainAsync();
