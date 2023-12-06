@@ -19,6 +19,8 @@ namespace Rudeus.Launcher
         public static IProcedure _updater { get; set; }
         public static IExecuter _launcher { get; set; }
 
+        public static Func<int, bool> ExitFunc { get; set; }
+
         // 実質的なコンストラクタ
         public static void Main(string[] args)
         {
@@ -36,14 +38,11 @@ namespace Rudeus.Launcher
             AppSettings = new AppSettings(registryKey);
             RootSettings = new RootSettings();
 
-            _argsStr = "";
-            if (args.Length > 1)
-            {
-                _argsStr = string.Join(" ", args[1..]);
-            }
+            _argsStr = JoinArgs(args);
 
             _updater = new Updater(aps: AppSettings, rts: RootSettings);
             _launcher = new Executer(AppSettings, _argsStr);
+            ExitFunc = Exit;
 
             MainAsync().GetAwaiter().GetResult();
         }
@@ -73,7 +72,22 @@ namespace Rudeus.Launcher
         Console.WriteLine("Program end.");
         //Console.ReadLine();
 #endif
+            ExitFunc(exitCode);
+        }
+
+        public static string JoinArgs(string[] args)
+        {
+            if (args.Length > 0)
+            {
+               return string.Join(" ", args[1..]);
+            }
+            return "";
+        }
+
+        private static bool Exit(int exitCode)
+        {
             Environment.Exit(exitCode);
+            return true;
         }
     }
 }
