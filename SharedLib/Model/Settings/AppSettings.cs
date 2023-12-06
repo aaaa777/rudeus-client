@@ -151,11 +151,6 @@ namespace SharedLib.Model.Settings
 
         // 一意のデバイスID
         public static string DeviceIdKey = "DeviceId";
-        public static string DeviceId
-        {
-            set { SetStatic(DeviceIdKey, value); }
-            get { return GetStatic(DeviceIdKey); }
-        }
 
         public string DeviceIdP
         {
@@ -165,11 +160,6 @@ namespace SharedLib.Model.Settings
 
         // ログインユーザ(7桁の学籍番号)
         public static string UsernameKey = "DeviceUsername";
-        public static string Username
-        {
-            set { SetStatic(UsernameKey, value); }
-            get { return GetStatic(UsernameKey); }
-        }
 
         public string UsernameP
         {
@@ -179,11 +169,6 @@ namespace SharedLib.Model.Settings
 
         // リクエスト時のアクセストークン
         public static string AccessTokenKey = "AccessToken";
-        public static string AccessToken
-        {
-            set { SetStatic(AccessTokenKey, value); }
-            get { return GetStatic(AccessTokenKey); }
-        }
 
         public string AccessTokenP
         {
@@ -200,28 +185,8 @@ namespace SharedLib.Model.Settings
         // ここからデフォルト以外のレジストリ―キーでも保存可能
 
 
-        // ラベルに記載されたID
-        public static string LabelIdKey = "LabeledId";
-        public static string LabelId
-        {
-            set { SetStatic(LabelIdKey, value); }
-            get { return GetStatic(LabelIdKey); }
-        }
-
-        public string LabelIdP
-        {
-            set { SetFunc(LabelIdKey, value); }
-            get { return GetFunc(LabelIdKey, ""); }
-        }
-
         // アップデートのチャンネルを指定
         public static string UpdateChannelKey = "UpdatingChannel";
-
-        public static string UpdatingChannel
-        {
-            set { SetStatic(UpdateChannelKey, value, false); }
-            get { return GetStatic(UpdateChannelKey, "", false); }
-        }
 
         public string UpdatingChannelP
         {
@@ -237,23 +202,6 @@ namespace SharedLib.Model.Settings
         // Beta     Stableの少し先のバージョンを試す事ができる
         // Delelop  Visual StudioのDebugビルドで実行できる設定
         // Test     (Developのみ)レジストリで値を変更可能な設定
-        public static bool IsBetaChannel() { return UpdatingChannel == "beta"; }
-        public static bool IsTestChannel()
-        {
-#if(DEBUG)
-            return UpdatingChannel == "test";
-#else
-            return false;
-#endif
-        }
-
-        public static void SetBetaChannel() { UpdatingChannel = "beta"; }
-        public static void SetTestChannel()
-        {
-#if(DEBUG)
-            UpdatingChannel = "test";
-#endif
-        }
 
         public bool IsBetaChannelP() { return UpdatingChannelP == "beta"; }
         public bool IsTestChannelP()
@@ -296,13 +244,6 @@ namespace SharedLib.Model.Settings
             get { return GetFunc(LatestVersionStatusKey, ""); }
         }
 
-        public static bool IsLatestVersionStatusOk() { return LatestVersionStatus == "ok"; }
-        public static bool IsLatestVersionStatusDownloaded() { return LatestVersionStatus == "downloaded"; }
-        public static bool IsLatestVersionStatusUnlaunchable() { return LatestVersionStatus == "unlaunchable"; }
-
-        public static void SetLatestVersionStatusOk() { LatestVersionStatus = "ok"; }
-        public static void SetLatestVersionStatusDownloaded() { LatestVersionStatus = "downloaded"; }
-        public static void SetLatestVersionStatusUnlaunchable() { LatestVersionStatus = "unlaunchable"; }
 
         public bool IsLatestVersionStatusOkP() { return LatestVersionStatus == "ok"; }
         public bool IsLatestVersionStatusDownloadedP() { return LatestVersionStatus == "downloaded"; }
@@ -316,27 +257,6 @@ namespace SharedLib.Model.Settings
 
         private static string LastVersionDirPathKey = "LastVersionDirPath";
 
-        public static string LastVersionDirPath
-        {
-            set { SetStatic(LastVersionDirPathKey, value, false); }
-            get
-            {
-#if (DEVELOPMENT)
-                string dir;
-                if (RegistryKey == "Bg")
-                {
-                    dir = "RudeusBg";
-                }
-                else
-                {
-                    dir = "RudeusBgForm";
-                }
-                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-#else
-                return GetStatic(LastVersionDirPathKey, "", false);
-#endif
-            }
-        }
 
         public string LastVersionDirPathP
         {
@@ -362,27 +282,6 @@ namespace SharedLib.Model.Settings
 
         private static string LatestVersionDirPathKey = "LatestVersionDirPath";
 
-        public static string LatestVersionDirPath
-        {
-            set { SetStatic(LatestVersionDirPathKey, value, false); }
-            get
-            {
-#if (DEVELOPMENT)
-                string dir;
-                if (RegistryKey == "Bg")
-                {
-                    dir = "RudeusBg";
-                }
-                else
-                {
-                    dir = "RudeusBgForm";
-                }
-                return $"{Environment.CurrentDirectory}\\..\\..\\..\\..\\{dir}\\bin\\Debug\\net7.0-windows10.0.17763.0\\win-x64";
-#else
-                return GetStatic(LatestVersionDirPathKey, "", false);
-#endif
-            }
-        }
         public string LatestVersionDirPathP
         {
             set { SetFunc(LatestVersionDirPathKey, value); }
@@ -407,12 +306,6 @@ namespace SharedLib.Model.Settings
 
         private static string LastVersionExeNameKey = "LastVersionExeName";
 
-        public static string LastVersionExeName
-        {
-            set { SetStatic(LastVersionExeNameKey, value, false); }
-            get { return GetStatic(LastVersionExeNameKey, "", false); }
-        }
-
         public string LastVersionExeNameP
         {
             set { SetFunc(LastVersionExeNameKey, value); }
@@ -420,12 +313,6 @@ namespace SharedLib.Model.Settings
         }
 
         private static string LatestVersionExeNameKey = "LatestVersionExeName";
-
-        public static string LatestVersionExeName
-        {
-            set { SetStatic(LatestVersionExeNameKey, value, false); }
-            get { return GetStatic(LatestVersionExeNameKey, "", false); }
-        }
 
         public string LatestVersionExeNameP
         {
@@ -435,12 +322,6 @@ namespace SharedLib.Model.Settings
 
         private static string LastDirNameKey = "LastDirname";
 
-        public static string LastDirName
-        {
-            set { SetStatic(LastDirNameKey, value, false); }
-            get { return GetStatic(LastDirNameKey, "", false); }
-        }
-
         public string LastDirNameP
         {
             set { SetFunc(LastDirNameKey, value); }
@@ -449,12 +330,6 @@ namespace SharedLib.Model.Settings
 
         private static string LatestDirNameKey = "LatestDirname";
 
-        public static string LatestDirName
-        {
-            set { SetStatic(LatestDirNameKey, value, false); }
-            get { return GetStatic(LatestDirNameKey, "", false); }
-        }
-
         public string LatestDirNameP
         {
             set { SetFunc(LatestDirNameKey, value); }
@@ -462,8 +337,6 @@ namespace SharedLib.Model.Settings
         }
 
         // exeを実行できる絶対パス
-        public static string LastVersionExePath { get { return $"{LastVersionDirPath}\\{LastVersionExeName}"; } }
-        public static string LatestVersionExePath { get { return $"{LatestVersionDirPath}\\{LatestVersionExeName}"; } }
         public string LastVersionExePathP 
         {
             get { return $"{LastVersionDirPathP}\\{LastVersionExeNameP}"; } 
@@ -476,12 +349,6 @@ namespace SharedLib.Model.Settings
 
         // lastに存在するバージョンについて
         public static string CurrentVersionKey = "CurrentVersion";
-
-        public static string CurrentVersion
-        {
-            set { SetStatic(CurrentVersionKey, value, false); }
-            get { return GetStatic(CurrentVersionKey, "", false); }
-        }
 
         public string CurrentVersionP
         {

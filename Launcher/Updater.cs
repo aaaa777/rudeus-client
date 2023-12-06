@@ -20,13 +20,15 @@ namespace Rudeus.Launcher
     {
         private string? RegistryKey;
         public IAppSettings AppSettings { get; set; }
+        public IRootSettings RootSettings { get; set; }
         private string lastVersionDirName = "last";
         private string latestVersionDirName = "latest";
         private string tempdir;
 
-        public Updater(IAppSettings? aps = null)
+        public Updater(IAppSettings aps, IRootSettings rts)
         {
-            AppSettings = aps ?? new AppSettings();
+            RootSettings = rts;
+            AppSettings = aps;
         }
 
         /// <inheritdoc/>
@@ -45,7 +47,7 @@ namespace Rudeus.Launcher
             UpdateMetadataResponse? res = null;
             try
             {
-                res = RemoteAPI.GetUpdateMetadata(SharedLib.Model.Settings.AppSettings.AccessToken);
+                res = RemoteAPI.GetUpdateMetadata(RootSettings.AccessTokenP);
             }
             catch (Exception ex)
             {
@@ -91,7 +93,7 @@ namespace Rudeus.Launcher
             Console.WriteLine("Update is completed");
 
             //起動先変更
-            SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusDownloaded();
+            AppSettings.SetLatestVersionStatusDownloadedP();
         }
 
         private void StartUpdate(string url)
@@ -100,21 +102,21 @@ namespace Rudeus.Launcher
             //RootSettings.UpdateRegistryKey(RegistryKey);
 
             // latestが起動確認できている場合のみlastにコピーさせる
-            if (SharedLib.Model.Settings.AppSettings.IsLatestVersionStatusOk())
+            if (AppSettings.IsLatestVersionStatusOkP())
             {
                 // latestを使用不能にマーク
-                SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable();
+                AppSettings.SetLatestVersionStatusUnlaunchableP();
 
                 SwitchLatestDirLast();
             }
             else
             {
                 // latestを使用不能にマーク
-                SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable();
+                AppSettings.SetLatestVersionStatusUnlaunchableP();
 
-                if (Directory.Exists(SharedLib.Model.Settings.AppSettings.LatestVersionDirPath))
+                if (Directory.Exists(AppSettings.LatestVersionDirPathP))
                 {
-                    Directory.Delete(SharedLib.Model.Settings.AppSettings.LatestVersionDirPath, true);
+                    Directory.Delete(AppSettings.LatestVersionDirPathP, true);
                 }
             }
 
@@ -133,14 +135,14 @@ namespace Rudeus.Launcher
         {
             // del, mv latest last
             //RootSettings.UpdateRegistryKey(RegistryKey);
-            if (Directory.Exists(SharedLib.Model.Settings.AppSettings.LastVersionDirPath))
+            if (Directory.Exists(AppSettings.LastVersionDirPathP))
             {
-                Directory.Delete(SharedLib.Model.Settings.AppSettings.LastVersionDirPath, true);
+                Directory.Delete(AppSettings.LastVersionDirPathP, true);
             }
 
-            if (Directory.Exists(SharedLib.Model.Settings.AppSettings.LatestVersionDirPath))
+            if (Directory.Exists(AppSettings.LatestVersionDirPathP))
             {
-                Directory.Move(SharedLib.Model.Settings.AppSettings.LatestVersionDirPath, SharedLib.Model.Settings.AppSettings.LastVersionDirPath);
+                Directory.Move(AppSettings.LatestVersionDirPathP, AppSettings.LastVersionDirPathP);
             }
         }
 
@@ -167,7 +169,7 @@ namespace Rudeus.Launcher
         // 一時フォルダをそのままlatestに移動
         private void MvTempLatest(string tmpDirName)
         {
-            Directory.Move(tmpDirName, $"{SharedLib.Model.Settings.AppSettings.LatestVersionDirPath}");
+            Directory.Move(tmpDirName, $"{AppSettings.LatestVersionDirPathP}");
         }
 
         public bool ShouldUpdate(string localVersion, string remoteVersion)

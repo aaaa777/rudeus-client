@@ -12,7 +12,8 @@ namespace Rudeus.Launcher
 {
     public class Program
     {
-        public static IAppSettings _appSettings { get; set; }
+        public static IAppSettings AppSettings { get; set; }
+        public static IRootSettings RootSettings { get; set; }
         public static string _argsStr { get; set; }
 
         public static IProcedure _updater { get; set; }
@@ -32,7 +33,8 @@ namespace Rudeus.Launcher
             }
 
             string registryKey = args[0];
-            _appSettings = new AppSettings(registryKey);
+            AppSettings = new AppSettings(registryKey);
+            RootSettings = new RootSettings();
 
             _argsStr = "";
             if (args.Length > 1)
@@ -40,8 +42,8 @@ namespace Rudeus.Launcher
                 _argsStr = string.Join(" ", args[1..]);
             }
 
-            _updater = new Updater();
-            _launcher = new Executer(_appSettings, _argsStr);
+            _updater = new Updater(aps: AppSettings, rts: RootSettings);
+            _launcher = new Executer(AppSettings, _argsStr);
 
             MainAsync().GetAwaiter().GetResult();
         }

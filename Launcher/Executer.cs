@@ -75,7 +75,7 @@ namespace Rudeus.Launcher.Procedure
                 // ToDo: 終了が遅かった時はフォールバックしない？
 
                 // レジストリにLatestが異常終了することを記録
-                SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusUnlaunchable();
+                AppSettings.SetLatestVersionStatusUnlaunchableP();
 
                 // lastを実行、フォールバックは無し
                 ExitCode = StartProcess(lastExePath, Args);
@@ -87,7 +87,7 @@ namespace Rudeus.Launcher.Procedure
                 Console.WriteLine("Latest version status is ok");
 
                 // Latestの実行に成功したことを記録
-                SharedLib.Model.Settings.AppSettings.SetLatestVersionStatusOk();
+                AppSettings.SetLatestVersionStatusOkP();
             }
 
             return;

@@ -7,18 +7,26 @@ using System.Text;
 
 namespace Rudeus.Procedure
 {
+
     /// <summary>
     /// 管理サーバにインストール済みアプリを送信する
     /// </summary>
     internal class InstalledAppsSender : IProcedure
     {
+        public IRootSettings RootSettings { get; set; }
+
+        public InstalledAppsSender(IRootSettings rootSettings)
+        {
+            RootSettings = rootSettings;
+        }
+
         /// <summary>
         /// 実行する
         /// </summary>
         /// <returns></returns>
         public async Task Run()
         {
-            string accessToken = AppSettings.AccessToken;
+            string accessToken = RootSettings.AccessTokenP;
             // インストール済みアプリ送信
             // TODO: WatchDogs
             try

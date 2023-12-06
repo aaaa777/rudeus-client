@@ -14,12 +14,14 @@ namespace Rudeus.Procedure
     public class UserLoginExecuter : IProcedure
     {
         // DI for testing
+        // TODO: コンストラクタ
+        public IRootSettings RootSettings { get; set; } = new RootSettings();
         public static Func<string, bool> OpenBrowser { get; set; } = OpenWebPage;
 
         /// <inheritdoc/>
         public async Task Run()
         {
-            string userIdOld = AppSettings.Username;
+            string userIdOld = RootSettings.UsernameP;
             Console.WriteLine("old user id:" + userIdOld);
             if (userIdOld == "")
             {
@@ -39,8 +41,8 @@ namespace Rudeus.Procedure
                 string userId = await userIdTask;
 
                 // 管理サーバに送信
-                LoginResponse res = RemoteAPI.LoginDevice(AppSettings.AccessToken, userId);
-                AppSettings.Username = userId;
+                LoginResponse res = RemoteAPI.LoginDevice(RootSettings.AccessTokenP, userId);
+                RootSettings.UsernameP = userId;
             }
             catch
             {

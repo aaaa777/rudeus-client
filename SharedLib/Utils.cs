@@ -23,6 +23,7 @@ namespace Rudeus
 
         // DI for static class
         public static ILocalMachine LM { get; set; } = LocalMachine.GetInstance();
+        public static IRootSettings RootSettings { get; set; } = new RootSettings();
 
         /// <summary>
         /// s9999999@s.do-johodai.ac.jp -> 9999999
@@ -75,17 +76,16 @@ namespace Rudeus
             string deviceId = LM.GetDeviceId();
 
             // デフォルトのレジストリにセット
-            IRootSettings Settings = new RootSettings();
-            Settings.HostnameP = hostname;
-            Settings.FirstHostnameP = hostname;
-            Settings.DeviceIdP = deviceId;
+            RootSettings.HostnameP = hostname;
+            RootSettings.FirstHostnameP = hostname;
+            RootSettings.DeviceIdP = deviceId;
 
             // 発行
             try
             {
                 RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
 
-                AppSettings.AccessToken = response.response_data.access_token ?? throw new("AccessToken not set");
+                RootSettings.AccessTokenP = response.response_data.access_token ?? throw new("AccessToken not set");
                 Console.WriteLine($"registered device: `{hostname}`: {response.status}");
                 return;
             }

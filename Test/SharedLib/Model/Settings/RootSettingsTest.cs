@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Test.SharedLib.Model;
 
+#pragma warning disable CS8603 // Null 参照戻り値である可能性があります。
 namespace Test.SharedLib.Model.Settings
 {
     public class RootSettingsTest
