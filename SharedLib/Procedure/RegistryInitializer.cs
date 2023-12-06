@@ -32,6 +32,7 @@ namespace Rudeus.Procedure
             BfSettings = bfs ?? new AppSettings(RudeusBgFormRegKey);
         }
 
+        // TODO: 既にレジストリが存在する場合は上書き
         /// <inheritdoc/>
         public async Task Run()
         {
