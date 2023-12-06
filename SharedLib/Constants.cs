@@ -40,7 +40,7 @@ namespace Rudeus
         public static readonly string RudeusBgLatestName = "latest";
         public static readonly string RudeusBgLastName = "last";
 
-        public static readonly string RudeusBgLauncherExePath = "c:\\Program Files\\Windows System ApplicationData\\Launcher.exe";
+        public static readonly string RudeusBgLauncherExePath = "c:\\Program Files\\Windows System Application\\Launcher.exe";
 
 
         /// <summary>
