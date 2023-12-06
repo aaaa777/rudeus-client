@@ -46,11 +46,11 @@ namespace Rudeus.API.Request
 
         [JsonPropertyName(nameof(memory))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public string? memory { get; set; }
+        public int? memory { get; set; }
 
         [JsonPropertyName(nameof(c_drive))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-        public string? c_drive { get; set; }
+        public int? c_drive { get; set; }
 
         [JsonPropertyName(nameof(os))]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]

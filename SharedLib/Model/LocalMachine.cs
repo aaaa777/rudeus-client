@@ -93,12 +93,12 @@ namespace Rudeus.Model
 
         public string GetMemory()
         {
-            return "16GB";
+            return "16";
         }
 
         public string GetCDrive()
         {
-            return "256GB";
+            return "256";
         }
 
         public string GetOS()

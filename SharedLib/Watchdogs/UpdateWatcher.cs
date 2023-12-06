@@ -54,13 +54,13 @@ namespace Rudeus.Watchdogs
             // memory
             if(LM.GetMemory() != Settings.MemoryP)
             {
-                request.request_data.memory = LM.GetMemory();
+                request.request_data.memory = Int32.Parse(LM.GetMemory());
             }
 
             // c_drive
             if(LM.GetCDrive() != Settings.CDriveP)
             {
-                request.request_data.c_drive = LM.GetCDrive();
+                request.request_data.c_drive = Int32.Parse(LM.GetCDrive());
             }
 
             // os
