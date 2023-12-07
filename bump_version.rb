@@ -50,12 +50,14 @@ end.parse!
 dirname = options[:dirname]
 target_version = options[:version]
 
-f = File.open(dirname + "/version.txt", 'r+')
+f = File.open(dirname + "/version.txt", 'r')
 version = f.read()
 new_version = bump_version(version, target_version)
-
-f.write(new_version)
 f.close()
+
+f3 = File.open(dirname + "/version.txt", 'w')
+f3.write(new_version)
+f3.close()
 
 f2 = File.open(dirname + "/Version.cs", "w")
 version_class_txt = <<"EOS"
