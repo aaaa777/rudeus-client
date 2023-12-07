@@ -63,7 +63,6 @@ namespace Rudeus
         //// API settings ////
         //////////////////////
 
-#if(DEBUG)
         /// <summary>
         /// SAMLログインのエントリーページ
         /// </summary>
@@ -78,24 +77,6 @@ namespace Rudeus
         /// クライアント証明書認証が不要なAPIエンドポイント
         /// </summary>
         public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
-
-#else
-        /// <summary>
-        /// SAMLログインのエントリーページ
-        /// </summary>
-        public static readonly string SamlLoginUrl = "https://win.nomiss.net/rudeus_login";
-
-        /// <summary>
-        /// クライアント証明書認証が必要なAPIエンドポイント
-        /// </summary>
-        public static readonly string ApiEndpointWithCert = "https://manager.nomiss.net/";
-
-        /// <summary>
-        /// クライアント証明書認証が不要なAPIエンドポイント
-        /// </summary>
-        public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
-
-#endif
 
         /// <summary>
         /// APIのパス
