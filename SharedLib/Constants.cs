@@ -153,7 +153,11 @@ namespace Rudeus
         /// 未使用エラーコード
         /// </summary>
         public static int LaunchTwiceExitCode = 2002;
-
+        /// <summary>
+        /// ホスト接続が出来なかった場合のエラーコード
+        /// このコードだった場合`unlaunchable`にマークしない
+        /// </summary>
+        public static int HostUnreachableCode = 3001;
 
         public static string DummyUpdateUrl = "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip";
         public static string DummyVersion = "1.0.0.1";
