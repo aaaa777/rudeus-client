@@ -32,7 +32,7 @@ OptionParser.new do |opts|
   end
 
   opts.on('--patch') do
-    options[:patch] = :patch
+    options[:version] = :patch
   end
 
   opts.on('--minor') do
@@ -54,6 +54,10 @@ f = File.open(dirname + "/version.txt", 'r')
 version = f.read()
 new_version = bump_version(version, target_version)
 f.close()
+
+if version == new_version
+  exit(false)
+end
 
 f3 = File.open(dirname + "/version.txt", 'w')
 f3.write(new_version)
