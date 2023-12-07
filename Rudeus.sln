@@ -10,16 +10,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{3816213A-CC04-402D-AFE2-9B9466F98E8E}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		ca.crt = ca.crt
-		bump_version.rb = bump_version.rb
 		codesign2.crt = codesign2.crt
-		DocFX\docfx.json = DocFX\docfx.json
 		.github\workflows\dotnet-desktop.yml = .github\workflows\dotnet-desktop.yml
-		global.json = global.json
 		Installer\InnoSetupConfig.iss = Installer\InnoSetupConfig.iss
 		README.md = README.md
-		stu2.crt = stu2.crt
-		DocFX\toc.yml = DocFX\toc.yml
+		.github\workflows\version.yml = .github\workflows\version.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Initializer", "Initializer\Initializer.csproj", "{1B243447-C4D2-4ED9-8FB5-D2221210D357}"
@@ -32,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLib", "SharedLib\SharedLib.csproj", "{656B1061-72A0-4617-924A-770E40600AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocFX", "DocFX\DocFX.csproj", "{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocFX", "DocFX\DocFX.csproj", "{CE353ACA-1979-4A36-8A27-BA42FCCD35C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

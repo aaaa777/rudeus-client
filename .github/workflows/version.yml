@@ -12,6 +12,14 @@ on:
           - major
           - minor
           - patch
+      target:
+        description: Target
+        required: true
+        default: Command
+        type: choice
+        options:
+          - Command
+          - Application
 
 jobs:
   version-up:
@@ -24,19 +32,19 @@ jobs:
         id: version
         run: |
           set -x
-          ruby ./bump_version.rb -d Command --${{ github.event.inputs.semantic }}
+          ruby ./bump_version.rb -d ${{ github.event.inputs.target }} --${{ github.event.inputs.semantic }}
         env:
           SEMANTIC: ${{ github.event.inputs.semantic }}
       - name: Commit & PR
         run: |
           set -x
           version=$(cat Command/version.txt)
-          branch="release/${version}"
+          branch="release/${{ github.event.inputs.target }}/${version}"
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git switch -c ${branch}
           git add .
-          git commit -m "${version}"
+          git commit -m "çXêV ${{ github.event.inputs.target }} ${version}"
           git push origin ${branch}
           gh pr create --base ${GITHUB_REF_NAME} --head ${branch} --assignee ${GITHUB_ACTOR} --title ${version} --body ''
         env:
