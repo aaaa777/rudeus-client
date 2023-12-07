@@ -9,7 +9,7 @@ using Test.SharedLib.Model;
 namespace Test.SharedLib.Model.Settings
 {
     /// <summary>
-    /// FakeSettingsのテスト
+    /// FakeSettingsのテストクラス
     /// </summary>
     public class FakeSettingsTest
     {
