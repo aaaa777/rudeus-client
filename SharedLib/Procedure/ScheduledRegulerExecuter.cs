@@ -31,9 +31,12 @@ namespace Rudeus.Procedure
         {
             // UpdateDevice‚ÌŽÀs
             UpdateResponse res = await SendRegularReport();
+            
             await LocalMachineInfoUpdater.Run();
 
             HandlePushDataFromResponse(res);
+
+            await SendMacAddressReport();
         }
 
 
@@ -90,10 +93,26 @@ namespace Rudeus.Procedure
                 Console.WriteLine("server connection failed");
                 throw;
             }
-            await LocalMachineInfoUpdater.Run();
-            RootSettings.HostnameP = hostname;
 
             return response;
+        }
+
+        private async Task SendMacAddressReport()
+        {
+            string accessToken = RootSettings.AccessTokenP;
+
+            UpdateMacRequest request = Watcher.BuildUpdateMacRequest();
+            BaseResponse response;
+            try
+            {
+                response = RemoteAPI.UpdateMacAddress(accessToken, request);
+                Console.WriteLine($"req: changing mac_address into `{request.request_data.mac_address}` => res: {response.status}");
+            }
+            catch
+            {
+                Console.WriteLine("server connection failed");
+                throw;
+            }
         }
     }
 }
