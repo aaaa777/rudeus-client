@@ -200,8 +200,8 @@ jobs:
     # Zip Package for update
     - name: Zip artifacts
       run: |
-        Compress-Archive -Path Application\version.txt Application\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Application_${{ matrix.configuration }}.zip
-        Compress-Archive -Path Application\version.txt Command\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Command_${{ matrix.configuration }}.zip
+        Compress-Archive -Path Application\version.txt, Application\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Application_${{ matrix.configuration }}.zip
+        Compress-Archive -Path Application\version.txt, Command\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Command_${{ matrix.configuration }}.zip
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     #- name: Upload build artifacts
