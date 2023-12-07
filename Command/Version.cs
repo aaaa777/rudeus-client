@@ -6,7 +6,7 @@ namespace Rudeus.Command
     {
         public static new string ToString() 
         {
-            return "0.1.8";
+            return "0.2.0";
         }
     }
 }
