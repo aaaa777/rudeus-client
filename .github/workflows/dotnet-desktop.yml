@@ -130,17 +130,6 @@ jobs:
 
     # Compile installer
 
-    # Zip installer
-    #- uses: montudor/action-zip@v1
-    #  with:
-    #    args: zip -r RudeusLauncher.zip net7.0-windows10.0.17763.0\*
-    #- name: Zip artifacts
-    #  run: |
-    #    Compress-Archive -Path RudeusLauncher\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\* -Destination RudeusLauncher${{ matrix.configuration }}.zip
-    #    Compress-Archive -Path RudeusBg\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBg${{ matrix.configuration }}.zip
-    #    Compress-Archive -Path RudeusBgForm\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgForm${{ matrix.configuration }}.zip
-    #    Compress-Archive -Path RudeusBgInitializer\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination RudeusBgInitializer${{ matrix.configuration }}.zip
-    #    Compress-Archive -Path RudeusBgInitializer${{ matrix.configuration }}.zip,RudeusBg${{ matrix.configuration }}.zip,RudeusBgForm${{ matrix.configuration }}.zip,RudeusLauncher${{ matrix.configuration }}.zip -Destination RudeusPackage${{ matrix.configuration }}.zip
     
     # Create release
     #- name: Create release in github
@@ -188,6 +177,12 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
+    - name: Sign exe for update package
+      run: |
+        .\signtool.exe sign /v /f .\GitHubActionsWorkflow.pfx /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d "System Program" /fd SHA256 Application\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\Application.exe
+        .\signtool.exe sign /v /f .\GitHubActionsWorkflow.pfx /p ${{ secrets.Pfx_Passphrase }} /t http://timestamp.comodoca.com/authenticode /d "System Program" /fd SHA256 Command\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\Command.exe
+      env:
+        Configuration: ${{ matrix.configuration }}
     
     # Create the app package by building and packaging the Windows Application Packaging project
     #- name: Create the app package
@@ -201,6 +196,12 @@ jobs:
     # Remove the pfx
     - name: Remove the pfx
       run: Remove-Item -path .\GitHubActionsWorkflow.pfx
+
+    # Zip Package for update
+    - name: Zip artifacts
+      run: |
+        Compress-Archive -Path Application\version.txt Application\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Application_${{ matrix.configuration }}.zip
+        Compress-Archive -Path Application\version.txt Command\bin\${{ matrix.configuration }}\net7.0-windows10.0.17763.0\win-x64\* -Destination Command_${{ matrix.configuration }}.zip
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     #- name: Upload build artifacts
@@ -236,3 +237,27 @@ jobs:
         asset_name: HIU_System_Manager_Installer_${{ matrix.configuration }}.exe # name to upload the release as, use $$ to insert date (YYYYMMDD) and 6 letter commit hash
         asset_content_type: application/zip # required by GitHub API
         max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
+
+    - name: Deploy Windows release assets
+      uses: WebFreak001/deploy-nightly@v2.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label}
+        release_id: 132351782
+        asset_path: Application_${{ matrix.configuration }}.zip
+        asset_name: Application_${{ matrix.configuration }}_$$.exe
+        asset_content_type: application/zip
+        max_releases: 1
+
+    - name: Deploy Windows release assets
+      uses: WebFreak001/deploy-nightly@v2.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label}
+        release_id: 132351782
+        asset_path: Command_${{ matrix.configuration }}.zip
+        asset_name: Command_${{ matrix.configuration }}_$$.exe
+        asset_content_type: application/zip
+        max_releases: 1
