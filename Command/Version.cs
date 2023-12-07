@@ -1,4 +1,4 @@
-﻿using SharedLib;
+using SharedLib;
 
 namespace Rudeus.Command
 {
@@ -6,7 +6,7 @@ namespace Rudeus.Command
     {
         public static new string ToString() 
         {
-            return "0.1.7";
+            return "0.1.8";
         }
     }
 }
