@@ -238,7 +238,7 @@ jobs:
         asset_content_type: application/zip # required by GitHub API
         max_releases: 1 # optional, if there are more releases than this matching the asset_name, the oldest ones are going to be deleted
 
-    - name: Deploy Windows release assets
+    - name: Deploy Application Package
       uses: WebFreak001/deploy-nightly@v2.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -246,11 +246,11 @@ jobs:
         upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label}
         release_id: 132351782
         asset_path: Application_${{ matrix.configuration }}.zip
-        asset_name: Application_${{ matrix.configuration }}_$$.exe
+        asset_name: Application_${{ matrix.configuration }}.zip
         asset_content_type: application/zip
         max_releases: 1
 
-    - name: Deploy Windows release assets
+    - name: Deploy Command Package
       uses: WebFreak001/deploy-nightly@v2.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -258,6 +258,6 @@ jobs:
         upload_url: https://uploads.github.com/repos/aaaa777/rudeus-client/releases/132351782/assets{?name,label}
         release_id: 132351782
         asset_path: Command_${{ matrix.configuration }}.zip
-        asset_name: Command_${{ matrix.configuration }}_$$.exe
+        asset_name: Command_${{ matrix.configuration }}.zip
         asset_content_type: application/zip
         max_releases: 1
