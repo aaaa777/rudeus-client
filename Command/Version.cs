@@ -1,4 +1,4 @@
-﻿using SharedLib;
+using SharedLib;
 
 namespace Rudeus.Command
 {
