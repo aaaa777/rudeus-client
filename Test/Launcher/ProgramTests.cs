@@ -15,10 +15,12 @@ namespace Test.Launcher
             // Arrange
             IAppSettings aps = new FakeSettings();
             IRootSettings rts = new FakeSettings();
+            var av = new FakeProcedure();
             var fp = new FakeProcedure();
             var fe = new FakeExecuter();
             Program.AppSettings = aps;
             Program.RootSettings = rts;
+            Program.AccessTokenValidator = av;
             Program.Updater = fp;
             Program.Executer = fe;
             Program.ExitFunc = (exitCode) => true;
@@ -30,6 +32,7 @@ namespace Test.Launcher
             await Program.MainAsync();
 
             // Assert
+            Assert.Equal(1, av.RunCount);
             Assert.Equal(1, fp.RunCount);
             Assert.Equal(1, fp.RunCount);
         }
@@ -40,11 +43,13 @@ namespace Test.Launcher
             // Arrange
             IAppSettings aps = new FakeSettings();
             IRootSettings rts = new FakeSettings();
+            var av = new FakeProcedure();
             var fp = new FakeProcedure();
             var fe = new FakeExecuter();
             fe.ExitWithUpdateOnce = true;
             Program.AppSettings = aps;
             Program.RootSettings = rts;
+            Program.AccessTokenValidator = av;
             Program.Updater = fp;
             Program.Executer = fe;
             Program.ExitFunc = (exitCode) => true;
@@ -56,6 +61,7 @@ namespace Test.Launcher
             await Program.MainAsync();
 
             // Assert
+            Assert.Equal(2, av.RunCount);
             Assert.Equal(2, fp.RunCount);
             Assert.Equal(2, fe.RunCount);
         }
