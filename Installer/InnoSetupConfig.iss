@@ -1,4 +1,4 @@
-; -- InnoSetupConfig.iss --
+ï»¿; -- InnoSetupConfig.iss --
 ;#define BuildType "Release"
 ;#define BuildType GetEnv("buildenv")
 #if GetEnv("Configuration") != ""
@@ -6,36 +6,48 @@
 #else
 #define DefaultBuildType "Debug"
 #endif
+
+#if GetEnv("Launcher_version") != ""
+#define LauncherVersion GetEnv("Launcher_version")
+#else
+#define LauncherVersion "1.0.0"
+#endif
+
 #define CompileRoot ".."
 
-; TODO: auto generateƒZƒNƒVƒ‡ƒ“‚ğæ“ª‚É—pˆÓ‚µ‚Ä•¡”ƒrƒ‹ƒh‚ğ©“®‰»‚·‚éC#ƒvƒƒWƒFƒNƒg‚Ìì¬
-; TODO: ƒrƒ‹ƒh‚É‰½‚ç‚©‚ÌŠÂ‹«•Ï”‚ÅƒRƒ“ƒpƒCƒ‹‚ğw’è‚Å‚«‚é‚æ‚¤‚É‚·‚é
-; RUDEUS_BUILD_TYPE := Debug | Release
+; TODO: auto generateã‚»ã‚¯ã‚·ãƒ§ãƒ³ã‚’å…ˆé ­ã«ç”¨æ„ã—ã¦è¤‡æ•°ãƒ“ãƒ«ãƒ‰ã‚’è‡ªå‹•åŒ–ã™ã‚‹C#ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ä½œæˆ
+; TODO: ãƒ“ãƒ«ãƒ‰æ™‚ã«ä½•ã‚‰ã‹ã®ç’°å¢ƒå¤‰æ•°ã§ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã‚’æŒ‡å®šã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
+; Configuration := Debug | Release
+; Launcher_version := 1.0.0
 
 [Setup]
+; ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã«è¡¨ç¤ºã•ã‚Œã‚‹ã‚¢ãƒ—ãƒªå
 AppId=7225E697-A594-4F3E-ABE9-8E8D9BAFEC9F
 AppName=HIU System Manager
-AppVersion=0.1.7
-WizardStyle=modern
+AppVersion={#LauncherVersion}
+
+; ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å…ˆã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’æŒ‡å®šã™ã‚‹
 DefaultDirName={autopf}\HIU
 DefaultGroupName=HIU
 UninstallDisplayIcon={autopf}\HIU\BackGroundService.exe
+
+; ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã®è¨­å®š
+WizardStyle=modern
 Compression=lzma2
 SolidCompression=yes
-OutputDir=userdocs:Inno Setup Examples Output  
-OutputBaseFilename=HIU_System_Manager_Installer_{#DefaultBuildType}
-; "ArchitecturesAllowed=x64" specifies that Setup cannot run on
-; anything but x64.
 ArchitecturesAllowed=x64
-; "ArchitecturesInstallIn64BitMode=x64" requests that the install be
-; done in "64-bit mode" on x64, meaning it should use the native
-; 64-bit Program Files directory and the 64-bit view of the registry.
 ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
 DisableDirPage=yes
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
 ;UserInfoPage=yes
+
+; ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã®å‡ºåŠ›å…ˆã‚’æŒ‡å®šã™ã‚‹
+OutputDir=userdocs:Inno Setup Examples Output  
+OutputBaseFilename=HIU_System_Manager_Installer_{#DefaultBuildType}
+
+; ç½²åãƒ„ãƒ¼ãƒ«ã®è¨­å®š
 SignTool=signtool2 $f
 
 [Dirs]
@@ -100,15 +112,15 @@ Filename: {tmp}\Initializer.exe;
 Name: en; MessagesFile: "compiler:Default.isl"
 
 [CustomMessages]
-en.InstallingLabel=­—ƒZƒbƒgƒAƒbƒv’†...
+en.InstallingLabel=å°‘å¥³ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ä¸­...
 
 [Code]
 
-// UserInfo‚ÌƒVƒŠƒAƒ‹®‡«‚ğŠm”F   
+// UserInfoæ™‚ã®ã‚·ãƒªã‚¢ãƒ«æ•´åˆæ€§ã‚’ç¢ºèª   
 //function CheckSerial(Serial: String): Boolean;
 //begin
 // serial format is HIU-PXX-XXX(XXX)
-// TODO: HIU-[]-[]‚Ì‚æ‚¤‚É“ü—Í‚³‚¹‚é
+// TODO: HIU-[]-[]ã®ã‚ˆã†ã«å…¥åŠ›ã•ã›ã‚‹
 //Serial := Trim(Serial);
 //if not Copy(Serial, 1, 5) = 'HIU-P' then
 //  result := false
@@ -118,7 +130,7 @@ en.InstallingLabel=­—ƒZƒbƒgƒAƒbƒv’†...
 //  result := true
 //end;
 
-// ƒCƒ“ƒXƒg[ƒ‹‘O‚ÉƒoƒbƒNƒOƒ‰ƒEƒ“ƒhƒ^ƒXƒN‚ğ’â~‚·‚é
+// ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å‰ã«ãƒãƒƒã‚¯ã‚°ãƒ©ã‚¦ãƒ³ãƒ‰ã‚¿ã‚¹ã‚¯ã‚’åœæ­¢ã™ã‚‹
 procedure TaskKill(FileName: String);
 var
   ResultCode: Integer;
