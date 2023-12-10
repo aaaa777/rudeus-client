@@ -44,6 +44,7 @@ namespace Rudeus.API
         public static string ApiUpdateMetadataPath { get; } = Constants.ApiUpdateMetadataPath;
         public static string ApiSendInstalledAppsPath { get; } = Constants.ApiSendInstalledAppsPath;
         public static string ApiUpdateMacAddressPath { get; } = Constants.ApiUpdateMacAddressPath;
+        public static string ApiUpdateLabelIdPath { get; } = Constants.ApiUpdateLabelIdPath;
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -290,7 +291,7 @@ namespace Rudeus.API
             //return new UpdateMetadataResponse(Constants.DummyVersion, Constants.DummyUpdateUrl);
             
             //var response = GetRequest(null, ApiUpdateMetadataPath);
-            var response = PostRequest(accessToken, ApiUpdateMetadataPath, JsonSerializer.Serialize(new EmptyRequest(), EmptyRequestContext.Default.EmptyRequest));
+            var response = GetRequest(accessToken, ApiUpdateMetadataPath);
             try
             {
                 var con = UpdateMetadataResponseContext.Default.UpdateMetadataResponse;
@@ -332,8 +333,38 @@ namespace Rudeus.API
             }
         }
 
+        ///<summary>
+        /// ラベルIDを登録する
+        /// </summary>
+        public static BaseResponse UpdateLabelId(string accessToken, string labelId)
+        {
+            var req = new UpdateLabelIdRequest(labelId);
+            var payload = JsonSerializer.Serialize(req, UpdateLabelIdRequestContext.Default.UpdateLabelIdRequest);
+            var response = PostRequest(accessToken, ApiUpdateLabelIdPath, payload);
 
-        // ToDo
+            try
+            {
+                var con = BaseResponseContext.Default.BaseResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
+
+        /// <summary>
+        /// アクセストークンが有効かどうかを確認する
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <returns></returns>
         public static bool IsAccessTokenAvailable(string accessToken)
         {
             try

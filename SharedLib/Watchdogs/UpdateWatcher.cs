@@ -99,12 +99,6 @@ namespace Rudeus.Watchdogs
                 request.request_data.withsecure = LM.GetWithSecure() != "";
             }
 
-            // label_id
-            if(disableCache || LM.GetLabelId() != Settings.LabelIdP)
-            {
-                request.request_data.label_id = LM.GetLabelId();
-            }
-
             return request;
         }
     }

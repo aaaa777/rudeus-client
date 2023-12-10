@@ -41,7 +41,7 @@ namespace Rudeus.Procedure
         public bool IsFirstRun()
         {
             string accessToken = _settings.AccessTokenP;
-            return accessToken == null && accessToken == "";
+            return accessToken == null || accessToken == "";
         }
     }
 }

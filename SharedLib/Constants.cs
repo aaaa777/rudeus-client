@@ -82,13 +82,14 @@ namespace Rudeus
         /// <summary>
         /// APIのパス
         /// </summary>
-        public static readonly string ApiCheckStatusPath = "/admin";
+        public static readonly string ApiCheckStatusPath = "/api/check_server_status";
         public static readonly string ApiRegisterPath = "/api/device_initialize";
         public static readonly string ApiUpdatePath = "/api/device_update";
         public static readonly string ApiLoginPath = "/api/user_login";
         public static readonly string ApiUpdateMetadataPath = "/api/get_update_metadata";
         public static readonly string ApiSendInstalledAppsPath = "/api/application_update";
         public static readonly string ApiUpdateMacAddressPath = "/api/device_mac_update";
+        public static readonly string ApiUpdateLabelIdPath = "/api/label_id_update";
 
 
         /// <summary>
