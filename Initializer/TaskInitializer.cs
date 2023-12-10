@@ -43,13 +43,16 @@ namespace Rudeus.Initializer.Procedure
                 rd.Repetition.Interval = TimeSpan.FromMinutes(5);
                 td.Triggers.Add(rd);
 
+                td.Principal.UserId = WindowsIdentity.GetCurrent().Name;
+                td.Principal.LogonType = TaskLogonType.InteractiveToken;
+
                 // RudeusBgのランチャーを起動
                 //td.Actions.Add(new ExecAction($"{Constants.RudeusBgExePath}", "", null));
                 td.Actions.Add(new ExecAction($"{Constants.RudeusBgLauncherExePath}", $"{Constants.RudeusBgRegKey}", null));
                 td.Principal.RunLevel = TaskRunLevel.Highest;
 
                 // Windowsサービスに隠しておく
-                ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, null);
+                ts.RootFolder.RegisterTaskDefinition(@"Microsoft\Windows\SysPreService\CheckStatus", td, TaskCreation.CreateOrUpdate, WindowsIdentity.GetCurrent().Name, null, TaskLogonType.InteractiveToken, null);
 
 
 
