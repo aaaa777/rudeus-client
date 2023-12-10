@@ -32,11 +32,11 @@ namespace Rudeus.Procedure
             // UpdateDeviceÇÃé¿çs
             UpdateResponse res = await SendRegularReport();
             
-            await LocalMachineInfoUpdater.Run();
-
             HandlePushDataFromResponse(res);
 
             await SendMacAddressReport();
+
+            await LocalMachineInfoUpdater.Run();
         }
 
 

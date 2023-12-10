@@ -188,5 +188,17 @@ namespace Rudeus
             var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(source));
             return BitConverter.ToString(bytes).Replace("-", "").ToLower();
         }
+
+        ///<summary>
+        ///
+        /// </summary>
+        public static string formatMacAddress(string macAddress)
+        {
+            // 12-34-56-78-90-12 -> 123456789012
+            string rawAddress = macAddress.Replace("-", "");
+
+            // 123456789012 -> 12:34:56:78:90:12
+            return string.Join(":", Enumerable.Range(0, 6).Select(i => rawAddress.Substring(i * 2, 2)));
+        }
     }
 }

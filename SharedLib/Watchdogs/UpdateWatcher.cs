@@ -45,7 +45,7 @@ namespace Rudeus.Watchdogs
             foreach(var i in interfaces)
             {
                 var requestData = new UpdateMacInterface();
-                requestData.mac_address = i["mac_address"] ;
+                requestData.mac_address = i["mac_address"];
                 requestData.name = i["name"];
                 request.request_data.interfaces.Add(requestData);
             }

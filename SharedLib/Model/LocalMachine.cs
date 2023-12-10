@@ -77,6 +77,10 @@ namespace Rudeus.Model
 
             moc.Dispose();
             mc.Dispose();
+            if(productName.Length > 30)
+            {
+                return productName.Substring(0, 30);
+            }
             return productName;
         }
 
@@ -141,10 +145,15 @@ namespace Rudeus.Model
             {
                 Console.WriteLine(mo["Name"]);
                 // TODO: 30文字以上にリクエスト変更要求
-                cpuName = (mo["Name"].ToString() ?? "null set").Substring(0, 30);
+                cpuName = (mo["Name"].ToString() ?? "null set");
                 mo.Dispose();
             }
             mos.Dispose();
+
+            if(cpuName.Length > 30)
+            {
+                return cpuName.Substring(0, 30);
+            }
             return cpuName;
         }
 
@@ -209,7 +218,7 @@ namespace Rudeus.Model
                 {
                     var dict = new Dictionary<string, string>();
                     dict.Add("name", adapter.Name);
-                    dict.Add("mac_address", adapter.GetPhysicalAddress().ToString());
+                    dict.Add("mac_address", Utils.formatMacAddress(adapter.GetPhysicalAddress().ToString()));
                     list.Add(dict);
                 }
             }
