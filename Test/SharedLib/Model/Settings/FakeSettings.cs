@@ -91,6 +91,7 @@ namespace Test.SharedLib.Model.Settings
         public string WithSecureP { get => GetFunc("WS", ""); set => SetFunc("WS", value); }
 
         public string InterfacesHashP { get => GetFunc("IH", ""); set => SetFunc("IH", value); }
+        public string InstalledAppsHashP { get => GetFunc("IAH", ""); set => SetFunc("IAH", value); }
 
         public bool IsBetaChannelP()
         {

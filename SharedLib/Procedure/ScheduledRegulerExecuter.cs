@@ -36,6 +36,8 @@ namespace Rudeus.Procedure
 
             await SendMacAddressReport();
 
+            await SendInstalledApps();
+
             await LocalMachineInfoUpdater.Run();
         }
 
@@ -117,6 +119,28 @@ namespace Rudeus.Procedure
             catch
             {
                 Console.WriteLine("server connection failed");
+                throw;
+            }
+        }
+
+        private async Task SendInstalledApps()
+        {
+            var request = Watcher.BuildSendInstalledAppsRequest();
+            if(request == null)
+            {
+                return;
+            }
+
+            string accessToken = RootSettings.AccessTokenP;
+            // インストール済みアプリ送信
+
+            try
+            {
+                RemoteAPI.SendInstalledApps(accessToken, request);
+            }
+            catch
+            {
+                Console.WriteLine("failed to send installed apps");
                 throw;
             }
         }

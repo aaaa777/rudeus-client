@@ -41,5 +41,6 @@ namespace SharedLib.Model.Settings
         void SetTestChannelP();
 
         string InterfacesHashP { get; set; }
+        string InstalledAppsHashP { get; set; }
     }
 }

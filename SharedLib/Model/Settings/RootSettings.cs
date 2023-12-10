@@ -226,6 +226,13 @@ namespace SharedLib.Model.Settings
             set { SetFunc(InterfacesHashKey, value); }
             get { return GetFunc(InterfacesHashKey, ""); }
         }
+
+        public string InstalledAppsHashKey = "InstalledAppsHash";
+        public string InstalledAppsHashP
+        {
+            set { SetFunc(InstalledAppsHashKey, value); }
+            get { return GetFunc(InstalledAppsHashKey, ""); }
+        }
         // for debugging
 
         //public static string 

@@ -125,5 +125,22 @@ namespace Rudeus.Watchdogs
             //}
             return request;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// 
+        public SendInstalledAppsRequest? BuildSendInstalledAppsRequest()
+        {
+            List<ApplicationData> apps = InstalledApplications.LoadAsync().Result;
+
+            if(Settings.InstalledAppsHashP == Utils.GetInstalledAppsHash(apps))
+            {
+                return null;
+            }
+
+            var request = new SendInstalledAppsRequest(apps);
+            return request;
+        }
     }
 }

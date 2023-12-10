@@ -168,6 +168,17 @@ namespace Rudeus
             throw new NotImplementedException();
         }
 
+        public static string GetInstalledAppsHash(List<ApplicationData> list)
+        {
+            string source = "";
+            foreach (var item in list)
+            {
+                source += item.Name;
+                source += item.Version;
+            }
+            return GetHash(source);
+        }
+
         public static string GetNetworkInterfaceHash(List<Dictionary<string, string>> list)
         {
             string source = "";

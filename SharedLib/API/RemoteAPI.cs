@@ -250,6 +250,31 @@ namespace Rudeus.API
             }
         }
 
+        public static BaseResponse SendInstalledApps(string accessToken, SendInstalledAppsRequest req)
+        {
+            var payload = JsonSerializer.Serialize(req, SendInstalledAppsRequestContext.Default.SendInstalledAppsRequest);
+
+#if(DEVELOPMENT)
+            var response = "{\r\n\"status\":\"ok\"}";
+#else
+            var response = PostRequest(accessToken, ApiSendInstalledAppsPath, payload);
+#endif
+            try
+            {
+                var jsonResponse = JsonSerializer.Deserialize(response, BaseResponseContext.Default.BaseResponse);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
         // TODO: CallbackAPIに移動する
         /// <summary>
         /// ログインして紐づけを行ったUserIdを取得
