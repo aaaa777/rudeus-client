@@ -83,7 +83,7 @@ namespace Rudeus.API
                 HttpListenerContext context = await listener.GetContextAsync();
 
                 data.RequestText = new StreamReader(context.Request.InputStream, Encoding.UTF8).ReadToEnd();
-                var url = context.Request.Url ?? throw new Exception("Request url doesnt exist");
+                var url = context.Request.Url ?? throw new Exception("Request download_url doesnt exist");
                 data.Query = System.Web.HttpUtility.ParseQueryString(url.Query);
                 string userId = data.Query.Get("mac_address") ?? throw new Exception("mac_address not found");
 

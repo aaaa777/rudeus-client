@@ -18,6 +18,7 @@ namespace Rudeus.Launcher
 
         public static IProcedure Updater { get; set; }
         public static IExecuter Executer { get; set; }
+        public static IProcedure AccessTokenValidator { get; set; }
 
         public static Func<int, bool> ExitFunc { get; set; }
 
@@ -40,6 +41,7 @@ namespace Rudeus.Launcher
 
             ArgsStr = JoinArgs(args);
 
+            AccessTokenValidator = new AccessTokenValidator(RootSettings);
             Updater = new Updater(aps: AppSettings, rts: RootSettings);
             Executer = new Executer(AppSettings, ArgsStr);
             ExitFunc = Exit;
@@ -52,6 +54,9 @@ namespace Rudeus.Launcher
 
             do
             {
+                // アクセストークンの有効性を確認
+                await AccessTokenValidator.Run();
+
                 // ToDo: 重複実行中にプロセスキルをする
 
                 // アップデート確認・実行

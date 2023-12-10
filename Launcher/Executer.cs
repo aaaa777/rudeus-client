@@ -53,13 +53,13 @@ namespace Rudeus.Launcher.Procedure
             if (!skipLatest)
             {
                 // latestの実行
-                Console.WriteLine("Trying launching latest version");
+                Console.WriteLine("Trying launching latest stable");
                 ExitCode = StartProcess(latestExePath, Args);
             }
             else
             {
-                Console.WriteLine("Last version is selected cuz latest version is marked `unlaunchable`");
-                Console.WriteLine("After next update comes, latest version will be tryed to launch");
+                Console.WriteLine("Last stable is selected cuz latest stable is marked `unlaunchable`");
+                Console.WriteLine("After next update comes, latest stable will be tryed to launch");
             }
 
 
@@ -68,9 +68,9 @@ namespace Rudeus.Launcher.Procedure
             {
                 if (!skipLatest)
                 {
-                    Console.WriteLine("Latest version returned wrong exit code");
+                    Console.WriteLine("Latest stable returned wrong exit code");
                 }
-                Console.WriteLine("Trying launching last version");
+                Console.WriteLine("Trying launching last stable");
 
                 // ToDo: 終了が遅かった時はフォールバックしない？
 
@@ -83,8 +83,8 @@ namespace Rudeus.Launcher.Procedure
             // latestが正常終了した時、そのまま終了
             else
             {
-                Console.WriteLine("Latest version returned exit code 0");
-                Console.WriteLine("Latest version status is ok");
+                Console.WriteLine("Latest stable returned exit code 0");
+                Console.WriteLine("Latest stable status is ok");
 
                 // Latestの実行に成功したことを記録
                 AppSettings.SetLatestVersionStatusOkP();

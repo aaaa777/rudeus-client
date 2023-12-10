@@ -60,9 +60,23 @@ namespace Rudeus.Launcher.Procedure
             }
 
             string latestVersionLocal = AppSettings.CurrentVersionP;
+            UpdateMetadataChannels channels;
 
-            string latestVersionRemote = res.request_data.stable_version;
-            string latestVersionZipUrl = res.request_data.stable_zip_url;
+            if(AppSettings.RegistryKey == Constants.RudeusBgRegKey)
+            {
+                channels = res.response_data.Command;
+            }
+            else if(AppSettings.RegistryKey == Constants.RudeusBgFormRegKey)
+            {
+                channels = res.response_data.Application;
+            }
+            else
+            {
+                return;
+            }
+
+            string latestVersionRemote = channels.stable.version;
+            string latestVersionZipUrl = channels.stable.download_url;
 
             // アップデート判定
             if (!ShouldUpdate(latestVersionLocal, latestVersionRemote))
@@ -81,11 +95,12 @@ namespace Rudeus.Launcher.Procedure
                 // アップデート成功後、バージョンを変更
                 AppSettings.CurrentVersionP = latestVersionRemote;
             }
-            catch
+            catch (Exception ex)
             {
                 // アップデート失敗、フォールバック処理
                 Console.WriteLine("Update failed");
-                Console.WriteLine("Updating app will be retryed on next launching");
+                Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Updating channels will be retryed on next launching");
                 return;
             }
 

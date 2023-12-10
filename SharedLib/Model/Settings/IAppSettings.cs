@@ -8,6 +8,7 @@ namespace SharedLib.Model.Settings
     /// </summary>
     public interface IAppSettings : IBaseSettings
     {
+        string RegistryKey { get; }
         string CurrentVersionP { get; set; }
         string LastDirNameP { get; set; }
         string LastVersionDirPathP { get; set; }

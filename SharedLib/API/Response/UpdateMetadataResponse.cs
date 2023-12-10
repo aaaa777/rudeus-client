@@ -14,34 +14,38 @@ namespace Rudeus.API.Response
         [JsonPropertyName(nameof(status))]
         public string status { get; set; }
 
-        [JsonPropertyName(nameof(request_data))]
-        public UpdateMetadataResponseData request_data { get; set; }
+        [JsonPropertyName(nameof(response_data))]
+        public UpdateMetadataResponseData response_data { get; set; }
 
         // JsonSerializerでparameterless constructorが必要
         // https://stackoverflow.com/questions/72000907/each-parameter-in-the-deserialization-constructor-on-type-must-bind-to-an-object
-        public UpdateMetadataResponse() { }
-        public UpdateMetadataResponse(string latestVersion, string url) 
-        {
-            request_data = new UpdateMetadataResponseData(latestVersion, url);
-        }
-
+        public UpdateMetadataResponse() { response_data = new UpdateMetadataResponseData(); }
     }
 
     public class UpdateMetadataResponseData
     {
-        [JsonPropertyName(nameof(stable_version))]
-        public string stable_version { get; set; }
+        [JsonPropertyName(nameof(Application))]
+        public UpdateMetadataChannels? Application { get; set; }
 
-        [JsonPropertyName(nameof(stable_zip_url))]
-        public string stable_zip_url { get; set; }
+        [JsonPropertyName(nameof(Command))]
+        public UpdateMetadataChannels? Command { get; set; }
 
         public UpdateMetadataResponseData() { }
+    }
 
-        public UpdateMetadataResponseData(string stable_version, string stable_zip_url)
-        {
-            this.stable_version = stable_version;
-            this.stable_zip_url = stable_zip_url;
-        }
+    public class UpdateMetadataChannels
+    {
+        [JsonPropertyName(nameof(stable))]
+        public UpdateMetadataDetail? stable { get; set; }
+    }
+
+    public class UpdateMetadataDetail
+    {
+        [JsonPropertyName(nameof(version))]
+        public string version { get; set; }
+
+        [JsonPropertyName(nameof(download_url))]
+        public string download_url { get; set; }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]

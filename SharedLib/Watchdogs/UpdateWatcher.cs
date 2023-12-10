@@ -36,7 +36,7 @@ namespace Rudeus.Watchdogs
             // mac_address
             if(LM.GetMacAddress() != Settings.MacAddressP)
             {
-                request.request_data.mac_address = LM.GetMacAddress();
+                request.response_data.mac_address = LM.GetMacAddress();
             }
             */
             var requestData = new UpdateMacInterface();

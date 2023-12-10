@@ -19,7 +19,7 @@ namespace SharedLib.Model.Settings
 
         // レジストリ：アプリのルート
         private string RegistryDir = Constants.RegistryDir;
-        private string RegistryKey;
+        public string RegistryKey { get; }
 
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
@@ -71,7 +71,6 @@ namespace SharedLib.Model.Settings
         }
 
 
-        // ここからデフォルトのレジストリキーでのみ保存可能
 
         // 最初に登録されたHostname
         public static string FirstHostnameKey = "FirstHostname";

@@ -137,7 +137,7 @@ namespace Rudeus.Model
             return "256";
         }
 
-        // https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-version
+        // https://learn.microsoft.com/en-us/windows/win32/sysinfo/operating-system-stable
         public string GetOS()
         {
             return $"Windows {GetWinVersion()}";
