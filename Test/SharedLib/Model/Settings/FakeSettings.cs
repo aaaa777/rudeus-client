@@ -12,6 +12,7 @@ namespace Test.SharedLib.Model.Settings
     /// </summary>
     public class FakeSettings : IAppSettings, IRootSettings
     {
+        public string RegistryKey { get; set; } = "";
         public Func<string, string, string> GetFunc { get; set; }
         public Func<string, string, bool> SetFunc { get; set; }
 
