@@ -58,22 +58,56 @@ namespace Rudeus.Model
             return volumeIdList;
         }
 
+        public string GetProductName()
+        {
+            string productName = "Unknown product";
+            ManagementClass mc = new ManagementClass("Win32_ComputerSystem");
+            ManagementObjectCollection moc = mc.GetInstances();
+            foreach (ManagementObject mo in moc)
+            {
+                Console.WriteLine("Manufacturer:{0}", mo["Manufacturer"]);
+                productName = (string)mo["Manufacturer"];
+                // モデル名
+                Console.WriteLine("Model:{0}", mo["Model"]);
+                productName += " " + (string)mo["Model"];
+
+                mo.Dispose();
+            }
+
+            moc.Dispose();
+            mc.Dispose();
+            return productName;
+        }
+
         public string GetDeviceId()
         {
-            // ToDo: デバイスIDを実際に取得するコードに置き換え
-            Guid g = Guid.NewGuid();
-            string guid8 = g.ToString().Substring(0, 8);
-            return $"000000-{guid8}";
+            string deviceId = "Unknown device id";
+            ManagementClass mc = new ManagementClass("Win32_OperatingSystem");
+            ManagementObjectCollection moc = mc.GetInstances();
+            foreach (ManagementObject mo in moc)
+            {
+                //シリアルナンバー
+                Console.WriteLine("SerialNumber:{0}", mo["SerialNumber"]);
+                deviceId = (string)mo["SerialNumber"];
+                //最後にブートされた日時
+                Console.WriteLine("LastBootUpTime:{0}", mo["LastBootUpTime"]);
+
+                mo.Dispose();
+            }
+
+            moc.Dispose();
+            mc.Dispose();
+            return deviceId;
         }
 
         public string GetHostname()
         {
             // ToDo: ホスト名を実際に取得するコードに置き換え
+            return System.Net.Dns.GetHostName();
             Random r1 = new Random();
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
             return $"P{firstNumber}-{secondNumber}";
-            // System.Net.Dns.GetHostName();
         }
 
         public string GetWinVersion()

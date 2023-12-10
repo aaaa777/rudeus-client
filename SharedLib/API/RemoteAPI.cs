@@ -138,6 +138,31 @@ namespace Rudeus.API
             }
         }
 
+        public static RegisterResponse RegisterDevice(RegisterRequest req)
+        {
+            var payload = JsonSerializer.Serialize(req, RegisterRequestContext.Default.RegisterRequest);
+#if (DEVELOPMENT)
+            // デバッグ用のダミーレスポンス
+            var response = "{\r\n\"status\":\"ok\",\r\n\"response_data\":{\r\n\"access_token\":\"debug|dummy_access_token\"\r\n}\r\n}";
+#else
+            var response = PostRequest(null, ApiRegisterPath, payload);
+#endif
+            try
+            {
+                var jsonResponse = JsonSerializer.Deserialize(response, RegisterResponseContext.Default.RegisterResponse);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw new UnexpectedResponseException("Server response invalid json");
+            }
+        }
+
         /// <summary>
         /// デバイスIDとアクセストークンを利用してデバイス情報を更新する
         /// </summary>

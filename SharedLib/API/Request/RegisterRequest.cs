@@ -20,18 +20,14 @@ namespace Rudeus.API.Request
         {
             request_data = new RegisterRequestData(deviceId, hostname, manageId);
         }
+
+        public RegisterRequest() { request_data = new RegisterRequestData(); }
     }
     public class RegisterRequestData
     {
 
         [JsonPropertyName(nameof(device_id))]
         public string? device_id { get; set; }
-
-        [JsonPropertyName(nameof(hostname))]
-        public string? hostname { get; set; }
-
-        [JsonPropertyName(nameof(manage_id))]
-        public string? manage_id { get; set; }
 
         [JsonPropertyName(nameof(product_name))]
         public string? product_name { get; set; }
@@ -40,10 +36,10 @@ namespace Rudeus.API.Request
         public RegisterRequestData(string deviceId, string hostname, string manageId)
         {
             device_id = deviceId;
-            this.hostname = hostname;
-            this.manage_id = manageId;
-            this.product_name = "Rudeus Test Client";
+            product_name = "Rudeus Test Client";
         }
+
+        public RegisterRequestData() { }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]

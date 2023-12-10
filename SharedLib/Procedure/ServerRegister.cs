@@ -1,5 +1,6 @@
 ﻿using Rudeus;
 using Rudeus.API;
+using Rudeus.API.Request;
 using Rudeus.API.Response;
 using Rudeus.Model;
 using SharedLib.Model.Settings;
@@ -28,29 +29,34 @@ namespace Rudeus.Procedure
         /// <inheritdoc/>
         public async Task Run()
         {
-            string hostname = _localMachine.GetHostname();
             string deviceId = _localMachine.GetDeviceId();
+            string productName = _localMachine.GetProductName();
 
-            // デフォルトのレジストリにセット
+            // リクエストを作成
+            var req = new RegisterRequest();
+            req.request_data = new RegisterRequestData()
+            {
+                device_id = deviceId,
+                product_name = productName,
+            };
             
-            _settings.HostnameP = hostname;
-            _settings.FirstHostnameP = hostname;
-            _settings.DeviceIdP = deviceId;
-
             // 発行
             try
             {
-                RegisterResponse response = RemoteAPI.RegisterDevice(deviceId, hostname);
+                RegisterResponse response = RemoteAPI.RegisterDevice(req);
 
                 _settings.AccessTokenP = response.response_data.access_token ?? throw new("AccessToken not set");
-                Console.WriteLine($"registered device: `{hostname}`: {response.status}");
-                return;
+                Console.WriteLine($"registered device: `{deviceId}`: {response.status}");
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
                 Console.WriteLine("server connection failed, device is not registered yet");
+                return;
             }
+
+            // デフォルトのレジストリにセット
+            _settings.DeviceIdP = deviceId;
         }
     }
 }

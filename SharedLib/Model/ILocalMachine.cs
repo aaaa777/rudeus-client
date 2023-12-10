@@ -16,6 +16,7 @@
         /// <returns></returns>
         public List<string> GetStorageDeviceIdList();
 
+        public string GetProductName();
         public string GetDeviceId();
 
         public string GetHostname();

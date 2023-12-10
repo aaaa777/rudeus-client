@@ -82,5 +82,9 @@ namespace Test.SharedLib.Model
             return "P12-345";
         }
 
+        public string GetProductName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
