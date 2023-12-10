@@ -47,60 +47,60 @@ namespace Rudeus.Watchdogs
             return request;
         }
 
-        public UpdateRequest BuildUpdateRequest()
+        public UpdateRequest BuildUpdateRequest(bool disableCache=false)
         {
             var request = new UpdateRequest();
             
             // hostname
-            if(LM.GetHostname() != Settings.HostnameP)
+            if(disableCache || LM.GetHostname() != Settings.HostnameP)
             {
                 request.request_data.hostname = LM.GetHostname();
             }
 
             // spec
-            if(LM.GetSpec() != Settings.SpecP)
+            if(disableCache || LM.GetSpec() != Settings.SpecP)
             {
                 request.request_data.spec = LM.GetSpec();
             }
 
             // cpu_name
-            if(LM.GetCpuName() != Settings.CpuNameP)
+            if(disableCache || LM.GetCpuName() != Settings.CpuNameP)
             {
                 request.request_data.cpu_name = LM.GetCpuName();
             }
 
             // memory
-            if(LM.GetMemory() != Settings.MemoryP)
+            if(disableCache || LM.GetMemory() != Settings.MemoryP)
             {
                 request.request_data.memory = Int32.Parse(LM.GetMemory());
             }
 
             // c_drive
-            if(LM.GetCDrive() != Settings.CDriveP)
+            if(disableCache || LM.GetCDrive() != Settings.CDriveP)
             {
                 request.request_data.c_drive = Int32.Parse(LM.GetCDrive());
             }
 
             // os
-            if(LM.GetOS() != Settings.OSP)
+            if(disableCache || LM.GetOS() != Settings.OSP)
             {
                 request.request_data.os = LM.GetOS();
             }
 
             // os_version
-            if(LM.GetOSVersion() != Settings.OSVersionP)
+            if(disableCache || LM.GetOSVersion() != Settings.OSVersionP)
             {
                 request.request_data.os_version = LM.GetOSVersion();
             }
 
             // withsecure
-            if(LM.GetWithSecure() != Settings.WithSecureP)
+            if(disableCache || LM.GetWithSecure() != Settings.WithSecureP)
             {
                 request.request_data.withsecure = LM.GetWithSecure() != "";
             }
 
             // label_id
-            if(LM.GetLabelId() != Settings.LabelIdP)
+            if(disableCache || LM.GetLabelId() != Settings.LabelIdP)
             {
                 request.request_data.label_id = LM.GetLabelId();
             }
