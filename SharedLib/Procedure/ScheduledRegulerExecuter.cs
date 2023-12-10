@@ -65,7 +65,7 @@ namespace Rudeus.Procedure
                 {
                     continue;
                 }
-                OperationsController.Run(pd.type, pd.payload);
+                OperationsController.Run(pd.type, pd.message);
             }
         }
 

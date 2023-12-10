@@ -30,13 +30,16 @@ namespace Rudeus.API.Response
     public class PushResponseData
     {
         [JsonPropertyName(nameof(id))]
-        public string? id { get; set; }
+        public int? id { get; set; }
 
         [JsonPropertyName(nameof(type))]
         public string? type { get; set; }
 
-        [JsonPropertyName(nameof(payload))]
-        public string? payload { get; set; }
+        [JsonPropertyName(nameof(message))]
+        public string? message { get; set; }
+
+        [JsonPropertyName(nameof(created_at))]
+        public string? created_at { get; set; }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]
