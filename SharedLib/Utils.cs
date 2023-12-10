@@ -167,5 +167,26 @@ namespace Rudeus
         {
             throw new NotImplementedException();
         }
+
+        public static string GetNetworkInterfaceHash(List<Dictionary<string, string>> list)
+        {
+            string source = "";
+            foreach (var item in list)
+            {
+                source += item["name"];
+                source += item["mac_address"];
+            }
+            return GetHash(source);
+        }
+
+        ///<summary>
+        ///
+        /// </summary>
+        private static string GetHash(string source)
+        {
+            var sha256 = System.Security.Cryptography.SHA256.Create();
+            var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(source));
+            return BitConverter.ToString(bytes).Replace("-", "").ToLower();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Rudeus.Model;
+﻿using Rudeus;
+using Rudeus.Model;
 using Rudeus.Procedure;
 using SharedLib.Model.Settings;
 using System;
@@ -30,6 +31,10 @@ namespace Rudeus.Procedure
             RootSettings.OSVersionP = LocalMachine.GetOSVersion();
             RootSettings.WithSecureP = LocalMachine.GetWithSecure();
             RootSettings.LabelIdP = LocalMachine.GetLabelId();
+
+            RootSettings.InterfacesHashP = Utils.GetNetworkInterfaceHash(LocalMachine.GetNetworkInterfaces());
         }
+
+
     }
 }

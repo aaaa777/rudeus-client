@@ -90,6 +90,8 @@ namespace Test.SharedLib.Model.Settings
         public string OSVersionP { get => GetFunc("OSV", ""); set => SetFunc("OSV", value); }
         public string WithSecureP { get => GetFunc("WS", ""); set => SetFunc("WS", value); }
 
+        public string InterfacesHashP { get => GetFunc("IH", ""); set => SetFunc("IH", value); }
+
         public bool IsBetaChannelP()
         {
             return UpdatingChannelP == "beta";

@@ -74,19 +74,19 @@ namespace Rudeus.Procedure
         {
             string accessToken = RootSettings.AccessTokenP;
 
-            // set randomized hostname
-            Random r1 = new Random();
-            string firstNumber = r1.Next(10, 100).ToString();
-            string secondNumber = r1.Next(100, 1000).ToString();
-            string hostname = $"P{firstNumber}-{secondNumber}";
-
             UpdateRequest request = Watcher.BuildUpdateRequest();
-            request.request_data.hostname = hostname;
+
+            // TODO: UpdateRequest‚ÆPushData‚ð•ª—£‚·‚é
+            //if(request == null)
+            //{
+            //    return;
+            //}
+            //request.request_data.hostname = hostname;
             UpdateResponse response;
             try
             {
                 response = RemoteAPI.UpdateDevice(accessToken, request);
-                Console.WriteLine($"req: changing hostname into `{hostname}` => res: {response.status}");
+                Console.WriteLine($"res: {response.status}");
             }
             catch
             {
@@ -101,7 +101,13 @@ namespace Rudeus.Procedure
         {
             string accessToken = RootSettings.AccessTokenP;
 
-            UpdateMacRequest request = Watcher.BuildUpdateMacRequest();
+            UpdateMacRequest? request = Watcher.BuildUpdateMacRequest();
+
+            if(request == null)
+            {
+                return;
+            }
+
             BaseResponse response;
             try
             {

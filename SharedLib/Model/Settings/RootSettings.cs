@@ -219,6 +219,13 @@ namespace SharedLib.Model.Settings
             get { return GetFunc(WithSecureKey, ""); }
         }
         
+
+        public string InterfacesHashKey = "InterfacesHash";
+        public string InterfacesHashP
+        {
+            set { SetFunc(InterfacesHashKey, value); }
+            get { return GetFunc(InterfacesHashKey, ""); }
+        }
         // for debugging
 
         //public static string 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Management;
+using System.Net.NetworkInformation;
 using System.Text;
 
 namespace Rudeus.Model
@@ -194,6 +195,26 @@ namespace Rudeus.Model
             string firstNumber = r1.Next(10, 100).ToString();
             string secondNumber = r1.Next(100, 1000).ToString();
             return $"P{firstNumber}-{secondNumber}";
+        }
+
+        public List<Dictionary<string, string>> GetNetworkInterfaces()
+        {
+            var list = new List<Dictionary<string, string>>();
+            var interfaces = NetworkInterface.GetAllNetworkInterfaces();
+
+            foreach (var adapter in interfaces)
+            {
+                if ((NetworkInterfaceType.Unknown != adapter.NetworkInterfaceType) &&
+                    (NetworkInterfaceType.Loopback != adapter.NetworkInterfaceType))
+                {
+                    var dict = new Dictionary<string, string>();
+                    dict.Add("name", adapter.Name);
+                    dict.Add("mac_address", adapter.GetPhysicalAddress().ToString());
+                    list.Add(dict);
+                }
+            }
+            Console.WriteLine(list);
+            return list;
         }
     }
 }

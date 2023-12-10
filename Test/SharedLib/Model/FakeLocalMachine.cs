@@ -86,5 +86,17 @@ namespace Test.SharedLib.Model
         {
             throw new NotImplementedException();
         }
+
+        public List<Dictionary<string, string>> GetNetworkInterfaces()
+        {
+            return new List<Dictionary<string, string>>()
+            {
+                new Dictionary<string, string>()
+                {
+                    {"name", "eth0 dummy network"},
+                    {"mac_address", "00:00:00:00:00:00"}
+                }
+            };
+        }
     }
 }

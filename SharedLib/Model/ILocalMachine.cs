@@ -14,16 +14,16 @@
         /// 現時点で利用していない
         /// </summary>
         /// <returns></returns>
-        public List<string> GetStorageDeviceIdList();
+        List<string> GetStorageDeviceIdList();
 
-        public string GetProductName();
-        public string GetDeviceId();
+        string GetProductName();
+        string GetDeviceId();
 
-        public string GetHostname();
+        string GetHostname();
 
-        public string GetWinVersion();
+        string GetWinVersion();
 
-        public string GetSpec();
+        string GetSpec();
         string GetCpuName();
         string GetMemory();
         string GetCDrive();
@@ -31,5 +31,6 @@
         string GetOSVersion();
         string GetWithSecure();
         string GetLabelId();
+        List<Dictionary<string, string>> GetNetworkInterfaces();
     }
 }

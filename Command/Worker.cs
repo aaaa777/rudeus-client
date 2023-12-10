@@ -79,6 +79,9 @@ namespace Rudeus.Command
                 try
                 {
                     //RemoteAPI.SendInstalledApps(RootSettings.AccessTokenP, apps);
+                    //ILocalMachine lm = LocalMachine.GetInstance();
+                    //lm.GetNetworkInterfaces();
+
                     var req = new UpdateMacRequest();
                     var data = new UpdateMacInterface();
                     data.name = "test if";

@@ -39,5 +39,7 @@ namespace SharedLib.Model.Settings
         void SetDevelopChannelP();
         void SetStableChannelP();
         void SetTestChannelP();
+
+        string InterfacesHashP { get; set; }
     }
 }
