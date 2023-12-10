@@ -62,21 +62,34 @@ namespace Rudeus.Launcher.Procedure
             string latestVersionLocal = AppSettings.CurrentVersionP;
             UpdateMetadataChannels channels;
 
-            if(AppSettings.RegistryKey == Constants.RudeusBgRegKey)
+            if(AppSettings.RegistryKey == Constants.RudeusBgRegKey && res.response_data.Command != null)
             {
                 channels = res.response_data.Command;
             }
-            else if(AppSettings.RegistryKey == Constants.RudeusBgFormRegKey)
+            else if(AppSettings.RegistryKey == Constants.RudeusBgFormRegKey && res.response_data.Application != null)
             {
                 channels = res.response_data.Application;
             }
             else
             {
+                Console.WriteLine("Update package not set in remote");
                 return;
             }
 
-            string latestVersionRemote = channels.stable.version;
-            string latestVersionZipUrl = channels.stable.download_url;
+            // TODO: Stable以外のチャンネルを追加
+            UpdateMetadataDetail detail;
+            if (RootSettings.IsStableChannelP() && channels.stable != null)
+            {
+                detail = channels.stable;
+            }
+            else
+            {
+                Console.WriteLine("Update channel not match in remote");
+                return;
+            }
+
+            string latestVersionRemote = detail.version;
+            string latestVersionZipUrl = detail.download_url;
 
             // アップデート判定
             if (!ShouldUpdate(latestVersionLocal, latestVersionRemote))
