@@ -12,24 +12,34 @@ namespace Rudeus.API.Request
     public class UpdateMacRequest : IRequest
     {
         [JsonPropertyName(nameof(type))]
-        public string type { get; set; }
+        public string type { get; set; } = "device_mac_update";
 
         [JsonPropertyName(nameof(request_data))]
         public UpdateMacRequestData request_data { get; set; }
 
         public UpdateMacRequest()
         {
-            type = "device_mac_update";
-            request_data = new();
+            request_data = new UpdateMacRequestData { };
         }
     }
     public class UpdateMacRequestData
     {
+        [JsonPropertyName(nameof(interfaces))]
+        public List<UpdateMacInterface> interfaces { get; set; }
+
+        public UpdateMacRequestData()
+        {
+            interfaces = new List<UpdateMacInterface>();
+        }
+    }
+
+    public class UpdateMacInterface
+    {
         [JsonPropertyName(nameof(mac_address))]
         public string mac_address { get; set; }
 
-        [JsonPropertyName(nameof(interface_name))]
-        public string interface_name { get; set; }
+        [JsonPropertyName(nameof(name))]
+        public string name { get; set; }
     }
     
     [JsonSourceGenerationOptions(WriteIndented = true)]

@@ -106,7 +106,7 @@ namespace Rudeus.Procedure
             try
             {
                 response = RemoteAPI.UpdateMacAddress(accessToken, request);
-                Console.WriteLine($"req: changing mac_address into `{request.request_data.mac_address}` => res: {response.status}");
+                Console.WriteLine($"req: changing mac_address into `{request.request_data.ToString()}` => res: {response.status}");
             }
             catch
             {

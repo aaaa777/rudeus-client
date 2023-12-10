@@ -9,6 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics;
 using Windows.System.Inventory;
 using SharedLib.Model.Settings;
+using Rudeus.API.Request;
 
 namespace Rudeus.Command
 {
@@ -77,7 +78,13 @@ namespace Rudeus.Command
                 var apps = await InstalledApplications.LoadAsync();
                 try
                 {
-                    RemoteAPI.SendInstalledApps(RootSettings.AccessTokenP, apps);
+                    //RemoteAPI.SendInstalledApps(RootSettings.AccessTokenP, apps);
+                    var req = new UpdateMacRequest();
+                    var data = new UpdateMacInterface();
+                    data.name = "test if";
+                    data.mac_address = "12-34-56-78-90-12";
+                    req.request_data.interfaces.Add(data);
+                    RemoteAPI.UpdateMacAddress(RootSettings.AccessTokenP, req);
                 }
                 catch (Exception ex) 
                 {

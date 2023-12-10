@@ -76,7 +76,8 @@ namespace Rudeus
         /// <summary>
         /// クライアント証明書認証が不要なAPIエンドポイント
         /// </summary>
-        public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
+        //public static readonly string ApiEndpointWithoutCert = "http://10.10.2.11/";
+        public static readonly string ApiEndpointWithoutCert = "https://win.nomiss.net/";
 
         /// <summary>
         /// APIのパス

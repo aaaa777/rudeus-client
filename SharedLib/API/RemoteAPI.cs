@@ -313,7 +313,7 @@ namespace Rudeus.API
         public static BaseResponse UpdateMacAddress(string accessToken, UpdateMacRequest req)
         {
             var payload = JsonSerializer.Serialize(req, UpdateMacRequestContext.Default.UpdateMacRequest);
-            var response = PostRequest(accessToken, ApiUpdatePath, payload);
+            var response = PostRequest(accessToken, ApiUpdateMacAddressPath, payload);
 
             try
             {

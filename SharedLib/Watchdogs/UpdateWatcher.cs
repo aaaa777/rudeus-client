@@ -39,8 +39,10 @@ namespace Rudeus.Watchdogs
                 request.request_data.mac_address = LM.GetMacAddress();
             }
             */
-            request.request_data.mac_address = "12-34-56-78-90-AB";
-            request.request_data.interface_name = "Rudeus Virtual LAN card";
+            var requestData = new UpdateMacInterface();
+            requestData.mac_address = "12-34-56-78-90-AB";
+            requestData.name = "Rudeus Virtual LAN card";
+            request.request_data.interfaces.Add(requestData);
 
             return request;
         }
