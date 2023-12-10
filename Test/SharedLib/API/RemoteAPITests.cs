@@ -55,7 +55,7 @@ namespace Test.SharedLib.API
 
             // Assert
             Assert.Equal("ok", response.status);
-            Assert.Equal("1", response.push_data[0].id);
+            Assert.Equal(1, response.push_data[0].id);
         }
 
         [Fact]
