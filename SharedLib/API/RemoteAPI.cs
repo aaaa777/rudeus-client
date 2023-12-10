@@ -164,8 +164,7 @@ namespace Rudeus.API
                 c_drive = c_drive,
                 os = os,
                 os_version = os_version,
-                withsecure = withsecure,
-                label_id = label_id
+                withsecure = withsecure
             };
 
             UpdateRequest req = new(data);
