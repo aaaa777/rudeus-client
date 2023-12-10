@@ -15,4 +15,13 @@ namespace SharedLib.Exceptions
         public UnexpectedResponseException(string message) : base(message) { }
     }
     
+    public class UnexpectedJsonFormatException : Exception
+    {
+        public UnexpectedJsonFormatException(string message) : base(message) { }
+    }
+
+    public class ApiNotFoundException : Exception
+    {
+        public ApiNotFoundException(string message) : base(message) { }
+    }
 }
