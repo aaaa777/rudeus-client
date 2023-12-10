@@ -10,7 +10,7 @@ namespace Rudeus.Model.Operations
 {
     internal class NotifyOperation
     {
-        public string Opcode = "notify";
+        public string Opcode = "notify_toast";
 
         public NotifyOperation()
         {
