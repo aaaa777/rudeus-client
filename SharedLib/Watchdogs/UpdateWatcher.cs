@@ -127,13 +127,15 @@ namespace Rudeus.Watchdogs
         }
 
         /// <summary>
-        /// 
+        /// 変更があったアプリがあれば全てのアプリリストを基にリクエストを作成する
         /// </summary>
         /// 
         public SendInstalledAppsRequest? BuildSendInstalledAppsRequest()
         {
             List<ApplicationData> apps = InstalledApplications.LoadAsync().Result;
 
+            // 変更がない場合はnullを返す
+            // TODO: 現状うまく動いていないので調査する
             if(Settings.InstalledAppsHashP == Utils.GetInstalledAppsHash(apps))
             {
                 return null;
