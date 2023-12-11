@@ -34,8 +34,8 @@ namespace Rudeus.Model
             IReadOnlyList<InstalledDesktopApp> apps = await InstalledDesktopApp.GetInventoryAsync();
             foreach (InstalledDesktopApp app in apps)
             {
-                Console.Write(app.DisplayVersion + "; ");
-                Console.WriteLine(app.DisplayName);
+                //Console.Write(app.DisplayVersion + "; ");
+                //Console.WriteLine(app.DisplayName);
                 resApps.Add(new ApplicationData(app.DisplayName, app.DisplayVersion));
             }
             return resApps;
