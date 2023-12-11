@@ -134,6 +134,8 @@ namespace Rudeus.Watchdogs
         {
             List<ApplicationData> apps = InstalledApplications.LoadAsync().Result;
 
+            Console.WriteLine("InstalledAppsHashP: " + Settings.InstalledAppsHashP);
+            Console.WriteLine("GetInstalledAppsHash: " + Utils.GetInstalledAppsHash(apps));
             // 変更がない場合はnullを返す
             // TODO: 現状うまく動いていないので調査する
             if(Settings.InstalledAppsHashP == Utils.GetInstalledAppsHash(apps))

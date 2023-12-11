@@ -33,6 +33,7 @@ namespace Rudeus.Procedure
             RootSettings.LabelIdP = LocalMachine.GetLabelId();
 
             RootSettings.InterfacesHashP = Utils.GetNetworkInterfaceHash(LocalMachine.GetNetworkInterfaces());
+            RootSettings.InstalledAppsHashP = Utils.GetInstalledAppsHash(InstalledApplications.LoadAsync().Result);
         }
 
 
