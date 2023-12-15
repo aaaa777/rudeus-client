@@ -51,6 +51,14 @@ namespace Rudeus.Launcher
         public static async Task MainAsync()
         {
             int exitCode = -1;
+            int runCount = 0;
+            var argDict = Utils.ParseArgs(ArgsStr.Split(' '));
+
+            bool spamMode = false;
+            if(argDict.ContainsKey("spam"))
+            {
+                spamMode = true;
+            }
 
             do
             {
@@ -67,9 +75,11 @@ namespace Rudeus.Launcher
                 await Executer.RunExe();
                 exitCode = Executer.ExitCode;
                 Console.WriteLine("ApplicationData stopped");
+
+                runCount++;
             }
-            // 終了コードが強制アップデートを知らせるものだった場合、もう一度実行
-            while (exitCode == Constants.ForceUpdateExitCode);
+            // 終了コードによってもう一度実行するか決める
+            while (IsRetry(exitCode, spamMode));
 
 #if (!RELEASE)
         Console.WriteLine("Program end.");
@@ -85,6 +95,23 @@ namespace Rudeus.Launcher
                return string.Join(" ", args[1..]);
             }
             return "";
+        }
+
+        private static bool IsRetry(int exitCode, bool spamMode)
+        {
+            if(exitCode == Constants.ForceUpdateExitCode)
+            {
+                return true;
+            }
+            if(exitCode == Constants.RestartRequiredCode)
+            {
+                return true;
+            }
+            if(spamMode)
+            {
+                return Constants.SpamModeExitCode != exitCode;
+            }
+            return false;
         }
 
         private static bool Exit(int exitCode)

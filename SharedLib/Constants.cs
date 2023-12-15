@@ -141,6 +141,15 @@ namespace Rudeus
         /// このコードだった場合`unlaunchable`にマークしない
         /// </summary>
         public static int HostUnreachableCode = 3001;
+        /// <summary>
+        /// 再起動を要求するエラーコード
+        /// 未使用
+        /// </summary>
+        public static int RestartRequiredCode = 3002;
+        /// <summary>
+        /// スパムモード解除を要求するエラーコード
+        /// </summary>
+        public static int SpamModeExitCode = 3003;
 
         public static string DummyUpdateUrl = "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip";
         public static string DummyVersion = "1.0.0.1";
