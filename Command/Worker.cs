@@ -31,7 +31,7 @@ namespace Rudeus.Command
             _args = args ?? Program.commandArgs ?? Array.Empty<string>();
             this.RootSettings = settings ?? new RootSettings();
             AccessTokenValidator = accessTokenValidator ?? new AccessTokenValidator(settings);
-            ScheduledRelularExecuter = scheduledRegularExecuter ?? new ScheduledRegularExecuter();
+            ScheduledRelularExecuter = scheduledRegularExecuter ?? new RegularExecuter();
             UserLoginExecuter = userLoginExecuter ?? new UserLoginExecuter();
         }
 

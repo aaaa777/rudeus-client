@@ -19,7 +19,7 @@ namespace Test.SharedLib.Procedure
             // Arrange
             IRootSettings frs = new FakeSettings();
             ILocalMachine flm = new FakeLocalMachine();
-            var lmiu = new LocalMachineInfoUpdater(settings: frs, localMachine: flm);
+            var lmiu = new CacheUpdater(settings: frs, localMachine: flm);
             
             // Act
             await lmiu.Run();

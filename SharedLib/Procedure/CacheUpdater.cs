@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace Rudeus.Procedure
 {
-    public class LocalMachineInfoUpdater : IProcedure
+    public class CacheUpdater : IProcedure
     {
         public IRootSettings RootSettings { get; set; }
 
         public ILocalMachine LocalMachine { get; set; }
-        public LocalMachineInfoUpdater(IRootSettings? settings = null, ILocalMachine? localMachine = null) 
+        public CacheUpdater(IRootSettings? settings = null, ILocalMachine? localMachine = null) 
         {
             RootSettings = settings ?? new RootSettings();
             LocalMachine = localMachine ?? Model.LocalMachine.GetInstance();

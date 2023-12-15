@@ -12,18 +12,18 @@ namespace Rudeus.Procedure
     /// 定期実行する処理を実行する手続き
     /// デバイス情報の更新とサーバからのpush_dataの処理を行う
     /// </summary>
-    public class ScheduledRegularExecuter : IProcedure
+    public class RegularExecuter : IProcedure
     {
         public UpdateWatcher Watcher { get; set; }
 
         public IRootSettings RootSettings { get; set; }
         public IProcedure LocalMachineInfoUpdater { get; set; }
 
-        public ScheduledRegularExecuter(UpdateWatcher? watcher = null, IRootSettings? settings = null, IProcedure localMachineInfoUpdater = null)
+        public RegularExecuter(UpdateWatcher? watcher = null, IRootSettings? settings = null, IProcedure localMachineInfoUpdater = null)
         {
             RootSettings = settings ?? new RootSettings();
             Watcher = watcher ?? new UpdateWatcher();
-            LocalMachineInfoUpdater = localMachineInfoUpdater ?? new LocalMachineInfoUpdater();
+            LocalMachineInfoUpdater = localMachineInfoUpdater ?? new CacheUpdater();
         }
 
         /// <inheritdoc/>
