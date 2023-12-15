@@ -34,15 +34,15 @@ namespace Rudeus.Procedure
             try
             {
                 // 学生IDを取得するためlocalhostでコールバックを待機
-                Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
+                //Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
 
                 // ログイン画面を開く
                 OpenBrowser(RemoteAPI.SamlLoginUrl);
-                string userId = await userIdTask;
+                //string userId = await userIdTask;
 
                 // 管理サーバに送信
-                LoginResponse res = RemoteAPI.LoginDevice(RootSettings.AccessTokenP, userId);
-                RootSettings.UsernameP = userId;
+                //LoginResponse res = RemoteAPI.LoginDevice(RootSettings.AccessTokenP, userId);
+                //RootSettings.UsernameP = userId;
             }
             catch
             {
