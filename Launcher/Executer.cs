@@ -86,8 +86,12 @@ namespace Rudeus.Launcher.Procedure
                 Console.WriteLine("Latest stable returned exit code 0");
                 Console.WriteLine("Latest stable status is ok");
 
-                // Latestの実行に成功したことを記録
-                AppSettings.SetLatestVersionStatusOkP();
+                // Latestが実行されている最中に別プロセスでアップデートされok以外になった場合、そちらを優先する
+                if(AppSettings.IsLatestVersionStatusOkP())
+                {
+                    // レジストリにLatestが正常終了することを記録
+                    AppSettings.SetLatestVersionStatusOkP();
+                }
             }
 
             return;
