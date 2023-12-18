@@ -102,8 +102,6 @@ Source: "{#CompileRoot}\res\taiyoerror.png"; DestDir: "{autopf}\Windows System A
 [Registry]
 Root: HKLM; Subkey: "Software\Test App\Setup"; ValueType: string; ValueName: "Username"; ValueData: "{userinfoname}";
 Root: HKLM; Subkey: "Software\Test App\Setup"; ValueType: string; ValueName: "LabelId"; ValueData: "{userinfoserial}";
-Root: HKLM; Subkey: "Software\Test App\Bg"; ValueType: string; ValueName: "LatestVersionStatus"; ValueData: "unlaunchable";
-Root: HKLM; Subkey: "Software\Test App\Task"; ValueType: string; ValueName: "LatestVersionStatus"; ValueData: "unlaunchable";
 
 [Icons]
 ;Name: "{group}/LaunchTT"; Filename: "{autopf}/HIU/BackGroundService.exe"

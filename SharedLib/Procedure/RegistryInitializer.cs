@@ -65,7 +65,7 @@ namespace Rudeus.Procedure
             BgSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 
             BgSettings.CurrentVersionP = "0.0.0.0";
-            BgSettings.SetLatestVersionStatusDownloadedP();
+            BgSettings.SetLatestVersionStatusUnlaunchableP();
 
 
             // RudeusBgFormのLaunch設定
@@ -88,7 +88,7 @@ namespace Rudeus.Procedure
             BfSettings.LatestDirNameP = Constants.RudeusBgLatestName;
 
             BfSettings.CurrentVersionP = "0.0.0.0";
-            BfSettings.SetLatestVersionStatusDownloadedP();
+            BfSettings.SetLatestVersionStatusUnlaunchableP();
 
             Console.WriteLine("[Installer] Registry: RootSettings loaded for launcher");
         }
