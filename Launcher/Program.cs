@@ -50,6 +50,8 @@ namespace Rudeus.Launcher
         }
         public static async Task MainAsync()
         {
+            Console.WriteLine($"Rudeus launcher version: {Version.ToString()}");
+
             int exitCode = -1;
             int runCount = 0;
             var argDict = Utils.ParseArgs(ArgsStr.Split(' '));

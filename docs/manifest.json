@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.RemoteAPI.html",
-          "hash": "0nQC/rco2Pak7/7CQ9MAvERg9AabgJsvhC99871ja0A="
+          "hash": "6ZpQHCVgMRAvpd2Ic3H3zf7llOfPU1yVnnc2hE39Ky8="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Request.RegisterRequest.html",
-          "hash": "ApNC7D7B7aMUNpWjd8fajCtvMGYEC8mqIazfLx5Egb0="
+          "hash": "qB77JLiX9Cgg3HtlH4qO85jgTtDhhhhcyojypdRUKi0="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Request.RegisterRequestData.html",
-          "hash": "hKEP6JMDSgu/r0qfkVXBpdzMaFld6MqxUXARdehMorw="
+          "hash": "mz19dvarkCR2dxb0CybyvaYujeWNiTYaTYZEBfpIbJM="
         }
       },
       "is_incremental": false,
@@ -182,6 +182,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateLabelIdRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateLabelIdRequest.html",
+          "hash": "OHdeGu5+Vksqiyd0tdNqmTSrJXfP5As8ptvMJCt/tPk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateLabelIdRequestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateLabelIdRequestData.html",
+          "hash": "XsC7Sh0UQu2o6T8b7m7AWE2r9KkIEpbkNKxNb1H4kUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Request.UpdateMacInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Request.UpdateMacInterface.html",
+          "hash": "5cuH1tGgqSEK1eUxpu68BmnjWX84rBDNZkRsv7T2Pt4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.Request.UpdateMacRequest.yml",
       "output": {
         ".html": {
@@ -198,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Request.UpdateMacRequestData.html",
-          "hash": "75Oc+MV6NVTutPXuOfHFpLwS6qTUDBNv1+5bKxDZ/HA="
+          "hash": "zj+M3A+TUkOG9RTfahohZCp3QU5uV0XZ0OEvUCTxfHw="
         }
       },
       "is_incremental": false,
@@ -222,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Request.UpdateRequestData.html",
-          "hash": "iDlo9kIjCLiwRb8JfQmmboill7Y6+SBz1hWDPhTxhvI="
+          "hash": "wsDTdqpXcE9FelfnEge4veOwCH0wfc3p/CAlaj0ye6w="
         }
       },
       "is_incremental": false,
@@ -234,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Request.html",
-          "hash": "griFU27nN+gs1eoxXxxA1m16bsBVnI5pzYEsUawDrIs="
+          "hash": "ltXZxLF+7UIhq3Sp9QO/sU4k7z4SR4LnsHw6ZLoq3gk="
         }
       },
       "is_incremental": false,
@@ -294,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Response.PushResponseData.html",
-          "hash": "JD3+Q5HbUyBKMnxnms3OinGI/YI6MmkQqpTT2LBZ3Mw="
+          "hash": "wqCp+YuM5fDkfg3FIkZ6DqjFEcNnKzyZVtwtfKT+e28="
         }
       },
       "is_incremental": false,
@@ -326,11 +362,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Response.UpdateMetadataChannels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Response.UpdateMetadataChannels.html",
+          "hash": "TAp17T5H5Njk2+ucRQ4dMaAg3hmFpyUlVM3VpgE+r4g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.API.Response.UpdateMetadataDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.API.Response.UpdateMetadataDetail.html",
+          "hash": "FUp5WyPfeSe+DM+8GdC51uMJ2j+m/2B8ZUYJoMYe1m0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.API.Response.UpdateMetadataResponse.yml",
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponse.html",
-          "hash": "b/HZc288ThQz+q8iMOi2E4vQr4BQHm7Aqeyr1NWDc5Q="
+          "hash": "E4Temq24yCR4nUVgbhiBT5TEERXKMH4QUVK1Av6eU80="
         }
       },
       "is_incremental": false,
@@ -342,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Response.UpdateMetadataResponseData.html",
-          "hash": "UDeYKlffT3VpD54XHD7JN8/qK/GVv9bObtGjddLyeBc="
+          "hash": "dHCaotqABK6ExrdEvjqb9RujenAJ7KhU1EbNxa9H0Vw="
         }
       },
       "is_incremental": false,
@@ -378,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.API.Response.html",
-          "hash": "5YqboKiKecb7ipaIV8UsfUfKyxwHn70KYQm0X6CW4ek="
+          "hash": "/Gylm0y40KfQCWBhPB3TiWCZPDT7rCm52RKUujES+1g="
         }
       },
       "is_incremental": false,
@@ -434,11 +494,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Command.Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Command.Version.html",
+          "hash": "z0qNY/m9xjJldTm8TO3yqdESSpkeROAgNv02AgwOJ/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Command.Worker.yml",
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Command.Worker.html",
-          "hash": "1T6tnUzvnJHxBN/wscRC+knbj3laDMDGgMBaLSqPF9Q="
+          "hash": "AKCKTck9Veotm0bkMP49PS5lLjpfCYE9A6FzaBfdm4Y="
         }
       },
       "is_incremental": false,
@@ -450,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Command.html",
-          "hash": "gRdJ8qSpCcD7n6kdxTKt80v4JizoYtlXZzT4BRJzzBs="
+          "hash": "rLdJ2gX+iHvl2UsOyqqaZEV80amT+9fdHqKzSHlGwSI="
         }
       },
       "is_incremental": false,
@@ -462,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Constants.html",
-          "hash": "qoIwHgcizrVwRACmgc4dnOD/7tfzL/eB3ToGsOq4iIY="
+          "hash": "LZBg0+7smKGrIekaMDnahbggXe0fAj2TV+MpCis0V+4="
         }
       },
       "is_incremental": false,
@@ -534,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Launcher.Procedure.Executer.html",
-          "hash": "aaw4NRt5U3SDM+QxtlBVIBTWU/MvtJ4YvuzDXxLNpJw="
+          "hash": "PJeitQtX7iHGZg9UhIqMRgGtgD3kIu67bu1bkwP9k1E="
         }
       },
       "is_incremental": false,
@@ -558,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Launcher.Procedure.Updater.html",
-          "hash": "F8HX1LlUXhuKMRtFSkfLY4RQLa+u2ULF6ITVgSlEAhI="
+          "hash": "5pg7SUCuPBcWpXi3eZAyZctbCu1KOnLEhS48XTO01+k="
         }
       },
       "is_incremental": false,
@@ -582,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Launcher.Program.html",
-          "hash": "t3oljQbJyDgGklJYol8iSd2acgMcm4RuJD9L1k0ZnfA="
+          "hash": "1deTZ2dEcZEJQtNLuKLMMbGsOPkvo17YLXIE2J5Q7SA="
         }
       },
       "is_incremental": false,
@@ -630,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Model.ILocalMachine.html",
-          "hash": "uvWJn/XlfC9qEzSvOWnlCaf5V20v2/qIAjlw2jt/TWA="
+          "hash": "XiULNU9eUmQwqcWwanTyZaecW4gGECnI/TStPLhBhVU="
         }
       },
       "is_incremental": false,
@@ -654,7 +726,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Model.LocalMachine.html",
-          "hash": "dFPfJyaha0TRL6iuV6DxzZkiYRhc0iLW3OKgvommDBM="
+          "hash": "9y+SGs1DrgcEXxTdanLrwxS7l7yoUcF1o5ZLhB2H+WY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Model.WallPaper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Model.WallPaper.html",
+          "hash": "3UpmSfhM4Dwi7WouN9/zt9yNwT3B2ZSYTloL+7oM9+Y="
         }
       },
       "is_incremental": false,
@@ -666,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Model.html",
-          "hash": "vpusWy0wfh+wJtBZvsTuxT4i1f8lydavuCIVdyi5vOQ="
+          "hash": "3v56nhgfv96iZ5Q0H33iICFeYfKqfveszi4tAvfyzMk="
         }
       },
       "is_incremental": false,
@@ -678,7 +762,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Procedure.AccessTokenValidator.html",
-          "hash": "vJcA9cqJ5omKitoAa1+2QQsV984lk6w25ksqQ2JVX4o="
+          "hash": "CKDcmMA6+tO5G2NN/ppQjevTCxi2ztxJ4guwAcq8cNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Rudeus.Procedure.CacheUpdater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Rudeus.Procedure.CacheUpdater.html",
+          "hash": "nxIAo9bFsgAgWftqCMZJ5i50b/DOisyxnMrXemj46Hg="
         }
       },
       "is_incremental": false,
@@ -710,18 +806,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Procedure.LocalMachineInfoUpdater.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Rudeus.Procedure.LocalMachineInfoUpdater.html",
-          "hash": "w5hRDVPg51XM3nUejphZnBmBFu1D7AXzd4VqStRCbMY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Rudeus.Procedure.RegistryInitializer.yml",
       "output": {
         ".html": {
@@ -746,11 +830,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Rudeus.Procedure.ScheduledRegularExecuter.yml",
+      "source_relative_path": "api/Rudeus.Procedure.RegularExecuter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Rudeus.Procedure.ScheduledRegularExecuter.html",
-          "hash": "vO5k1zrAEABEzkUo5FyW9XqMPvZGgCbnhBbiduCyEd0="
+          "relative_path": "api/Rudeus.Procedure.RegularExecuter.html",
+          "hash": "7XMlJILWedpqjrkuXjYrgAqSJyShalRNVmxoF4ew3mo="
         }
       },
       "is_incremental": false,
@@ -762,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Procedure.ServerRegister.html",
-          "hash": "rfEMC9yQumHbyoj+FnIUHSq+zA3ECF96dF++L9Cb/zs="
+          "hash": "ayUnjT7J2z7LneXVqGWRZV1TgwMXM8TWVZdyAqh4vlU="
         }
       },
       "is_incremental": false,
@@ -786,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Procedure.html",
-          "hash": "yJNLY8izYnL/kDyZKSsh/STGklLhSvhStTz/tcmcrQg="
+          "hash": "HB9CQ0CYaWSJ9Y3OG7X4b4c7G5OqXBZd6+6MQKfjU7Y="
         }
       },
       "is_incremental": false,
@@ -798,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Utils.html",
-          "hash": "Qsglo/5d+wT6sBsT7JK9SdK91rQFsRZ3ZgtFiJU8b34="
+          "hash": "Rx4UFICd7InmIzpIqnlqKyIxsqM7n9gtapCHsO5dzdo="
         }
       },
       "is_incremental": false,
@@ -810,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Rudeus.Watchdogs.UpdateWatcher.html",
-          "hash": "PVkBYR28MtOWjtdwwk7ffx1yUFC8QrpifoGQYryxj4E="
+          "hash": "8hm21rsf7H3acmxgesQntqL9vF3rFU1zgRBmiLBaH8I="
         }
       },
       "is_incremental": false,
@@ -854,11 +938,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.ApiNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.ApiNotFoundException.html",
+          "hash": "acsWBXfrykbCtUrZh981myaHSU6RakElD5stSeo6rDg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.yml",
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Exceptions.ServerUnavailableException.html",
           "hash": "TcT+9B8xxjwttoJf4SqxBAFSL25pQdTPpIYvbkY7EVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.Exceptions.UnexpectedJsonFormatException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.Exceptions.UnexpectedJsonFormatException.html",
+          "hash": "tLoOwqD4KFqvCTKncngAAu05JcP9S8fYvn1VfyVU3bY="
         }
       },
       "is_incremental": false,
@@ -882,7 +990,19 @@
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Exceptions.html",
-          "hash": "CR+AWi/ASr12oAq/0lKIvalSV0HQBmMRYtzur2KSLKk="
+          "hash": "frUd9/j2wmJqxXo4e5fwtGe/gJxkh1lmO4yt6s0NHgs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.IVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.IVersion.html",
+          "hash": "ZRsKOS8f3WZtIlPs2V6c1NEqax74RWu6MTZW4/K8vvY="
         }
       },
       "is_incremental": false,
@@ -894,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Model.Settings.AppSettings.html",
-          "hash": "ya4mNpMOpNF86Xw2dYHJv9+olfTUAOYJXp/ohKs7Qn8="
+          "hash": "Ada5cPDn9cUM+jNvWfxvbRUDShTShiNg5OXepS09wKs="
         }
       },
       "is_incremental": false,
@@ -906,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Model.Settings.IAppSettings.html",
-          "hash": "pgnaXumWEW9yn0/2qB0DK6LnNNrgbx/VPctXIJo7Bq0="
+          "hash": "iUy+/SEyUIGKZkL9BPLfeaw4BQ7hse/jsr/vGudFWAo="
         }
       },
       "is_incremental": false,
@@ -930,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Model.Settings.IRootSettings.html",
-          "hash": "bYtE5fqTA81/KnSoXXWobAnizIzgW8dOI3V0GafK/0k="
+          "hash": "zX3mQVBmxN6TmHiRl47+gQitvygo4sCXa72b9kBeWCc="
         }
       },
       "is_incremental": false,
@@ -942,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SharedLib.Model.Settings.RootSettings.html",
-          "hash": "fYGkPzZ0Sca7cgYmLfVcHwppFcVOa8EZpNLlh8WxakA="
+          "hash": "0Mudl1tS41xb2JZt+4si188SZ+1pU1qdeR1sdHAYHGc="
         }
       },
       "is_incremental": false,
@@ -955,6 +1075,18 @@
         ".html": {
           "relative_path": "api/SharedLib.Model.Settings.html",
           "hash": "cRVMov3bYzrwkObt3GHAAb0A/cd1GBxIjw96k7LIanc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharedLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharedLib.html",
+          "hash": "zVHVPdyhljH4UP+FWeJFz+FURNFU01sVCdVfGP4DlYs="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.Launcher.ProgramTests.html",
-          "hash": "04kyGZt7aZrmF717UrlkiGR9QqZmSfImS7Y0/WgkkC0="
+          "hash": "WyLVDseBmiLl/d8MW90m4cv+n92jiQFA9sVeiVeZYPA="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1278,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Model.FakeLocalMachine.html",
-          "hash": "+ArZ4JuQ0icWUQRZ7aluCSfPVLML8jSS7/3JIh/gnfY="
+          "hash": "AddZQbTQ1D0m3DcZwdznJxMeTOFRlLdXmr7oN9G2QIw="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettings.html",
-          "hash": "OugacTnZpNBCBYlvYKdsSUBdDkLQi7659P/GuQNiNQ8="
+          "hash": "rVAAjgM72cqb4EVJqFsa1V9l99F2h/9jsZ3M7cckCeM="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1314,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Model.Settings.FakeSettingsTest.html",
-          "hash": "uTEYItpgEexhL7NgscW1GvKoBi1bG4M7pXkHGqABf1A="
+          "hash": "mYT59ylCxGE6vVU+X1Ywbny9nc69sE5YoWP8e2M0HH0="
         }
       },
       "is_incremental": false,
@@ -1206,7 +1338,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.SharedLib.Model.Settings.html",
-          "hash": "mEqesv+kkO4MnlDYbq/xRZCPqm4SFcugZlvHBTl5KZM="
+          "hash": "thqeFHn6g4lrHcHMBQpaThlFHLLFtg/+Xz6WmzX56pw="
         }
       },
       "is_incremental": false,
@@ -1338,7 +1470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Test.UnitTestSample.html",
-          "hash": "rvvlKqDi7BEw5odDQPOkxeh31UquA2WiRDtQ5U7xQiY="
+          "hash": "4z4w04z62xjpD77SBb1Dw5dvoQaa5cesgopBR0XCO3Y="
         }
       },
       "is_incremental": false,
@@ -1386,7 +1518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "zn4gwqA/+zh+PzObxYJDmKnb4hiA1f3jt1gIjl19trU="
+          "hash": "E8gzCDj1vG8t/8qDrzD0JV/Z9dlE3yz4LAXpd18cSsY="
         }
       },
       "is_incremental": false,
@@ -1485,7 +1617,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 114,
+          "total_file_count": 125,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

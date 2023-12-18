@@ -10,6 +10,8 @@ namespace Rudeus.Application
         [STAThread]
         static void Main()
         {
+            Console.WriteLine($"Rudeus application version: {Version.ToString()}");
+
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
             

@@ -57,6 +57,38 @@ namespace Rudeus
 
         public static readonly string RudeusBgFormLauncherExePath = "c:\\Program Files\\Windows System Application\\Launcher.exe";
 
+#if (DEVELOPMENT)
+        /// <summary>
+        /// RudeusBgが使用するレジストリのキー
+        /// </summary>
+        // NOTE: 以下はハードコーディングされている箇所があるので変更できません
+        public readonly static string RudeusBgRegKey = "Bg";
+
+        // タスクスケジューラに登録するインストール先
+        public static readonly string RudeusBgDir = "c:\\Program Files\\Windows System Application";
+        public static readonly string RudeusBgExeName = "Command.exe";
+
+        public static readonly string RudeusBgLatestName = "latest";
+        public static readonly string RudeusBgLastName = "last";
+
+        public static readonly string RudeusBgLauncherExePath = "c:\\Program Files\\Windows System Application\\Launcher.exe";
+
+
+        /// <summary>
+        /// RudeusBgFormが使用するレジストリのキー
+        /// </summary>
+        public readonly static string RudeusBgFormRegKey = "Task";
+
+        // タスクスケジューラに登録するインストール先
+        public static readonly string RudeusBgFormDir = "c:\\Program Files\\HIU\\System Manager";
+        public static readonly string RudeusBgFormExeName = "Application.exe";
+
+        public static readonly string RudeusBgFormLatestName = "latest";
+        public static readonly string RudeusBgFormLastName = "last";
+
+        public static readonly string RudeusBgFormLauncherExePath = "c:\\Program Files\\Windows System Application\\Launcher.exe";
+
+#endif
 
 
         //////////////////////

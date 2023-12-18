@@ -103,6 +103,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RemoteAPI.ApiSendInstalledAppsPath
   nameWithType: RemoteAPI.ApiSendInstalledAppsPath
+- uid: Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath
+  name: ApiUpdateLabelIdPath
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateLabelIdPath
+  commentId: P:Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath
+  fullName: Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath
+  nameWithType: RemoteAPI.ApiUpdateLabelIdPath
+- uid: Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath*
+  name: ApiUpdateLabelIdPath
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateLabelIdPath_
+  commentId: Overload:Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath
+  isSpec: "True"
+  fullName: Rudeus.API.RemoteAPI.ApiUpdateLabelIdPath
+  nameWithType: RemoteAPI.ApiUpdateLabelIdPath
 - uid: Rudeus.API.RemoteAPI.ApiUpdateMacAddressPath
   name: ApiUpdateMacAddressPath
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_ApiUpdateMacAddressPath
@@ -226,6 +239,12 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RemoteAPI.ReceiveStudentIdAsync
   nameWithType: RemoteAPI.ReceiveStudentIdAsync
+- uid: Rudeus.API.RemoteAPI.RegisterDevice(Rudeus.API.Request.RegisterRequest)
+  name: RegisterDevice(RegisterRequest)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_RegisterDevice_Rudeus_API_Request_RegisterRequest_
+  commentId: M:Rudeus.API.RemoteAPI.RegisterDevice(Rudeus.API.Request.RegisterRequest)
+  fullName: Rudeus.API.RemoteAPI.RegisterDevice(Rudeus.API.Request.RegisterRequest)
+  nameWithType: RemoteAPI.RegisterDevice(RegisterRequest)
 - uid: Rudeus.API.RemoteAPI.RegisterDevice(System.String,System.String)
   name: RegisterDevice(String, String)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_RegisterDevice_System_String_System_String_
@@ -258,6 +277,12 @@ references:
   commentId: F:Rudeus.API.RemoteAPI.SamlLoginUrl
   fullName: Rudeus.API.RemoteAPI.SamlLoginUrl
   nameWithType: RemoteAPI.SamlLoginUrl
+- uid: Rudeus.API.RemoteAPI.SendInstalledApps(System.String,Rudeus.API.Request.SendInstalledAppsRequest)
+  name: SendInstalledApps(String, SendInstalledAppsRequest)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_SendInstalledApps_System_String_Rudeus_API_Request_SendInstalledAppsRequest_
+  commentId: M:Rudeus.API.RemoteAPI.SendInstalledApps(System.String,Rudeus.API.Request.SendInstalledAppsRequest)
+  fullName: Rudeus.API.RemoteAPI.SendInstalledApps(System.String, Rudeus.API.Request.SendInstalledAppsRequest)
+  nameWithType: RemoteAPI.SendInstalledApps(String, SendInstalledAppsRequest)
 - uid: Rudeus.API.RemoteAPI.SendInstalledApps(System.String,System.Collections.Generic.List{Rudeus.Model.ApplicationData})
   name: SendInstalledApps(String, List<ApplicationData>)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_SendInstalledApps_System_String_System_Collections_Generic_List_Rudeus_Model_ApplicationData__
@@ -296,6 +321,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.RemoteAPI.UpdateDevice
   nameWithType: RemoteAPI.UpdateDevice
+- uid: Rudeus.API.RemoteAPI.UpdateLabelId(System.String,System.String)
+  name: UpdateLabelId(String, String)
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateLabelId_System_String_System_String_
+  commentId: M:Rudeus.API.RemoteAPI.UpdateLabelId(System.String,System.String)
+  fullName: Rudeus.API.RemoteAPI.UpdateLabelId(System.String, System.String)
+  nameWithType: RemoteAPI.UpdateLabelId(String, String)
+- uid: Rudeus.API.RemoteAPI.UpdateLabelId*
+  name: UpdateLabelId
+  href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateLabelId_
+  commentId: Overload:Rudeus.API.RemoteAPI.UpdateLabelId
+  isSpec: "True"
+  fullName: Rudeus.API.RemoteAPI.UpdateLabelId
+  nameWithType: RemoteAPI.UpdateLabelId
 - uid: Rudeus.API.RemoteAPI.UpdateMacAddress(System.String,Rudeus.API.Request.UpdateMacRequest)
   name: UpdateMacAddress(String, UpdateMacRequest)
   href: api/Rudeus.API.RemoteAPI.html#Rudeus_API_RemoteAPI_UpdateMacAddress_System_String_Rudeus_API_Request_UpdateMacRequest_
@@ -519,6 +557,12 @@ references:
   commentId: T:Rudeus.API.Request.RegisterRequest
   fullName: Rudeus.API.Request.RegisterRequest
   nameWithType: RegisterRequest
+- uid: Rudeus.API.Request.RegisterRequest.#ctor
+  name: RegisterRequest()
+  href: api/Rudeus.API.Request.RegisterRequest.html#Rudeus_API_Request_RegisterRequest__ctor
+  commentId: M:Rudeus.API.Request.RegisterRequest.#ctor
+  fullName: Rudeus.API.Request.RegisterRequest.RegisterRequest()
+  nameWithType: RegisterRequest.RegisterRequest()
 - uid: Rudeus.API.Request.RegisterRequest.#ctor(System.String,System.String,System.String)
   name: RegisterRequest(String, String, String)
   href: api/Rudeus.API.Request.RegisterRequest.html#Rudeus_API_Request_RegisterRequest__ctor_System_String_System_String_System_String_
@@ -564,6 +608,12 @@ references:
   commentId: T:Rudeus.API.Request.RegisterRequestData
   fullName: Rudeus.API.Request.RegisterRequestData
   nameWithType: RegisterRequestData
+- uid: Rudeus.API.Request.RegisterRequestData.#ctor
+  name: RegisterRequestData()
+  href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData__ctor
+  commentId: M:Rudeus.API.Request.RegisterRequestData.#ctor
+  fullName: Rudeus.API.Request.RegisterRequestData.RegisterRequestData()
+  nameWithType: RegisterRequestData.RegisterRequestData()
 - uid: Rudeus.API.Request.RegisterRequestData.#ctor(System.String,System.String,System.String)
   name: RegisterRequestData(String, String, String)
   href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData__ctor_System_String_System_String_System_String_
@@ -590,32 +640,6 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Request.RegisterRequestData.device_id
   nameWithType: RegisterRequestData.device_id
-- uid: Rudeus.API.Request.RegisterRequestData.hostname
-  name: hostname
-  href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_hostname
-  commentId: P:Rudeus.API.Request.RegisterRequestData.hostname
-  fullName: Rudeus.API.Request.RegisterRequestData.hostname
-  nameWithType: RegisterRequestData.hostname
-- uid: Rudeus.API.Request.RegisterRequestData.hostname*
-  name: hostname
-  href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_hostname_
-  commentId: Overload:Rudeus.API.Request.RegisterRequestData.hostname
-  isSpec: "True"
-  fullName: Rudeus.API.Request.RegisterRequestData.hostname
-  nameWithType: RegisterRequestData.hostname
-- uid: Rudeus.API.Request.RegisterRequestData.manage_id
-  name: manage_id
-  href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_manage_id
-  commentId: P:Rudeus.API.Request.RegisterRequestData.manage_id
-  fullName: Rudeus.API.Request.RegisterRequestData.manage_id
-  nameWithType: RegisterRequestData.manage_id
-- uid: Rudeus.API.Request.RegisterRequestData.manage_id*
-  name: manage_id
-  href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_manage_id_
-  commentId: Overload:Rudeus.API.Request.RegisterRequestData.manage_id
-  isSpec: "True"
-  fullName: Rudeus.API.Request.RegisterRequestData.manage_id
-  nameWithType: RegisterRequestData.manage_id
 - uid: Rudeus.API.Request.RegisterRequestData.product_name
   name: product_name
   href: api/Rudeus.API.Request.RegisterRequestData.html#Rudeus_API_Request_RegisterRequestData_product_name
@@ -757,6 +781,121 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Request.SendInstalledAppsRequestData.apps
   nameWithType: SendInstalledAppsRequestData.apps
+- uid: Rudeus.API.Request.UpdateLabelIdRequest
+  name: UpdateLabelIdRequest
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html
+  commentId: T:Rudeus.API.Request.UpdateLabelIdRequest
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest
+  nameWithType: UpdateLabelIdRequest
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.#ctor(System.String)
+  name: UpdateLabelIdRequest(String)
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest__ctor_System_String_
+  commentId: M:Rudeus.API.Request.UpdateLabelIdRequest.#ctor(System.String)
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.UpdateLabelIdRequest(System.String)
+  nameWithType: UpdateLabelIdRequest.UpdateLabelIdRequest(String)
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.#ctor*
+  name: UpdateLabelIdRequest
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest__ctor_
+  commentId: Overload:Rudeus.API.Request.UpdateLabelIdRequest.#ctor
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.UpdateLabelIdRequest
+  nameWithType: UpdateLabelIdRequest.UpdateLabelIdRequest
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.request_data
+  name: request_data
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest_request_data
+  commentId: P:Rudeus.API.Request.UpdateLabelIdRequest.request_data
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.request_data
+  nameWithType: UpdateLabelIdRequest.request_data
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.request_data*
+  name: request_data
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest_request_data_
+  commentId: Overload:Rudeus.API.Request.UpdateLabelIdRequest.request_data
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.request_data
+  nameWithType: UpdateLabelIdRequest.request_data
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.type
+  name: type
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest_type
+  commentId: P:Rudeus.API.Request.UpdateLabelIdRequest.type
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.type
+  nameWithType: UpdateLabelIdRequest.type
+- uid: Rudeus.API.Request.UpdateLabelIdRequest.type*
+  name: type
+  href: api/Rudeus.API.Request.UpdateLabelIdRequest.html#Rudeus_API_Request_UpdateLabelIdRequest_type_
+  commentId: Overload:Rudeus.API.Request.UpdateLabelIdRequest.type
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateLabelIdRequest.type
+  nameWithType: UpdateLabelIdRequest.type
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData
+  name: UpdateLabelIdRequestData
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html
+  commentId: T:Rudeus.API.Request.UpdateLabelIdRequestData
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData
+  nameWithType: UpdateLabelIdRequestData
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData.#ctor
+  name: UpdateLabelIdRequestData()
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html#Rudeus_API_Request_UpdateLabelIdRequestData__ctor
+  commentId: M:Rudeus.API.Request.UpdateLabelIdRequestData.#ctor
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData.UpdateLabelIdRequestData()
+  nameWithType: UpdateLabelIdRequestData.UpdateLabelIdRequestData()
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData.#ctor(System.String)
+  name: UpdateLabelIdRequestData(String)
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html#Rudeus_API_Request_UpdateLabelIdRequestData__ctor_System_String_
+  commentId: M:Rudeus.API.Request.UpdateLabelIdRequestData.#ctor(System.String)
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData.UpdateLabelIdRequestData(System.String)
+  nameWithType: UpdateLabelIdRequestData.UpdateLabelIdRequestData(String)
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData.#ctor*
+  name: UpdateLabelIdRequestData
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html#Rudeus_API_Request_UpdateLabelIdRequestData__ctor_
+  commentId: Overload:Rudeus.API.Request.UpdateLabelIdRequestData.#ctor
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData.UpdateLabelIdRequestData
+  nameWithType: UpdateLabelIdRequestData.UpdateLabelIdRequestData
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData.label_id
+  name: label_id
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html#Rudeus_API_Request_UpdateLabelIdRequestData_label_id
+  commentId: P:Rudeus.API.Request.UpdateLabelIdRequestData.label_id
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData.label_id
+  nameWithType: UpdateLabelIdRequestData.label_id
+- uid: Rudeus.API.Request.UpdateLabelIdRequestData.label_id*
+  name: label_id
+  href: api/Rudeus.API.Request.UpdateLabelIdRequestData.html#Rudeus_API_Request_UpdateLabelIdRequestData_label_id_
+  commentId: Overload:Rudeus.API.Request.UpdateLabelIdRequestData.label_id
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateLabelIdRequestData.label_id
+  nameWithType: UpdateLabelIdRequestData.label_id
+- uid: Rudeus.API.Request.UpdateMacInterface
+  name: UpdateMacInterface
+  href: api/Rudeus.API.Request.UpdateMacInterface.html
+  commentId: T:Rudeus.API.Request.UpdateMacInterface
+  fullName: Rudeus.API.Request.UpdateMacInterface
+  nameWithType: UpdateMacInterface
+- uid: Rudeus.API.Request.UpdateMacInterface.mac_address
+  name: mac_address
+  href: api/Rudeus.API.Request.UpdateMacInterface.html#Rudeus_API_Request_UpdateMacInterface_mac_address
+  commentId: P:Rudeus.API.Request.UpdateMacInterface.mac_address
+  fullName: Rudeus.API.Request.UpdateMacInterface.mac_address
+  nameWithType: UpdateMacInterface.mac_address
+- uid: Rudeus.API.Request.UpdateMacInterface.mac_address*
+  name: mac_address
+  href: api/Rudeus.API.Request.UpdateMacInterface.html#Rudeus_API_Request_UpdateMacInterface_mac_address_
+  commentId: Overload:Rudeus.API.Request.UpdateMacInterface.mac_address
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacInterface.mac_address
+  nameWithType: UpdateMacInterface.mac_address
+- uid: Rudeus.API.Request.UpdateMacInterface.name
+  name: name
+  href: api/Rudeus.API.Request.UpdateMacInterface.html#Rudeus_API_Request_UpdateMacInterface_name
+  commentId: P:Rudeus.API.Request.UpdateMacInterface.name
+  fullName: Rudeus.API.Request.UpdateMacInterface.name
+  nameWithType: UpdateMacInterface.name
+- uid: Rudeus.API.Request.UpdateMacInterface.name*
+  name: name
+  href: api/Rudeus.API.Request.UpdateMacInterface.html#Rudeus_API_Request_UpdateMacInterface_name_
+  commentId: Overload:Rudeus.API.Request.UpdateMacInterface.name
+  isSpec: "True"
+  fullName: Rudeus.API.Request.UpdateMacInterface.name
+  nameWithType: UpdateMacInterface.name
 - uid: Rudeus.API.Request.UpdateMacRequest
   name: UpdateMacRequest
   href: api/Rudeus.API.Request.UpdateMacRequest.html
@@ -808,32 +947,32 @@ references:
   commentId: T:Rudeus.API.Request.UpdateMacRequestData
   fullName: Rudeus.API.Request.UpdateMacRequestData
   nameWithType: UpdateMacRequestData
-- uid: Rudeus.API.Request.UpdateMacRequestData.interface_name
-  name: interface_name
-  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interface_name
-  commentId: P:Rudeus.API.Request.UpdateMacRequestData.interface_name
-  fullName: Rudeus.API.Request.UpdateMacRequestData.interface_name
-  nameWithType: UpdateMacRequestData.interface_name
-- uid: Rudeus.API.Request.UpdateMacRequestData.interface_name*
-  name: interface_name
-  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interface_name_
-  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.interface_name
+- uid: Rudeus.API.Request.UpdateMacRequestData.#ctor
+  name: UpdateMacRequestData()
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData__ctor
+  commentId: M:Rudeus.API.Request.UpdateMacRequestData.#ctor
+  fullName: Rudeus.API.Request.UpdateMacRequestData.UpdateMacRequestData()
+  nameWithType: UpdateMacRequestData.UpdateMacRequestData()
+- uid: Rudeus.API.Request.UpdateMacRequestData.#ctor*
+  name: UpdateMacRequestData
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData__ctor_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.#ctor
   isSpec: "True"
-  fullName: Rudeus.API.Request.UpdateMacRequestData.interface_name
-  nameWithType: UpdateMacRequestData.interface_name
-- uid: Rudeus.API.Request.UpdateMacRequestData.mac_address
-  name: mac_address
-  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_mac_address
-  commentId: P:Rudeus.API.Request.UpdateMacRequestData.mac_address
-  fullName: Rudeus.API.Request.UpdateMacRequestData.mac_address
-  nameWithType: UpdateMacRequestData.mac_address
-- uid: Rudeus.API.Request.UpdateMacRequestData.mac_address*
-  name: mac_address
-  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_mac_address_
-  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.mac_address
+  fullName: Rudeus.API.Request.UpdateMacRequestData.UpdateMacRequestData
+  nameWithType: UpdateMacRequestData.UpdateMacRequestData
+- uid: Rudeus.API.Request.UpdateMacRequestData.interfaces
+  name: interfaces
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interfaces
+  commentId: P:Rudeus.API.Request.UpdateMacRequestData.interfaces
+  fullName: Rudeus.API.Request.UpdateMacRequestData.interfaces
+  nameWithType: UpdateMacRequestData.interfaces
+- uid: Rudeus.API.Request.UpdateMacRequestData.interfaces*
+  name: interfaces
+  href: api/Rudeus.API.Request.UpdateMacRequestData.html#Rudeus_API_Request_UpdateMacRequestData_interfaces_
+  commentId: Overload:Rudeus.API.Request.UpdateMacRequestData.interfaces
   isSpec: "True"
-  fullName: Rudeus.API.Request.UpdateMacRequestData.mac_address
-  nameWithType: UpdateMacRequestData.mac_address
+  fullName: Rudeus.API.Request.UpdateMacRequestData.interfaces
+  nameWithType: UpdateMacRequestData.interfaces
 - uid: Rudeus.API.Request.UpdateRequest
   name: UpdateRequest
   href: api/Rudeus.API.Request.UpdateRequest.html
@@ -955,19 +1094,6 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Request.UpdateRequestData.hostname
   nameWithType: UpdateRequestData.hostname
-- uid: Rudeus.API.Request.UpdateRequestData.label_id
-  name: label_id
-  href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_label_id
-  commentId: P:Rudeus.API.Request.UpdateRequestData.label_id
-  fullName: Rudeus.API.Request.UpdateRequestData.label_id
-  nameWithType: UpdateRequestData.label_id
-- uid: Rudeus.API.Request.UpdateRequestData.label_id*
-  name: label_id
-  href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_label_id_
-  commentId: Overload:Rudeus.API.Request.UpdateRequestData.label_id
-  isSpec: "True"
-  fullName: Rudeus.API.Request.UpdateRequestData.label_id
-  nameWithType: UpdateRequestData.label_id
 - uid: Rudeus.API.Request.UpdateRequestData.memory
   name: memory
   href: api/Rudeus.API.Request.UpdateRequestData.html#Rudeus_API_Request_UpdateRequestData_memory
@@ -1186,6 +1312,19 @@ references:
   commentId: T:Rudeus.API.Response.PushResponseData
   fullName: Rudeus.API.Response.PushResponseData
   nameWithType: PushResponseData
+- uid: Rudeus.API.Response.PushResponseData.created_at
+  name: created_at
+  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_created_at
+  commentId: P:Rudeus.API.Response.PushResponseData.created_at
+  fullName: Rudeus.API.Response.PushResponseData.created_at
+  nameWithType: PushResponseData.created_at
+- uid: Rudeus.API.Response.PushResponseData.created_at*
+  name: created_at
+  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_created_at_
+  commentId: Overload:Rudeus.API.Response.PushResponseData.created_at
+  isSpec: "True"
+  fullName: Rudeus.API.Response.PushResponseData.created_at
+  nameWithType: PushResponseData.created_at
 - uid: Rudeus.API.Response.PushResponseData.id
   name: id
   href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_id
@@ -1199,19 +1338,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Response.PushResponseData.id
   nameWithType: PushResponseData.id
-- uid: Rudeus.API.Response.PushResponseData.payload
-  name: payload
-  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_payload
-  commentId: P:Rudeus.API.Response.PushResponseData.payload
-  fullName: Rudeus.API.Response.PushResponseData.payload
-  nameWithType: PushResponseData.payload
-- uid: Rudeus.API.Response.PushResponseData.payload*
-  name: payload
-  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_payload_
-  commentId: Overload:Rudeus.API.Response.PushResponseData.payload
+- uid: Rudeus.API.Response.PushResponseData.message
+  name: message
+  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_message
+  commentId: P:Rudeus.API.Response.PushResponseData.message
+  fullName: Rudeus.API.Response.PushResponseData.message
+  nameWithType: PushResponseData.message
+- uid: Rudeus.API.Response.PushResponseData.message*
+  name: message
+  href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_message_
+  commentId: Overload:Rudeus.API.Response.PushResponseData.message
   isSpec: "True"
-  fullName: Rudeus.API.Response.PushResponseData.payload
-  nameWithType: PushResponseData.payload
+  fullName: Rudeus.API.Response.PushResponseData.message
+  nameWithType: PushResponseData.message
 - uid: Rudeus.API.Response.PushResponseData.type
   name: type
   href: api/Rudeus.API.Response.PushResponseData.html#Rudeus_API_Response_PushResponseData_type
@@ -1276,6 +1415,57 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Response.RegisterResponseData.access_token
   nameWithType: RegisterResponseData.access_token
+- uid: Rudeus.API.Response.UpdateMetadataChannels
+  name: UpdateMetadataChannels
+  href: api/Rudeus.API.Response.UpdateMetadataChannels.html
+  commentId: T:Rudeus.API.Response.UpdateMetadataChannels
+  fullName: Rudeus.API.Response.UpdateMetadataChannels
+  nameWithType: UpdateMetadataChannels
+- uid: Rudeus.API.Response.UpdateMetadataChannels.stable
+  name: stable
+  href: api/Rudeus.API.Response.UpdateMetadataChannels.html#Rudeus_API_Response_UpdateMetadataChannels_stable
+  commentId: P:Rudeus.API.Response.UpdateMetadataChannels.stable
+  fullName: Rudeus.API.Response.UpdateMetadataChannels.stable
+  nameWithType: UpdateMetadataChannels.stable
+- uid: Rudeus.API.Response.UpdateMetadataChannels.stable*
+  name: stable
+  href: api/Rudeus.API.Response.UpdateMetadataChannels.html#Rudeus_API_Response_UpdateMetadataChannels_stable_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataChannels.stable
+  isSpec: "True"
+  fullName: Rudeus.API.Response.UpdateMetadataChannels.stable
+  nameWithType: UpdateMetadataChannels.stable
+- uid: Rudeus.API.Response.UpdateMetadataDetail
+  name: UpdateMetadataDetail
+  href: api/Rudeus.API.Response.UpdateMetadataDetail.html
+  commentId: T:Rudeus.API.Response.UpdateMetadataDetail
+  fullName: Rudeus.API.Response.UpdateMetadataDetail
+  nameWithType: UpdateMetadataDetail
+- uid: Rudeus.API.Response.UpdateMetadataDetail.download_url
+  name: download_url
+  href: api/Rudeus.API.Response.UpdateMetadataDetail.html#Rudeus_API_Response_UpdateMetadataDetail_download_url
+  commentId: P:Rudeus.API.Response.UpdateMetadataDetail.download_url
+  fullName: Rudeus.API.Response.UpdateMetadataDetail.download_url
+  nameWithType: UpdateMetadataDetail.download_url
+- uid: Rudeus.API.Response.UpdateMetadataDetail.download_url*
+  name: download_url
+  href: api/Rudeus.API.Response.UpdateMetadataDetail.html#Rudeus_API_Response_UpdateMetadataDetail_download_url_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataDetail.download_url
+  isSpec: "True"
+  fullName: Rudeus.API.Response.UpdateMetadataDetail.download_url
+  nameWithType: UpdateMetadataDetail.download_url
+- uid: Rudeus.API.Response.UpdateMetadataDetail.version
+  name: version
+  href: api/Rudeus.API.Response.UpdateMetadataDetail.html#Rudeus_API_Response_UpdateMetadataDetail_version
+  commentId: P:Rudeus.API.Response.UpdateMetadataDetail.version
+  fullName: Rudeus.API.Response.UpdateMetadataDetail.version
+  nameWithType: UpdateMetadataDetail.version
+- uid: Rudeus.API.Response.UpdateMetadataDetail.version*
+  name: version
+  href: api/Rudeus.API.Response.UpdateMetadataDetail.html#Rudeus_API_Response_UpdateMetadataDetail_version_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataDetail.version
+  isSpec: "True"
+  fullName: Rudeus.API.Response.UpdateMetadataDetail.version
+  nameWithType: UpdateMetadataDetail.version
 - uid: Rudeus.API.Response.UpdateMetadataResponse
   name: UpdateMetadataResponse
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html
@@ -1288,12 +1478,6 @@ references:
   commentId: M:Rudeus.API.Response.UpdateMetadataResponse.#ctor
   fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse()
   nameWithType: UpdateMetadataResponse.UpdateMetadataResponse()
-- uid: Rudeus.API.Response.UpdateMetadataResponse.#ctor(System.String,System.String)
-  name: UpdateMetadataResponse(String, String)
-  href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse__ctor_System_String_System_String_
-  commentId: M:Rudeus.API.Response.UpdateMetadataResponse.#ctor(System.String,System.String)
-  fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse(System.String, System.String)
-  nameWithType: UpdateMetadataResponse.UpdateMetadataResponse(String, String)
 - uid: Rudeus.API.Response.UpdateMetadataResponse.#ctor*
   name: UpdateMetadataResponse
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse__ctor_
@@ -1301,19 +1485,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Response.UpdateMetadataResponse.UpdateMetadataResponse
   nameWithType: UpdateMetadataResponse.UpdateMetadataResponse
-- uid: Rudeus.API.Response.UpdateMetadataResponse.request_data
-  name: request_data
-  href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_request_data
-  commentId: P:Rudeus.API.Response.UpdateMetadataResponse.request_data
-  fullName: Rudeus.API.Response.UpdateMetadataResponse.request_data
-  nameWithType: UpdateMetadataResponse.request_data
-- uid: Rudeus.API.Response.UpdateMetadataResponse.request_data*
-  name: request_data
-  href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_request_data_
-  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponse.request_data
+- uid: Rudeus.API.Response.UpdateMetadataResponse.response_data
+  name: response_data
+  href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_response_data
+  commentId: P:Rudeus.API.Response.UpdateMetadataResponse.response_data
+  fullName: Rudeus.API.Response.UpdateMetadataResponse.response_data
+  nameWithType: UpdateMetadataResponse.response_data
+- uid: Rudeus.API.Response.UpdateMetadataResponse.response_data*
+  name: response_data
+  href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_response_data_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponse.response_data
   isSpec: "True"
-  fullName: Rudeus.API.Response.UpdateMetadataResponse.request_data
-  nameWithType: UpdateMetadataResponse.request_data
+  fullName: Rudeus.API.Response.UpdateMetadataResponse.response_data
+  nameWithType: UpdateMetadataResponse.response_data
 - uid: Rudeus.API.Response.UpdateMetadataResponse.status
   name: status
   href: api/Rudeus.API.Response.UpdateMetadataResponse.html#Rudeus_API_Response_UpdateMetadataResponse_status
@@ -1339,12 +1523,6 @@ references:
   commentId: M:Rudeus.API.Response.UpdateMetadataResponseData.#ctor
   fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData()
   nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData()
-- uid: Rudeus.API.Response.UpdateMetadataResponseData.#ctor(System.String,System.String)
-  name: UpdateMetadataResponseData(String, String)
-  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData__ctor_System_String_System_String_
-  commentId: M:Rudeus.API.Response.UpdateMetadataResponseData.#ctor(System.String,System.String)
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData(System.String, System.String)
-  nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData(String, String)
 - uid: Rudeus.API.Response.UpdateMetadataResponseData.#ctor*
   name: UpdateMetadataResponseData
   href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData__ctor_
@@ -1352,32 +1530,32 @@ references:
   isSpec: "True"
   fullName: Rudeus.API.Response.UpdateMetadataResponseData.UpdateMetadataResponseData
   nameWithType: UpdateMetadataResponseData.UpdateMetadataResponseData
-- uid: Rudeus.API.Response.UpdateMetadataResponseData.stable_version
-  name: stable_version
-  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_stable_version
-  commentId: P:Rudeus.API.Response.UpdateMetadataResponseData.stable_version
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.stable_version
-  nameWithType: UpdateMetadataResponseData.stable_version
-- uid: Rudeus.API.Response.UpdateMetadataResponseData.stable_version*
-  name: stable_version
-  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_stable_version_
-  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponseData.stable_version
+- uid: Rudeus.API.Response.UpdateMetadataResponseData.Application
+  name: Application
+  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_Application
+  commentId: P:Rudeus.API.Response.UpdateMetadataResponseData.Application
+  fullName: Rudeus.API.Response.UpdateMetadataResponseData.Application
+  nameWithType: UpdateMetadataResponseData.Application
+- uid: Rudeus.API.Response.UpdateMetadataResponseData.Application*
+  name: Application
+  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_Application_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponseData.Application
   isSpec: "True"
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.stable_version
-  nameWithType: UpdateMetadataResponseData.stable_version
-- uid: Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url
-  name: stable_zip_url
-  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_stable_zip_url
-  commentId: P:Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url
-  nameWithType: UpdateMetadataResponseData.stable_zip_url
-- uid: Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url*
-  name: stable_zip_url
-  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_stable_zip_url_
-  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url
+  fullName: Rudeus.API.Response.UpdateMetadataResponseData.Application
+  nameWithType: UpdateMetadataResponseData.Application
+- uid: Rudeus.API.Response.UpdateMetadataResponseData.Command
+  name: Command
+  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_Command
+  commentId: P:Rudeus.API.Response.UpdateMetadataResponseData.Command
+  fullName: Rudeus.API.Response.UpdateMetadataResponseData.Command
+  nameWithType: UpdateMetadataResponseData.Command
+- uid: Rudeus.API.Response.UpdateMetadataResponseData.Command*
+  name: Command
+  href: api/Rudeus.API.Response.UpdateMetadataResponseData.html#Rudeus_API_Response_UpdateMetadataResponseData_Command_
+  commentId: Overload:Rudeus.API.Response.UpdateMetadataResponseData.Command
   isSpec: "True"
-  fullName: Rudeus.API.Response.UpdateMetadataResponseData.stable_zip_url
-  nameWithType: UpdateMetadataResponseData.stable_zip_url
+  fullName: Rudeus.API.Response.UpdateMetadataResponseData.Command
+  nameWithType: UpdateMetadataResponseData.Command
 - uid: Rudeus.API.Response.UpdateResponse
   name: UpdateResponse
   href: api/Rudeus.API.Response.UpdateResponse.html
@@ -1544,6 +1722,25 @@ references:
   isSpec: "True"
   fullName: Rudeus.Command.IWorker.UserLoginExecuter
   nameWithType: IWorker.UserLoginExecuter
+- uid: Rudeus.Command.Version
+  name: Version
+  href: api/Rudeus.Command.Version.html
+  commentId: T:Rudeus.Command.Version
+  fullName: Rudeus.Command.Version
+  nameWithType: Version
+- uid: Rudeus.Command.Version.ToString
+  name: ToString()
+  href: api/Rudeus.Command.Version.html#Rudeus_Command_Version_ToString
+  commentId: M:Rudeus.Command.Version.ToString
+  fullName: Rudeus.Command.Version.ToString()
+  nameWithType: Version.ToString()
+- uid: Rudeus.Command.Version.ToString*
+  name: ToString
+  href: api/Rudeus.Command.Version.html#Rudeus_Command_Version_ToString_
+  commentId: Overload:Rudeus.Command.Version.ToString
+  isSpec: "True"
+  fullName: Rudeus.Command.Version.ToString
+  nameWithType: Version.ToString
 - uid: Rudeus.Command.Worker
   name: Worker
   href: api/Rudeus.Command.Worker.html
@@ -1686,6 +1883,12 @@ references:
   commentId: F:Rudeus.Constants.ApiSendInstalledAppsPath
   fullName: Rudeus.Constants.ApiSendInstalledAppsPath
   nameWithType: Constants.ApiSendInstalledAppsPath
+- uid: Rudeus.Constants.ApiUpdateLabelIdPath
+  name: ApiUpdateLabelIdPath
+  href: api/Rudeus.Constants.html#Rudeus_Constants_ApiUpdateLabelIdPath
+  commentId: F:Rudeus.Constants.ApiUpdateLabelIdPath
+  fullName: Rudeus.Constants.ApiUpdateLabelIdPath
+  nameWithType: Constants.ApiUpdateLabelIdPath
 - uid: Rudeus.Constants.ApiUpdateMacAddressPath
   name: ApiUpdateMacAddressPath
   href: api/Rudeus.Constants.html#Rudeus_Constants_ApiUpdateMacAddressPath
@@ -1746,6 +1949,12 @@ references:
   commentId: F:Rudeus.Constants.ForceUpdateExitCode
   fullName: Rudeus.Constants.ForceUpdateExitCode
   nameWithType: Constants.ForceUpdateExitCode
+- uid: Rudeus.Constants.HostUnreachableCode
+  name: HostUnreachableCode
+  href: api/Rudeus.Constants.html#Rudeus_Constants_HostUnreachableCode
+  commentId: F:Rudeus.Constants.HostUnreachableCode
+  fullName: Rudeus.Constants.HostUnreachableCode
+  nameWithType: Constants.HostUnreachableCode
 - uid: Rudeus.Constants.InnoSetupUserDataKey
   name: InnoSetupUserDataKey
   href: api/Rudeus.Constants.html#Rudeus_Constants_InnoSetupUserDataKey
@@ -1776,6 +1985,12 @@ references:
   commentId: F:Rudeus.Constants.RegistryDir
   fullName: Rudeus.Constants.RegistryDir
   nameWithType: Constants.RegistryDir
+- uid: Rudeus.Constants.RestartRequiredCode
+  name: RestartRequiredCode
+  href: api/Rudeus.Constants.html#Rudeus_Constants_RestartRequiredCode
+  commentId: F:Rudeus.Constants.RestartRequiredCode
+  fullName: Rudeus.Constants.RestartRequiredCode
+  nameWithType: Constants.RestartRequiredCode
 - uid: Rudeus.Constants.RudeusBgDir
   name: RudeusBgDir
   href: api/Rudeus.Constants.html#Rudeus_Constants_RudeusBgDir
@@ -1854,6 +2069,12 @@ references:
   commentId: F:Rudeus.Constants.SamlLoginUrl
   fullName: Rudeus.Constants.SamlLoginUrl
   nameWithType: Constants.SamlLoginUrl
+- uid: Rudeus.Constants.SpamModeExitCode
+  name: SpamModeExitCode
+  href: api/Rudeus.Constants.html#Rudeus_Constants_SpamModeExitCode
+  commentId: F:Rudeus.Constants.SpamModeExitCode
+  fullName: Rudeus.Constants.SpamModeExitCode
+  nameWithType: Constants.SpamModeExitCode
 - uid: Rudeus.Constants.WebPortalUrl
   name: WebPortalUrl
   href: api/Rudeus.Constants.html#Rudeus_Constants_WebPortalUrl
@@ -2318,6 +2539,19 @@ references:
   commentId: T:Rudeus.Launcher.Program
   fullName: Rudeus.Launcher.Program
   nameWithType: Program
+- uid: Rudeus.Launcher.Program.AccessTokenValidator
+  name: AccessTokenValidator
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_AccessTokenValidator
+  commentId: P:Rudeus.Launcher.Program.AccessTokenValidator
+  fullName: Rudeus.Launcher.Program.AccessTokenValidator
+  nameWithType: Program.AccessTokenValidator
+- uid: Rudeus.Launcher.Program.AccessTokenValidator*
+  name: AccessTokenValidator
+  href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_AccessTokenValidator_
+  commentId: Overload:Rudeus.Launcher.Program.AccessTokenValidator
+  isSpec: "True"
+  fullName: Rudeus.Launcher.Program.AccessTokenValidator
+  nameWithType: Program.AccessTokenValidator
 - uid: Rudeus.Launcher.Program.AppSettings
   name: AppSettings
   href: api/Rudeus.Launcher.Program.html#Rudeus_Launcher_Program_AppSettings
@@ -2666,6 +2900,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Model.ILocalMachine.GetMemory
   nameWithType: ILocalMachine.GetMemory
+- uid: Rudeus.Model.ILocalMachine.GetNetworkInterfaces
+  name: GetNetworkInterfaces()
+  href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetNetworkInterfaces
+  commentId: M:Rudeus.Model.ILocalMachine.GetNetworkInterfaces
+  fullName: Rudeus.Model.ILocalMachine.GetNetworkInterfaces()
+  nameWithType: ILocalMachine.GetNetworkInterfaces()
+- uid: Rudeus.Model.ILocalMachine.GetNetworkInterfaces*
+  name: GetNetworkInterfaces
+  href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetNetworkInterfaces_
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetNetworkInterfaces
+  isSpec: "True"
+  fullName: Rudeus.Model.ILocalMachine.GetNetworkInterfaces
+  nameWithType: ILocalMachine.GetNetworkInterfaces
 - uid: Rudeus.Model.ILocalMachine.GetOS
   name: GetOS()
   href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetOS
@@ -2705,6 +2952,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Model.ILocalMachine.GetPhysicalRamInfo
   nameWithType: ILocalMachine.GetPhysicalRamInfo
+- uid: Rudeus.Model.ILocalMachine.GetProductName
+  name: GetProductName()
+  href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetProductName
+  commentId: M:Rudeus.Model.ILocalMachine.GetProductName
+  fullName: Rudeus.Model.ILocalMachine.GetProductName()
+  nameWithType: ILocalMachine.GetProductName()
+- uid: Rudeus.Model.ILocalMachine.GetProductName*
+  name: GetProductName
+  href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetProductName_
+  commentId: Overload:Rudeus.Model.ILocalMachine.GetProductName
+  isSpec: "True"
+  fullName: Rudeus.Model.ILocalMachine.GetProductName
+  nameWithType: ILocalMachine.GetProductName
 - uid: Rudeus.Model.ILocalMachine.GetSpec
   name: GetSpec()
   href: api/Rudeus.Model.ILocalMachine.html#Rudeus_Model_ILocalMachine_GetSpec
@@ -2873,6 +3133,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Model.LocalMachine.GetMemory
   nameWithType: LocalMachine.GetMemory
+- uid: Rudeus.Model.LocalMachine.GetNetworkInterfaces
+  name: GetNetworkInterfaces()
+  href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetNetworkInterfaces
+  commentId: M:Rudeus.Model.LocalMachine.GetNetworkInterfaces
+  fullName: Rudeus.Model.LocalMachine.GetNetworkInterfaces()
+  nameWithType: LocalMachine.GetNetworkInterfaces()
+- uid: Rudeus.Model.LocalMachine.GetNetworkInterfaces*
+  name: GetNetworkInterfaces
+  href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetNetworkInterfaces_
+  commentId: Overload:Rudeus.Model.LocalMachine.GetNetworkInterfaces
+  isSpec: "True"
+  fullName: Rudeus.Model.LocalMachine.GetNetworkInterfaces
+  nameWithType: LocalMachine.GetNetworkInterfaces
 - uid: Rudeus.Model.LocalMachine.GetOS
   name: GetOS()
   href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetOS
@@ -2912,6 +3185,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Model.LocalMachine.GetPhysicalRamInfo
   nameWithType: LocalMachine.GetPhysicalRamInfo
+- uid: Rudeus.Model.LocalMachine.GetProductName
+  name: GetProductName()
+  href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetProductName
+  commentId: M:Rudeus.Model.LocalMachine.GetProductName
+  fullName: Rudeus.Model.LocalMachine.GetProductName()
+  nameWithType: LocalMachine.GetProductName()
+- uid: Rudeus.Model.LocalMachine.GetProductName*
+  name: GetProductName
+  href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetProductName_
+  commentId: Overload:Rudeus.Model.LocalMachine.GetProductName
+  isSpec: "True"
+  fullName: Rudeus.Model.LocalMachine.GetProductName
+  nameWithType: LocalMachine.GetProductName
 - uid: Rudeus.Model.LocalMachine.GetSpec
   name: GetSpec()
   href: api/Rudeus.Model.LocalMachine.html#Rudeus_Model_LocalMachine_GetSpec
@@ -2964,6 +3250,25 @@ references:
   isSpec: "True"
   fullName: Rudeus.Model.LocalMachine.GetWithSecure
   nameWithType: LocalMachine.GetWithSecure
+- uid: Rudeus.Model.WallPaper
+  name: WallPaper
+  href: api/Rudeus.Model.WallPaper.html
+  commentId: T:Rudeus.Model.WallPaper
+  fullName: Rudeus.Model.WallPaper
+  nameWithType: WallPaper
+- uid: Rudeus.Model.WallPaper.Change(System.String)
+  name: Change(String)
+  href: api/Rudeus.Model.WallPaper.html#Rudeus_Model_WallPaper_Change_System_String_
+  commentId: M:Rudeus.Model.WallPaper.Change(System.String)
+  fullName: Rudeus.Model.WallPaper.Change(System.String)
+  nameWithType: WallPaper.Change(String)
+- uid: Rudeus.Model.WallPaper.Change*
+  name: Change
+  href: api/Rudeus.Model.WallPaper.html#Rudeus_Model_WallPaper_Change_
+  commentId: Overload:Rudeus.Model.WallPaper.Change
+  isSpec: "True"
+  fullName: Rudeus.Model.WallPaper.Change
+  nameWithType: WallPaper.Change
 - uid: Rudeus.Procedure
   name: Rudeus.Procedure
   href: api/Rudeus.Procedure.html
@@ -2976,12 +3281,12 @@ references:
   commentId: T:Rudeus.Procedure.AccessTokenValidator
   fullName: Rudeus.Procedure.AccessTokenValidator
   nameWithType: AccessTokenValidator
-- uid: Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
-  name: AccessTokenValidator(IRootSettings)
-  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_SharedLib_Model_Settings_IRootSettings_
-  commentId: M:Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings)
-  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(SharedLib.Model.Settings.IRootSettings)
-  nameWithType: AccessTokenValidator.AccessTokenValidator(IRootSettings)
+- uid: Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
+  name: AccessTokenValidator(IRootSettings, ILocalMachine)
+  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_SharedLib_Model_Settings_IRootSettings_Rudeus_Model_ILocalMachine_
+  commentId: M:Rudeus.Procedure.AccessTokenValidator.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
+  fullName: Rudeus.Procedure.AccessTokenValidator.AccessTokenValidator(SharedLib.Model.Settings.IRootSettings, Rudeus.Model.ILocalMachine)
+  nameWithType: AccessTokenValidator.AccessTokenValidator(IRootSettings, ILocalMachine)
 - uid: Rudeus.Procedure.AccessTokenValidator.#ctor*
   name: AccessTokenValidator
   href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator__ctor_
@@ -3015,6 +3320,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.AccessTokenValidator.IsFirstRun
   nameWithType: AccessTokenValidator.IsFirstRun
+- uid: Rudeus.Procedure.AccessTokenValidator.LM
+  name: LM
+  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator_LM
+  commentId: P:Rudeus.Procedure.AccessTokenValidator.LM
+  fullName: Rudeus.Procedure.AccessTokenValidator.LM
+  nameWithType: AccessTokenValidator.LM
+- uid: Rudeus.Procedure.AccessTokenValidator.LM*
+  name: LM
+  href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator_LM_
+  commentId: Overload:Rudeus.Procedure.AccessTokenValidator.LM
+  isSpec: "True"
+  fullName: Rudeus.Procedure.AccessTokenValidator.LM
+  nameWithType: AccessTokenValidator.LM
 - uid: Rudeus.Procedure.AccessTokenValidator.Run
   name: Run()
   href: api/Rudeus.Procedure.AccessTokenValidator.html#Rudeus_Procedure_AccessTokenValidator_Run
@@ -3028,6 +3346,64 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.AccessTokenValidator.Run
   nameWithType: AccessTokenValidator.Run
+- uid: Rudeus.Procedure.CacheUpdater
+  name: CacheUpdater
+  href: api/Rudeus.Procedure.CacheUpdater.html
+  commentId: T:Rudeus.Procedure.CacheUpdater
+  fullName: Rudeus.Procedure.CacheUpdater
+  nameWithType: CacheUpdater
+- uid: Rudeus.Procedure.CacheUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
+  name: CacheUpdater(IRootSettings, ILocalMachine)
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater__ctor_SharedLib_Model_Settings_IRootSettings_Rudeus_Model_ILocalMachine_
+  commentId: M:Rudeus.Procedure.CacheUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
+  fullName: Rudeus.Procedure.CacheUpdater.CacheUpdater(SharedLib.Model.Settings.IRootSettings, Rudeus.Model.ILocalMachine)
+  nameWithType: CacheUpdater.CacheUpdater(IRootSettings, ILocalMachine)
+- uid: Rudeus.Procedure.CacheUpdater.#ctor*
+  name: CacheUpdater
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater__ctor_
+  commentId: Overload:Rudeus.Procedure.CacheUpdater.#ctor
+  isSpec: "True"
+  fullName: Rudeus.Procedure.CacheUpdater.CacheUpdater
+  nameWithType: CacheUpdater.CacheUpdater
+- uid: Rudeus.Procedure.CacheUpdater.LocalMachine
+  name: LocalMachine
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_LocalMachine
+  commentId: P:Rudeus.Procedure.CacheUpdater.LocalMachine
+  fullName: Rudeus.Procedure.CacheUpdater.LocalMachine
+  nameWithType: CacheUpdater.LocalMachine
+- uid: Rudeus.Procedure.CacheUpdater.LocalMachine*
+  name: LocalMachine
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_LocalMachine_
+  commentId: Overload:Rudeus.Procedure.CacheUpdater.LocalMachine
+  isSpec: "True"
+  fullName: Rudeus.Procedure.CacheUpdater.LocalMachine
+  nameWithType: CacheUpdater.LocalMachine
+- uid: Rudeus.Procedure.CacheUpdater.RootSettings
+  name: RootSettings
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_RootSettings
+  commentId: P:Rudeus.Procedure.CacheUpdater.RootSettings
+  fullName: Rudeus.Procedure.CacheUpdater.RootSettings
+  nameWithType: CacheUpdater.RootSettings
+- uid: Rudeus.Procedure.CacheUpdater.RootSettings*
+  name: RootSettings
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_RootSettings_
+  commentId: Overload:Rudeus.Procedure.CacheUpdater.RootSettings
+  isSpec: "True"
+  fullName: Rudeus.Procedure.CacheUpdater.RootSettings
+  nameWithType: CacheUpdater.RootSettings
+- uid: Rudeus.Procedure.CacheUpdater.Run
+  name: Run()
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_Run
+  commentId: M:Rudeus.Procedure.CacheUpdater.Run
+  fullName: Rudeus.Procedure.CacheUpdater.Run()
+  nameWithType: CacheUpdater.Run()
+- uid: Rudeus.Procedure.CacheUpdater.Run*
+  name: Run
+  href: api/Rudeus.Procedure.CacheUpdater.html#Rudeus_Procedure_CacheUpdater_Run_
+  commentId: Overload:Rudeus.Procedure.CacheUpdater.Run
+  isSpec: "True"
+  fullName: Rudeus.Procedure.CacheUpdater.Run
+  nameWithType: CacheUpdater.Run
 - uid: Rudeus.Procedure.CertificateInstaller
   name: CertificateInstaller
   href: api/Rudeus.Procedure.CertificateInstaller.html
@@ -3092,64 +3468,6 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.IProcedure.Run
   nameWithType: IProcedure.Run
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater
-  name: LocalMachineInfoUpdater
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html
-  commentId: T:Rudeus.Procedure.LocalMachineInfoUpdater
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater
-  nameWithType: LocalMachineInfoUpdater
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
-  name: LocalMachineInfoUpdater(IRootSettings, ILocalMachine)
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater__ctor_SharedLib_Model_Settings_IRootSettings_Rudeus_Model_ILocalMachine_
-  commentId: M:Rudeus.Procedure.LocalMachineInfoUpdater.#ctor(SharedLib.Model.Settings.IRootSettings,Rudeus.Model.ILocalMachine)
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachineInfoUpdater(SharedLib.Model.Settings.IRootSettings, Rudeus.Model.ILocalMachine)
-  nameWithType: LocalMachineInfoUpdater.LocalMachineInfoUpdater(IRootSettings, ILocalMachine)
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.#ctor*
-  name: LocalMachineInfoUpdater
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater__ctor_
-  commentId: Overload:Rudeus.Procedure.LocalMachineInfoUpdater.#ctor
-  isSpec: "True"
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachineInfoUpdater
-  nameWithType: LocalMachineInfoUpdater.LocalMachineInfoUpdater
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
-  name: LocalMachine
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_LocalMachine
-  commentId: P:Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
-  nameWithType: LocalMachineInfoUpdater.LocalMachine
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine*
-  name: LocalMachine
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_LocalMachine_
-  commentId: Overload:Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
-  isSpec: "True"
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.LocalMachine
-  nameWithType: LocalMachineInfoUpdater.LocalMachine
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings
-  name: RootSettings
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_RootSettings
-  commentId: P:Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings
-  nameWithType: LocalMachineInfoUpdater.RootSettings
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings*
-  name: RootSettings
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_RootSettings_
-  commentId: Overload:Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings
-  isSpec: "True"
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.RootSettings
-  nameWithType: LocalMachineInfoUpdater.RootSettings
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.Run
-  name: Run()
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_Run
-  commentId: M:Rudeus.Procedure.LocalMachineInfoUpdater.Run
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.Run()
-  nameWithType: LocalMachineInfoUpdater.Run()
-- uid: Rudeus.Procedure.LocalMachineInfoUpdater.Run*
-  name: Run
-  href: api/Rudeus.Procedure.LocalMachineInfoUpdater.html#Rudeus_Procedure_LocalMachineInfoUpdater_Run_
-  commentId: Overload:Rudeus.Procedure.LocalMachineInfoUpdater.Run
-  isSpec: "True"
-  fullName: Rudeus.Procedure.LocalMachineInfoUpdater.Run
-  nameWithType: LocalMachineInfoUpdater.Run
 - uid: Rudeus.Procedure.RegistryInitializer
   name: RegistryInitializer
   href: api/Rudeus.Procedure.RegistryInitializer.html
@@ -3318,77 +3636,77 @@ references:
   isSpec: "True"
   fullName: Rudeus.Procedure.RegistryRemover.Run
   nameWithType: RegistryRemover.Run
-- uid: Rudeus.Procedure.ScheduledRegularExecuter
-  name: ScheduledRegularExecuter
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html
-  commentId: T:Rudeus.Procedure.ScheduledRegularExecuter
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter
-  nameWithType: ScheduledRegularExecuter
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
-  name: ScheduledRegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter__ctor_Rudeus_Watchdogs_UpdateWatcher_SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_
-  commentId: M:Rudeus.Procedure.ScheduledRegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter(Rudeus.Watchdogs.UpdateWatcher, SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure)
-  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.#ctor*
-  name: ScheduledRegularExecuter
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter__ctor_
-  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.#ctor
+- uid: Rudeus.Procedure.RegularExecuter
+  name: RegularExecuter
+  href: api/Rudeus.Procedure.RegularExecuter.html
+  commentId: T:Rudeus.Procedure.RegularExecuter
+  fullName: Rudeus.Procedure.RegularExecuter
+  nameWithType: RegularExecuter
+- uid: Rudeus.Procedure.RegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
+  name: RegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter__ctor_Rudeus_Watchdogs_UpdateWatcher_SharedLib_Model_Settings_IRootSettings_Rudeus_Procedure_IProcedure_
+  commentId: M:Rudeus.Procedure.RegularExecuter.#ctor(Rudeus.Watchdogs.UpdateWatcher,SharedLib.Model.Settings.IRootSettings,Rudeus.Procedure.IProcedure)
+  fullName: Rudeus.Procedure.RegularExecuter.RegularExecuter(Rudeus.Watchdogs.UpdateWatcher, SharedLib.Model.Settings.IRootSettings, Rudeus.Procedure.IProcedure)
+  nameWithType: RegularExecuter.RegularExecuter(UpdateWatcher, IRootSettings, IProcedure)
+- uid: Rudeus.Procedure.RegularExecuter.#ctor*
+  name: RegularExecuter
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter__ctor_
+  commentId: Overload:Rudeus.Procedure.RegularExecuter.#ctor
   isSpec: "True"
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.ScheduledRegularExecuter
-  nameWithType: ScheduledRegularExecuter.ScheduledRegularExecuter
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  fullName: Rudeus.Procedure.RegularExecuter.RegularExecuter
+  nameWithType: RegularExecuter.RegularExecuter
+- uid: Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater
   name: LocalMachineInfoUpdater
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_LocalMachineInfoUpdater
-  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
-  nameWithType: ScheduledRegularExecuter.LocalMachineInfoUpdater
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater*
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_LocalMachineInfoUpdater
+  commentId: P:Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater
+  fullName: Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater
+  nameWithType: RegularExecuter.LocalMachineInfoUpdater
+- uid: Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater*
   name: LocalMachineInfoUpdater
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_LocalMachineInfoUpdater_
-  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_LocalMachineInfoUpdater_
+  commentId: Overload:Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater
   isSpec: "True"
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.LocalMachineInfoUpdater
-  nameWithType: ScheduledRegularExecuter.LocalMachineInfoUpdater
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  fullName: Rudeus.Procedure.RegularExecuter.LocalMachineInfoUpdater
+  nameWithType: RegularExecuter.LocalMachineInfoUpdater
+- uid: Rudeus.Procedure.RegularExecuter.RootSettings
   name: RootSettings
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_RootSettings
-  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
-  nameWithType: ScheduledRegularExecuter.RootSettings
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings*
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_RootSettings
+  commentId: P:Rudeus.Procedure.RegularExecuter.RootSettings
+  fullName: Rudeus.Procedure.RegularExecuter.RootSettings
+  nameWithType: RegularExecuter.RootSettings
+- uid: Rudeus.Procedure.RegularExecuter.RootSettings*
   name: RootSettings
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_RootSettings_
-  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_RootSettings_
+  commentId: Overload:Rudeus.Procedure.RegularExecuter.RootSettings
   isSpec: "True"
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.RootSettings
-  nameWithType: ScheduledRegularExecuter.RootSettings
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.Run
+  fullName: Rudeus.Procedure.RegularExecuter.RootSettings
+  nameWithType: RegularExecuter.RootSettings
+- uid: Rudeus.Procedure.RegularExecuter.Run
   name: Run()
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Run
-  commentId: M:Rudeus.Procedure.ScheduledRegularExecuter.Run
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Run()
-  nameWithType: ScheduledRegularExecuter.Run()
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.Run*
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_Run
+  commentId: M:Rudeus.Procedure.RegularExecuter.Run
+  fullName: Rudeus.Procedure.RegularExecuter.Run()
+  nameWithType: RegularExecuter.Run()
+- uid: Rudeus.Procedure.RegularExecuter.Run*
   name: Run
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Run_
-  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.Run
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_Run_
+  commentId: Overload:Rudeus.Procedure.RegularExecuter.Run
   isSpec: "True"
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Run
-  nameWithType: ScheduledRegularExecuter.Run
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  fullName: Rudeus.Procedure.RegularExecuter.Run
+  nameWithType: RegularExecuter.Run
+- uid: Rudeus.Procedure.RegularExecuter.Watcher
   name: Watcher
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Watcher
-  commentId: P:Rudeus.Procedure.ScheduledRegularExecuter.Watcher
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
-  nameWithType: ScheduledRegularExecuter.Watcher
-- uid: Rudeus.Procedure.ScheduledRegularExecuter.Watcher*
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_Watcher
+  commentId: P:Rudeus.Procedure.RegularExecuter.Watcher
+  fullName: Rudeus.Procedure.RegularExecuter.Watcher
+  nameWithType: RegularExecuter.Watcher
+- uid: Rudeus.Procedure.RegularExecuter.Watcher*
   name: Watcher
-  href: api/Rudeus.Procedure.ScheduledRegularExecuter.html#Rudeus_Procedure_ScheduledRegularExecuter_Watcher_
-  commentId: Overload:Rudeus.Procedure.ScheduledRegularExecuter.Watcher
+  href: api/Rudeus.Procedure.RegularExecuter.html#Rudeus_Procedure_RegularExecuter_Watcher_
+  commentId: Overload:Rudeus.Procedure.RegularExecuter.Watcher
   isSpec: "True"
-  fullName: Rudeus.Procedure.ScheduledRegularExecuter.Watcher
-  nameWithType: ScheduledRegularExecuter.Watcher
+  fullName: Rudeus.Procedure.RegularExecuter.Watcher
+  nameWithType: RegularExecuter.Watcher
 - uid: Rudeus.Procedure.ServerRegister
   name: ServerRegister
   href: api/Rudeus.Procedure.ServerRegister.html
@@ -3537,6 +3855,51 @@ references:
   isSpec: "True"
   fullName: Rudeus.Utils.CopyDirectory
   nameWithType: Utils.CopyDirectory
+- uid: Rudeus.Utils.formatMacAddress(System.String)
+  name: formatMacAddress(String)
+  href: api/Rudeus.Utils.html#Rudeus_Utils_formatMacAddress_System_String_
+  commentId: M:Rudeus.Utils.formatMacAddress(System.String)
+  fullName: Rudeus.Utils.formatMacAddress(System.String)
+  nameWithType: Utils.formatMacAddress(String)
+- uid: Rudeus.Utils.formatMacAddress*
+  name: formatMacAddress
+  href: api/Rudeus.Utils.html#Rudeus_Utils_formatMacAddress_
+  commentId: Overload:Rudeus.Utils.formatMacAddress
+  isSpec: "True"
+  fullName: Rudeus.Utils.formatMacAddress
+  nameWithType: Utils.formatMacAddress
+- uid: Rudeus.Utils.GetInstalledAppsHash(System.Collections.Generic.List{Rudeus.Model.ApplicationData})
+  name: GetInstalledAppsHash(List<ApplicationData>)
+  href: api/Rudeus.Utils.html#Rudeus_Utils_GetInstalledAppsHash_System_Collections_Generic_List_Rudeus_Model_ApplicationData__
+  commentId: M:Rudeus.Utils.GetInstalledAppsHash(System.Collections.Generic.List{Rudeus.Model.ApplicationData})
+  name.vb: GetInstalledAppsHash(List(Of ApplicationData))
+  fullName: Rudeus.Utils.GetInstalledAppsHash(System.Collections.Generic.List<Rudeus.Model.ApplicationData>)
+  fullName.vb: Rudeus.Utils.GetInstalledAppsHash(System.Collections.Generic.List(Of Rudeus.Model.ApplicationData))
+  nameWithType: Utils.GetInstalledAppsHash(List<ApplicationData>)
+  nameWithType.vb: Utils.GetInstalledAppsHash(List(Of ApplicationData))
+- uid: Rudeus.Utils.GetInstalledAppsHash*
+  name: GetInstalledAppsHash
+  href: api/Rudeus.Utils.html#Rudeus_Utils_GetInstalledAppsHash_
+  commentId: Overload:Rudeus.Utils.GetInstalledAppsHash
+  isSpec: "True"
+  fullName: Rudeus.Utils.GetInstalledAppsHash
+  nameWithType: Utils.GetInstalledAppsHash
+- uid: Rudeus.Utils.GetNetworkInterfaceHash(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}})
+  name: GetNetworkInterfaceHash(List<Dictionary<String, String>>)
+  href: api/Rudeus.Utils.html#Rudeus_Utils_GetNetworkInterfaceHash_System_Collections_Generic_List_System_Collections_Generic_Dictionary_System_String_System_String___
+  commentId: M:Rudeus.Utils.GetNetworkInterfaceHash(System.Collections.Generic.List{System.Collections.Generic.Dictionary{System.String,System.String}})
+  name.vb: GetNetworkInterfaceHash(List(Of Dictionary(Of String, String)))
+  fullName: Rudeus.Utils.GetNetworkInterfaceHash(System.Collections.Generic.List<System.Collections.Generic.Dictionary<System.String, System.String>>)
+  fullName.vb: Rudeus.Utils.GetNetworkInterfaceHash(System.Collections.Generic.List(Of System.Collections.Generic.Dictionary(Of System.String, System.String)))
+  nameWithType: Utils.GetNetworkInterfaceHash(List<Dictionary<String, String>>)
+  nameWithType.vb: Utils.GetNetworkInterfaceHash(List(Of Dictionary(Of String, String)))
+- uid: Rudeus.Utils.GetNetworkInterfaceHash*
+  name: GetNetworkInterfaceHash
+  href: api/Rudeus.Utils.html#Rudeus_Utils_GetNetworkInterfaceHash_
+  commentId: Overload:Rudeus.Utils.GetNetworkInterfaceHash
+  isSpec: "True"
+  fullName: Rudeus.Utils.GetNetworkInterfaceHash
+  nameWithType: Utils.GetNetworkInterfaceHash
 - uid: Rudeus.Utils.IsArgsAllNullOrAllObject(System.Collections.Generic.List{System.Object})
   name: IsArgsAllNullOrAllObject(List<Object>)
   href: api/Rudeus.Utils.html#Rudeus_Utils_IsArgsAllNullOrAllObject_System_Collections_Generic_List_System_Object__
@@ -3664,6 +4027,19 @@ references:
   isSpec: "True"
   fullName: Rudeus.Watchdogs.UpdateWatcher.UpdateWatcher
   nameWithType: UpdateWatcher.UpdateWatcher
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest
+  name: BuildSendInstalledAppsRequest()
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildSendInstalledAppsRequest
+  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest()
+  nameWithType: UpdateWatcher.BuildSendInstalledAppsRequest()
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest*
+  name: BuildSendInstalledAppsRequest
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildSendInstalledAppsRequest_
+  commentId: Overload:Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest
+  isSpec: "True"
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildSendInstalledAppsRequest
+  nameWithType: UpdateWatcher.BuildSendInstalledAppsRequest
 - uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
   name: BuildUpdateMacRequest()
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateMacRequest
@@ -3677,12 +4053,12 @@ references:
   isSpec: "True"
   fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateMacRequest
   nameWithType: UpdateWatcher.BuildUpdateMacRequest
-- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
-  name: BuildUpdateRequest()
-  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequest
-  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest
-  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest()
-  nameWithType: UpdateWatcher.BuildUpdateRequest()
+- uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest(System.Boolean)
+  name: BuildUpdateRequest(Boolean)
+  href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequest_System_Boolean_
+  commentId: M:Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest(System.Boolean)
+  fullName: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest(System.Boolean)
+  nameWithType: UpdateWatcher.BuildUpdateRequest(Boolean)
 - uid: Rudeus.Watchdogs.UpdateWatcher.BuildUpdateRequest*
   name: BuildUpdateRequest
   href: api/Rudeus.Watchdogs.UpdateWatcher.html#Rudeus_Watchdogs_UpdateWatcher_BuildUpdateRequest_
@@ -3716,6 +4092,12 @@ references:
   isSpec: "True"
   fullName: Rudeus.Watchdogs.UpdateWatcher.Settings
   nameWithType: UpdateWatcher.Settings
+- uid: SharedLib
+  name: SharedLib
+  href: api/SharedLib.html
+  commentId: N:SharedLib
+  fullName: SharedLib
+  nameWithType: SharedLib
 - uid: SharedLib.Exceptions
   name: SharedLib.Exceptions
   href: api/SharedLib.Exceptions.html
@@ -3741,6 +4123,25 @@ references:
   isSpec: "True"
   fullName: SharedLib.Exceptions.AccessTokenUnavailableException.AccessTokenUnavailableException
   nameWithType: AccessTokenUnavailableException.AccessTokenUnavailableException
+- uid: SharedLib.Exceptions.ApiNotFoundException
+  name: ApiNotFoundException
+  href: api/SharedLib.Exceptions.ApiNotFoundException.html
+  commentId: T:SharedLib.Exceptions.ApiNotFoundException
+  fullName: SharedLib.Exceptions.ApiNotFoundException
+  nameWithType: ApiNotFoundException
+- uid: SharedLib.Exceptions.ApiNotFoundException.#ctor(System.String)
+  name: ApiNotFoundException(String)
+  href: api/SharedLib.Exceptions.ApiNotFoundException.html#SharedLib_Exceptions_ApiNotFoundException__ctor_System_String_
+  commentId: M:SharedLib.Exceptions.ApiNotFoundException.#ctor(System.String)
+  fullName: SharedLib.Exceptions.ApiNotFoundException.ApiNotFoundException(System.String)
+  nameWithType: ApiNotFoundException.ApiNotFoundException(String)
+- uid: SharedLib.Exceptions.ApiNotFoundException.#ctor*
+  name: ApiNotFoundException
+  href: api/SharedLib.Exceptions.ApiNotFoundException.html#SharedLib_Exceptions_ApiNotFoundException__ctor_
+  commentId: Overload:SharedLib.Exceptions.ApiNotFoundException.#ctor
+  isSpec: "True"
+  fullName: SharedLib.Exceptions.ApiNotFoundException.ApiNotFoundException
+  nameWithType: ApiNotFoundException.ApiNotFoundException
 - uid: SharedLib.Exceptions.ServerUnavailableException
   name: ServerUnavailableException
   href: api/SharedLib.Exceptions.ServerUnavailableException.html
@@ -3760,6 +4161,25 @@ references:
   isSpec: "True"
   fullName: SharedLib.Exceptions.ServerUnavailableException.ServerUnavailableException
   nameWithType: ServerUnavailableException.ServerUnavailableException
+- uid: SharedLib.Exceptions.UnexpectedJsonFormatException
+  name: UnexpectedJsonFormatException
+  href: api/SharedLib.Exceptions.UnexpectedJsonFormatException.html
+  commentId: T:SharedLib.Exceptions.UnexpectedJsonFormatException
+  fullName: SharedLib.Exceptions.UnexpectedJsonFormatException
+  nameWithType: UnexpectedJsonFormatException
+- uid: SharedLib.Exceptions.UnexpectedJsonFormatException.#ctor(System.String)
+  name: UnexpectedJsonFormatException(String)
+  href: api/SharedLib.Exceptions.UnexpectedJsonFormatException.html#SharedLib_Exceptions_UnexpectedJsonFormatException__ctor_System_String_
+  commentId: M:SharedLib.Exceptions.UnexpectedJsonFormatException.#ctor(System.String)
+  fullName: SharedLib.Exceptions.UnexpectedJsonFormatException.UnexpectedJsonFormatException(System.String)
+  nameWithType: UnexpectedJsonFormatException.UnexpectedJsonFormatException(String)
+- uid: SharedLib.Exceptions.UnexpectedJsonFormatException.#ctor*
+  name: UnexpectedJsonFormatException
+  href: api/SharedLib.Exceptions.UnexpectedJsonFormatException.html#SharedLib_Exceptions_UnexpectedJsonFormatException__ctor_
+  commentId: Overload:SharedLib.Exceptions.UnexpectedJsonFormatException.#ctor
+  isSpec: "True"
+  fullName: SharedLib.Exceptions.UnexpectedJsonFormatException.UnexpectedJsonFormatException
+  nameWithType: UnexpectedJsonFormatException.UnexpectedJsonFormatException
 - uid: SharedLib.Exceptions.UnexpectedResponseException
   name: UnexpectedResponseException
   href: api/SharedLib.Exceptions.UnexpectedResponseException.html
@@ -3779,6 +4199,25 @@ references:
   isSpec: "True"
   fullName: SharedLib.Exceptions.UnexpectedResponseException.UnexpectedResponseException
   nameWithType: UnexpectedResponseException.UnexpectedResponseException
+- uid: SharedLib.IVersion
+  name: IVersion
+  href: api/SharedLib.IVersion.html
+  commentId: T:SharedLib.IVersion
+  fullName: SharedLib.IVersion
+  nameWithType: IVersion
+- uid: SharedLib.IVersion.ToString
+  name: ToString()
+  href: api/SharedLib.IVersion.html#SharedLib_IVersion_ToString
+  commentId: M:SharedLib.IVersion.ToString
+  fullName: SharedLib.IVersion.ToString()
+  nameWithType: IVersion.ToString()
+- uid: SharedLib.IVersion.ToString*
+  name: ToString
+  href: api/SharedLib.IVersion.html#SharedLib_IVersion_ToString_
+  commentId: Overload:SharedLib.IVersion.ToString
+  isSpec: "True"
+  fullName: SharedLib.IVersion.ToString
+  nameWithType: IVersion.ToString
 - uid: SharedLib.Model.Settings
   name: SharedLib.Model.Settings
   href: api/SharedLib.Model.Settings.html
@@ -4174,6 +4613,19 @@ references:
   commentId: F:SharedLib.Model.Settings.AppSettings.NetworkIFListKey
   fullName: SharedLib.Model.Settings.AppSettings.NetworkIFListKey
   nameWithType: AppSettings.NetworkIFListKey
+- uid: SharedLib.Model.Settings.AppSettings.RegistryKey
+  name: RegistryKey
+  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_RegistryKey
+  commentId: P:SharedLib.Model.Settings.AppSettings.RegistryKey
+  fullName: SharedLib.Model.Settings.AppSettings.RegistryKey
+  nameWithType: AppSettings.RegistryKey
+- uid: SharedLib.Model.Settings.AppSettings.RegistryKey*
+  name: RegistryKey
+  href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_RegistryKey_
+  commentId: Overload:SharedLib.Model.Settings.AppSettings.RegistryKey
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.AppSettings.RegistryKey
+  nameWithType: AppSettings.RegistryKey
 - uid: SharedLib.Model.Settings.AppSettings.Set(System.String,System.String)
   name: Set(String, String)
   href: api/SharedLib.Model.Settings.AppSettings.html#SharedLib_Model_Settings_AppSettings_Set_System_String_System_String_
@@ -4504,6 +4956,19 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.IAppSettings.LatestVersionStatusP
   nameWithType: IAppSettings.LatestVersionStatusP
+- uid: SharedLib.Model.Settings.IAppSettings.RegistryKey
+  name: RegistryKey
+  href: api/SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_RegistryKey
+  commentId: P:SharedLib.Model.Settings.IAppSettings.RegistryKey
+  fullName: SharedLib.Model.Settings.IAppSettings.RegistryKey
+  nameWithType: IAppSettings.RegistryKey
+- uid: SharedLib.Model.Settings.IAppSettings.RegistryKey*
+  name: RegistryKey
+  href: api/SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_RegistryKey_
+  commentId: Overload:SharedLib.Model.Settings.IAppSettings.RegistryKey
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.IAppSettings.RegistryKey
+  nameWithType: IAppSettings.RegistryKey
 - uid: SharedLib.Model.Settings.IAppSettings.SetLatestVersionStatusDownloadedP
   name: SetLatestVersionStatusDownloadedP()
   href: api/SharedLib.Model.Settings.IAppSettings.html#SharedLib_Model_Settings_IAppSettings_SetLatestVersionStatusDownloadedP
@@ -4724,6 +5189,32 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.IRootSettings.HostnameP
   nameWithType: IRootSettings.HostnameP
+- uid: SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP
+  name: InstalledAppsHashP
+  href: api/SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_InstalledAppsHashP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP
+  fullName: SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP
+  nameWithType: IRootSettings.InstalledAppsHashP
+- uid: SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP*
+  name: InstalledAppsHashP
+  href: api/SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_InstalledAppsHashP_
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.IRootSettings.InstalledAppsHashP
+  nameWithType: IRootSettings.InstalledAppsHashP
+- uid: SharedLib.Model.Settings.IRootSettings.InterfacesHashP
+  name: InterfacesHashP
+  href: api/SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_InterfacesHashP
+  commentId: P:SharedLib.Model.Settings.IRootSettings.InterfacesHashP
+  fullName: SharedLib.Model.Settings.IRootSettings.InterfacesHashP
+  nameWithType: IRootSettings.InterfacesHashP
+- uid: SharedLib.Model.Settings.IRootSettings.InterfacesHashP*
+  name: InterfacesHashP
+  href: api/SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_InterfacesHashP_
+  commentId: Overload:SharedLib.Model.Settings.IRootSettings.InterfacesHashP
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.IRootSettings.InterfacesHashP
+  nameWithType: IRootSettings.InterfacesHashP
 - uid: SharedLib.Model.Settings.IRootSettings.IsBetaChannelP
   name: IsBetaChannelP()
   href: api/SharedLib.Model.Settings.IRootSettings.html#SharedLib_Model_Settings_IRootSettings_IsBetaChannelP
@@ -5126,6 +5617,44 @@ references:
   isSpec: "True"
   fullName: SharedLib.Model.Settings.RootSettings.HostnameP
   nameWithType: RootSettings.HostnameP
+- uid: SharedLib.Model.Settings.RootSettings.InstalledAppsHashKey
+  name: InstalledAppsHashKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InstalledAppsHashKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.InstalledAppsHashKey
+  fullName: SharedLib.Model.Settings.RootSettings.InstalledAppsHashKey
+  nameWithType: RootSettings.InstalledAppsHashKey
+- uid: SharedLib.Model.Settings.RootSettings.InstalledAppsHashP
+  name: InstalledAppsHashP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InstalledAppsHashP
+  commentId: P:SharedLib.Model.Settings.RootSettings.InstalledAppsHashP
+  fullName: SharedLib.Model.Settings.RootSettings.InstalledAppsHashP
+  nameWithType: RootSettings.InstalledAppsHashP
+- uid: SharedLib.Model.Settings.RootSettings.InstalledAppsHashP*
+  name: InstalledAppsHashP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InstalledAppsHashP_
+  commentId: Overload:SharedLib.Model.Settings.RootSettings.InstalledAppsHashP
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.RootSettings.InstalledAppsHashP
+  nameWithType: RootSettings.InstalledAppsHashP
+- uid: SharedLib.Model.Settings.RootSettings.InterfacesHashKey
+  name: InterfacesHashKey
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InterfacesHashKey
+  commentId: F:SharedLib.Model.Settings.RootSettings.InterfacesHashKey
+  fullName: SharedLib.Model.Settings.RootSettings.InterfacesHashKey
+  nameWithType: RootSettings.InterfacesHashKey
+- uid: SharedLib.Model.Settings.RootSettings.InterfacesHashP
+  name: InterfacesHashP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InterfacesHashP
+  commentId: P:SharedLib.Model.Settings.RootSettings.InterfacesHashP
+  fullName: SharedLib.Model.Settings.RootSettings.InterfacesHashP
+  nameWithType: RootSettings.InterfacesHashP
+- uid: SharedLib.Model.Settings.RootSettings.InterfacesHashP*
+  name: InterfacesHashP
+  href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_InterfacesHashP_
+  commentId: Overload:SharedLib.Model.Settings.RootSettings.InterfacesHashP
+  isSpec: "True"
+  fullName: SharedLib.Model.Settings.RootSettings.InterfacesHashP
+  nameWithType: RootSettings.InterfacesHashP
 - uid: SharedLib.Model.Settings.RootSettings.IsBetaChannelP
   name: IsBetaChannelP()
   href: api/SharedLib.Model.Settings.RootSettings.html#SharedLib_Model_Settings_RootSettings_IsBetaChannelP
@@ -6057,6 +6586,19 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.FakeLocalMachine.GetMemory
   nameWithType: FakeLocalMachine.GetMemory
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces
+  name: GetNetworkInterfaces()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetNetworkInterfaces
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces()
+  nameWithType: FakeLocalMachine.GetNetworkInterfaces()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces*
+  name: GetNetworkInterfaces
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetNetworkInterfaces_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetNetworkInterfaces
+  nameWithType: FakeLocalMachine.GetNetworkInterfaces
 - uid: Test.SharedLib.Model.FakeLocalMachine.GetOS
   name: GetOS()
   href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetOS
@@ -6096,6 +6638,19 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.FakeLocalMachine.GetPhysicalRamInfo
   nameWithType: FakeLocalMachine.GetPhysicalRamInfo
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetProductName
+  name: GetProductName()
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetProductName
+  commentId: M:Test.SharedLib.Model.FakeLocalMachine.GetProductName
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetProductName()
+  nameWithType: FakeLocalMachine.GetProductName()
+- uid: Test.SharedLib.Model.FakeLocalMachine.GetProductName*
+  name: GetProductName
+  href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetProductName_
+  commentId: Overload:Test.SharedLib.Model.FakeLocalMachine.GetProductName
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.FakeLocalMachine.GetProductName
+  nameWithType: FakeLocalMachine.GetProductName
 - uid: Test.SharedLib.Model.FakeLocalMachine.GetSpec
   name: GetSpec()
   href: api/Test.SharedLib.Model.FakeLocalMachine.html#Test_SharedLib_Model_FakeLocalMachine_GetSpec
@@ -6520,6 +7075,32 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.Settings.FakeSettings.HostnameP
   nameWithType: FakeSettings.HostnameP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP
+  name: InstalledAppsHashP
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_InstalledAppsHashP
+  commentId: P:Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP
+  nameWithType: FakeSettings.InstalledAppsHashP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP*
+  name: InstalledAppsHashP
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_InstalledAppsHashP_
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.InstalledAppsHashP
+  nameWithType: FakeSettings.InstalledAppsHashP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP
+  name: InterfacesHashP
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_InterfacesHashP
+  commentId: P:Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP
+  nameWithType: FakeSettings.InterfacesHashP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP*
+  name: InterfacesHashP
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_InterfacesHashP_
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.InterfacesHashP
+  nameWithType: FakeSettings.InterfacesHashP
 - uid: Test.SharedLib.Model.Settings.FakeSettings.IsBetaChannelP
   name: IsBetaChannelP()
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_IsBetaChannelP
@@ -6780,6 +7361,19 @@ references:
   isSpec: "True"
   fullName: Test.SharedLib.Model.Settings.FakeSettings.OSVersionP
   nameWithType: FakeSettings.OSVersionP
+- uid: Test.SharedLib.Model.Settings.FakeSettings.RegistryKey
+  name: RegistryKey
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_RegistryKey
+  commentId: P:Test.SharedLib.Model.Settings.FakeSettings.RegistryKey
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.RegistryKey
+  nameWithType: FakeSettings.RegistryKey
+- uid: Test.SharedLib.Model.Settings.FakeSettings.RegistryKey*
+  name: RegistryKey
+  href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_RegistryKey_
+  commentId: Overload:Test.SharedLib.Model.Settings.FakeSettings.RegistryKey
+  isSpec: "True"
+  fullName: Test.SharedLib.Model.Settings.FakeSettings.RegistryKey
+  nameWithType: FakeSettings.RegistryKey
 - uid: Test.SharedLib.Model.Settings.FakeSettings.Set(System.String,System.String)
   name: Set(String, String)
   href: api/Test.SharedLib.Model.Settings.FakeSettings.html#Test_SharedLib_Model_Settings_FakeSettings_Set_System_String_System_String_
@@ -7990,19 +8584,45 @@ references:
   commentId: T:Test.UnitTestSample
   fullName: Test.UnitTestSample
   nameWithType: UnitTestSample
-- uid: Test.UnitTestSample.TestTest
-  name: TestTest()
-  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestTest
-  commentId: M:Test.UnitTestSample.TestTest
-  fullName: Test.UnitTestSample.TestTest()
-  nameWithType: UnitTestSample.TestTest()
-- uid: Test.UnitTestSample.TestTest*
-  name: TestTest
-  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestTest_
-  commentId: Overload:Test.UnitTestSample.TestTest
+- uid: Test.UnitTestSample.TestAbs1
+  name: TestAbs1()
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs1
+  commentId: M:Test.UnitTestSample.TestAbs1
+  fullName: Test.UnitTestSample.TestAbs1()
+  nameWithType: UnitTestSample.TestAbs1()
+- uid: Test.UnitTestSample.TestAbs1*
+  name: TestAbs1
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs1_
+  commentId: Overload:Test.UnitTestSample.TestAbs1
   isSpec: "True"
-  fullName: Test.UnitTestSample.TestTest
-  nameWithType: UnitTestSample.TestTest
+  fullName: Test.UnitTestSample.TestAbs1
+  nameWithType: UnitTestSample.TestAbs1
+- uid: Test.UnitTestSample.TestAbs2
+  name: TestAbs2()
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs2
+  commentId: M:Test.UnitTestSample.TestAbs2
+  fullName: Test.UnitTestSample.TestAbs2()
+  nameWithType: UnitTestSample.TestAbs2()
+- uid: Test.UnitTestSample.TestAbs2*
+  name: TestAbs2
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs2_
+  commentId: Overload:Test.UnitTestSample.TestAbs2
+  isSpec: "True"
+  fullName: Test.UnitTestSample.TestAbs2
+  nameWithType: UnitTestSample.TestAbs2
+- uid: Test.UnitTestSample.TestAbs3
+  name: TestAbs3()
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs3
+  commentId: M:Test.UnitTestSample.TestAbs3
+  fullName: Test.UnitTestSample.TestAbs3()
+  nameWithType: UnitTestSample.TestAbs3()
+- uid: Test.UnitTestSample.TestAbs3*
+  name: TestAbs3
+  href: api/Test.UnitTestSample.html#Test_UnitTestSample_TestAbs3_
+  commentId: Overload:Test.UnitTestSample.TestAbs3
+  isSpec: "True"
+  fullName: Test.UnitTestSample.TestAbs3
+  nameWithType: UnitTestSample.TestAbs3
 - uid: Xunit
   name: Xunit
   href: api/Xunit.html

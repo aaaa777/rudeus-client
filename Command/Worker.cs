@@ -41,8 +41,9 @@ namespace Rudeus.Command
             await RunAsync();
         }
         public async Task RunAsync()
-        { 
+        {
             //Console.WriteLine($"Worker running accessTokenValidator: {this.RootSettings.DeviceIdP}");
+            Console.WriteLine($"Rudeus command version: {Version.ToString()}");
 
             var argsDict = Utils.ParseArgs(_args);
 
