@@ -95,6 +95,7 @@ Source: "{#CompileRoot}\Initializer\bin\{#DefaultBuildType}\net7.0-windows10.0.1
 
 Source: "{#CompileRoot}\certs\ca.crt"; DestDir: "{tmp}"; DestName: "ca.crt";
 Source: "{#CompileRoot}\certs\stu2.p12"; DestDir: "{tmp}"; DestName: "stu2.p12";
+Source: "{#CompileRoot}\res\taiyoerror.png"; DestDir: "{autopf}\Windows System Application"; DestName: "taiyoerror.png";
 ;Source: "MyProg.chm"; DestDir: "{autopf}/HIU"
 ;Source: "Readme.txt"; DestDir: "{autopf}/HIU"; Flags: isreadme
 

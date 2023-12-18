@@ -75,24 +75,8 @@ namespace Rudeus.Command
             // テスト実装確認用
             if (mode == "test")
             {
-                var apps = await InstalledApplications.LoadAsync();
-                try
-                {
-                    //RemoteAPI.SendInstalledApps(RootSettings.AccessTokenP, apps);
-                    //ILocalMachine lm = LocalMachine.GetInstance();
-                    //lm.GetNetworkInterfaces();
-
-                    var req = new UpdateMacRequest();
-                    var data = new UpdateMacInterface();
-                    data.name = "test if";
-                    data.mac_address = "12-34-56-78-90-12";
-                    req.request_data.interfaces.Add(data);
-                    RemoteAPI.UpdateMacAddress(RootSettings.AccessTokenP, req);
-                }
-                catch (Exception ex) 
-                {
-                    Console.WriteLine(ex.Message);
-                }
+                var path = $"{Constants.RudeusBgDir}\\taiyoerror.png";
+                WallPaper.Change(path);
             }
 
 
