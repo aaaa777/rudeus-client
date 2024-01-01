@@ -26,8 +26,8 @@ namespace Rudeus.API.Request
     public class RegisterRequestData
     {
 
-        [JsonPropertyName(nameof(device_id))]
-        public string? device_id { get; set; }
+        [JsonPropertyName(nameof(product_id))]
+        public string? product_id { get; set; }
 
         [JsonPropertyName(nameof(product_name))]
         public string? product_name { get; set; }
@@ -35,7 +35,7 @@ namespace Rudeus.API.Request
 
         public RegisterRequestData(string deviceId, string hostname, string manageId)
         {
-            device_id = deviceId;
+            product_id = deviceId;
             product_name = "Rudeus Test Client";
         }
 

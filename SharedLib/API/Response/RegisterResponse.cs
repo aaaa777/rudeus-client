@@ -23,6 +23,9 @@ namespace Rudeus.API.Response
     {
         [JsonPropertyName(nameof(access_token))]
         public string? access_token { get; set; }
+
+        [JsonPropertyName(nameof(device_id))]
+        public string device_id { get; set; }
     }
 
     [JsonSourceGenerationOptions(WriteIndented = true)]

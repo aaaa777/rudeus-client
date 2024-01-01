@@ -100,7 +100,7 @@ namespace Test.SharedLib.API
         }
 
         public string OKResponseString = @"{""status"": ""ok""}";
-        public string RegisterDeviceResponseString = @"{""status"": ""ok"", ""device_id"": ""test_device_id""}";
+        public string RegisterDeviceResponseString = @"{""status"": ""ok"", ""product_id"": ""test_device_id""}";
         public string OKWithPushDataResponseString = @"{""status"": ""ok"", ""push_data"": [ {""id"": 1, ""type"": ""notify_toast"", ""body"": ""test message""} ] }";
     }
 }

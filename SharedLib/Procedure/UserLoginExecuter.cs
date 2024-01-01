@@ -37,7 +37,7 @@ namespace Rudeus.Procedure
                 //Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
 
                 // ログイン画面を開く
-                OpenBrowser(RemoteAPI.SamlLoginUrl);
+                OpenBrowser(Utils.buildLabelIdUpdateUrl(RootSettings.DeviceIdP));
                 //string userId = await userIdTask;
 
                 // 管理サーバに送信

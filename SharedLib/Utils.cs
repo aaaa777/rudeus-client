@@ -211,5 +211,10 @@ namespace Rudeus
             // 123456789012 -> 12:34:56:78:90:12
             return string.Join(":", Enumerable.Range(0, 6).Select(i => rawAddress.Substring(i * 2, 2)));
         }
+
+        public static string buildLabelIdUpdateUrl(string deviceId)
+        {
+            return $"{Constants.ApiEndpointWithoutCert}label/{deviceId}/update";
+        }
     }
 }

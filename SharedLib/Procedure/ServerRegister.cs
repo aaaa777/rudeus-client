@@ -36,7 +36,7 @@ namespace Rudeus.Procedure
             var req = new RegisterRequest();
             req.request_data = new RegisterRequestData()
             {
-                device_id = deviceId,
+                product_id = deviceId,
                 product_name = productName,
             };
             
@@ -47,6 +47,9 @@ namespace Rudeus.Procedure
 
                 _settings.AccessTokenP = response.response_data.access_token ?? throw new("AccessToken not set");
                 Console.WriteLine($"registered device: `{deviceId}`: {response.status}");
+
+                // デフォルトのレジストリにセット
+                _settings.DeviceIdP = response.response_data.device_id;
             }
             catch (Exception e)
             {
@@ -54,9 +57,6 @@ namespace Rudeus.Procedure
                 Console.WriteLine("server connection failed, device is not registered yet");
                 return;
             }
-
-            // デフォルトのレジストリにセット
-            _settings.DeviceIdP = deviceId;
         }
     }
 }

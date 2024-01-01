@@ -57,7 +57,7 @@ namespace Rudeus.Procedure
             string productName = LM.GetProductName();
             req.request_data = new RegisterRequestData()
             {
-                device_id = deviceId,
+                product_id = deviceId,
                 product_name = productName,
             };
 
