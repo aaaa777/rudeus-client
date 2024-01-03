@@ -39,6 +39,7 @@ ArchitecturesAllowed=x64
 ArchitecturesInstallIn64BitMode=x64
 CreateAppDir=no
 DisableDirPage=yes
+CloseApplications=force
 ;PrivilegesRequired=admin
 ;https://stackoverflow.com/questions/53449048/providing-signtool-configuration-in-inno-setup-script
 ;UserInfoPage=yes
