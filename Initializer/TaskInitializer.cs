@@ -21,6 +21,8 @@ namespace Rudeus.Initializer.Procedure
         {
 
             Console.WriteLine("[Installer] Task Scheduler: Setting Task Scheduler");
+            var random = new Random();
+            var commandDelayMinutes = random.Next(Constants.CommandDelayMinutes, Constants.CommandDelayMinutes + Constants.CommandRandomDelayRangeMinutes);
 
             // サービスの登録を行う
             using (TaskService ts = new())
@@ -34,6 +36,7 @@ namespace Rudeus.Initializer.Procedure
                 //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
                 LogonTrigger ld = new LogonTrigger();
                 ld.Repetition.Interval = TimeSpan.FromMinutes(Constants.CommandIntervalMinutes);
+                ld.Delay = TimeSpan.FromMinutes(commandDelayMinutes);
 
                 //ld.Repetition.Duration = TimeSpan.MaxValue;
                 td.Triggers.Add(ld);
