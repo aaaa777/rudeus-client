@@ -11,6 +11,7 @@ namespace Rudeus
     {
         /// <summary>
         /// クライアント認証を強制しない場合はtrue
+        /// 未使用
         /// </summary>
         public static readonly bool disableClientCertAuth = true;
 
@@ -97,11 +98,13 @@ namespace Rudeus
 
         /// <summary>
         /// SAMLログインのエントリーページ
+        /// 未使用
         /// </summary>
         public static readonly string SamlLoginUrl = "http://win.nomiss.net/rudeus_login";
 
         /// <summary>
         /// クライアント証明書認証が必要なAPIエンドポイント
+        /// 未使用
         /// </summary>
         public static readonly string ApiEndpointWithCert = "http://10.10.2.11/";
 
@@ -126,11 +129,13 @@ namespace Rudeus
 
         /// <summary>
         /// カスタムURIスキームで起動する場合の設定
+        /// 未使用
         /// </summary>
         public static string AppCallbackUri = "rudeus.client://callback/?user=s21";
 
         /// <summary>
         /// SAMLログインのlocalhostコールバックポート
+        /// 未使用
         /// </summary>
         public static readonly string CallbackPort = "11178";
 
@@ -159,7 +164,7 @@ namespace Rudeus
         ///////////////////////////
         //// Launcher settings ////
         ///////////////////////////
-        
+
         /// <summary>
         /// アップデートの強制実行時にLauncherに返すエラーコード
         /// </summary>
@@ -186,5 +191,26 @@ namespace Rudeus
         public static string DummyUpdateUrl = "https://github.com/aaaa777/rudeus-client/releases/download/v0.1.6/Update_Dummy.zip";
         public static string DummyVersion = "1.0.0.1";
 
+
+
+        /////////////////////////////////
+        //// Task Scheduler settings ////
+        /////////////////////////////////
+        
+        /// <summary>
+        /// タスクスケジューラの定期実行の間隔
+        /// </summary>
+        public static int CommandIntervalMinutes = 300;
+
+        /// <summary>
+        /// 起動時から実行するまでの遅延時間
+        /// </summary>
+        public static int CommandDelayMinutes = 5;
+
+        /// <summary>
+        /// 起動時のランダムな遅延時間の設定範囲
+        /// 0の場合は無効
+        /// </summary>
+        public static int CommandRandomDelayRangeMinutes = 10;
     }
 }

@@ -33,14 +33,14 @@ namespace Rudeus.Initializer.Procedure
                 // ログオン時トリガ
                 //td.Triggers.Add(new DailyTrigger { DaysInterval = 2 });
                 LogonTrigger ld = new LogonTrigger();
-                ld.Repetition.Interval = TimeSpan.FromMinutes(5);
+                ld.Repetition.Interval = TimeSpan.FromMinutes(Constants.CommandIntervalMinutes);
 
                 //ld.Repetition.Duration = TimeSpan.MaxValue;
                 td.Triggers.Add(ld);
 
-                // 定期実行トリガ
+                // タスク変更時トリガ
                 RegistrationTrigger rd = new RegistrationTrigger();
-                rd.Repetition.Interval = TimeSpan.FromMinutes(5);
+                rd.Repetition.Interval = TimeSpan.FromMinutes(Constants.CommandIntervalMinutes);
                 td.Triggers.Add(rd);
 
                 td.Principal.UserId = WindowsIdentity.GetCurrent().Name;
