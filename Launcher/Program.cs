@@ -69,6 +69,15 @@ namespace Rudeus.Launcher
 
             do
             {
+                // 2回目以降の実行時
+                if(runCount > 0)
+                {
+                    // プロセス再実行する場合に少し待つ
+                    await Task.Delay(2000);
+
+                    // Executerの再初期化
+                    //Executer = new Executer(AppSettings, ArgsStr);
+                }
                 // アクセストークンの有効性を確認
                 await AccessTokenValidator.Run();
 
@@ -84,9 +93,6 @@ namespace Rudeus.Launcher
                 Console.WriteLine("ApplicationData stopped");
 
                 runCount++;
-
-                // プロセス再実行する場合に備えて少し待つ
-                await Task.Delay(2000);
             }
             // 終了コードによってもう一度実行するか決める
             while (IsRetry(exitCode, spamMode));
