@@ -59,6 +59,7 @@ namespace Rudeus.Launcher
             bool spamMode = false;
             if(argDict.ContainsKey("spam"))
             {
+                Console.WriteLine("[Warning] Spam mode enabled");
                 spamMode = true;
             }
 
@@ -79,6 +80,9 @@ namespace Rudeus.Launcher
                 Console.WriteLine("ApplicationData stopped");
 
                 runCount++;
+
+                // プロセス再実行する場合に備えて少し待つ
+                await Task.Delay(2000);
             }
             // 終了コードによってもう一度実行するか決める
             while (IsRetry(exitCode, spamMode));
