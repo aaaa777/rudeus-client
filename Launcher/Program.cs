@@ -10,6 +10,10 @@ using SharedLib.Model.Settings;
 
 namespace Rudeus.Launcher
 {
+    /// <summary>
+    /// ランチャーのエントリーポイント
+    /// 管理サーバからアップデート出来ないクラスです
+    /// </summary>
     public class Program
     {
         public static IAppSettings AppSettings { get; set; }

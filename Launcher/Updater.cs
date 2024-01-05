@@ -15,6 +15,7 @@ namespace Rudeus.Launcher.Procedure
 {
     /// <summary>
     /// 起動アプリのアップデートを行う手続き
+    /// 管理サーバからアップデート出来ないクラスです
     /// </summary>
     public class Updater : IProcedure
     {
