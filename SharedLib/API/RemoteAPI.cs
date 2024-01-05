@@ -428,6 +428,10 @@ namespace Rudeus.API
             return true;
         }
 
+        /// <summary>
+        /// 管理サーバにアクセスできるかどうかを確認する
+        /// </summary>
+        /// <returns></returns>
         public static bool IsRemoteReachable()
         {
             try
