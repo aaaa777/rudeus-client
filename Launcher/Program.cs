@@ -63,8 +63,8 @@ namespace Rudeus.Launcher
             bool spamMode = false;
             if(argDict.ContainsKey("spam"))
             {
-                Console.WriteLine("[Warning] Spam mode enabled");
-                spamMode = true;
+                Console.WriteLine("[Warning] selected spam mode but its deprecated");
+                //spamMode = true;
             }
 
             do
