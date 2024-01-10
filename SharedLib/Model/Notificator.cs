@@ -16,16 +16,16 @@ namespace Rudeus.Model
     internal class Notificator
     {
         /*
-        public static async void ToastMessage(string message)
+        public static async void ToastMessage(string payload)
         {
-            if (message == null)
+            if (payload == null)
             {
-                throw new ArgumentNullException("message");
+                throw new ArgumentNullException("payload");
             }
 
             CancellationTokenSource cancellationTokenSource = new();
 
-            string text = message;
+            string text = payload;
             ToastDuration duration = ToastDuration.Short;
             double fontSize = 14;
 

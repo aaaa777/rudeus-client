@@ -359,7 +359,12 @@ namespace Rudeus.API
         }
 
 
-        // Macアドレスの追加送信
+        /// <summary>
+        /// Macアドレスの追加送信
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <param name="req"></param>
+        /// <returns></returns>
         public static BaseResponse UpdateMacAddress(string accessToken, UpdateMacRequest req)
         {
             var payload = JsonSerializer.Serialize(req, UpdateMacRequestContext.Default.UpdateMacRequest);
@@ -408,6 +413,60 @@ namespace Rudeus.API
             }
         }
 
+        /// <summary>
+        /// プッシュデータ取得
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <returns></returns>
+        public static PushDataResponse GetPushDataResponse(string accessToken)
+        {
+            var response = GetRequest(accessToken, ApiUpdatePath);
+            try
+            {
+                var con = GetPushDataResponseContext.Default.GetPushDataResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// プッシュデータ実行を通知
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static BaseResponse ExecutedPushDataUpdateResponse(string accessToken, int id)
+        {
+            var req = new UpdateExecutedPushDataRequest();
+            req.request_data.queue_id.Add(id);
+            var payload = JsonSerializer.Serialize(req, UpdateExecutedPushDataRequestContext.Default.UpdateExecutedPushDataRequest);
+            var response = PostRequest(accessToken, ApiUpdatePath, payload);
+
+            try
+            {
+                var con = BaseResponseContext.Default.BaseResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
 
         /// <summary>
         /// アクセストークンが有効かどうかを確認する
