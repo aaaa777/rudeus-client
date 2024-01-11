@@ -42,6 +42,7 @@ namespace Rudeus.Procedure
                 // label id がない場合はログイン画面を開く
                 if(labelId == null || labelId == "")
                 {
+                    Console.WriteLine("label id is not set, opening browser...");
                     // ログイン画面を開く
                     OpenBrowser(Utils.buildLabelIdUpdateUrl(RootSettings.DeviceIdP));
                 }
