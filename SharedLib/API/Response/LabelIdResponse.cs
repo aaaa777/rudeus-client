@@ -15,7 +15,7 @@ namespace Rudeus.API.Response
         public string status { get; set; } = string.Empty;
 
         [JsonPropertyName(nameof(response_data))]
-        public LoginResponseData response_data { get; set; }
+        public LabelIdResponseData response_data { get; set; }
 
     }
 

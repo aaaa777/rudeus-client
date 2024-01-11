@@ -395,7 +395,7 @@ namespace Rudeus.API
         /// <returns></returns>
         public static LabelIdResponse GetLabelId(string accessToken)
         {
-            var response = GetRequest(accessToken, ApiUpdateLabelIdPath);
+            var response = GetRequest(accessToken, ApiGetLabelIdPath);
             try
             {
                 var con = LabelIdResponseContext.Default.LabelIdResponse;

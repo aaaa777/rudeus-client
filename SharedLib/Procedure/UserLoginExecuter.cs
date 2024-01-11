@@ -10,6 +10,7 @@ namespace Rudeus.Procedure
 {
     /// <summary>
     /// ユーザーのログインを行う手続き
+    /// ログイン(ユーザ紐付)とラベルID入力を促す
     /// </summary>
     public class UserLoginExecuter : IProcedure
     {
@@ -33,16 +34,17 @@ namespace Rudeus.Procedure
         {
             try
             {
-                // 学生IDを取得するためlocalhostでコールバックを待機
-                //Task<string> userIdTask = RemoteAPI.ReceiveStudentIdAsync();
+                // label id を取得
+                var res = RemoteAPI.GetLabelId(RootSettings.AccessTokenP);
+                var labelId = res.response_data.label_id;
+                Console.WriteLine("label id: " + labelId);
 
-                // ログイン画面を開く
-                OpenBrowser(Utils.buildLabelIdUpdateUrl(RootSettings.DeviceIdP));
-                //string userId = await userIdTask;
-
-                // 管理サーバに送信
-                //LoginResponse res = RemoteAPI.LoginDevice(RootSettings.AccessTokenP, userId);
-                //RootSettings.UsernameP = userId;
+                // label id がない場合はログイン画面を開く
+                if(labelId == null || labelId == "")
+                {
+                    // ログイン画面を開く
+                    OpenBrowser(Utils.buildLabelIdUpdateUrl(RootSettings.DeviceIdP));
+                }
             }
             catch
             {

@@ -56,10 +56,10 @@ namespace Rudeus.Command
             }
 
 
-            // 初期化
+            // アクセストークンの有効性確認
             await AccessTokenValidator.Run();
 
-            // 通常起動時
+            // 定期実行時起動時
             if (mode == "default")
             {
                 // UpdateDeviceの実行
@@ -68,6 +68,7 @@ namespace Rudeus.Command
                 //InstalledAppsSender.Run();
             }
 
+            // ネットワーク変更イベント時
             if (mode == "login")
             {
                 await UserLoginExecuter.Run();
