@@ -42,7 +42,7 @@ namespace Rudeus.API.Response
 
     [JsonSourceGenerationOptions(WriteIndented = true)]
     [JsonSerializable(typeof(PushDataResponse))]
-    internal partial class GetPushDataResponseContext : JsonSerializerContext
+    internal partial class PushDataResponseContext : JsonSerializerContext
     {
     }
 }

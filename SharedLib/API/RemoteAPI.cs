@@ -387,6 +387,31 @@ namespace Rudeus.API
             }
         }
 
+        /// <summary>
+        /// ラベルIDを取得する
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <returns></returns>
+        public static LabelIdResponse GetLabelId(string accessToken)
+        {
+            var response = GetRequest(accessToken, ApiUpdateLabelIdPath);
+            try
+            {
+                var con = LabelIdResponseContext.Default.LabelIdResponse;
+                var jsonResponse = JsonSerializer.Deserialize(response, con);
+                if (jsonResponse != null)
+                {
+                    return jsonResponse;
+                }
+                throw new UnexpectedResponseException("JSONSerializer return null");
+            }
+            catch
+            {
+                // JSONフォーマットが違った場合
+                throw;
+            }
+        }
+
         ///<summary>
         /// ラベルIDを登録する
         /// </summary>
@@ -423,7 +448,7 @@ namespace Rudeus.API
             var response = GetRequest(accessToken, ApiUpdatePath);
             try
             {
-                var con = GetPushDataResponseContext.Default.GetPushDataResponse;
+                var con = PushDataResponseContext.Default.PushDataResponse;
                 var jsonResponse = JsonSerializer.Deserialize(response, con);
                 if (jsonResponse != null)
                 {

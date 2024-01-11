@@ -31,6 +31,8 @@ namespace Rudeus.Procedure
         {
             // UpdateDeviceÇÃé¿çs
             UpdateResponse res = await SendRegularReport();
+
+            // var res = GetPushData();
             
             HandlePushDataFromResponse(res);
 
@@ -41,6 +43,10 @@ namespace Rudeus.Procedure
             await LocalMachineInfoUpdater.Run();
         }
 
+        private PushDataResponse GetPushData()
+        {
+            return new PushDataResponse();
+        }
 
         private void HandlePushDataFromResponse(UpdateResponse? res)
         {

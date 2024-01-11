@@ -27,7 +27,7 @@ namespace Rudeus.API.Response
 
     [JsonSourceGenerationOptions(WriteIndented = true)]
     [JsonSerializable(typeof(LabelIdResponse))]
-    internal partial class LabelIdResponseResponseContext : JsonSerializerContext
+    internal partial class LabelIdResponseContext : JsonSerializerContext
     {
     }
 }
