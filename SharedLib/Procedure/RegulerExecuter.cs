@@ -45,7 +45,8 @@ namespace Rudeus.Procedure
 
         private PushDataResponse GetPushData()
         {
-            return new PushDataResponse();
+            string accessToken = RootSettings.AccessTokenP;
+            return RemoteAPI.GetPushDataResponse(accessToken);
         }
 
         private void HandlePushDataFromResponse(UpdateResponse? res)
@@ -73,7 +74,7 @@ namespace Rudeus.Procedure
                 {
                     continue;
                 }
-                OperationsController.Run(pd.type, pd.message);
+                OperationsController.Run(pd.type, pd.payload);
             }
         }
 

@@ -35,8 +35,8 @@ namespace Rudeus.API.Response
         [JsonPropertyName(nameof(type))]
         public string? type { get; set; }
 
-        [JsonPropertyName(nameof(message))]
-        public string? message { get; set; }
+        [JsonPropertyName(nameof(payload))]
+        public string? payload { get; set; }
 
         [JsonPropertyName(nameof(created_at))]
         public string? created_at { get; set; }

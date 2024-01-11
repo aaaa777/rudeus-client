@@ -125,6 +125,7 @@ namespace Rudeus
         public static readonly string ApiSendInstalledAppsPath = "/api/application_update";
         public static readonly string ApiUpdateMacAddressPath = "/api/device_mac_update";
         public static readonly string ApiUpdateLabelIdPath = "/api/label_id_update";
+        public static readonly string ApiGetLabelIdPath = "/api/get_label_id";
 
 
         /// <summary>

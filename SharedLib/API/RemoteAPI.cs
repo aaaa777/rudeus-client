@@ -45,6 +45,7 @@ namespace Rudeus.API
         public static string ApiSendInstalledAppsPath { get; } = Constants.ApiSendInstalledAppsPath;
         public static string ApiUpdateMacAddressPath { get; } = Constants.ApiUpdateMacAddressPath;
         public static string ApiUpdateLabelIdPath { get; } = Constants.ApiUpdateLabelIdPath;
+        public static string ApiGetLabelIdPath { get; } = Constants.ApiGetLabelIdPath;
 
         // カスタムURIスキームで起動する場合の設定
         public static string AppCallbackUri = "rudeus.client://callback/?user=s2112";
@@ -445,7 +446,7 @@ namespace Rudeus.API
         /// <returns></returns>
         public static PushDataResponse GetPushDataResponse(string accessToken)
         {
-            var response = GetRequest(accessToken, ApiUpdatePath);
+            var response = GetRequest(accessToken, ApiGetLabelIdPath);
             try
             {
                 var con = PushDataResponseContext.Default.PushDataResponse;
