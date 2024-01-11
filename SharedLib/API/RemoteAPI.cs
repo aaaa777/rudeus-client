@@ -27,7 +27,7 @@ namespace Rudeus.API
     /// 管理サーバとREST APTで通信する、モデルのプロパティを読み取るが書き込みはしない。
     /// TODO: インスタンス化してスタブ利用可にする
     /// </summary>
-    public class RemoteAPI
+    public class RemoteAPI : IRemoteAPI
     {
 
         // クライアント証明書を取得

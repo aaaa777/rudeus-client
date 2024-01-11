@@ -16,10 +16,10 @@ namespace Rudeus.API
         // メソッドは必ず例外処理を行うこと
         // 開発時以外はサーバ起因の例外しか発生しないので、基本はリトライ処理だけでいい
         public abstract static RegisterResponse RegisterDevice(string deviceId, string hostname);
-        public abstract static UpdateResponse UpdateDevice(string accessToken, string? hostname = null);
+        public abstract static UpdateResponse UpdateDevice(string accessToken, UpdateRequest request);
         public abstract static LoginResponse LoginDevice(string accessToken, string userId);
 
-        public abstract static BaseResponse SendInstalledApps(string accessToken, List<InstalledApplications> apps);
+        public abstract static BaseResponse SendInstalledApps(string accessToken, List<ApplicationData> apps);
 
         // 移行予定メソッド
         /*
