@@ -91,13 +91,14 @@
 <hr>
 <h1 id="概要">概要</h1>
 <p>Rudeusクライアントは、IT資産管理システムErisのクライアントアプリケーションです。</p>
+<p>インストールしたデバイスを管理することができます。</p>
 <p>管理サーバErisと通信し、デバイスの登録、情報の更新、アクセスログの取得などの機能を提供します。</p>
 <p>下図は、RudeusクライアントがErisと通信する際のイメージです。</p>
-<p><img src="/images/rudeus-ab.png" alt="rudeus-ab"></p>
+<p><img src="../images/rudeus-ab.png" alt="rudeus-ab"></p>
 <p>このドキュメント内では上の常駐プログラムをクライアントまたはRudeusと呼びます。</p>
 <hr>
 <h1 id="運用方法">運用方法</h1>
-<p>デバイスにRudeusクライアントをインストールすれば、自動で管理サーバErisと同期します。</p>
+<p>デバイスにRudeusクライアントをインストールすれば、自動で管理サーバErisと同期しデバイスが管理下に置かれます。</p>
 <p>インストール時点でそれぞれのデバイスにアクセストークンとデバイスID(UUID)が発行され、それを使ってデバイスの情報を更新します。</p>
 <p>アクセストークンもデバイスIDも変更不可能なので、再インストールした場合には新しいデバイスとして登録されることに注意してください。</p>
 <p>インストール方法については<a href="installation.html">こちら</a>を参照してください。</p>
@@ -105,40 +106,40 @@
 <p>管理サーバErisには、デバイスの一覧表示、デバイスの手動登録、学生の一覧表示、プッシュ通知の配信などの機能があります。</p>
 <h3 id="デバイス一覧詳細の確認">デバイス一覧/詳細の確認</h3>
 <p>左メニューからデバイス一覧を選択すると、以下の画面になります。</p>
-<p><img src="/images/eris-devices.png" alt="eris-devices"></p>
+<p><img src="../images/eris-devices.png" alt="eris-devices"></p>
 <p>更にデバイスID部分をクリックすると、デバイスの詳細情報を確認できます。</p>
-<p><img src="/images/eris-device-detail.png" alt="eris-device-detail"></p>
+<p><img src="../images/eris-device-detail.png" alt="eris-device-detail"></p>
 <p>この画面ではデバイス詳細情報のほか、アクセスログやアップデート情報を確認できます。</p>
 <hr>
 <h3 id="デバイスの手動登録">デバイスの手動登録</h3>
 <p>デバイス新規登録画面からデバイスを手動で登録することができます。</p>
 <p>これはクライアントアプリがインストールされていないデバイスに対して行う操作です。</p>
 <p>Rudeusクライアントをインストールしたデバイスにはこの操作は不要です。</p>
-<p><img src="/images/eris-device-creation.png" alt="eris-device-creation"></p>
+<p><img src="../images/eris-device-creation.png" alt="eris-device-creation"></p>
 <hr>
 <h3 id="デバイスと学生紐づけ">デバイスと学生紐づけ</h3>
 <p>通常、アプリがインストールされているとユーザにログインを促す画面が定期的に表示されます。</p>
 <p>しかし学生の操作に関わらず、学生とデバイスの紐づけを操作することもできます。</p>
 <p>これはデバイス &gt; 学生手動紐づけ画面、学生紐づけ解除画面から行います。</p>
-<p><img src="/images/eris-device-stu1.png" alt="eris-device-stu1"></p>
-<p><img src="/images/eris-device-stu2.png" alt="eris-device-stu2"></p>
+<p><img src="../images/eris-device-stu1.png" alt="eris-device-stu1"></p>
+<p><img src="../images/eris-device-stu2.png" alt="eris-device-stu2"></p>
 <hr>
 <h3 id="学生一覧">学生一覧</h3>
 <p>学生がログインできるアカウントは学生一覧画面に登録されている必要があります。</p>
 <p>CSVファイルを使って一括登録するか、手動で登録してください。</p>
-<p><img src="/images/eris-students.png" alt="eris-students"></p>
+<p><img src="../images/eris-students.png" alt="eris-students"></p>
 <hr>
 <h3 id="プッシュ配信">プッシュ配信</h3>
 <p>学生のデバイスは定期的に管理サーバと通信します。</p>
 <p>そのタイミングで任意のメッセージや予定を配信することができます。</p>
-<p>新規ボタンからプッシュ通知を作成し、配信対象の学生を指定できます。</p>
-<p><img src="/images/eris-push.png" alt="eris-push"></p>
+<p>また新規ボタンからプッシュ通知を作成し、配信対象の学生も指定できます。</p>
+<p><img src="../images/eris-push.png" alt="eris-push"></p>
 <hr>
 <h3 id="アップデート">アップデート</h3>
 <p>実行ファイルをアップデートするのに使います。</p>
 <p>RudeusクライアントはRudeus.Application、Rudeus.Command、Rudeus.Launcherの3つのアプリケーションで構成されています。</p>
 <p>それぞれApplication（タスクトレイ）とCommand（バックグラウンド）をアップデートすることができます。</p>
-<p><img src="/images/eris-update-app.png" alt="eris-update-app"></p>
+<p><img src="../images/eris-update-app.png" alt="eris-update-app"></p>
 <p>この画面に実行ファイル等をZipでアップロードするとデバイスの定期通信時にアップデートが行われます。</p>
 <p>手動でZipファイルにまとめると漏れが発生する可能性があるため自動化をお勧めします。</p>
 <p>Github Actionsを利用して自動化するサンプルは<code>.github/workflows/dotnet-desktop.yml</code>を参照してください。</p>
@@ -151,25 +152,25 @@
 <h2 id="その他情報">その他情報</h2>
 <p>全デバイスのネットワークインターフェース情報や、インストール済みアプリケーションの一覧を表示できます。</p>
 <p>個別のデバイス情報はデバイス詳細画面から確認できます。</p>
-<p><img src="/images/eris-nwif.png" alt="eris-nwif"></p>
+<p><img src="../images/eris-nwif.png" alt="eris-nwif"></p>
 <hr>
 <h1 id="動作の流れ">動作の流れ</h1>
 <p>Rudeusクライアントは、REST APIを使用して管理サーバーと通信します。</p>
 <p>このセクションでは操作に使用するREST APIについて説明します。</p>
 <h2 id="デバイスの登録">デバイスの登録</h2>
-<p><img src="/images/flow-register.png" alt="register"></p>
+<p><img src="../images/flow-register.png" alt="register"></p>
 <p>デバイスを登録するためには、<code>/api/device_initialize</code>を使用します。</p>
 <p>このAPIは、デバイスを初期化し、アクセストークンを発行します。</p>
 <p>初期化後には、デバイスの情報を更新するためのAPIを使用します。</p>
 <p><code>/api/device_initialize</code>を除くすべてのAPIは、初期化後に発行されるアクセストークンを使用して認証されます。</p>
 <hr>
 <h2 id="デバイス情報の更新">デバイス情報の更新</h2>
-<p><img src="/images/flow-reg-update.png" alt="update"></p>
+<p><img src="../images/flow-reg-update.png" alt="update"></p>
 <p>デバイス情報を更新するためには、<code>/api/device_update</code>を使用します。</p>
 <p>このAPIは、デバイスの情報を最新の状態にします。</p>
 <hr>
 <h1 id="その他のドキュメント">その他のドキュメント</h1>
-<p>Rudeusクライアントのクラス定義については<a href="/api/Rudeus.html">こちら</a>(APIタブ)</p>
+<p>Rudeusクライアントのクラス定義については<a href="../api/Rudeus.html">こちら</a>(APIタブ)</p>
 <p>管理サーバErisについては、<a href="https://win.nomiss.net/admin">こちら</a>でデモとドキュメントをご覧いただけます。(ユーザ/パスワードはadmin/adminです。)</p>
 <p>管理サーバのテーブル定義は<a href="https://win.nomiss.net/admin/docs/db/eris">こちら</a></p>
 <p>APIの詳細なリファレンスは<a href="https://win.nomiss.net/admin/docs/api/eris">こちら</a></p>
