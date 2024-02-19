@@ -1395,6 +1395,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/how-to-test.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/how-to-test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/installation.md",
       "output": {
         ".html": {

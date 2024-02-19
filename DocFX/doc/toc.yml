@@ -8,6 +8,8 @@
   href: installation.md
 - name: ビルド方法について(開発者向け)
   href: how-to-build.md
+- name: テスト方法について(開発者向け)
+  href: how-to-test.md
 # - name: API概要について(開発者向け)
 #   href: abstruct-api.md
 - name: 全APIの一覧(開発者向け)
