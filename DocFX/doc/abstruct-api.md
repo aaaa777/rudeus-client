@@ -5,7 +5,7 @@ Rudeusクライアントは、REST APIを使用して管理サーバーと通信
 このページでは、Rudeusクライアントが使用するREST APIについて説明します。
 
 ## デバイスの登録
-![register](/images/flow-register.png)
+![register](../images/flow-register.png)
 
 デバイスを登録するためには、`/api/device_initialize`を使用します。
 
@@ -16,7 +16,7 @@ Rudeusクライアントは、REST APIを使用して管理サーバーと通信
 `/api/device_initialize`を除くすべてのAPIは、初期化後に発行されるアクセストークンを使用して認証されます。
 
 ## デバイス情報の更新
-![update](/images/flow-reg-update.png)
+![update](../images/flow-reg-update.png)
 
 デバイス情報を更新するためには、`/api/device_update`を使用します。
 
