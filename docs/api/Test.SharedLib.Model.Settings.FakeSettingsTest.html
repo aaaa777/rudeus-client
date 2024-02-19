@@ -1,662 +1,172 @@
 ﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
 <html>
-  
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FakeSettingsTest
-   | Rudeus Document </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FakeSettingsTest
-   | Rudeus Document ">
-    <meta name="generator" content="docfx 2.59.4.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    <meta property="docfx:rel" content="../">
-    
+      <title>Class FakeSettingsTest | Rudeus Document </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FakeSettingsTest | Rudeus Document ">
+      
+      <meta name="description" content="FakeSettingsのテストクラス">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="Rudeus">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Rudeus">
+            Rudeus
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
               </form>
             </div>
           </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
         </div>
-      </header>
-      <div class="container body-content">
-        
-        <div id="search-results">
-          <div class="search-list">Search Results for <span></span></div>
-          <div class="sr-items">
-            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
           </div>
-          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
         </div>
       </div>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
         </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest">
-  
-  
-  <h1 id="Test_SharedLib_Model_Settings_FakeSettingsTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest" class="text-break">Class FakeSettingsTest
+
+        <article data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest">
+
+
+
+  <h1 id="Test_SharedLib_Model_Settings_FakeSettingsTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest" class="text-break">
+Class FakeSettingsTest  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
-  <div class="markdown level0 summary"><p>FakeSettingsのテストクラス</p>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Test.html">Test</a>.<a class="xref" href="Test.SharedLib.html">SharedLib</a>.<a class="xref" href="Test.SharedLib.Model.html">Model</a>.<a class="xref" href="Test.SharedLib.Model.Settings.html">Settings</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Test.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>FakeSettingsのテストクラス</p>
 </div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FakeSettingsTest</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Test.SharedLib.Model.Settings.html">Test.SharedLib.Model.Settings</a></h6>
-  <h6><strong>Assembly</strong>: Test.dll</h6>
-  <h5 id="Test_SharedLib_Model_Settings_FakeSettingsTest_syntax">Syntax</h5>
+  <div class="markdown conceptual"></div>
+
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class FakeSettingsTest</code></pre>
   </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L175">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest">AccessTokenPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AccessTokenPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L301">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest">CDrivePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CDrivePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L273">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest">CpuNamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CpuNamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L16">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest">CurrentVersionPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void CurrentVersionPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L189">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest">DeviceIdPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DeviceIdPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L203">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest">FirstHostnamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void FirstHostnamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L217">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest">HostnamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void HostnamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L357">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest">IsBetaChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void IsBetaChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L391">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest">IsDevelopChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void IsDevelopChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L374">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest">IsStableChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void IsStableChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L408">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest">IsTestChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void IsTestChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L245">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest">LabelIdPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LabelIdPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L30">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest">LastDirNamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LastDirNamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L45">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest">LastVersionDirPathPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LastVersionDirPathPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L59">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest">LastVersionExeNamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LastVersionExeNamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L73">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest">LastVersionExePathPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LastVersionExePathPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L89">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest">LatestDirNamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LatestDirNamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L103">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest">LatestVersionDirPathPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LatestVersionDirPathPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L117">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest">LatestVersionExeNamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LatestVersionExeNamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L131">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest">LatestVersionExePathPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LatestVersionExePathPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L147">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest">LatestVersionStatusPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void LatestVersionStatusPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L287">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest">MemoryPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void MemoryPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L315">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest">OSPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OSPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L329">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest">OSVersionPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void OSVersionPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L425">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest">SetBetaChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetBetaChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L457">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest">SetDevelopChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetDevelopChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L505">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest">SetLatestVersionStatusDownloadedPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusDownloadedPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L490">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest">SetLatestVersionStatusOkPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusOkPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L520">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest">SetLatestVersionStatusUnlaunchablePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetLatestVersionStatusUnlaunchablePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L441">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest">SetStableChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetStableChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L473">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest">SetTestChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetTestChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L259">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest">SpecPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SpecPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L161">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest">UpdatingChannelPTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UpdatingChannelPTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L231">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest">UsernamePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void UsernamePTest()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L343">View Source</a>
-  </span>
-  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest*"></a>
-  <h4 id="Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest">WithSecurePTest()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WithSecurePTest()</code></pre>
-  </div>
-  <h3 id="extensionmethods">Extension Methods</h3>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FakeSettingsTest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_">AssertEx.Is&lt;T&gt;(T, T)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_">AssertEx.IsInstanceOf&lt;TExpected&gt;(object)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_">AssertEx.Is&lt;T&gt;(T, Expression&lt;Func&lt;T, Boolean&gt;&gt;, String)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_">AssertEx.IsNotInstanceOf&lt;TWrong&gt;(object)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.Is&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsNotStructuralEqual(object, object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsStructuralEqual(object, object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_">AssertEx.AsDynamic&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_">AssertEx.IsNotNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_">AssertEx.IsNotSameReferenceAs&lt;T&gt;(T, T)</a>
   </div>
   <div>
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNot__1___0___0_">AssertEx.IsNot&lt;T&gt;(T, T)</a>
@@ -668,69 +178,995 @@
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNull__1___0_">AssertEx.IsNull&lt;T&gt;(T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotNull__1___0_">AssertEx.IsNotNull&lt;T&gt;(T)</a>
-  </div>
-  <div>
       <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsSameReferenceAs__1___0___0_">AssertEx.IsSameReferenceAs&lt;T&gt;(T, T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotSameReferenceAs__1___0___0_">AssertEx.IsNotSameReferenceAs&lt;T&gt;(T, T)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0_System_Linq_Expressions_Expression_System_Func___0_System_Boolean___System_String_">AssertEx.Is&lt;T&gt;(T, Expression&lt;Func&lt;T, bool&gt;&gt;, string)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsInstanceOf__1_System_Object_">AssertEx.IsInstanceOf&lt;TExpected&gt;(Object)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_">AssertEx.Is&lt;T&gt;(T, T)</a>
   </div>
   <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotInstanceOf__1_System_Object_">AssertEx.IsNotInstanceOf&lt;TWrong&gt;(Object)</a>
+      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_Is__1___0___0_System_Collections_Generic_IEqualityComparer___0__">AssertEx.Is&lt;T&gt;(T, T, IEqualityComparer&lt;T&gt;)</a>
   </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsStructuralEqual(Object, Object, String)</a>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_AccessTokenPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.AccessTokenPTest">
+  AccessTokenPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void AccessTokenPTest()</code></pre>
   </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_IsNotStructuralEqual_System_Object_System_Object_System_String_">AssertEx.IsNotStructuralEqual(Object, Object, String)</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CDrivePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CDrivePTest">
+  CDrivePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void CDrivePTest()</code></pre>
   </div>
-  <div>
-      <a class="xref" href="Xunit.AssertEx.html#Xunit_AssertEx_AsDynamic__1___0_">AssertEx.AsDynamic&lt;T&gt;(T)</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CpuNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CpuNamePTest">
+  CpuNamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void CpuNamePTest()</code></pre>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_CurrentVersionPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.CurrentVersionPTest">
+  CurrentVersionPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void CurrentVersionPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_DeviceIdPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.DeviceIdPTest">
+  DeviceIdPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void DeviceIdPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_FirstHostnamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.FirstHostnamePTest">
+  FirstHostnamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void FirstHostnamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_HostnamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.HostnamePTest">
+  HostnamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void HostnamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsBetaChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsBetaChannelPTest">
+  IsBetaChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void IsBetaChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsDevelopChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsDevelopChannelPTest">
+  IsDevelopChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void IsDevelopChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsStableChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsStableChannelPTest">
+  IsStableChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void IsStableChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_IsTestChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.IsTestChannelPTest">
+  IsTestChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void IsTestChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LabelIdPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LabelIdPTest">
+  LabelIdPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LabelIdPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastDirNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastDirNamePTest">
+  LastDirNamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LastDirNamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionDirPathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionDirPathPTest">
+  LastVersionDirPathPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LastVersionDirPathPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExeNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExeNamePTest">
+  LastVersionExeNamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LastVersionExeNamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LastVersionExePathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LastVersionExePathPTest">
+  LastVersionExePathPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LastVersionExePathPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestDirNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestDirNamePTest">
+  LatestDirNamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LatestDirNamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionDirPathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionDirPathPTest">
+  LatestVersionDirPathPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LatestVersionDirPathPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExeNamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExeNamePTest">
+  LatestVersionExeNamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LatestVersionExeNamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionExePathPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionExePathPTest">
+  LatestVersionExePathPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LatestVersionExePathPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_LatestVersionStatusPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.LatestVersionStatusPTest">
+  LatestVersionStatusPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void LatestVersionStatusPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_MemoryPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.MemoryPTest">
+  MemoryPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void MemoryPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSPTest">
+  OSPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void OSPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_OSVersionPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.OSVersionPTest">
+  OSVersionPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void OSVersionPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetBetaChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetBetaChannelPTest">
+  SetBetaChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetBetaChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetDevelopChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetDevelopChannelPTest">
+  SetDevelopChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetDevelopChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusDownloadedPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusDownloadedPTest">
+  SetLatestVersionStatusDownloadedPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetLatestVersionStatusDownloadedPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusOkPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusOkPTest">
+  SetLatestVersionStatusOkPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetLatestVersionStatusOkPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetLatestVersionStatusUnlaunchablePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetLatestVersionStatusUnlaunchablePTest">
+  SetLatestVersionStatusUnlaunchablePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetLatestVersionStatusUnlaunchablePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetStableChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetStableChannelPTest">
+  SetStableChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetStableChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SetTestChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SetTestChannelPTest">
+  SetTestChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SetTestChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_SpecPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.SpecPTest">
+  SpecPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void SpecPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_UpdatingChannelPTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UpdatingChannelPTest">
+  UpdatingChannelPTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void UpdatingChannelPTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_UsernamePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.UsernamePTest">
+  UsernamePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void UsernamePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest_" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest*"></a>
+
+  <h3 id="Test_SharedLib_Model_Settings_FakeSettingsTest_WithSecurePTest" data-uid="Test.SharedLib.Model.Settings.FakeSettingsTest.WithSecurePTest">
+  WithSecurePTest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Fact]
+public void WithSecurePTest()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/aaaa777/rudeus-client/new/master/apiSpec/new?filename=Test_SharedLib_Model_Settings_FakeSettingsTest.md&amp;value=---%0Auid%3A%20Test.SharedLib.Model.Settings.FakeSettingsTest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
-            </div>
-          </div>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/aaaa777/rudeus-client/blob/master/Test/SharedLib/Model/Settings/FakeSettingsTest.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
-    </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    </footer>
   </body>
 </html>

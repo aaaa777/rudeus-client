@@ -1,6 +1,16 @@
-- name: Introduction
+- name: 概要
   href: introduction.md
-- name: Getting Started
-  href: getting-started.md
-- name: API�ɂ���
-  href: about-REST-API.md
+# - name: Getting Started
+#   href: getting-started.md
+# - name: 使い方について
+#   href: usage.md
+- name: インストール方法について
+  href: installation.md
+- name: ビルド方法について(開発者向け)
+  href: how-to-build.md
+# - name: API概要について(開発者向け)
+#   href: abstruct-api.md
+- name: 全APIの一覧(開発者向け)
+  href: doc-api.md
+- name: 用語集
+  href: words.md
