@@ -1,1 +1,1 @@
-[ドキュメント概要はこちら](/doc/introduction.html)
+[ドキュメント概要はこちら](/rudeus-client/doc/introduction.html)
