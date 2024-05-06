@@ -24,10 +24,10 @@
 - [x] /api/application_update
 - [x] /api/check_server_status
 
-# Secrets to be added
+# Secrets should be add
 
-- `Base64_Encoded_Pfx` - コードサイン用のPFXファイルをBase64エンコードしたもの
-- `Pfx_Passphrase` - コードサイン用のPFXファイルのパスワードをBase64エンコードしたもの
+- `Base64_Encoded_Pfx` - 繧ｳ繝ｼ繝峨し繧､繝ｳ逕ｨ縺ｮPFX繝輔ぃ繧､繝ｫ繧達ase64繧ｨ繝ｳ繧ｳ繝ｼ繝峨＠縺溘ｂ縺ｮ
+- `Pfx_Passphrase` - 繧ｳ繝ｼ繝峨し繧､繝ｳ逕ｨ縺ｮPFX繝輔ぃ繧､繝ｫ縺ｮ繝代せ繝ｯ繝ｼ繝峨ｒBase64繧ｨ繝ｳ繧ｳ繝ｼ繝峨＠縺溘ｂ縺ｮ
 - 
 
 
